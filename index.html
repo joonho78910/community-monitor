@@ -4,28 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>커뮤니티 동향 대시보드</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
 <style>
   :root {
     color-scheme: light;
-    --bg: #f3f5f9;
-    --surface: #ffffff;
-    --surface-2: #f8fafc;
-    --border: #e4e8ee;
-    --border-strong: #cdd3dc;
-    --text: #0f1419;
-    --text-muted: #5b6470;
-    --text-faint: #94a0ad;
-    --accent: #3b82f6;
-    --accent-strong: #2563eb;
-    --accent-soft: #eff6ff;
-    --good: #16a34a;
-    --good-soft: #dcfce7;
-    --bad: #dc2626;
-    --bad-soft: #fee2e2;
-    --warn: #d97706;
-    --warn-soft: #fef3c7;
-    --neutral: #6b7280;
-    --neutral-soft: #f3f4f6;
+    --bg: #f3f5f9; --surface: #ffffff; --surface-2: #f8fafc;
+    --border: #e4e8ee; --border-strong: #cdd3dc;
+    --text: #0f1419; --text-muted: #5b6470; --text-faint: #94a0ad;
+    --accent: #3b82f6; --accent-strong: #2563eb; --accent-soft: #eff6ff;
+    --good: #16a34a; --good-soft: #dcfce7;
+    --bad: #dc2626; --bad-soft: #fee2e2;
+    --warn: #d97706; --warn-soft: #fef3c7;
+    --neutral: #6b7280; --neutral-soft: #f3f4f6;
     --shadow-sm: 0 1px 2px rgba(15, 20, 25, 0.04), 0 0 0 1px rgba(15, 20, 25, 0.04);
     --shadow-md: 0 2px 8px rgba(15, 20, 25, 0.06), 0 0 0 1px rgba(15, 20, 25, 0.05);
   }
@@ -42,7 +32,6 @@
   a:hover { text-decoration: underline; }
   .app { max-width: 1240px; margin: 0 auto; padding: 24px 20px 80px; }
 
-  /* ===== Top bar ===== */
   .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
   .brand .eyebrow { font-size: 11px; color: var(--text-muted); letter-spacing: 1.2px; text-transform: uppercase; font-weight: 600; }
   .brand h1 { margin: 4px 0 0; font-size: 22px; font-weight: 700; letter-spacing: -0.4px; }
@@ -62,7 +51,6 @@
   .pill.warn { background: var(--warn-soft); color: #92400e; }
   .freshness { color: var(--text-faint); font-size: 11px; }
 
-  /* ===== Tabs ===== */
   .tabs {
     display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid var(--border);
     position: sticky; top: 0; background: var(--bg); z-index: 5; padding-top: 2px;
@@ -81,7 +69,6 @@
   body.game-anchorpanic { --game-accent: #2563eb; --game-soft: #eff6ff; }
   body.game-erpis { --game-accent: #7c3aed; --game-soft: #f3efff; }
 
-  /* ===== Summary Hero ===== */
   .summary-hero {
     background: linear-gradient(135deg, var(--surface) 0%, var(--game-soft, var(--accent-soft)) 120%);
     border: 1px solid var(--border); border-left: 4px solid var(--game-accent, var(--accent));
@@ -97,20 +84,13 @@
   .summary-hero .source-badge.manual { background: var(--good-soft); color: #166534; border-color: #bbf7d0; }
   .summary-hero .summary-text { font-size: 15px; line-height: 1.85; color: var(--text); }
 
-  /* ===== KPI cards ===== */
   .kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 18px; }
   .kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; box-shadow: var(--shadow-sm); }
-  .kpi .label { font-size: 11px; color: var(--text-muted); margin-bottom: 6px; letter-spacing: 0.4px; text-transform: uppercase; font-weight: 600; display: flex; align-items: center; gap: 4px; }
+  .kpi .label { font-size: 11px; color: var(--text-muted); margin-bottom: 6px; letter-spacing: 0.4px; text-transform: uppercase; font-weight: 600; }
   .kpi .value { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; color: var(--text); }
   .kpi .sub { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
-  .help {
-    display: inline-flex; align-items: center; justify-content: center;
-    width: 14px; height: 14px; border-radius: 50%;
-    background: var(--border); color: var(--text-muted);
-    font-size: 9px; font-weight: 700; cursor: help; user-select: none;
-  }
 
-  /* ===== Category filter bar (5 buckets) ===== */
+  /* ===== Category filter bar ===== */
   .filter-bar {
     background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
     padding: 14px 16px; margin-bottom: 16px; box-shadow: var(--shadow-sm);
@@ -129,8 +109,7 @@
   .cat-chip:hover { background: var(--game-soft, var(--accent-soft)); border-color: var(--game-accent, var(--accent)); }
   .cat-chip.active {
     background: var(--cat-color, var(--game-accent));
-    border-color: var(--cat-color, var(--game-accent));
-    color: #fff;
+    border-color: var(--cat-color, var(--game-accent)); color: #fff;
   }
   .cat-chip[data-cat="all"].active {
     background: var(--game-accent, var(--accent));
@@ -139,7 +118,29 @@
   .cat-chip .cnt { font-size: 11.5px; opacity: 0.85; font-weight: 600; background: rgba(0,0,0,0.06); padding: 1px 7px; border-radius: 10px; }
   .cat-chip.active .cnt { background: rgba(255,255,255,0.25); }
 
-  /* ===== Sections / grids ===== */
+  /* ===== Category distribution chart ===== */
+  .cat-dist {
+    display: grid; grid-template-columns: 240px 1fr; gap: 24px; align-items: center;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 18px 20px; margin-bottom: 16px; box-shadow: var(--shadow-sm);
+  }
+  .cat-dist h2 { margin: 0 0 14px; font-size: 14px; font-weight: 700; }
+  .cat-dist .chart-wrap { position: relative; width: 200px; height: 200px; margin: 0 auto; }
+  .cat-dist .legend { display: flex; flex-direction: column; gap: 8px; }
+  .cat-dist .legend-row {
+    display: flex; align-items: center; gap: 10px; font-size: 13px;
+    padding: 6px 8px; border-radius: 6px; cursor: pointer;
+    transition: background .12s ease;
+  }
+  .cat-dist .legend-row:hover { background: var(--surface-2); }
+  .cat-dist .legend-row.active { background: var(--game-soft, var(--accent-soft)); font-weight: 700; }
+  .cat-dist .legend-row.disabled { opacity: 0.45; cursor: not-allowed; }
+  .cat-dist .legend-row.disabled:hover { background: transparent; }
+  .cat-dist .swatch { width: 14px; height: 14px; border-radius: 3px; flex-shrink: 0; }
+  .cat-dist .leg-label { flex: 1; }
+  .cat-dist .leg-count { font-variant-numeric: tabular-nums; color: var(--text-muted); font-weight: 600; }
+  .cat-dist .leg-pct { color: var(--text-faint); font-size: 11.5px; margin-left: 4px; font-variant-numeric: tabular-nums; }
+
   .grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 14px; margin-bottom: 16px; }
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px; }
   .section {
@@ -153,7 +154,6 @@
   }
   .section .helptext { font-size: 11.5px; color: var(--text-faint); margin-bottom: 10px; }
 
-  /* ===== Top issues ===== */
   .issue-stack { display: flex; flex-direction: column; gap: 10px; }
   .issue-item {
     padding: 12px 14px; background: var(--surface-2);
@@ -164,7 +164,7 @@
   .issue-item.tone-부정 { border-left-color: var(--bad); }
   .issue-item.tone-중립 { border-left-color: var(--warn); }
   .issue-item.tone-혼합 { border-left-color: #7c3aed; }
-  .issue-title { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-weight: 700; font-size: 13.5px; margin-bottom: 4px; color: var(--text); }
+  .issue-title { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-weight: 700; font-size: 13.5px; margin-bottom: 4px; }
   .tone-badge { font-size: 10.5px; padding: 2px 8px; border-radius: 10px; font-weight: 700; flex-shrink: 0; }
   .tone-badge.tone-긍정 { background: var(--good-soft); color: #166534; }
   .tone-badge.tone-부정 { background: var(--bad-soft); color: #991b1b; }
@@ -172,13 +172,11 @@
   .tone-badge.tone-혼합 { background: #ede9fe; color: #5b21b6; }
   .issue-summary { font-size: 12.5px; color: var(--text-muted); line-height: 1.65; }
 
-  /* ===== Bullet lists ===== */
   .bullet-list { list-style: none; padding: 0; margin: 0; }
-  .bullet-list li { padding: 7px 0 7px 22px; position: relative; border-bottom: 1px dashed #eef1f5; font-size: 13px; color: var(--text); }
+  .bullet-list li { padding: 7px 0 7px 22px; position: relative; border-bottom: 1px dashed #eef1f5; font-size: 13px; }
   .bullet-list li:last-child { border-bottom: 0; }
   .bullet-list li::before { content: "›"; position: absolute; left: 6px; top: 6px; color: var(--game-accent, var(--accent)); font-weight: 700; }
 
-  /* ===== Source breakdown ===== */
   .src-row { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid #f0f2f5; font-size: 12.5px; }
   .src-row:last-child { border-bottom: 0; }
   .src-label { width: 110px; flex-shrink: 0; font-weight: 600; }
@@ -188,16 +186,8 @@
   .src-bar.dc { background: linear-gradient(90deg, #6366f1, #818cf8); }
   .src-val { width: 130px; text-align: right; font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 12px; }
 
-  /* ===== Issue list (bug) ===== */
-  .issue-list { list-style: none; padding: 0; margin: 0; }
-  .issue-list li { padding: 9px 0; border-bottom: 1px solid #f0f2f5; font-size: 13px; display: flex; align-items: flex-start; gap: 10px; }
-  .issue-list li:last-child { border-bottom: 0; }
-  .issue-list .src-mini { flex-shrink: 0; margin-top: 1px; }
-  .issue-list a { color: var(--text); font-weight: 500; }
-  .issue-list a:hover { color: var(--game-accent, var(--accent-strong)); }
   .empty-mini { color: var(--text-faint); font-size: 12px; padding: 12px 0; font-style: italic; }
 
-  /* ===== Table & controls ===== */
   .table-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
   .search-input {
     padding: 7px 12px; border: 1px solid var(--border-strong); border-radius: 16px;
@@ -245,8 +235,7 @@
   /* Category badge inline */
   .cat-badge {
     display: inline-flex; align-items: center; gap: 3px;
-    font-size: 10.5px; padding: 1px 7px; border-radius: 4px; font-weight: 700;
-    line-height: 1.5;
+    font-size: 10.5px; padding: 2px 7px; border-radius: 4px; font-weight: 700; line-height: 1.5;
   }
   .cat-badge.버그 { background: var(--bad-soft); color: #991b1b; }
   .cat-badge.부정 { background: var(--bad-soft); color: #991b1b; }
@@ -254,18 +243,11 @@
   .cat-badge.중립 { background: var(--neutral-soft); color: #374151; }
   .cat-badge.기타 { background: #e0f2fe; color: #075985; }
 
-  .sub-tag {
-    display: inline-flex; align-items: center;
-    font-size: 10.5px; padding: 1px 5px; border-radius: 3px; font-weight: 600;
-    background: var(--surface-2); color: var(--text-muted); border: 1px solid var(--border);
-  }
-
-  /* ===== Pagination ===== */
+  /* Pagination */
   .pagination { display: flex; justify-content: center; align-items: center; gap: 6px; margin-top: 14px; flex-wrap: wrap; }
   .page-btn {
     background: var(--surface); border: 1px solid var(--border-strong); border-radius: 6px;
-    padding: 5px 10px; font-size: 12px; font-weight: 600; cursor: pointer; color: var(--text);
-    min-width: 32px;
+    padding: 5px 10px; font-size: 12px; font-weight: 600; cursor: pointer; color: var(--text); min-width: 32px;
   }
   .page-btn:hover { background: var(--game-soft, var(--accent-soft)); border-color: var(--game-accent, var(--accent)); }
   .page-btn.active { background: var(--game-accent, var(--accent)); border-color: var(--game-accent, var(--accent)); color: #fff; }
@@ -276,7 +258,6 @@
     padding: 4px 8px; font-size: 12px; color: var(--text); cursor: pointer;
   }
 
-  /* ===== Banners ===== */
   .quality-banner { background: var(--warn-soft); border: 1px solid #fde68a; border-radius: 8px; padding: 10px 14px; font-size: 12.5px; color: #92400e; margin-bottom: 14px; }
   .filter-banner {
     background: var(--game-soft, var(--accent-soft)); border: 1px solid var(--game-accent, var(--accent));
@@ -291,7 +272,6 @@
   .filter-banner button.clear:hover { background: var(--game-accent, var(--accent)); color: #fff; }
   .empty-state { text-align: center; padding: 50px 20px; color: var(--text-muted); font-size: 13px; }
 
-  /* ===== Footer ===== */
   .footer { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--border); font-size: 11.5px; color: var(--text-muted); line-height: 1.7; }
   .footer .row { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 6px; }
   .footer .row strong { color: var(--text); font-weight: 600; }
@@ -299,12 +279,9 @@
   .footer details[open] { padding: 6px 0; }
   .footer code { background: var(--surface-2); border: 1px solid var(--border); padding: 1px 6px; border-radius: 4px; font-size: 11px; }
 
-  /* ===== Mobile card view ===== */
+  /* Mobile card view */
   .mobile-cards { display: none; }
-  .post-card {
-    background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px;
-    padding: 12px; margin-bottom: 8px;
-  }
+  .post-card { background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 8px; }
   .post-card .pc-head { display: flex; gap: 6px; align-items: center; margin-bottom: 6px; flex-wrap: wrap; }
   .post-card .pc-title { font-size: 14px; font-weight: 600; margin: 4px 0 6px; line-height: 1.4; }
   .post-card .pc-title a { color: var(--text); }
@@ -313,6 +290,7 @@
   @media (max-width: 960px) {
     .kpis { grid-template-columns: repeat(2, 1fr); }
     .grid, .grid-2 { grid-template-columns: 1fr; }
+    .cat-dist { grid-template-columns: 1fr; }
     .topbar { align-items: flex-start; }
     .tabs { overflow-x: auto; }
     .summary-hero { padding: 18px 20px; }
@@ -340,7 +318,6 @@
 </head>
 <body>
 <div class="app">
-
   <header class="topbar">
     <div class="brand">
       <div class="eyebrow">COMMUNITY MONITOR</div>
@@ -373,11 +350,10 @@
     <details>
       <summary>방법론 및 주의사항</summary>
       <p style="margin: 10px 0 0;">
-        <strong>카테고리 분류:</strong> 모든 글은 <em>🐞버그 / 😡부정 / 📋중립 / 😊긍정 / 💬기타</em> 5개 중 하나로 자동 분류됩니다.
-        버그 키워드 > 부정 표현 > 긍정 표현 > 정보/공지/공략(중립) > 그 외(기타) 순으로 판단합니다.
-        부수 정보(뉴비/쿠폰/길드/공지/경쟁작 등)는 글마다 작은 회색 태그로 추가 표시됩니다.
-        <br><strong>일일 동향 요약:</strong> 큐레이션 작성("manual-curated"). 게시글 전수를 정독해 정성적 인사이트를 추출한 글.
+        <strong>카테고리 분류:</strong> 모든 글은 <em>🐞버그 / 😡부정 / 📋중립 / 😊긍정 / 💬기타</em> 5개 중 하나로 자동 분류.
+        <br><strong>일일 동향 요약:</strong> 큐레이션 작성. 게시글 전수를 정독한 정성적 인사이트.
         <br><strong>참여도(engagement):</strong> <code>조회수 + 댓글수 × 20 + 추천수 × 30</code>.
+        <br><strong>전체 게시물 정렬:</strong> 기본 최신순(datetime desc). 컬럼 헤더 클릭으로 변경 가능.
         <br><strong>표시 내용 주의:</strong> 원문 제목을 그대로 노출하므로 욕설·민감 표현이 포함될 수 있습니다.
       </p>
     </details>
@@ -389,8 +365,9 @@
 
 const STATE = {
   manifest: null, data: null, date: null, activeGame: null,
-  filters: { source: "all", search: "", sortBy: "engagement", sortDir: "desc", category: "all" },
+  filters: { source: "all", search: "", sortBy: "datetime", sortDir: "desc", category: "all" },
   pagination: { page: 1, pageSize: 20 },
+  charts: { catDonut: null },
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -429,9 +406,6 @@ function escapeHtml(s) {
 function catMeta(cat) {
   return (STATE.data && STATE.data.categoryMeta && STATE.data.categoryMeta[cat]) || { emoji: "", label: cat, color: "#999" };
 }
-function subMeta(t) {
-  return (STATE.data && STATE.data.subTagMeta && STATE.data.subTagMeta[t]) || { emoji: "", label: t };
-}
 
 async function loadManifest() {
   try {
@@ -466,7 +440,7 @@ function renderDatePicker() {
 }
 
 function resetFilters() {
-  STATE.filters = { source: "all", search: "", sortBy: "engagement", sortDir: "desc", category: "all" };
+  STATE.filters = { source: "all", search: "", sortBy: "datetime", sortDir: "desc", category: "all" };
   STATE.pagination = { page: 1, pageSize: 20 };
 }
 
@@ -508,10 +482,24 @@ function getSortedPosts(g) {
   const dir = f.sortDir === "asc" ? 1 : -1;
   const key = f.sortBy;
   posts.sort((a, b) => {
-    if (key === "datetime") return ((a.datetime || "") > (b.datetime || "") ? 1 : -1) * dir;
+    if (key === "datetime") {
+      // Parse with Date — handles both ISO (arca) and space-separated (dc) formats
+      const at = parseDate(a.datetime);
+      const bt = parseDate(b.datetime);
+      return (at - bt) * dir;
+    }
     return ((a[key] || 0) - (b[key] || 0)) * dir;
   });
   return posts;
+}
+
+// Robust date parser: handles ISO (with T and optional Z) and space-separated
+function parseDate(s) {
+  if (!s) return 0;
+  // Normalize: "YYYY-MM-DD HH:MM:SS" → "YYYY-MM-DDTHH:MM:SS" (treat as local)
+  const normalized = String(s).replace(/^(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2}:\d{2})$/, "$1T$2");
+  const d = new Date(normalized);
+  return isNaN(d.getTime()) ? 0 : d.getTime();
 }
 
 function recomputeStats(posts) {
@@ -592,10 +580,47 @@ function renderKpis(g) {
     </div>`;
 }
 
+/* ---- Category distribution (donut chart + legend) ---- */
+function renderCategoryDistribution(g) {
+  const counts = g.stats.category_counts || {};
+  const meta = STATE.data.categoryMeta || {};
+  // Always show all 5 categories in fixed order
+  const ordered = Object.keys(meta).sort((a, b) => (meta[a].order || 0) - (meta[b].order || 0));
+  const total = ordered.reduce((sum, k) => sum + (counts[k] || 0), 0);
+  return `
+    <div class="cat-dist">
+      <div>
+        <h2>🥧 카테고리 분포</h2>
+        <div class="chart-wrap"><canvas id="cat-donut"></canvas></div>
+      </div>
+      <div>
+        <h2 style="margin-bottom:8px;">전체 ${total}건 비율</h2>
+        <div class="legend" id="cat-legend">
+          ${ordered.map(k => {
+            const m = meta[k]; const c = counts[k] || 0;
+            const pct = total > 0 ? (c / total * 100).toFixed(1) : "0.0";
+            const active = STATE.filters.category === k;
+            const clickable = c > 0;
+            const cls = `legend-row${active ? " active" : ""}${clickable ? "" : " disabled"}`;
+            const dataAttr = clickable ? `data-cat="${k}"` : "";
+            return `<div class="${cls}" ${dataAttr}>
+              <div class="swatch" style="background:${m.color}"></div>
+              <div class="leg-label">${m.emoji} ${escapeHtml(m.label)}</div>
+              <div class="leg-count">${c}건</div>
+              <div class="leg-pct">${pct}%</div>
+            </div>`;
+          }).join("")}
+        </div>
+      </div>
+    </div>`;
+}
+
 function renderCategoryFilter(g) {
   const meta = STATE.data.categoryMeta || {};
   const counts = g.stats.category_counts || {};
   const ordered = Object.keys(meta).sort((a, b) => (meta[a].order || 0) - (meta[b].order || 0));
+  // Only show categories that have >= 1 post (hide 0-count chips to prevent empty results)
+  const available = ordered.filter(k => (counts[k] || 0) > 0);
   return `
     <div class="filter-bar">
       <div class="label">카테고리 필터 — 클릭으로 화면 전체가 좁혀집니다</div>
@@ -603,8 +628,8 @@ function renderCategoryFilter(g) {
         <button class="cat-chip${STATE.filters.category === "all" ? " active" : ""}" data-cat="all">
           📚 전체 <span class="cnt">${g.stats.total}</span>
         </button>
-        ${ordered.map(k => {
-          const m = meta[k]; const c = counts[k] || 0;
+        ${available.map(k => {
+          const m = meta[k]; const c = counts[k];
           const active = STATE.filters.category === k;
           return `<button class="cat-chip${active ? " active" : ""}" data-cat="${k}"
                     style="--cat-color: ${m.color}">
@@ -701,17 +726,19 @@ function renderCompetitorMentions(g) {
     </div>`;
 }
 
-/* Top Engaging — auto-hides when filter active (so user looks at full table instead) */
+/* Top Engaging — ALWAYS rendered, respects filter */
 function renderTopEngaging(g) {
-  if (isFiltered()) return "";  // 필터 적용 시 숨김 — 사용자는 전체 테이블에서 페이지로 보게 됨
-  const sorted = getSortedPosts(g).filter(p => !(p.sub_tags || []).includes("notice"));
-  sorted.sort((a, b) => (b.engagement || 0) - (a.engagement || 0));
-  const items = sorted.slice(0, 10);
-  if (items.length === 0) return `<div class="section"><h2>🔥 최고 참여도</h2><div class="empty-mini">데이터 없음</div></div>`;
+  const filtered = getFilteredPosts(g).filter(p => !(p.sub_tags || []).includes("notice"));
+  filtered.sort((a, b) => (b.engagement || 0) - (a.engagement || 0));
+  const items = filtered.slice(0, 10);
+  const title = isFiltered()
+    ? `🔥 최고 참여도 (필터됨) <span class="count">${items.length}</span>`
+    : `🔥 최고 참여도 Top 10 <span class="count">${items.length}</span>`;
+  if (items.length === 0) return `<div class="section"><h2>${title}</h2><div class="empty-mini">조건에 맞는 글이 없습니다.</div></div>`;
   return `
     <div class="section">
-      <h2>🔥 최고 참여도 Top 10 <span class="count">${items.length}</span></h2>
-      <div class="helptext">공지 제외 · 카테고리 필터 적용 시 이 섹션은 숨겨지고 전체 게시물 페이지에서 확인하세요</div>
+      <h2>${title}</h2>
+      <div class="helptext">공지 제외 · 참여도 = 조회 + 댓글×20 + 추천×30</div>
       <table class="posts">
         <thead><tr>
           <th class="rank">#</th><th>제목</th>
@@ -726,7 +753,6 @@ function renderTopEngaging(g) {
               <div class="title-meta">
                 <span class="source-${p.source}">${p.source}</span>
                 ${renderCatBadge(p.category_5)}
-                ${(p.sub_tags || []).map(t => `<span class="sub-tag">${subMeta(t).emoji} ${escapeHtml(subMeta(t).label)}</span>`).join("")}
                 ${p.datetime ? `<span>· ${fmtTimeOnly(p.datetime)}</span>` : ""}
               </div>
             </td>
@@ -751,7 +777,6 @@ function renderAllPosts(g) {
   const total = all.length;
   const pageSize = STATE.pagination.pageSize;
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
-  // Clamp current page
   if (STATE.pagination.page > totalPages) STATE.pagination.page = totalPages;
   const page = STATE.pagination.page;
   const start = (page - 1) * pageSize;
@@ -765,14 +790,15 @@ function renderAllPosts(g) {
   };
 
   return `
-    <div class="section">
+    <div class="section" id="all-posts-section">
       <h2>📋 전체 게시물 <span class="count">${total}</span></h2>
+      <div class="helptext">기본 정렬: 최신순 · 헤더 클릭으로 정렬 변경</div>
       <div class="table-controls">
         <button class="filter-btn${STATE.filters.source === "all" ? " active" : ""}" data-src="all">전체 채널</button>
         ${Object.keys(g.stats.by_source || {}).map(s => `
           <button class="filter-btn${STATE.filters.source === s ? " active" : ""}" data-src="${s}">${s}</button>`).join("")}
         <input type="search" class="search-input" placeholder="제목·카테고리 검색…" value="${escapeHtml(STATE.filters.search)}" id="search-input"/>
-        <span class="sort-info">${total}건 중 ${start + 1}–${end}건 표시</span>
+        <span class="sort-info">${total}건 중 ${total === 0 ? 0 : start + 1}–${end}건 표시</span>
       </div>
       ${total === 0 ? `<div class="empty-state">조건에 맞는 글이 없습니다.</div>` : `
       <div class="desktop-table" style="overflow:auto;">
@@ -797,7 +823,6 @@ function renderAllPosts(g) {
               <a href="${escapeHtml(p.url)}" target="_blank" rel="noopener" title="${escapeHtml(p.title)}">${escapeHtml(p.title)}</a>
               <div class="title-meta">
                 ${renderCatBadge(p.category_5)}
-                ${(p.sub_tags || []).map(t => `<span class="sub-tag">${subMeta(t).emoji} ${escapeHtml(subMeta(t).label)}</span>`).join("")}
               </div>
             </td>
             <td class="num" style="font-size:11px;">${fmtTimeOnly(p.datetime)}</td>
@@ -815,7 +840,6 @@ function renderAllPosts(g) {
           <div class="pc-head">
             <span class="source-${p.source}">${p.source}</span>
             ${renderCatBadge(p.category_5)}
-            ${(p.sub_tags || []).map(t => `<span class="sub-tag">${subMeta(t).emoji}</span>`).join("")}
             <span style="font-size:11px;color:var(--text-faint);margin-left:auto;">${fmtTimeOnly(p.datetime)}</span>
           </div>
           <div class="pc-title">
@@ -836,15 +860,12 @@ function renderAllPosts(g) {
 function renderPagination(totalPages, page) {
   if (totalPages <= 1) return "";
   const pages = [];
-  // Build page numbers: 1, 2, ..., curr-1, curr, curr+1, ..., last
   const range = (a, b) => { const r = []; for (let i = a; i <= b; i++) r.push(i); return r; };
-  if (totalPages <= 7) {
-    pages.push(...range(1, totalPages));
-  } else {
-    if (page <= 4) pages.push(...range(1, 5), "...", totalPages);
-    else if (page >= totalPages - 3) pages.push(1, "...", ...range(totalPages - 4, totalPages));
-    else pages.push(1, "...", page - 1, page, page + 1, "...", totalPages);
-  }
+  if (totalPages <= 7) pages.push(...range(1, totalPages));
+  else if (page <= 4) pages.push(...range(1, 5), "...", totalPages);
+  else if (page >= totalPages - 3) pages.push(1, "...", ...range(totalPages - 4, totalPages));
+  else pages.push(1, "...", page - 1, page, page + 1, "...", totalPages);
+
   return `
     <div class="pagination">
       <button class="page-btn" data-page="prev" ${page === 1 ? "disabled" : ""}>‹</button>
@@ -887,11 +908,18 @@ function renderGame() {
   if (!g) { $("#content").innerHTML = `<div class="empty-state">데이터 없음</div>`; return; }
   document.body.className = `game-${STATE.activeGame}`;
 
+  // Destroy old chart if exists
+  if (STATE.charts.catDonut) {
+    try { STATE.charts.catDonut.destroy(); } catch {}
+    STATE.charts.catDonut = null;
+  }
+
   $("#content").innerHTML = `
     ${renderMalformedNotice(g)}
     ${renderSummaryHero(g)}
     ${renderTopIssues(g)}
     ${renderKpis(g)}
+    ${renderCategoryDistribution(g)}
     ${renderCategoryFilter(g)}
     ${renderFilterBanner(g)}
     <div class="grid">
@@ -905,16 +933,77 @@ function renderGame() {
     ${renderTrendsWatchlist(g)}
     ${renderAllPosts(g)}
   `;
+  buildCategoryChart(g);
   bindInteractions(g);
 }
 
-// Debounced search
+function buildCategoryChart(g) {
+  const counts = g.stats.category_counts || {};
+  const meta = STATE.data.categoryMeta || {};
+  const all_ordered = Object.keys(meta).sort((a, b) => (meta[a].order || 0) - (meta[b].order || 0));
+  // Only include categories with >0 counts in the chart (cleaner visual)
+  const ordered = all_ordered.filter(k => (counts[k] || 0) > 0);
+  const labels = ordered.map(k => `${meta[k].emoji} ${meta[k].label}`);
+  const data = ordered.map(k => counts[k]);
+  const colors = ordered.map(k => meta[k].color);
+
+  const canvas = document.getElementById("cat-donut");
+  if (!canvas || typeof Chart === "undefined" || ordered.length === 0) return;
+  const total = data.reduce((a, b) => a + b, 0);
+
+  STATE.charts.catDonut = new Chart(canvas, {
+    type: "doughnut",
+    data: {
+      labels,
+      datasets: [{
+        data, backgroundColor: colors,
+        borderColor: "#fff", borderWidth: 2, hoverOffset: 8,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false, cutout: "62%",
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => {
+              const v = ctx.parsed; const pct = total > 0 ? (v / total * 100).toFixed(1) : 0;
+              return ` ${ctx.label}: ${v}건 (${pct}%)`;
+            }
+          }
+        }
+      },
+      onClick: (evt, elements) => {
+        if (elements.length === 0) return;
+        const idx = elements[0].index;
+        const catKey = ordered[idx];
+        STATE.filters.category = (STATE.filters.category === catKey) ? "all" : catKey;
+        STATE.pagination.page = 1;
+        renderGame();
+      },
+    },
+  });
+}
+
 let searchDebounceTimer = null;
 
 function bindInteractions(g) {
   // Category chips
   $$(".cat-chip").forEach(btn => btn.onclick = () => {
     STATE.filters.category = btn.dataset.cat;
+    STATE.pagination.page = 1;
+    renderGame();
+    // Smooth scroll to filter banner so user sees the filtered view immediately
+    setTimeout(() => {
+      const banner = document.querySelector(".filter-banner") || document.querySelector(".filter-bar");
+      if (banner) banner.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 60);
+  });
+
+  // Legend rows (only those with data-cat are clickable; disabled rows have no data-cat)
+  $$(".legend-row[data-cat]").forEach(row => row.onclick = () => {
+    const k = row.dataset.cat;
+    STATE.filters.category = (STATE.filters.category === k) ? "all" : k;
     STATE.pagination.page = 1;
     renderGame();
   });
@@ -957,9 +1046,8 @@ function bindInteractions(g) {
     else if (p === "next") STATE.pagination.page = Math.min(totalPages, STATE.pagination.page + 1);
     else STATE.pagination.page = parseInt(p, 10);
     renderGame();
-    // Scroll the table section into view smoothly
-    const allSection = document.querySelectorAll(".section");
-    if (allSection.length) allSection[allSection.length - 1].scrollIntoView({ behavior: "smooth", block: "start" });
+    const sec = $("#all-posts-section");
+    if (sec) sec.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
   const ps = $("#page-size");
@@ -971,16 +1059,13 @@ function bindInteractions(g) {
 
   bindSorters();
 
-  // CSV download
+  // CSV
   $("#download-csv").onclick = (e) => {
     e.preventDefault();
     const posts = getSortedPosts(g);
-    const cols = ["source", "displayId", "title", "url", "category_5", "sub_tags", "category", "datetime", "views", "comments", "likes", "engagement"];
+    const cols = ["source", "displayId", "title", "url", "category_5", "category", "datetime", "views", "comments", "likes", "engagement"];
     const esc = (v) => `"${String(v == null ? "" : v).replace(/"/g, '""')}"`;
-    const rows = posts.map(p => cols.map(c => {
-      if (c === "sub_tags") return esc((p.sub_tags || []).join("|"));
-      return esc(p[c]);
-    }).join(","));
+    const rows = posts.map(p => cols.map(c => esc(p[c])).join(","));
     const csv = [cols.join(",")].concat(rows).join("\n");
     const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8" });
     const a = document.createElement("a");
@@ -1026,4 +1111,4 @@ init();
 </script>
 </body>
 </html>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
