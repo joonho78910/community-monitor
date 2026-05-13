@@ -1,1164 +1,669 @@
 <!DOCTYPE html>
+<script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Community Monitor",
+  "schemaVersion": 1,
+  "description": "앵커패닉/에르피스 커뮤니티 동향 일일 모니터링 대시보드. 아카라이브, DC인사이드 갤러리에서 자동 수집한 게시물을 감정/이슈/버그/경쟁작으로 분류, 시각화한다. 매일 스크립트 갱신 시 update_artifact로 데이터 재반영."
+}
+</script>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>커뮤니티 동향 대시보드</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
 <style>
-  :root {
-    color-scheme: light;
-    --bg: #f3f5f9; --surface: #ffffff; --surface-2: #f8fafc;
-    --border: #e4e8ee; --border-strong: #cdd3dc;
-    --text: #0f1419; --text-muted: #5b6470; --text-faint: #94a0ad;
-    --accent: #3b82f6; --accent-strong: #2563eb; --accent-soft: #eff6ff;
-    --good: #16a34a; --good-soft: #dcfce7;
-    --bad: #dc2626; --bad-soft: #fee2e2;
-    --warn: #d97706; --warn-soft: #fef3c7;
-    --neutral: #6b7280; --neutral-soft: #f3f4f6;
-    --shadow-sm: 0 1px 2px rgba(15, 20, 25, 0.04), 0 0 0 1px rgba(15, 20, 25, 0.04);
-    --shadow-md: 0 2px 8px rgba(15, 20, 25, 0.06), 0 0 0 1px rgba(15, 20, 25, 0.05);
-  }
-  *, *::before, *::after { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, "Apple SD Gothic Neo", "Pretendard", BlinkMacSystemFont,
-                 "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
-    background: var(--bg); color: var(--text);
-    font-size: 14px; line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
-  }
-  a { color: var(--accent-strong); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .app { max-width: 1240px; margin: 0 auto; padding: 24px 20px 80px; }
-
-  .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
-  .brand .eyebrow { font-size: 11px; color: var(--text-muted); letter-spacing: 1.2px; text-transform: uppercase; font-weight: 600; }
-  .brand h1 { margin: 4px 0 0; font-size: 22px; font-weight: 700; letter-spacing: -0.4px; }
-  .brand .meta { font-size: 12px; color: var(--text-muted); margin-top: 6px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
-  .brand .meta strong { color: var(--text); font-weight: 600; }
-  .controls { display: flex; align-items: center; gap: 8px; }
-  .controls label { font-size: 12px; color: var(--text-muted); }
-  .date-select {
-    appearance: none;
-    background: var(--surface) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' fill='none' stroke='%235b6470' stroke-width='1.5' stroke-linecap='round'/></svg>") no-repeat right 10px center;
-    border: 1px solid var(--border-strong); border-radius: 8px;
-    padding: 8px 30px 8px 12px; font-size: 13px; font-weight: 600; color: var(--text);
-    cursor: pointer; min-width: 170px; box-shadow: var(--shadow-sm);
-  }
-  .pill { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 12px; }
-  .pill.ok { background: var(--good-soft); color: #166534; }
-  .pill.warn { background: var(--warn-soft); color: #92400e; }
-  .freshness { color: var(--text-faint); font-size: 11px; }
-
-  .tabs {
-    display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid var(--border);
-    position: sticky; top: 0; background: var(--bg); z-index: 5; padding-top: 2px;
-  }
-  .tab {
-    background: transparent; border: 0; border-bottom: 3px solid transparent;
-    padding: 12px 20px; cursor: pointer; font-size: 14px; font-weight: 600;
-    color: var(--text-muted); transition: all .12s ease;
-    display: flex; align-items: center; gap: 8px;
-  }
-  .tab:hover { color: var(--text); }
-  .tab.active { color: var(--text); border-bottom-color: var(--game-accent, var(--accent)); }
-  .tab-count { background: #eef1f5; color: var(--text-muted); font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px; }
-  .tab.active .tab-count { background: var(--game-soft, var(--accent-soft)); color: var(--game-accent, var(--accent-strong)); }
-
-  body.game-anchorpanic { --game-accent: #2563eb; --game-soft: #eff6ff; }
-  body.game-erpis { --game-accent: #7c3aed; --game-soft: #f3efff; }
-
-  .summary-hero {
-    background: linear-gradient(135deg, var(--surface) 0%, var(--game-soft, var(--accent-soft)) 120%);
-    border: 1px solid var(--border); border-left: 4px solid var(--game-accent, var(--accent));
-    border-radius: 12px; padding: 24px 28px; margin-bottom: 18px; box-shadow: var(--shadow-md);
-  }
-  .summary-hero .head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
-  .summary-hero h2 { margin: 0; font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
-  .summary-hero .source-badge {
-    display: inline-flex; align-items: center; gap: 4px;
-    font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 12px;
-    background: rgba(255,255,255,0.85); border: 1px solid var(--border); color: var(--text-muted);
-  }
-  .summary-hero .source-badge.manual { background: var(--good-soft); color: #166534; border-color: #bbf7d0; }
-  .summary-hero .summary-text { font-size: 15px; line-height: 1.85; color: var(--text); }
-
-  .kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 18px; }
-  .kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; box-shadow: var(--shadow-sm); }
-  .kpi .label { font-size: 11px; color: var(--text-muted); margin-bottom: 6px; letter-spacing: 0.4px; text-transform: uppercase; font-weight: 600; }
-  .kpi .value { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; color: var(--text); }
-  .kpi .sub { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
-
-  /* ===== Category filter bar ===== */
-  .filter-bar {
-    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
-    padding: 14px 16px; margin-bottom: 16px; box-shadow: var(--shadow-sm);
-  }
-  .filter-bar .label {
-    font-size: 11px; color: var(--text-muted); font-weight: 600;
-    text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 10px;
-  }
-  .cat-chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  .cat-chip {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: var(--surface-2); border: 2px solid var(--border);
-    padding: 8px 14px; border-radius: 18px; font-size: 13.5px; font-weight: 700;
-    color: var(--text); cursor: pointer; transition: all .12s ease;
-  }
-  .cat-chip:hover { background: var(--game-soft, var(--accent-soft)); border-color: var(--game-accent, var(--accent)); }
-  .cat-chip.active {
-    background: var(--cat-color, var(--game-accent));
-    border-color: var(--cat-color, var(--game-accent)); color: #fff;
-  }
-  .cat-chip[data-cat="all"].active {
-    background: var(--game-accent, var(--accent));
-    border-color: var(--game-accent, var(--accent));
-  }
-  .cat-chip .cnt { font-size: 11.5px; opacity: 0.85; font-weight: 600; background: rgba(0,0,0,0.06); padding: 1px 7px; border-radius: 10px; }
-  .cat-chip.active .cnt { background: rgba(255,255,255,0.25); }
-
-  /* ===== Category distribution chart ===== */
-  .cat-dist {
-    display: grid; grid-template-columns: 240px 1fr; gap: 24px; align-items: center;
-    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
-    padding: 18px 20px; margin-bottom: 16px; box-shadow: var(--shadow-sm);
-  }
-  .cat-dist h2 { margin: 0 0 14px; font-size: 14px; font-weight: 700; }
-  .cat-dist .chart-wrap { position: relative; width: 200px; height: 200px; margin: 0 auto; }
-  .cat-dist .legend { display: flex; flex-direction: column; gap: 8px; }
-  .cat-dist .legend-row {
-    display: flex; align-items: center; gap: 10px; font-size: 13px;
-    padding: 6px 8px; border-radius: 6px; cursor: pointer;
-    transition: background .12s ease;
-  }
-  .cat-dist .legend-row:hover { background: var(--surface-2); }
-  .cat-dist .legend-row.active { background: var(--game-soft, var(--accent-soft)); font-weight: 700; }
-  .cat-dist .legend-row.disabled { opacity: 0.45; cursor: not-allowed; }
-  .cat-dist .legend-row.disabled:hover { background: transparent; }
-  .cat-dist .swatch { width: 14px; height: 14px; border-radius: 3px; flex-shrink: 0; }
-  .cat-dist .leg-label { flex: 1; }
-  .cat-dist .leg-count { font-variant-numeric: tabular-nums; color: var(--text-muted); font-weight: 600; }
-  .cat-dist .leg-pct { color: var(--text-faint); font-size: 11.5px; margin-left: 4px; font-variant-numeric: tabular-nums; }
-
-  .grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 14px; margin-bottom: 16px; }
-  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px; }
-  .section {
-    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
-    padding: 18px 20px; margin-bottom: 14px; box-shadow: var(--shadow-sm);
-  }
-  .section h2 { margin: 0 0 14px; font-size: 14px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
-  .section h2 .count {
-    background: var(--game-soft, var(--accent-soft)); color: var(--game-accent, var(--accent-strong));
-    font-size: 11px; padding: 2px 8px; border-radius: 10px; font-weight: 600;
-  }
-  .section .helptext { font-size: 11.5px; color: var(--text-faint); margin-bottom: 10px; }
-
-  .issue-stack { display: flex; flex-direction: column; gap: 10px; }
-  .issue-item {
-    padding: 12px 14px; background: var(--surface-2);
-    border: 1px solid var(--border); border-radius: 8px;
-    border-left: 3px solid var(--text-faint);
-  }
-  .issue-item.tone-긍정 { border-left-color: var(--good); }
-  .issue-item.tone-부정 { border-left-color: var(--bad); }
-  .issue-item.tone-중립 { border-left-color: var(--warn); }
-  .issue-item.tone-혼합 { border-left-color: #7c3aed; }
-  .issue-title { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-weight: 700; font-size: 13.5px; margin-bottom: 4px; }
-  .tone-badge { font-size: 10.5px; padding: 2px 8px; border-radius: 10px; font-weight: 700; flex-shrink: 0; }
-  .tone-badge.tone-긍정 { background: var(--good-soft); color: #166534; }
-  .tone-badge.tone-부정 { background: var(--bad-soft); color: #991b1b; }
-  .tone-badge.tone-중립 { background: var(--warn-soft); color: #92400e; }
-  .tone-badge.tone-혼합 { background: #ede9fe; color: #5b21b6; }
-  .issue-summary { font-size: 12.5px; color: var(--text-muted); line-height: 1.65; }
-
-  .bullet-list { list-style: none; padding: 0; margin: 0; }
-  .bullet-list li { padding: 7px 0 7px 22px; position: relative; border-bottom: 1px dashed #eef1f5; font-size: 13px; }
-  .bullet-list li:last-child { border-bottom: 0; }
-  .bullet-list li::before { content: "›"; position: absolute; left: 6px; top: 6px; color: var(--game-accent, var(--accent)); font-weight: 700; }
-
-  .src-row { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid #f0f2f5; font-size: 12.5px; }
-  .src-row:last-child { border-bottom: 0; }
-  .src-label { width: 110px; flex-shrink: 0; font-weight: 600; }
-  .src-bar-wrap { flex: 1; height: 8px; background: #eef1f5; border-radius: 4px; overflow: hidden; }
-  .src-bar { height: 100%; border-radius: 4px; transition: width .3s ease; }
-  .src-bar.arca { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
-  .src-bar.dc { background: linear-gradient(90deg, #6366f1, #818cf8); }
-  .src-val { width: 130px; text-align: right; font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 12px; }
-
-  .empty-mini { color: var(--text-faint); font-size: 12px; padding: 12px 0; font-style: italic; }
-
-  .table-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
-  .search-input {
-    padding: 7px 12px; border: 1px solid var(--border-strong); border-radius: 16px;
-    font-size: 12px; min-width: 220px; outline: none; background: var(--surface);
-  }
-  .search-input:focus { border-color: var(--game-accent, var(--accent)); }
-  .filter-btn {
-    background: var(--surface); border: 1px solid var(--border-strong); border-radius: 16px;
-    padding: 5px 12px; font-size: 12px; cursor: pointer; color: var(--text-muted); font-weight: 600;
-  }
-  .filter-btn.active { background: var(--game-accent, var(--accent)); border-color: var(--game-accent, var(--accent)); color: #fff; }
-  .filter-btn:hover:not(.active) { background: var(--surface-2); }
-  .sort-info { font-size: 11px; color: var(--text-faint); margin-left: auto; }
-
-  table.posts { width: 100%; font-size: 12.5px; border-collapse: collapse; }
-  table.posts th {
-    text-align: left; padding: 9px 8px; background: var(--surface-2); color: var(--text-muted);
-    font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px;
-    border-bottom: 1px solid var(--border); position: sticky; top: 0;
-    cursor: pointer; user-select: none;
-  }
-  table.posts th:hover { color: var(--text); background: #eef1f5; }
-  table.posts th .arrow { display: inline-block; width: 10px; opacity: 0.4; }
-  table.posts th.sorted .arrow { opacity: 1; color: var(--game-accent, var(--accent-strong)); }
-  table.posts td { padding: 9px 8px; border-bottom: 1px solid #f0f2f5; vertical-align: top; }
-  table.posts tbody tr:hover { background: var(--surface-2); }
-
-  .title-cell { max-width: 480px; min-width: 240px; }
-  .title-cell a {
-    color: var(--text); font-weight: 500; display: inline-block; max-width: 100%;
-    vertical-align: bottom; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-  }
-  .title-cell a:hover { color: var(--game-accent, var(--accent-strong)); }
-  .title-cell a::after {
-    content: "↗"; margin-left: 4px; font-size: 10px; color: var(--text-faint); font-weight: 400;
-  }
-  .title-meta { display: flex; gap: 6px; align-items: center; margin-top: 4px; font-size: 11px; color: var(--text-faint); flex-wrap: wrap; }
-  .source-arca, .source-dc { display: inline-block; font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 700; letter-spacing: 0.2px; }
-  .source-arca { background: #fde68a; color: #78350f; }
-  .source-dc { background: #c7d2fe; color: #3730a3; }
-  .num { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; color: var(--text-muted); }
-  .num.strong { color: var(--text); font-weight: 600; }
-  .rank { text-align: center; width: 36px; color: var(--text-faint); font-variant-numeric: tabular-nums; font-weight: 600; }
-
-  /* Category badge inline */
-  .cat-badge {
-    display: inline-flex; align-items: center; gap: 3px;
-    font-size: 10.5px; padding: 2px 7px; border-radius: 4px; font-weight: 700; line-height: 1.5;
-  }
-  .cat-badge.버그 { background: var(--bad-soft); color: #991b1b; }
-  .cat-badge.부정 { background: var(--bad-soft); color: #991b1b; }
-  .cat-badge.긍정 { background: var(--good-soft); color: #166534; }
-  .cat-badge.중립 { background: var(--neutral-soft); color: #374151; }
-  .cat-badge.기타 { background: #e0f2fe; color: #075985; }
-  .cat-cell-btn {
-    background: transparent; border: 0; padding: 0; cursor: pointer;
-    display: inline-block; transition: transform .12s ease;
-  }
-  .cat-cell-btn:hover { transform: scale(1.06); }
-  .cat-cell-btn:hover .cat-badge { box-shadow: 0 0 0 2px currentColor; }
-
-  /* Pagination */
-  .pagination { display: flex; justify-content: center; align-items: center; gap: 6px; margin-top: 14px; flex-wrap: wrap; }
-  .page-btn {
-    background: var(--surface); border: 1px solid var(--border-strong); border-radius: 6px;
-    padding: 5px 10px; font-size: 12px; font-weight: 600; cursor: pointer; color: var(--text); min-width: 32px;
-  }
-  .page-btn:hover { background: var(--game-soft, var(--accent-soft)); border-color: var(--game-accent, var(--accent)); }
-  .page-btn.active { background: var(--game-accent, var(--accent)); border-color: var(--game-accent, var(--accent)); color: #fff; }
-  .page-btn:disabled { opacity: 0.4; cursor: not-allowed; }
-  .page-info { font-size: 12px; color: var(--text-muted); margin: 0 8px; }
-  .page-size-select {
-    background: var(--surface); border: 1px solid var(--border-strong); border-radius: 6px;
-    padding: 4px 8px; font-size: 12px; color: var(--text); cursor: pointer;
-  }
-
-  .quality-banner { background: var(--warn-soft); border: 1px solid #fde68a; border-radius: 8px; padding: 10px 14px; font-size: 12.5px; color: #92400e; margin-bottom: 14px; }
-  .filter-banner {
-    background: var(--game-soft, var(--accent-soft)); border: 1px solid var(--game-accent, var(--accent));
-    border-radius: 8px; padding: 8px 14px; font-size: 12.5px; color: var(--text); margin-bottom: 14px;
-    display: flex; align-items: center; justify-content: space-between; gap: 12px;
-  }
-  .filter-banner button.clear {
-    background: transparent; border: 1px solid var(--game-accent, var(--accent));
-    color: var(--game-accent, var(--accent)); border-radius: 14px;
-    padding: 3px 10px; font-size: 11px; font-weight: 600; cursor: pointer;
-  }
-  .filter-banner button.clear:hover { background: var(--game-accent, var(--accent)); color: #fff; }
-  .empty-state { text-align: center; padding: 50px 20px; color: var(--text-muted); font-size: 13px; }
-
-  .footer { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--border); font-size: 11.5px; color: var(--text-muted); line-height: 1.7; }
-  .footer .row { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 6px; }
-  .footer .row strong { color: var(--text); font-weight: 600; }
-  .footer details summary { cursor: pointer; color: var(--text); font-weight: 600; padding: 4px 0; }
-  .footer details[open] { padding: 6px 0; }
-  .footer code { background: var(--surface-2); border: 1px solid var(--border); padding: 1px 6px; border-radius: 4px; font-size: 11px; }
-
-  /* Mobile card view */
-  .mobile-cards { display: none; }
-  .post-card { background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 8px; }
-  .post-card .pc-head { display: flex; gap: 6px; align-items: center; margin-bottom: 6px; flex-wrap: wrap; }
-  .post-card .pc-title { font-size: 14px; font-weight: 600; margin: 4px 0 6px; line-height: 1.4; }
-  .post-card .pc-title a { color: var(--text); }
-  .post-card .pc-metrics { display: flex; gap: 12px; font-size: 11.5px; color: var(--text-muted); }
-
-  @media (max-width: 960px) {
-    .kpis { grid-template-columns: repeat(2, 1fr); }
-    .grid, .grid-2 { grid-template-columns: 1fr; }
-    .cat-dist { grid-template-columns: 1fr; }
-    .topbar { align-items: flex-start; }
-    .tabs { overflow-x: auto; }
-    .summary-hero { padding: 18px 20px; }
-    .summary-hero .summary-text { font-size: 14px; }
-  }
-  @media (max-width: 720px) {
-    .desktop-table { display: none; }
-    .mobile-cards { display: block; }
-  }
-  @media (max-width: 640px) {
-    .app { padding: 16px 12px 60px; }
-    .brand h1 { font-size: 19px; }
-    .kpis { grid-template-columns: 1fr 1fr; }
-    .cat-chip { padding: 7px 12px; font-size: 13px; }
-  }
-  @media print {
-    .tabs, .filter-bar, .filter-banner, .table-controls, .pagination, .controls, .footer details { display: none !important; }
-    body { background: white; }
-    .section { box-shadow: none; break-inside: avoid; page-break-inside: avoid; }
-    .summary-hero { box-shadow: none; background: white !important; border: 2px solid #333; }
-    .grid, .grid-2 { display: block; }
-    a { color: black; text-decoration: underline; }
-  }
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, "Apple SD Gothic Neo", "Pretendard", BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+  background: #f7f8fa;
+  color: #1a1d23;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 22px;
+}
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+.header .sub {
+  color: #707783;
+  font-size: 13px;
+}
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin: 20px 0 18px;
+  border-bottom: 1px solid #e3e6eb;
+}
+.tab {
+  background: transparent;
+  border: 0;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #707783;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s ease;
+}
+.tab.active {
+  color: #1a1d23;
+  border-bottom-color: var(--accent);
+}
+.tab:hover { color: #1a1d23; }
+.game-anchorpanic { --accent: #1976d2; --accent-bg: #e3f0fd; }
+.game-erpis { --accent: #7c3aed; --accent-bg: #f1ebfd; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #e3e6eb;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.card .label {
+  font-size: 11px;
+  color: #707783;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.card .value {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.card .sub {
+  font-size: 11px;
+  color: #707783;
+  margin-top: 2px;
+}
+.sentiment-positive { color: #16a34a; }
+.sentiment-negative { color: #dc2626; }
+.sentiment-neutral { color: #ca8a04; }
+.sentiment-mixed { color: #7c3aed; }
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.section {
+  background: #ffffff;
+  border: 1px solid #e3e6eb;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+}
+.section h2 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section h2 .count {
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.summary-box {
+  background: var(--accent-bg);
+  border-left: 3px solid var(--accent);
+  padding: 14px 16px;
+  border-radius: 6px;
+  color: #2c303a;
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+.issue-list, .trend-list, .watch-list, .bug-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.issue-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.issue-item:last-child { border-bottom: 0; }
+.issue-title {
+  font-weight: 600;
+  font-size: 13.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tone-badge {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.tone-긍정 { background: #dcfce7; color: #166534; }
+.tone-부정 { background: #fee2e2; color: #991b1b; }
+.tone-중립 { background: #fef3c7; color: #92400e; }
+.tone-혼합 { background: #ede9fe; color: #5b21b6; }
+.issue-summary { font-size: 12.5px; color: #4a525e; }
+.simple-list-item {
+  padding: 8px 0;
+  border-bottom: 1px dashed #f0f2f5;
+  font-size: 13px;
+}
+.simple-list-item:last-child { border-bottom: 0; }
+.simple-list-item::before {
+  content: "•";
+  color: var(--accent);
+  font-weight: 700;
+  margin-right: 8px;
+}
+.post-table {
+  width: 100%;
+  font-size: 12.5px;
+  border-collapse: collapse;
+}
+.post-table th {
+  text-align: left;
+  padding: 10px 8px;
+  background: #f7f8fa;
+  font-weight: 600;
+  color: #4a525e;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  border-bottom: 1px solid #e3e6eb;
+  position: sticky;
+  top: 0;
+}
+.post-table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #f0f2f5;
+  vertical-align: middle;
+}
+.post-table tbody tr:hover {
+  background: #f9fafb;
+}
+.post-table a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.post-table a:hover { text-decoration: underline; }
+.source-arca, .source-dc {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.source-arca { background: #fde68a; color: #78350f; }
+.source-dc { background: #c7d2fe; color: #3730a3; }
+.tag-chip {
+  display: inline-block;
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-right: 2px;
+  font-weight: 600;
+}
+.tag-bug { background: #fee2e2; color: #991b1b; }
+.tag-negative { background: #fed7aa; color: #9a3412; }
+.tag-positive { background: #bbf7d0; color: #14532d; }
+.tag-competitor { background: #ddd6fe; color: #5b21b6; }
+.tag-newbie { background: #bae6fd; color: #075985; }
+.tag-notice { background: #e5e7eb; color: #374151; }
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+  align-items: center;
+}
+.filter-btn {
+  background: #fff;
+  border: 1px solid #e3e6eb;
+  border-radius: 16px;
+  padding: 5px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #4a525e;
+  font-weight: 500;
+}
+.filter-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.filter-btn:hover:not(.active) { background: #f0f2f5; }
+.search-input {
+  padding: 6px 12px;
+  border: 1px solid #e3e6eb;
+  border-radius: 16px;
+  font-size: 12px;
+  min-width: 200px;
+  outline: none;
+}
+.search-input:focus { border-color: var(--accent); }
+.chart-wrap {
+  position: relative;
+  height: 220px;
+  width: 100%;
+}
+.muted { color: #707783; }
+.small { font-size: 11.5px; }
+.flex { display: flex; align-items: center; gap: 8px; }
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.btn {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn:hover { opacity: 0.9; }
+.btn-outline {
+  background: #fff;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+#deep-analysis {
+  display: none;
+  background: #f7f8fa;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+#deep-analysis.show { display: block; }
+.competitor-empty {
+  color: #707783;
+  font-style: italic;
+  font-size: 13px;
+  padding: 8px 0;
+}
+.title-cell {
+  max-width: 340px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media (max-width: 900px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .row { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
-<div class="app">
-  <header class="topbar">
-    <div class="brand">
-      <div class="eyebrow">COMMUNITY MONITOR</div>
-      <h1>커뮤니티 동향 대시보드</h1>
-      <div class="meta">
-        <span>수집 채널: 아카라이브 · 디시인사이드</span>
-        <span>·</span>
-        <span>마지막 수집: <strong id="last-updated">…</strong></span>
-        <span class="freshness" id="freshness"></span>
-        <span id="quality-pill"></span>
-      </div>
+<div class="app" id="app">
+  <div class="header">
+    <h1>커뮤니티 동향 대시보드</h1>
+    <div class="sub">
+      <span id="last-updated"></span> · 자동 수집: 아카라이브 + DC인사이드 ·
+      네이버는 별도 수동 입력 영역 참고
     </div>
-    <div class="controls">
-      <label for="date-select">날짜</label>
-      <select id="date-select" class="date-select" aria-label="날짜 선택"></select>
-    </div>
-  </header>
+  </div>
 
-  <nav class="tabs" id="tabs" role="tablist"></nav>
+  <div class="tabs" id="tabs"></div>
 
-  <main id="content"><div class="empty-state">데이터를 불러오는 중…</div></main>
-
-  <footer class="footer">
-    <div class="row">
-      <span><strong>데이터 출처:</strong> <a href="https://arca.live" target="_blank" rel="noopener">arca.live</a>, <a href="https://gall.dcinside.com" target="_blank" rel="noopener">gall.dcinside.com</a></span>
-      <span><strong>저장소:</strong> <a href="https://github.com/joonho78910/community-monitor" target="_blank" rel="noopener">github.com/joonho78910/community-monitor</a></span>
-      <span><a href="#" id="download-csv">현재 화면 CSV 내려받기</a></span>
-      <span><a href="#" id="print-btn">인쇄</a></span>
-    </div>
-    <details>
-      <summary>방법론 및 주의사항</summary>
-      <p style="margin: 10px 0 0;">
-        <strong>카테고리 분류:</strong> 모든 글은 <em>🐞버그 / 😡부정 / 📋중립 / 😊긍정 / 💬기타</em> 5개 중 하나로 자동 분류.
-        <br><strong>일일 동향 요약:</strong> 큐레이션 작성. 게시글 전수를 정독한 정성적 인사이트.
-        <br><strong>참여도(engagement):</strong> <code>조회수 + 댓글수 + 추천수</code> (단순 합).
-        <br><strong>전체 게시물 정렬:</strong> 기본 최신순(datetime desc). 컬럼 헤더 클릭으로 변경 가능.
-        <br><strong>표시 내용 주의:</strong> 원문 제목을 그대로 노출하므로 욕설·민감 표현이 포함될 수 있습니다.
-      </p>
-    </details>
-  </footer>
+  <div id="game-content"></div>
 </div>
 
 <script>
-"use strict";
-
-const STATE = {
-  manifest: null, data: null, date: null, activeGame: null,
-  filters: { source: "all", search: "", sortBy: "datetime", sortDir: "desc", category: "all" },
-  pagination: {
-    all: { page: 1, pageSize: 20 },   // 전체 게시물
-    top: { page: 1, pageSize: 10 },   // 최고 참여도
-  },
-  charts: { catDonut: null },
-};
-
-const $ = (sel) => document.querySelector(sel);
-const $$ = (sel) => document.querySelectorAll(sel);
+window.DATA = {"lastUpdated":"2026-05-13T00:06:19","games":{"anchorpanic":{"name":"앵커패닉","posts":[{"id":"11361","category":"","title":"토벌 오늘인가 다발린 08:56 8 0 11360 애깅이 무한요새 다음회차땐 할배들나옴..??","comments":2,"author":"비타치즈","ip":"","date":"08:51","views":17,"likes":0,"url":"https://arca.live/b/anchorpanic/11361","source":"arca","game":"anchorpanic","tags":[],"engagement":57},{"id":"11359","category":"질문","title":"화로즈 속도 질문점","comments":2,"author":"푸나무","ip":"","date":"07:45","views":46,"likes":0,"url":"https://arca.live/b/anchorpanic/11359","source":"arca","game":"anchorpanic","tags":[],"engagement":86},{"id":"11358","category":"","title":"스트리크닌 에코 전낙은 많이키우면 손해인가?","comments":2,"author":"기아의악마","ip":"","date":"07:43","views":50,"likes":0,"url":"https://arca.live/b/anchorpanic/11358","source":"arca","game":"anchorpanic","tags":[],"engagement":90},{"id":"11357","category":"","title":"ㄹㅇ 이겜 픽뚫 넘모 잘나는거같음","comments":2,"author":"LaziK","ip":"","date":"07:19","views":45,"likes":0,"url":"https://arca.live/b/anchorpanic/11357","source":"arca","game":"anchorpanic","tags":[],"engagement":85},{"id":"11356","category":"","title":"복귀협력 + 신생연맹","comments":1,"author":"닥터앨리스","ip":"","date":"05:05","views":64,"likes":1,"url":"https://arca.live/b/anchorpanic/11356","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":114},{"id":"11355","category":"복귀협력","title":"복귀유저 구함!!","comments":0,"author":"Viperrr","ip":"","date":"04:37","views":26,"likes":0,"url":"https://arca.live/b/anchorpanic/11355","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":26},{"id":"11354","category":"복귀협력","title":"열씨미하는 뉴비 복귀유저분들 간절히 모십니다","comments":0,"author":"ㅇㅇ","ip":"(180.83)","date":"02:28","views":42,"likes":0,"url":"https://arca.live/b/anchorpanic/11354","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":42},{"id":"11353","category":"AI","title":"화로즈 sns 프로필","comments":2,"author":"그런거몰라요","ip":"","date":"02:16","views":65,"likes":6,"url":"https://arca.live/b/anchorpanic/11353","source":"arca","game":"anchorpanic","tags":[],"engagement":285},{"id":"11352","category":"질문","title":"알림코드5 이거 어케 해결함?","comments":4,"author":"gfdt","ip":"","date":"01:46","views":53,"likes":0,"url":"https://arca.live/b/anchorpanic/11352","source":"arca","game":"anchorpanic","tags":[],"engagement":133},{"id":"11351","category":"AI","title":"앵붕이들 잘자","comments":2,"author":"가챠는_타이밍","ip":"","date":"00:58","views":50,"likes":3,"url":"https://arca.live/b/anchorpanic/11351","source":"arca","game":"anchorpanic","tags":[],"engagement":180},{"id":"11350","category":"복귀협력","title":"[기존] 커넥트할 복귀유저 구합니다!!","comments":1,"author":"다온","ip":"","date":"00:38","views":57,"likes":1,"url":"https://arca.live/b/anchorpanic/11350","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":107},{"id":"11349","category":"","title":"백장미 전낙 효율 질문","comments":2,"author":"다온","ip":"","date":"00:12","views":93,"likes":0,"url":"https://arca.live/b/anchorpanic/11349","source":"arca","game":"anchorpanic","tags":[],"engagement":133},{"id":"11348","category":"","title":"로즈 3돌임 4돌임 딱말해","comments":5,"author":"WePungDD","ip":"","date":"00:05","views":121,"likes":0,"url":"https://arca.live/b/anchorpanic/11348","source":"arca","game":"anchorpanic","tags":[],"engagement":221},{"id":"11347","category":"","title":"야옹","comments":3,"author":"광3","ip":"","date":"23:37","views":65,"likes":2,"url":"https://arca.live/b/anchorpanic/11347","source":"arca","game":"anchorpanic","tags":[],"engagement":185},{"id":"11346","category":"복귀협력","title":"28000140962 복귀협력 정말 간곡히 부탁드립니다.!","comments":3,"author":"뉴비","ip":"(218.152)","date":"23:33","views":54,"likes":0,"url":"https://arca.live/b/anchorpanic/11346","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":114},{"id":"11345","category":"","title":"백장미양이 순수외모체급 지리긴하네","comments":2,"author":"광3","ip":"","date":"23:26","views":99,"likes":0,"url":"https://arca.live/b/anchorpanic/11345","source":"arca","game":"anchorpanic","tags":[],"engagement":139},{"id":"11344","category":"","title":"오로라 성능이 증명된건가","comments":2,"author":"지존물퇴","ip":"","date":"23:15","views":130,"likes":1,"url":"https://arca.live/b/anchorpanic/11344","source":"arca","game":"anchorpanic","tags":[],"engagement":200},{"id":"11343","category":"","title":"할배들 칼란리사 번개덱이","comments":12,"author":"현창","ip":"","date":"23:13","views":123,"likes":0,"url":"https://arca.live/b/anchorpanic/11343","source":"arca","game":"anchorpanic","tags":[],"engagement":363},{"id":"11342","category":"","title":"흐흐 칼란 1성 남았다","comments":2,"author":"현창","ip":"","date":"22:52","views":85,"likes":0,"url":"https://arca.live/b/anchorpanic/11342","source":"arca","game":"anchorpanic","tags":[],"engagement":125},{"id":"11341","category":"","title":"뉴비 극한 12 클리어","comments":9,"author":"기아의악마","ip":"","date":"22:45","views":115,"likes":0,"url":"https://arca.live/b/anchorpanic/11341","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":295},{"id":"11340","category":"복귀협력","title":"늅늅비 협력좀 도와줘요","comments":0,"author":"ㅇㅇ","ip":"(119.203)","date":"22:20","views":42,"likes":0,"url":"https://arca.live/b/anchorpanic/11340","source":"arca","game":"anchorpanic","tags":[],"engagement":42},{"id":"11339","category":"","title":"응애챈 연맹원 모집 그런거몰라요 22:09 50 0 11338 4일차 애깅이 갓생루틴 공유","comments":4,"author":"비타치즈","ip":"","date":"22:07","views":98,"likes":2,"url":"https://arca.live/b/anchorpanic/11339","source":"arca","game":"anchorpanic","tags":[],"engagement":238},{"id":"11337","category":"","title":"어 나는 낙인도 가성비만 뽑아","comments":4,"author":"나의리듬은","ip":"","date":"22:00","views":125,"likes":0,"url":"https://arca.live/b/anchorpanic/11337","source":"arca","game":"anchorpanic","tags":[],"engagement":205},{"id":"11336","category":"","title":"8250돌 모아라 ㅇㅇ (121.141) 21:55 61 2 11335 복귀협력 [기존] 복귀 협력할 복귀유저분 찾아요","comments":0,"author":"boca","ip":"","date":"21:52","views":37,"likes":0,"url":"https://arca.live/b/anchorpanic/11336","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":37},{"id":"11334","category":"AI","title":"이런거 맛들리면 안되는데","comments":2,"author":"가챠는_타이밍","ip":"","date":"21:08","views":142,"likes":5,"url":"https://arca.live/b/anchorpanic/11334","source":"arca","game":"anchorpanic","tags":["bug"],"engagement":332},{"id":"11333","category":"","title":"질문 뉴비인데 어떻게하나요?","comments":1,"author":"ㅇㅇ","ip":"(116.42)","date":"20:49","views":86,"likes":0,"url":"https://arca.live/b/anchorpanic/11333","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":106},{"id":"11332","category":"","title":"복귀 협력이 머임?","comments":3,"author":"boca","ip":"","date":"20:45","views":72,"likes":0,"url":"https://arca.live/b/anchorpanic/11332","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":132},{"id":"11331","category":"질문","title":"뉴비 돌파효율 질문","comments":8,"author":"후잉나만미워해","ip":"","date":"20:27","views":130,"likes":0,"url":"https://arca.live/b/anchorpanic/11331","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":290},{"id":"11330","category":"복귀협력","title":"[기존] 같이 복귀협력 하실 복귀유저 구해요","comments":0,"author":"당고","ip":"","date":"20:25","views":41,"likes":1,"url":"https://arca.live/b/anchorpanic/11330","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":71},{"id":"11329","category":"질문","title":"다음 픽업 및 육성 질문","comments":6,"author":"mayora131","ip":"","date":"20:18","views":131,"likes":0,"url":"https://arca.live/b/anchorpanic/11329","source":"arca","game":"anchorpanic","tags":[],"engagement":251},{"id":"11328","category":"질문","title":"스트리크닌이랑 릴리라 있으면 누구 넣으면됨?","comments":4,"author":"boca","ip":"","date":"20:04","views":103,"likes":0,"url":"https://arca.live/b/anchorpanic/11328","source":"arca","game":"anchorpanic","tags":[],"engagement":183},{"id":"11327","category":"복귀협력","title":"[기존] 나랑 격렬하게 커넥트 할 복귀 파트너 구함","comments":2,"author":"mayora131","ip":"","date":"20:01","views":67,"likes":0,"url":"https://arca.live/b/anchorpanic/11327","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":107},{"id":"11326","category":"","title":"1주일전쯤에 복귀했으니까 아직뉴비죠?","comments":2,"author":"기아의악마","ip":"","date":"20:00","views":91,"likes":0,"url":"https://arca.live/b/anchorpanic/11326","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":131},{"id":"11325","category":"","title":"화이트 로즈는 전용 낙인 없음?","comments":3,"author":"ㅇㅇ","ip":"(223.38)","date":"19:51","views":149,"likes":0,"url":"https://arca.live/b/anchorpanic/11325","source":"arca","game":"anchorpanic","tags":[],"engagement":209},{"id":"11324","category":"","title":"양자 6번은 웨 안쥼?","comments":1,"author":"WePungDD","ip":"","date":"19:48","views":68,"likes":0,"url":"https://arca.live/b/anchorpanic/11324","source":"arca","game":"anchorpanic","tags":[],"engagement":88},{"id":"11323","category":"","title":"쿠폰 넣으니까 갑자기 저항력이 700인데","comments":2,"author":"뵈련","ip":"","date":"19:45","views":128,"likes":0,"url":"https://arca.live/b/anchorpanic/11323","source":"arca","game":"anchorpanic","tags":[],"engagement":168},{"id":"11322","category":"복귀협력","title":"[기존] 복귀협력 이벤트 복귀 유저 구함!","comments":2,"author":"아테나","ip":"(221.143)","date":"19:42","views":84,"likes":0,"url":"https://arca.live/b/anchorpanic/11322","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":124},{"id":"11321","category":"질문","title":"sr 낙인 연결된 운명만 수요 있지 ?","comments":2,"author":"후잉나만미워해","ip":"","date":"18:59","views":88,"likes":0,"url":"https://arca.live/b/anchorpanic/11321","source":"arca","game":"anchorpanic","tags":[],"engagement":128},{"id":"11320","category":"질문","title":"할배들 육성 질문!","comments":4,"author":"차니","ip":"","date":"18:58","views":99,"likes":0,"url":"https://arca.live/b/anchorpanic/11320","source":"arca","game":"anchorpanic","tags":[],"engagement":179},{"id":"11319","category":"","title":"이 젖탱이들은 이미 질렸다고","comments":4,"author":"ㅇㅇ","ip":"","date":"18:56","views":152,"likes":0,"url":"https://arca.live/b/anchorpanic/11319","source":"arca","game":"anchorpanic","tags":[],"engagement":232},{"id":"11318","category":"질문","title":"막기/방어/생명 모듈은 아예 안씀?","comments":7,"author":"l222","ip":"","date":"18:49","views":98,"likes":0,"url":"https://arca.live/b/anchorpanic/11318","source":"arca","game":"anchorpanic","tags":[],"engagement":238},{"id":"5200","category":"공지","title":"정보글은 아카라이브 채널ㄱㄱ","comments":1,"author":"Haley","ip":"","date":"25.12.25","views":396,"likes":8,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5200","source":"dc","game":"anchorpanic","tags":["notice"],"engagement":656},{"id":"5226","category":"정보/","title":"뉴비들 정보 및 질문글 아카라이브 챈 ㄱㄱ","comments":3,"author":"Haley","ip":"","date":"05.08","views":221,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5226","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":281},{"id":"5243","category":"일반","title":"운영만큼은 유저 친화적으로 하는 것 같긴함","comments":2,"author":"Aivy","ip":"","date":"05.12","views":30,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5243","source":"dc","game":"anchorpanic","tags":[],"engagement":70},{"id":"5242","category":"일반","title":"이 겜 왜 재밌지","comments":3,"author":"쨔스","ip":"","date":"05.12","views":54,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5242","source":"dc","game":"anchorpanic","tags":["positive"],"engagement":114},{"id":"5241","category":"일반","title":"브더2 처럼 누패없음?","comments":1,"author":"이덕팔","ip":"","date":"05.11","views":71,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5241","source":"dc","game":"anchorpanic","tags":["competitor"],"engagement":91},{"id":"5240","category":"일반","title":"부계 갤러리에 넣어둘까 했는데 꽉찼네","comments":1,"author":"Aivy","ip":"","date":"05.11","views":46,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5240","source":"dc","game":"anchorpanic","tags":[],"engagement":66},{"id":"5239","category":"일반","title":"복귀유전데 다시 해야하나요??","comments":3,"author":"앵갤러","ip":"(223.39)","date":"05.11","views":82,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5239","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":142},{"id":"5238","category":"일반","title":"뉴비 복귀협력 해줄 귀인 차자요","comments":0,"author":"앵갤러","ip":"(121.139)","date":"05.11","views":11,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5238","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":11},{"id":"5237","category":"일반","title":"대체 여우의축뵥이 어딨냐??","comments":2,"author":"승리의MC무현","ip":"","date":"05.11","views":36,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5237","source":"dc","game":"anchorpanic","tags":[],"engagement":76},{"id":"5236","category":"일반","title":"진짜주네","comments":1,"author":"Aivy","ip":"","date":"05.10","views":109,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5236","source":"dc","game":"anchorpanic","tags":[],"engagement":129},{"id":"5235","category":"일반","title":"뉴비 질문","comments":15,"author":"ユニ:)","ip":"","date":"05.10","views":122,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5235","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":422},{"id":"5234","category":"정보/","title":"1주년 뉴비 요약 공략","comments":6,"author":"Haley","ip":"","date":"05.10","views":247,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5234","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":367},{"id":"5233","category":"일반","title":"갤질하던 사람중에 복귀협력 필요한 사람 있음?","comments":1,"author":"Aivy","ip":"","date":"05.10","views":25,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5233","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":45},{"id":"5232","category":"일반","title":"뉴비 협력할사람 잇음??","comments":11,"author":"참피","ip":"","date":"05.09","views":82,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5232","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":302},{"id":"5231","category":"일반","title":"뉴비 도와주고 싶어도","comments":0,"author":"Aivy","ip":"","date":"05.09","views":61,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5231","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":61},{"id":"5230","category":"일반","title":"화로즈 성능 말안된다ㄹㅇ","comments":1,"author":"참피","ip":"","date":"05.09","views":124,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5230","source":"dc","game":"anchorpanic","tags":[],"engagement":144},{"id":"5229","category":"일반","title":"유입 질문","comments":3,"author":"당고","ip":"","date":"05.09","views":66,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5229","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":126},{"id":"5228","category":"일반","title":"나 해적선 가입했다","comments":1,"author":"앵갤러","ip":"(59.4)","date":"05.08","views":38,"likes":1,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5228","source":"dc","game":"anchorpanic","tags":[],"engagement":88},{"id":"5227","category":"일반","title":"근데 요즘은 칼란 먹고 시작해야하는건가","comments":1,"author":"Aivy","ip":"","date":"05.08","views":72,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5227","source":"dc","game":"anchorpanic","tags":[],"engagement":92},{"id":"5225","category":"일반","title":"누가 매니져 받아올거 아니면","comments":1,"author":"crw","ip":"(121.141)","date":"05.08","views":62,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5225","source":"dc","game":"anchorpanic","tags":[],"engagement":82},{"id":"5224","category":"일반","title":"네트워크오류라서 겜이 안깔림","comments":2,"author":"앵갤러","ip":"(121.64)","date":"05.08","views":40,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5224","source":"dc","game":"anchorpanic","tags":["bug"],"engagement":80},{"id":"5223","category":"일반","title":"이륙가능?","comments":4,"author":"내내","ip":"","date":"05.08","views":215,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5223","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":295},{"id":"5221","category":"일반","title":"지난 토벌 Top20 연맹 목록","comments":1,"author":"Aivy","ip":"","date":"05.07","views":92,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5221","source":"dc","game":"anchorpanic","tags":[],"engagement":112},{"id":"5220","category":"일반","title":"뭐해야하나 모르겠으면","comments":4,"author":"Aivy","ip":"","date":"05.07","views":151,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5220","source":"dc","game":"anchorpanic","tags":[],"engagement":231},{"id":"5219","category":"일반","title":"겜 안망했는데 갤 글리젠 거의 없는 이유","comments":3,"author":"ㅇㅇ","ip":"(211.108)","date":"05.07","views":244,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5219","source":"dc","game":"anchorpanic","tags":[],"engagement":304},{"id":"5218","category":"일반","title":"복커 뉴빈데...여기 갤 망했음?","comments":1,"author":"앵갤러","ip":"(106.250)","date":"05.06","views":246,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5218","source":"dc","game":"anchorpanic","tags":[],"engagement":266},{"id":"5217","category":"일반","title":"1주년이구나","comments":3,"author":"Aivy","ip":"","date":"04.24","views":191,"likes":1,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5217","source":"dc","game":"anchorpanic","tags":[],"engagement":281},{"id":"5216","category":"일반","title":"뭔 오류야..","comments":0,"author":"앵갤러","ip":"(220.123)","date":"04.22","views":62,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5216","source":"dc","game":"anchorpanic","tags":["bug"],"engagement":62}],"sources":{"arca":"https://arca.live/b/anchorpanic","dc":"https://gall.dcinside.com/mgallery/board/lists/?id=oscarine"},"stats":{"total":69,"real_posts":68,"notices":1,"bugs":3,"negative":0,"positive":1,"competitor_mentions":1,"newbie_returning":24,"total_views":6231,"total_comments":193,"total_likes":24,"sentiment":"중립","sentiment_score":0.015},"topEngaging":[{"id":"5235","title":"뉴비 질문","url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5235","source":"dc","views":122,"comments":15,"likes":0,"engagement":422,"category":"일반"},{"id":"5234","title":"1주년 뉴비 요약 공략","url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5234","source":"dc","views":247,"comments":6,"likes":0,"engagement":367,"category":"정보/"},{"id":"11343","title":"할배들 칼란리사 번개덱이","url":"https://arca.live/b/anchorpanic/11343","source":"arca","views":123,"comments":12,"likes":0,"engagement":363,"category":""},{"id":"11334","title":"이런거 맛들리면 안되는데","url":"https://arca.live/b/anchorpanic/11334","source":"arca","views":142,"comments":2,"likes":5,"engagement":332,"category":"AI"},{"id":"5219","title":"겜 안망했는데 갤 글리젠 거의 없는 이유","url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5219","source":"dc","views":244,"comments":3,"likes":0,"engagement":304,"category":"일반"},{"id":"5232","title":"뉴비 협력할사람 잇음??","url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5232","source":"dc","views":82,"comments":11,"likes":0,"engagement":302,"category":"일반"},{"id":"11341","title":"뉴비 극한 12 클리어","url":"https://arca.live/b/anchorpanic/11341","source":"arca","views":115,"comments":9,"likes":0,"engagement":295,"category":""},{"id":"5223","title":"이륙가능?","url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5223","source":"dc","views":215,"comments":4,"likes":0,"engagement":295,"category":"일반"},{"id":"11331","title":"뉴비 돌파효율 질문","url":"https://arca.live/b/anchorpanic/11331","source":"arca","views":130,"comments":8,"likes":0,"engagement":290,"category":"질문"},{"id":"11353","title":"화로즈 sns 프로필","url":"https://arca.live/b/anchorpanic/11353","source":"arca","views":65,"comments":2,"likes":6,"engagement":285,"category":"AI"}],"analysis":{"dailySummary":"복귀협력 이벤트가 채널 메인 주제로 자리잡아 'OO 복귀유저 구합니다' 류 모집글이 절반 가까이 차지함. 2.8 버전 뉴비/유입 가이드 공지(조회 3,776)와 통합가이드(9,850)가 활발히 노출되며 신규/복귀 유입을 지원하는 분위기. 캐릭터 성능(화이트로즈, 칼란, 오로라, 스트리크닌) 및 낙인·돌파 효율 질문이 다수. 디시 갤러리 쪽은 글리젠이 부진해 '갤 망했음?' 자조 글이 보이지만, 아카라이브 채널은 일 60+건의 게시글이 유지됨.","topIssues":[{"title":"복귀협력 이벤트 매칭 수요 폭증","summary":"'[기존] 커넥트할 복귀유저 구합니다', '복귀협력 이벤트 복귀유저 구함' 등 매칭 요청 글이 12건 이상으로 가장 빈도 높음. 이벤트 흥행은 긍정적이나 '복귀 협력이 머임?' 같은 진입 장벽 신호도 존재.","tone":"혼합"},{"title":"화이트 로즈 성능/낙인/돌파 논의 집중","summary":"'화로즈 속도 질문', '백장미 전낙 효율', '화이트 로즈는 전용 낙인 없음?', '로즈 3돌임 4돌임 딱말해' 등 신규/픽업 캐릭터 빌드 관련 질문이 핵심 트렌드.","tone":"중립"},{"title":"알림코드5 및 네트워크 오류 신고","summary":"'알림코드5 이거 어케 해결함?'(아카), '네트워크오류라서 겜이 안깔림'(디시) 등 접속 단계 오류 호소. 빈도는 적지만 신규 유입 차단 가능 이슈.","tone":"부정"},{"title":"디시 갤러리 글리젠 침체 자각","summary":"'겜 안망했는데 갤 글리젠 거의 없는 이유', '복커 뉴빈데...여기 갤 망했음?' 글이 추천/조회 상위. 디시 커뮤니티는 정보 전달 허브에서 사실상 아카라이브 채널로 이동 중.","tone":"부정"},{"title":"운영 호평","summary":"'운영만큼은 유저 친화적으로 하는 것 같긴함' 글이 댓글 2개로 디시 최상단에 위치. 8250돌 보상, 쿠폰 발급 등 운영 기조에 대한 호의적 반응 일부 포착.","tone":"긍정"}],"bugReports":["알림코드5 접속 오류 (아카 #11352)","쿠폰 적용 후 저항력 700 표시 이상 (아카 #11323)","네트워크오류로 게임 설치 불가 (디시 #5224)","원인 불명 오류 호소 (디시 #5216)"],"competitorMentions":[{"competitor":"브라운더스트2","context":"'브더2 처럼 누패없음?' - 누적패스(누패) 시스템 부재를 브더2와 비교 (디시 #5241)"}],"trends":["복귀협력 이벤트가 채널 최대 트래픽 드라이버로 작동 - 11건 이상의 매칭 요청 게시물","화이트 로즈/칼란 신캐 픽업 후 돌파·낙인·연낙 효율 질문 집중 발생","2.8 버전 뉴비/유입 가이드와 통합가이드가 공지 상단에 노출되며 진입 장벽 완화 시도","디시 갤러리는 사실상 비활성화 단계로 '망했음' 자조 정서가 표출됨","AI 카테고리(SNS 프로필, 일러스트)로 팬콘텐츠 일부 생성 중"],"watchlist":["복귀협력 이벤트 종료 시점에 트래픽 급감 가능성 - 후속 콘텐츠 필요","알림코드5/네트워크 오류 재발 빈도와 운영 대응 속도","디시 갤러리 추가 침체 여부 - 아카 채널 단일 의존 리스크","차기 픽업/한정 캐릭터 출시 시점의 여론 변화"]}},"erpis":{"name":"에르피스","posts":[{"id":"3393","category":"질문","title":"글로리에서 델리스 필수야??","comments":3,"author":"qwer1234","ip":"","date":"2026.05.12","views":43,"likes":0,"url":"https://arca.live/b/erphis/3393","source":"arca","game":"erpis","tags":[],"engagement":103},{"id":"3392","category":"질문","title":"초대장으로 누구 영입할까?","comments":6,"author":"ㅇㅁㄱ","ip":"","date":"2026.05.12","views":99,"likes":0,"url":"https://arca.live/b/erphis/3392","source":"arca","game":"erpis","tags":[],"engagement":219},{"id":"3391","category":"","title":"SPL100GIFT","comments":5,"author":"현창","ip":"","date":"2026.05.12","views":99,"likes":3,"url":"https://arca.live/b/erphis/3391","source":"arca","game":"erpis","tags":[],"engagement":289},{"id":"3390","category":"","title":"치확배지 치피배지 고점차이 허수아비로 쳐보니까 많이나긴한다","comments":1,"author":"현창","ip":"","date":"2026.05.12","views":69,"likes":0,"url":"https://arca.live/b/erphis/3390","source":"arca","game":"erpis","tags":[],"engagement":89},{"id":"3389","category":"질문","title":"레티 돌파하는게 좋음?","comments":3,"author":"능지인증","ip":"","date":"2026.05.11","views":109,"likes":0,"url":"https://arca.live/b/erphis/3389","source":"arca","game":"erpis","tags":["positive"],"engagement":169},{"id":"3388","category":"","title":"당장 5성 탱커가 카구야밖에없는디","comments":3,"author":"벤치탉","ip":"","date":"2026.05.11","views":66,"likes":0,"url":"https://arca.live/b/erphis/3388","source":"arca","game":"erpis","tags":[],"engagement":126},{"id":"3387","category":"","title":"배지 리롤권 사료 맛있네","comments":6,"author":"시엘22","ip":"","date":"2026.05.11","views":98,"likes":0,"url":"https://arca.live/b/erphis/3387","source":"arca","game":"erpis","tags":[],"engagement":218},{"id":"3386","category":"","title":"생각해보니 넵튠 게임 3개나 하고 있어","comments":12,"author":"현창","ip":"","date":"2026.05.11","views":190,"likes":0,"url":"https://arca.live/b/erphis/3386","source":"arca","game":"erpis","tags":[],"engagement":430},{"id":"3385","category":"","title":"월보 무한 리트하는 사람들 열정 미쳤네","comments":4,"author":"현창","ip":"","date":"2026.05.11","views":86,"likes":0,"url":"https://arca.live/b/erphis/3385","source":"arca","game":"erpis","tags":[],"engagement":166},{"id":"3384","category":"","title":"월보보상 반복재화수급은 머임?","comments":5,"author":"천악입니다","ip":"","date":"2026.05.11","views":104,"likes":1,"url":"https://arca.live/b/erphis/3384","source":"arca","game":"erpis","tags":[],"engagement":234},{"id":"3383","category":"","title":"월요일 쿠폰 LUCKY11M","comments":2,"author":"구원","ip":"","date":"2026.05.11","views":84,"likes":2,"url":"https://arca.live/b/erphis/3383","source":"arca","game":"erpis","tags":[],"engagement":184},{"id":"3382","category":"질문","title":"광고보고 왔는데 100뽑으로 리세하는거야?","comments":1,"author":"시어버터","ip":"","date":"2026.05.11","views":94,"likes":0,"url":"https://arca.live/b/erphis/3382","source":"arca","game":"erpis","tags":["newbie"],"engagement":114},{"id":"3381","category":"","title":"아... ㅈ같네..","comments":2,"author":"와플향","ip":"","date":"2026.05.11","views":112,"likes":0,"url":"https://arca.live/b/erphis/3381","source":"arca","game":"erpis","tags":["negative"],"engagement":152},{"id":"3380","category":"","title":"이벤 난이도 개빡세네 능지인증 2026.05.11 45 0 3379 월정액 살까말까 고민중","comments":2,"author":"현창","ip":"","date":"2026.05.11","views":77,"likes":0,"url":"https://arca.live/b/erphis/3380","source":"arca","game":"erpis","tags":["negative"],"engagement":117},{"id":"3378","category":"","title":"에르피스 할게없노","comments":3,"author":"리으응리을","ip":"","date":"2026.05.11","views":98,"likes":0,"url":"https://arca.live/b/erphis/3378","source":"arca","game":"erpis","tags":[],"engagement":158},{"id":"3377","category":"","title":"재구성인가 이거 부옵 전부 리롤이 아니엇냐고!!","comments":1,"author":"은하","ip":"","date":"2026.05.10","views":89,"likes":0,"url":"https://arca.live/b/erphis/3377","source":"arca","game":"erpis","tags":[],"engagement":109},{"id":"3376","category":"","title":"나만의 작은 에르피스가 되고 있구나","comments":8,"author":"현창","ip":"","date":"2026.05.10","views":210,"likes":0,"url":"https://arca.live/b/erphis/3376","source":"arca","game":"erpis","tags":[],"engagement":370},{"id":"3375","category":"","title":"솔직히 난이도 시발임","comments":10,"author":"winter","ip":"","date":"2026.05.10","views":175,"likes":0,"url":"https://arca.live/b/erphis/3375","source":"arca","game":"erpis","tags":["negative"],"engagement":375},{"id":"3374","category":"","title":"이제 뭐 키움? 리바 씀?","comments":10,"author":"도이","ip":"","date":"2026.05.10","views":123,"likes":0,"url":"https://arca.live/b/erphis/3374","source":"arca","game":"erpis","tags":[],"engagement":323},{"id":"3373","category":"","title":"뉴비들 힐러 사이코말고 아네시 키워도 될 거 같음","comments":16,"author":"현창","ip":"","date":"2026.05.10","views":167,"likes":0,"url":"https://arca.live/b/erphis/3373","source":"arca","game":"erpis","tags":["newbie"],"engagement":487},{"id":"3372","category":"질문","title":"지금 1파티를 제대로 꾸리려면","comments":6,"author":"사오링","ip":"","date":"2026.05.10","views":141,"likes":0,"url":"https://arca.live/b/erphis/3372","source":"arca","game":"erpis","tags":[],"engagement":261},{"id":"3371","category":"","title":"후우 벅차다이제....","comments":1,"author":"막차탑승찍먹러","ip":"","date":"2026.05.09","views":66,"likes":0,"url":"https://arca.live/b/erphis/3371","source":"arca","game":"erpis","tags":[],"engagement":86},{"id":"3370","category":"","title":"월보는 다 좋은데.. 보상이..","comments":8,"author":"시엘22","ip":"","date":"2026.05.09","views":134,"likes":0,"url":"https://arca.live/b/erphis/3370","source":"arca","game":"erpis","tags":["positive"],"engagement":294},{"id":"3369","category":"","title":"진심 깃털 치피 원래 이렇게 안주나","comments":2,"author":"은하","ip":"","date":"2026.05.09","views":66,"likes":0,"url":"https://arca.live/b/erphis/3369","source":"arca","game":"erpis","tags":[],"engagement":106},{"id":"3368","category":"질문","title":"글 새로 올렸음","comments":6,"author":"능지인증","ip":"","date":"2026.05.09","views":98,"likes":0,"url":"https://arca.live/b/erphis/3368","source":"arca","game":"erpis","tags":[],"engagement":218},{"id":"3367","category":"질문","title":"리온 리테 뽑아왔음","comments":8,"author":"능지인증","ip":"","date":"2026.05.09","views":103,"likes":0,"url":"https://arca.live/b/erphis/3367","source":"arca","game":"erpis","tags":[],"engagement":263},{"id":"3366","category":"","title":"강적 너무 힘든데 이번 10단..","comments":3,"author":"구원","ip":"","date":"2026.05.09","views":113,"likes":0,"url":"https://arca.live/b/erphis/3366","source":"arca","game":"erpis","tags":[],"engagement":173},{"id":"3365","category":"","title":"강적 10단계 클리어 팟","comments":8,"author":"다이노탱","ip":"","date":"2026.05.09","views":154,"likes":1,"url":"https://arca.live/b/erphis/3365","source":"arca","game":"erpis","tags":[],"engagement":344},{"id":"3364","category":"","title":"늒네인데 오스틴 뽑는게 좋나","comments":2,"author":"벤치탉","ip":"","date":"2026.05.09","views":67,"likes":0,"url":"https://arca.live/b/erphis/3364","source":"arca","game":"erpis","tags":["positive"],"engagement":107},{"id":"3363","category":"","title":"이번 강적 10단계 클리어 팟","comments":1,"author":"힐러군즈","ip":"","date":"2026.05.09","views":115,"likes":1,"url":"https://arca.live/b/erphis/3363","source":"arca","game":"erpis","tags":[],"engagement":165},{"id":"3362","category":"","title":"강적토벌 10단계 빡세다...","comments":5,"author":"ironbeg","ip":"","date":"2026.05.09","views":83,"likes":0,"url":"https://arca.live/b/erphis/3362","source":"arca","game":"erpis","tags":["negative"],"engagement":183},{"id":"3361","category":"","title":"이성 분명 개 많았는데","comments":12,"author":"능지인증","ip":"","date":"2026.05.09","views":96,"likes":0,"url":"https://arca.live/b/erphis/3361","source":"arca","game":"erpis","tags":[],"engagement":336},{"id":"3360","category":"","title":"에르피스 지킴이 열심히 하고 있긴한데","comments":7,"author":"현창","ip":"","date":"2026.05.09","views":183,"likes":0,"url":"https://arca.live/b/erphis/3360","source":"arca","game":"erpis","tags":[],"engagement":323},{"id":"3359","category":"","title":"월보점수를 어캐올리지","comments":22,"author":"시엘22","ip":"","date":"2026.05.08","views":158,"likes":0,"url":"https://arca.live/b/erphis/3359","source":"arca","game":"erpis","tags":[],"engagement":598},{"id":"3358","category":"","title":"월보 오늘 몇시간 리트했는데 좀 불쾌하다","comments":1,"author":"현창","ip":"","date":"2026.05.08","views":130,"likes":0,"url":"https://arca.live/b/erphis/3358","source":"arca","game":"erpis","tags":[],"engagement":150},{"id":"3357","category":"","title":"우후후후","comments":3,"author":"샤논","ip":"","date":"2026.05.08","views":96,"likes":0,"url":"https://arca.live/b/erphis/3357","source":"arca","game":"erpis","tags":[],"engagement":156},{"id":"3356","category":"","title":"광산 박박 긁었더니 뚫쳐나네 애미","comments":2,"author":"사축","ip":"","date":"2026.05.08","views":116,"likes":0,"url":"https://arca.live/b/erphis/3356","source":"arca","game":"erpis","tags":[],"engagement":156},{"id":"3355","category":"질문","title":"스작 효율은 보통 몇 정도임?","comments":9,"author":"능지인증","ip":"","date":"2026.05.08","views":114,"likes":0,"url":"https://arca.live/b/erphis/3355","source":"arca","game":"erpis","tags":[],"engagement":294},{"id":"3354","category":"","title":"쿠폰 NMRE58EP","comments":2,"author":"키디언","ip":"","date":"2026.05.08","views":152,"likes":3,"url":"https://arca.live/b/erphis/3354","source":"arca","game":"erpis","tags":[],"engagement":282},{"id":"284","category":"공지","title":"쿠폰 리스트 (26.05.11)","comments":23,"author":"ㅇㅇ","ip":"","date":"26.02.05","views":35264,"likes":61,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=284","source":"dc","game":"erpis","tags":["notice"],"engagement":37554},{"id":"323","category":"공지","title":"갤길 리스트","comments":26,"author":"ㅇㅇ","ip":"","date":"26.02.05","views":4476,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=323","source":"dc","game":"erpis","tags":["notice"],"engagement":4996},{"id":"8867","category":"공지","title":"각 캐릭터 추천 배지 공략 업데이트(펌)","comments":6,"author":"ㅇㅇ","ip":"","date":"26.03.29","views":2165,"likes":13,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=8867","source":"dc","game":"erpis","tags":["notice"],"engagement":2675},{"id":"8994","category":"공지","title":"뉴비 올인원 가이드(26.04.30)","comments":10,"author":"뜌따이","ip":"","date":"26.04.02","views":2163,"likes":12,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=8994","source":"dc","game":"erpis","tags":["notice"],"engagement":2723},{"id":"106","category":"공지","title":"리세 추천 캐릭","comments":5,"author":"ㅇㅇ","ip":"","date":"26.01.28","views":21084,"likes":17,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=106","source":"dc","game":"erpis","tags":["notice"],"engagement":21694},{"id":"8296","category":"공지","title":"에르피스 갤러리 규칙","comments":0,"author":"ㅇㅇ","ip":"","date":"26.03.20","views":362,"likes":2,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=8296","source":"dc","game":"erpis","tags":["notice"],"engagement":422},{"id":"72","category":"공지","title":"티어표 / 픽업순서","comments":9,"author":"ㅇㅇ","ip":"","date":"26.01.08","views":32206,"likes":6,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=72","source":"dc","game":"erpis","tags":["notice"],"engagement":32566},{"id":"1981","category":"공지","title":"효율적인 현질공략","comments":8,"author":"세노","ip":"","date":"26.02.09","views":5129,"likes":11,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=1981","source":"dc","game":"erpis","tags":["notice"],"engagement":5619},{"id":"503","category":"공지","title":"호출벨","comments":0,"author":"ㅇㅇ","ip":"","date":"26.02.05","views":1529,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=503","source":"dc","game":"erpis","tags":["notice"],"engagement":1529},{"id":"11027","category":"일반","title":"시간이.. 멈췄다.. .","comments":0,"author":"ㅇㅇ","ip":"","date":"07:46","views":33,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11027","source":"dc","game":"erpis","tags":[],"engagement":33},{"id":"11026","category":"일반","title":"국밥 4돌","comments":3,"author":"캣판완장","ip":"","date":"06:32","views":69,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11026","source":"dc","game":"erpis","tags":[],"engagement":129},{"id":"11025","category":"일반","title":"복귀유저인데 티어표확인하고 키울애들 확인함","comments":1,"author":"식용토끼","ip":"","date":"06:09","views":68,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11025","source":"dc","game":"erpis","tags":["newbie"],"engagement":88},{"id":"11024","category":"일반","title":"오늘도 수많은 평행세계를 지켯다","comments":5,"author":"ㅇㅇ","ip":"(119.70)","date":"05:06","views":73,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11024","source":"dc","game":"erpis","tags":[],"engagement":173},{"id":"10982","category":"길드구","title":"갤길 [비상] 5명 구인","comments":2,"author":"아키나이","ip":"","date":"05.12","views":45,"likes":1,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10982","source":"dc","game":"erpis","tags":[],"engagement":115},{"id":"11023","category":"일반","title":"내일이","comments":2,"author":"뜌따이","ip":"","date":"01:13","views":71,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11023","source":"dc","game":"erpis","tags":[],"engagement":111},{"id":"11022","category":"일반","title":"레티 능력이 정확하게 뭐임?","comments":21,"author":"아키나이","ip":"","date":"00:50","views":107,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11022","source":"dc","game":"erpis","tags":[],"engagement":527},{"id":"11021","category":"일반","title":"가늘고 길게 in10%단으로 살아남기","comments":2,"author":"할머니틀니도둑","ip":"","date":"00:33","views":58,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11021","source":"dc","game":"erpis","tags":[],"engagement":98},{"id":"11020","category":"일반","title":"지금까지 월보치는 애들","comments":2,"author":"ㅇㅇ","ip":"(119.70)","date":"00:12","views":66,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11020","source":"dc","game":"erpis","tags":[],"engagement":106},{"id":"11019","category":"일반","title":"마지막? 레티 가챠 비틱 쇼 구경하고 가라","comments":10,"author":"레드후","ip":"","date":"05.12","views":173,"likes":1,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11019","source":"dc","game":"erpis","tags":[],"engagement":403},{"id":"11018","category":"일반","title":"갤 소스로 리트해보고 있는데 왤케 점수가 안뜨냐","comments":2,"author":"ㅇㅇ","ip":"","date":"05.12","views":88,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11018","source":"dc","game":"erpis","tags":[],"engagement":128},{"id":"11017","category":"일반","title":"지금 한 300만점까지가 대깨에 결사대인가","comments":3,"author":"ㅇㅇ","ip":"","date":"05.12","views":90,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11017","source":"dc","game":"erpis","tags":[],"engagement":150},{"id":"11016","category":"일반","title":"또 순위 내려갛어","comments":3,"author":"ㅇㅇ","ip":"","date":"05.12","views":85,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11016","source":"dc","game":"erpis","tags":[],"engagement":145},{"id":"11015","category":"일반","title":"레티 풀각해준거 돈아깝네","comments":3,"author":"ㅇㅇ","ip":"(49.172)","date":"05.12","views":115,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11015","source":"dc","game":"erpis","tags":[],"engagement":175},{"id":"11014","category":"일반","title":"이건 음모다","comments":0,"author":"ㅇㅇ","ip":"(119.70)","date":"05.12","views":64,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11014","source":"dc","game":"erpis","tags":[],"engagement":64},{"id":"11013","category":"일반","title":"내일 리세가 진짜 최고다....","comments":1,"author":"ㅇㅇ","ip":"(58.227)","date":"05.12","views":92,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11013","source":"dc","game":"erpis","tags":["positive","newbie"],"engagement":112},{"id":"11012","category":"일반","title":"굿즈 도착","comments":9,"author":"ㅇㅇ","ip":"","date":"05.12","views":99,"likes":4,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11012","source":"dc","game":"erpis","tags":["positive"],"engagement":399},{"id":"11011","category":"일반","title":"경력직 뉴비의 1일차 정보","comments":3,"author":"오늘도눈누","ip":"","date":"05.12","views":93,"likes":2,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11011","source":"dc","game":"erpis","tags":["newbie"],"engagement":213},{"id":"11010","category":"일반","title":"3.9 선택권 추천좀 해줄 수 있을까?","comments":10,"author":"ㅇㅇ","ip":"(118.235)","date":"05.12","views":134,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11010","source":"dc","game":"erpis","tags":["positive"],"engagement":334},{"id":"11009","category":"일반","title":"결장 노리온덱은 못쓰겠네","comments":0,"author":"ㅇㅇ","ip":"","date":"05.12","views":62,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11009","source":"dc","game":"erpis","tags":[],"engagement":62},{"id":"11008","category":"일반","title":"리트는 낫뱃","comments":1,"author":"(´-｀)","ip":"","date":"05.12","views":39,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11008","source":"dc","game":"erpis","tags":[],"engagement":59},{"id":"11007","category":"일반","title":"금초 추천좀","comments":2,"author":"ㅇㅇ","ip":"","date":"05.12","views":70,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11007","source":"dc","game":"erpis","tags":["positive"],"engagement":110},{"id":"11006","category":"일반","title":"월보 이제 끝내자","comments":0,"author":"ㅇㅇ","ip":"(58.227)","date":"05.12","views":50,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11006","source":"dc","game":"erpis","tags":[],"engagement":50},{"id":"11005","category":"일반","title":"갤럼들 연마석 얼마나있음","comments":13,"author":"캣판완장","ip":"","date":"05.12","views":92,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11005","source":"dc","game":"erpis","tags":[],"engagement":352},{"id":"11004","category":"일반","title":"노잼 똥겜인데 뭘 계속 열심히 하는건데ㅋㅋㅋ","comments":1,"author":"ㅇㅇ","ip":"","date":"05.12","views":101,"likes":3,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11004","source":"dc","game":"erpis","tags":[],"engagement":211},{"id":"11003","category":"일반","title":"오늘 첨으로 미접","comments":7,"author":"ㅇㅇ","ip":"(211.234)","date":"05.12","views":89,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11003","source":"dc","game":"erpis","tags":[],"engagement":229},{"id":"11002","category":"일반","title":"아니 광폭셋 무기만 50개는 캔 것 같은데","comments":2,"author":"ㅇㅇ","ip":"","date":"05.12","views":66,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11002","source":"dc","game":"erpis","tags":[],"engagement":106},{"id":"11001","category":"일반","title":"월보 총 인원","comments":8,"author":"오늘도눈누","ip":"","date":"05.12","views":131,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11001","source":"dc","game":"erpis","tags":[],"engagement":291},{"id":"11000","category":"일반","title":"굿즈 후기","comments":12,"author":"뜌따이","ip":"","date":"05.12","views":136,"likes":7,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11000","source":"dc","game":"erpis","tags":["positive"],"engagement":586},{"id":"10999","category":"일반","title":"월보 노잼이란 글밖에 없는데 내 등수는 왜 자꾸 떨어지는거임","comments":10,"author":"ㅇㅇ","ip":"","date":"05.12","views":115,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10999","source":"dc","game":"erpis","tags":[],"engagement":315},{"id":"10998","category":"일반","title":"오스틴 한정 아님?","comments":4,"author":"ㅇㅇ","ip":"(183.96)","date":"05.12","views":75,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10998","source":"dc","game":"erpis","tags":[],"engagement":155},{"id":"10997","category":"일반","title":"한정기념 패키지 하나도 안샀는데 각인패키지는 땡기네","comments":4,"author":"ㅇㅇ","ip":"","date":"05.12","views":72,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10997","source":"dc","game":"erpis","tags":[],"engagement":152},{"id":"10996","category":"일반","title":"진짜 이번에 이성 존나 많이 뿌렸는데","comments":3,"author":"ㅇㅇ","ip":"","date":"05.12","views":103,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10996","source":"dc","game":"erpis","tags":[],"engagement":163},{"id":"10995","category":"일반","title":"이제 걍 분재네","comments":6,"author":"ㅇㅇ","ip":"(118.235)","date":"05.12","views":122,"likes":3,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10995","source":"dc","game":"erpis","tags":[],"engagement":332},{"id":"10994","category":"일반","title":"미래시 대비 방법","comments":4,"author":"오늘도눈누","ip":"","date":"05.12","views":146,"likes":3,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10994","source":"dc","game":"erpis","tags":[],"engagement":316},{"id":"10993","category":"일반","title":"될거같았다","comments":2,"author":"ㅇㅇ","ip":"","date":"05.12","views":175,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10993","source":"dc","game":"erpis","tags":[],"engagement":215},{"id":"10992","category":"일반","title":"진짜 무서운 사실은 내일이면 정규 사료가 끝난다는거임","comments":2,"author":"ㅇㅇ","ip":"","date":"05.12","views":184,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10992","source":"dc","game":"erpis","tags":[],"engagement":224},{"id":"10991","category":"쿠폰","title":"SPL100GIFT","comments":2,"author":"ㅇㅇ","ip":"","date":"05.12","views":163,"likes":4,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10991","source":"dc","game":"erpis","tags":[],"engagement":323}],"sources":{"arca":"https://arca.live/b/erphis","dc":"https://gall.dcinside.com/mgallery/board/lists/?id=erpis"},"stats":{"total":86,"real_posts":77,"notices":9,"bugs":0,"negative":4,"positive":8,"competitor_mentions":0,"newbie_returning":5,"total_views":7991,"total_comments":376,"total_likes":39,"sentiment":"긍정","sentiment_score":0.052},"topEngaging":[{"id":"3359","title":"월보점수를 어캐올리지","url":"https://arca.live/b/erphis/3359","source":"arca","views":158,"comments":22,"likes":0,"engagement":598,"category":""},{"id":"11000","title":"굿즈 후기","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11000","source":"dc","views":136,"comments":12,"likes":7,"engagement":586,"category":"일반"},{"id":"11022","title":"레티 능력이 정확하게 뭐임?","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11022","source":"dc","views":107,"comments":21,"likes":0,"engagement":527,"category":"일반"},{"id":"3373","title":"뉴비들 힐러 사이코말고 아네시 키워도 될 거 같음","url":"https://arca.live/b/erphis/3373","source":"arca","views":167,"comments":16,"likes":0,"engagement":487,"category":""},{"id":"3386","title":"생각해보니 넵튠 게임 3개나 하고 있어","url":"https://arca.live/b/erphis/3386","source":"arca","views":190,"comments":12,"likes":0,"engagement":430,"category":""},{"id":"11019","title":"마지막? 레티 가챠 비틱 쇼 구경하고 가라","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11019","source":"dc","views":173,"comments":10,"likes":1,"engagement":403,"category":"일반"},{"id":"11012","title":"굿즈 도착","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11012","source":"dc","views":99,"comments":9,"likes":4,"engagement":399,"category":"일반"},{"id":"3375","title":"솔직히 난이도 시발임","url":"https://arca.live/b/erphis/3375","source":"arca","views":175,"comments":10,"likes":0,"engagement":375,"category":""},{"id":"3376","title":"나만의 작은 에르피스가 되고 있구나","url":"https://arca.live/b/erphis/3376","source":"arca","views":210,"comments":8,"likes":0,"engagement":370,"category":""},{"id":"11005","title":"갤럼들 연마석 얼마나있음","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11005","source":"dc","views":92,"comments":13,"likes":0,"engagement":352,"category":"일반"}],"analysis":{"dailySummary":"월간보스(월보) 점수·리트라이 피로감이 채널 화제의 정점으로 부정 정서가 두드러짐('월보 노잼이란 글밖에 없는데 등수는 왜 떨어짐', '월보 무한 리트하는 사람들 열정 미쳤네'). 그 와중에 굿즈 도착 후기는 댓글 12·추천 7로 긍정 피크를 형성. 강적 10단계 클리어 파티 모집과 레티(Letty) 가챠·돌파 논의, 배지 리롤·치피배지 효율 토론이 활발. 신규 유입은 적지만 100일 쿠폰·LUCKY11M 등 쿠폰 회전이 활발하고 입문 가이드도 노출됨.","topIssues":[{"title":"월간보스(월보) 보상·난이도 피로","summary":"'월보 노잼', '월보 이제 끝내자', '월보보상 반복재화수급은 머임?', '월보 오늘 몇시간 리트했는데 좀 불쾌하다' 등 보상 대비 시간 투입 불만이 누적. 동시에 '월보 무한 리트' 열정 유저층도 존재해 극단화된 양상.","tone":"부정"},{"title":"강적 10단계 클리어 파티 수요","summary":"'강적 10단계 클리어 팟'(2건), '강적토벌 10단계 빡세다', '강적 너무 힘든데' 등 고난도 콘텐츠 파티 매칭/공략 수요. 협력 플레이 활성 신호이나 진입 장벽 우려도 동반.","tone":"혼합"},{"title":"레티(Letty) 가챠 논쟁","summary":"'레티 풀각해준거 돈아깝네', '레티 능력이 정확하게 뭐임?(댓글 21)', '레티 가챠 비틱 쇼' 등 신규 캐릭터 가치 논쟁이 가장 활발한 댓글 동력.","tone":"혼합"},{"title":"굿즈 발매 호평","summary":"'굿즈 도착'(추천 4, 댓글 9), '굿즈 후기'(추천 7, 댓글 12) - 굿즈 만족도 높아 IP 충성도 신호. 1주년·100일 마케팅 자산화 가능.","tone":"긍정"},{"title":"배지/낙인 시스템 재구성 혼란","summary":"'재구성인가 이거 부옵 전부 리롤이 아니엇냐고!!', '치피배지 걍 쓰레기여도', '배지 리롤권 사료 맛있네' - 배지 리롤 시스템 변경에 대한 기대와 실망이 공존.","tone":"혼합"}],"bugReports":["월보 점수 산정 직관성 부족 - 등수 변동 원인 불명 호소 (아카/디시 다수)","재구성/리롤 시스템 옵션 적용 범위 인지 혼선 (아카 #3377)","이성(재화) 누락 추정 (아카 #3361)"],"competitorMentions":[],"trends":["월간보스가 일간 화제의 1순위로 부상 - 부정/긍정 양극화","레티 픽업이 가챠·돌파·소비 논쟁의 중심축","굿즈/한정기념 패키지 등 IP 상품화 호응 - 매출 시그널","강적 10단계 등 고난도 콘텐츠 협력 수요 활성","넵튠 게임 3개 동시 플레이 언급 - 자사 IP 교차 유저 존재 확인"],"watchlist":["월보 시즌 마감 시 사용자 피로도 회복 여부와 후속 시즌 반응","레티 후속 픽업/한정 캐릭터 발표 시 가챠 여론","배지 리롤·재구성 시스템 패치 노트 반응","굿즈/한정 패키지 후속 라인업과 매출 영향"]}}}};
 
 function fmtNum(n) {
-  if (n === null || n === undefined || isNaN(n)) return "—";
-  return Number(n).toLocaleString("ko-KR");
+  return new Intl.NumberFormat("ko-KR").format(n);
 }
-function fmtDate(iso) {
-  if (!iso) return "—";
-  try { const d = new Date(iso); if (isNaN(d.getTime())) return iso;
-    return d.toLocaleString("ko-KR", { year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
-  } catch { return iso; }
-}
-function fmtTimeOnly(iso) {
-  if (!iso) return "—";
-  try { const d = new Date(iso); if (isNaN(d.getTime())) return iso;
-    return d.toLocaleString("ko-KR", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
-  } catch { return iso; }
-}
-function fmtRelative(iso) {
-  if (!iso) return "";
-  const d = new Date(iso); if (isNaN(d.getTime())) return "";
-  const diffMin = Math.floor((Date.now() - d.getTime()) / 60000);
-  if (diffMin < 0) return "";
-  if (diffMin < 1) return "방금 전";
-  if (diffMin < 60) return `${diffMin}분 전`;
-  const h = Math.floor(diffMin / 60);
-  if (h < 24) return `${h}시간 전`;
-  return `${Math.floor(h / 24)}일 전`;
-}
-function escapeHtml(s) {
-  return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
-}
-function catMeta(cat) {
-  return (STATE.data && STATE.data.categoryMeta && STATE.data.categoryMeta[cat]) || { emoji: "", label: cat, color: "#999" };
+function sentimentClass(s) {
+  if (s === "긍정" || s === "positive") return "sentiment-positive";
+  if (s === "부정" || s === "negative") return "sentiment-negative";
+  if (s === "혼합" || s === "mixed") return "sentiment-mixed";
+  return "sentiment-neutral";
 }
 
-async function loadManifest() {
-  try {
-    const res = await fetch("./data/manifest.json", { cache: "no-store" });
-    if (!res.ok) throw new Error(String(res.status));
-    return await res.json();
-  } catch (e) { return { dates: [], latest: null }; }
-}
-async function loadData(date) {
-  const res = await fetch(`./data/${date}.json`, { cache: "no-store" });
-  if (!res.ok) throw new Error(`${date}.json ${res.status}`);
-  return await res.json();
-}
+const data = window.DATA;
+const games = Object.keys(data.games);
+let activeGame = localStorage.getItem("activeGame") || games[0];
+if (!games.includes(activeGame)) activeGame = games[0];
 
-function renderDatePicker() {
-  const sel = $("#date-select");
-  const dates = (STATE.manifest && STATE.manifest.dates) || [STATE.date];
-  sel.innerHTML = dates.slice().sort().reverse()
-    .map(d => `<option value="${d}"${d === STATE.date ? " selected" : ""}>${d}</option>`).join("");
-  sel.onchange = async (e) => {
-    const d = e.target.value; if (d === STATE.date) return;
-    STATE.date = d;
-    $("#content").innerHTML = '<div class="empty-state">로딩 중…</div>';
-    try {
-      STATE.data = await loadData(d);
-      STATE.activeGame = Object.keys(STATE.data.games)[0];
-      resetFilters(); renderHeader(); renderTabs(); renderGame();
-    } catch (err) {
-      $("#content").innerHTML = `<div class="empty-state">${d} 데이터를 불러올 수 없습니다.</div>`;
-    }
-  };
-}
+// 마지막 업데이트 시간
+const lu = new Date(data.lastUpdated);
+document.getElementById("last-updated").textContent =
+  `마지막 업데이트: ${lu.getFullYear()}-${String(lu.getMonth()+1).padStart(2,"0")}-${String(lu.getDate()).padStart(2,"0")} ${String(lu.getHours()).padStart(2,"0")}:${String(lu.getMinutes()).padStart(2,"0")}`;
 
-function resetFilters() {
-  STATE.filters = { source: "all", search: "", sortBy: "datetime", sortDir: "desc", category: "all" };
-  STATE.pagination = {
-    all: { page: 1, pageSize: 20 },
-    top: { page: 1, pageSize: 10 },
-  };
-}
-
-function renderHeader() {
-  $("#last-updated").textContent = fmtDate(STATE.data.lastUpdated);
-  $("#freshness").textContent = fmtRelative(STATE.data.lastUpdated) ? `(${fmtRelative(STATE.data.lastUpdated)})` : "";
-  const dq = (STATE.data.meta && STATE.data.meta.dataQuality) || {};
-  $("#quality-pill").innerHTML = (dq.malformedCount || 0) === 0
-    ? '<span class="pill ok">데이터 품질 정상</span>'
-    : `<span class="pill warn">⚠ 의심 데이터 ${dq.malformedCount}건 분리</span>`;
-}
-
-function renderTabs() {
-  $("#tabs").innerHTML = Object.entries(STATE.data.games).map(([k, g]) => `
-    <button class="tab${k === STATE.activeGame ? " active" : ""}" data-game="${k}" role="tab">
-      ${escapeHtml(g.name)} <span class="tab-count">${g.stats.total}</span>
-    </button>`).join("");
-  $$(".tab").forEach(btn => btn.onclick = () => {
-    STATE.activeGame = btn.dataset.game; resetFilters(); renderTabs(); renderGame();
+// 탭 빌드
+const tabsEl = document.getElementById("tabs");
+games.forEach(key => {
+  const btn = document.createElement("button");
+  btn.className = "tab";
+  btn.textContent = data.games[key].name;
+  if (key === activeGame) btn.classList.add("active");
+  btn.addEventListener("click", () => {
+    activeGame = key;
+    localStorage.setItem("activeGame", key);
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    btn.classList.add("active");
+    render();
   });
-}
+  tabsEl.appendChild(btn);
+});
 
-/* ----- Filtering ----- */
-function getFilteredPosts(g) {
-  const f = STATE.filters;
-  let posts = (g.posts || []).filter(p => !p._malformed);
-  if (f.category !== "all") posts = posts.filter(p => p.category_5 === f.category);
-  if (f.source !== "all") posts = posts.filter(p => p.source === f.source);
-  if (f.search) {
-    const q = f.search.toLowerCase();
-    posts = posts.filter(p => (p.title || "").toLowerCase().includes(q) || (p.category || "").toLowerCase().includes(q));
-  }
-  return posts;
-}
+// 필터 상태
+const filterState = {
+  source: "all",
+  tag: "all",
+  search: "",
+};
 
-function getSortedPosts(g) {
-  const f = STATE.filters;
-  const posts = getFilteredPosts(g).slice();
-  const dir = f.sortDir === "asc" ? 1 : -1;
-  const key = f.sortBy;
-  const meta = STATE.data.categoryMeta || {};
-  posts.sort((a, b) => {
-    if (key === "datetime") {
-      const at = parseDate(a.datetime);
-      const bt = parseDate(b.datetime);
-      return (at - bt) * dir;
-    }
-    if (key === "category_5") {
-      const oa = (meta[a.category_5] || {}).order ?? 99;
-      const ob = (meta[b.category_5] || {}).order ?? 99;
-      return (oa - ob) * dir;
-    }
-    return ((a[key] || 0) - (b[key] || 0)) * dir;
-  });
-  return posts;
-}
+function render() {
+  const game = data.games[activeGame];
+  const stats = game.stats;
+  const analysis = game.analysis;
 
-// Robust date parser: handles ISO (with T and optional Z) and space-separated
-function parseDate(s) {
-  if (!s) return 0;
-  // Normalize: "YYYY-MM-DD HH:MM:SS" → "YYYY-MM-DDTHH:MM:SS" (treat as local)
-  const normalized = String(s).replace(/^(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2}:\d{2})$/, "$1T$2");
-  const d = new Date(normalized);
-  return isNaN(d.getTime()) ? 0 : d.getTime();
-}
+  const app = document.getElementById("app");
+  app.classList.remove("game-anchorpanic", "game-erpis");
+  app.classList.add(`game-${activeGame}`);
 
-function recomputeStats(posts) {
-  const by_source = {};
-  for (const p of posts) {
-    const s = p.source || "?";
-    if (!by_source[s]) by_source[s] = { count: 0, views: 0, comments: 0, likes: 0 };
-    by_source[s].count++; by_source[s].views += p.views || 0;
-    by_source[s].comments += p.comments || 0; by_source[s].likes += p.likes || 0;
-  }
-  return {
-    total: posts.length,
-    total_views: posts.reduce((a, p) => a + (p.views || 0), 0),
-    total_comments: posts.reduce((a, p) => a + (p.comments || 0), 0),
-    total_likes: posts.reduce((a, p) => a + (p.likes || 0), 0),
-    bugs: posts.filter(p => p.category_5 === "버그").length,
-    notices: posts.filter(p => (p.sub_tags || []).includes("notice")).length,
-    by_source,
-  };
-}
+  const content = document.getElementById("game-content");
+  content.innerHTML = "";
 
-function isFiltered() {
-  const f = STATE.filters;
-  return f.category !== "all" || f.source !== "all" || f.search;
-}
-
-/* ===== Renderers ===== */
-
-function renderSummaryHero(g) {
-  const a = g.analysis || {};
-  const summary = a.dailySummary || "요약 정보가 준비 중입니다.";
-  const src = a.summarySource || "auto-stats";
-  const badge = src === "manual-curated" ? '<span class="source-badge manual">✓ 큐레이션</span>'
-              : src === "llm" ? '<span class="source-badge">LLM 분석</span>'
-              : '<span class="source-badge">자동 통계</span>';
-  return `
-    <div class="summary-hero">
-      <div class="head">
-        <h2>📊 ${escapeHtml(g.name)} · 일일 동향 요약</h2>
-        ${badge}
-      </div>
-      <div class="summary-text">${escapeHtml(summary)}</div>
-    </div>`;
-}
-
-function renderKpis(g) {
-  const useFiltered = isFiltered();
-  const s = useFiltered ? recomputeStats(getFilteredPosts(g)) : g.stats;
-  const real = s.total - (s.notices || 0);
-  const avgViews = real > 0 ? Math.round(s.total_views / real) : 0;
-  return `
-    <div class="kpis">
-      <div class="kpi">
-        <div class="label">${useFiltered ? '필터된 게시물' : '총 게시물'}</div>
-        <div class="value">${fmtNum(s.total)}</div>
-        <div class="sub">콘텐츠 ${fmtNum(real)} · 공지 ${fmtNum(s.notices || 0)}</div>
-      </div>
-      <div class="kpi">
-        <div class="label">총 조회수</div>
-        <div class="value">${fmtNum(s.total_views)}</div>
-        <div class="sub">평균 ${fmtNum(avgViews)} / 글</div>
-      </div>
-      <div class="kpi">
-        <div class="label">총 댓글</div>
-        <div class="value">${fmtNum(s.total_comments)}</div>
-        <div class="sub">평균 ${fmtNum(real > 0 ? (s.total_comments / real).toFixed(1) : 0)} / 글</div>
-      </div>
-      <div class="kpi">
-        <div class="label">총 추천</div>
-        <div class="value">${fmtNum(s.total_likes)}</div>
-        <div class="sub">평균 ${fmtNum(real > 0 ? (s.total_likes / real).toFixed(2) : 0)} / 글</div>
-      </div>
-      <div class="kpi">
-        <div class="label">버그 신고</div>
-        <div class="value" style="color:${(s.bugs||0) > 0 ? 'var(--bad)' : 'var(--text)'}">${fmtNum(s.bugs || 0)}</div>
-        <div class="sub">자동 분류 기반</div>
-      </div>
-    </div>`;
-}
-
-/* ---- Category distribution (donut chart + legend) ---- */
-function renderCategoryDistribution(g) {
-  const counts = g.stats.category_counts || {};
-  const meta = STATE.data.categoryMeta || {};
-  // Always show all 5 categories in fixed order
-  const ordered = Object.keys(meta).sort((a, b) => (meta[a].order || 0) - (meta[b].order || 0));
-  const total = ordered.reduce((sum, k) => sum + (counts[k] || 0), 0);
-  return `
-    <div class="cat-dist">
-      <div>
-        <h2>🥧 카테고리 분포</h2>
-        <div class="chart-wrap"><canvas id="cat-donut"></canvas></div>
-      </div>
-      <div>
-        <h2 style="margin-bottom:8px;">전체 ${total}건 비율</h2>
-        <div class="legend" id="cat-legend">
-          ${ordered.map(k => {
-            const m = meta[k]; const c = counts[k] || 0;
-            const pct = total > 0 ? (c / total * 100).toFixed(1) : "0.0";
-            const active = STATE.filters.category === k;
-            const clickable = c > 0;
-            const cls = `legend-row${active ? " active" : ""}${clickable ? "" : " disabled"}`;
-            const dataAttr = clickable ? `data-cat="${k}"` : "";
-            return `<div class="${cls}" ${dataAttr}>
-              <div class="swatch" style="background:${m.color}"></div>
-              <div class="leg-label">${m.emoji} ${escapeHtml(m.label)}</div>
-              <div class="leg-count">${c}건</div>
-              <div class="leg-pct">${pct}%</div>
-            </div>`;
-          }).join("")}
-        </div>
-      </div>
-    </div>`;
-}
-
-function renderCategoryFilter(g) {
-  const meta = STATE.data.categoryMeta || {};
-  const counts = g.stats.category_counts || {};
-  const ordered = Object.keys(meta).sort((a, b) => (meta[a].order || 0) - (meta[b].order || 0));
-  // Only show categories that have >= 1 post (hide 0-count chips to prevent empty results)
-  const available = ordered.filter(k => (counts[k] || 0) > 0);
-  return `
-    <div class="filter-bar">
-      <div class="label">카테고리 필터 — 클릭으로 화면 전체가 좁혀집니다</div>
-      <div class="cat-chips">
-        <button class="cat-chip${STATE.filters.category === "all" ? " active" : ""}" data-cat="all">
-          📚 전체 <span class="cnt">${g.stats.total}</span>
-        </button>
-        ${available.map(k => {
-          const m = meta[k]; const c = counts[k];
-          const active = STATE.filters.category === k;
-          return `<button class="cat-chip${active ? " active" : ""}" data-cat="${k}"
-                    style="--cat-color: ${m.color}">
-            ${m.emoji} ${escapeHtml(m.label)} <span class="cnt">${c}</span>
-          </button>`;
-        }).join("")}
-      </div>
-    </div>`;
-}
-
-function renderTopIssues(g) {
-  const items = (g.analysis && g.analysis.topIssues) || [];
-  if (items.length === 0) return "";
-  return `
-    <div class="section">
-      <h2>💡 주요 이슈 <span class="count">${items.length}</span></h2>
-      <div class="helptext">오늘 커뮤니티에서 부상한 주요 토픽과 감정 톤</div>
-      <div class="issue-stack">
-        ${items.map(it => `
-          <div class="issue-item tone-${escapeHtml(it.tone || '중립')}">
-            <div class="issue-title">
-              <span>${escapeHtml(it.title)}</span>
-              <span class="tone-badge tone-${escapeHtml(it.tone || '중립')}">${escapeHtml(it.tone || '중립')}</span>
-            </div>
-            <div class="issue-summary">${escapeHtml(it.summary)}</div>
-          </div>`).join("")}
-      </div>
-    </div>`;
-}
-
-function renderTrendsWatchlist(g) {
-  const trends = (g.analysis && g.analysis.trends) || [];
-  const watchlist = (g.analysis && g.analysis.watchlist) || [];
-  if (trends.length === 0 && watchlist.length === 0) return "";
-  return `
-    <div class="grid-2">
-      ${trends.length > 0 ? `
-      <div class="section">
-        <h2>📈 트렌드 신호 <span class="count">${trends.length}</span></h2>
-        <ul class="bullet-list">${trends.map(t => `<li>${escapeHtml(t)}</li>`).join("")}</ul>
-      </div>` : ""}
-      ${watchlist.length > 0 ? `
-      <div class="section">
-        <h2>🔭 모니터링 포인트 <span class="count">${watchlist.length}</span></h2>
-        <ul class="bullet-list">${watchlist.map(w => `<li>${escapeHtml(w)}</li>`).join("")}</ul>
-      </div>` : ""}
-    </div>`;
-}
-
-function renderSourceBreakdown(g) {
-  const useFiltered = isFiltered();
-  const s = useFiltered ? recomputeStats(getFilteredPosts(g)) : g.stats;
-  const sources = s.by_source || {};
-  const entries = Object.entries(sources);
-  if (entries.length === 0) return `<div class="section"><h2>📡 채널별 비중</h2><div class="empty-mini">데이터 없음</div></div>`;
-  const links = g.sources || {};
-  const maxCount = Math.max(...entries.map(([, v]) => v.count), 1);
-  return `
-    <div class="section">
-      <h2>📡 채널별 비중${useFiltered ? ' <span class="count">필터 적용 중</span>' : ''}</h2>
-      ${entries.map(([k, v]) => `
-        <div class="src-row">
-          <div class="src-label">
-            <span class="source-${k}">${k}</span>
-            ${links[k] ? `<a href="${escapeHtml(links[k])}" target="_blank" rel="noopener" style="margin-left:6px;font-size:10px;">↗</a>` : ""}
-          </div>
-          <div class="src-bar-wrap"><div class="src-bar ${k}" style="width:${(v.count / maxCount * 100).toFixed(1)}%"></div></div>
-          <div class="src-val">${fmtNum(v.count)}건 · ${fmtNum(v.views)}조회</div>
-        </div>`).join("")}
-    </div>`;
-}
-
-function renderBugReports(g) {
-  const bugs = (g.analysis && g.analysis.bugReports) || [];
-  return `
-    <div class="section">
-      <h2>🐞 버그/오류 신고 <span class="count">${bugs.length}</span></h2>
-      ${bugs.length === 0 ? `<div class="empty-mini">감지된 버그 신고 없음</div>` : `
-      <ul class="bullet-list">
-        ${bugs.map(b => `<li>${typeof b === "string" ? escapeHtml(b) : `<span class="source-${b.source}">${b.source}</span> <a href="${escapeHtml(b.url)}" target="_blank" rel="noopener">${escapeHtml(b.title)}</a>`}</li>`).join("")}
-      </ul>`}
-    </div>`;
-}
-
-function renderCompetitorMentions(g) {
-  const items = (g.analysis && g.analysis.competitorMentions) || [];
-  if (items.length === 0) return "";
-  return `
-    <div class="section">
-      <h2>⚔️ 경쟁작 언급 <span class="count">${items.length}</span></h2>
-      <ul class="bullet-list">
-        ${items.map(it => `<li>${it.competitor ? `<strong>${escapeHtml(it.competitor)}</strong> — ${escapeHtml(it.context || '')}` : ''}</li>`).join("")}
-      </ul>
-    </div>`;
-}
-
-/* Top Engaging — ALWAYS rendered, respects filter, paginated */
-function renderTopEngaging(g) {
-  const all = getFilteredPosts(g).filter(p => !(p.sub_tags || []).includes("notice"));
-  all.sort((a, b) => (b.engagement || 0) - (a.engagement || 0));
-
-  const total = all.length;
-  const pageSize = STATE.pagination.top.pageSize;
-  const totalPages = Math.max(1, Math.ceil(total / pageSize));
-  if (STATE.pagination.top.page > totalPages) STATE.pagination.top.page = totalPages;
-  const page = STATE.pagination.top.page;
-  const start = (page - 1) * pageSize;
-  const end = Math.min(start + pageSize, total);
-  const items = all.slice(start, end);
-
-  const title = isFiltered()
-    ? `🔥 최고 참여도 (필터됨) <span class="count">${total}</span>`
-    : `🔥 최고 참여도 <span class="count">${total}</span>`;
-  if (total === 0) return `<div class="section"><h2>${title}</h2><div class="empty-mini">조건에 맞는 글이 없습니다.</div></div>`;
-
-  return `
-    <div class="section" id="top-engaging-section">
-      <h2>${title}</h2>
-      <div class="helptext">공지 제외 · 참여도 = 조회 + 댓글 + 추천 · ${total}건 중 ${start + 1}–${end}건</div>
-      <table class="posts">
-        <thead><tr>
-          <th class="rank">#</th><th>제목</th>
-          <th class="num">조회</th><th class="num">댓글</th><th class="num">추천</th><th class="num">참여도</th>
-        </tr></thead>
-        <tbody>
-        ${items.map((p, i) => `
-          <tr>
-            <td class="rank">${start + i + 1}</td>
-            <td class="title-cell">
-              <a href="${escapeHtml(p.url)}" target="_blank" rel="noopener" title="${escapeHtml(p.title)}">${escapeHtml(p.title)}</a>
-              <div class="title-meta">
-                <span class="source-${p.source}">${p.source}</span>
-                ${renderCatBadge(p.category_5)}
-                ${p.datetime ? `<span>· ${fmtTimeOnly(p.datetime)}</span>` : ""}
-              </div>
-            </td>
-            <td class="num strong">${fmtNum(p.views)}</td>
-            <td class="num">${fmtNum(p.comments)}</td>
-            <td class="num">${fmtNum(p.likes)}</td>
-            <td class="num strong">${fmtNum(p.engagement)}</td>
-          </tr>`).join("")}
-        </tbody>
-      </table>
-      ${renderPagination(totalPages, page, "top")}
-    </div>`;
-}
-
-function renderCatBadge(cat) {
-  if (!cat) return "";
-  const m = catMeta(cat);
-  return `<span class="cat-badge ${cat}">${m.emoji} ${escapeHtml(m.label)}</span>`;
-}
-
-function renderAllPosts(g) {
-  const all = getSortedPosts(g);
-  const total = all.length;
-  const pageSize = STATE.pagination.all.pageSize;
-  const totalPages = Math.max(1, Math.ceil(total / pageSize));
-  if (STATE.pagination.all.page > totalPages) STATE.pagination.all.page = totalPages;
-  const page = STATE.pagination.all.page;
-  const start = (page - 1) * pageSize;
-  const end = Math.min(start + pageSize, total);
-  const posts = all.slice(start, end);
-
-  const sortCol = (col, label) => {
-    const active = STATE.filters.sortBy === col;
-    const arrow = active ? (STATE.filters.sortDir === "asc" ? "↑" : "↓") : "↕";
-    return `<th class="${active ? "sorted" : ""}" data-sort="${col}">${label} <span class="arrow">${arrow}</span></th>`;
-  };
-
-  return `
-    <div class="section" id="all-posts-section">
-      <h2>📋 전체 게시물 <span class="count">${total}</span></h2>
-      <div class="helptext">기본 정렬: 최신순 · 헤더 클릭으로 정렬 변경 · 카테고리 배지 클릭으로 필터</div>
-      <div class="table-controls">
-        <button class="filter-btn${STATE.filters.source === "all" ? " active" : ""}" data-src="all">전체 채널</button>
-        ${Object.keys(g.stats.by_source || {}).map(s => `
-          <button class="filter-btn${STATE.filters.source === s ? " active" : ""}" data-src="${s}">${s}</button>`).join("")}
-        <input type="search" class="search-input" placeholder="제목 검색…" value="${escapeHtml(STATE.filters.search)}" id="search-input"/>
-        <span class="sort-info">${total}건 중 ${total === 0 ? 0 : start + 1}–${end}건 표시</span>
-      </div>
-      ${total === 0 ? `<div class="empty-state">조건에 맞는 글이 없습니다.</div>` : `
-      <div class="desktop-table" style="overflow:auto;">
-      <table class="posts">
-        <thead><tr>
-          <th style="width:70px;">채널</th>
-          ${sortCol("category_5", "카테고리")}
-          <th>제목</th>
-          ${sortCol("datetime", "작성")}
-          ${sortCol("views", "조회")}
-          ${sortCol("comments", "댓글")}
-          ${sortCol("likes", "추천")}
-          ${sortCol("engagement", "참여도")}
-        </tr></thead>
-        <tbody>
-        ${posts.map(p => `
-          <tr>
-            <td>
-              <span class="source-${p.source}">${p.source}</span>
-              ${p.category ? `<div style="font-size:10px;color:var(--text-faint);margin-top:2px;">${escapeHtml(p.category)}</div>` : ""}
-            </td>
-            <td>
-              <button class="cat-cell-btn" data-cat-filter="${p.category_5}" title="이 카테고리로 필터">
-                ${renderCatBadge(p.category_5)}
-              </button>
-            </td>
-            <td class="title-cell">
-              <a href="${escapeHtml(p.url)}" target="_blank" rel="noopener" title="${escapeHtml(p.title)}">${escapeHtml(p.title)}</a>
-            </td>
-            <td class="num" style="font-size:11px;">${fmtTimeOnly(p.datetime)}</td>
-            <td class="num strong">${fmtNum(p.views)}</td>
-            <td class="num">${fmtNum(p.comments)}</td>
-            <td class="num">${fmtNum(p.likes)}</td>
-            <td class="num strong">${fmtNum(p.engagement)}</td>
-          </tr>`).join("")}
-        </tbody>
-      </table>
-      </div>
-      <div class="mobile-cards">
-      ${posts.map(p => `
-        <div class="post-card">
-          <div class="pc-head">
-            <span class="source-${p.source}">${p.source}</span>
-            <button class="cat-cell-btn" data-cat-filter="${p.category_5}" title="이 카테고리로 필터">
-              ${renderCatBadge(p.category_5)}
-            </button>
-            <span style="font-size:11px;color:var(--text-faint);margin-left:auto;">${fmtTimeOnly(p.datetime)}</span>
-          </div>
-          <div class="pc-title">
-            <a href="${escapeHtml(p.url)}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a>
-          </div>
-          <div class="pc-metrics">
-            <span>조회 <strong>${fmtNum(p.views)}</strong></span>
-            <span>댓글 <strong>${fmtNum(p.comments)}</strong></span>
-            <span>추천 <strong>${fmtNum(p.likes)}</strong></span>
-            <span style="margin-left:auto;color:var(--game-accent);">참여도 ${fmtNum(p.engagement)}</span>
-          </div>
-        </div>`).join("")}
-      </div>
-      ${renderPagination(totalPages, page, "all")}`}
-    </div>`;
-}
-
-function renderPagination(totalPages, page, target) {
-  // target: "all" or "top"
-  if (totalPages <= 1) return "";
-  const pages = [];
-  const range = (a, b) => { const r = []; for (let i = a; i <= b; i++) r.push(i); return r; };
-  if (totalPages <= 7) pages.push(...range(1, totalPages));
-  else if (page <= 4) pages.push(...range(1, 5), "...", totalPages);
-  else if (page >= totalPages - 3) pages.push(1, "...", ...range(totalPages - 4, totalPages));
-  else pages.push(1, "...", page - 1, page, page + 1, "...", totalPages);
-
-  const cur = STATE.pagination[target] || { pageSize: 20 };
-  const sizes = target === "top" ? [10, 20, 50] : [10, 20, 50, 100];
-
-  return `
-    <div class="pagination">
-      <button class="page-btn" data-page="prev" data-target="${target}" ${page === 1 ? "disabled" : ""}>‹</button>
-      ${pages.map(p => p === "..."
-        ? `<span class="page-info">…</span>`
-        : `<button class="page-btn${p === page ? " active" : ""}" data-page="${p}" data-target="${target}">${p}</button>`).join("")}
-      <button class="page-btn" data-page="next" data-target="${target}" ${page === totalPages ? "disabled" : ""}>›</button>
-      <span class="page-info">${page} / ${totalPages}</span>
-      <select class="page-size-select" data-size-target="${target}">
-        ${sizes.map(n => `<option value="${n}"${n === cur.pageSize ? " selected" : ""}>${n}건씩</option>`).join("")}
-      </select>
-    </div>`;
-}
-
-function renderMalformedNotice(g) {
-  const bad = (g.posts || []).filter(p => p._malformed);
-  if (bad.length === 0) return "";
-  return `<div class="quality-banner">⚠ <strong>의심 데이터 ${bad.length}건</strong>이 자동 감지·분리되었습니다.</div>`;
-}
-
-function renderFilterBanner(g) {
-  if (!isFiltered()) return "";
-  const parts = [];
-  if (STATE.filters.category !== "all") {
-    const m = catMeta(STATE.filters.category);
-    parts.push(`카테고리: <strong>${m.emoji} ${escapeHtml(m.label)}</strong>`);
-  }
-  if (STATE.filters.source !== "all") parts.push(`채널: <strong>${STATE.filters.source}</strong>`);
-  if (STATE.filters.search) parts.push(`검색: "<strong>${escapeHtml(STATE.filters.search)}</strong>"`);
-  const count = getFilteredPosts(g).length;
-  return `
-    <div class="filter-banner">
-      <span>${parts.join(" · ")} — <strong>${count}건</strong> 표시 중</span>
-      <button class="clear" id="clear-filters">필터 해제</button>
-    </div>`;
-}
-
-function renderGame() {
-  const g = STATE.data.games[STATE.activeGame];
-  if (!g) { $("#content").innerHTML = `<div class="empty-state">데이터 없음</div>`; return; }
-  document.body.className = `game-${STATE.activeGame}`;
-
-  // Destroy old chart if exists
-  if (STATE.charts.catDonut) {
-    try { STATE.charts.catDonut.destroy(); } catch {}
-    STATE.charts.catDonut = null;
-  }
-
-  $("#content").innerHTML = `
-    ${renderMalformedNotice(g)}
-    ${renderSummaryHero(g)}
-    ${renderTopIssues(g)}
-    ${renderKpis(g)}
-    ${renderCategoryDistribution(g)}
-    ${renderCategoryFilter(g)}
-    ${renderFilterBanner(g)}
-    ${renderTopEngaging(g)}
-    ${renderTrendsWatchlist(g)}
-    ${renderAllPosts(g)}
+  // 카드 4개
+  const cards = document.createElement("div");
+  cards.className = "cards";
+  cards.innerHTML = `
+    <div class="card">
+      <div class="label">게시물 (24h)</div>
+      <div class="value">${stats.real_posts}</div>
+      <div class="sub">공지 ${stats.notices}개 제외</div>
+    </div>
+    <div class="card">
+      <div class="label">전반적 감정</div>
+      <div class="value ${sentimentClass(stats.sentiment)}">${stats.sentiment}</div>
+      <div class="sub">긍정 ${stats.positive} · 부정 ${stats.negative}</div>
+    </div>
+    <div class="card">
+      <div class="label">총 조회수</div>
+      <div class="value">${fmtNum(stats.total_views)}</div>
+      <div class="sub">평균 ${Math.round(stats.total_views / Math.max(stats.real_posts,1))}</div>
+    </div>
+    <div class="card">
+      <div class="label">버그 제보 의심</div>
+      <div class="value ${stats.bugs > 0 ? "sentiment-negative" : ""}">${stats.bugs}</div>
+      <div class="sub">자동 키워드 검출</div>
+    </div>
   `;
-  buildCategoryChart(g);
-  bindInteractions(g);
+  content.appendChild(cards);
+
+  // 요약 + 차트 row
+  const row1 = document.createElement("div");
+  row1.className = "row";
+  row1.innerHTML = `
+    <div class="section">
+      <h2>📊 오늘의 요약</h2>
+      <div class="summary-box">${analysis.dailySummary}</div>
+    </div>
+    <div class="section">
+      <h2>📈 게시물 분포</h2>
+      <div class="chart-wrap"><canvas id="chart-dist"></canvas></div>
+    </div>
+  `;
+  content.appendChild(row1);
+
+  // 핵심 이슈 + 트렌드 row
+  const row2 = document.createElement("div");
+  row2.className = "row";
+  const issuesHTML = analysis.topIssues.map(it => `
+    <li class="issue-item">
+      <div class="issue-title">
+        ${escapeHtml(it.title)}
+        <span class="tone-badge tone-${it.tone}">${it.tone}</span>
+      </div>
+      <div class="issue-summary">${escapeHtml(it.summary)}</div>
+    </li>
+  `).join("");
+  const trendsHTML = analysis.trends.map(t => `<li class="simple-list-item">${escapeHtml(t)}</li>`).join("");
+
+  row2.innerHTML = `
+    <div class="section">
+      <h2>🎯 핵심 이슈 <span class="count">${analysis.topIssues.length}</span></h2>
+      <ul class="issue-list">${issuesHTML}</ul>
+    </div>
+    <div class="section">
+      <h2>📍 트렌드 & 워치리스트</h2>
+      <div class="muted small" style="margin-bottom: 6px; font-weight:600;">트렌드</div>
+      <ul class="trend-list">${trendsHTML}</ul>
+      <div class="muted small" style="margin: 14px 0 6px; font-weight:600;">계속 추적할 것</div>
+      <ul class="watch-list">${analysis.watchlist.map(w => `<li class="simple-list-item">${escapeHtml(w)}</li>`).join("")}</ul>
+    </div>
+  `;
+  content.appendChild(row2);
+
+  // 버그 + 경쟁작 row
+  const row3 = document.createElement("div");
+  row3.className = "row";
+  const bugsHTML = analysis.bugReports.length
+    ? analysis.bugReports.map(b => `<li class="simple-list-item">${escapeHtml(b)}</li>`).join("")
+    : `<div class="competitor-empty">분석 시점 기준 버그 제보 없음</div>`;
+  const compHTML = analysis.competitorMentions.length
+    ? analysis.competitorMentions.map(c => `
+        <li class="simple-list-item">
+          <strong>${escapeHtml(c.competitor)}</strong>: ${escapeHtml(c.context)}
+        </li>
+      `).join("")
+    : `<div class="competitor-empty">현재 경쟁작 직접 언급 없음</div>`;
+  row3.innerHTML = `
+    <div class="section">
+      <h2>🐛 버그/오류 제보 <span class="count">${analysis.bugReports.length}</span></h2>
+      <ul class="bug-list">${bugsHTML}</ul>
+    </div>
+    <div class="section">
+      <h2>⚔️ 경쟁작 언급 <span class="count">${analysis.competitorMentions.length}</span></h2>
+      <ul>${compHTML}</ul>
+    </div>
+  `;
+  content.appendChild(row3);
+
+  // 인기 게시물 TOP 10
+  const topSec = document.createElement("div");
+  topSec.className = "section";
+  topSec.innerHTML = `
+    <h2>🔥 참여도 TOP 10</h2>
+    <table class="post-table">
+      <thead><tr>
+        <th style="width:60px;">소스</th>
+        <th>제목</th>
+        <th style="width:80px;">카테고리</th>
+        <th style="width:60px; text-align:right;">조회</th>
+        <th style="width:60px; text-align:right;">댓글</th>
+        <th style="width:60px; text-align:right;">추천</th>
+      </tr></thead>
+      <tbody>
+        ${game.topEngaging.map(p => `
+          <tr>
+            <td><span class="source-${p.source}">${p.source.toUpperCase()}</span></td>
+            <td class="title-cell"><a href="${p.url}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a></td>
+            <td class="small muted">${escapeHtml(p.category || "-")}</td>
+            <td style="text-align:right;">${fmtNum(p.views)}</td>
+            <td style="text-align:right;">${p.comments}</td>
+            <td style="text-align:right;">${p.likes}</td>
+          </tr>
+        `).join("")}
+      </tbody>
+    </table>
+  `;
+  content.appendChild(topSec);
+
+  // 전체 게시물 목록 (필터)
+  const allSec = document.createElement("div");
+  allSec.className = "section";
+  allSec.innerHTML = `
+    <h2>📋 전체 게시물 <span class="count">${game.posts.length}</span></h2>
+    <div class="filters">
+      <span class="muted small">소스</span>
+      <button class="filter-btn" data-filter-type="source" data-filter-value="all">전체</button>
+      <button class="filter-btn" data-filter-type="source" data-filter-value="arca">아카라이브</button>
+      <button class="filter-btn" data-filter-type="source" data-filter-value="dc">DC</button>
+      <span class="muted small" style="margin-left: 12px;">태그</span>
+      <button class="filter-btn" data-filter-type="tag" data-filter-value="all">전체</button>
+      <button class="filter-btn" data-filter-type="tag" data-filter-value="bug">🐛 버그</button>
+      <button class="filter-btn" data-filter-type="tag" data-filter-value="negative">😡 부정</button>
+      <button class="filter-btn" data-filter-type="tag" data-filter-value="positive">😊 긍정</button>
+      <button class="filter-btn" data-filter-type="tag" data-filter-value="competitor">⚔️ 경쟁작</button>
+      <button class="filter-btn" data-filter-type="tag" data-filter-value="newbie">🌱 뉴비/복귀</button>
+      <input type="text" class="search-input" placeholder="제목 검색..." id="search-input">
+    </div>
+    <div style="max-height: 480px; overflow-y: auto;">
+      <table class="post-table">
+        <thead><tr>
+          <th style="width:50px;">소스</th>
+          <th>제목</th>
+          <th style="width:90px;">태그</th>
+          <th style="width:70px;">날짜</th>
+          <th style="width:60px; text-align:right;">조회</th>
+          <th style="width:50px; text-align:right;">댓글</th>
+          <th style="width:50px; text-align:right;">추천</th>
+        </tr></thead>
+        <tbody id="all-posts-body"></tbody>
+      </table>
+    </div>
+  `;
+  content.appendChild(allSec);
+
+  // 필터 버튼 초기 active 상태
+  document.querySelectorAll(`[data-filter-type="source"]`).forEach(b => {
+    if (b.dataset.filterValue === filterState.source) b.classList.add("active");
+  });
+  document.querySelectorAll(`[data-filter-type="tag"]`).forEach(b => {
+    if (b.dataset.filterValue === filterState.tag) b.classList.add("active");
+  });
+
+  // 필터 이벤트
+  document.querySelectorAll(".filter-btn").forEach(b => {
+    b.addEventListener("click", () => {
+      const type = b.dataset.filterType;
+      const val = b.dataset.filterValue;
+      filterState[type] = val;
+      document.querySelectorAll(`[data-filter-type="${type}"]`).forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      renderPostList();
+    });
+  });
+  document.getElementById("search-input").addEventListener("input", e => {
+    filterState.search = e.target.value.toLowerCase();
+    renderPostList();
+  });
+
+  renderPostList();
+  renderChart(game);
 }
 
-function buildCategoryChart(g) {
-  const counts = g.stats.category_counts || {};
-  const meta = STATE.data.categoryMeta || {};
-  const all_ordered = Object.keys(meta).sort((a, b) => (meta[a].order || 0) - (meta[b].order || 0));
-  // Only include categories with >0 counts in the chart (cleaner visual)
-  const ordered = all_ordered.filter(k => (counts[k] || 0) > 0);
-  const labels = ordered.map(k => `${meta[k].emoji} ${meta[k].label}`);
-  const data = ordered.map(k => counts[k]);
-  const colors = ordered.map(k => meta[k].color);
+function renderPostList() {
+  const game = data.games[activeGame];
+  const body = document.getElementById("all-posts-body");
+  if (!body) return;
+  const filtered = game.posts.filter(p => {
+    if (filterState.source !== "all" && p.source !== filterState.source) return false;
+    if (filterState.tag !== "all" && !p.tags.includes(filterState.tag)) return false;
+    if (filterState.search && !p.title.toLowerCase().includes(filterState.search)) return false;
+    return true;
+  });
+  const sorted = filtered.sort((a, b) => b.engagement - a.engagement);
+  body.innerHTML = sorted.map(p => `
+    <tr>
+      <td><span class="source-${p.source}">${p.source.toUpperCase()}</span></td>
+      <td class="title-cell"><a href="${p.url}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a></td>
+      <td>${p.tags.filter(t => t !== "notice").map(t => `<span class="tag-chip tag-${t}">${tagLabel(t)}</span>`).join("")}</td>
+      <td class="small muted">${escapeHtml(p.date)}</td>
+      <td style="text-align:right;">${fmtNum(p.views)}</td>
+      <td style="text-align:right;">${p.comments}</td>
+      <td style="text-align:right;">${p.likes}</td>
+    </tr>
+  `).join("") || `<tr><td colspan="7" style="text-align:center; padding:20px; color:#707783;">조건에 맞는 게시물이 없습니다.</td></tr>`;
+}
 
-  const canvas = document.getElementById("cat-donut");
-  if (!canvas || typeof Chart === "undefined" || ordered.length === 0) return;
-  const total = data.reduce((a, b) => a + b, 0);
+function tagLabel(t) {
+  const labels = { bug: "버그", negative: "부정", positive: "긍정", competitor: "경쟁작", newbie: "뉴비" };
+  return labels[t] || t;
+}
 
-  STATE.charts.catDonut = new Chart(canvas, {
+let currentChart = null;
+function renderChart(game) {
+  const ctx = document.getElementById("chart-dist");
+  if (!ctx) return;
+  if (currentChart) currentChart.destroy();
+  // 카테고리별 게시물 수 (notice 제외)
+  const real = game.posts.filter(p => !p.tags.includes("notice"));
+  const tagCounts = {
+    "🐛 버그": real.filter(p => p.tags.includes("bug")).length,
+    "😡 부정": real.filter(p => p.tags.includes("negative")).length,
+    "😊 긍정": real.filter(p => p.tags.includes("positive")).length,
+    "⚔️ 경쟁작": real.filter(p => p.tags.includes("competitor")).length,
+    "🌱 뉴비/복귀": real.filter(p => p.tags.includes("newbie")).length,
+    "기타": real.filter(p => p.tags.length === 0).length,
+  };
+  const colors = ["#dc2626", "#f97316", "#16a34a", "#7c3aed", "#0284c7", "#94a3b8"];
+  currentChart = new Chart(ctx, {
     type: "doughnut",
     data: {
-      labels,
+      labels: Object.keys(tagCounts),
       datasets: [{
-        data, backgroundColor: colors,
-        borderColor: "#fff", borderWidth: 2, hoverOffset: 8,
+        data: Object.values(tagCounts),
+        backgroundColor: colors,
+        borderWidth: 0,
       }]
     },
     options: {
-      responsive: true, maintainAspectRatio: false, cutout: "62%",
+      responsive: true,
+      maintainAspectRatio: false,
       plugins: {
-        legend: { display: false },
-        tooltip: {
-          callbacks: {
-            label: (ctx) => {
-              const v = ctx.parsed; const pct = total > 0 ? (v / total * 100).toFixed(1) : 0;
-              return ` ${ctx.label}: ${v}건 (${pct}%)`;
-            }
-          }
-        }
-      },
-      onClick: (evt, elements) => {
-        if (elements.length === 0) return;
-        const idx = elements[0].index;
-        const catKey = ordered[idx];
-        STATE.filters.category = (STATE.filters.category === catKey) ? "all" : catKey;
-        STATE.pagination.page = 1;
-        renderGame();
-      },
-    },
+        legend: { position: "right", labels: { font: { size: 11 } } },
+      }
+    }
   });
 }
 
-let searchDebounceTimer = null;
-
-function resetPaginationOnly() {
-  STATE.pagination.all.page = 1;
-  STATE.pagination.top.page = 1;
+function escapeHtml(s) {
+  if (s == null) return "";
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
-function bindInteractions(g) {
-  // Category chips
-  $$(".cat-chip").forEach(btn => btn.onclick = () => {
-    STATE.filters.category = btn.dataset.cat;
-    resetPaginationOnly();
-    renderGame();
-    setTimeout(() => {
-      const banner = document.querySelector(".filter-banner") || document.querySelector(".filter-bar");
-      if (banner) banner.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 60);
-  });
-
-  // Category cell badges (in the All Posts table) — clicking filters by that category
-  $$(".cat-cell-btn").forEach(btn => btn.onclick = (e) => {
-    e.preventDefault();
-    const k = btn.dataset.catFilter;
-    STATE.filters.category = (STATE.filters.category === k) ? "all" : k;
-    resetPaginationOnly();
-    renderGame();
-  });
-
-  // Legend rows (clickable when count > 0)
-  $$(".legend-row[data-cat]").forEach(row => row.onclick = () => {
-    const k = row.dataset.cat;
-    STATE.filters.category = (STATE.filters.category === k) ? "all" : k;
-    resetPaginationOnly();
-    renderGame();
-  });
-
-  // Source buttons
-  $$("[data-src]").forEach(btn => btn.onclick = () => {
-    STATE.filters.source = btn.dataset.src;
-    resetPaginationOnly();
-    renderGame();
-  });
-
-  // Clear filters
-  const cf = $("#clear-filters");
-  if (cf) cf.onclick = () => { resetFilters(); renderGame(); };
-
-  // Search with debounce
-  const si = $("#search-input");
-  if (si) {
-    si.oninput = (e) => {
-      const val = e.target.value;
-      if (searchDebounceTimer) clearTimeout(searchDebounceTimer);
-      searchDebounceTimer = setTimeout(() => {
-        STATE.filters.search = val;
-        resetPaginationOnly();
-        renderGame();
-        const newSearch = $("#search-input");
-        if (newSearch) {
-          newSearch.focus();
-          newSearch.setSelectionRange(newSearch.value.length, newSearch.value.length);
-        }
-      }, 250);
-    };
-  }
-
-  // Pagination (works for both 'all' and 'top' targets)
-  $$("[data-page]").forEach(btn => btn.onclick = () => {
-    const p = btn.dataset.page;
-    const target = btn.dataset.target || "all";
-    const filtered = getFilteredPosts(g);
-    const posts = target === "top"
-      ? filtered.filter(x => !(x.sub_tags || []).includes("notice"))
-      : filtered;
-    const totalPages = Math.ceil(posts.length / STATE.pagination[target].pageSize);
-    if (p === "prev") STATE.pagination[target].page = Math.max(1, STATE.pagination[target].page - 1);
-    else if (p === "next") STATE.pagination[target].page = Math.min(totalPages, STATE.pagination[target].page + 1);
-    else STATE.pagination[target].page = parseInt(p, 10);
-    renderGame();
-    const secId = target === "top" ? "#top-engaging-section" : "#all-posts-section";
-    const sec = document.querySelector(secId);
-    if (sec) sec.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-
-  // Page size selectors (per target)
-  $$("[data-size-target]").forEach(sel => sel.onchange = (e) => {
-    const target = sel.dataset.sizeTarget;
-    STATE.pagination[target].pageSize = parseInt(e.target.value, 10);
-    STATE.pagination[target].page = 1;
-    renderGame();
-  });
-
-  bindSorters();
-
-  // CSV
-  $("#download-csv").onclick = (e) => {
-    e.preventDefault();
-    const posts = getSortedPosts(g);
-    const cols = ["source", "displayId", "title", "url", "category_5", "category", "datetime", "views", "comments", "likes", "engagement"];
-    const esc = (v) => `"${String(v == null ? "" : v).replace(/"/g, '""')}"`;
-    const rows = posts.map(p => cols.map(c => esc(p[c])).join(","));
-    const csv = [cols.join(",")].concat(rows).join("\n");
-    const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8" });
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    const catSuffix = STATE.filters.category !== "all" ? "_" + STATE.filters.category : "";
-    a.download = `${STATE.activeGame}_${STATE.date}${catSuffix}.csv`;
-    a.click();
-  };
-
-  // Print
-  const pr = $("#print-btn");
-  if (pr) pr.onclick = (e) => { e.preventDefault(); window.print(); };
-}
-
-function bindSorters() {
-  $$("[data-sort]").forEach(th => th.onclick = () => {
-    const col = th.dataset.sort;
-    if (STATE.filters.sortBy === col) {
-      STATE.filters.sortDir = STATE.filters.sortDir === "asc" ? "desc" : "asc";
-    } else { STATE.filters.sortBy = col; STATE.filters.sortDir = "desc"; }
-    STATE.pagination.page = 1;
-    renderGame();
-  });
-}
-
-async function init() {
-  STATE.manifest = await loadManifest();
-  const hashDate = (window.location.hash || "").replace(/^#date=/, "");
-  STATE.date = hashDate
-    || (STATE.manifest && STATE.manifest.latest)
-    || (STATE.manifest && STATE.manifest.dates && STATE.manifest.dates.slice().sort().pop())
-    || new Date().toISOString().slice(0, 10);
-  try { STATE.data = await loadData(STATE.date); }
-  catch (err) {
-    $("#content").innerHTML = `<div class="empty-state">${STATE.date} 데이터가 없습니다.</div>`;
-    renderDatePicker(); return;
-  }
-  STATE.activeGame = Object.keys(STATE.data.games)[0];
-  renderHeader(); renderDatePicker(); renderTabs(); renderGame();
-}
-
-init();
+render();
 </script>
 </body>
 </html>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
