@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<script type="application/json" id="cowork-artifact-meta">
-{
-  "name": "Community Monitor",
-  "schemaVersion": 1,
-  "description": "앵커패닉/에르피스 커뮤니티 동향 일일 모니터링 대시보드. 아카라이브, DC인사이드 갤러리에서 자동 수집한 게시물을 감정/이슈/버그/경쟁작으로 분류, 시각화한다. 매일 스크립트 갱신 시 update_artifact로 데이터 재반영."
-}
-</script>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -14,656 +7,181 @@
 <style>
 :root { color-scheme: light; }
 * { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: -apple-system, "Apple SD Gothic Neo", "Pretendard", BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
-  background: #f7f8fa;
-  color: #1a1d23;
-  font-size: 14px;
-  line-height: 1.5;
-}
-.app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 24px 20px 60px;
-}
-.header {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-bottom: 22px;
-}
-.header h1 {
-  margin: 0;
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: -0.3px;
-}
-.header .sub {
-  color: #707783;
-  font-size: 13px;
-}
-.tabs {
-  display: flex;
-  gap: 6px;
-  margin: 20px 0 18px;
-  border-bottom: 1px solid #e3e6eb;
-}
-.tab {
-  background: transparent;
-  border: 0;
-  padding: 12px 18px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  color: #707783;
-  border-bottom: 2px solid transparent;
-  transition: all 0.15s ease;
-}
-.tab.active {
-  color: #1a1d23;
-  border-bottom-color: var(--accent);
-}
-.tab:hover { color: #1a1d23; }
-.game-anchorpanic { --accent: #1976d2; --accent-bg: #e3f0fd; }
-.game-erpis { --accent: #7c3aed; --accent-bg: #f1ebfd; }
-.cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  margin-bottom: 16px;
-}
-.card {
-  background: #ffffff;
-  border: 1px solid #e3e6eb;
-  border-radius: 10px;
-  padding: 14px 16px;
-}
-.card .label {
-  font-size: 11px;
-  color: #707783;
-  margin-bottom: 4px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-.card .value {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
-.card .sub {
-  font-size: 11px;
-  color: #707783;
-  margin-top: 2px;
-}
-.sentiment-positive { color: #16a34a; }
-.sentiment-negative { color: #dc2626; }
-.sentiment-neutral { color: #ca8a04; }
-.sentiment-mixed { color: #7c3aed; }
-.row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-.section {
-  background: #ffffff;
-  border: 1px solid #e3e6eb;
-  border-radius: 10px;
-  padding: 18px 20px;
-  margin-bottom: 14px;
-}
-.section h2 {
-  margin: 0 0 12px;
-  font-size: 15px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.section h2 .count {
-  background: var(--accent-bg);
-  color: var(--accent);
-  font-size: 11px;
-  padding: 2px 8px;
-  border-radius: 10px;
-  font-weight: 600;
-}
-.summary-box {
-  background: var(--accent-bg);
-  border-left: 3px solid var(--accent);
-  padding: 14px 16px;
-  border-radius: 6px;
-  color: #2c303a;
-  font-size: 13.5px;
-  line-height: 1.65;
-}
-.issue-list, .trend-list, .watch-list, .bug-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.issue-item {
-  padding: 12px 0;
-  border-bottom: 1px solid #f0f2f5;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.issue-item:last-child { border-bottom: 0; }
-.issue-title {
-  font-weight: 600;
-  font-size: 13.5px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.tone-badge {
-  font-size: 10px;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-.tone-긍정 { background: #dcfce7; color: #166534; }
-.tone-부정 { background: #fee2e2; color: #991b1b; }
-.tone-중립 { background: #fef3c7; color: #92400e; }
-.tone-혼합 { background: #ede9fe; color: #5b21b6; }
-.issue-summary { font-size: 12.5px; color: #4a525e; }
-.simple-list-item {
-  padding: 8px 0;
-  border-bottom: 1px dashed #f0f2f5;
-  font-size: 13px;
-}
-.simple-list-item:last-child { border-bottom: 0; }
-.simple-list-item::before {
-  content: "•";
-  color: var(--accent);
-  font-weight: 700;
-  margin-right: 8px;
-}
-.post-table {
-  width: 100%;
-  font-size: 12.5px;
-  border-collapse: collapse;
-}
-.post-table th {
-  text-align: left;
-  padding: 10px 8px;
-  background: #f7f8fa;
-  font-weight: 600;
-  color: #4a525e;
-  font-size: 11.5px;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-  border-bottom: 1px solid #e3e6eb;
-  position: sticky;
-  top: 0;
-}
-.post-table td {
-  padding: 10px 8px;
-  border-bottom: 1px solid #f0f2f5;
-  vertical-align: middle;
-}
-.post-table tbody tr:hover {
-  background: #f9fafb;
-}
-.post-table a {
-  color: var(--accent);
-  text-decoration: none;
-}
-.post-table a:hover { text-decoration: underline; }
-.source-arca, .source-dc {
-  font-size: 10px;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-.source-arca { background: #fde68a; color: #78350f; }
-.source-dc { background: #c7d2fe; color: #3730a3; }
-.tag-chip {
-  display: inline-block;
-  font-size: 10px;
-  padding: 1px 5px;
-  border-radius: 3px;
-  margin-right: 2px;
-  font-weight: 600;
-}
-.tag-bug { background: #fee2e2; color: #991b1b; }
-.tag-negative { background: #fed7aa; color: #9a3412; }
-.tag-positive { background: #bbf7d0; color: #14532d; }
-.tag-competitor { background: #ddd6fe; color: #5b21b6; }
-.tag-newbie { background: #bae6fd; color: #075985; }
-.tag-notice { background: #e5e7eb; color: #374151; }
-.filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 14px;
-  align-items: center;
-}
-.filter-btn {
-  background: #fff;
-  border: 1px solid #e3e6eb;
-  border-radius: 16px;
-  padding: 5px 12px;
-  font-size: 12px;
-  cursor: pointer;
-  color: #4a525e;
-  font-weight: 500;
-}
-.filter-btn.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-}
-.filter-btn:hover:not(.active) { background: #f0f2f5; }
-.search-input {
-  padding: 6px 12px;
-  border: 1px solid #e3e6eb;
-  border-radius: 16px;
-  font-size: 12px;
-  min-width: 200px;
-  outline: none;
-}
-.search-input:focus { border-color: var(--accent); }
-.chart-wrap {
-  position: relative;
-  height: 220px;
-  width: 100%;
-}
-.muted { color: #707783; }
-.small { font-size: 11.5px; }
-.flex { display: flex; align-items: center; gap: 8px; }
-.actions {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 14px;
-}
-.btn {
-  background: var(--accent);
-  color: #fff;
-  border: 0;
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 600;
-  cursor: pointer;
-}
-.btn:hover { opacity: 0.9; }
-.btn-outline {
-  background: #fff;
-  color: var(--accent);
-  border: 1px solid var(--accent);
-}
-#deep-analysis {
-  display: none;
-  background: #f7f8fa;
-  border-radius: 8px;
-  padding: 14px 16px;
-  margin-top: 12px;
-  font-size: 13px;
-  line-height: 1.65;
-  white-space: pre-wrap;
-}
-#deep-analysis.show { display: block; }
-.competitor-empty {
-  color: #707783;
-  font-style: italic;
-  font-size: 13px;
-  padding: 8px 0;
-}
-.title-cell {
-  max-width: 340px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-@media (max-width: 900px) {
-  .cards { grid-template-columns: repeat(2, 1fr); }
-  .row { grid-template-columns: 1fr; }
-}
+body { margin: 0; font-family: -apple-system,"Apple SD Gothic Neo","Pretendard",BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",sans-serif; background:#f7f8fa; color:#1a1d23; font-size:14px; line-height:1.5; }
+.app { max-width: 1280px; margin:0 auto; padding:24px 20px 60px; }
+.header { display:flex; flex-direction:column; gap:6px; margin-bottom:18px; }
+.header h1 { margin:0; font-size:22px; font-weight:700; letter-spacing:-0.3px; }
+.header .sub { color:#707783; font-size:13px; }
+.date-bar { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:16px; align-items:center; }
+.date-bar select { padding:6px 10px; border:1px solid #e3e6eb; border-radius:6px; font-size:13px; background:white; min-width:160px; }
+.date-bar label { color:#707783; font-size:12px; }
+.tabs { display:flex; gap:6px; margin:0 0 18px; border-bottom:1px solid #e3e6eb; }
+.tab { background:transparent; border:0; padding:12px 18px; cursor:pointer; font-size:14px; font-weight:600; color:#707783; border-bottom:2px solid transparent; }
+.tab.active { color:#1a1d23; border-bottom-color: var(--accent); }
+.game-anchorpanic { --accent:#1976d2; --accent-bg:#e3f0fd; }
+.game-erpis { --accent:#7c3aed; --accent-bg:#f1ebfd; }
+.cards { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:16px; }
+.card { background:#fff; border:1px solid #e3e6eb; border-radius:10px; padding:14px 16px; }
+.card .label { font-size:11px; color:#707783; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.5px; }
+.card .value { font-size:22px; font-weight:700; }
+.card .sub { font-size:11px; color:#707783; margin-top:2px; }
+.sentiment-positive{color:#16a34a;}.sentiment-negative{color:#dc2626;}.sentiment-neutral{color:#ca8a04;}.sentiment-mixed{color:#7c3aed;}
+.row { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px; }
+.section { background:#fff; border:1px solid #e3e6eb; border-radius:10px; padding:18px 20px; margin-bottom:14px; }
+.section h2 { margin:0 0 12px; font-size:15px; font-weight:700; display:flex; align-items:center; gap:8px; }
+.section h2 .count { background:var(--accent-bg); color:var(--accent); font-size:11px; padding:2px 8px; border-radius:10px; font-weight:600; }
+.summary-box { background:var(--accent-bg); border-left:3px solid var(--accent); padding:14px 16px; border-radius:6px; color:#2c303a; font-size:13.5px; line-height:1.65; margin-bottom:10px; }
+.keywords { display:flex; flex-wrap:wrap; gap:6px; }
+.keyword { background:var(--accent-bg); color:var(--accent); padding:4px 10px; border-radius:14px; font-size:12px; font-weight:600; }
+.keyword .cnt { opacity:0.6; font-weight:500; margin-left:4px; font-size:11px; }
+.issue-list, .trend-list, .watch-list, .bug-list { list-style:none; padding:0; margin:0; }
+.issue-item { padding:12px 0; border-bottom:1px solid #f0f2f5; display:flex; flex-direction:column; gap:4px; }
+.issue-item:last-child{border-bottom:0;}
+.issue-title { font-weight:600; font-size:13.5px; display:flex; align-items:center; gap:8px; }
+.tone-badge { font-size:10px; padding:2px 6px; border-radius:4px; font-weight:600; }
+.tone-긍정{background:#dcfce7;color:#166534;}.tone-부정{background:#fee2e2;color:#991b1b;}.tone-중립{background:#fef3c7;color:#92400e;}.tone-혼합{background:#ede9fe;color:#5b21b6;}
+.issue-summary { font-size:12.5px; color:#4a525e; }
+.simple-list-item { padding:8px 0; border-bottom:1px dashed #f0f2f5; font-size:13px; }
+.simple-list-item:last-child{border-bottom:0;}
+.simple-list-item::before { content:"•"; color:var(--accent); font-weight:700; margin-right:8px; }
+.post-table { width:100%; font-size:12.5px; border-collapse:collapse; }
+.post-table th { text-align:left; padding:10px 8px; background:#f7f8fa; font-weight:600; color:#4a525e; font-size:11.5px; text-transform:uppercase; letter-spacing:0.4px; border-bottom:1px solid #e3e6eb; }
+.post-table td { padding:10px 8px; border-bottom:1px solid #f0f2f5; vertical-align:middle; }
+.post-table tbody tr:hover { background:#f9fafb; }
+.post-table a { color:var(--accent); text-decoration:none; }
+.post-table a:hover { text-decoration:underline; }
+.source-arca,.source-dc { font-size:10px; padding:2px 6px; border-radius:4px; font-weight:600; }
+.source-arca{background:#fde68a;color:#78350f;}.source-dc{background:#c7d2fe;color:#3730a3;}
+.tag-chip { display:inline-block; font-size:10px; padding:1px 5px; border-radius:3px; margin-right:2px; font-weight:600; }
+.tag-bug{background:#fee2e2;color:#991b1b;}.tag-negative{background:#fed7aa;color:#9a3412;}.tag-positive{background:#bbf7d0;color:#14532d;}.tag-competitor{background:#ddd6fe;color:#5b21b6;}.tag-newbie{background:#bae6fd;color:#075985;}.tag-guild{background:#fce7f3;color:#9d174d;}.tag-gacha{background:#fef3c7;color:#92400e;}.tag-event{background:#dcfce7;color:#166534;}.tag-balance{background:#e0e7ff;color:#3730a3;}
+.filters { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; align-items:center; }
+.filter-btn { background:#fff; border:1px solid #e3e6eb; border-radius:16px; padding:5px 12px; font-size:12px; cursor:pointer; color:#4a525e; font-weight:500; }
+.filter-btn.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+.search-input { padding:6px 12px; border:1px solid #e3e6eb; border-radius:16px; font-size:12px; min-width:200px; outline:none; }
+.chart-wrap { position:relative; height:220px; width:100%; }
+.muted { color:#707783; } .small { font-size:11.5px; }
+.title-cell { max-width:340px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.loading { padding:40px; text-align:center; color:#707783; }
+@media (max-width:900px) { .cards { grid-template-columns:repeat(2,1fr); } .row { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
 <div class="app" id="app">
   <div class="header">
     <h1>커뮤니티 동향 대시보드</h1>
-    <div class="sub">
-      <span id="last-updated"></span> · 자동 수집: 아카라이브 + DC인사이드 ·
-      네이버는 별도 수동 입력 영역 참고
-    </div>
+    <div class="sub">앵커패닉 + 에르피스 일일 모니터링 · 자동 수집: 아카라이브 + DC인사이드</div>
   </div>
-
+  <div class="date-bar">
+    <label>날짜:</label>
+    <select id="date-select"></select>
+    <span class="muted small" id="meta-info"></span>
+  </div>
   <div class="tabs" id="tabs"></div>
-
-  <div id="game-content"></div>
+  <div id="game-content"><div class="loading">데이터 로딩 중...</div></div>
 </div>
-
 <script>
-window.DATA = {"lastUpdated":"2026-05-13T00:06:19","games":{"anchorpanic":{"name":"앵커패닉","posts":[{"id":"11361","category":"","title":"토벌 오늘인가 다발린 08:56 8 0 11360 애깅이 무한요새 다음회차땐 할배들나옴..??","comments":2,"author":"비타치즈","ip":"","date":"08:51","views":17,"likes":0,"url":"https://arca.live/b/anchorpanic/11361","source":"arca","game":"anchorpanic","tags":[],"engagement":57},{"id":"11359","category":"질문","title":"화로즈 속도 질문점","comments":2,"author":"푸나무","ip":"","date":"07:45","views":46,"likes":0,"url":"https://arca.live/b/anchorpanic/11359","source":"arca","game":"anchorpanic","tags":[],"engagement":86},{"id":"11358","category":"","title":"스트리크닌 에코 전낙은 많이키우면 손해인가?","comments":2,"author":"기아의악마","ip":"","date":"07:43","views":50,"likes":0,"url":"https://arca.live/b/anchorpanic/11358","source":"arca","game":"anchorpanic","tags":[],"engagement":90},{"id":"11357","category":"","title":"ㄹㅇ 이겜 픽뚫 넘모 잘나는거같음","comments":2,"author":"LaziK","ip":"","date":"07:19","views":45,"likes":0,"url":"https://arca.live/b/anchorpanic/11357","source":"arca","game":"anchorpanic","tags":[],"engagement":85},{"id":"11356","category":"","title":"복귀협력 + 신생연맹","comments":1,"author":"닥터앨리스","ip":"","date":"05:05","views":64,"likes":1,"url":"https://arca.live/b/anchorpanic/11356","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":114},{"id":"11355","category":"복귀협력","title":"복귀유저 구함!!","comments":0,"author":"Viperrr","ip":"","date":"04:37","views":26,"likes":0,"url":"https://arca.live/b/anchorpanic/11355","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":26},{"id":"11354","category":"복귀협력","title":"열씨미하는 뉴비 복귀유저분들 간절히 모십니다","comments":0,"author":"ㅇㅇ","ip":"(180.83)","date":"02:28","views":42,"likes":0,"url":"https://arca.live/b/anchorpanic/11354","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":42},{"id":"11353","category":"AI","title":"화로즈 sns 프로필","comments":2,"author":"그런거몰라요","ip":"","date":"02:16","views":65,"likes":6,"url":"https://arca.live/b/anchorpanic/11353","source":"arca","game":"anchorpanic","tags":[],"engagement":285},{"id":"11352","category":"질문","title":"알림코드5 이거 어케 해결함?","comments":4,"author":"gfdt","ip":"","date":"01:46","views":53,"likes":0,"url":"https://arca.live/b/anchorpanic/11352","source":"arca","game":"anchorpanic","tags":[],"engagement":133},{"id":"11351","category":"AI","title":"앵붕이들 잘자","comments":2,"author":"가챠는_타이밍","ip":"","date":"00:58","views":50,"likes":3,"url":"https://arca.live/b/anchorpanic/11351","source":"arca","game":"anchorpanic","tags":[],"engagement":180},{"id":"11350","category":"복귀협력","title":"[기존] 커넥트할 복귀유저 구합니다!!","comments":1,"author":"다온","ip":"","date":"00:38","views":57,"likes":1,"url":"https://arca.live/b/anchorpanic/11350","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":107},{"id":"11349","category":"","title":"백장미 전낙 효율 질문","comments":2,"author":"다온","ip":"","date":"00:12","views":93,"likes":0,"url":"https://arca.live/b/anchorpanic/11349","source":"arca","game":"anchorpanic","tags":[],"engagement":133},{"id":"11348","category":"","title":"로즈 3돌임 4돌임 딱말해","comments":5,"author":"WePungDD","ip":"","date":"00:05","views":121,"likes":0,"url":"https://arca.live/b/anchorpanic/11348","source":"arca","game":"anchorpanic","tags":[],"engagement":221},{"id":"11347","category":"","title":"야옹","comments":3,"author":"광3","ip":"","date":"23:37","views":65,"likes":2,"url":"https://arca.live/b/anchorpanic/11347","source":"arca","game":"anchorpanic","tags":[],"engagement":185},{"id":"11346","category":"복귀협력","title":"28000140962 복귀협력 정말 간곡히 부탁드립니다.!","comments":3,"author":"뉴비","ip":"(218.152)","date":"23:33","views":54,"likes":0,"url":"https://arca.live/b/anchorpanic/11346","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":114},{"id":"11345","category":"","title":"백장미양이 순수외모체급 지리긴하네","comments":2,"author":"광3","ip":"","date":"23:26","views":99,"likes":0,"url":"https://arca.live/b/anchorpanic/11345","source":"arca","game":"anchorpanic","tags":[],"engagement":139},{"id":"11344","category":"","title":"오로라 성능이 증명된건가","comments":2,"author":"지존물퇴","ip":"","date":"23:15","views":130,"likes":1,"url":"https://arca.live/b/anchorpanic/11344","source":"arca","game":"anchorpanic","tags":[],"engagement":200},{"id":"11343","category":"","title":"할배들 칼란리사 번개덱이","comments":12,"author":"현창","ip":"","date":"23:13","views":123,"likes":0,"url":"https://arca.live/b/anchorpanic/11343","source":"arca","game":"anchorpanic","tags":[],"engagement":363},{"id":"11342","category":"","title":"흐흐 칼란 1성 남았다","comments":2,"author":"현창","ip":"","date":"22:52","views":85,"likes":0,"url":"https://arca.live/b/anchorpanic/11342","source":"arca","game":"anchorpanic","tags":[],"engagement":125},{"id":"11341","category":"","title":"뉴비 극한 12 클리어","comments":9,"author":"기아의악마","ip":"","date":"22:45","views":115,"likes":0,"url":"https://arca.live/b/anchorpanic/11341","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":295},{"id":"11340","category":"복귀협력","title":"늅늅비 협력좀 도와줘요","comments":0,"author":"ㅇㅇ","ip":"(119.203)","date":"22:20","views":42,"likes":0,"url":"https://arca.live/b/anchorpanic/11340","source":"arca","game":"anchorpanic","tags":[],"engagement":42},{"id":"11339","category":"","title":"응애챈 연맹원 모집 그런거몰라요 22:09 50 0 11338 4일차 애깅이 갓생루틴 공유","comments":4,"author":"비타치즈","ip":"","date":"22:07","views":98,"likes":2,"url":"https://arca.live/b/anchorpanic/11339","source":"arca","game":"anchorpanic","tags":[],"engagement":238},{"id":"11337","category":"","title":"어 나는 낙인도 가성비만 뽑아","comments":4,"author":"나의리듬은","ip":"","date":"22:00","views":125,"likes":0,"url":"https://arca.live/b/anchorpanic/11337","source":"arca","game":"anchorpanic","tags":[],"engagement":205},{"id":"11336","category":"","title":"8250돌 모아라 ㅇㅇ (121.141) 21:55 61 2 11335 복귀협력 [기존] 복귀 협력할 복귀유저분 찾아요","comments":0,"author":"boca","ip":"","date":"21:52","views":37,"likes":0,"url":"https://arca.live/b/anchorpanic/11336","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":37},{"id":"11334","category":"AI","title":"이런거 맛들리면 안되는데","comments":2,"author":"가챠는_타이밍","ip":"","date":"21:08","views":142,"likes":5,"url":"https://arca.live/b/anchorpanic/11334","source":"arca","game":"anchorpanic","tags":["bug"],"engagement":332},{"id":"11333","category":"","title":"질문 뉴비인데 어떻게하나요?","comments":1,"author":"ㅇㅇ","ip":"(116.42)","date":"20:49","views":86,"likes":0,"url":"https://arca.live/b/anchorpanic/11333","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":106},{"id":"11332","category":"","title":"복귀 협력이 머임?","comments":3,"author":"boca","ip":"","date":"20:45","views":72,"likes":0,"url":"https://arca.live/b/anchorpanic/11332","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":132},{"id":"11331","category":"질문","title":"뉴비 돌파효율 질문","comments":8,"author":"후잉나만미워해","ip":"","date":"20:27","views":130,"likes":0,"url":"https://arca.live/b/anchorpanic/11331","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":290},{"id":"11330","category":"복귀협력","title":"[기존] 같이 복귀협력 하실 복귀유저 구해요","comments":0,"author":"당고","ip":"","date":"20:25","views":41,"likes":1,"url":"https://arca.live/b/anchorpanic/11330","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":71},{"id":"11329","category":"질문","title":"다음 픽업 및 육성 질문","comments":6,"author":"mayora131","ip":"","date":"20:18","views":131,"likes":0,"url":"https://arca.live/b/anchorpanic/11329","source":"arca","game":"anchorpanic","tags":[],"engagement":251},{"id":"11328","category":"질문","title":"스트리크닌이랑 릴리라 있으면 누구 넣으면됨?","comments":4,"author":"boca","ip":"","date":"20:04","views":103,"likes":0,"url":"https://arca.live/b/anchorpanic/11328","source":"arca","game":"anchorpanic","tags":[],"engagement":183},{"id":"11327","category":"복귀협력","title":"[기존] 나랑 격렬하게 커넥트 할 복귀 파트너 구함","comments":2,"author":"mayora131","ip":"","date":"20:01","views":67,"likes":0,"url":"https://arca.live/b/anchorpanic/11327","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":107},{"id":"11326","category":"","title":"1주일전쯤에 복귀했으니까 아직뉴비죠?","comments":2,"author":"기아의악마","ip":"","date":"20:00","views":91,"likes":0,"url":"https://arca.live/b/anchorpanic/11326","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":131},{"id":"11325","category":"","title":"화이트 로즈는 전용 낙인 없음?","comments":3,"author":"ㅇㅇ","ip":"(223.38)","date":"19:51","views":149,"likes":0,"url":"https://arca.live/b/anchorpanic/11325","source":"arca","game":"anchorpanic","tags":[],"engagement":209},{"id":"11324","category":"","title":"양자 6번은 웨 안쥼?","comments":1,"author":"WePungDD","ip":"","date":"19:48","views":68,"likes":0,"url":"https://arca.live/b/anchorpanic/11324","source":"arca","game":"anchorpanic","tags":[],"engagement":88},{"id":"11323","category":"","title":"쿠폰 넣으니까 갑자기 저항력이 700인데","comments":2,"author":"뵈련","ip":"","date":"19:45","views":128,"likes":0,"url":"https://arca.live/b/anchorpanic/11323","source":"arca","game":"anchorpanic","tags":[],"engagement":168},{"id":"11322","category":"복귀협력","title":"[기존] 복귀협력 이벤트 복귀 유저 구함!","comments":2,"author":"아테나","ip":"(221.143)","date":"19:42","views":84,"likes":0,"url":"https://arca.live/b/anchorpanic/11322","source":"arca","game":"anchorpanic","tags":["newbie"],"engagement":124},{"id":"11321","category":"질문","title":"sr 낙인 연결된 운명만 수요 있지 ?","comments":2,"author":"후잉나만미워해","ip":"","date":"18:59","views":88,"likes":0,"url":"https://arca.live/b/anchorpanic/11321","source":"arca","game":"anchorpanic","tags":[],"engagement":128},{"id":"11320","category":"질문","title":"할배들 육성 질문!","comments":4,"author":"차니","ip":"","date":"18:58","views":99,"likes":0,"url":"https://arca.live/b/anchorpanic/11320","source":"arca","game":"anchorpanic","tags":[],"engagement":179},{"id":"11319","category":"","title":"이 젖탱이들은 이미 질렸다고","comments":4,"author":"ㅇㅇ","ip":"","date":"18:56","views":152,"likes":0,"url":"https://arca.live/b/anchorpanic/11319","source":"arca","game":"anchorpanic","tags":[],"engagement":232},{"id":"11318","category":"질문","title":"막기/방어/생명 모듈은 아예 안씀?","comments":7,"author":"l222","ip":"","date":"18:49","views":98,"likes":0,"url":"https://arca.live/b/anchorpanic/11318","source":"arca","game":"anchorpanic","tags":[],"engagement":238},{"id":"5200","category":"공지","title":"정보글은 아카라이브 채널ㄱㄱ","comments":1,"author":"Haley","ip":"","date":"25.12.25","views":396,"likes":8,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5200","source":"dc","game":"anchorpanic","tags":["notice"],"engagement":656},{"id":"5226","category":"정보/","title":"뉴비들 정보 및 질문글 아카라이브 챈 ㄱㄱ","comments":3,"author":"Haley","ip":"","date":"05.08","views":221,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5226","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":281},{"id":"5243","category":"일반","title":"운영만큼은 유저 친화적으로 하는 것 같긴함","comments":2,"author":"Aivy","ip":"","date":"05.12","views":30,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5243","source":"dc","game":"anchorpanic","tags":[],"engagement":70},{"id":"5242","category":"일반","title":"이 겜 왜 재밌지","comments":3,"author":"쨔스","ip":"","date":"05.12","views":54,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5242","source":"dc","game":"anchorpanic","tags":["positive"],"engagement":114},{"id":"5241","category":"일반","title":"브더2 처럼 누패없음?","comments":1,"author":"이덕팔","ip":"","date":"05.11","views":71,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5241","source":"dc","game":"anchorpanic","tags":["competitor"],"engagement":91},{"id":"5240","category":"일반","title":"부계 갤러리에 넣어둘까 했는데 꽉찼네","comments":1,"author":"Aivy","ip":"","date":"05.11","views":46,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5240","source":"dc","game":"anchorpanic","tags":[],"engagement":66},{"id":"5239","category":"일반","title":"복귀유전데 다시 해야하나요??","comments":3,"author":"앵갤러","ip":"(223.39)","date":"05.11","views":82,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5239","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":142},{"id":"5238","category":"일반","title":"뉴비 복귀협력 해줄 귀인 차자요","comments":0,"author":"앵갤러","ip":"(121.139)","date":"05.11","views":11,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5238","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":11},{"id":"5237","category":"일반","title":"대체 여우의축뵥이 어딨냐??","comments":2,"author":"승리의MC무현","ip":"","date":"05.11","views":36,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5237","source":"dc","game":"anchorpanic","tags":[],"engagement":76},{"id":"5236","category":"일반","title":"진짜주네","comments":1,"author":"Aivy","ip":"","date":"05.10","views":109,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5236","source":"dc","game":"anchorpanic","tags":[],"engagement":129},{"id":"5235","category":"일반","title":"뉴비 질문","comments":15,"author":"ユニ:)","ip":"","date":"05.10","views":122,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5235","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":422},{"id":"5234","category":"정보/","title":"1주년 뉴비 요약 공략","comments":6,"author":"Haley","ip":"","date":"05.10","views":247,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5234","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":367},{"id":"5233","category":"일반","title":"갤질하던 사람중에 복귀협력 필요한 사람 있음?","comments":1,"author":"Aivy","ip":"","date":"05.10","views":25,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5233","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":45},{"id":"5232","category":"일반","title":"뉴비 협력할사람 잇음??","comments":11,"author":"참피","ip":"","date":"05.09","views":82,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5232","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":302},{"id":"5231","category":"일반","title":"뉴비 도와주고 싶어도","comments":0,"author":"Aivy","ip":"","date":"05.09","views":61,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5231","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":61},{"id":"5230","category":"일반","title":"화로즈 성능 말안된다ㄹㅇ","comments":1,"author":"참피","ip":"","date":"05.09","views":124,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5230","source":"dc","game":"anchorpanic","tags":[],"engagement":144},{"id":"5229","category":"일반","title":"유입 질문","comments":3,"author":"당고","ip":"","date":"05.09","views":66,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5229","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":126},{"id":"5228","category":"일반","title":"나 해적선 가입했다","comments":1,"author":"앵갤러","ip":"(59.4)","date":"05.08","views":38,"likes":1,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5228","source":"dc","game":"anchorpanic","tags":[],"engagement":88},{"id":"5227","category":"일반","title":"근데 요즘은 칼란 먹고 시작해야하는건가","comments":1,"author":"Aivy","ip":"","date":"05.08","views":72,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5227","source":"dc","game":"anchorpanic","tags":[],"engagement":92},{"id":"5225","category":"일반","title":"누가 매니져 받아올거 아니면","comments":1,"author":"crw","ip":"(121.141)","date":"05.08","views":62,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5225","source":"dc","game":"anchorpanic","tags":[],"engagement":82},{"id":"5224","category":"일반","title":"네트워크오류라서 겜이 안깔림","comments":2,"author":"앵갤러","ip":"(121.64)","date":"05.08","views":40,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5224","source":"dc","game":"anchorpanic","tags":["bug"],"engagement":80},{"id":"5223","category":"일반","title":"이륙가능?","comments":4,"author":"내내","ip":"","date":"05.08","views":215,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5223","source":"dc","game":"anchorpanic","tags":["newbie"],"engagement":295},{"id":"5221","category":"일반","title":"지난 토벌 Top20 연맹 목록","comments":1,"author":"Aivy","ip":"","date":"05.07","views":92,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5221","source":"dc","game":"anchorpanic","tags":[],"engagement":112},{"id":"5220","category":"일반","title":"뭐해야하나 모르겠으면","comments":4,"author":"Aivy","ip":"","date":"05.07","views":151,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5220","source":"dc","game":"anchorpanic","tags":[],"engagement":231},{"id":"5219","category":"일반","title":"겜 안망했는데 갤 글리젠 거의 없는 이유","comments":3,"author":"ㅇㅇ","ip":"(211.108)","date":"05.07","views":244,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5219","source":"dc","game":"anchorpanic","tags":[],"engagement":304},{"id":"5218","category":"일반","title":"복커 뉴빈데...여기 갤 망했음?","comments":1,"author":"앵갤러","ip":"(106.250)","date":"05.06","views":246,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5218","source":"dc","game":"anchorpanic","tags":[],"engagement":266},{"id":"5217","category":"일반","title":"1주년이구나","comments":3,"author":"Aivy","ip":"","date":"04.24","views":191,"likes":1,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5217","source":"dc","game":"anchorpanic","tags":[],"engagement":281},{"id":"5216","category":"일반","title":"뭔 오류야..","comments":0,"author":"앵갤러","ip":"(220.123)","date":"04.22","views":62,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5216","source":"dc","game":"anchorpanic","tags":["bug"],"engagement":62}],"sources":{"arca":"https://arca.live/b/anchorpanic","dc":"https://gall.dcinside.com/mgallery/board/lists/?id=oscarine"},"stats":{"total":69,"real_posts":68,"notices":1,"bugs":3,"negative":0,"positive":1,"competitor_mentions":1,"newbie_returning":24,"total_views":6231,"total_comments":193,"total_likes":24,"sentiment":"중립","sentiment_score":0.015},"topEngaging":[{"id":"5235","title":"뉴비 질문","url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5235","source":"dc","views":122,"comments":15,"likes":0,"engagement":422,"category":"일반"},{"id":"5234","title":"1주년 뉴비 요약 공략","url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5234","source":"dc","views":247,"comments":6,"likes":0,"engagement":367,"category":"정보/"},{"id":"11343","title":"할배들 칼란리사 번개덱이","url":"https://arca.live/b/anchorpanic/11343","source":"arca","views":123,"comments":12,"likes":0,"engagement":363,"category":""},{"id":"11334","title":"이런거 맛들리면 안되는데","url":"https://arca.live/b/anchorpanic/11334","source":"arca","views":142,"comments":2,"likes":5,"engagement":332,"category":"AI"},{"id":"5219","title":"겜 안망했는데 갤 글리젠 거의 없는 이유","url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5219","source":"dc","views":244,"comments":3,"likes":0,"engagement":304,"category":"일반"},{"id":"5232","title":"뉴비 협력할사람 잇음??","url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5232","source":"dc","views":82,"comments":11,"likes":0,"engagement":302,"category":"일반"},{"id":"11341","title":"뉴비 극한 12 클리어","url":"https://arca.live/b/anchorpanic/11341","source":"arca","views":115,"comments":9,"likes":0,"engagement":295,"category":""},{"id":"5223","title":"이륙가능?","url":"https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5223","source":"dc","views":215,"comments":4,"likes":0,"engagement":295,"category":"일반"},{"id":"11331","title":"뉴비 돌파효율 질문","url":"https://arca.live/b/anchorpanic/11331","source":"arca","views":130,"comments":8,"likes":0,"engagement":290,"category":"질문"},{"id":"11353","title":"화로즈 sns 프로필","url":"https://arca.live/b/anchorpanic/11353","source":"arca","views":65,"comments":2,"likes":6,"engagement":285,"category":"AI"}],"analysis":{"dailySummary":"복귀협력 이벤트가 채널 메인 주제로 자리잡아 'OO 복귀유저 구합니다' 류 모집글이 절반 가까이 차지함. 2.8 버전 뉴비/유입 가이드 공지(조회 3,776)와 통합가이드(9,850)가 활발히 노출되며 신규/복귀 유입을 지원하는 분위기. 캐릭터 성능(화이트로즈, 칼란, 오로라, 스트리크닌) 및 낙인·돌파 효율 질문이 다수. 디시 갤러리 쪽은 글리젠이 부진해 '갤 망했음?' 자조 글이 보이지만, 아카라이브 채널은 일 60+건의 게시글이 유지됨.","topIssues":[{"title":"복귀협력 이벤트 매칭 수요 폭증","summary":"'[기존] 커넥트할 복귀유저 구합니다', '복귀협력 이벤트 복귀유저 구함' 등 매칭 요청 글이 12건 이상으로 가장 빈도 높음. 이벤트 흥행은 긍정적이나 '복귀 협력이 머임?' 같은 진입 장벽 신호도 존재.","tone":"혼합"},{"title":"화이트 로즈 성능/낙인/돌파 논의 집중","summary":"'화로즈 속도 질문', '백장미 전낙 효율', '화이트 로즈는 전용 낙인 없음?', '로즈 3돌임 4돌임 딱말해' 등 신규/픽업 캐릭터 빌드 관련 질문이 핵심 트렌드.","tone":"중립"},{"title":"알림코드5 및 네트워크 오류 신고","summary":"'알림코드5 이거 어케 해결함?'(아카), '네트워크오류라서 겜이 안깔림'(디시) 등 접속 단계 오류 호소. 빈도는 적지만 신규 유입 차단 가능 이슈.","tone":"부정"},{"title":"디시 갤러리 글리젠 침체 자각","summary":"'겜 안망했는데 갤 글리젠 거의 없는 이유', '복커 뉴빈데...여기 갤 망했음?' 글이 추천/조회 상위. 디시 커뮤니티는 정보 전달 허브에서 사실상 아카라이브 채널로 이동 중.","tone":"부정"},{"title":"운영 호평","summary":"'운영만큼은 유저 친화적으로 하는 것 같긴함' 글이 댓글 2개로 디시 최상단에 위치. 8250돌 보상, 쿠폰 발급 등 운영 기조에 대한 호의적 반응 일부 포착.","tone":"긍정"}],"bugReports":["알림코드5 접속 오류 (아카 #11352)","쿠폰 적용 후 저항력 700 표시 이상 (아카 #11323)","네트워크오류로 게임 설치 불가 (디시 #5224)","원인 불명 오류 호소 (디시 #5216)"],"competitorMentions":[{"competitor":"브라운더스트2","context":"'브더2 처럼 누패없음?' - 누적패스(누패) 시스템 부재를 브더2와 비교 (디시 #5241)"}],"trends":["복귀협력 이벤트가 채널 최대 트래픽 드라이버로 작동 - 11건 이상의 매칭 요청 게시물","화이트 로즈/칼란 신캐 픽업 후 돌파·낙인·연낙 효율 질문 집중 발생","2.8 버전 뉴비/유입 가이드와 통합가이드가 공지 상단에 노출되며 진입 장벽 완화 시도","디시 갤러리는 사실상 비활성화 단계로 '망했음' 자조 정서가 표출됨","AI 카테고리(SNS 프로필, 일러스트)로 팬콘텐츠 일부 생성 중"],"watchlist":["복귀협력 이벤트 종료 시점에 트래픽 급감 가능성 - 후속 콘텐츠 필요","알림코드5/네트워크 오류 재발 빈도와 운영 대응 속도","디시 갤러리 추가 침체 여부 - 아카 채널 단일 의존 리스크","차기 픽업/한정 캐릭터 출시 시점의 여론 변화"]}},"erpis":{"name":"에르피스","posts":[{"id":"3393","category":"질문","title":"글로리에서 델리스 필수야??","comments":3,"author":"qwer1234","ip":"","date":"2026.05.12","views":43,"likes":0,"url":"https://arca.live/b/erphis/3393","source":"arca","game":"erpis","tags":[],"engagement":103},{"id":"3392","category":"질문","title":"초대장으로 누구 영입할까?","comments":6,"author":"ㅇㅁㄱ","ip":"","date":"2026.05.12","views":99,"likes":0,"url":"https://arca.live/b/erphis/3392","source":"arca","game":"erpis","tags":[],"engagement":219},{"id":"3391","category":"","title":"SPL100GIFT","comments":5,"author":"현창","ip":"","date":"2026.05.12","views":99,"likes":3,"url":"https://arca.live/b/erphis/3391","source":"arca","game":"erpis","tags":[],"engagement":289},{"id":"3390","category":"","title":"치확배지 치피배지 고점차이 허수아비로 쳐보니까 많이나긴한다","comments":1,"author":"현창","ip":"","date":"2026.05.12","views":69,"likes":0,"url":"https://arca.live/b/erphis/3390","source":"arca","game":"erpis","tags":[],"engagement":89},{"id":"3389","category":"질문","title":"레티 돌파하는게 좋음?","comments":3,"author":"능지인증","ip":"","date":"2026.05.11","views":109,"likes":0,"url":"https://arca.live/b/erphis/3389","source":"arca","game":"erpis","tags":["positive"],"engagement":169},{"id":"3388","category":"","title":"당장 5성 탱커가 카구야밖에없는디","comments":3,"author":"벤치탉","ip":"","date":"2026.05.11","views":66,"likes":0,"url":"https://arca.live/b/erphis/3388","source":"arca","game":"erpis","tags":[],"engagement":126},{"id":"3387","category":"","title":"배지 리롤권 사료 맛있네","comments":6,"author":"시엘22","ip":"","date":"2026.05.11","views":98,"likes":0,"url":"https://arca.live/b/erphis/3387","source":"arca","game":"erpis","tags":[],"engagement":218},{"id":"3386","category":"","title":"생각해보니 넵튠 게임 3개나 하고 있어","comments":12,"author":"현창","ip":"","date":"2026.05.11","views":190,"likes":0,"url":"https://arca.live/b/erphis/3386","source":"arca","game":"erpis","tags":[],"engagement":430},{"id":"3385","category":"","title":"월보 무한 리트하는 사람들 열정 미쳤네","comments":4,"author":"현창","ip":"","date":"2026.05.11","views":86,"likes":0,"url":"https://arca.live/b/erphis/3385","source":"arca","game":"erpis","tags":[],"engagement":166},{"id":"3384","category":"","title":"월보보상 반복재화수급은 머임?","comments":5,"author":"천악입니다","ip":"","date":"2026.05.11","views":104,"likes":1,"url":"https://arca.live/b/erphis/3384","source":"arca","game":"erpis","tags":[],"engagement":234},{"id":"3383","category":"","title":"월요일 쿠폰 LUCKY11M","comments":2,"author":"구원","ip":"","date":"2026.05.11","views":84,"likes":2,"url":"https://arca.live/b/erphis/3383","source":"arca","game":"erpis","tags":[],"engagement":184},{"id":"3382","category":"질문","title":"광고보고 왔는데 100뽑으로 리세하는거야?","comments":1,"author":"시어버터","ip":"","date":"2026.05.11","views":94,"likes":0,"url":"https://arca.live/b/erphis/3382","source":"arca","game":"erpis","tags":["newbie"],"engagement":114},{"id":"3381","category":"","title":"아... ㅈ같네..","comments":2,"author":"와플향","ip":"","date":"2026.05.11","views":112,"likes":0,"url":"https://arca.live/b/erphis/3381","source":"arca","game":"erpis","tags":["negative"],"engagement":152},{"id":"3380","category":"","title":"이벤 난이도 개빡세네 능지인증 2026.05.11 45 0 3379 월정액 살까말까 고민중","comments":2,"author":"현창","ip":"","date":"2026.05.11","views":77,"likes":0,"url":"https://arca.live/b/erphis/3380","source":"arca","game":"erpis","tags":["negative"],"engagement":117},{"id":"3378","category":"","title":"에르피스 할게없노","comments":3,"author":"리으응리을","ip":"","date":"2026.05.11","views":98,"likes":0,"url":"https://arca.live/b/erphis/3378","source":"arca","game":"erpis","tags":[],"engagement":158},{"id":"3377","category":"","title":"재구성인가 이거 부옵 전부 리롤이 아니엇냐고!!","comments":1,"author":"은하","ip":"","date":"2026.05.10","views":89,"likes":0,"url":"https://arca.live/b/erphis/3377","source":"arca","game":"erpis","tags":[],"engagement":109},{"id":"3376","category":"","title":"나만의 작은 에르피스가 되고 있구나","comments":8,"author":"현창","ip":"","date":"2026.05.10","views":210,"likes":0,"url":"https://arca.live/b/erphis/3376","source":"arca","game":"erpis","tags":[],"engagement":370},{"id":"3375","category":"","title":"솔직히 난이도 시발임","comments":10,"author":"winter","ip":"","date":"2026.05.10","views":175,"likes":0,"url":"https://arca.live/b/erphis/3375","source":"arca","game":"erpis","tags":["negative"],"engagement":375},{"id":"3374","category":"","title":"이제 뭐 키움? 리바 씀?","comments":10,"author":"도이","ip":"","date":"2026.05.10","views":123,"likes":0,"url":"https://arca.live/b/erphis/3374","source":"arca","game":"erpis","tags":[],"engagement":323},{"id":"3373","category":"","title":"뉴비들 힐러 사이코말고 아네시 키워도 될 거 같음","comments":16,"author":"현창","ip":"","date":"2026.05.10","views":167,"likes":0,"url":"https://arca.live/b/erphis/3373","source":"arca","game":"erpis","tags":["newbie"],"engagement":487},{"id":"3372","category":"질문","title":"지금 1파티를 제대로 꾸리려면","comments":6,"author":"사오링","ip":"","date":"2026.05.10","views":141,"likes":0,"url":"https://arca.live/b/erphis/3372","source":"arca","game":"erpis","tags":[],"engagement":261},{"id":"3371","category":"","title":"후우 벅차다이제....","comments":1,"author":"막차탑승찍먹러","ip":"","date":"2026.05.09","views":66,"likes":0,"url":"https://arca.live/b/erphis/3371","source":"arca","game":"erpis","tags":[],"engagement":86},{"id":"3370","category":"","title":"월보는 다 좋은데.. 보상이..","comments":8,"author":"시엘22","ip":"","date":"2026.05.09","views":134,"likes":0,"url":"https://arca.live/b/erphis/3370","source":"arca","game":"erpis","tags":["positive"],"engagement":294},{"id":"3369","category":"","title":"진심 깃털 치피 원래 이렇게 안주나","comments":2,"author":"은하","ip":"","date":"2026.05.09","views":66,"likes":0,"url":"https://arca.live/b/erphis/3369","source":"arca","game":"erpis","tags":[],"engagement":106},{"id":"3368","category":"질문","title":"글 새로 올렸음","comments":6,"author":"능지인증","ip":"","date":"2026.05.09","views":98,"likes":0,"url":"https://arca.live/b/erphis/3368","source":"arca","game":"erpis","tags":[],"engagement":218},{"id":"3367","category":"질문","title":"리온 리테 뽑아왔음","comments":8,"author":"능지인증","ip":"","date":"2026.05.09","views":103,"likes":0,"url":"https://arca.live/b/erphis/3367","source":"arca","game":"erpis","tags":[],"engagement":263},{"id":"3366","category":"","title":"강적 너무 힘든데 이번 10단..","comments":3,"author":"구원","ip":"","date":"2026.05.09","views":113,"likes":0,"url":"https://arca.live/b/erphis/3366","source":"arca","game":"erpis","tags":[],"engagement":173},{"id":"3365","category":"","title":"강적 10단계 클리어 팟","comments":8,"author":"다이노탱","ip":"","date":"2026.05.09","views":154,"likes":1,"url":"https://arca.live/b/erphis/3365","source":"arca","game":"erpis","tags":[],"engagement":344},{"id":"3364","category":"","title":"늒네인데 오스틴 뽑는게 좋나","comments":2,"author":"벤치탉","ip":"","date":"2026.05.09","views":67,"likes":0,"url":"https://arca.live/b/erphis/3364","source":"arca","game":"erpis","tags":["positive"],"engagement":107},{"id":"3363","category":"","title":"이번 강적 10단계 클리어 팟","comments":1,"author":"힐러군즈","ip":"","date":"2026.05.09","views":115,"likes":1,"url":"https://arca.live/b/erphis/3363","source":"arca","game":"erpis","tags":[],"engagement":165},{"id":"3362","category":"","title":"강적토벌 10단계 빡세다...","comments":5,"author":"ironbeg","ip":"","date":"2026.05.09","views":83,"likes":0,"url":"https://arca.live/b/erphis/3362","source":"arca","game":"erpis","tags":["negative"],"engagement":183},{"id":"3361","category":"","title":"이성 분명 개 많았는데","comments":12,"author":"능지인증","ip":"","date":"2026.05.09","views":96,"likes":0,"url":"https://arca.live/b/erphis/3361","source":"arca","game":"erpis","tags":[],"engagement":336},{"id":"3360","category":"","title":"에르피스 지킴이 열심히 하고 있긴한데","comments":7,"author":"현창","ip":"","date":"2026.05.09","views":183,"likes":0,"url":"https://arca.live/b/erphis/3360","source":"arca","game":"erpis","tags":[],"engagement":323},{"id":"3359","category":"","title":"월보점수를 어캐올리지","comments":22,"author":"시엘22","ip":"","date":"2026.05.08","views":158,"likes":0,"url":"https://arca.live/b/erphis/3359","source":"arca","game":"erpis","tags":[],"engagement":598},{"id":"3358","category":"","title":"월보 오늘 몇시간 리트했는데 좀 불쾌하다","comments":1,"author":"현창","ip":"","date":"2026.05.08","views":130,"likes":0,"url":"https://arca.live/b/erphis/3358","source":"arca","game":"erpis","tags":[],"engagement":150},{"id":"3357","category":"","title":"우후후후","comments":3,"author":"샤논","ip":"","date":"2026.05.08","views":96,"likes":0,"url":"https://arca.live/b/erphis/3357","source":"arca","game":"erpis","tags":[],"engagement":156},{"id":"3356","category":"","title":"광산 박박 긁었더니 뚫쳐나네 애미","comments":2,"author":"사축","ip":"","date":"2026.05.08","views":116,"likes":0,"url":"https://arca.live/b/erphis/3356","source":"arca","game":"erpis","tags":[],"engagement":156},{"id":"3355","category":"질문","title":"스작 효율은 보통 몇 정도임?","comments":9,"author":"능지인증","ip":"","date":"2026.05.08","views":114,"likes":0,"url":"https://arca.live/b/erphis/3355","source":"arca","game":"erpis","tags":[],"engagement":294},{"id":"3354","category":"","title":"쿠폰 NMRE58EP","comments":2,"author":"키디언","ip":"","date":"2026.05.08","views":152,"likes":3,"url":"https://arca.live/b/erphis/3354","source":"arca","game":"erpis","tags":[],"engagement":282},{"id":"284","category":"공지","title":"쿠폰 리스트 (26.05.11)","comments":23,"author":"ㅇㅇ","ip":"","date":"26.02.05","views":35264,"likes":61,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=284","source":"dc","game":"erpis","tags":["notice"],"engagement":37554},{"id":"323","category":"공지","title":"갤길 리스트","comments":26,"author":"ㅇㅇ","ip":"","date":"26.02.05","views":4476,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=323","source":"dc","game":"erpis","tags":["notice"],"engagement":4996},{"id":"8867","category":"공지","title":"각 캐릭터 추천 배지 공략 업데이트(펌)","comments":6,"author":"ㅇㅇ","ip":"","date":"26.03.29","views":2165,"likes":13,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=8867","source":"dc","game":"erpis","tags":["notice"],"engagement":2675},{"id":"8994","category":"공지","title":"뉴비 올인원 가이드(26.04.30)","comments":10,"author":"뜌따이","ip":"","date":"26.04.02","views":2163,"likes":12,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=8994","source":"dc","game":"erpis","tags":["notice"],"engagement":2723},{"id":"106","category":"공지","title":"리세 추천 캐릭","comments":5,"author":"ㅇㅇ","ip":"","date":"26.01.28","views":21084,"likes":17,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=106","source":"dc","game":"erpis","tags":["notice"],"engagement":21694},{"id":"8296","category":"공지","title":"에르피스 갤러리 규칙","comments":0,"author":"ㅇㅇ","ip":"","date":"26.03.20","views":362,"likes":2,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=8296","source":"dc","game":"erpis","tags":["notice"],"engagement":422},{"id":"72","category":"공지","title":"티어표 / 픽업순서","comments":9,"author":"ㅇㅇ","ip":"","date":"26.01.08","views":32206,"likes":6,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=72","source":"dc","game":"erpis","tags":["notice"],"engagement":32566},{"id":"1981","category":"공지","title":"효율적인 현질공략","comments":8,"author":"세노","ip":"","date":"26.02.09","views":5129,"likes":11,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=1981","source":"dc","game":"erpis","tags":["notice"],"engagement":5619},{"id":"503","category":"공지","title":"호출벨","comments":0,"author":"ㅇㅇ","ip":"","date":"26.02.05","views":1529,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=503","source":"dc","game":"erpis","tags":["notice"],"engagement":1529},{"id":"11027","category":"일반","title":"시간이.. 멈췄다.. .","comments":0,"author":"ㅇㅇ","ip":"","date":"07:46","views":33,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11027","source":"dc","game":"erpis","tags":[],"engagement":33},{"id":"11026","category":"일반","title":"국밥 4돌","comments":3,"author":"캣판완장","ip":"","date":"06:32","views":69,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11026","source":"dc","game":"erpis","tags":[],"engagement":129},{"id":"11025","category":"일반","title":"복귀유저인데 티어표확인하고 키울애들 확인함","comments":1,"author":"식용토끼","ip":"","date":"06:09","views":68,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11025","source":"dc","game":"erpis","tags":["newbie"],"engagement":88},{"id":"11024","category":"일반","title":"오늘도 수많은 평행세계를 지켯다","comments":5,"author":"ㅇㅇ","ip":"(119.70)","date":"05:06","views":73,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11024","source":"dc","game":"erpis","tags":[],"engagement":173},{"id":"10982","category":"길드구","title":"갤길 [비상] 5명 구인","comments":2,"author":"아키나이","ip":"","date":"05.12","views":45,"likes":1,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10982","source":"dc","game":"erpis","tags":[],"engagement":115},{"id":"11023","category":"일반","title":"내일이","comments":2,"author":"뜌따이","ip":"","date":"01:13","views":71,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11023","source":"dc","game":"erpis","tags":[],"engagement":111},{"id":"11022","category":"일반","title":"레티 능력이 정확하게 뭐임?","comments":21,"author":"아키나이","ip":"","date":"00:50","views":107,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11022","source":"dc","game":"erpis","tags":[],"engagement":527},{"id":"11021","category":"일반","title":"가늘고 길게 in10%단으로 살아남기","comments":2,"author":"할머니틀니도둑","ip":"","date":"00:33","views":58,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11021","source":"dc","game":"erpis","tags":[],"engagement":98},{"id":"11020","category":"일반","title":"지금까지 월보치는 애들","comments":2,"author":"ㅇㅇ","ip":"(119.70)","date":"00:12","views":66,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11020","source":"dc","game":"erpis","tags":[],"engagement":106},{"id":"11019","category":"일반","title":"마지막? 레티 가챠 비틱 쇼 구경하고 가라","comments":10,"author":"레드후","ip":"","date":"05.12","views":173,"likes":1,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11019","source":"dc","game":"erpis","tags":[],"engagement":403},{"id":"11018","category":"일반","title":"갤 소스로 리트해보고 있는데 왤케 점수가 안뜨냐","comments":2,"author":"ㅇㅇ","ip":"","date":"05.12","views":88,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11018","source":"dc","game":"erpis","tags":[],"engagement":128},{"id":"11017","category":"일반","title":"지금 한 300만점까지가 대깨에 결사대인가","comments":3,"author":"ㅇㅇ","ip":"","date":"05.12","views":90,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11017","source":"dc","game":"erpis","tags":[],"engagement":150},{"id":"11016","category":"일반","title":"또 순위 내려갛어","comments":3,"author":"ㅇㅇ","ip":"","date":"05.12","views":85,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11016","source":"dc","game":"erpis","tags":[],"engagement":145},{"id":"11015","category":"일반","title":"레티 풀각해준거 돈아깝네","comments":3,"author":"ㅇㅇ","ip":"(49.172)","date":"05.12","views":115,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11015","source":"dc","game":"erpis","tags":[],"engagement":175},{"id":"11014","category":"일반","title":"이건 음모다","comments":0,"author":"ㅇㅇ","ip":"(119.70)","date":"05.12","views":64,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11014","source":"dc","game":"erpis","tags":[],"engagement":64},{"id":"11013","category":"일반","title":"내일 리세가 진짜 최고다....","comments":1,"author":"ㅇㅇ","ip":"(58.227)","date":"05.12","views":92,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11013","source":"dc","game":"erpis","tags":["positive","newbie"],"engagement":112},{"id":"11012","category":"일반","title":"굿즈 도착","comments":9,"author":"ㅇㅇ","ip":"","date":"05.12","views":99,"likes":4,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11012","source":"dc","game":"erpis","tags":["positive"],"engagement":399},{"id":"11011","category":"일반","title":"경력직 뉴비의 1일차 정보","comments":3,"author":"오늘도눈누","ip":"","date":"05.12","views":93,"likes":2,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11011","source":"dc","game":"erpis","tags":["newbie"],"engagement":213},{"id":"11010","category":"일반","title":"3.9 선택권 추천좀 해줄 수 있을까?","comments":10,"author":"ㅇㅇ","ip":"(118.235)","date":"05.12","views":134,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11010","source":"dc","game":"erpis","tags":["positive"],"engagement":334},{"id":"11009","category":"일반","title":"결장 노리온덱은 못쓰겠네","comments":0,"author":"ㅇㅇ","ip":"","date":"05.12","views":62,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11009","source":"dc","game":"erpis","tags":[],"engagement":62},{"id":"11008","category":"일반","title":"리트는 낫뱃","comments":1,"author":"(´-｀)","ip":"","date":"05.12","views":39,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11008","source":"dc","game":"erpis","tags":[],"engagement":59},{"id":"11007","category":"일반","title":"금초 추천좀","comments":2,"author":"ㅇㅇ","ip":"","date":"05.12","views":70,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11007","source":"dc","game":"erpis","tags":["positive"],"engagement":110},{"id":"11006","category":"일반","title":"월보 이제 끝내자","comments":0,"author":"ㅇㅇ","ip":"(58.227)","date":"05.12","views":50,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11006","source":"dc","game":"erpis","tags":[],"engagement":50},{"id":"11005","category":"일반","title":"갤럼들 연마석 얼마나있음","comments":13,"author":"캣판완장","ip":"","date":"05.12","views":92,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11005","source":"dc","game":"erpis","tags":[],"engagement":352},{"id":"11004","category":"일반","title":"노잼 똥겜인데 뭘 계속 열심히 하는건데ㅋㅋㅋ","comments":1,"author":"ㅇㅇ","ip":"","date":"05.12","views":101,"likes":3,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11004","source":"dc","game":"erpis","tags":[],"engagement":211},{"id":"11003","category":"일반","title":"오늘 첨으로 미접","comments":7,"author":"ㅇㅇ","ip":"(211.234)","date":"05.12","views":89,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11003","source":"dc","game":"erpis","tags":[],"engagement":229},{"id":"11002","category":"일반","title":"아니 광폭셋 무기만 50개는 캔 것 같은데","comments":2,"author":"ㅇㅇ","ip":"","date":"05.12","views":66,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11002","source":"dc","game":"erpis","tags":[],"engagement":106},{"id":"11001","category":"일반","title":"월보 총 인원","comments":8,"author":"오늘도눈누","ip":"","date":"05.12","views":131,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11001","source":"dc","game":"erpis","tags":[],"engagement":291},{"id":"11000","category":"일반","title":"굿즈 후기","comments":12,"author":"뜌따이","ip":"","date":"05.12","views":136,"likes":7,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11000","source":"dc","game":"erpis","tags":["positive"],"engagement":586},{"id":"10999","category":"일반","title":"월보 노잼이란 글밖에 없는데 내 등수는 왜 자꾸 떨어지는거임","comments":10,"author":"ㅇㅇ","ip":"","date":"05.12","views":115,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10999","source":"dc","game":"erpis","tags":[],"engagement":315},{"id":"10998","category":"일반","title":"오스틴 한정 아님?","comments":4,"author":"ㅇㅇ","ip":"(183.96)","date":"05.12","views":75,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10998","source":"dc","game":"erpis","tags":[],"engagement":155},{"id":"10997","category":"일반","title":"한정기념 패키지 하나도 안샀는데 각인패키지는 땡기네","comments":4,"author":"ㅇㅇ","ip":"","date":"05.12","views":72,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10997","source":"dc","game":"erpis","tags":[],"engagement":152},{"id":"10996","category":"일반","title":"진짜 이번에 이성 존나 많이 뿌렸는데","comments":3,"author":"ㅇㅇ","ip":"","date":"05.12","views":103,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10996","source":"dc","game":"erpis","tags":[],"engagement":163},{"id":"10995","category":"일반","title":"이제 걍 분재네","comments":6,"author":"ㅇㅇ","ip":"(118.235)","date":"05.12","views":122,"likes":3,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10995","source":"dc","game":"erpis","tags":[],"engagement":332},{"id":"10994","category":"일반","title":"미래시 대비 방법","comments":4,"author":"오늘도눈누","ip":"","date":"05.12","views":146,"likes":3,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10994","source":"dc","game":"erpis","tags":[],"engagement":316},{"id":"10993","category":"일반","title":"될거같았다","comments":2,"author":"ㅇㅇ","ip":"","date":"05.12","views":175,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10993","source":"dc","game":"erpis","tags":[],"engagement":215},{"id":"10992","category":"일반","title":"진짜 무서운 사실은 내일이면 정규 사료가 끝난다는거임","comments":2,"author":"ㅇㅇ","ip":"","date":"05.12","views":184,"likes":0,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10992","source":"dc","game":"erpis","tags":[],"engagement":224},{"id":"10991","category":"쿠폰","title":"SPL100GIFT","comments":2,"author":"ㅇㅇ","ip":"","date":"05.12","views":163,"likes":4,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10991","source":"dc","game":"erpis","tags":[],"engagement":323}],"sources":{"arca":"https://arca.live/b/erphis","dc":"https://gall.dcinside.com/mgallery/board/lists/?id=erpis"},"stats":{"total":86,"real_posts":77,"notices":9,"bugs":0,"negative":4,"positive":8,"competitor_mentions":0,"newbie_returning":5,"total_views":7991,"total_comments":376,"total_likes":39,"sentiment":"긍정","sentiment_score":0.052},"topEngaging":[{"id":"3359","title":"월보점수를 어캐올리지","url":"https://arca.live/b/erphis/3359","source":"arca","views":158,"comments":22,"likes":0,"engagement":598,"category":""},{"id":"11000","title":"굿즈 후기","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11000","source":"dc","views":136,"comments":12,"likes":7,"engagement":586,"category":"일반"},{"id":"11022","title":"레티 능력이 정확하게 뭐임?","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11022","source":"dc","views":107,"comments":21,"likes":0,"engagement":527,"category":"일반"},{"id":"3373","title":"뉴비들 힐러 사이코말고 아네시 키워도 될 거 같음","url":"https://arca.live/b/erphis/3373","source":"arca","views":167,"comments":16,"likes":0,"engagement":487,"category":""},{"id":"3386","title":"생각해보니 넵튠 게임 3개나 하고 있어","url":"https://arca.live/b/erphis/3386","source":"arca","views":190,"comments":12,"likes":0,"engagement":430,"category":""},{"id":"11019","title":"마지막? 레티 가챠 비틱 쇼 구경하고 가라","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11019","source":"dc","views":173,"comments":10,"likes":1,"engagement":403,"category":"일반"},{"id":"11012","title":"굿즈 도착","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11012","source":"dc","views":99,"comments":9,"likes":4,"engagement":399,"category":"일반"},{"id":"3375","title":"솔직히 난이도 시발임","url":"https://arca.live/b/erphis/3375","source":"arca","views":175,"comments":10,"likes":0,"engagement":375,"category":""},{"id":"3376","title":"나만의 작은 에르피스가 되고 있구나","url":"https://arca.live/b/erphis/3376","source":"arca","views":210,"comments":8,"likes":0,"engagement":370,"category":""},{"id":"11005","title":"갤럼들 연마석 얼마나있음","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11005","source":"dc","views":92,"comments":13,"likes":0,"engagement":352,"category":"일반"}],"analysis":{"dailySummary":"월간보스(월보) 점수·리트라이 피로감이 채널 화제의 정점으로 부정 정서가 두드러짐('월보 노잼이란 글밖에 없는데 등수는 왜 떨어짐', '월보 무한 리트하는 사람들 열정 미쳤네'). 그 와중에 굿즈 도착 후기는 댓글 12·추천 7로 긍정 피크를 형성. 강적 10단계 클리어 파티 모집과 레티(Letty) 가챠·돌파 논의, 배지 리롤·치피배지 효율 토론이 활발. 신규 유입은 적지만 100일 쿠폰·LUCKY11M 등 쿠폰 회전이 활발하고 입문 가이드도 노출됨.","topIssues":[{"title":"월간보스(월보) 보상·난이도 피로","summary":"'월보 노잼', '월보 이제 끝내자', '월보보상 반복재화수급은 머임?', '월보 오늘 몇시간 리트했는데 좀 불쾌하다' 등 보상 대비 시간 투입 불만이 누적. 동시에 '월보 무한 리트' 열정 유저층도 존재해 극단화된 양상.","tone":"부정"},{"title":"강적 10단계 클리어 파티 수요","summary":"'강적 10단계 클리어 팟'(2건), '강적토벌 10단계 빡세다', '강적 너무 힘든데' 등 고난도 콘텐츠 파티 매칭/공략 수요. 협력 플레이 활성 신호이나 진입 장벽 우려도 동반.","tone":"혼합"},{"title":"레티(Letty) 가챠 논쟁","summary":"'레티 풀각해준거 돈아깝네', '레티 능력이 정확하게 뭐임?(댓글 21)', '레티 가챠 비틱 쇼' 등 신규 캐릭터 가치 논쟁이 가장 활발한 댓글 동력.","tone":"혼합"},{"title":"굿즈 발매 호평","summary":"'굿즈 도착'(추천 4, 댓글 9), '굿즈 후기'(추천 7, 댓글 12) - 굿즈 만족도 높아 IP 충성도 신호. 1주년·100일 마케팅 자산화 가능.","tone":"긍정"},{"title":"배지/낙인 시스템 재구성 혼란","summary":"'재구성인가 이거 부옵 전부 리롤이 아니엇냐고!!', '치피배지 걍 쓰레기여도', '배지 리롤권 사료 맛있네' - 배지 리롤 시스템 변경에 대한 기대와 실망이 공존.","tone":"혼합"}],"bugReports":["월보 점수 산정 직관성 부족 - 등수 변동 원인 불명 호소 (아카/디시 다수)","재구성/리롤 시스템 옵션 적용 범위 인지 혼선 (아카 #3377)","이성(재화) 누락 추정 (아카 #3361)"],"competitorMentions":[],"trends":["월간보스가 일간 화제의 1순위로 부상 - 부정/긍정 양극화","레티 픽업이 가챠·돌파·소비 논쟁의 중심축","굿즈/한정기념 패키지 등 IP 상품화 호응 - 매출 시그널","강적 10단계 등 고난도 콘텐츠 협력 수요 활성","넵튠 게임 3개 동시 플레이 언급 - 자사 IP 교차 유저 존재 확인"],"watchlist":["월보 시즌 마감 시 사용자 피로도 회복 여부와 후속 시즌 반응","레티 후속 픽업/한정 캐릭터 발표 시 가챠 여론","배지 리롤·재구성 시스템 패치 노트 반응","굿즈/한정 패키지 후속 라인업과 매출 영향"]}}}};
+function fmtNum(n){return new Intl.NumberFormat("ko-KR").format(n);}
+function sentimentClass(s){if(s==="긍정")return"sentiment-positive";if(s==="부정")return"sentiment-negative";if(s==="혼합")return"sentiment-mixed";return"sentiment-neutral";}
+function escapeHtml(s){if(s==null)return"";return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;");}
+function tagLabel(t){return({bug:"버그",negative:"부정",positive:"긍정",competitor:"경쟁작",newbie:"뉴비",guild:"길드",gacha:"가챠",event:"이벤트",balance:"밸런스"})[t]||t;}
+let dateList = [], currentDate = '', currentData = null, activeGame = '', activeChart = null;
+const filterState = {source:"all", tag:"all", search:""};
 
-function fmtNum(n) {
-  return new Intl.NumberFormat("ko-KR").format(n);
+async function loadDateIndex() {
+  const r = await fetch('data/index.json?ts=' + Date.now());
+  const j = await r.json();
+  dateList = j.dates.sort().reverse();
+  const sel = document.getElementById('date-select');
+  sel.innerHTML = dateList.map(d => '<option value="' + d + '">' + d + '</option>').join('');
+  sel.addEventListener('change', () => loadDate(sel.value));
+  if (dateList.length) await loadDate(dateList[0]);
 }
-function sentimentClass(s) {
-  if (s === "긍정" || s === "positive") return "sentiment-positive";
-  if (s === "부정" || s === "negative") return "sentiment-negative";
-  if (s === "혼합" || s === "mixed") return "sentiment-mixed";
-  return "sentiment-neutral";
+async function loadDate(date) {
+  currentDate = date;
+  document.getElementById('game-content').innerHTML = '<div class="loading">데이터 로딩 중...</div>';
+  const r = await fetch('data/' + date + '.json?ts=' + Date.now());
+  currentData = await r.json();
+  const games = Object.keys(currentData.games);
+  if (!activeGame || !games.includes(activeGame)) activeGame = games[0];
+  buildTabs(games);
+  document.getElementById('meta-info').textContent = '마지막 업데이트: ' + new Date(currentData.lastUpdated).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'});
+  render();
 }
-
-const data = window.DATA;
-const games = Object.keys(data.games);
-let activeGame = localStorage.getItem("activeGame") || games[0];
-if (!games.includes(activeGame)) activeGame = games[0];
-
-// 마지막 업데이트 시간
-const lu = new Date(data.lastUpdated);
-document.getElementById("last-updated").textContent =
-  `마지막 업데이트: ${lu.getFullYear()}-${String(lu.getMonth()+1).padStart(2,"0")}-${String(lu.getDate()).padStart(2,"0")} ${String(lu.getHours()).padStart(2,"0")}:${String(lu.getMinutes()).padStart(2,"0")}`;
-
-// 탭 빌드
-const tabsEl = document.getElementById("tabs");
-games.forEach(key => {
-  const btn = document.createElement("button");
-  btn.className = "tab";
-  btn.textContent = data.games[key].name;
-  if (key === activeGame) btn.classList.add("active");
-  btn.addEventListener("click", () => {
-    activeGame = key;
-    localStorage.setItem("activeGame", key);
-    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-    btn.classList.add("active");
-    render();
+function buildTabs(games) {
+  const el = document.getElementById('tabs');
+  el.innerHTML = '';
+  games.forEach(key => {
+    const btn = document.createElement('button');
+    btn.className = 'tab' + (key === activeGame ? ' active' : '');
+    btn.textContent = currentData.games[key].name;
+    btn.onclick = () => { activeGame = key; document.querySelectorAll('.tab').forEach(t => t.classList.remove('active')); btn.classList.add('active'); render(); };
+    el.appendChild(btn);
   });
-  tabsEl.appendChild(btn);
-});
-
-// 필터 상태
-const filterState = {
-  source: "all",
-  tag: "all",
-  search: "",
-};
-
+}
 function render() {
-  const game = data.games[activeGame];
-  const stats = game.stats;
-  const analysis = game.analysis;
-
-  const app = document.getElementById("app");
-  app.classList.remove("game-anchorpanic", "game-erpis");
-  app.classList.add(`game-${activeGame}`);
-
-  const content = document.getElementById("game-content");
-  content.innerHTML = "";
-
-  // 카드 4개
-  const cards = document.createElement("div");
-  cards.className = "cards";
-  cards.innerHTML = `
-    <div class="card">
-      <div class="label">게시물 (24h)</div>
-      <div class="value">${stats.real_posts}</div>
-      <div class="sub">공지 ${stats.notices}개 제외</div>
-    </div>
-    <div class="card">
-      <div class="label">전반적 감정</div>
-      <div class="value ${sentimentClass(stats.sentiment)}">${stats.sentiment}</div>
-      <div class="sub">긍정 ${stats.positive} · 부정 ${stats.negative}</div>
-    </div>
-    <div class="card">
-      <div class="label">총 조회수</div>
-      <div class="value">${fmtNum(stats.total_views)}</div>
-      <div class="sub">평균 ${Math.round(stats.total_views / Math.max(stats.real_posts,1))}</div>
-    </div>
-    <div class="card">
-      <div class="label">버그 제보 의심</div>
-      <div class="value ${stats.bugs > 0 ? "sentiment-negative" : ""}">${stats.bugs}</div>
-      <div class="sub">자동 키워드 검출</div>
-    </div>
-  `;
-  content.appendChild(cards);
-
-  // 요약 + 차트 row
-  const row1 = document.createElement("div");
-  row1.className = "row";
-  row1.innerHTML = `
-    <div class="section">
-      <h2>📊 오늘의 요약</h2>
-      <div class="summary-box">${analysis.dailySummary}</div>
-    </div>
-    <div class="section">
-      <h2>📈 게시물 분포</h2>
-      <div class="chart-wrap"><canvas id="chart-dist"></canvas></div>
-    </div>
-  `;
-  content.appendChild(row1);
-
-  // 핵심 이슈 + 트렌드 row
-  const row2 = document.createElement("div");
-  row2.className = "row";
-  const issuesHTML = analysis.topIssues.map(it => `
-    <li class="issue-item">
-      <div class="issue-title">
-        ${escapeHtml(it.title)}
-        <span class="tone-badge tone-${it.tone}">${it.tone}</span>
-      </div>
-      <div class="issue-summary">${escapeHtml(it.summary)}</div>
-    </li>
-  `).join("");
-  const trendsHTML = analysis.trends.map(t => `<li class="simple-list-item">${escapeHtml(t)}</li>`).join("");
-
-  row2.innerHTML = `
-    <div class="section">
-      <h2>🎯 핵심 이슈 <span class="count">${analysis.topIssues.length}</span></h2>
-      <ul class="issue-list">${issuesHTML}</ul>
-    </div>
-    <div class="section">
-      <h2>📍 트렌드 & 워치리스트</h2>
-      <div class="muted small" style="margin-bottom: 6px; font-weight:600;">트렌드</div>
-      <ul class="trend-list">${trendsHTML}</ul>
-      <div class="muted small" style="margin: 14px 0 6px; font-weight:600;">계속 추적할 것</div>
-      <ul class="watch-list">${analysis.watchlist.map(w => `<li class="simple-list-item">${escapeHtml(w)}</li>`).join("")}</ul>
-    </div>
-  `;
-  content.appendChild(row2);
-
-  // 버그 + 경쟁작 row
-  const row3 = document.createElement("div");
-  row3.className = "row";
-  const bugsHTML = analysis.bugReports.length
-    ? analysis.bugReports.map(b => `<li class="simple-list-item">${escapeHtml(b)}</li>`).join("")
-    : `<div class="competitor-empty">분석 시점 기준 버그 제보 없음</div>`;
-  const compHTML = analysis.competitorMentions.length
-    ? analysis.competitorMentions.map(c => `
-        <li class="simple-list-item">
-          <strong>${escapeHtml(c.competitor)}</strong>: ${escapeHtml(c.context)}
-        </li>
-      `).join("")
-    : `<div class="competitor-empty">현재 경쟁작 직접 언급 없음</div>`;
-  row3.innerHTML = `
-    <div class="section">
-      <h2>🐛 버그/오류 제보 <span class="count">${analysis.bugReports.length}</span></h2>
-      <ul class="bug-list">${bugsHTML}</ul>
-    </div>
-    <div class="section">
-      <h2>⚔️ 경쟁작 언급 <span class="count">${analysis.competitorMentions.length}</span></h2>
-      <ul>${compHTML}</ul>
-    </div>
-  `;
-  content.appendChild(row3);
-
-  // 인기 게시물 TOP 10
-  const topSec = document.createElement("div");
-  topSec.className = "section";
-  topSec.innerHTML = `
-    <h2>🔥 참여도 TOP 10</h2>
-    <table class="post-table">
-      <thead><tr>
-        <th style="width:60px;">소스</th>
-        <th>제목</th>
-        <th style="width:80px;">카테고리</th>
-        <th style="width:60px; text-align:right;">조회</th>
-        <th style="width:60px; text-align:right;">댓글</th>
-        <th style="width:60px; text-align:right;">추천</th>
-      </tr></thead>
-      <tbody>
-        ${game.topEngaging.map(p => `
-          <tr>
-            <td><span class="source-${p.source}">${p.source.toUpperCase()}</span></td>
-            <td class="title-cell"><a href="${p.url}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a></td>
-            <td class="small muted">${escapeHtml(p.category || "-")}</td>
-            <td style="text-align:right;">${fmtNum(p.views)}</td>
-            <td style="text-align:right;">${p.comments}</td>
-            <td style="text-align:right;">${p.likes}</td>
-          </tr>
-        `).join("")}
-      </tbody>
-    </table>
-  `;
-  content.appendChild(topSec);
-
-  // 전체 게시물 목록 (필터)
-  const allSec = document.createElement("div");
-  allSec.className = "section";
-  allSec.innerHTML = `
-    <h2>📋 전체 게시물 <span class="count">${game.posts.length}</span></h2>
-    <div class="filters">
-      <span class="muted small">소스</span>
-      <button class="filter-btn" data-filter-type="source" data-filter-value="all">전체</button>
-      <button class="filter-btn" data-filter-type="source" data-filter-value="arca">아카라이브</button>
-      <button class="filter-btn" data-filter-type="source" data-filter-value="dc">DC</button>
-      <span class="muted small" style="margin-left: 12px;">태그</span>
-      <button class="filter-btn" data-filter-type="tag" data-filter-value="all">전체</button>
-      <button class="filter-btn" data-filter-type="tag" data-filter-value="bug">🐛 버그</button>
-      <button class="filter-btn" data-filter-type="tag" data-filter-value="negative">😡 부정</button>
-      <button class="filter-btn" data-filter-type="tag" data-filter-value="positive">😊 긍정</button>
-      <button class="filter-btn" data-filter-type="tag" data-filter-value="competitor">⚔️ 경쟁작</button>
-      <button class="filter-btn" data-filter-type="tag" data-filter-value="newbie">🌱 뉴비/복귀</button>
-      <input type="text" class="search-input" placeholder="제목 검색..." id="search-input">
-    </div>
-    <div style="max-height: 480px; overflow-y: auto;">
-      <table class="post-table">
-        <thead><tr>
-          <th style="width:50px;">소스</th>
-          <th>제목</th>
-          <th style="width:90px;">태그</th>
-          <th style="width:70px;">날짜</th>
-          <th style="width:60px; text-align:right;">조회</th>
-          <th style="width:50px; text-align:right;">댓글</th>
-          <th style="width:50px; text-align:right;">추천</th>
-        </tr></thead>
-        <tbody id="all-posts-body"></tbody>
-      </table>
-    </div>
-  `;
-  content.appendChild(allSec);
-
-  // 필터 버튼 초기 active 상태
-  document.querySelectorAll(`[data-filter-type="source"]`).forEach(b => {
-    if (b.dataset.filterValue === filterState.source) b.classList.add("active");
+  const game = currentData.games[activeGame];
+  const s = game.stats, a = game.analysis || {};
+  const app = document.getElementById('app');
+  app.classList.remove('game-anchorpanic','game-erpis');
+  app.classList.add('game-' + activeGame);
+  const c = document.getElementById('game-content');
+  const kwHtml = (a.keywords || []).slice(0,12).map(k => '<span class="keyword">#' + escapeHtml(k.word) + '<span class="cnt">' + k.count + '</span></span>').join('');
+  const issuesHtml = (a.topIssues || []).map(it => '<li class="issue-item"><div class="issue-title">' + escapeHtml(it.title) + '<span class="tone-badge tone-' + it.tone + '">' + it.tone + '</span></div><div class="issue-summary">' + escapeHtml(it.summary) + '</div></li>').join('');
+  const trendsHtml = (a.trends || []).map(t => '<li class="simple-list-item">' + escapeHtml(t) + '</li>').join('');
+  const watchHtml = (a.watchlist || []).map(w => '<li class="simple-list-item">' + escapeHtml(w) + '</li>').join('');
+  const bugsHtml = (a.bugReports || []).length ? (a.bugReports.map(b => '<li class="simple-list-item">' + escapeHtml(b) + '</li>').join('')) : '<div class="muted small" style="font-style:italic;padding:8px 0;">버그 제보 없음</div>';
+  const compHtml = (a.competitorMentions || []).length ? (a.competitorMentions.map(c => '<li class="simple-list-item"><strong>' + escapeHtml(c.competitor) + '</strong>: ' + escapeHtml(c.context) + '</li>').join('')) : '<div class="muted small" style="font-style:italic;padding:8px 0;">경쟁작 언급 없음</div>';
+  const topHtml = (game.topEngaging || []).map(p => '<tr><td><span class="source-' + p.source + '">' + p.source.toUpperCase() + '</span></td><td class="title-cell"><a href="' + p.url + '" target="_blank">' + escapeHtml(p.title) + '</a></td><td class="small muted">' + escapeHtml(p.category||'-') + '</td><td style="text-align:right;">' + fmtNum(p.views) + '</td><td style="text-align:right;">' + p.comments + '</td><td style="text-align:right;">' + p.likes + '</td></tr>').join('');
+  
+  c.innerHTML = '<div class="cards"><div class="card"><div class="label">게시물 (전일)</div><div class="value">' + s.real_posts + '</div><div class="sub">공지 ' + (s.notices||0) + '개 제외</div></div><div class="card"><div class="label">전반적 감정</div><div class="value ' + sentimentClass(s.sentiment) + '">' + s.sentiment + '</div><div class="sub">긍정 ' + s.positive + ' · 부정 ' + s.negative + '</div></div><div class="card"><div class="label">총 조회수</div><div class="value">' + fmtNum(s.total_views) + '</div><div class="sub">평균 ' + Math.round(s.total_views/Math.max(s.real_posts,1)) + '</div></div><div class="card"><div class="label">버그 의심</div><div class="value ' + (s.bugs>0?'sentiment-negative':'') + '">' + s.bugs + '</div><div class="sub">자동 키워드 검출</div></div></div>' +
+    '<div class="section"><h2>📊 오늘의 요약</h2><div class="summary-box">' + escapeHtml(a.dailySummary||'') + '</div><div class="keywords">' + kwHtml + '</div></div>' +
+    '<div class="row"><div class="section"><h2>🎯 핵심 이슈 <span class="count">' + (a.topIssues||[]).length + '</span></h2><ul class="issue-list">' + issuesHtml + '</ul></div><div class="section"><h2>📈 분포</h2><div class="chart-wrap"><canvas id="chart-dist"></canvas></div></div></div>' +
+    '<div class="row"><div class="section"><h2>📍 트렌드</h2><ul>' + trendsHtml + '</ul></div><div class="section"><h2>👀 계속 추적할 것</h2><ul>' + watchHtml + '</ul></div></div>' +
+    '<div class="row"><div class="section"><h2>🐛 버그/오류 제보 <span class="count">' + (a.bugReports||[]).length + '</span></h2><ul>' + bugsHtml + '</ul></div><div class="section"><h2>⚔️ 경쟁작 언급 <span class="count">' + (a.competitorMentions||[]).length + '</span></h2><ul>' + compHtml + '</ul></div></div>' +
+    '<div class="section"><h2>🔥 참여도 TOP 10</h2><table class="post-table"><thead><tr><th style="width:60px;">소스</th><th>제목</th><th style="width:80px;">카테고리</th><th style="width:60px;text-align:right;">조회</th><th style="width:60px;text-align:right;">댓글</th><th style="width:60px;text-align:right;">추천</th></tr></thead><tbody>' + topHtml + '</tbody></table></div>' +
+    '<div class="section"><h2>📋 전체 게시물 <span class="count">' + game.posts.length + '</span></h2><div class="filters"><span class="muted small">소스</span><button class="filter-btn" data-type="source" data-val="all">전체</button><button class="filter-btn" data-type="source" data-val="arca">아카</button><button class="filter-btn" data-type="source" data-val="dc">DC</button><span class="muted small" style="margin-left:12px;">태그</span><button class="filter-btn" data-type="tag" data-val="all">전체</button><button class="filter-btn" data-type="tag" data-val="bug">버그</button><button class="filter-btn" data-type="tag" data-val="negative">부정</button><button class="filter-btn" data-type="tag" data-val="positive">긍정</button><button class="filter-btn" data-type="tag" data-val="newbie">뉴비</button><button class="filter-btn" data-type="tag" data-val="guild">길드</button><button class="filter-btn" data-type="tag" data-val="gacha">가챠</button><input type="text" id="search" class="search-input" placeholder="제목 검색..."></div><div style="max-height:480px;overflow-y:auto;"><table class="post-table"><thead><tr><th style="width:50px;">소스</th><th>제목</th><th style="width:120px;">태그</th><th style="width:80px;">시각(KST)</th><th style="width:60px;text-align:right;">조회</th><th style="width:50px;text-align:right;">댓글</th><th style="width:50px;text-align:right;">추천</th></tr></thead><tbody id="all-posts-body"></tbody></table></div></div>';
+  
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    if (b.dataset.val === filterState[b.dataset.type]) b.classList.add('active');
+    b.onclick = () => { filterState[b.dataset.type] = b.dataset.val; document.querySelectorAll('[data-type="'+b.dataset.type+'"]').forEach(x => x.classList.remove('active')); b.classList.add('active'); renderPostList(); };
   });
-  document.querySelectorAll(`[data-filter-type="tag"]`).forEach(b => {
-    if (b.dataset.filterValue === filterState.tag) b.classList.add("active");
-  });
-
-  // 필터 이벤트
-  document.querySelectorAll(".filter-btn").forEach(b => {
-    b.addEventListener("click", () => {
-      const type = b.dataset.filterType;
-      const val = b.dataset.filterValue;
-      filterState[type] = val;
-      document.querySelectorAll(`[data-filter-type="${type}"]`).forEach(x => x.classList.remove("active"));
-      b.classList.add("active");
-      renderPostList();
-    });
-  });
-  document.getElementById("search-input").addEventListener("input", e => {
-    filterState.search = e.target.value.toLowerCase();
-    renderPostList();
-  });
-
+  document.getElementById('search').oninput = e => { filterState.search = e.target.value.toLowerCase(); renderPostList(); };
   renderPostList();
   renderChart(game);
 }
-
 function renderPostList() {
-  const game = data.games[activeGame];
-  const body = document.getElementById("all-posts-body");
+  const game = currentData.games[activeGame];
+  const body = document.getElementById('all-posts-body');
   if (!body) return;
   const filtered = game.posts.filter(p => {
-    if (filterState.source !== "all" && p.source !== filterState.source) return false;
-    if (filterState.tag !== "all" && !p.tags.includes(filterState.tag)) return false;
+    if (filterState.source !== 'all' && p.source !== filterState.source) return false;
+    if (filterState.tag !== 'all' && !p.tags.includes(filterState.tag)) return false;
     if (filterState.search && !p.title.toLowerCase().includes(filterState.search)) return false;
     return true;
-  });
-  const sorted = filtered.sort((a, b) => b.engagement - a.engagement);
-  body.innerHTML = sorted.map(p => `
-    <tr>
-      <td><span class="source-${p.source}">${p.source.toUpperCase()}</span></td>
-      <td class="title-cell"><a href="${p.url}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a></td>
-      <td>${p.tags.filter(t => t !== "notice").map(t => `<span class="tag-chip tag-${t}">${tagLabel(t)}</span>`).join("")}</td>
-      <td class="small muted">${escapeHtml(p.date)}</td>
-      <td style="text-align:right;">${fmtNum(p.views)}</td>
-      <td style="text-align:right;">${p.comments}</td>
-      <td style="text-align:right;">${p.likes}</td>
-    </tr>
-  `).join("") || `<tr><td colspan="7" style="text-align:center; padding:20px; color:#707783;">조건에 맞는 게시물이 없습니다.</td></tr>`;
+  }).sort((a,b) => b.engagement - a.engagement);
+  body.innerHTML = filtered.map(p => {
+    const t = new Date(p.utcIso).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',hour:'2-digit',minute:'2-digit',hour12:false});
+    return '<tr><td><span class="source-' + p.source + '">' + p.source.toUpperCase() + '</span></td><td class="title-cell"><a href="' + p.url + '" target="_blank">' + escapeHtml(p.title) + '</a></td><td>' + p.tags.filter(t => t!=='notice').map(t => '<span class="tag-chip tag-' + t + '">' + tagLabel(t) + '</span>').join('') + '</td><td class="small muted">' + t + '</td><td style="text-align:right;">' + fmtNum(p.views) + '</td><td style="text-align:right;">' + p.comments + '</td><td style="text-align:right;">' + p.likes + '</td></tr>';
+  }).join('') || '<tr><td colspan="7" style="text-align:center;padding:20px;color:#707783;">조건에 맞는 게시물이 없습니다.</td></tr>';
 }
-
-function tagLabel(t) {
-  const labels = { bug: "버그", negative: "부정", positive: "긍정", competitor: "경쟁작", newbie: "뉴비" };
-  return labels[t] || t;
-}
-
-let currentChart = null;
 function renderChart(game) {
-  const ctx = document.getElementById("chart-dist");
+  const ctx = document.getElementById('chart-dist');
   if (!ctx) return;
-  if (currentChart) currentChart.destroy();
-  // 카테고리별 게시물 수 (notice 제외)
-  const real = game.posts.filter(p => !p.tags.includes("notice"));
+  if (activeChart) activeChart.destroy();
+  const real = game.posts.filter(p => !p.tags.includes('notice'));
   const tagCounts = {
-    "🐛 버그": real.filter(p => p.tags.includes("bug")).length,
-    "😡 부정": real.filter(p => p.tags.includes("negative")).length,
-    "😊 긍정": real.filter(p => p.tags.includes("positive")).length,
-    "⚔️ 경쟁작": real.filter(p => p.tags.includes("competitor")).length,
-    "🌱 뉴비/복귀": real.filter(p => p.tags.includes("newbie")).length,
-    "기타": real.filter(p => p.tags.length === 0).length,
+    '🐛 버그': real.filter(p=>p.tags.includes('bug')).length,
+    '😡 부정': real.filter(p=>p.tags.includes('negative')).length,
+    '😊 긍정': real.filter(p=>p.tags.includes('positive')).length,
+    '🌱 뉴비': real.filter(p=>p.tags.includes('newbie')).length,
+    '🏰 길드': real.filter(p=>p.tags.includes('guild')).length,
+    '🎰 가챠': real.filter(p=>p.tags.includes('gacha')).length,
+    '⚖️ 밸런스': real.filter(p=>p.tags.includes('balance')).length,
+    '기타': real.filter(p=>p.tags.length===0).length,
   };
-  const colors = ["#dc2626", "#f97316", "#16a34a", "#7c3aed", "#0284c7", "#94a3b8"];
-  currentChart = new Chart(ctx, {
-    type: "doughnut",
-    data: {
-      labels: Object.keys(tagCounts),
-      datasets: [{
-        data: Object.values(tagCounts),
-        backgroundColor: colors,
-        borderWidth: 0,
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: { position: "right", labels: { font: { size: 11 } } },
-      }
-    }
-  });
+  activeChart = new Chart(ctx, {type:'doughnut', data:{labels:Object.keys(tagCounts), datasets:[{data:Object.values(tagCounts), backgroundColor:['#dc2626','#f97316','#16a34a','#0284c7','#ec4899','#d97706','#6366f1','#94a3b8'], borderWidth:0}]}, options:{responsive:true, maintainAspectRatio:false, plugins:{legend:{position:'right', labels:{font:{size:11}}}}}});
 }
-
-function escapeHtml(s) {
-  if (s == null) return "";
-  return String(s)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
-}
-
-render();
+loadDateIndex();
 </script>
 </body>
 </html>
