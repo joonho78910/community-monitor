@@ -1,187 +1,192 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<title>커뮤니티 동향 대시보드</title>
+<html lang="ko"><head><meta charset="UTF-8"><title>커뮤니티 동향 대시보드</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
 <style>
-:root { color-scheme: light; }
-* { box-sizing: border-box; }
-body { margin: 0; font-family: -apple-system,"Apple SD Gothic Neo","Pretendard",BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",sans-serif; background:#f7f8fa; color:#1a1d23; font-size:14px; line-height:1.5; }
-.app { max-width: 1280px; margin:0 auto; padding:24px 20px 60px; }
-.header { display:flex; flex-direction:column; gap:6px; margin-bottom:18px; }
-.header h1 { margin:0; font-size:22px; font-weight:700; letter-spacing:-0.3px; }
-.header .sub { color:#707783; font-size:13px; }
-.date-bar { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:16px; align-items:center; }
-.date-bar select { padding:6px 10px; border:1px solid #e3e6eb; border-radius:6px; font-size:13px; background:white; min-width:160px; }
-.date-bar label { color:#707783; font-size:12px; }
-.tabs { display:flex; gap:6px; margin:0 0 18px; border-bottom:1px solid #e3e6eb; }
-.tab { background:transparent; border:0; padding:12px 18px; cursor:pointer; font-size:14px; font-weight:600; color:#707783; border-bottom:2px solid transparent; }
-.tab.active { color:#1a1d23; border-bottom-color: var(--accent); }
-.game-anchorpanic { --accent:#1976d2; --accent-bg:#e3f0fd; }
-.game-erpis { --accent:#7c3aed; --accent-bg:#f1ebfd; }
-.cards { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:16px; }
-.card { background:#fff; border:1px solid #e3e6eb; border-radius:10px; padding:14px 16px; }
-.card .label { font-size:11px; color:#707783; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.5px; }
-.card .value { font-size:22px; font-weight:700; }
-.card .sub { font-size:11px; color:#707783; margin-top:2px; }
+:root{color-scheme:light;}*{box-sizing:border-box;}
+body{margin:0;font-family:-apple-system,"Apple SD Gothic Neo","Pretendard",BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",sans-serif;background:#f7f8fa;color:#1a1d23;font-size:14px;line-height:1.5;}
+.app{max-width:1280px;margin:0 auto;padding:24px 20px 60px;}
+.header{display:flex;flex-direction:column;gap:6px;margin-bottom:18px;}
+.header h1{margin:0;font-size:22px;font-weight:700;}
+.header .sub{color:#707783;font-size:13px;}
+.date-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;align-items:center;}
+.date-bar select{padding:6px 10px;border:1px solid #e3e6eb;border-radius:6px;font-size:13px;background:white;min-width:160px;}
+.date-bar label{color:#707783;font-size:12px;}
+.tabs{display:flex;gap:6px;margin:0 0 18px;border-bottom:1px solid #e3e6eb;}
+.tab{background:transparent;border:0;padding:12px 18px;cursor:pointer;font-size:14px;font-weight:600;color:#707783;border-bottom:2px solid transparent;}
+.tab.active{color:#1a1d23;border-bottom-color:var(--accent);}
+.game-anchorpanic{--accent:#1976d2;--accent-bg:#e3f0fd;}
+.game-erpis{--accent:#7c3aed;--accent-bg:#f1ebfd;}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px;}
+.card{background:#fff;border:1px solid #e3e6eb;border-radius:10px;padding:14px 16px;}
+.card .label{font-size:11px;color:#707783;margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;}
+.card .value{font-size:22px;font-weight:700;}
+.card .sub{font-size:11px;color:#707783;margin-top:2px;}
 .sentiment-positive{color:#16a34a;}.sentiment-negative{color:#dc2626;}.sentiment-neutral{color:#ca8a04;}.sentiment-mixed{color:#7c3aed;}
-.row { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px; }
-.section { background:#fff; border:1px solid #e3e6eb; border-radius:10px; padding:18px 20px; margin-bottom:14px; }
-.section h2 { margin:0 0 12px; font-size:15px; font-weight:700; display:flex; align-items:center; gap:8px; }
-.section h2 .count { background:var(--accent-bg); color:var(--accent); font-size:11px; padding:2px 8px; border-radius:10px; font-weight:600; }
-.summary-box { background:var(--accent-bg); border-left:3px solid var(--accent); padding:14px 16px; border-radius:6px; color:#2c303a; font-size:13.5px; line-height:1.65; margin-bottom:10px; }
-.keywords { display:flex; flex-wrap:wrap; gap:6px; }
-.keyword { background:var(--accent-bg); color:var(--accent); padding:4px 10px; border-radius:14px; font-size:12px; font-weight:600; }
-.keyword .cnt { opacity:0.6; font-weight:500; margin-left:4px; font-size:11px; }
-.issue-list, .trend-list, .watch-list, .bug-list { list-style:none; padding:0; margin:0; }
-.issue-item { padding:12px 0; border-bottom:1px solid #f0f2f5; display:flex; flex-direction:column; gap:4px; }
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px;}
+.section{background:#fff;border:1px solid #e3e6eb;border-radius:10px;padding:18px 20px;margin-bottom:14px;}
+.section h2{margin:0 0 12px;font-size:15px;font-weight:700;display:flex;align-items:center;gap:8px;}
+.section h2 .count{background:var(--accent-bg);color:var(--accent);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;}
+.summary-box{background:var(--accent-bg);border-left:3px solid var(--accent);padding:14px 16px;border-radius:6px;color:#2c303a;font-size:13.5px;line-height:1.65;margin-bottom:12px;}
+.keywords{display:flex;flex-wrap:wrap;gap:6px;}
+.keyword{background:var(--accent-bg);color:var(--accent);padding:4px 10px;border-radius:14px;font-size:12px;font-weight:600;}
+.keyword .cnt{opacity:0.6;font-weight:500;margin-left:4px;font-size:11px;}
+.issue-list,.bug-list{list-style:none;padding:0;margin:0;}
+.issue-item{padding:12px 0;border-bottom:1px solid #f0f2f5;}
 .issue-item:last-child{border-bottom:0;}
-.issue-title { font-weight:600; font-size:13.5px; display:flex; align-items:center; gap:8px; }
-.tone-badge { font-size:10px; padding:2px 6px; border-radius:4px; font-weight:600; }
-.tone-긍정{background:#dcfce7;color:#166534;}.tone-부정{background:#fee2e2;color:#991b1b;}.tone-중립{background:#fef3c7;color:#92400e;}.tone-혼합{background:#ede9fe;color:#5b21b6;}
-.issue-summary { font-size:12.5px; color:#4a525e; }
-.simple-list-item { padding:8px 0; border-bottom:1px dashed #f0f2f5; font-size:13px; }
+.issue-item a{color:#1a1d23;text-decoration:none;display:flex;flex-direction:column;gap:4px;}
+.issue-item a:hover .issue-title{text-decoration:underline;color:var(--accent);}
+.issue-title{font-weight:600;font-size:13.5px;display:flex;align-items:center;gap:8px;}
+.tone-badge{font-size:10px;padding:2px 6px;border-radius:4px;font-weight:600;}
+.tone-G{background:#dcfce7;color:#166534;}.tone-B{background:#fee2e2;color:#991b1b;}.tone-N{background:#fef3c7;color:#92400e;}.tone-M{background:#ede9fe;color:#5b21b6;}
+.issue-summary{font-size:12.5px;color:#4a525e;}
+.simple-list-item{padding:8px 0;border-bottom:1px dashed #f0f2f5;font-size:13px;}
 .simple-list-item:last-child{border-bottom:0;}
-.simple-list-item::before { content:"•"; color:var(--accent); font-weight:700; margin-right:8px; }
-.post-table { width:100%; font-size:12.5px; border-collapse:collapse; }
-.post-table th { text-align:left; padding:10px 8px; background:#f7f8fa; font-weight:600; color:#4a525e; font-size:11.5px; text-transform:uppercase; letter-spacing:0.4px; border-bottom:1px solid #e3e6eb; }
-.post-table td { padding:10px 8px; border-bottom:1px solid #f0f2f5; vertical-align:middle; }
-.post-table tbody tr:hover { background:#f9fafb; }
-.post-table a { color:var(--accent); text-decoration:none; }
-.post-table a:hover { text-decoration:underline; }
-.source-arca,.source-dc { font-size:10px; padding:2px 6px; border-radius:4px; font-weight:600; }
-.source-arca{background:#fde68a;color:#78350f;}.source-dc{background:#c7d2fe;color:#3730a3;}
-.tag-chip { display:inline-block; font-size:10px; padding:1px 5px; border-radius:3px; margin-right:2px; font-weight:600; }
-.tag-bug{background:#fee2e2;color:#991b1b;}.tag-negative{background:#fed7aa;color:#9a3412;}.tag-positive{background:#bbf7d0;color:#14532d;}.tag-competitor{background:#ddd6fe;color:#5b21b6;}.tag-newbie{background:#bae6fd;color:#075985;}.tag-guild{background:#fce7f3;color:#9d174d;}.tag-gacha{background:#fef3c7;color:#92400e;}.tag-event{background:#dcfce7;color:#166534;}.tag-balance{background:#e0e7ff;color:#3730a3;}
-.filters { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; align-items:center; }
-.filter-btn { background:#fff; border:1px solid #e3e6eb; border-radius:16px; padding:5px 12px; font-size:12px; cursor:pointer; color:#4a525e; font-weight:500; }
-.filter-btn.active { background:var(--accent); border-color:var(--accent); color:#fff; }
-.search-input { padding:6px 12px; border:1px solid #e3e6eb; border-radius:16px; font-size:12px; min-width:200px; outline:none; }
-.chart-wrap { position:relative; height:220px; width:100%; }
-.muted { color:#707783; } .small { font-size:11.5px; }
-.title-cell { max-width:340px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-.loading { padding:40px; text-align:center; color:#707783; }
-@media (max-width:900px) { .cards { grid-template-columns:repeat(2,1fr); } .row { grid-template-columns:1fr; } }
-</style>
-</head>
+.simple-list-item::before{content:"\2022";color:var(--accent);font-weight:700;margin-right:8px;}
+.bug-item a{color:#1a1d23;text-decoration:none;}
+.bug-item a:hover{text-decoration:underline;color:var(--accent);}
+.post-table{width:100%;font-size:12.5px;border-collapse:collapse;}
+.post-table th{text-align:left;padding:10px 8px;background:#f7f8fa;font-weight:600;color:#4a525e;font-size:11.5px;text-transform:uppercase;letter-spacing:0.4px;border-bottom:1px solid #e3e6eb;}
+.post-table th.sortable{cursor:pointer;user-select:none;}
+.post-table th.sortable:hover{background:#eef0f3;}
+.post-table th.sortable::after{content:" \2195";opacity:0.4;}
+.post-table th.sort-asc::after{content:" \2191";opacity:1;color:var(--accent);}
+.post-table th.sort-desc::after{content:" \2193";opacity:1;color:var(--accent);}
+.post-table td{padding:10px 8px;border-bottom:1px solid #f0f2f5;vertical-align:middle;}
+.post-table tbody tr:hover{background:#f9fafb;}
+.post-table a{color:var(--accent);text-decoration:none;}
+.post-table a:hover{text-decoration:underline;}
+.source-arca,.source-dc{font-size:10px;padding:2px 6px;border-radius:4px;font-weight:600;}
+.source-arca{background:#fde68a;color:#78350f;}
+.source-dc{background:#c7d2fe;color:#3730a3;}
+.tag-chip{display:inline-block;font-size:10px;padding:1px 5px;border-radius:3px;margin-right:2px;font-weight:600;}
+.tag-bug{background:#fee2e2;color:#991b1b;}.tag-negative{background:#fed7aa;color:#9a3412;}.tag-positive{background:#bbf7d0;color:#14532d;}.tag-competitor{background:#ddd6fe;color:#5b21b6;}.tag-newbie{background:#bae6fd;color:#075985;}.tag-guild{background:#fce7f3;color:#9d174d;}.tag-gacha{background:#fef3c7;color:#92400e;}.tag-event{background:#dcfce7;color:#166534;}.tag-balance{background:#e0e7ff;color:#3730a3;}.tag-guide{background:#e0f2fe;color:#075985;}.tag-chitchat{background:#f3f4f6;color:#4b5563;}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;align-items:center;}
+.filter-btn{background:#fff;border:1px solid #e3e6eb;border-radius:16px;padding:5px 12px;font-size:12px;cursor:pointer;color:#4a525e;font-weight:500;}
+.filter-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;}
+.search-input{padding:6px 12px;border:1px solid #e3e6eb;border-radius:16px;font-size:12px;min-width:200px;outline:none;}
+.chart-wrap{position:relative;height:240px;width:100%;}
+.muted{color:#707783;}.small{font-size:11.5px;}
+.title-cell{max-width:340px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.loading{padding:40px;text-align:center;color:#707783;}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr);}.row{grid-template-columns:1fr;}}
+</style></head>
 <body>
 <div class="app" id="app">
-  <div class="header">
-    <h1>커뮤니티 동향 대시보드</h1>
-    <div class="sub">앵커패닉 + 에르피스 일일 모니터링 · 자동 수집: 아카라이브 + DC인사이드</div>
-  </div>
-  <div class="date-bar">
-    <label>날짜:</label>
-    <select id="date-select"></select>
-    <span class="muted small" id="meta-info"></span>
-  </div>
-  <div class="tabs" id="tabs"></div>
-  <div id="game-content"><div class="loading">데이터 로딩 중...</div></div>
+<div class="header"><h1>커뮤니티 동향 대시보드</h1><div class="sub">앵커패닉 + 에르피스 일일 모니터링</div></div>
+<div class="date-bar"><label>날짜:</label><select id="date-select"></select><span class="muted small" id="meta-info"></span></div>
+<div class="tabs" id="tabs"></div>
+<div id="game-content"><div class="loading">로딩 중...</div></div>
 </div>
 <script>
 function fmtNum(n){return new Intl.NumberFormat("ko-KR").format(n);}
-function sentimentClass(s){if(s==="긍정")return"sentiment-positive";if(s==="부정")return"sentiment-negative";if(s==="혼합")return"sentiment-mixed";return"sentiment-neutral";}
-function escapeHtml(s){if(s==null)return"";return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;");}
-function tagLabel(t){return({bug:"버그",negative:"부정",positive:"긍정",competitor:"경쟁작",newbie:"뉴비",guild:"길드",gacha:"가챠",event:"이벤트",balance:"밸런스"})[t]||t;}
-let dateList = [], currentDate = '', currentData = null, activeGame = '', activeChart = null;
-const filterState = {source:"all", tag:"all", search:""};
-
-async function loadDateIndex() {
-  const r = await fetch('data/index.json?ts=' + Date.now());
-  const j = await r.json();
-  dateList = j.dates.sort().reverse();
-  const sel = document.getElementById('date-select');
-  sel.innerHTML = dateList.map(d => '<option value="' + d + '">' + d + '</option>').join('');
-  sel.addEventListener('change', () => loadDate(sel.value));
-  if (dateList.length) await loadDate(dateList[0]);
+function sentCls(s){if(s==="긍정")return"sentiment-positive";if(s==="부정")return"sentiment-negative";if(s==="혼합")return"sentiment-mixed";return"sentiment-neutral";}
+function esc(s){if(s==null)return"";return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;");}
+function tagL(t){return({bug:"버그",negative:"부정",positive:"긍정",competitor:"경쟁작",newbie:"뉴비",guild:"길드",gacha:"가챠",event:"이벤트",balance:"밸런스",guide:"공략",chitchat:"잡담"})[t]||t;}
+function toneShort(t){return t==="긍정"?"G":t==="부정"?"B":t==="혼합"?"M":"N";}
+let curData=null,actGame='',actChart=null;
+const fS={source:"all",tag:"all",search:""};
+const sS={field:"utcIso",dir:"desc"};
+async function loadIdx(){
+  const r=await fetch('data/index.json?ts='+Date.now());
+  const j=await r.json();
+  const dts=j.dates.sort().reverse();
+  const sel=document.getElementById('date-select');
+  sel.innerHTML=dts.map(d=>'<option value="'+d+'">'+d+'</option>').join('');
+  sel.addEventListener('change',()=>loadDate(sel.value));
+  if(dts.length)await loadDate(dts[0]);
 }
-async function loadDate(date) {
-  currentDate = date;
-  document.getElementById('game-content').innerHTML = '<div class="loading">데이터 로딩 중...</div>';
-  const r = await fetch('data/' + date + '.json?ts=' + Date.now());
-  currentData = await r.json();
-  const games = Object.keys(currentData.games);
-  if (!activeGame || !games.includes(activeGame)) activeGame = games[0];
+async function loadDate(d){
+  document.getElementById('game-content').innerHTML='<div class="loading">로딩 중...</div>';
+  const r=await fetch('data/'+d+'.json?ts='+Date.now());
+  curData=await r.json();
+  const games=Object.keys(curData.games);
+  if(!actGame||!games.includes(actGame))actGame=games[0];
   buildTabs(games);
-  document.getElementById('meta-info').textContent = '마지막 업데이트: ' + new Date(currentData.lastUpdated).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'});
+  document.getElementById('meta-info').textContent='업데이트: '+new Date(curData.lastUpdated).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'});
   render();
 }
-function buildTabs(games) {
-  const el = document.getElementById('tabs');
-  el.innerHTML = '';
-  games.forEach(key => {
-    const btn = document.createElement('button');
-    btn.className = 'tab' + (key === activeGame ? ' active' : '');
-    btn.textContent = currentData.games[key].name;
-    btn.onclick = () => { activeGame = key; document.querySelectorAll('.tab').forEach(t => t.classList.remove('active')); btn.classList.add('active'); render(); };
+function buildTabs(games){
+  const el=document.getElementById('tabs');
+  el.innerHTML='';
+  games.forEach(key=>{
+    const btn=document.createElement('button');
+    btn.className='tab'+(key===actGame?' active':'');
+    btn.textContent=curData.games[key].name;
+    btn.onclick=()=>{actGame=key;document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));btn.classList.add('active');render();};
     el.appendChild(btn);
   });
 }
-function render() {
-  const game = currentData.games[activeGame];
-  const s = game.stats, a = game.analysis || {};
-  const app = document.getElementById('app');
+function render(){
+  const game=curData.games[actGame];
+  const s=game.stats,a=game.analysis||{};
+  const app=document.getElementById('app');
   app.classList.remove('game-anchorpanic','game-erpis');
-  app.classList.add('game-' + activeGame);
-  const c = document.getElementById('game-content');
-  const kwHtml = (a.keywords || []).slice(0,12).map(k => '<span class="keyword">#' + escapeHtml(k.word) + '<span class="cnt">' + k.count + '</span></span>').join('');
-  const issuesHtml = (a.topIssues || []).map(it => '<li class="issue-item"><div class="issue-title">' + escapeHtml(it.title) + '<span class="tone-badge tone-' + it.tone + '">' + it.tone + '</span></div><div class="issue-summary">' + escapeHtml(it.summary) + '</div></li>').join('');
-  const trendsHtml = (a.trends || []).map(t => '<li class="simple-list-item">' + escapeHtml(t) + '</li>').join('');
-  const watchHtml = (a.watchlist || []).map(w => '<li class="simple-list-item">' + escapeHtml(w) + '</li>').join('');
-  const bugsHtml = (a.bugReports || []).length ? (a.bugReports.map(b => '<li class="simple-list-item">' + escapeHtml(b) + '</li>').join('')) : '<div class="muted small" style="font-style:italic;padding:8px 0;">버그 제보 없음</div>';
-  const compHtml = (a.competitorMentions || []).length ? (a.competitorMentions.map(c => '<li class="simple-list-item"><strong>' + escapeHtml(c.competitor) + '</strong>: ' + escapeHtml(c.context) + '</li>').join('')) : '<div class="muted small" style="font-style:italic;padding:8px 0;">경쟁작 언급 없음</div>';
-  const topHtml = (game.topEngaging || []).map(p => '<tr><td><span class="source-' + p.source + '">' + p.source.toUpperCase() + '</span></td><td class="title-cell"><a href="' + p.url + '" target="_blank">' + escapeHtml(p.title) + '</a></td><td class="small muted">' + escapeHtml(p.category||'-') + '</td><td style="text-align:right;">' + fmtNum(p.views) + '</td><td style="text-align:right;">' + p.comments + '</td><td style="text-align:right;">' + p.likes + '</td></tr>').join('');
-  
-  c.innerHTML = '<div class="cards"><div class="card"><div class="label">게시물 (전일)</div><div class="value">' + s.real_posts + '</div><div class="sub">공지 ' + (s.notices||0) + '개 제외</div></div><div class="card"><div class="label">전반적 감정</div><div class="value ' + sentimentClass(s.sentiment) + '">' + s.sentiment + '</div><div class="sub">긍정 ' + s.positive + ' · 부정 ' + s.negative + '</div></div><div class="card"><div class="label">총 조회수</div><div class="value">' + fmtNum(s.total_views) + '</div><div class="sub">평균 ' + Math.round(s.total_views/Math.max(s.real_posts,1)) + '</div></div><div class="card"><div class="label">버그 의심</div><div class="value ' + (s.bugs>0?'sentiment-negative':'') + '">' + s.bugs + '</div><div class="sub">자동 키워드 검출</div></div></div>' +
-    '<div class="section"><h2>📊 오늘의 요약</h2><div class="summary-box">' + escapeHtml(a.dailySummary||'') + '</div><div class="keywords">' + kwHtml + '</div></div>' +
-    '<div class="row"><div class="section"><h2>🎯 핵심 이슈 <span class="count">' + (a.topIssues||[]).length + '</span></h2><ul class="issue-list">' + issuesHtml + '</ul></div><div class="section"><h2>📈 분포</h2><div class="chart-wrap"><canvas id="chart-dist"></canvas></div></div></div>' +
-    '<div class="row"><div class="section"><h2>📍 트렌드</h2><ul>' + trendsHtml + '</ul></div><div class="section"><h2>👀 계속 추적할 것</h2><ul>' + watchHtml + '</ul></div></div>' +
-    '<div class="row"><div class="section"><h2>🐛 버그/오류 제보 <span class="count">' + (a.bugReports||[]).length + '</span></h2><ul>' + bugsHtml + '</ul></div><div class="section"><h2>⚔️ 경쟁작 언급 <span class="count">' + (a.competitorMentions||[]).length + '</span></h2><ul>' + compHtml + '</ul></div></div>' +
-    '<div class="section"><h2>🔥 참여도 TOP 10</h2><table class="post-table"><thead><tr><th style="width:60px;">소스</th><th>제목</th><th style="width:80px;">카테고리</th><th style="width:60px;text-align:right;">조회</th><th style="width:60px;text-align:right;">댓글</th><th style="width:60px;text-align:right;">추천</th></tr></thead><tbody>' + topHtml + '</tbody></table></div>' +
-    '<div class="section"><h2>📋 전체 게시물 <span class="count">' + game.posts.length + '</span></h2><div class="filters"><span class="muted small">소스</span><button class="filter-btn" data-type="source" data-val="all">전체</button><button class="filter-btn" data-type="source" data-val="arca">아카</button><button class="filter-btn" data-type="source" data-val="dc">DC</button><span class="muted small" style="margin-left:12px;">태그</span><button class="filter-btn" data-type="tag" data-val="all">전체</button><button class="filter-btn" data-type="tag" data-val="bug">버그</button><button class="filter-btn" data-type="tag" data-val="negative">부정</button><button class="filter-btn" data-type="tag" data-val="positive">긍정</button><button class="filter-btn" data-type="tag" data-val="newbie">뉴비</button><button class="filter-btn" data-type="tag" data-val="guild">길드</button><button class="filter-btn" data-type="tag" data-val="gacha">가챠</button><input type="text" id="search" class="search-input" placeholder="제목 검색..."></div><div style="max-height:480px;overflow-y:auto;"><table class="post-table"><thead><tr><th style="width:50px;">소스</th><th>제목</th><th style="width:120px;">태그</th><th style="width:80px;">시각(KST)</th><th style="width:60px;text-align:right;">조회</th><th style="width:50px;text-align:right;">댓글</th><th style="width:50px;text-align:right;">추천</th></tr></thead><tbody id="all-posts-body"></tbody></table></div></div>';
-  
-  document.querySelectorAll('.filter-btn').forEach(b => {
-    if (b.dataset.val === filterState[b.dataset.type]) b.classList.add('active');
-    b.onclick = () => { filterState[b.dataset.type] = b.dataset.val; document.querySelectorAll('[data-type="'+b.dataset.type+'"]').forEach(x => x.classList.remove('active')); b.classList.add('active'); renderPostList(); };
+  app.classList.add('game-'+actGame);
+  const c=document.getElementById('game-content');
+  const kw=(a.keywords||[]).slice(0,12).map(k=>'<span class="keyword">#'+esc(k.word)+'<span class="cnt">'+k.count+'</span></span>').join('');
+  const iss=(a.topIssues||[]).map(it=>'<li class="issue-item"><a href="'+esc(it.url||'#')+'" target="_blank" rel="noopener"><div class="issue-title">'+esc(it.title)+'<span class="tone-badge tone-'+toneShort(it.tone)+'">'+esc(it.tone)+'</span></div><div class="issue-summary">'+esc(it.summary)+'</div></a></li>').join('');
+  const tr=(a.trends||[]).map(t=>'<li class="simple-list-item">'+esc(t)+'</li>').join('');
+  const wt=(a.watchlist||[]).map(w=>'<li class="simple-list-item">'+esc(w)+'</li>').join('');
+  const bg=(a.bugReports||[]).length?(a.bugReports.map(b=>{const t=typeof b==='string'?b:b.title;const u=typeof b==='string'?'#':(b.url||'#');return '<li class="simple-list-item bug-item"><a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(t)+'</a></li>';}).join('')):'<div class="muted small" style="font-style:italic;padding:8px 0;">버그 제보 없음</div>';
+  const cp=(a.competitorMentions||[]).length?(a.competitorMentions.map(cm=>{const u=cm.url||'#';return '<li class="simple-list-item"><a href="'+esc(u)+'" target="_blank" rel="noopener"><strong>'+esc(cm.competitor)+'</strong>: '+esc(cm.context)+'</a></li>';}).join('')):'<div class="muted small" style="font-style:italic;padding:8px 0;">경쟁작 언급 없음</div>';
+  const tp=(game.topEngaging||[]).map(p=>'<tr><td><span class="source-'+p.source+'">'+p.source.toUpperCase()+'</span></td><td class="title-cell"><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.title)+'</a></td><td class="small muted">'+esc(p.category||'-')+'</td><td style="text-align:right;">'+fmtNum(p.views)+'</td><td style="text-align:right;">'+p.comments+'</td><td style="text-align:right;">'+p.likes+'</td></tr>').join('');
+  c.innerHTML='<div class="cards"><div class="card"><div class="label">게시물 (전일)</div><div class="value">'+s.real_posts+'</div><div class="sub">공지 '+(s.notices||0)+'개 제외</div></div><div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+'</div><div class="sub">긍정 '+s.positive+' · 부정 '+s.negative+'</div></div><div class="card"><div class="label">총 조회수</div><div class="value">'+fmtNum(s.total_views)+'</div><div class="sub">평균 '+Math.round(s.total_views/Math.max(s.real_posts,1))+'</div></div><div class="card"><div class="label">버그 의심</div><div class="value '+(s.bugs>0?'sentiment-negative':'')+'">'+s.bugs+'</div><div class="sub">자동 검출</div></div></div>'+
+    '<div class="section"><h2>일일 동향 요약</h2><div class="summary-box">'+esc(a.dailySummary||'')+'</div><div class="keywords">'+kw+'</div></div>'+
+    '<div class="row"><div class="section"><h2>핵심 이슈 <span class="count">'+(a.topIssues||[]).length+'</span></h2><ul class="issue-list">'+iss+'</ul></div><div class="section"><h2>분포</h2><div class="chart-wrap"><canvas id="chart-dist"></canvas></div></div></div>'+
+    '<div class="row"><div class="section"><h2>트렌드</h2><ul>'+tr+'</ul></div><div class="section"><h2>계속 추적</h2><ul>'+wt+'</ul></div></div>'+
+    '<div class="row"><div class="section"><h2>버그/오류 제보 <span class="count">'+(a.bugReports||[]).length+'</span></h2><ul class="bug-list">'+bg+'</ul></div><div class="section"><h2>경쟁작 언급 <span class="count">'+(a.competitorMentions||[]).length+'</span></h2><ul>'+cp+'</ul></div></div>'+
+    '<div class="section"><h2>참여도 TOP 10</h2><table class="post-table"><thead><tr><th style="width:60px;">소스</th><th>제목</th><th style="width:80px;">카테고리</th><th style="width:60px;text-align:right;">조회</th><th style="width:60px;text-align:right;">댓글</th><th style="width:60px;text-align:right;">추천</th></tr></thead><tbody>'+tp+'</tbody></table></div>'+
+    '<div class="section"><h2>전체 게시물 <span class="count">'+game.posts.length+'</span></h2><div class="filters"><span class="muted small">소스</span><button class="filter-btn" data-type="source" data-val="all">전체</button><button class="filter-btn" data-type="source" data-val="arca">아카</button><button class="filter-btn" data-type="source" data-val="dc">DC</button><span class="muted small" style="margin-left:12px;">태그</span><button class="filter-btn" data-type="tag" data-val="all">전체</button><button class="filter-btn" data-type="tag" data-val="bug">버그</button><button class="filter-btn" data-type="tag" data-val="negative">부정</button><button class="filter-btn" data-type="tag" data-val="positive">긍정</button><button class="filter-btn" data-type="tag" data-val="newbie">뉴비</button><button class="filter-btn" data-type="tag" data-val="guild">길드</button><button class="filter-btn" data-type="tag" data-val="gacha">가챠</button><button class="filter-btn" data-type="tag" data-val="guide">공략</button><button class="filter-btn" data-type="tag" data-val="balance">밸런스</button><input type="text" id="search" class="search-input" placeholder="제목 검색..."></div><div style="max-height:520px;overflow-y:auto;"><table class="post-table" id="all-posts-table"><thead><tr><th style="width:50px;">소스</th><th>제목</th><th style="width:120px;">태그</th><th class="sortable" data-sort="utcIso" style="width:100px;">시각</th><th class="sortable" data-sort="views" style="width:70px;text-align:right;">조회</th><th class="sortable" data-sort="comments" style="width:60px;text-align:right;">댓글</th><th class="sortable" data-sort="likes" style="width:60px;text-align:right;">추천</th></tr></thead><tbody id="all-posts-body"></tbody></table></div></div>';
+  document.querySelectorAll('.filter-btn').forEach(b=>{
+    if(b.dataset.val===fS[b.dataset.type])b.classList.add('active');
+    b.onclick=()=>{fS[b.dataset.type]=b.dataset.val;document.querySelectorAll('[data-type="'+b.dataset.type+'"]').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderList();};
   });
-  document.getElementById('search').oninput = e => { filterState.search = e.target.value.toLowerCase(); renderPostList(); };
-  renderPostList();
-  renderChart(game);
+  document.getElementById('search').oninput=e=>{fS.search=e.target.value.toLowerCase();renderList();};
+  document.querySelectorAll('th.sortable').forEach(th=>{
+    th.onclick=()=>{
+      const f=th.dataset.sort;
+      if(sS.field===f){sS.dir=sS.dir==='desc'?'asc':'desc';}else{sS.field=f;sS.dir='desc';}
+      renderList();
+    };
+  });
+  renderList();renderChart(game);
 }
-function renderPostList() {
-  const game = currentData.games[activeGame];
-  const body = document.getElementById('all-posts-body');
-  if (!body) return;
-  const filtered = game.posts.filter(p => {
-    if (filterState.source !== 'all' && p.source !== filterState.source) return false;
-    if (filterState.tag !== 'all' && !p.tags.includes(filterState.tag)) return false;
-    if (filterState.search && !p.title.toLowerCase().includes(filterState.search)) return false;
+function renderList(){
+  const game=curData.games[actGame];
+  const body=document.getElementById('all-posts-body');
+  if(!body)return;
+  const filt=game.posts.filter(p=>{
+    if(p.tags&&p.tags.includes('notice'))return false;
+    if(fS.source!=='all'&&p.source!==fS.source)return false;
+    if(fS.tag!=='all'&&!(p.tags||[]).includes(fS.tag))return false;
+    if(fS.search&&!p.title.toLowerCase().includes(fS.search))return false;
     return true;
-  }).sort((a,b) => b.engagement - a.engagement);
-  body.innerHTML = filtered.map(p => {
-    const t = new Date(p.utcIso).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',hour:'2-digit',minute:'2-digit',hour12:false});
-    return '<tr><td><span class="source-' + p.source + '">' + p.source.toUpperCase() + '</span></td><td class="title-cell"><a href="' + p.url + '" target="_blank">' + escapeHtml(p.title) + '</a></td><td>' + p.tags.filter(t => t!=='notice').map(t => '<span class="tag-chip tag-' + t + '">' + tagLabel(t) + '</span>').join('') + '</td><td class="small muted">' + t + '</td><td style="text-align:right;">' + fmtNum(p.views) + '</td><td style="text-align:right;">' + p.comments + '</td><td style="text-align:right;">' + p.likes + '</td></tr>';
-  }).join('') || '<tr><td colspan="7" style="text-align:center;padding:20px;color:#707783;">조건에 맞는 게시물이 없습니다.</td></tr>';
+  });
+  const f=sS.field,d=sS.dir;
+  filt.sort((a,b)=>{
+    let av,bv;
+    if(f==='utcIso'){av=new Date(a.utcIso).getTime();bv=new Date(b.utcIso).getTime();}
+    else{av=a[f]||0;bv=b[f]||0;}
+    return d==='desc'?(bv-av):(av-bv);
+  });
+  document.querySelectorAll('th.sortable').forEach(th=>{
+    th.classList.remove('sort-asc','sort-desc');
+    if(th.dataset.sort===f)th.classList.add(d==='asc'?'sort-asc':'sort-desc');
+  });
+  body.innerHTML=filt.map(p=>{
+    const t=new Date(p.utcIso).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false});
+    return '<tr><td><span class="source-'+p.source+'">'+p.source.toUpperCase()+'</span></td><td class="title-cell"><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.title)+'</a></td><td>'+(p.tags||[]).filter(x=>x!=='notice').map(x=>'<span class="tag-chip tag-'+x+'">'+tagL(x)+'</span>').join('')+'</td><td class="small muted">'+t+'</td><td style="text-align:right;">'+fmtNum(p.views)+'</td><td style="text-align:right;">'+p.comments+'</td><td style="text-align:right;">'+p.likes+'</td></tr>';
+  }).join('')||'<tr><td colspan="7" style="text-align:center;padding:20px;color:#707783;">조건에 맞는 게시물이 없습니다.</td></tr>';
 }
-function renderChart(game) {
-  const ctx = document.getElementById('chart-dist');
-  if (!ctx) return;
-  if (activeChart) activeChart.destroy();
-  const real = game.posts.filter(p => !p.tags.includes('notice'));
-  const tagCounts = {
-    '🐛 버그': real.filter(p=>p.tags.includes('bug')).length,
-    '😡 부정': real.filter(p=>p.tags.includes('negative')).length,
-    '😊 긍정': real.filter(p=>p.tags.includes('positive')).length,
-    '🌱 뉴비': real.filter(p=>p.tags.includes('newbie')).length,
-    '🏰 길드': real.filter(p=>p.tags.includes('guild')).length,
-    '🎰 가챠': real.filter(p=>p.tags.includes('gacha')).length,
-    '⚖️ 밸런스': real.filter(p=>p.tags.includes('balance')).length,
-    '기타': real.filter(p=>p.tags.length===0).length,
-  };
-  activeChart = new Chart(ctx, {type:'doughnut', data:{labels:Object.keys(tagCounts), datasets:[{data:Object.values(tagCounts), backgroundColor:['#dc2626','#f97316','#16a34a','#0284c7','#ec4899','#d97706','#6366f1','#94a3b8'], borderWidth:0}]}, options:{responsive:true, maintainAspectRatio:false, plugins:{legend:{position:'right', labels:{font:{size:11}}}}}});
+function renderChart(game){
+  const ctx=document.getElementById('chart-dist');
+  if(!ctx)return;
+  if(actChart)actChart.destroy();
+  const real=game.posts.filter(p=>!(p.tags||[]).includes('notice'));
+  const cats=[['bug','버그','#dc2626'],['negative','부정','#f97316'],['positive','긍정','#16a34a'],['newbie','뉴비','#0284c7'],['guild','길드','#ec4899'],['gacha','가챠','#d97706'],['balance','밸런스','#6366f1'],['guide','공략','#059669'],['event','이벤트','#84cc16'],['competitor','경쟁작','#a855f7'],['chitchat','잡담','#94a3b8']];
+  const lbs=[],vs=[],cl=[];
+  cats.forEach(([t,l,col])=>{const c=real.filter(p=>(p.tags||[]).includes(t)).length;if(c>0){lbs.push(l);vs.push(c);cl.push(col);}});
+  actChart=new Chart(ctx,{type:'doughnut',data:{labels:lbs,datasets:[{data:vs,backgroundColor:cl,borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{font:{size:11}}}}}});
 }
-loadDateIndex();
-</script>
-</body>
-</html>
+loadIdx();
+</script></body></html>
