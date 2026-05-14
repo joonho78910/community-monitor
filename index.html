@@ -247,6 +247,8 @@ function renderTrendChart(st,activeGame){
   const isLegacyArray=Array.isArray(game.data);
   const naverData=isLegacyArray?game.data:(game.data.naver||[]);
   const googleData=isLegacyArray?[]:(game.data.google||[]);
+  const gameEvents=(st.events||[]).filter(e=>e.game===activeGame);
+  const eventByDate={};gameEvents.forEach(e=>{eventByDate[e.date]=e;});
   const dateSet=new Set();
   naverData.forEach(d=>dateSet.add(d.period));
   googleData.forEach(d=>dateSet.add(d.period));
@@ -257,11 +259,15 @@ function renderTrendChart(st,activeGame){
   const gVals=dates.map(d=>gMap[d]??null);
   const color=activeGame==='anchorpanic'?'#1d4ed8':'#7c3aed';
   const fillBg=activeGame==='anchorpanic'?'rgba(29,78,216,0.08)':'rgba(124,58,237,0.08)';
-  const datasets=[{label:'네이버',data:nVals,borderColor:color,backgroundColor:fillBg,borderWidth:2.5,fill:true,tension:0.25,pointRadius:2.5,pointHoverRadius:5,spanGaps:true}];
+  const ptRadius=dates.map(d=>eventByDate[d]?5.5:2.2);
+  const ptBg=dates.map(d=>eventByDate[d]?color:'#ffffff');
+  const ptBorder=dates.map(d=>eventByDate[d]?'#ffffff':color);
+  const ptStyle=dates.map(d=>eventByDate[d]?'rectRot':'circle');
+  const datasets=[{label:'네이버',data:nVals,borderColor:color,backgroundColor:fillBg,borderWidth:2.5,fill:true,tension:0.25,pointRadius:ptRadius,pointBackgroundColor:ptBg,pointBorderColor:ptBorder,pointBorderWidth:1.5,pointStyle:ptStyle,pointHoverRadius:7,spanGaps:true}];
   if(googleData.length){
     datasets.push({label:'구글',data:gVals,borderColor:color,borderDash:[6,4],borderWidth:1.6,fill:false,tension:0.25,pointRadius:2,pointHoverRadius:5,spanGaps:true});
   }
-  trendChart=new Chart(canvas,{type:'line',data:{labels:dates.map(d=>d.slice(5)),datasets},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',align:'end',labels:{boxWidth:14,boxHeight:3,font:{size:12}}},tooltip:{mode:'index',intersect:false}},scales:{y:{beginAtZero:true,suggestedMax:100,ticks:{stepSize:25,font:{size:11}},title:{display:true,text:'정규화 검색량 (max=100)',font:{size:11}}},x:{ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:10,font:{size:11}}}},interaction:{mode:'index',intersect:false}}});
+  trendChart=new Chart(canvas,{type:'line',data:{labels:dates.map(d=>d.slice(5)),datasets},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',align:'end',labels:{boxWidth:14,boxHeight:3,font:{size:12}}},tooltip:{mode:'index',intersect:false,callbacks:{afterBody:function(ctxs){if(!ctxs||!ctxs.length)return '';const idx=ctxs[0].dataIndex;const d=dates[idx];const ev=eventByDate[d];if(!ev)return '';return ['','★'.repeat(ev.confidence)+' '+ev.label];}}}},scales:{y:{beginAtZero:true,suggestedMax:100,ticks:{stepSize:25,font:{size:11}},title:{display:true,text:'정규화 검색량 (max=100)',font:{size:11}}},x:{ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:10,font:{size:11}}}},interaction:{mode:'index',intersect:false}}});
   const last=v=>{for(let i=v.length-1;i>=0;i--)if(v[i]!=null)return v[i];return null;};
   const prev=v=>{let f=null;for(let i=v.length-1;i>=0;i--){if(v[i]!=null){if(f===null)f=i;else return v[i];}}return null;};
   const avg=v=>{const f=v.filter(x=>x!=null);return f.length?f.reduce((a,b)=>a+b,0)/f.length:0;};
@@ -283,10 +289,9 @@ function renderTrendChart(st,activeGame){
     html+='</div><div class="ti-block"><div class="ti-label">30일 평균 대비</div>'+
       '<div class="ti-row"><span class="ti-dot" '+dotN+'></span>네이버<b>'+pct(nLast,nAvg)+'</b></div>';
     if(hasG) html+='<div class="ti-row"><span class="ti-dot" '+dotG+'></span>구글<b>'+pct(gLast,gAvg)+'</b></div>';
-    html+='</div><div class="ti-foot">'+st.startDate+' ~ '+st.endDate+' · 네이버=실선, 구글=점선</div>';
+    html+='</div><div class="ti-foot">'+st.startDate+' ~ '+st.endDate+' · 네이버=실선, 구글=점선 · 차트 마름모 마커 = 주요 이벤트</div>';
     insightEl.innerHTML=html;
   }
-
   const eventsEl=document.getElementById('trend-events');
   const countEl=document.getElementById('trend-events-count');
   if(eventsEl){
