@@ -205,7 +205,7 @@ function render(){
   
   c.innerHTML='<div class="cards"><div class="card"><div class="label">전일 게시물</div><div class="value">'+fmtNum(s.real_posts)+'</div><div class="sub">공지 '+(s.notices||0)+'개 제외</div></div><div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+'</div><div class="sub">긍정 '+s.positive+' · 부정 '+s.negative+'</div></div><div class="card"><div class="label">총 조회수</div><div class="value">'+fmtK(s.total_views)+'</div><div class="sub">평균 '+Math.round(s.total_views/Math.max(s.real_posts,1))+' / 글</div></div><div class="card"><div class="label">버그 의심</div><div class="value '+(s.bugs>0?'s-neg':'')+'">'+s.bugs+'</div><div class="sub">자동 키워드 검출</div></div></div>'+
     '<div class="section"><h2>일일 동향 요약</h2><div class="summary-box">'+esc(a.dailySummary||'')+'</div><div class="keywords">'+kw+'</div><div class="section-note">키워드 클릭 시 해당 단어로 전체 게시물에서 자동 검색됩니다</div></div>'+
-    (curData.searchTrends?'<div class="row"><div class="section"><h2>네이버 검색 트렌드 <span class="count">30일</span></h2><div style="position:relative;height:280px;"><canvas id="trendChart"></canvas></div><div class="section-note">출처: 네이버 데이터랩 · 각 키워드 그룹 max=100 정규화 · 그룹 간 비교 가능</div></div><div class="section"><h2>검색량 스냅샷</h2><div class="trend-insight" id="trend-insight"></div></div></div>':'')+
+    (curData.searchTrends?'<div class="row"><div class="section"><h2>검색 트렌드 <span class="count">30일 · 네이버 + 구글</span></h2><div style="position:relative;height:280px;"><canvas id="trendChart"></canvas></div><div class="section-note">출처: 네이버 데이터랩 · 각 키워드 그룹 max=100 정규화 · 그룹 간 비교 가능</div></div><div class="section"><h2>검색량 스냅샷</h2><div class="trend-insight" id="trend-insight"></div></div></div>':'')+
     '<div class="row"><div class="section"><h2>핵심 이슈 <span class="count">'+(a.topIssues||[]).length+'</span></h2><ul class="issue-list">'+iss+'</ul><div class="section-note">순위는 조회 + 댓글 + 추천 가중 합산 기준</div></div><div class="section"><h2>주제별 분포</h2><div class="dist-bars">'+distBars+'</div><div class="section-note">중복 분류 가능 (한 글이 여러 카테고리 포함 가능)</div></div></div>'+
     '<div class="row"><div class="section"><h2>트렌드</h2><ul class="t-list">'+tr+'</ul></div><div class="section"><h2>계속 추적</h2><ul class="w-list">'+wt+'</ul></div></div>'+
     '<div class="row"><div class="section"><h2>버그/오류 제보 <span class="count">'+(a.bugReports||[]).length+'</span></h2><ul class="bug-list">'+bg+'</ul></div><div class="section"><h2>경쟁작 언급 <span class="count">'+(a.competitorMentions||[]).length+'</span></h2><ul class="c-list">'+cp+'</ul></div></div>'+
@@ -285,6 +285,24 @@ function renderTrendChart(st,activeGame){
     if(hasG) html+='<div class="ti-row"><span class="ti-dot" '+dotG+'></span>구글<b>'+pct(gLast,gAvg)+'</b></div>';
     html+='</div><div class="ti-foot">'+st.startDate+' ~ '+st.endDate+' · 네이버=실선, 구글=점선</div>';
     insightEl.innerHTML=html;
+  }
+
+  const eventsEl=document.getElementById('trend-events');
+  const countEl=document.getElementById('trend-events-count');
+  if(eventsEl){
+    if(gameEvents.length===0){
+      eventsEl.innerHTML='<div class="empty">매칭된 주요 이벤트 없음</div>';
+      if(countEl)countEl.textContent='0';
+    } else {
+      const sorted=[...gameEvents].sort((a,b)=>a.date.localeCompare(b.date));
+      eventsEl.innerHTML=sorted.map(e=>{
+        const stars='★'.repeat(e.confidence);
+        const md=e.date.slice(5);
+        const urlHtml=e.url?'<a href="'+esc(e.url)+'" target="_blank" rel="noopener">관련 보도 →</a>':'';
+        return '<div class="event-card"><div class="ev-date">'+md+'</div><div class="ev-body"><span class="ev-stars">'+stars+'</span><span class="ev-label">'+esc(e.label)+'</span><div class="ev-detail">'+esc(e.detail||'')+(urlHtml?' · '+urlHtml:'')+'</div></div></div>';
+      }).join('');
+      if(countEl)countEl.textContent=String(gameEvents.length);
+    }
   }
 }
 function renderList(){
