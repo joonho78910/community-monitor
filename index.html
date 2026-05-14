@@ -242,42 +242,49 @@ function renderTrendChart(st,activeGame){
   const canvas=document.getElementById('trendChart');
   if(!canvas||!st||!Array.isArray(st.series))return;
   if(trendChart){try{trendChart.destroy();}catch(e){}trendChart=null;}
-  const anchor=st.series.find(s=>s.game==='anchorpanic');
-  const erpis=st.series.find(s=>s.game==='erpis');
-  if(!anchor||!erpis)return;
+  const game=st.series.find(s=>s.game===activeGame);
+  if(!game||!game.data)return;
+  const isLegacyArray=Array.isArray(game.data);
+  const naverData=isLegacyArray?game.data:(game.data.naver||[]);
+  const googleData=isLegacyArray?[]:(game.data.google||[]);
   const dateSet=new Set();
-  anchor.data.forEach(d=>dateSet.add(d.period));
-  erpis.data.forEach(d=>dateSet.add(d.period));
+  naverData.forEach(d=>dateSet.add(d.period));
+  googleData.forEach(d=>dateSet.add(d.period));
   const dates=[...dateSet].sort();
-  const vMap=s=>{const m={};s.data.forEach(d=>{m[d.period]=d.ratio;});return m;};
-  const aMap=vMap(anchor),eMap=vMap(erpis);
-  const aVals=dates.map(d=>aMap[d]??null);
-  const eVals=dates.map(d=>eMap[d]??null);
-  const aActive=activeGame==='anchorpanic';
-  trendChart=new Chart(canvas,{type:'line',data:{labels:dates.map(d=>d.slice(5)),datasets:[
-    {label:'앵커패닉',data:aVals,borderColor:'#1d4ed8',backgroundColor:'rgba(29,78,216,0.08)',borderWidth:aActive?2.5:1.4,fill:aActive,tension:0.25,pointRadius:aActive?2.5:1.5,pointHoverRadius:5,spanGaps:true},
-    {label:'에르피스',data:eVals,borderColor:'#7c3aed',backgroundColor:'rgba(124,58,237,0.08)',borderWidth:!aActive?2.5:1.4,fill:!aActive,tension:0.25,pointRadius:!aActive?2.5:1.5,pointHoverRadius:5,spanGaps:true}
-  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',align:'end',labels:{boxWidth:14,boxHeight:3,font:{size:12}}},tooltip:{mode:'index',intersect:false}},scales:{y:{beginAtZero:true,suggestedMax:100,ticks:{stepSize:25,font:{size:11}},title:{display:true,text:'정규화 검색량 (max=100)',font:{size:11}}},x:{ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:10,font:{size:11}}}},interaction:{mode:'index',intersect:false}}});
+  const vMap=arr=>{const m={};arr.forEach(d=>{m[d.period]=d.ratio;});return m;};
+  const nMap=vMap(naverData),gMap=vMap(googleData);
+  const nVals=dates.map(d=>nMap[d]??null);
+  const gVals=dates.map(d=>gMap[d]??null);
+  const color=activeGame==='anchorpanic'?'#1d4ed8':'#7c3aed';
+  const fillBg=activeGame==='anchorpanic'?'rgba(29,78,216,0.08)':'rgba(124,58,237,0.08)';
+  const datasets=[{label:'네이버',data:nVals,borderColor:color,backgroundColor:fillBg,borderWidth:2.5,fill:true,tension:0.25,pointRadius:2.5,pointHoverRadius:5,spanGaps:true}];
+  if(googleData.length){
+    datasets.push({label:'구글',data:gVals,borderColor:color,borderDash:[6,4],borderWidth:1.6,fill:false,tension:0.25,pointRadius:2,pointHoverRadius:5,spanGaps:true});
+  }
+  trendChart=new Chart(canvas,{type:'line',data:{labels:dates.map(d=>d.slice(5)),datasets},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',align:'end',labels:{boxWidth:14,boxHeight:3,font:{size:12}}},tooltip:{mode:'index',intersect:false}},scales:{y:{beginAtZero:true,suggestedMax:100,ticks:{stepSize:25,font:{size:11}},title:{display:true,text:'정규화 검색량 (max=100)',font:{size:11}}},x:{ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:10,font:{size:11}}}},interaction:{mode:'index',intersect:false}}});
   const last=v=>{for(let i=v.length-1;i>=0;i--)if(v[i]!=null)return v[i];return null;};
   const prev=v=>{let f=null;for(let i=v.length-1;i>=0;i--){if(v[i]!=null){if(f===null)f=i;else return v[i];}}return null;};
   const avg=v=>{const f=v.filter(x=>x!=null);return f.length?f.reduce((a,b)=>a+b,0)/f.length:0;};
-  const aLast=last(aVals),aPrev=prev(aVals),aAvg=avg(aVals);
-  const eLast=last(eVals),ePrev=prev(eVals),eAvg=avg(eVals);
+  const nLast=last(nVals),nPrev=prev(nVals),nAvg=avg(nVals);
+  const gLast=last(gVals),gPrev=prev(gVals),gAvg=avg(gVals);
   function pct(c,r){if(r==null||r===0||c==null)return '<span class="flat">-</span>';const p=((c-r)/r*100);const cls=p>2?'up':p<-2?'dn':'flat';return '<span class="'+cls+'">'+(p>=0?'+':'')+p.toFixed(1)+'%</span>';}
   const fmt=v=>v==null?'-':v.toFixed(1);
   const insightEl=document.getElementById('trend-insight');
   if(insightEl){
-    insightEl.innerHTML=
-      '<div class="ti-block"><div class="ti-label">최신일 (정규화)</div>'+
-      '<div class="ti-row"><span class="ti-dot ti-dot-anchor"></span>앵커패닉<b>'+fmt(aLast)+'</b></div>'+
-      '<div class="ti-row"><span class="ti-dot ti-dot-erpis"></span>에르피스<b>'+fmt(eLast)+'</b></div></div>'+
-      '<div class="ti-block"><div class="ti-label">전일 대비</div>'+
-      '<div class="ti-row"><span class="ti-dot ti-dot-anchor"></span>앵커패닉<b>'+pct(aLast,aPrev)+'</b></div>'+
-      '<div class="ti-row"><span class="ti-dot ti-dot-erpis"></span>에르피스<b>'+pct(eLast,ePrev)+'</b></div></div>'+
-      '<div class="ti-block"><div class="ti-label">30일 평균 대비</div>'+
-      '<div class="ti-row"><span class="ti-dot ti-dot-anchor"></span>앵커패닉<b>'+pct(aLast,aAvg)+'</b></div>'+
-      '<div class="ti-row"><span class="ti-dot ti-dot-erpis"></span>에르피스<b>'+pct(eLast,eAvg)+'</b></div></div>'+
-      '<div class="ti-foot">데이터: '+st.startDate+' ~ '+st.endDate+' · 키워드 그룹 합산</div>';
+    const dotN='style="background:'+color+';"';
+    const dotG='style="background:'+color+';opacity:0.5;"';
+    const hasG=googleData.length>0;
+    let html='<div class="ti-block"><div class="ti-label">최신일</div>'+
+      '<div class="ti-row"><span class="ti-dot" '+dotN+'></span>네이버<b>'+fmt(nLast)+'</b></div>';
+    if(hasG) html+='<div class="ti-row"><span class="ti-dot" '+dotG+'></span>구글<b>'+fmt(gLast)+'</b></div>';
+    html+='</div><div class="ti-block"><div class="ti-label">전일 대비</div>'+
+      '<div class="ti-row"><span class="ti-dot" '+dotN+'></span>네이버<b>'+pct(nLast,nPrev)+'</b></div>';
+    if(hasG) html+='<div class="ti-row"><span class="ti-dot" '+dotG+'></span>구글<b>'+pct(gLast,gPrev)+'</b></div>';
+    html+='</div><div class="ti-block"><div class="ti-label">30일 평균 대비</div>'+
+      '<div class="ti-row"><span class="ti-dot" '+dotN+'></span>네이버<b>'+pct(nLast,nAvg)+'</b></div>';
+    if(hasG) html+='<div class="ti-row"><span class="ti-dot" '+dotG+'></span>구글<b>'+pct(gLast,gAvg)+'</b></div>';
+    html+='</div><div class="ti-foot">'+st.startDate+' ~ '+st.endDate+' · 네이버=실선, 구글=점선</div>';
+    insightEl.innerHTML=html;
   }
 }
 function renderList(){
