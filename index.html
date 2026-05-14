@@ -246,4 +246,69 @@ function renderTrendChart(st,activeGame){
   const erpis=st.series.find(s=>s.game==='erpis');
   if(!anchor||!erpis)return;
   const dateSet=new Set();
-  anchor.data.forEach(d=>dateSet.add(d.
+  anchor.data.forEach(d=>dateSet.add(d.period));
+  erpis.data.forEach(d=>dateSet.add(d.period));
+  const dates=[...dateSet].sort();
+  const vMap=s=>{const m={};s.data.forEach(d=>{m[d.period]=d.ratio;});return m;};
+  const aMap=vMap(anchor),eMap=vMap(erpis);
+  const aVals=dates.map(d=>aMap[d]??null);
+  const eVals=dates.map(d=>eMap[d]??null);
+  const aActive=activeGame==='anchorpanic';
+  trendChart=new Chart(canvas,{type:'line',data:{labels:dates.map(d=>d.slice(5)),datasets:[
+    {label:'앵커패닉',data:aVals,borderColor:'#1d4ed8',backgroundColor:'rgba(29,78,216,0.08)',borderWidth:aActive?2.5:1.4,fill:aActive,tension:0.25,pointRadius:aActive?2.5:1.5,pointHoverRadius:5,spanGaps:true},
+    {label:'에르피스',data:eVals,borderColor:'#7c3aed',backgroundColor:'rgba(124,58,237,0.08)',borderWidth:!aActive?2.5:1.4,fill:!aActive,tension:0.25,pointRadius:!aActive?2.5:1.5,pointHoverRadius:5,spanGaps:true}
+  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',align:'end',labels:{boxWidth:14,boxHeight:3,font:{size:12}}},tooltip:{mode:'index',intersect:false}},scales:{y:{beginAtZero:true,suggestedMax:100,ticks:{stepSize:25,font:{size:11}},title:{display:true,text:'정규화 검색량 (max=100)',font:{size:11}}},x:{ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:10,font:{size:11}}}},interaction:{mode:'index',intersect:false}}});
+  const last=v=>{for(let i=v.length-1;i>=0;i--)if(v[i]!=null)return v[i];return null;};
+  const prev=v=>{let f=null;for(let i=v.length-1;i>=0;i--){if(v[i]!=null){if(f===null)f=i;else return v[i];}}return null;};
+  const avg=v=>{const f=v.filter(x=>x!=null);return f.length?f.reduce((a,b)=>a+b,0)/f.length:0;};
+  const aLast=last(aVals),aPrev=prev(aVals),aAvg=avg(aVals);
+  const eLast=last(eVals),ePrev=prev(eVals),eAvg=avg(eVals);
+  function pct(c,r){if(r==null||r===0||c==null)return '<span class="flat">-</span>';const p=((c-r)/r*100);const cls=p>2?'up':p<-2?'dn':'flat';return '<span class="'+cls+'">'+(p>=0?'+':'')+p.toFixed(1)+'%</span>';}
+  const fmt=v=>v==null?'-':v.toFixed(1);
+  const insightEl=document.getElementById('trend-insight');
+  if(insightEl){
+    insightEl.innerHTML=
+      '<div class="ti-block"><div class="ti-label">최신일 (정규화)</div>'+
+      '<div class="ti-row"><span class="ti-dot ti-dot-anchor"></span>앵커패닉<b>'+fmt(aLast)+'</b></div>'+
+      '<div class="ti-row"><span class="ti-dot ti-dot-erpis"></span>에르피스<b>'+fmt(eLast)+'</b></div></div>'+
+      '<div class="ti-block"><div class="ti-label">전일 대비</div>'+
+      '<div class="ti-row"><span class="ti-dot ti-dot-anchor"></span>앵커패닉<b>'+pct(aLast,aPrev)+'</b></div>'+
+      '<div class="ti-row"><span class="ti-dot ti-dot-erpis"></span>에르피스<b>'+pct(eLast,ePrev)+'</b></div></div>'+
+      '<div class="ti-block"><div class="ti-label">30일 평균 대비</div>'+
+      '<div class="ti-row"><span class="ti-dot ti-dot-anchor"></span>앵커패닉<b>'+pct(aLast,aAvg)+'</b></div>'+
+      '<div class="ti-row"><span class="ti-dot ti-dot-erpis"></span>에르피스<b>'+pct(eLast,eAvg)+'</b></div></div>'+
+      '<div class="ti-foot">데이터: '+st.startDate+' ~ '+st.endDate+' · 키워드 그룹 합산</div>';
+  }
+}
+function renderList(){
+  const game=curData.games[actGame];
+  const body=document.getElementById('all-posts-body');
+  if(!body)return;
+  const filt=game.posts.filter(p=>{
+    if((p.tags||[]).includes('notice'))return false;
+    if(fS.source!=='all'&&p.source!==fS.source)return false;
+    if(fS.tag!=='all'&&!(p.tags||[]).includes(fS.tag))return false;
+    if(fS.search&&!p.title.toLowerCase().includes(fS.search))return false;
+    return true;
+  });
+  const f=sS.field,d=sS.dir;
+  filt.sort((a,b)=>{
+    let av,bv;
+    if(f==='utcIso'){av=new Date(a.utcIso).getTime();bv=new Date(b.utcIso).getTime();}
+    else {av=Number(a[f])||0;bv=Number(b[f])||0;}
+    return d==='desc'?bv-av:av-bv;
+  });
+  body.innerHTML=filt.map(p=>{
+    const dt=new Date(p.utcIso).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'});
+    const tags=(p.tags||[]).map(t=>'<span class="tag-pill">'+tagL(t)+'</span>').join('');
+    return '<tr><td><span class="src-'+p.source+'">'+p.source.toUpperCase()+'</span></td>'+
+      '<td class="title-cell"><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.title)+'</a></td>'+
+      '<td>'+tags+'</td>'+
+      '<td class="muted small">'+dt+'</td>'+
+      '<td style="text-align:right;">'+fmtNum(p.views)+'</td>'+
+      '<td style="text-align:right;">'+p.comments+'</td>'+
+      '<td style="text-align:right;">'+p.likes+'</td></tr>';
+  }).join('');
+}
+loadIdx();
+</script></body></html>
