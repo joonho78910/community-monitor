@@ -1,6 +1,6 @@
 {
   "date": "2026-05-13",
-  "lastUpdated": "2026-05-14T04:54:25.180Z",
+  "lastUpdated": "2026-05-14T05:08:56.845Z",
   "searchTrends": {
     "startDate": "2026-04-14",
     "endDate": "2026-05-13",
@@ -499,6 +499,64 @@
             }
           ]
         }
+      }
+    ],
+    "events": [
+      {
+        "date": "2026-04-23",
+        "game": "anchorpanic",
+        "confidence": 3,
+        "label": "1주년 사전예약 시작",
+        "detail": "대규모 업데이트 발표 — 신규 SSR '화이트 로즈', 600회 무료 뽑기, 지정 픽업 시스템 최초 도입",
+        "url": "https://www.thisisgame.com/articles/420698"
+      },
+      {
+        "date": "2026-05-02",
+        "game": "anchorpanic",
+        "confidence": 2,
+        "label": "1주년 D-5 쿠폰 발표",
+        "detail": "1주년 D-day 카운트다운 시작 — 매일 특별 쿠폰 배포",
+        "url": "https://cafe.naver.com/anchorpanic/6733"
+      },
+      {
+        "date": "2026-05-04",
+        "game": "anchorpanic",
+        "confidence": 2,
+        "label": "1주년 D-3 쿠폰",
+        "detail": "1주년 D-3 특별 쿠폰",
+        "url": "https://cafe.naver.com/anchorpanic/6742"
+      },
+      {
+        "date": "2026-05-05",
+        "game": "anchorpanic",
+        "confidence": 2,
+        "label": "1주년 D-1 쿠폰 + 점검 임박",
+        "detail": "1주년 D-2/D-1 쿠폰 + 2.8 업데이트 점검 임박",
+        "url": "https://cafe.naver.com/anchorpanic/6752"
+      },
+      {
+        "date": "2026-05-06",
+        "game": "anchorpanic",
+        "confidence": 3,
+        "label": "1주년 2.8 업데이트",
+        "detail": "1주년 업데이트 점검 완료. SSR '화이트 로즈' 합류, 600뽑 등 보상 지급",
+        "url": "https://cafe.naver.com/anchorpanic/6776"
+      },
+      {
+        "date": "2026-05-07",
+        "game": "anchorpanic",
+        "confidence": 3,
+        "label": "역주행: 구글 1위·애플 2위",
+        "detail": "양대 앱마켓 인기 순위 최상위권 진입. DAU 전주 대비 5배 증가 보도",
+        "url": "https://www.betanews.net/article/view/beta202605080007"
+      },
+      {
+        "date": "2026-05-04",
+        "game": "erpis",
+        "confidence": 3,
+        "label": "출시 100일 + 레티시아 추가",
+        "detail": "국내 출시 100일 감사 이벤트 + 신규 5성 캐릭터 레티시아 출시 (5/21까지 보상 진행)",
+        "url": "https://www.thisisgame.com/articles/422353"
       }
     ]
   },
