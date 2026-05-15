@@ -114,6 +114,56 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 .ti-dot-erpis{background:#7c3aed;}
 .ti-foot{font-size:10.5px;color:var(--text-3);padding-top:8px;border-top:1px solid var(--border);margin-top:auto;}
 .up{color:var(--positive);}.dn{color:var(--negative);}.flat{color:var(--text-3);}
+/* Calendar (popup-style, refined) */
+.cal-wrap{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 18px;margin-bottom:14px;box-shadow:var(--shadow);display:flex;align-items:center;gap:14px;position:relative;flex-wrap:wrap;}
+.cal-icon{font-size:14px;}
+.cal-trigger{display:inline-flex;align-items:center;gap:10px;padding:7px 14px;background:var(--surface);border:1px solid var(--border);border-radius:8px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;color:var(--text);transition:all 0.15s;font-variant-numeric:tabular-nums;}
+.cal-trigger:hover{border-color:var(--accent);background:var(--accent-bg);}
+.cal-trigger.open{border-color:var(--accent);background:var(--accent-bg);}
+.cal-trigger .sub{font-size:11.5px;color:var(--text-3);font-weight:500;}
+.cal-trigger .caret{color:var(--text-3);font-size:9px;transition:transform 0.15s;}
+.cal-trigger.open .caret{transform:rotate(180deg);color:var(--accent);}
+.cal-nav{display:flex;gap:5px;align-items:center;margin-left:auto;}
+.cal-btn{background:transparent;border:1px solid var(--border);border-radius:6px;padding:5px 11px;font-size:12px;cursor:pointer;color:var(--text-2);font-family:inherit;font-weight:500;transition:all 0.12s;}
+.cal-btn:hover:not(:disabled){border-color:var(--accent);color:var(--accent);}
+.cal-btn:disabled{opacity:0.35;cursor:not-allowed;}
+.cal-status{font-size:11.5px;color:var(--text-3);font-weight:500;}
+.cal-popup{position:absolute;top:calc(100% + 8px);left:14px;background:var(--surface);border:1px solid var(--border);border-radius:14px;box-shadow:0 10px 28px rgba(15,23,42,0.10),0 2px 6px rgba(15,23,42,0.05);padding:22px 26px 18px;display:none;align-items:flex-start;gap:22px;z-index:200;flex-wrap:wrap;}
+.cal-popup.open{display:flex;animation:calFadeIn 0.18s ease-out;}
+@keyframes calFadeIn{from{opacity:0;transform:translateY(-4px);}to{opacity:1;transform:translateY(0);}}
+.cal-popup-nav{background:transparent;border:0;color:var(--text-3);cursor:pointer;font-size:20px;padding:6px 8px;border-radius:50%;font-family:inherit;align-self:center;font-weight:300;width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;transition:all 0.15s;}
+.cal-popup-nav:hover:not(:disabled){background:var(--accent-bg);color:var(--accent);}
+.cal-popup-nav:disabled{opacity:0.2;cursor:not-allowed;}
+.cal-month-block{min-width:252px;}
+.cal-month-title{display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;color:var(--text);margin-bottom:14px;padding:2px 0;font-variant-numeric:tabular-nums;letter-spacing:-0.01em;}
+.cal-weekdays-row{display:grid;grid-template-columns:repeat(7,34px);gap:0;font-size:11px;color:var(--text-3);font-weight:600;text-align:center;padding:4px 0 8px;}
+.cal-weekdays-row .wk-sun{color:#dc2626;}
+.cal-weekdays-row .wk-sat{color:#2563eb;}
+.cal-days-grid{display:grid;grid-template-columns:repeat(7,34px);grid-auto-rows:34px;gap:0;}
+.cal-day-cell{display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--text);border-radius:50%;cursor:default;position:relative;font-variant-numeric:tabular-nums;background:transparent;transition:background 0.15s,color 0.15s;width:32px;height:32px;margin:1px;}
+.cal-day-cell.empty{visibility:hidden;}
+.cal-day-cell.has-data{background:#e0e7ff;color:#3730a3;font-weight:500;cursor:pointer;}
+.cal-day-cell.has-data:hover{background:#c7d2fe;}
+.cal-day-cell.spike{background:#a5b4fc;color:#1e1b4b;font-weight:600;}
+.cal-day-cell.spike:hover{background:#818cf8;color:#fff;}
+.cal-day-cell.selected{background:#475569 !important;color:#fff !important;font-weight:700;}
+.cal-day-cell.selected:hover{background:#334155 !important;}
+.cal-day-cell.today::after{content:"";position:absolute;bottom:3px;left:50%;transform:translateX(-50%);width:4px;height:4px;border-radius:50%;background:var(--accent);}
+.cal-day-cell.today.selected::after{background:#fff;}
+.game-erpis .cal-day-cell.has-data{background:#ede9fe;color:#5b21b6;}
+.game-erpis .cal-day-cell.has-data:hover{background:#ddd6fe;}
+.game-erpis .cal-day-cell.spike{background:#c4b5fd;color:#3b0764;}
+.game-erpis .cal-day-cell.spike:hover{background:#a78bfa;color:#fff;}
+.cal-legend-inline{display:flex;align-items:center;gap:16px;font-size:11px;color:var(--text-3);margin-top:6px;padding-top:14px;border-top:1px solid var(--border);justify-content:center;flex-wrap:wrap;width:100%;}
+.cal-legend-inline .lg-item{display:inline-flex;align-items:center;gap:6px;}
+.cal-legend-inline .lg-swatch{width:12px;height:12px;border-radius:50%;}
+/* Card deltas */
+.card{position:relative;}
+.delta{display:inline-flex;align-items:center;gap:2px;font-size:11px;font-weight:700;padding:1px 6px;border-radius:4px;margin-left:6px;font-variant-numeric:tabular-nums;vertical-align:middle;letter-spacing:-0.01em;line-height:1.5;}
+.delta-good{background:#dcfce7;color:#166534;}
+.delta-bad{background:#fee2e2;color:#991b1b;}
+.delta-flat{background:#f1f5f9;color:#64748b;}
+
 @media(max-width:980px){.cards{grid-template-columns:repeat(2,1fr);}.row{grid-template-columns:1fr;}}
 </style></head>
 <body>
@@ -124,11 +174,41 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
     <div class="sub">앵커패닉 · 에르피스 일일 모니터링</div>
   </div>
   <div class="header-right">
-    <div class="controls">
-      <span class="muted small">날짜</span>
-      <select id="date-select"></select>
+    <div id="meta-info"></div>
+  </div>
+</div>
+<div class="cal-wrap" id="cal-wrap">
+  <span class="cal-icon">📅</span>
+  <span style="font-size:11px;color:var(--text-2);text-transform:uppercase;font-weight:700;letter-spacing:0.08em;">일자 선택</span>
+  <button class="cal-trigger" id="cal-trigger" type="button">
+    <span id="cal-current">-</span>
+    <span class="caret">▼</span>
+  </button>
+  <span class="cal-status" id="cal-status"></span>
+  <div class="cal-nav">
+    <button class="cal-btn" id="cal-prev" title="이전 데이터">‹ 이전</button>
+    <button class="cal-btn" id="cal-latest" title="최신">최신</button>
+    <button class="cal-btn" id="cal-next" title="다음 데이터">다음 ›</button>
+  </div>
+  <div class="cal-popup" id="cal-popup">
+    <button class="cal-popup-nav" id="cal-month-prev" title="이전 달">‹</button>
+    <div class="cal-month-block">
+      <div class="cal-month-title" id="cal-title-left">-</div>
+      <div class="cal-weekdays-row"><span class="wk-sun">일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span class="wk-sat">토</span></div>
+      <div class="cal-days-grid" id="cal-days-left"></div>
     </div>
-    <div style="margin-top:6px;" id="meta-info"></div>
+    <div class="cal-month-block">
+      <div class="cal-month-title" id="cal-title-right">-</div>
+      <div class="cal-weekdays-row"><span class="wk-sun">일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span class="wk-sat">토</span></div>
+      <div class="cal-days-grid" id="cal-days-right"></div>
+    </div>
+    <button class="cal-popup-nav" id="cal-month-next" title="다음 달">›</button>
+    <div class="cal-legend-inline">
+      <span class="lg-item"><span class="lg-swatch" style="background:#e0e7ff;"></span>데이터 있음</span>
+      <span class="lg-item"><span class="lg-swatch" style="background:#a5b4fc;"></span>검색 스파이크</span>
+      <span class="lg-item"><span class="lg-swatch" style="background:#475569;"></span>선택</span>
+      <span class="lg-item"><span style="position:relative;width:14px;height:14px;display:inline-block;"><span style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:4px;height:4px;border-radius:50%;background:var(--accent);"></span></span>오늘</span>
+    </div>
   </div>
 </div>
 <div class="tabs" id="tabs"></div>
@@ -151,27 +231,193 @@ function esc(s){if(s==null)return"";return String(s).replace(/&/g,"&amp;").repla
 function tagL(t){return({bug:"버그",negative:"부정",positive:"긍정",competitor:"경쟁작",newbie:"뉴비",guild:"길드",gacha:"가챠",event:"이벤트",balance:"밸런스",guide:"공략",chitchat:"잡담"})[t]||t;}
 function toneShort(t){return t==="긍정"?"G":t==="부정"?"B":t==="혼합"?"M":"N";}
 function countGroup(posts,tags){return posts.filter(p=>(p.tags||[]).some(t=>tags.includes(t))).length;}
-let curData=null,actGame='',actSearch='',trendChart=null;
+let curData=null,prevData=null,actGame='',actSearch='',trendChart=null;
+let allDates=[];
+const dateCache={};
+let suppressHash=false;
 const fS={source:"all",tag:"all",search:""};
 const sS={field:"utcIso",dir:"desc"};
+
+function todayKST(){return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);}
+function relLabel(iso){
+  const t=todayKST();
+  if(iso===t)return '(오늘)';
+  const d1=new Date(t+'T00:00:00Z').getTime();
+  const d2=new Date(iso+'T00:00:00Z').getTime();
+  const diff=Math.round((d1-d2)/86400000);
+  if(diff===1)return '(어제)';
+  if(diff===-1)return '(내일)';
+  if(diff>0)return '('+diff+'일 전)';
+  return '('+(-diff)+'일 후)';
+}
+function parseHash(){
+  const h=location.hash.replace(/^#/,'');
+  const p=new URLSearchParams(h);
+  return {date:p.get('date'),game:p.get('game'),src:p.get('src')||'all',tag:p.get('tag')||'all',q:p.get('q')||'',sort:p.get('sort')||'utcIso',dir:p.get('dir')||'desc'};
+}
+function updateHash(){
+  if(!curData||suppressHash)return;
+  const p=new URLSearchParams();
+  p.set('date',curData.date);
+  if(actGame)p.set('game',actGame);
+  if(fS.source!=='all')p.set('src',fS.source);
+  if(fS.tag!=='all')p.set('tag',fS.tag);
+  if(fS.search)p.set('q',fS.search);
+  if(sS.field!=='utcIso')p.set('sort',sS.field);
+  if(sS.dir!=='desc')p.set('dir',sS.dir);
+  const newH='#'+p.toString();
+  if(location.hash!==newH){history.replaceState(null,'',newH);}
+}
+function dayActivity(data){
+  if(!data||!data.games)return {posts:0};
+  let posts=0;
+  Object.values(data.games).forEach(g=>{posts+=(g.stats&&g.stats.real_posts)||0;});
+  return {posts};
+}
+function spikeOnDate(data,iso){
+  const evs=data&&data.searchTrends&&data.searchTrends.events||[];
+  return evs.some(e=>e.date===iso);
+}
+let calViewMonth=null;
+function buildMonthGrid(year,month0,sel,today){
+  const first=new Date(Date.UTC(year,month0,1));
+  const last=new Date(Date.UTC(year,month0+1,0));
+  const firstWd=first.getUTCDay();
+  const daysInMonth=last.getUTCDate();
+  const cells=[];
+  for(let i=0;i<firstWd;i++)cells.push({empty:true});
+  for(let d=1;d<=daysInMonth;d++){
+    const dt=new Date(Date.UTC(year,month0,d));
+    const iso=dt.toISOString().slice(0,10);
+    cells.push({iso,day:d});
+  }
+  while(cells.length<42)cells.push({empty:true});
+  return cells.map(c=>{
+    if(c.empty)return '<div class="cal-day-cell empty"></div>';
+    const has=allDates.includes(c.iso);
+    const cd=dateCache[c.iso];
+    const isSpike=cd&&spikeOnDate(cd,c.iso);
+    const isSel=c.iso===sel;
+    const isToday=c.iso===today;
+    const cls=['cal-day-cell'];
+    if(has)cls.push('has-data');
+    if(isSpike)cls.push('spike');
+    if(isSel)cls.push('selected');
+    if(isToday)cls.push('today');
+    return '<div class="'+cls.join(' ')+'" data-d="'+c.iso+'">'+c.day+'</div>';
+  }).join('');
+}
+function renderCalendar(){
+  const popup=document.getElementById('cal-popup');
+  const titleL=document.getElementById('cal-title-left');
+  const titleR=document.getElementById('cal-title-right');
+  const daysL=document.getElementById('cal-days-left');
+  const daysR=document.getElementById('cal-days-right');
+  if(!popup||!titleL)return;
+  const today=todayKST();
+  const sel=curData?curData.date:null;
+  if(!calViewMonth){
+    const base=sel?new Date(sel+'T00:00:00Z'):new Date(today+'T00:00:00Z');
+    calViewMonth={year:base.getUTCFullYear(),month0:base.getUTCMonth()-1};
+    if(calViewMonth.month0<0){calViewMonth.month0+=12;calViewMonth.year-=1;}
+  }
+  const leftY=calViewMonth.year, leftM=calViewMonth.month0;
+  let rightY=leftY, rightM=leftM+1;
+  if(rightM>11){rightM=0;rightY++;}
+  titleL.textContent=leftY+'년 '+(leftM+1)+'월';
+  titleR.textContent=rightY+'년 '+(rightM+1)+'월';
+  daysL.innerHTML=buildMonthGrid(leftY,leftM,sel,today);
+  daysR.innerHTML=buildMonthGrid(rightY,rightM,sel,today);
+  popup.querySelectorAll('.cal-day-cell.has-data').forEach(el=>{
+    el.onclick=()=>{const d=el.dataset.d;if(d&&d!==sel){closePopup();loadDate(d);}};
+  });
+  document.getElementById('cal-month-prev').onclick=async()=>{
+    let m=calViewMonth.month0-1,y=calViewMonth.year;
+    if(m<0){m=11;y--;}
+    calViewMonth={year:y,month0:m};renderCalendar();
+    await fetchVisibleMonths();renderCalendar();
+  };
+  document.getElementById('cal-month-next').onclick=async()=>{
+    let m=calViewMonth.month0+1,y=calViewMonth.year;
+    if(m>11){m=0;y++;}
+    const tToday=new Date(todayKST()+'T00:00:00Z');
+    const nextRightM=m+1>11?0:m+1;
+    const nextRightY=y+(m+1>11?1:0);
+    if(nextRightY>tToday.getUTCFullYear()||(nextRightY===tToday.getUTCFullYear()&&nextRightM>tToday.getUTCMonth()))return;
+    calViewMonth={year:y,month0:m};renderCalendar();
+    await fetchVisibleMonths();renderCalendar();
+  };
+  if(curData){
+    const triggerLabel=document.getElementById('cal-current');
+    triggerLabel.innerHTML=esc(curData.date)+' <span class="sub">'+relLabel(curData.date)+'</span>';
+    const idx=allDates.indexOf(curData.date);
+    document.getElementById('cal-prev').disabled=(idx>=allDates.length-1);
+    document.getElementById('cal-next').disabled=(idx<=0);
+    const statusEl=document.getElementById('cal-status');
+    if(statusEl){
+      const n=allDates.length;
+      if(n<60)statusEl.innerHTML='누적 <b style="color:var(--accent);">'+n+'/60</b>일';
+      else statusEl.textContent=n+'일 누적';
+    }
+  }
+}
+function openPopup(){const p=document.getElementById('cal-popup');const t=document.getElementById('cal-trigger');p.classList.add('open');t.classList.add('open');}
+function closePopup(){const p=document.getElementById('cal-popup');const t=document.getElementById('cal-trigger');p.classList.remove('open');t.classList.remove('open');}
+async function fetchVisibleMonths(){
+  if(!calViewMonth)return;
+  const y1=calViewMonth.year,m1=calViewMonth.month0;
+  let y2=y1,m2=m1+1;if(m2>11){m2=0;y2++;}
+  const inMonth=(iso,y,m)=>{const d=new Date(iso+'T00:00:00Z');return d.getUTCFullYear()===y&&d.getUTCMonth()===m;};
+  const need=allDates.filter(d=>(inMonth(d,y1,m1)||inMonth(d,y2,m2))&&!dateCache[d]);
+  if(need.length===0)return;
+  await Promise.all(need.map(d=>fetch('data/'+d+'.json?ts='+Date.now()).then(r=>r.json()).then(j=>{dateCache[d]=j;}).catch(()=>{})));
+}
+async function togglePopup(){
+  const p=document.getElementById('cal-popup');
+  if(p.classList.contains('open')){closePopup();return;}
+  openPopup();renderCalendar();
+  await fetchVisibleMonths();
+  renderCalendar(); // re-render with spike data
+}
+document.addEventListener('click',e=>{const w=document.getElementById('cal-wrap');if(w&&!w.contains(e.target)){closePopup();}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closePopup();});
+
 async function loadIdx(){
   const r=await fetch('data/index.json?ts='+Date.now());
   const j=await r.json();
-  const dts=j.dates.sort().reverse();
-  const sel=document.getElementById('date-select');
-  sel.innerHTML=dts.map(d=>'<option value="'+d+'">'+d+'</option>').join('');
-  sel.addEventListener('change',()=>loadDate(sel.value));
-  if(dts.length)await loadDate(dts[0]);
+  allDates=j.dates.sort().reverse();
+  document.getElementById('cal-prev').onclick=()=>{const idx=allDates.indexOf(curData&&curData.date);if(idx>=0&&idx<allDates.length-1)loadDate(allDates[idx+1]);};
+  document.getElementById('cal-next').onclick=()=>{const idx=allDates.indexOf(curData&&curData.date);if(idx>0)loadDate(allDates[idx-1]);};
+  document.getElementById('cal-latest').onclick=()=>{if(allDates[0]&&allDates[0]!==(curData&&curData.date))loadDate(allDates[0]);};
+  document.getElementById('cal-trigger').onclick=togglePopup;
+    // Lazy load: only fetch dates on demand. Calendar shows has-data from index.json directly.
+  const hash=parseHash();
+  if(hash.game)actGame=hash.game;
+  fS.source=hash.src;fS.tag=hash.tag;fS.search=hash.q;
+  sS.field=hash.sort;sS.dir=hash.dir;
+  const initDate=(hash.date&&allDates.includes(hash.date))?hash.date:allDates[0];
+  if(initDate)await loadDate(initDate);
 }
 async function loadDate(d){
   document.getElementById('game-content').innerHTML='<div class="loading">데이터 로딩 중...</div>';
-  const r=await fetch('data/'+d+'.json?ts='+Date.now());
-  curData=await r.json();
+  let data;
+  if(dateCache[d]){data=dateCache[d];}
+  else{const r=await fetch('data/'+d+'.json?ts='+Date.now());data=await r.json();dateCache[d]=data;}
+  curData=data;
+  calViewMonth=null;
+  const idx=allDates.indexOf(d);
+  if(idx>=0&&idx<allDates.length-1){
+    const pd=allDates[idx+1];
+    if(dateCache[pd]){prevData=dateCache[pd];}
+    else{try{const r2=await fetch('data/'+pd+'.json?ts='+Date.now());prevData=await r2.json();dateCache[pd]=prevData;}catch(e){prevData=null;}}
+  } else { prevData=null; }
   const games=Object.keys(curData.games);
   if(!actGame||!games.includes(actGame))actGame=games[0];
   buildTabs(games);
   document.getElementById('meta-info').textContent='업데이트: '+new Date(curData.lastUpdated).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'});
+  renderCalendar();
   render();
+  updateHash();
 }
 function buildTabs(games){
   const el=document.getElementById('tabs');
@@ -180,9 +426,27 @@ function buildTabs(games){
     const btn=document.createElement('button');
     btn.className='tab'+(key===actGame?' active':'');
     btn.textContent=curData.games[key].name;
-    btn.onclick=()=>{actGame=key;document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));btn.classList.add('active');render();};
+    btn.onclick=()=>{actGame=key;document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));btn.classList.add('active');renderCalendar();render();updateHash();};
     el.appendChild(btn);
   });
+}
+function deltaHtml(cur,prev,opts){
+  opts=opts||{};
+  if(prev==null||cur==null||isNaN(prev)||isNaN(cur))return '';
+  const diff=cur-prev;
+  if(Math.abs(diff)<(opts.eps||0.001)){return '<span class="delta delta-flat">→ 0</span>';}
+  const goodOnUp=!opts.upIsBad;
+  const cls=(diff>0)===goodOnUp?'delta-good':'delta-bad';
+  const arrow=diff>0?'▲':'▼';
+  let valStr;
+  if(opts.pct){
+    valStr=prev===0?'—':((diff/Math.abs(prev))*100).toFixed(0)+'%';
+  } else if(opts.dp!=null){
+    valStr=Math.abs(diff).toFixed(opts.dp);
+  } else {
+    valStr=fmtNum(Math.abs(diff));
+  }
+  return '<span class="delta '+cls+'">'+arrow+' '+valStr+'</span>';
 }
 function render(){
   const game=curData.games[actGame];
@@ -203,7 +467,14 @@ function render(){
   const tp=(game.topEngaging||[]).map((p,i)=>'<tr><td class="muted small" style="text-align:right;">'+(i+1)+'</td><td><span class="src-'+p.source+'">'+p.source.toUpperCase()+'</span></td><td class="title-cell"><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.title)+'</a></td><td class="small muted">'+esc(p.category||'-')+'</td><td style="text-align:right;">'+fmtNum(p.views)+'</td><td style="text-align:right;">'+p.comments+'</td><td style="text-align:right;">'+p.likes+'</td></tr>').join('');
   const distBars=groupCounts.map(g=>{const pct=g.pct;const w=Math.max(pct,1);return '<div class="dist-row"><div class="dist-label"><span class="dist-dot" style="background:'+g.color+';"></span>'+g.label+'</div><div class="dist-bar"><div class="dist-fill" style="width:'+w+'%;background:'+g.color+';"></div></div><div class="dist-pct">'+pct+'%</div></div>';}).join('');
   
-  c.innerHTML='<div class="cards"><div class="card"><div class="label">전일 게시물</div><div class="value">'+fmtNum(s.real_posts)+'</div><div class="sub">공지 '+(s.notices||0)+'개 제외</div></div><div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+'</div><div class="sub">긍정 '+s.positive+' · 부정 '+s.negative+'</div></div><div class="card"><div class="label">총 조회수</div><div class="value">'+fmtK(s.total_views)+'</div><div class="sub">평균 '+Math.round(s.total_views/Math.max(s.real_posts,1))+' / 글</div></div><div class="card"><div class="label">버그 의심</div><div class="value '+(s.bugs>0?'s-neg':'')+'">'+s.bugs+'</div><div class="sub">자동 키워드 검출</div></div></div>'+
+  const pg=prevData&&prevData.games&&prevData.games[actGame];
+  const ps=pg&&pg.stats||null;
+  const dvs=ps?'<span class="muted small" style="margin-left:4px;">vs 전일</span>':'';
+  const d1=ps?deltaHtml(s.real_posts,ps.real_posts):'';
+  const d2=ps?deltaHtml(s.sentiment_score,ps.sentiment_score,{dp:2}):'';
+  const d3=ps?deltaHtml(s.total_views,ps.total_views,{pct:true}):'';
+  const d4=ps?deltaHtml(s.bugs,ps.bugs,{upIsBad:true}):'';
+  c.innerHTML='<div class="cards"><div class="card"><div class="label">게시물</div><div class="value">'+fmtNum(s.real_posts)+d1+'</div><div class="sub">공지 '+(s.notices||0)+'개 제외 '+dvs+'</div></div><div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+d2+'</div><div class="sub">긍정 '+s.positive+' · 부정 '+s.negative+' '+dvs+'</div></div><div class="card"><div class="label">총 조회수</div><div class="value">'+fmtK(s.total_views)+d3+'</div><div class="sub">평균 '+Math.round(s.total_views/Math.max(s.real_posts,1))+' / 글 '+dvs+'</div></div><div class="card"><div class="label">버그 의심</div><div class="value '+(s.bugs>0?'s-neg':'')+'">'+s.bugs+d4+'</div><div class="sub">자동 키워드 검출 '+dvs+'</div></div></div>'+
     '<div class="section"><h2>일일 동향 요약</h2><div class="summary-box">'+esc(a.dailySummary||'')+'</div><div class="keywords">'+kw+'</div><div class="section-note">키워드 클릭 시 해당 단어로 전체 게시물에서 자동 검색됩니다</div></div>'+
     (curData.searchTrends?'<div class="row"><div class="section"><h2>검색 트렌드 <span class="count">30일 · 네이버 + 구글</span></h2><div style="position:relative;height:280px;"><canvas id="trendChart"></canvas></div><div class="section-note">출처: 네이버 데이터랩 · 각 키워드 그룹 max=100 정규화 · 그룹 간 비교 가능</div></div><div class="section"><h2>검색량 스냅샷</h2><div class="trend-insight" id="trend-insight"></div></div></div>':'')+
     '<div class="row"><div class="section"><h2>핵심 이슈 <span class="count">'+(a.topIssues||[]).length+'</span></h2><ul class="issue-list">'+iss+'</ul><div class="section-note">순위는 조회 + 댓글 + 추천 가중 합산 기준</div></div><div class="section"><h2>주제별 분포</h2><div class="dist-bars">'+distBars+'</div><div class="section-note">중복 분류 가능 (한 글이 여러 카테고리 포함 가능)</div></div></div>'+
@@ -214,16 +485,21 @@ function render(){
   
   document.querySelectorAll('.filter-btn').forEach(b=>{
     if(b.dataset.val===fS[b.dataset.type])b.classList.add('active');
-    b.onclick=()=>{fS[b.dataset.type]=b.dataset.val;document.querySelectorAll('[data-type="'+b.dataset.type+'"]').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderList();};
+    b.onclick=()=>{fS[b.dataset.type]=b.dataset.val;document.querySelectorAll('[data-type="'+b.dataset.type+'"]').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderList();updateHash();};
   });
   const si=document.getElementById('search');
   si.value=fS.search;
-  si.oninput=e=>{fS.search=e.target.value.toLowerCase();renderList();};
+  let sTimer=null;
+  si.oninput=e=>{fS.search=e.target.value.toLowerCase();renderList();clearTimeout(sTimer);sTimer=setTimeout(updateHash,400);};
   document.querySelectorAll('th.sortable').forEach(th=>{
+    const f0=th.dataset.sort;
+    if(sS.field===f0)th.classList.add('sort-'+(sS.dir==='desc'?'desc':'asc'));
     th.onclick=()=>{
       const f=th.dataset.sort;
       if(sS.field===f){sS.dir=sS.dir==='desc'?'asc':'desc';}else{sS.field=f;sS.dir='desc';}
-      renderList();
+      document.querySelectorAll('th.sortable').forEach(t=>t.classList.remove('sort-asc','sort-desc'));
+      th.classList.add('sort-'+(sS.dir==='desc'?'desc':'asc'));
+      renderList();updateHash();
     };
   });
   document.querySelectorAll('.keyword').forEach(k=>{
@@ -231,7 +507,7 @@ function render(){
       const w=k.dataset.kw;
       fS.search=w.toLowerCase();
       document.getElementById('search').value=w;
-      renderList();
+      renderList();updateHash();
       document.getElementById('all-posts-section').scrollIntoView({behavior:'smooth',block:'start'});
     };
   });
@@ -340,5 +616,18 @@ function renderList(){
       '<td style="text-align:right;">'+p.likes+'</td></tr>';
   }).join('');
 }
+window.addEventListener('hashchange',()=>{
+  const h=parseHash();
+  if(!h.date||!curData)return;
+  if(h.date!==curData.date&&allDates.includes(h.date)){
+    suppressHash=true;
+    if(h.game)actGame=h.game;
+    fS.source=h.src;fS.tag=h.tag;fS.search=h.q;
+    sS.field=h.sort;sS.dir=h.dir;
+    loadDate(h.date).then(()=>{suppressHash=false;});
+  } else if(h.game&&h.game!==actGame){
+    actGame=h.game;render();renderCalendar();
+  }
+});
 loadIdx();
 </script></body></html>
