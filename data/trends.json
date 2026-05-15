@@ -1,6 +1,6 @@
 {
   "startDate": "2025-11-16",
-  "endDate": "2026-05-14",
+  "endDate": "2026-05-15",
   "timeUnit": "date",
   "sources": {
     "naver": {
@@ -9,7 +9,7 @@
     },
     "google": {
       "label": "구글 트렌드",
-      "note": "12개월 주간 집계 → 일별 보간"
+      "note": "12개월 주 단위 데이터, 일별로 펼쳐 표시"
     }
   },
   "series": [
@@ -2006,119 +2006,119 @@
           },
           {
             "period": "2026-04-16",
-            "ratio": 2.4749
+            "ratio": 55.90062
           },
           {
             "period": "2026-04-17",
-            "ratio": 1.88367
+            "ratio": 42.54658
           },
           {
             "period": "2026-04-18",
-            "ratio": 1.55369
+            "ratio": 35.09316
           },
           {
             "period": "2026-04-19",
-            "ratio": 1.2787
+            "ratio": 28.88198
           },
           {
             "period": "2026-04-20",
-            "ratio": 1.20995
+            "ratio": 27.32919
           },
           {
             "period": "2026-04-21",
-            "ratio": 1.2512
+            "ratio": 28.26086
           },
           {
             "period": "2026-04-22",
-            "ratio": 1.69118
+            "ratio": 38.19875
           },
           {
             "period": "2026-04-23",
-            "ratio": 1.37494
+            "ratio": 31.0559
           },
           {
             "period": "2026-04-24",
-            "ratio": 1.23745
+            "ratio": 27.95031
           },
           {
             "period": "2026-04-25",
-            "ratio": 1.03121
+            "ratio": 23.29192
           },
           {
             "period": "2026-04-26",
-            "ratio": 0.83871
+            "ratio": 18.94409
           },
           {
             "period": "2026-04-27",
-            "ratio": 1.2787
+            "ratio": 28.88198
           },
           {
             "period": "2026-04-28",
-            "ratio": 1.36119
+            "ratio": 30.74534
           },
           {
             "period": "2026-04-29",
-            "ratio": 1.63618
+            "ratio": 36.95652
           },
           {
             "period": "2026-04-30",
-            "ratio": 2.10367
+            "ratio": 47.51552
           },
           {
             "period": "2026-05-01",
-            "ratio": 1.48494
+            "ratio": 33.54037
           },
           {
             "period": "2026-05-02",
-            "ratio": 0.98996
+            "ratio": 22.36024
           },
           {
             "period": "2026-05-03",
-            "ratio": 0.89371
+            "ratio": 20.18633
           },
           {
             "period": "2026-05-04",
-            "ratio": 1.47119
+            "ratio": 33.22981
           },
           {
             "period": "2026-05-05",
-            "ratio": 1.15495
+            "ratio": 26.08695
           },
           {
             "period": "2026-05-06",
-            "ratio": 1.0862
+            "ratio": 24.53416
           },
           {
             "period": "2026-05-07",
-            "ratio": 1.09995
+            "ratio": 24.84472
           },
           {
             "period": "2026-05-08",
-            "ratio": 1.56744
+            "ratio": 35.40372
           },
           {
             "period": "2026-05-09",
-            "ratio": 1.49869
+            "ratio": 33.85093
           },
           {
             "period": "2026-05-10",
-            "ratio": 1.56744
+            "ratio": 35.40372
           },
           {
             "period": "2026-05-11",
-            "ratio": 1.37494
+            "ratio": 31.0559
           },
           {
             "period": "2026-05-12",
-            "ratio": 1.1687
+            "ratio": 26.39751
           },
           {
             "period": "2026-05-13",
-            "ratio": 1.63618
+            "ratio": 36.95652
           },
           {
             "period": "2026-05-14",
-            "ratio": 1.2237
+            "ratio": 27.63975
           }
         ],
         "google": [
@@ -2968,6 +2968,14 @@
       "url": ""
     },
     {
+      "confidence": 1,
+      "label": "(추정) 검색 활동 일시 증가",
+      "detail": "검색량 +35% 변동. 명확한 외부 이벤트 미확인.",
+      "url": "",
+      "date": "2026-04-22",
+      "game": "erpis"
+    },
+    {
       "date": "2026-04-23",
       "game": "anchorpanic",
       "confidence": 3,
@@ -2976,12 +2984,28 @@
       "url": "https://n.news.naver.com/mnews/article/009/0005670235?sid=101"
     },
     {
+      "confidence": 2,
+      "label": "TikTok Lite × 에르피스 쿠폰 콜라보 노출",
+      "detail": "블로그 다수에서 TikTok Lite 가입 보상 코드 및 에르피스 쿠폰 이벤트 공유.",
+      "url": "https://blog.naver.com/sladkwha1/224264277590",
+      "date": "2026-04-27",
+      "game": "erpis"
+    },
+    {
       "date": "2026-04-30",
       "game": "erpis",
       "confidence": 1,
       "label": "(추정) 게시물 활동 급증",
       "detail": "게시물 14일 평균 대비 +294% 변동",
       "url": ""
+    },
+    {
+      "confidence": 3,
+      "label": "출시 100일 기념 대규모 이벤트 시작",
+      "detail": "신규 5성 캐릭터 레티시아 추가, 월드보스 레이드, 시크릿 상점 오픈 등 100일 감사 이벤트 실시 (~5/21).",
+      "url": "https://m.sports.naver.com/esports/article/236/0000254824",
+      "date": "2026-05-04",
+      "game": "erpis"
     },
     {
       "date": "2026-05-05",
@@ -3016,12 +3040,28 @@
       "url": ""
     },
     {
+      "confidence": 1,
+      "label": "(추정) 앵커패닉 1주년 동반 검색",
+      "detail": "동일 기간 앵커패닉 1주년 업데이트로 넵튠 라인업 동반 검색량 상승.",
+      "url": "",
+      "date": "2026-05-08",
+      "game": "erpis"
+    },
+    {
       "date": "2026-05-09",
       "game": "anchorpanic",
       "confidence": 1,
       "label": "(추정) 검색 활동 급증",
       "detail": "검색량 14일 평균 대비 +270% 변동",
       "url": ""
+    },
+    {
+      "confidence": 2,
+      "label": "1분기 실적 발표 직전 관심 상승",
+      "detail": "5/15 넵튠 1Q 실적 공시(매출 314억·영업익 17억) 앞두고 신작 에르피스 매출 23.5억원 관련 검색 증가.",
+      "url": "https://n.news.naver.com/mnews/article/092/0002422957?sid=105",
+      "date": "2026-05-13",
+      "game": "erpis"
     }
   ]
 }
