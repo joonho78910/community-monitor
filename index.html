@@ -142,18 +142,18 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 .cal-days-grid{display:grid;grid-template-columns:repeat(7,34px);grid-auto-rows:34px;gap:0;}
 .cal-day-cell{display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--text);border-radius:50%;cursor:default;position:relative;font-variant-numeric:tabular-nums;background:transparent;transition:background 0.15s,color 0.15s;width:32px;height:32px;margin:1px;}
 .cal-day-cell.empty{visibility:hidden;}
-.cal-day-cell.has-data{background:#e0e7ff;color:#3730a3;font-weight:500;cursor:pointer;}
-.cal-day-cell.has-data:hover{background:#c7d2fe;}
-.cal-day-cell.spike{background:#a5b4fc;color:#1e1b4b;font-weight:600;}
-.cal-day-cell.spike:hover{background:#818cf8;color:#fff;}
+.cal-day-cell.has-data{background:#f1f5f9;color:#475569;font-weight:500;cursor:pointer;}
+.cal-day-cell.has-data:hover{background:#e2e8f0;}
+.cal-day-cell.spike{background:#6366f1;color:#fff;font-weight:700;}
+.cal-day-cell.spike:hover{background:#4f46e5;color:#fff;}
 .cal-day-cell.selected{background:#475569 !important;color:#fff !important;font-weight:700;}
 .cal-day-cell.selected:hover{background:#334155 !important;}
 .cal-day-cell.today::after{content:"";position:absolute;bottom:3px;left:50%;transform:translateX(-50%);width:4px;height:4px;border-radius:50%;background:var(--accent);}
 .cal-day-cell.today.selected::after{background:#fff;}
-.game-erpis .cal-day-cell.has-data{background:#ede9fe;color:#5b21b6;}
-.game-erpis .cal-day-cell.has-data:hover{background:#ddd6fe;}
-.game-erpis .cal-day-cell.spike{background:#c4b5fd;color:#3b0764;}
-.game-erpis .cal-day-cell.spike:hover{background:#a78bfa;color:#fff;}
+.game-erpis .cal-day-cell.has-data{background:#f1f5f9;color:#475569;}
+.game-erpis .cal-day-cell.has-data:hover{background:#e2e8f0;}
+.game-erpis .cal-day-cell.spike{background:#8b5cf6;color:#fff;font-weight:700;}
+.game-erpis .cal-day-cell.spike:hover{background:#7c3aed;color:#fff;}
 .cal-legend-inline{display:flex;align-items:center;gap:16px;font-size:11px;color:var(--text-3);margin-top:6px;padding-top:14px;border-top:1px solid var(--border);justify-content:center;flex-wrap:wrap;width:100%;}
 .cal-legend-inline .lg-item{display:inline-flex;align-items:center;gap:6px;}
 .cal-legend-inline .lg-swatch{width:12px;height:12px;border-radius:50%;}
@@ -204,8 +204,8 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
     </div>
     <button class="cal-popup-nav" id="cal-month-next" title="다음 달">›</button>
     <div class="cal-legend-inline">
-      <span class="lg-item"><span class="lg-swatch" style="background:#e0e7ff;"></span>데이터 있음</span>
-      <span class="lg-item"><span class="lg-swatch" style="background:#a5b4fc;"></span>검색 스파이크</span>
+      <span class="lg-item"><span class="lg-swatch" style="background:#f1f5f9;border:1px solid #cbd5e1;"></span>데이터 있음</span>
+      <span class="lg-item"><span class="lg-swatch" style="background:#6366f1;"></span>검색 스파이크</span>
       <span class="lg-item"><span class="lg-swatch" style="background:#475569;"></span>선택</span>
       <span class="lg-item"><span style="position:relative;width:14px;height:14px;display:inline-block;"><span style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:4px;height:4px;border-radius:50%;background:var(--accent);"></span></span>오늘</span>
     </div>
@@ -275,8 +275,9 @@ function dayActivity(data){
   Object.values(data.games).forEach(g=>{posts+=(g.stats&&g.stats.real_posts)||0;});
   return {posts};
 }
-function spikeOnDate(data,iso){
-  const evs=data&&data.searchTrends&&data.searchTrends.events||[];
+function spikeOnDate(iso){
+  // Use shared trendsData (loaded once at init), since daily files no longer embed searchTrends
+  const evs=(trendsData&&trendsData.events)||[];
   return evs.some(e=>e.date===iso);
 }
 let calViewMonth=null;
@@ -297,7 +298,7 @@ function buildMonthGrid(year,month0,sel,today){
     if(c.empty)return '<div class="cal-day-cell empty"></div>';
     const has=allDates.includes(c.iso);
     const cd=dateCache[c.iso];
-    const isSpike=cd&&spikeOnDate(cd,c.iso);
+    const isSpike=spikeOnDate(c.iso);
     const isSel=c.iso===sel;
     const isToday=c.iso===today;
     const cls=['cal-day-cell'];
