@@ -276,9 +276,9 @@ function dayActivity(data){
   return {posts};
 }
 function spikeOnDate(iso){
-  // Use shared trendsData (loaded once at init), since daily files no longer embed searchTrends
+  // Use shared trendsData; filter by currently active game so spike marker reflects the tab
   const evs=(trendsData&&trendsData.events)||[];
-  return evs.some(e=>e.date===iso);
+  return evs.some(e=>e.date===iso && (!actGame || e.game===actGame));
 }
 let calViewMonth=null;
 function buildMonthGrid(year,month0,sel,today){
@@ -527,16 +527,17 @@ function renderTrendChart(st,activeGame){
   const isLegacyArray=Array.isArray(game.data);
   const naverDataFull=isLegacyArray?game.data:(game.data.naver||[]);
   const googleDataFull=isLegacyArray?[]:(game.data.google||[]);
-  // Slice to last 30 days ending at curData.date
-  const sliceEnd=curData?curData.date:null;
-  function sliceLast30(arr){
-    if(!sliceEnd||!arr.length)return arr;
-    const endMs=new Date(sliceEnd+'T00:00:00Z').getTime();
-    const startMs=endMs-29*86400000;
+  // Slice to ±15 days centered on curData.date — shows lead-up AND aftermath of spike
+  const sliceCenter=curData?curData.date:null;
+  function sliceCentered(arr){
+    if(!sliceCenter||!arr.length)return arr;
+    const cMs=new Date(sliceCenter+'T00:00:00Z').getTime();
+    const startMs=cMs-15*86400000;
+    const endMs=cMs+14*86400000;
     return arr.filter(d=>{const t=new Date(d.period+'T00:00:00Z').getTime();return t>=startMs&&t<=endMs;});
   }
-  const naverData=sliceLast30(naverDataFull);
-  const googleData=sliceLast30(googleDataFull);
+  const naverData=sliceCentered(naverDataFull);
+  const googleData=sliceCentered(googleDataFull);
   const gameEvents=(st.events||[]).filter(e=>e.game===activeGame);
   const eventByDate={};gameEvents.forEach(e=>{eventByDate[e.date]=e;});
   const dateSet=new Set();
@@ -549,7 +550,7 @@ function renderTrendChart(st,activeGame){
   const gVals=dates.map(d=>gMap[d]??null);
   const color=activeGame==='anchorpanic'?'#1d4ed8':'#7c3aed';
   const fillBg=activeGame==='anchorpanic'?'rgba(29,78,216,0.08)':'rgba(124,58,237,0.08)';
-  const ptRadius=dates.map(d=>eventByDate[d]?5.5:2.2);
+  const ptRadius=dates.map(d=>d===sliceCenter?6.5:(eventByDate[d]?5.5:2.2));
   const ptBg=dates.map(d=>eventByDate[d]?color:'#ffffff');
   const ptBorder=dates.map(d=>eventByDate[d]?'#ffffff':color);
   const ptStyle=dates.map(d=>eventByDate[d]?'rectRot':'circle');
