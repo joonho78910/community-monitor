@@ -389,7 +389,7 @@ async function loadIdx(){
   const j=await r.json();
   allDates=j.dates.sort().reverse();
   // Fetch shared trends once
-  try{const tr=await fetch('data/_trends.json?ts='+Date.now());if(tr.ok)trendsData=await tr.json();}catch(e){trendsData=null;}
+  try{const tr=await fetch('data/trends.json?ts='+Date.now());if(tr.ok)trendsData=await tr.json();}catch(e){trendsData=null;}
   document.getElementById('cal-prev').onclick=()=>{const idx=allDates.indexOf(curData&&curData.date);if(idx>=0&&idx<allDates.length-1)loadDate(allDates[idx+1]);};
   document.getElementById('cal-next').onclick=()=>{const idx=allDates.indexOf(curData&&curData.date);if(idx>0)loadDate(allDates[idx-1]);};
   document.getElementById('cal-latest').onclick=()=>{if(allDates[0]&&allDates[0]!==(curData&&curData.date))loadDate(allDates[0]);};
