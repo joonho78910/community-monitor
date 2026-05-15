@@ -2848,43 +2848,83 @@
   ],
   "events": [
     {
+      "date": "2025-12-03",
+      "game": "anchorpanic",
+      "confidence": 1,
+      "label": "(추정) 게시물 활동 급증",
+      "detail": "게시물 14일 평균 대비 +178% 변동",
+      "url": ""
+    },
+    {
       "date": "2025-12-24",
       "game": "anchorpanic",
       "confidence": 1,
-      "label": "(추정) 검색 트렌드 변동",
-      "detail": "naver 데이터에서 +8.1 변동 감지. 매체 보도 매칭 없음.",
+      "label": "(추정) 검색 활동 급증",
+      "detail": "검색량 14일 평균 대비 +141% 변동",
       "url": ""
     },
     {
       "date": "2025-12-30",
       "game": "anchorpanic",
       "confidence": 1,
-      "label": "(추정) 검색 트렌드 변동",
-      "detail": "naver 데이터에서 +13.7 변동 감지. 매체 보도 매칭 없음.",
+      "label": "(추정) 검색 활동 급증",
+      "detail": "검색량 14일 평균 대비 +225% 변동",
       "url": ""
     },
     {
-      "date": "2026-01-03",
+      "date": "2025-12-31",
       "game": "anchorpanic",
       "confidence": 1,
-      "label": "(추정) 검색 트렌드 변동",
-      "detail": "naver 데이터에서 +5.0 변동 감지. 매체 보도 매칭 없음.",
+      "label": "(추정) 검색 활동 급증",
+      "detail": "검색량 14일 평균 대비 +233% 변동",
+      "url": ""
+    },
+    {
+      "date": "2026-01-01",
+      "game": "anchorpanic",
+      "confidence": 1,
+      "label": "(추정) 검색 활동 급증",
+      "detail": "검색량 14일 평균 대비 +140% 변동",
+      "url": ""
+    },
+    {
+      "date": "2026-02-02",
+      "game": "erpis",
+      "confidence": 1,
+      "label": "(추정) 검색 활동 급증",
+      "detail": "검색량 14일 평균 대비 +104% 변동",
+      "url": ""
+    },
+    {
+      "date": "2026-02-03",
+      "game": "anchorpanic",
+      "confidence": 1,
+      "label": "(추정) 검색 활동 급증",
+      "detail": "검색량 14일 평균 대비 +175% 변동",
+      "url": ""
+    },
+    {
+      "date": "2026-02-03",
+      "game": "erpis",
+      "confidence": 1,
+      "label": "(추정) 검색 활동 급증",
+      "detail": "검색량 14일 평균 대비 +120% 변동",
       "url": ""
     },
     {
       "date": "2026-02-04",
       "game": "anchorpanic",
       "confidence": 1,
-      "label": "(추정) 검색 트렌드 변동",
-      "detail": "naver 데이터에서 +3.7 변동 감지. 매체 보도 매칭 없음.",
+      "label": "(추정) 검색 활동 급증",
+      "detail": "검색량 14일 평균 대비 +313% 변동",
       "url": ""
     },
     {
       "date": "2026-02-04",
       "game": "erpis",
       "confidence": 1,
-      "label": "(추정) 검색 트렌드 변동",
-      "detail": "naver 데이터에서 +6.8 변동 감지. 매체 보도 매칭 없음.",
+      "label": "(추정) 검색 활동 급증",
+      "detail": "검색량 14일 평균 대비 +345% 변동",
       "url": ""
     },
     {
@@ -2892,15 +2932,39 @@
       "game": "erpis",
       "confidence": 3,
       "label": "에르피스 국내 출시",
-      "detail": "넵튠 퍼블리싱 비주얼 스쿼드 RPG 에르피스 국내 정식 출시. 검색량 폭증으로 데이터랩 max=100 달성.",
+      "detail": "넵튠 퍼블리싱 비주얼 스쿼드 RPG 에르피스 국내 정식 출시.",
       "url": ""
     },
     {
-      "date": "2026-02-18",
+      "date": "2026-02-06",
       "game": "anchorpanic",
       "confidence": 1,
-      "label": "(추정) 검색 트렌드 변동",
-      "detail": "naver 데이터에서 +4.7 변동 감지. 매체 보도 매칭 없음.",
+      "label": "(추정) 검색 활동 급증",
+      "detail": "검색량 14일 평균 대비 +189% 변동",
+      "url": ""
+    },
+    {
+      "date": "2026-02-10",
+      "game": "erpis",
+      "confidence": 1,
+      "label": "(추정) 게시물 활동 급증",
+      "detail": "게시물 14일 평균 대비 +230% 변동",
+      "url": ""
+    },
+    {
+      "date": "2026-03-18",
+      "game": "anchorpanic",
+      "confidence": 1,
+      "label": "(추정) 검색 활동 급증",
+      "detail": "검색량 14일 평균 대비 +176% 변동",
+      "url": ""
+    },
+    {
+      "date": "2026-04-02",
+      "game": "erpis",
+      "confidence": 1,
+      "label": "(추정) 게시물 활동 급증",
+      "detail": "게시물 14일 평균 대비 +125% 변동",
       "url": ""
     },
     {
@@ -2910,6 +2974,14 @@
       "label": "1주년 업데이트 사전예약 개시 (SSR 화이트 로즈)",
       "detail": "1주년 기념 대규모 업데이트 사전예약 시작. 신규 SSR 에이전트 화이트 로즈 추가 및 최대 600회 무료 뽑기 예고.",
       "url": "https://n.news.naver.com/mnews/article/009/0005670235?sid=101"
+    },
+    {
+      "date": "2026-04-30",
+      "game": "erpis",
+      "confidence": 1,
+      "label": "(추정) 게시물 활동 급증",
+      "detail": "게시물 14일 평균 대비 +294% 변동",
+      "url": ""
     },
     {
       "date": "2026-05-05",
@@ -2924,7 +2996,7 @@
       "game": "anchorpanic",
       "confidence": 3,
       "label": "1주년 업데이트 적용 & 양대마켓 역주행",
-      "detail": "서비스 1주년 대규모 업데이트 적용 당일 구글 플레이 인기 1위, DAU 전주 대비 5배 상승. 양대 마켓 최상위권 재진입.",
+      "detail": "서비스 1주년 대규모 업데이트 적용 당일 구글 플레이 인기 1위, DAU 전주 대비 5배 상승.",
       "url": "https://n.news.naver.com/mnews/article/092/0002421887?sid=105"
     },
     {
@@ -2932,8 +3004,24 @@
       "game": "anchorpanic",
       "confidence": 3,
       "label": "구글 인기 1위·애플 2위 동시 달성",
-      "detail": "구글 플레이 인기 순위 1위, 애플 앱스토어 인기 2위 동시 기록. 1주년 업데이트 이후 일일 활성 이용자(DAU) 전주 대비 5배 가량 증가.",
+      "detail": "구글 플레이 인기 순위 1위, 애플 앱스토어 인기 2위 동시 기록.",
       "url": "https://n.news.naver.com/mnews/article/092/0002421887?sid=105"
+    },
+    {
+      "date": "2026-05-08",
+      "game": "anchorpanic",
+      "confidence": 1,
+      "label": "(추정) 검색 활동 급증",
+      "detail": "검색량 14일 평균 대비 +427% 변동",
+      "url": ""
+    },
+    {
+      "date": "2026-05-09",
+      "game": "anchorpanic",
+      "confidence": 1,
+      "label": "(추정) 검색 활동 급증",
+      "detail": "검색량 14일 평균 대비 +270% 변동",
+      "url": ""
     }
   ]
 }
