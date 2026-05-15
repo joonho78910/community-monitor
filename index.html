@@ -231,6 +231,7 @@ function esc(s){if(s==null)return"";return String(s).replace(/&/g,"&amp;").repla
 function tagL(t){return({bug:"버그",negative:"부정",positive:"긍정",competitor:"경쟁작",newbie:"뉴비",guild:"길드",gacha:"가챠",event:"이벤트",balance:"밸런스",guide:"공략",chitchat:"잡담"})[t]||t;}
 function toneShort(t){return t==="긍정"?"G":t==="부정"?"B":t==="혼합"?"M":"N";}
 function countGroup(posts,tags){return posts.filter(p=>(p.tags||[]).some(t=>tags.includes(t))).length;}
+let trendsData=null;
 let curData=null,prevData=null,actGame='',actSearch='',trendChart=null;
 let allDates=[];
 const dateCache={};
@@ -386,6 +387,8 @@ async function loadIdx(){
   const r=await fetch('data/index.json?ts='+Date.now());
   const j=await r.json();
   allDates=j.dates.sort().reverse();
+  // Fetch shared trends once
+  try{const tr=await fetch('data/_trends.json?ts='+Date.now());if(tr.ok)trendsData=await tr.json();}catch(e){trendsData=null;}
   document.getElementById('cal-prev').onclick=()=>{const idx=allDates.indexOf(curData&&curData.date);if(idx>=0&&idx<allDates.length-1)loadDate(allDates[idx+1]);};
   document.getElementById('cal-next').onclick=()=>{const idx=allDates.indexOf(curData&&curData.date);if(idx>0)loadDate(allDates[idx-1]);};
   document.getElementById('cal-latest').onclick=()=>{if(allDates[0]&&allDates[0]!==(curData&&curData.date))loadDate(allDates[0]);};
@@ -476,7 +479,7 @@ function render(){
   const d4=ps?deltaHtml(s.bugs,ps.bugs,{upIsBad:true}):'';
   c.innerHTML='<div class="cards"><div class="card"><div class="label">게시물</div><div class="value">'+fmtNum(s.real_posts)+d1+'</div><div class="sub">공지 '+(s.notices||0)+'개 제외 '+dvs+'</div></div><div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+d2+'</div><div class="sub">긍정 '+s.positive+' · 부정 '+s.negative+' '+dvs+'</div></div><div class="card"><div class="label">총 조회수</div><div class="value">'+fmtK(s.total_views)+d3+'</div><div class="sub">평균 '+Math.round(s.total_views/Math.max(s.real_posts,1))+' / 글 '+dvs+'</div></div><div class="card"><div class="label">버그 의심</div><div class="value '+(s.bugs>0?'s-neg':'')+'">'+s.bugs+d4+'</div><div class="sub">자동 키워드 검출 '+dvs+'</div></div></div>'+
     '<div class="section"><h2>일일 동향 요약</h2><div class="summary-box">'+esc(a.dailySummary||'')+'</div><div class="keywords">'+kw+'</div><div class="section-note">키워드 클릭 시 해당 단어로 전체 게시물에서 자동 검색됩니다</div></div>'+
-    (curData.searchTrends?'<div class="row"><div class="section"><h2>검색 트렌드 <span class="count">30일 · 네이버 + 구글</span></h2><div style="position:relative;height:280px;"><canvas id="trendChart"></canvas></div><div class="section-note">출처: 네이버 데이터랩 · 각 키워드 그룹 max=100 정규화 · 그룹 간 비교 가능</div></div><div class="section"><h2>검색량 스냅샷</h2><div class="trend-insight" id="trend-insight"></div></div></div>':'')+
+    ((curData.searchTrends||trendsData)?'<div class="row"><div class="section"><h2>검색 트렌드 <span class="count" id="trend-range">30일</span></h2><div style="position:relative;height:280px;"><canvas id="trendChart"></canvas></div><div class="section-note">출처: 네이버 데이터랩 · 각 키워드 그룹 max=100 정규화 · 그룹 간 비교 가능</div></div><div class="section"><h2>검색량 스냅샷</h2><div class="trend-insight" id="trend-insight"></div></div></div>':'')+
     '<div class="row"><div class="section"><h2>핵심 이슈 <span class="count">'+(a.topIssues||[]).length+'</span></h2><ul class="issue-list">'+iss+'</ul><div class="section-note">순위는 조회 + 댓글 + 추천 가중 합산 기준</div></div><div class="section"><h2>주제별 분포</h2><div class="dist-bars">'+distBars+'</div><div class="section-note">중복 분류 가능 (한 글이 여러 카테고리 포함 가능)</div></div></div>'+
     '<div class="row"><div class="section"><h2>트렌드</h2><ul class="t-list">'+tr+'</ul></div><div class="section"><h2>계속 추적</h2><ul class="w-list">'+wt+'</ul></div></div>'+
     '<div class="row"><div class="section"><h2>버그/오류 제보 <span class="count">'+(a.bugReports||[]).length+'</span></h2><ul class="bug-list">'+bg+'</ul></div><div class="section"><h2>경쟁작 언급 <span class="count">'+(a.competitorMentions||[]).length+'</span></h2><ul class="c-list">'+cp+'</ul></div></div>'+
@@ -511,7 +514,7 @@ function render(){
       document.getElementById('all-posts-section').scrollIntoView({behavior:'smooth',block:'start'});
     };
   });
-  if(curData.searchTrends){try{renderTrendChart(curData.searchTrends,actGame);}catch(e){console.warn('trend chart',e);}}
+  const trendsUse=curData.searchTrends||trendsData;if(trendsUse){try{renderTrendChart(trendsUse,actGame);}catch(e){console.warn('trend chart',e);}}
   renderList();
 }
 function renderTrendChart(st,activeGame){
@@ -561,6 +564,12 @@ function renderTrendChart(st,activeGame){
   const gLast=last(gVals),gPrev=prev(gVals),gAvg=avg(gVals);
   function pct(c,r){if(r==null||r===0||c==null)return '<span class="flat">-</span>';const p=((c-r)/r*100);const cls=p>2?'up':p<-2?'dn':'flat';return '<span class="'+cls+'">'+(p>=0?'+':'')+p.toFixed(1)+'%</span>';}
   const fmt=v=>v==null?'-':v.toFixed(1);
+  // Update range label
+  const rl=document.getElementById('trend-range');
+  if(rl&&dates.length){
+    const first=dates[0],last=dates[dates.length-1];
+    rl.textContent=first+' ~ '+last+' ('+dates.length+'일)';
+  }
   const insightEl=document.getElementById('trend-insight');
   if(insightEl){
     const dotN='style="background:'+color+';"';
