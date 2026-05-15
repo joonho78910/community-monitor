@@ -521,8 +521,18 @@ function renderTrendChart(st,activeGame){
   const game=st.series.find(s=>s.game===activeGame);
   if(!game||!game.data)return;
   const isLegacyArray=Array.isArray(game.data);
-  const naverData=isLegacyArray?game.data:(game.data.naver||[]);
-  const googleData=isLegacyArray?[]:(game.data.google||[]);
+  const naverDataFull=isLegacyArray?game.data:(game.data.naver||[]);
+  const googleDataFull=isLegacyArray?[]:(game.data.google||[]);
+  // Slice to last 30 days ending at curData.date
+  const sliceEnd=curData?curData.date:null;
+  function sliceLast30(arr){
+    if(!sliceEnd||!arr.length)return arr;
+    const endMs=new Date(sliceEnd+'T00:00:00Z').getTime();
+    const startMs=endMs-29*86400000;
+    return arr.filter(d=>{const t=new Date(d.period+'T00:00:00Z').getTime();return t>=startMs&&t<=endMs;});
+  }
+  const naverData=sliceLast30(naverDataFull);
+  const googleData=sliceLast30(googleDataFull);
   const gameEvents=(st.events||[]).filter(e=>e.game===activeGame);
   const eventByDate={};gameEvents.forEach(e=>{eventByDate[e.date]=e;});
   const dateSet=new Set();
