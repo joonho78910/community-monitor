@@ -28,6 +28,20 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 .tab.active{color:var(--accent);border-bottom-color:var(--accent);}
 .game-anchorpanic{--accent:#1d4ed8;--accent-bg:#eef2ff;}
 .game-erpis{--accent:#7c3aed;--accent-bg:#f5f3ff;}
+/* Status band */
+.status-band{display:flex;align-items:center;gap:14px;padding:14px 20px;margin-bottom:14px;border-radius:10px;font-size:13.5px;font-weight:600;border:1px solid;letter-spacing:-0.01em;}
+.status-band.status-green{background:#dcfce7;color:#166534;border-color:#86efac;}
+.status-band.status-yellow{background:#fef3c7;color:#92400e;border-color:#fcd34d;}
+.status-band.status-red{background:#fee2e2;color:#991b1b;border-color:#fca5a5;}
+.status-icon{font-size:18px;line-height:1;}
+.status-label{text-transform:uppercase;letter-spacing:0.06em;font-weight:700;font-size:12px;}
+.status-score{font-variant-numeric:tabular-nums;opacity:0.85;font-size:13px;}
+.status-divider{opacity:0.4;}
+.status-msg{margin-left:auto;font-weight:500;font-size:12.5px;opacity:0.95;}
+.status-sub{font-size:11.5px;opacity:0.75;font-weight:500;}
+.status-factors{font-size:12px;opacity:0.85;font-weight:500;letter-spacing:-0.005em;}
+.status-info{background:transparent;border:0;cursor:help;font-size:14px;opacity:0.5;padding:0 4px;color:inherit;font-family:inherit;font-weight:600;}
+.status-info:hover{opacity:1;}
 .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px;}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px 20px;box-shadow:var(--shadow);}
 .card .label{font-size:11px;color:var(--text-3);text-transform:uppercase;letter-spacing:0.06em;font-weight:600;margin-bottom:8px;}
@@ -452,6 +466,65 @@ function deltaHtml(cur,prev,opts){
   }
   return '<span class="delta '+cls+'">'+arrow+' '+valStr+'</span>';
 }
+function computeStatus(game, prev7Avg){
+  const s=game.stats;
+  const rp=s.real_posts||1;
+  const negRatio=s.negative/rp;
+  const bugs=s.bugs||0;
+  const sent=s.sentiment_score||0;
+  const lowVolume=rp<10;
+  const sentLabel=s.sentiment||'중립';
+
+  // Score (0-10), score drives status
+  let score=7;
+  score+=sent*3;
+  score-=bugs*0.5;
+  score-=Math.max(0,negRatio-0.05)*20;
+  if(prev7Avg.bugs>0&&bugs>prev7Avg.bugs*2)score-=1;
+  if(prev7Avg.negRatio>0&&negRatio>prev7Avg.negRatio*1.5)score-=0.8;
+  score=Math.max(0,Math.min(10,score));
+
+  let status,label,icon;
+  if(score>=6.5){status='green';label='정상';icon='🟢';}
+  else if(score>=4){status='yellow';label='주의';icon='🟡';}
+  else{status='red';label='경고';icon='🔴';}
+
+  // Factor breakdown (always shown for transparency)
+  const factors=[`감정 ${sentLabel}`,`버그 ${bugs}건`,`부정률 ${(negRatio*100).toFixed(1)}%`];
+
+  // Build interpretive message
+  const reasons=[];
+  if(bugs>=2)reasons.push(`버그 ${bugs}건`);
+  if(negRatio>0.08)reasons.push(`부정률 ${(negRatio*100).toFixed(1)}%`);
+  if(sent<-0.05&&!lowVolume)reasons.push('정서 부정 우세');
+  if(prev7Avg.bugs>0&&bugs>prev7Avg.bugs*1.5&&bugs>=2)reasons.push(`버그 평소 ${(bugs/prev7Avg.bugs).toFixed(1)}배`);
+
+  let msg;
+  if(lowVolume){
+    msg=`게시물 ${rp}건 — 활동 적음`;
+  } else if(status==='green'){
+    msg='이상 신호 없음';
+  } else if(status==='yellow'){
+    msg=reasons.slice(0,2).join(' · ')||'평균 대비 저조';
+  } else {
+    msg=(reasons.slice(0,2).join(' · ')||'다중 이상')+' — 즉시 확인';
+  }
+
+  return {status,label,icon,score:score.toFixed(1),msg,factors};
+}
+function compute7DayAvg(curDate){
+  // Compute prev-7-day averages for current game from dateCache
+  const target=new Date(curDate+'T00:00:00Z').getTime();
+  const dates=allDates.filter(d=>{
+    const t=new Date(d+'T00:00:00Z').getTime();
+    return t>=target-7*86400000 && t<target;
+  });
+  const samples=dates.map(d=>dateCache[d]).filter(x=>x&&x.games&&x.games[actGame]).map(x=>x.games[actGame].stats);
+  if(samples.length===0)return {bugs:0,negRatio:0};
+  const avgBugs=samples.reduce((a,b)=>a+(b.bugs||0),0)/samples.length;
+  const avgNegRatio=samples.reduce((a,b)=>a+((b.negative||0)/Math.max(b.real_posts,1)),0)/samples.length;
+  return {bugs:avgBugs,negRatio:avgNegRatio};
+}
 function render(){
   const game=curData.games[actGame];
   const s=game.stats,a=game.analysis||{};
@@ -478,9 +551,13 @@ function render(){
   const d2=ps?deltaHtml(s.sentiment_score,ps.sentiment_score,{dp:2}):'';
   const d3=ps?deltaHtml(s.total_views,ps.total_views,{pct:true}):'';
   const d4=ps?deltaHtml(s.bugs,ps.bugs,{upIsBad:true}):'';
-  c.innerHTML='<div class="cards"><div class="card"><div class="label">게시물</div><div class="value">'+fmtNum(s.real_posts)+d1+'</div><div class="sub">공지 '+(s.notices||0)+'개 제외 '+dvs+'</div></div><div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+d2+'</div><div class="sub">긍정 '+s.positive+' · 부정 '+s.negative+' '+dvs+'</div></div><div class="card"><div class="label">총 조회수</div><div class="value">'+fmtK(s.total_views)+d3+'</div><div class="sub">평균 '+Math.round(s.total_views/Math.max(s.real_posts,1))+' / 글 '+dvs+'</div></div><div class="card"><div class="label">버그 의심</div><div class="value '+(s.bugs>0?'s-neg':'')+'">'+s.bugs+d4+'</div><div class="sub">자동 키워드 검출 '+dvs+'</div></div></div>'+
+  const stat=computeStatus(game, compute7DayAvg(curData.date));
+  const dateLabel=curData.date;
+  const formulaTip='해당 일자 컨디션 점수 계산:&#10;기본 7점 + 감정점수×3 − 버그수×0.5 − (부정률−5%)×20&#10;+ 7일 평균 대비 보정&#10;0-10점 · 6.5↑ 정상 / 4-6.5 주의 / 4↓ 경고';
+  const statusHtml='<div class="status-band status-'+stat.status+'"><span class="status-icon">'+stat.icon+'</span><span class="status-sub">'+dateLabel+' 컨디션</span><span class="status-label">'+stat.label+'</span><span class="status-score">'+stat.score+' / 10</span><span class="status-divider">|</span><span class="status-factors">'+stat.factors.join(' · ')+'</span><span class="status-divider">|</span><span class="status-msg">'+esc(stat.msg)+'</span><button class="status-info" title="'+formulaTip+'">ⓘ</button></div>';
+  c.innerHTML=statusHtml+'<div class="cards"><div class="card"><div class="label">게시물</div><div class="value">'+fmtNum(s.real_posts)+d1+'</div><div class="sub">공지 '+(s.notices||0)+'개 제외 '+dvs+'</div></div><div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+d2+'</div><div class="sub">긍정 '+s.positive+' · 부정 '+s.negative+' '+dvs+'</div></div><div class="card"><div class="label">총 조회수</div><div class="value">'+fmtK(s.total_views)+d3+'</div><div class="sub">평균 '+Math.round(s.total_views/Math.max(s.real_posts,1))+' / 글 '+dvs+'</div></div><div class="card"><div class="label">버그 의심</div><div class="value '+(s.bugs>0?'s-neg':'')+'">'+s.bugs+d4+'</div><div class="sub">자동 키워드 검출 '+dvs+'</div></div></div>'+
     '<div class="section"><h2>일일 동향 요약</h2><div class="summary-box">'+esc(a.dailySummary||'')+'</div><div class="keywords">'+kw+'</div><div class="section-note">키워드 클릭 시 해당 단어로 전체 게시물에서 자동 검색됩니다</div></div>'+
-    ((curData.searchTrends||trendsData)?'<div class="row"><div class="section"><h2>검색 트렌드 <span class="count" id="trend-range">30일</span></h2><div style="position:relative;height:280px;"><canvas id="trendChart"></canvas></div><div class="section-note">출처: 네이버 데이터랩 · 각 키워드 그룹 max=100 정규화 · 그룹 간 비교 가능</div></div><div class="section"><h2>검색량 스냅샷</h2><div class="trend-insight" id="trend-insight"></div></div></div>':'')+
+    ((curData.searchTrends||trendsData)?'<div class="row"><div class="section"><h2>검색 트렌드 <span class="count" id="trend-range">30일</span></h2><div style="position:relative;height:280px;"><canvas id="trendChart"></canvas></div><div class="section-note">출처: 네이버 데이터랩 (실선, 일별) + 구글 트렌드 (점선, 주 단위라 계단형) · 각 출처별 max=100 정규화</div></div><div class="section"><h2>검색량 스냅샷</h2><div class="trend-insight" id="trend-insight"></div></div></div>':'')+
     '<div class="row"><div class="section"><h2>핵심 이슈 <span class="count">'+(a.topIssues||[]).length+'</span></h2><ul class="issue-list">'+iss+'</ul><div class="section-note">순위는 조회 + 댓글 + 추천 가중 합산 기준</div></div><div class="section"><h2>주제별 분포</h2><div class="dist-bars">'+distBars+'</div><div class="section-note">중복 분류 가능 (한 글이 여러 카테고리 포함 가능)</div></div></div>'+
     '<div class="row"><div class="section"><h2>트렌드</h2><ul class="t-list">'+tr+'</ul></div><div class="section"><h2>계속 추적</h2><ul class="w-list">'+wt+'</ul></div></div>'+
     '<div class="row"><div class="section"><h2>버그/오류 제보 <span class="count">'+(a.bugReports||[]).length+'</span></h2><ul class="bug-list">'+bg+'</ul></div><div class="section"><h2>경쟁작 언급 <span class="count">'+(a.competitorMentions||[]).length+'</span></h2><ul class="c-list">'+cp+'</ul></div></div>'+
