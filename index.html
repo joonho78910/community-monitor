@@ -188,7 +188,8 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
     <div class="sub">앵커패닉 · 에르피스 일일 모니터링</div>
   </div>
   <div class="header-right">
-    <div id="meta-info"></div>
+    <div id="meta-build" style="font-weight:600;color:var(--text-2);font-size:11.5px;letter-spacing:0.02em;"></div>
+    <div id="meta-info" style="margin-top:2px;"></div>
   </div>
 </div>
 <div class="cal-wrap" id="cal-wrap">
@@ -433,6 +434,21 @@ async function loadDate(d){
   if(!actGame||!games.includes(actGame))actGame=games[0];
   buildTabs(games);
   document.getElementById('meta-info').textContent='업데이트: '+new Date(curData.lastUpdated).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'});
+  // version.json fetch & display: v0.2 · build 26.05.15.2
+  try {
+    const vr = await fetch('data/version.json?ts='+Date.now());
+    if (vr.ok) {
+      const v = await vr.json();
+      const b = v.lastBuild || {};
+      const ymd = (b.targetDate || '').replace(/^20/, '').replace(/-/g, '.');
+      const txt = 'v' + (v.version || '?') + (b.n ? ' · build ' + ymd + '.' + b.n : '');
+      document.getElementById('meta-build').textContent = txt;
+      if (b.uploadedAt) {
+        const up = new Date(b.uploadedAt).toLocaleString('ko-KR', {timeZone:'Asia/Seoul'});
+        document.getElementById('meta-info').textContent = '업데이트: ' + up;
+      }
+    }
+  } catch(e) { /* version.json optional */ }
   renderCalendar();
   render();
   updateHash();
