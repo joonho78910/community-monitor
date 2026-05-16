@@ -1,12 +1,11 @@
 {
-  "version": "0.2",
-  "lastBuild": {
-    "targetDate": "2026-05-15",
-    "n": 1,
-    "uploadedAt": "2026-05-15T22:30:54+09:00",
-    "notes": "initial run"
-  },
-  "buildsByDate": {
-    "2026-05-15": 1
-  }
+    "version":  "0.2",
+    "lastBuild":  {
+                      "targetDate":  "2026-05-15",
+                      "n":  2,
+                      "uploadedAt":  "2026-05-16T11:01:29+09:00"
+                  },
+    "buildsByDate":  {
+                         "2026-05-15":  2
+                     }
 }
