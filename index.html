@@ -270,7 +270,7 @@ let curData=null,prevData=null,actGame='',actSearch='',trendChart=null;
 let allDates=[];
 const dateCache={};
 let suppressHash=false;
-const fS={source:"all",tag:"all",search:""};
+const fS={source:"all",tag:"all",search:"",idFilter:null,idFilterLabel:""};
 const sS={field:"utcIso",dir:"desc"};
 
 function todayKST(){return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);}
@@ -586,7 +586,6 @@ function render(){
   const minCnt=kwArr.length?Math.min.apply(null,kwArr.map(k=>k.count||1)):1;
   const kw=kwArr.map((k,i)=>{
     const c=k.count||1;
-    // font scale 13px ~ 22px based on count
     const size=maxCnt===minCnt?16:Math.round(13+(c-minCnt)/(maxCnt-minCnt)*9);
     let cls='keyword';
     const w=String(k.word||'');
@@ -595,7 +594,8 @@ function render(){
     else if(i===0) cls+=' kw-rank-1';
     else if(i===1) cls+=' kw-rank-2';
     else if(i===2) cls+=' kw-rank-3';
-    return '<span class="'+cls+'" data-kw="'+esc(w)+'" style="font-size:'+size+'px;">#'+esc(w)+'<span class="cnt">'+c+'</span></span>';
+    const idsAttr=k.ids&&k.ids.length?' data-ids="'+esc(k.ids.join(','))+'"':'';
+    return '<span class="'+cls+'" data-kw="'+esc(w)+'"'+idsAttr+' style="font-size:'+size+'px;">#'+esc(w)+'<span class="cnt">'+c+'</span></span>';
   }).join('');
   const iss=(a.topIssues||[]).map((it,i)=>{const m=(it.summary||'').match(/조회\s*(\d+),\s*댓글\s*(\d+),\s*추천\s*(-?\d+)/);const v=m?+m[1]:(it.views||0);const c=m?+m[2]:(it.comments||0);const l=m?+m[3]:(it.likes||0);return '<li class="issue-item"><a href="'+esc(it.url||'#')+'" target="_blank" rel="noopener"><div class="issue-title"><span class="rank">'+(i+1)+'.</span>'+esc(it.title)+'<span class="tone-badge tone-'+toneShort(it.tone)+'">'+esc(it.tone)+'</span></div><div class="issue-stats"><span><span class="lbl">조회</span>'+fmtNum(v)+'</span><span><span class="lbl">댓글</span>'+c+'</span><span><span class="lbl">추천</span>'+l+'</span></div></a></li>';}).join('');
   const groupCounts=CATS.map(c=>({...c,count:countGroup(real,c.tags),pct:Math.round(countGroup(real,c.tags)/RP*100)}));
@@ -655,8 +655,26 @@ function render(){
   document.querySelectorAll('.keyword').forEach(k=>{
     k.onclick=()=>{
       const w=k.dataset.kw;
-      fS.search=w.toLowerCase();
-      document.getElementById('search').value=w;
+      const idsRaw=k.dataset.ids||'';
+      const ids=idsRaw?idsRaw.split(','):[];
+      if(ids.length){
+        // Explicit topic→post mapping. Use idFilter, clear text search, reset other filters.
+        fS.search='';
+        fS.idFilter=ids;
+        fS.idFilterLabel=w;
+        fS.source='all';
+        fS.tag='all';
+        document.getElementById('search').value='';
+        document.querySelectorAll('.filter-btn').forEach(b=>{
+          b.classList.toggle('active', b.dataset.val==='all');
+        });
+      } else {
+        // Legacy substring search fallback
+        fS.search=w.toLowerCase();
+        fS.idFilter=null;
+        fS.idFilterLabel='';
+        document.getElementById('search').value=w;
+      }
       renderList();updateHash();
       document.getElementById('all-posts-section').scrollIntoView({behavior:'smooth',block:'start'});
     };
@@ -757,13 +775,36 @@ function renderList(){
   const game=curData.games[actGame];
   const body=document.getElementById('all-posts-body');
   if(!body)return;
+  const idSet=fS.idFilter&&fS.idFilter.length?new Set(fS.idFilter.map(String)):null;
   const filt=game.posts.filter(p=>{
     if((p.tags||[]).includes('notice'))return false;
-    if(fS.source!=='all'&&p.source!==fS.source)return false;
-    if(fS.tag!=='all'&&!(p.tags||[]).includes(fS.tag))return false;
-    if(fS.search&&!p.title.toLowerCase().includes(fS.search))return false;
+    if(idSet){if(!idSet.has(String(p.id)))return false;}
+    else{
+      if(fS.source!=='all'&&p.source!==fS.source)return false;
+      if(fS.tag!=='all'&&!(p.tags||[]).includes(fS.tag))return false;
+      if(fS.search&&!p.title.toLowerCase().includes(fS.search))return false;
+    }
     return true;
   });
+  // Active topic banner above the table
+  const sect=document.getElementById('all-posts-section');
+  if(sect){
+    let banner=document.getElementById('active-topic');
+    if(idSet&&fS.idFilterLabel){
+      if(!banner){
+        banner=document.createElement('div');
+        banner.id='active-topic';
+        banner.style.cssText='display:flex;align-items:center;gap:10px;padding:10px 14px;margin:10px 0;border-radius:8px;background:#eef2ff;border:1px solid #c7d2fe;color:#3730a3;font-size:13px;font-weight:600;';
+        const hdr=sect.querySelector('h2');
+        if(hdr)hdr.insertAdjacentElement('afterend',banner);
+      }
+      banner.innerHTML='<span style="opacity:0.7;font-weight:500;">선택된 토픽:</span><span>#'+fS.idFilterLabel.replace(/[<>&]/g,'')+'</span><span style="opacity:0.7;font-weight:500;margin-left:auto;">'+filt.length+'건</span><button id="active-topic-clear" style="background:transparent;border:0;color:#3730a3;cursor:pointer;font-weight:600;font-size:13px;padding:2px 6px;">✕ 해제</button>';
+      const btn=document.getElementById('active-topic-clear');
+      if(btn)btn.onclick=()=>{fS.idFilter=null;fS.idFilterLabel='';renderList();updateHash();};
+    } else if(banner){
+      banner.remove();
+    }
+  }
   const f=sS.field,d=sS.dir;
   filt.sort((a,b)=>{
     let av,bv;
