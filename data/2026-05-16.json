@@ -1,6 +1,6 @@
 {
   "date": "2026-05-16",
-  "lastUpdated": "2026-05-17T01:37:18.922945Z",
+  "lastUpdated": "2026-05-17T01:52:33.766605Z",
   "searchTrends": {
     "startDate": "2025-11-16",
     "endDate": "2026-05-16",
@@ -3121,10 +3121,15 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "negative"
           ],
           "engagement": 115,
-          "url": "https://arca.live/b/anchorpanic/170872290"
+          "url": "https://arca.live/b/anchorpanic/170872290",
+          "sentiment": "negative",
+          "topics": [
+            "gripe",
+            "character"
+          ]
         },
         {
           "id": "170869377",
@@ -3139,10 +3144,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "newbie"
+            "newbie",
+            "guide"
           ],
           "engagement": 225,
-          "url": "https://arca.live/b/anchorpanic/170869377"
+          "url": "https://arca.live/b/anchorpanic/170869377",
+          "sentiment": "neutral",
+          "topics": [
+            "newbie",
+            "question"
+          ]
         },
         {
           "id": "170868864",
@@ -3157,10 +3168,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "newbie"
+            "newbie",
+            "guild"
           ],
           "engagement": 22,
-          "url": "https://arca.live/b/anchorpanic/170868864"
+          "url": "https://arca.live/b/anchorpanic/170868864",
+          "sentiment": "neutral",
+          "topics": [
+            "guild",
+            "recruit"
+          ]
         },
         {
           "id": "170868666",
@@ -3175,10 +3192,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "guide"
+            "guide",
+            "balance"
           ],
           "engagement": 106,
-          "url": "https://arca.live/b/anchorpanic/170868666"
+          "url": "https://arca.live/b/anchorpanic/170868666",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "build"
+          ]
         },
         {
           "id": "170866608",
@@ -3193,10 +3216,15 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "guild"
+            "event"
           ],
           "engagement": 179,
-          "url": "https://arca.live/b/anchorpanic/170866608"
+          "url": "https://arca.live/b/anchorpanic/170866608",
+          "sentiment": "neutral",
+          "topics": [
+            "event",
+            "jest"
+          ]
         },
         {
           "id": "170864361",
@@ -3214,7 +3242,11 @@
             "chitchat"
           ],
           "engagement": 147,
-          "url": "https://arca.live/b/anchorpanic/170864361"
+          "url": "https://arca.live/b/anchorpanic/170864361",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat"
+          ]
         },
         {
           "id": "170861231",
@@ -3232,7 +3264,12 @@
             "chitchat"
           ],
           "engagement": 221,
-          "url": "https://arca.live/b/anchorpanic/170861231"
+          "url": "https://arca.live/b/anchorpanic/170861231",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat",
+            "character"
+          ]
         },
         {
           "id": "170858442",
@@ -3247,10 +3284,15 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "balance"
+            "guide"
           ],
           "engagement": 148,
-          "url": "https://arca.live/b/anchorpanic/170858442"
+          "url": "https://arca.live/b/anchorpanic/170858442",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "progress"
+          ]
         },
         {
           "id": "170858238",
@@ -3265,10 +3307,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "guide"
+            "guide",
+            "balance"
           ],
           "engagement": 392,
-          "url": "https://arca.live/b/anchorpanic/170858238"
+          "url": "https://arca.live/b/anchorpanic/170858238",
+          "sentiment": "neutral",
+          "topics": [
+            "guide",
+            "meta"
+          ]
         },
         {
           "id": "170857837",
@@ -3286,7 +3334,11 @@
             "newbie"
           ],
           "engagement": 25,
-          "url": "https://arca.live/b/anchorpanic/170857837"
+          "url": "https://arca.live/b/anchorpanic/170857837",
+          "sentiment": "neutral",
+          "topics": [
+            "recruit"
+          ]
         },
         {
           "id": "170856943",
@@ -3304,7 +3356,11 @@
             "newbie"
           ],
           "engagement": 39,
-          "url": "https://arca.live/b/anchorpanic/170856943"
+          "url": "https://arca.live/b/anchorpanic/170856943",
+          "sentiment": "neutral",
+          "topics": [
+            "recruit"
+          ]
         },
         {
           "id": "170855310",
@@ -3323,7 +3379,12 @@
             "guide"
           ],
           "engagement": 114,
-          "url": "https://arca.live/b/anchorpanic/170855310"
+          "url": "https://arca.live/b/anchorpanic/170855310",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "newbie"
+          ]
         },
         {
           "id": "170854026",
@@ -3341,7 +3402,12 @@
             "balance"
           ],
           "engagement": 505,
-          "url": "https://arca.live/b/anchorpanic/170854026"
+          "url": "https://arca.live/b/anchorpanic/170854026",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat",
+            "meta"
+          ]
         },
         {
           "id": "170853746",
@@ -3359,7 +3425,12 @@
             "guild"
           ],
           "engagement": 328,
-          "url": "https://arca.live/b/anchorpanic/170853746"
+          "url": "https://arca.live/b/anchorpanic/170853746",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat",
+            "guild"
+          ]
         },
         {
           "id": "170848315",
@@ -3374,10 +3445,14 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "guide"
           ],
           "engagement": 111,
-          "url": "https://arca.live/b/anchorpanic/170848315"
+          "url": "https://arca.live/b/anchorpanic/170848315",
+          "sentiment": "neutral",
+          "topics": [
+            "question"
+          ]
         },
         {
           "id": "170846106",
@@ -3396,7 +3471,12 @@
             "guide"
           ],
           "engagement": 216,
-          "url": "https://arca.live/b/anchorpanic/170846106"
+          "url": "https://arca.live/b/anchorpanic/170846106",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "newbie"
+          ]
         },
         {
           "id": "170842185",
@@ -3411,10 +3491,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "negative",
+            "balance"
           ],
           "engagement": 135,
-          "url": "https://arca.live/b/anchorpanic/170842185"
+          "url": "https://arca.live/b/anchorpanic/170842185",
+          "sentiment": "negative",
+          "topics": [
+            "gripe",
+            "content"
+          ]
         },
         {
           "id": "170837868",
@@ -3432,7 +3518,11 @@
             "chitchat"
           ],
           "engagement": 385,
-          "url": "https://arca.live/b/anchorpanic/170837868"
+          "url": "https://arca.live/b/anchorpanic/170837868",
+          "sentiment": "neutral",
+          "topics": [
+            "jest"
+          ]
         },
         {
           "id": "170833467",
@@ -3450,7 +3540,12 @@
             "guide"
           ],
           "engagement": 253,
-          "url": "https://arca.live/b/anchorpanic/170833467"
+          "url": "https://arca.live/b/anchorpanic/170833467",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "character"
+          ]
         },
         {
           "id": "170832147",
@@ -3465,10 +3560,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
+            "negative",
             "balance"
           ],
           "engagement": 381,
-          "url": "https://arca.live/b/anchorpanic/170832147"
+          "url": "https://arca.live/b/anchorpanic/170832147",
+          "sentiment": "negative",
+          "topics": [
+            "gripe",
+            "content"
+          ]
         },
         {
           "id": "170831170",
@@ -3483,10 +3584,15 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "guide"
           ],
           "engagement": 227,
-          "url": "https://arca.live/b/anchorpanic/170831170"
+          "url": "https://arca.live/b/anchorpanic/170831170",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "shop"
+          ]
         },
         {
           "id": "170831089",
@@ -3501,10 +3607,14 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "newbie"
+            "chitchat"
           ],
           "engagement": 273,
-          "url": "https://arca.live/b/anchorpanic/170831089"
+          "url": "https://arca.live/b/anchorpanic/170831089",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat"
+          ]
         },
         {
           "id": "170830688",
@@ -3522,7 +3632,11 @@
             "chitchat"
           ],
           "engagement": 28,
-          "url": "https://arca.live/b/anchorpanic/170830688"
+          "url": "https://arca.live/b/anchorpanic/170830688",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat"
+          ]
         },
         {
           "id": "170830082",
@@ -3537,10 +3651,14 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "negative"
+            "balance"
           ],
           "engagement": 108,
-          "url": "https://arca.live/b/anchorpanic/170830082"
+          "url": "https://arca.live/b/anchorpanic/170830082",
+          "sentiment": "neutral",
+          "topics": [
+            "content"
+          ]
         },
         {
           "id": "170829492",
@@ -3558,7 +3676,11 @@
             "chitchat"
           ],
           "engagement": 159,
-          "url": "https://arca.live/b/anchorpanic/170829492"
+          "url": "https://arca.live/b/anchorpanic/170829492",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat"
+          ]
         },
         {
           "id": "170827448",
@@ -3576,7 +3698,11 @@
             "chitchat"
           ],
           "engagement": 221,
-          "url": "https://arca.live/b/anchorpanic/170827448"
+          "url": "https://arca.live/b/anchorpanic/170827448",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat"
+          ]
         },
         {
           "id": "170826812",
@@ -3591,10 +3717,14 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "guide"
           ],
           "engagement": 151,
-          "url": "https://arca.live/b/anchorpanic/170826812"
+          "url": "https://arca.live/b/anchorpanic/170826812",
+          "sentiment": "neutral",
+          "topics": [
+            "question"
+          ]
         },
         {
           "id": "170826190",
@@ -3612,7 +3742,11 @@
             "newbie"
           ],
           "engagement": 35,
-          "url": "https://arca.live/b/anchorpanic/170826190"
+          "url": "https://arca.live/b/anchorpanic/170826190",
+          "sentiment": "neutral",
+          "topics": [
+            "recruit"
+          ]
         },
         {
           "id": "170824916",
@@ -3627,10 +3761,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "newbie"
+            "positive",
+            "gacha"
           ],
           "engagement": 284,
-          "url": "https://arca.live/b/anchorpanic/170824916"
+          "url": "https://arca.live/b/anchorpanic/170824916",
+          "sentiment": "positive",
+          "topics": [
+            "joy",
+            "gacha"
+          ]
         },
         {
           "id": "170819698",
@@ -3645,10 +3785,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "gacha"
+            "guide",
+            "balance"
           ],
           "engagement": 618,
-          "url": "https://arca.live/b/anchorpanic/170819698"
+          "url": "https://arca.live/b/anchorpanic/170819698",
+          "sentiment": "neutral",
+          "topics": [
+            "guide",
+            "meta"
+          ]
         },
         {
           "id": "170819315",
@@ -3666,7 +3812,11 @@
             "guide"
           ],
           "engagement": 260,
-          "url": "https://arca.live/b/anchorpanic/170819315"
+          "url": "https://arca.live/b/anchorpanic/170819315",
+          "sentiment": "neutral",
+          "topics": [
+            "guide"
+          ]
         },
         {
           "id": "5258",
@@ -3685,7 +3835,12 @@
             "guide"
           ],
           "engagement": 137,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5258"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5258",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "newbie"
+          ]
         },
         {
           "id": "5257",
@@ -3700,10 +3855,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "negative",
+            "balance"
           ],
           "engagement": 248,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5257"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5257",
+          "sentiment": "negative",
+          "topics": [
+            "gripe",
+            "content"
+          ]
         },
         {
           "id": "5256",
@@ -3721,7 +3882,11 @@
             "guide"
           ],
           "engagement": 44,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5256"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=oscarine&no=5256",
+          "sentiment": "neutral",
+          "topics": [
+            "question"
+          ]
         }
       ],
       "date": "2026-05-16",
@@ -3730,21 +3895,21 @@
         "real_posts": 34,
         "notices": 0,
         "bugs": 0,
-        "negative": 1,
-        "positive": 0,
+        "negative": 4,
+        "positive": 1,
         "competitor_mentions": 0,
-        "newbie_returning": 10,
+        "newbie_returning": 8,
         "guild_recruit": 2,
         "gacha": 1,
-        "event": 0,
-        "balance": 3,
-        "guide": 8,
-        "chitchat": 12,
+        "event": 1,
+        "balance": 8,
+        "guide": 14,
+        "chitchat": 7,
         "total_views": 3040,
         "total_comments": 181,
         "total_likes": 6,
-        "sentiment": "중립",
-        "sentiment_score": -0.029
+        "sentiment": "부정",
+        "sentiment_score": -0.088
       },
       "topEngaging": [
         {
@@ -3859,7 +4024,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "앵커패닉 채널 2026-05-16 동향: 주요 화제는 복귀협력/뉴비 유입 매칭, 공략·정보 공유. 중립적 정서가 우세하며 (긍정 0 vs 부정 1), 버그 신고는 없습니다. 아카라이브 31건, DC 3건이 작성되어 아카라이브가 채널 활동의 중심입니다.",
+        "dailySummary": "앵커패닉 채널 2026-05-16 동향: 주요 화제는 복귀협력/뉴비 유입, 공략·정보 공유, 메타·콘텐츠 난이도. 가장 활발한 주제는 \"복귀유저/뉴비\"(8회 언급). 부정적 정서가 우세하며 (긍정 1 vs 부정 4), 버그 신고는 없습니다. 아카라이브 31건, DC 3건이 작성되어 아카라이브가 채널 활동의 중심입니다.",
         "topIssues": [
           {
             "title": "중섭과의 남은 픽업차이",
@@ -3889,7 +4054,7 @@
             "title": "토벌보스 왤케 쎔",
             "url": "https://arca.live/b/anchorpanic/170832147",
             "summary": "참여도 381 (조회 141, 댓글 12, 추천 0)",
-            "tone": "중립"
+            "tone": "부정"
           }
         ],
         "bugReports": [],
@@ -3909,16 +4074,36 @@
         ],
         "keywords": [
           {
-            "word": "칼란",
+            "word": "복귀유저/뉴비",
+            "count": 8
+          },
+          {
+            "word": "리세",
+            "count": 3
+          },
+          {
+            "word": "칼란(불만)",
             "count": 2
           },
           {
-            "word": "구합니다",
+            "word": "불덱/얼음덱",
             "count": 2
           },
           {
-            "word": "복귀유저",
+            "word": "중섭 정보",
             "count": 2
+          },
+          {
+            "word": "연맹/쟁탈전",
+            "count": 2
+          },
+          {
+            "word": "토벌보스(불만)",
+            "count": 1
+          },
+          {
+            "word": "찻집(불만)",
+            "count": 1
           }
         ]
       }
@@ -3946,7 +4131,12 @@
             "positive"
           ],
           "engagement": 114,
-          "url": "https://arca.live/b/erphis/170860462"
+          "url": "https://arca.live/b/erphis/170860462",
+          "sentiment": "positive",
+          "topics": [
+            "joy",
+            "progress"
+          ]
         },
         {
           "id": "170834451",
@@ -3964,7 +4154,11 @@
             "chitchat"
           ],
           "engagement": 146,
-          "url": "https://arca.live/b/erphis/170834451"
+          "url": "https://arca.live/b/erphis/170834451",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat"
+          ]
         },
         {
           "id": "170832057",
@@ -3979,10 +4173,15 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "competitor"
+            "positive"
           ],
           "engagement": 102,
-          "url": "https://arca.live/b/erphis/170832057"
+          "url": "https://arca.live/b/erphis/170832057",
+          "sentiment": "positive",
+          "topics": [
+            "praise",
+            "character"
+          ]
         },
         {
           "id": "170809388",
@@ -3997,10 +4196,14 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "event"
           ],
           "engagement": 205,
-          "url": "https://arca.live/b/erphis/170809388"
+          "url": "https://arca.live/b/erphis/170809388",
+          "sentiment": "neutral",
+          "topics": [
+            "coupon"
+          ]
         },
         {
           "id": "170799863",
@@ -4015,10 +4218,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "guide"
+            "guide",
+            "balance"
           ],
           "engagement": 162,
-          "url": "https://arca.live/b/erphis/170799863"
+          "url": "https://arca.live/b/erphis/170799863",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "build"
+          ]
         },
         {
           "id": "11292",
@@ -4033,10 +4242,14 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "newbie"
+            "guide"
           ],
           "engagement": 178,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11292"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11292",
+          "sentiment": "neutral",
+          "topics": [
+            "guide"
+          ]
         },
         {
           "id": "11291",
@@ -4051,10 +4264,15 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "gacha"
+            "positive"
           ],
           "engagement": 219,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11291"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11291",
+          "sentiment": "positive",
+          "topics": [
+            "praise",
+            "character"
+          ]
         },
         {
           "id": "11290",
@@ -4069,11 +4287,14 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "newbie",
             "guide"
           ],
           "engagement": 246,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11290"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11290",
+          "sentiment": "neutral",
+          "topics": [
+            "guide"
+          ]
         },
         {
           "id": "11289",
@@ -4088,10 +4309,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "guide"
+            "guide",
+            "balance"
           ],
           "engagement": 59,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11289"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11289",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "build"
+          ]
         },
         {
           "id": "11288",
@@ -4106,10 +4333,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "newbie"
+            "newbie",
+            "guide"
           ],
           "engagement": 201,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11288"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11288",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "newbie"
+          ]
         },
         {
           "id": "11287",
@@ -4124,10 +4357,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "guide"
+            "guide",
+            "balance"
           ],
           "engagement": 205,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11287"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11287",
+          "sentiment": "neutral",
+          "topics": [
+            "guide",
+            "badge"
+          ]
         },
         {
           "id": "11286",
@@ -4142,10 +4381,15 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "positive"
+            "guide"
           ],
           "engagement": 111,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11286"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11286",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "spend"
+          ]
         },
         {
           "id": "11285",
@@ -4161,10 +4405,15 @@
           "comments_text": "",
           "tags": [
             "newbie",
-            "gacha"
+            "guide"
           ],
           "engagement": 80,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11285"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11285",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "newbie"
+          ]
         },
         {
           "id": "11284",
@@ -4182,7 +4431,12 @@
             "positive"
           ],
           "engagement": 173,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11284"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11284",
+          "sentiment": "positive",
+          "topics": [
+            "joy",
+            "progress"
+          ]
         },
         {
           "id": "11283",
@@ -4197,10 +4451,15 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "negative"
           ],
           "engagement": 172,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11283"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11283",
+          "sentiment": "negative",
+          "topics": [
+            "gripe",
+            "fatigue"
+          ]
         },
         {
           "id": "11282",
@@ -4216,10 +4475,15 @@
           "comments_text": "",
           "tags": [
             "newbie",
-            "gacha"
+            "guide"
           ],
           "engagement": 181,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11282"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11282",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "newbie"
+          ]
         },
         {
           "id": "11281",
@@ -4234,10 +4498,15 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "guild"
           ],
           "engagement": 30,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11281"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11281",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat",
+            "guildwar"
+          ]
         },
         {
           "id": "11280",
@@ -4256,7 +4525,12 @@
             "guide"
           ],
           "engagement": 68,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11280"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11280",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "newbie"
+          ]
         },
         {
           "id": "11279",
@@ -4271,10 +4545,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "negative",
+            "balance"
           ],
           "engagement": 114,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11279"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11279",
+          "sentiment": "negative",
+          "topics": [
+            "gripe",
+            "damage"
+          ]
         },
         {
           "id": "11278",
@@ -4289,10 +4569,15 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "positive"
           ],
           "engagement": 436,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11278"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11278",
+          "sentiment": "positive",
+          "topics": [
+            "joy",
+            "character"
+          ]
         },
         {
           "id": "11277",
@@ -4307,10 +4592,15 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "balance"
           ],
           "engagement": 258,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11277"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11277",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat",
+            "content"
+          ]
         },
         {
           "id": "11276",
@@ -4328,7 +4618,11 @@
             "chitchat"
           ],
           "engagement": 128,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11276"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11276",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat"
+          ]
         },
         {
           "id": "11275",
@@ -4343,10 +4637,15 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "guide"
           ],
           "engagement": 249,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11275"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11275",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "character"
+          ]
         },
         {
           "id": "11274",
@@ -4361,10 +4660,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "guide",
+            "balance"
           ],
           "engagement": 226,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11274"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11274",
+          "sentiment": "neutral",
+          "topics": [
+            "guide",
+            "content"
+          ]
         },
         {
           "id": "11273",
@@ -4379,11 +4684,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "positive",
-            "guide"
+            "negative",
+            "balance"
           ],
           "engagement": 120,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11273"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11273",
+          "sentiment": "negative",
+          "topics": [
+            "gripe",
+            "badge"
+          ]
         },
         {
           "id": "11272",
@@ -4402,7 +4712,12 @@
             "guild"
           ],
           "engagement": 200,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11272"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11272",
+          "sentiment": "positive",
+          "topics": [
+            "praise",
+            "guild"
+          ]
         },
         {
           "id": "11271",
@@ -4417,11 +4732,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "positive",
-            "guide"
+            "guide",
+            "balance"
           ],
           "engagement": 160,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11271"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11271",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "badge"
+          ]
         },
         {
           "id": "11270",
@@ -4436,10 +4756,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "guide"
+            "negative",
+            "balance"
           ],
           "engagement": 162,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11270"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11270",
+          "sentiment": "negative",
+          "topics": [
+            "gripe",
+            "meta"
+          ]
         },
         {
           "id": "11269",
@@ -4454,10 +4780,15 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "guide"
           ],
           "engagement": 131,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11269"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11269",
+          "sentiment": "neutral",
+          "topics": [
+            "question",
+            "character"
+          ]
         },
         {
           "id": "11268",
@@ -4475,7 +4806,11 @@
             "guild"
           ],
           "engagement": 198,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11268"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11268",
+          "sentiment": "neutral",
+          "topics": [
+            "guild"
+          ]
         },
         {
           "id": "11267",
@@ -4490,11 +4825,14 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "guild",
-            "balance"
+            "guild"
           ],
           "engagement": 415,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11267"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11267",
+          "sentiment": "neutral",
+          "topics": [
+            "guild"
+          ]
         },
         {
           "id": "11265",
@@ -4509,10 +4847,15 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "guide"
+            "guild"
           ],
           "engagement": 162,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11265"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11265",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat",
+            "guildwar"
+          ]
         },
         {
           "id": "11264",
@@ -4530,7 +4873,11 @@
             "chitchat"
           ],
           "engagement": 36,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11264"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11264",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat"
+          ]
         },
         {
           "id": "11263",
@@ -4548,7 +4895,12 @@
             "chitchat"
           ],
           "engagement": 87,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11263"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11263",
+          "sentiment": "neutral",
+          "topics": [
+            "chitchat",
+            "character"
+          ]
         },
         {
           "id": "11262",
@@ -4563,10 +4915,16 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "negative"
+            "negative",
+            "gacha"
           ],
           "engagement": 176,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11262"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11262",
+          "sentiment": "negative",
+          "topics": [
+            "gripe",
+            "gacha"
+          ]
         },
         {
           "id": "11261",
@@ -4581,10 +4939,14 @@
           "body": "",
           "comments_text": "",
           "tags": [
-            "chitchat"
+            "event"
           ],
           "engagement": 268,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11261"
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11261",
+          "sentiment": "neutral",
+          "topics": [
+            "coupon"
+          ]
         }
       ],
       "date": "2026-05-16",
@@ -4593,21 +4955,21 @@
         "real_posts": 36,
         "notices": 0,
         "bugs": 0,
-        "negative": 1,
+        "negative": 5,
         "positive": 6,
         "competitor_mentions": 1,
-        "newbie_returning": 6,
-        "guild_recruit": 3,
-        "gacha": 3,
-        "event": 0,
-        "balance": 1,
-        "guide": 9,
-        "chitchat": 14,
+        "newbie_returning": 4,
+        "guild_recruit": 5,
+        "gacha": 1,
+        "event": 2,
+        "balance": 9,
+        "guide": 14,
+        "chitchat": 4,
         "total_views": 2998,
         "total_comments": 117,
         "total_likes": 28,
-        "sentiment": "긍정",
-        "sentiment_score": 0.139
+        "sentiment": "중립",
+        "sentiment_score": 0.028
       },
       "topEngaging": [
         {
@@ -4722,13 +5084,13 @@
         }
       ],
       "analysis": {
-        "dailySummary": "에르피스 채널 2026-05-16 동향: 주요 화제는 공략·정보 공유. 전반적 정서는 호의적이며 (긍정 6 vs 부정 1), 버그 신고는 없습니다. 아카라이브 5건, DC 31건이 작성되어 DC인사이드가 채널 활동의 중심입니다.",
+        "dailySummary": "에르피스 채널 2026-05-16 동향: 주요 화제는 공략·정보 공유, 길드 운영, 메타·콘텐츠 난이도. 가장 활발한 주제는 \"리세\"(6회 언급). 중립적 정서가 우세하며 (긍정 6 vs 부정 5), 버그 신고는 없습니다. 아카라이브 5건, DC 31건이 작성되어 DC인사이드가 채널 활동의 중심입니다.",
         "topIssues": [
           {
             "title": "1호기가 살아나고 있읍니다",
             "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11278",
             "summary": "참여도 436 (조회 136, 댓글 6, 추천 6)",
-            "tone": "중립"
+            "tone": "긍정"
           },
           {
             "title": "갤길 에르피스갤러리 길드컷 변경안내",
@@ -4779,42 +5141,30 @@
         "keywords": [
           {
             "word": "리세",
+            "count": 6
+          },
+          {
+            "word": "뉴비/이륙",
+            "count": 5
+          },
+          {
+            "word": "배지(시스템 논의)",
+            "count": 5
+          },
+          {
+            "word": "길드/길레",
+            "count": 5
+          },
+          {
+            "word": "카구야",
+            "count": 4
+          },
+          {
+            "word": "미암(긍정)",
             "count": 3
           },
           {
-            "word": "뉴비",
-            "count": 3
-          },
-          {
-            "word": "배지",
-            "count": 3
-          },
-          {
-            "word": "기간제",
-            "count": 2
-          },
-          {
-            "word": "달성",
-            "count": 2
-          },
-          {
-            "word": "왜케",
-            "count": 2
-          },
-          {
-            "word": "미암",
-            "count": 2
-          },
-          {
-            "word": "관련",
-            "count": 2
-          },
-          {
-            "word": "같은데",
-            "count": 2
-          },
-          {
-            "word": "길레까지",
+            "word": "1호기(회복 화제)",
             "count": 2
           },
           {
@@ -4822,15 +5172,7 @@
             "count": 2
           },
           {
-            "word": "카구야",
-            "count": 2
-          },
-          {
-            "word": "에르피스갤",
-            "count": 2
-          },
-          {
-            "word": "러리",
+            "word": "기간제 1등",
             "count": 2
           }
         ]
