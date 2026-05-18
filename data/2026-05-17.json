@@ -4760,7 +4760,7 @@
         "total": 71,
         "real_posts": 71,
         "notices": 0,
-        "bugs": 2,
+        "bugs": 0,
         "negative": 4,
         "positive": 6,
         "competitor_mentions": 0,
@@ -4923,16 +4923,7 @@
             "tone": "중립"
           }
         ],
-        "bugReports": [
-          {
-            "title": "여우 수정으로 뭐받음?",
-            "url": "https://arca.live/b/anchorpanic/170903820"
-          },
-          {
-            "title": "아니 갤스 결제 아직도 안되네",
-            "url": "https://arca.live/b/anchorpanic/170967555"
-          }
-        ],
+        "bugReports": [],
         "competitorMentions": [],
         "trends": [
           "복귀협력/뉴비 유입 글 18건 - 25%",
@@ -4944,7 +4935,6 @@
         ],
         "watchlist": [
           "복귀협력 매칭 수요 지속 여부",
-          "버그 재발 추적: 여우 수정으로 뭐받음?",
           "난이도 조정에 대한 후속 여론",
           "차기 픽업 캐릭터 출시 반응"
         ],
