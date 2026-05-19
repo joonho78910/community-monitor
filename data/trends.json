@@ -5,7 +5,7 @@
   "sources": {
     "naver": {
       "label": "네이버 데이터랩",
-      "note": "datalab API. 5/18 datalab 데이터 미확인 — 5/17까지 채움"
+      "note": "datalab API. 30일 누적 (1일 lag 해소된 후 수동 패치)"
     },
     "google": {
       "label": "구글 트렌드",
@@ -669,6 +669,10 @@
           {
             "period": "2026-05-17",
             "ratio": 16.14906
+          },
+          {
+            "period": "2026-05-18",
+            "ratio": 14.90683
           }
         ],
         "google": [
@@ -1463,6 +1467,10 @@
           {
             "period": "2026-05-17",
             "ratio": 22.6708
+          },
+          {
+            "period": "2026-05-18",
+            "ratio": 20.18633
           }
         ],
         "google": [
@@ -1848,5 +1856,5 @@
       "game": "erpis"
     }
   ],
-  "lastUpdated": "2026-05-18T22:49:17.000Z"
+  "lastUpdated": "2026-05-19T01:09:20.000Z"
 }
