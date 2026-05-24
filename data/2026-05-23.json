@@ -1180,7 +1180,12 @@
           "url": "https://arca.live/b/anchorpanic/171538407",
           "comments": 18,
           "views": 227,
-          "sentiment": "negative"
+          "sentiment": "negative",
+          "source": "arca",
+          "board": "anchorpanic",
+          "category": "",
+          "likes": 1,
+          "utcIso": "2026-05-23T10:25:18.000Z"
         },
         {
           "id": "171524010",
@@ -1188,7 +1193,12 @@
           "url": "https://arca.live/b/anchorpanic/171524010",
           "comments": 14,
           "views": 184,
-          "sentiment": "neutral"
+          "sentiment": "neutral",
+          "source": "arca",
+          "board": "anchorpanic",
+          "category": "",
+          "likes": 1,
+          "utcIso": "2026-05-23T07:43:11.000Z"
         },
         {
           "id": "171503125",
@@ -1196,7 +1206,12 @@
           "url": "https://arca.live/b/anchorpanic/171503125",
           "comments": 8,
           "views": 190,
-          "sentiment": "negative"
+          "sentiment": "negative",
+          "source": "arca",
+          "board": "anchorpanic",
+          "category": "",
+          "likes": 0,
+          "utcIso": "2026-05-23T03:01:24.000Z"
         },
         {
           "id": "171474285",
@@ -1204,7 +1219,12 @@
           "url": "https://arca.live/b/anchorpanic/171474285",
           "comments": 5,
           "views": 179,
-          "sentiment": "positive"
+          "sentiment": "positive",
+          "source": "arca",
+          "board": "anchorpanic",
+          "category": "질문",
+          "likes": 2,
+          "utcIso": "2026-05-22T15:26:41.000Z"
         },
         {
           "id": "171519223",
@@ -1212,7 +1232,12 @@
           "url": "https://arca.live/b/anchorpanic/171519223",
           "comments": 14,
           "views": 124,
-          "sentiment": "neutral"
+          "sentiment": "neutral",
+          "source": "arca",
+          "board": "anchorpanic",
+          "category": "",
+          "likes": 1,
+          "utcIso": "2026-05-23T06:41:27.000Z"
         }
       ],
       "analysis": {
@@ -2686,7 +2711,12 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11597",
           "comments": 9,
           "views": 251,
-          "sentiment": "negative"
+          "sentiment": "negative",
+          "source": "dc",
+          "board": "erpis",
+          "category": "일반",
+          "likes": 7,
+          "utcIso": "2026-05-22T15:45:22.000Z"
         },
         {
           "id": "11623",
@@ -2694,7 +2724,12 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11623",
           "comments": 14,
           "views": 159,
-          "sentiment": "neutral"
+          "sentiment": "neutral",
+          "source": "dc",
+          "board": "erpis",
+          "category": "일반",
+          "likes": 0,
+          "utcIso": "2026-05-23T07:20:14.000Z"
         },
         {
           "id": "11601",
@@ -2702,7 +2737,12 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11601",
           "comments": 9,
           "views": 184,
-          "sentiment": "neutral"
+          "sentiment": "neutral",
+          "source": "dc",
+          "board": "erpis",
+          "category": "일반",
+          "likes": 2,
+          "utcIso": "2026-05-22T21:38:28.000Z"
         },
         {
           "id": "11598",
@@ -2710,7 +2750,12 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11598",
           "comments": 8,
           "views": 183,
-          "sentiment": "neutral"
+          "sentiment": "neutral",
+          "source": "dc",
+          "board": "erpis",
+          "category": "일반",
+          "likes": 0,
+          "utcIso": "2026-05-22T15:58:10.000Z"
         },
         {
           "id": "11621",
@@ -2718,7 +2763,12 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11621",
           "comments": 13,
           "views": 140,
-          "sentiment": "neutral"
+          "sentiment": "neutral",
+          "source": "dc",
+          "board": "erpis",
+          "category": "일반",
+          "likes": 0,
+          "utcIso": "2026-05-23T07:12:09.000Z"
         }
       ],
       "analysis": {
