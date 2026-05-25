@@ -17,10 +17,12 @@
           "author": "기아의악마",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 331
         },
         {
           "id": "171659550",
@@ -35,9 +37,12 @@
           "utcIso": "2026-05-24T14:07:09.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 398
         },
         {
           "id": "171658439",
@@ -52,9 +57,12 @@
           "utcIso": "2026-05-24T13:55:29.000Z",
           "author": "JJA",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 250
         },
         {
           "id": "171658198",
@@ -70,10 +78,12 @@
           "author": "JJA",
           "sentiment": "positive",
           "tags": [
+            "balance",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 77
         },
         {
           "id": "171657699",
@@ -88,9 +98,12 @@
           "utcIso": "2026-05-24T13:47:34.000Z",
           "author": "은색네임펜",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "event"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 297
         },
         {
           "id": "171657396",
@@ -105,9 +118,12 @@
           "utcIso": "2026-05-24T13:44:35.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 165
         },
         {
           "id": "171657279",
@@ -122,9 +138,12 @@
           "utcIso": "2026-05-24T13:43:16.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 236
         },
         {
           "id": "171657111",
@@ -140,10 +159,12 @@
           "author": "현창",
           "sentiment": "negative",
           "tags": [
+            "event",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 162
         },
         {
           "id": "171655688",
@@ -159,10 +180,12 @@
           "author": "똥싸개 (118.221)",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 285
         },
         {
           "id": "171655593",
@@ -177,9 +200,12 @@
           "utcIso": "2026-05-24T13:25:52.000Z",
           "author": "현창",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 166
         },
         {
           "id": "171654251",
@@ -195,10 +221,12 @@
           "author": "백만유랭가쟈",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 244
         },
         {
           "id": "171653311",
@@ -213,9 +241,13 @@
           "utcIso": "2026-05-24T13:02:04.000Z",
           "author": "히메지마아케노",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha",
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 439
         },
         {
           "id": "171653199",
@@ -230,9 +262,12 @@
           "utcIso": "2026-05-24T13:00:57.000Z",
           "author": "yems",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 459
         },
         {
           "id": "171652610",
@@ -247,9 +282,12 @@
           "utcIso": "2026-05-24T12:54:43.000Z",
           "author": "ㅇㅇ (211.234)",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 331
         },
         {
           "id": "171652008",
@@ -265,10 +303,12 @@
           "author": "헛짓거리보면짖는개",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 489
         },
         {
           "id": "171650686",
@@ -284,10 +324,12 @@
           "author": "다발린",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 286
         },
         {
           "id": "171647839",
@@ -302,9 +344,13 @@
           "utcIso": "2026-05-24T12:07:11.000Z",
           "author": "화이트로즈",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie",
+            "guild"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 113
         },
         {
           "id": "171646500",
@@ -320,10 +366,14 @@
           "author": "히메지마아케노",
           "sentiment": "negative",
           "tags": [
+            "gacha",
+            "balance",
+            "guide",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 182
         },
         {
           "id": "171646345",
@@ -338,9 +388,12 @@
           "utcIso": "2026-05-24T11:53:39.000Z",
           "author": "AELLEE",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 151
         },
         {
           "id": "171644178",
@@ -356,10 +409,12 @@
           "author": "딸기맛하츄핑",
           "sentiment": "negative",
           "tags": [
+            "guild",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 290
         },
         {
           "id": "171640952",
@@ -375,10 +430,13 @@
           "author": "히메지마아케노",
           "sentiment": "negative",
           "tags": [
+            "balance",
+            "guide",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 353
         },
         {
           "id": "171640342",
@@ -393,9 +451,12 @@
           "utcIso": "2026-05-24T10:52:07.000Z",
           "author": "퀸덤",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 207
         },
         {
           "id": "171638025",
@@ -411,10 +472,12 @@
           "author": "현창",
           "sentiment": "positive",
           "tags": [
+            "chitchat",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 150
         },
         {
           "id": "171636412",
@@ -429,9 +492,12 @@
           "utcIso": "2026-05-24T10:07:39.000Z",
           "author": "l222",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 83
         },
         {
           "id": "171635036",
@@ -446,9 +512,12 @@
           "utcIso": "2026-05-24T09:52:48.000Z",
           "author": "doze00",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 102
         },
         {
           "id": "171634108",
@@ -463,9 +532,12 @@
           "utcIso": "2026-05-24T09:42:12.000Z",
           "author": "ㅜㅡ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 138
         },
         {
           "id": "171632408",
@@ -480,9 +552,12 @@
           "utcIso": "2026-05-24T09:23:05.000Z",
           "author": "히메지마아케노",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "event"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 167
         },
         {
           "id": "171632333",
@@ -498,10 +573,12 @@
           "author": "ㅇㅇ",
           "sentiment": "positive",
           "tags": [
+            "guide",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 78
         },
         {
           "id": "171629284",
@@ -516,9 +593,12 @@
           "utcIso": "2026-05-24T08:47:33.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 404
         },
         {
           "id": "171627887",
@@ -533,9 +613,12 @@
           "utcIso": "2026-05-24T08:32:02.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 289
         },
         {
           "id": "171626475",
@@ -550,9 +633,12 @@
           "utcIso": "2026-05-24T08:16:43.000Z",
           "author": "ㅇㅇ (39.113)",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 256
         },
         {
           "id": "171624747",
@@ -568,10 +654,12 @@
           "author": "현창",
           "sentiment": "positive",
           "tags": [
+            "newbie",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 378
         },
         {
           "id": "171623167",
@@ -586,9 +674,12 @@
           "utcIso": "2026-05-24T07:42:13.000Z",
           "author": "크린",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guild"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 271
         },
         {
           "id": "171622497",
@@ -603,9 +694,12 @@
           "utcIso": "2026-05-24T07:36:09.000Z",
           "author": "그런거몰라요",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 88
         },
         {
           "id": "171622340",
@@ -620,18 +714,35 @@
           "utcIso": "2026-05-24T07:34:29.000Z",
           "author": "yems",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 114
         }
       ],
       "stats": {
+        "total": 35,
+        "real_posts": 35,
+        "notices": 0,
+        "bugs": 0,
         "positive": 4,
         "negative": 9,
         "neutral": 22,
-        "total": 35,
         "sentiment_score": -0.143,
         "sentiment": "부정",
+        "competitor_mentions": 0,
+        "newbie_returning": 5,
+        "guild_recruit": 3,
+        "gacha": 2,
+        "event": 3,
+        "balance": 3,
+        "guide": 9,
+        "chitchat": 15,
+        "total_views": 3119,
+        "total_comments": 222,
+        "total_likes": 29,
         "tags": {
           "positive": 4,
           "negative": 9,
@@ -651,6 +762,19 @@
           "category": "",
           "likes": 2,
           "utcIso": "2026-05-24T12:48:33.000Z"
+        },
+        {
+          "id": "171653199",
+          "title": "행정관아 이리와 앉아봐라",
+          "url": "https://arca.live/b/anchorpanic/171653199",
+          "comments": 11,
+          "views": 119,
+          "sentiment": "neutral",
+          "source": "arca",
+          "board": "anchorpanic",
+          "category": "",
+          "likes": 4,
+          "utcIso": "2026-05-24T13:00:57.000Z"
         },
         {
           "id": "171653311",
@@ -690,19 +814,6 @@
           "category": "",
           "likes": 1,
           "utcIso": "2026-05-24T14:07:09.000Z"
-        },
-        {
-          "id": "171640952",
-          "title": "분명 과금은 효율적으로 한 것 같은데",
-          "url": "https://arca.live/b/anchorpanic/171640952",
-          "comments": 12,
-          "views": 113,
-          "sentiment": "negative",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "likes": 0,
-          "utcIso": "2026-05-24T10:58:20.000Z"
         }
       ],
       "analysis": {
@@ -845,9 +956,12 @@
           "utcIso": "2026-05-24T14:45:08.000Z",
           "author": "레드후",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "balance"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 221
         },
         {
           "id": "11704",
@@ -862,9 +976,12 @@
           "utcIso": "2026-05-24T14:03:42.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "balance"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 154
         },
         {
           "id": "171657768",
@@ -879,9 +996,12 @@
           "utcIso": "2026-05-24T13:48:17.000Z",
           "author": "현창",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 145
         },
         {
           "id": "11703",
@@ -897,10 +1017,12 @@
           "author": "ㅇㅇ",
           "sentiment": "negative",
           "tags": [
+            "event",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 308
         },
         {
           "id": "11702",
@@ -916,10 +1038,12 @@
           "author": "ㅇㅇ",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 351
         },
         {
           "id": "11701",
@@ -934,9 +1058,13 @@
           "utcIso": "2026-05-24T13:24:06.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "balance",
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 172
         },
         {
           "id": "11700",
@@ -951,9 +1079,12 @@
           "utcIso": "2026-05-24T13:21:24.000Z",
           "author": "뜌따이",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 260
         },
         {
           "id": "11699",
@@ -968,9 +1099,12 @@
           "utcIso": "2026-05-24T13:18:31.000Z",
           "author": "도비",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 171
         },
         {
           "id": "11698",
@@ -986,10 +1120,12 @@
           "author": "ㅇㅇ",
           "sentiment": "positive",
           "tags": [
+            "chitchat",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 215
         },
         {
           "id": "171654285",
@@ -1005,10 +1141,12 @@
           "author": "청금이",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 156
         },
         {
           "id": "11697",
@@ -1023,9 +1161,12 @@
           "utcIso": "2026-05-24T12:26:24.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 497
         },
         {
           "id": "11696",
@@ -1040,9 +1181,12 @@
           "utcIso": "2026-05-24T12:21:00.000Z",
           "author": "현질은적당히",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 97
         },
         {
           "id": "11695",
@@ -1057,9 +1201,12 @@
           "utcIso": "2026-05-24T12:16:02.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 302
         },
         {
           "id": "11694",
@@ -1074,9 +1221,12 @@
           "utcIso": "2026-05-24T12:14:17.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 54
         },
         {
           "id": "11693",
@@ -1091,9 +1241,12 @@
           "utcIso": "2026-05-24T12:10:12.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 80
         },
         {
           "id": "11692",
@@ -1108,9 +1261,12 @@
           "utcIso": "2026-05-24T12:06:59.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 86
         },
         {
           "id": "11691",
@@ -1125,9 +1281,12 @@
           "utcIso": "2026-05-24T12:04:20.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 91
         },
         {
           "id": "11690",
@@ -1143,10 +1302,12 @@
           "author": "ㅇㅇ",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 105
         },
         {
           "id": "11689",
@@ -1162,10 +1323,12 @@
           "author": "sasinki",
           "sentiment": "positive",
           "tags": [
+            "chitchat",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 140
         },
         {
           "id": "11688",
@@ -1180,9 +1343,12 @@
           "utcIso": "2026-05-24T10:58:48.000Z",
           "author": "Halolay",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 197
         },
         {
           "id": "11687",
@@ -1197,9 +1363,13 @@
           "utcIso": "2026-05-24T10:57:40.000Z",
           "author": "뜌따이",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "balance",
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 451
         },
         {
           "id": "11686",
@@ -1214,9 +1384,12 @@
           "utcIso": "2026-05-24T10:31:07.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 149
         },
         {
           "id": "11685",
@@ -1231,9 +1404,12 @@
           "utcIso": "2026-05-24T10:13:18.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "event"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 271
         },
         {
           "id": "11684",
@@ -1248,9 +1424,12 @@
           "utcIso": "2026-05-24T09:35:21.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 178
         },
         {
           "id": "11683",
@@ -1266,10 +1445,12 @@
           "author": "ㅇㅇ",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 247
         },
         {
           "id": "11682",
@@ -1284,9 +1465,12 @@
           "utcIso": "2026-05-24T09:20:23.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 234
         },
         {
           "id": "171630078",
@@ -1301,9 +1485,12 @@
           "utcIso": "2026-05-24T08:56:03.000Z",
           "author": "리으응리을",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guild"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 189
         },
         {
           "id": "11681",
@@ -1318,9 +1505,12 @@
           "utcIso": "2026-05-24T08:47:09.000Z",
           "author": "레드후",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 163
         },
         {
           "id": "171629121",
@@ -1336,10 +1526,12 @@
           "author": "현창",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 199
         },
         {
           "id": "11680",
@@ -1354,9 +1546,12 @@
           "utcIso": "2026-05-24T08:42:47.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 273
         },
         {
           "id": "11679",
@@ -1371,9 +1566,12 @@
           "utcIso": "2026-05-24T08:24:41.000Z",
           "author": "레드후",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 511
         },
         {
           "id": "11678",
@@ -1389,10 +1587,12 @@
           "author": "ㅇㅇ",
           "sentiment": "negative",
           "tags": [
+            "newbie",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 124
         },
         {
           "id": "11677",
@@ -1408,10 +1608,12 @@
           "author": "ㅇㅇ",
           "sentiment": "positive",
           "tags": [
+            "chitchat",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 214
         },
         {
           "id": "11676",
@@ -1427,10 +1629,12 @@
           "author": "ㅇㅇ",
           "sentiment": "positive",
           "tags": [
+            "newbie",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 80
         },
         {
           "id": "11675",
@@ -1445,9 +1649,12 @@
           "utcIso": "2026-05-24T07:52:29.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 260
         },
         {
           "id": "11674",
@@ -1462,9 +1669,12 @@
           "utcIso": "2026-05-24T07:35:25.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 150
         },
         {
           "id": "11673",
@@ -1480,10 +1690,12 @@
           "author": "ㅇㅇ",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 507
         },
         {
           "id": "11672",
@@ -1499,10 +1711,12 @@
           "author": "ㅇㅇ",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 109
         },
         {
           "id": "11671",
@@ -1518,10 +1732,12 @@
           "author": "ㅇㅇ",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 208
         },
         {
           "id": "11670",
@@ -1536,9 +1752,12 @@
           "utcIso": "2026-05-24T05:40:51.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 44
         },
         {
           "id": "11669",
@@ -1553,9 +1772,12 @@
           "utcIso": "2026-05-24T04:56:48.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 106
         },
         {
           "id": "11668",
@@ -1570,9 +1792,12 @@
           "utcIso": "2026-05-24T04:46:12.000Z",
           "author": "Halolay",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "balance"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 451
         },
         {
           "id": "11667",
@@ -1587,9 +1812,12 @@
           "utcIso": "2026-05-24T04:30:47.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 288
         },
         {
           "id": "11666",
@@ -1604,9 +1832,12 @@
           "utcIso": "2026-05-24T03:58:42.000Z",
           "author": "(´-｀)",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "balance"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 202
         },
         {
           "id": "11665",
@@ -1621,9 +1852,12 @@
           "utcIso": "2026-05-24T03:47:33.000Z",
           "author": "뜌따이",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 131
         },
         {
           "id": "11664",
@@ -1639,10 +1873,12 @@
           "author": "오피셜히게단디즘",
           "sentiment": "negative",
           "tags": [
+            "balance",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 125
         },
         {
           "id": "11663",
@@ -1658,10 +1894,12 @@
           "author": "ㅇㅇ",
           "sentiment": "positive",
           "tags": [
+            "newbie",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 160
         },
         {
           "id": "11662",
@@ -1676,9 +1914,13 @@
           "utcIso": "2026-05-24T02:37:57.000Z",
           "author": "뜌따이",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guild",
+            "balance"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 129
         },
         {
           "id": "11661",
@@ -1693,9 +1935,12 @@
           "utcIso": "2026-05-24T01:43:49.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 204
         },
         {
           "id": "11660",
@@ -1710,9 +1955,12 @@
           "utcIso": "2026-05-23T22:01:37.000Z",
           "author": "할머니틀니도둑",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 204
         },
         {
           "id": "11659",
@@ -1727,9 +1975,12 @@
           "utcIso": "2026-05-23T21:39:06.000Z",
           "author": "할머니틀니도둑",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 215
         },
         {
           "id": "11658",
@@ -1744,9 +1995,12 @@
           "utcIso": "2026-05-23T17:47:27.000Z",
           "author": "레드후",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 113
         },
         {
           "id": "11657",
@@ -1762,10 +2016,13 @@
           "author": "ㅇㅇ",
           "sentiment": "positive",
           "tags": [
+            "gacha",
+            "balance",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 384
         },
         {
           "id": "11655",
@@ -1780,9 +2037,12 @@
           "utcIso": "2026-05-23T16:00:17.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 135
         },
         {
           "id": "11654",
@@ -1797,9 +2057,12 @@
           "utcIso": "2026-05-23T15:50:33.000Z",
           "author": "장마베",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 301
         },
         {
           "id": "11653",
@@ -1814,18 +2077,37 @@
           "utcIso": "2026-05-23T15:22:45.000Z",
           "author": "ㅇㅇ",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie",
+            "balance",
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 232
         }
       ],
       "stats": {
+        "total": 56,
+        "real_posts": 56,
+        "notices": 0,
+        "bugs": 0,
         "positive": 6,
         "negative": 11,
         "neutral": 39,
-        "total": 56,
         "sentiment_score": -0.089,
         "sentiment": "부정",
+        "competitor_mentions": 0,
+        "newbie_returning": 5,
+        "guild_recruit": 2,
+        "gacha": 1,
+        "event": 2,
+        "balance": 10,
+        "guide": 7,
+        "chitchat": 35,
+        "total_views": 5083,
+        "total_comments": 282,
+        "total_likes": 34,
         "tags": {
           "positive": 6,
           "negative": 11,
@@ -1833,6 +2115,19 @@
         }
       },
       "topEngaging": [
+        {
+          "id": "11679",
+          "title": "웨이브 20 카타스 버티기 영상",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11679",
+          "comments": 9,
+          "views": 121,
+          "sentiment": "neutral",
+          "source": "dc",
+          "board": "erpis",
+          "category": "",
+          "likes": 7,
+          "utcIso": "2026-05-24T08:24:41.000Z"
+        },
         {
           "id": "11673",
           "title": "카타리나 왤케 세냐",
@@ -1860,6 +2155,19 @@
           "utcIso": "2026-05-24T12:26:24.000Z"
         },
         {
+          "id": "11687",
+          "title": "카타리나(3보스) 공략",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11687",
+          "comments": 9,
+          "views": 121,
+          "sentiment": "neutral",
+          "source": "dc",
+          "board": "erpis",
+          "category": "",
+          "likes": 5,
+          "utcIso": "2026-05-24T10:57:40.000Z"
+        },
+        {
           "id": "11668",
           "title": "강적 베티아 없음 못 깨나",
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11668",
@@ -1871,32 +2179,6 @@
           "category": "",
           "likes": 0,
           "utcIso": "2026-05-24T04:46:12.000Z"
-        },
-        {
-          "id": "11702",
-          "title": "요새 이새끼들 근데 초심 잃음",
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11702",
-          "comments": 11,
-          "views": 131,
-          "sentiment": "negative",
-          "source": "dc",
-          "board": "erpis",
-          "category": "",
-          "likes": 0,
-          "utcIso": "2026-05-24T13:31:31.000Z"
-        },
-        {
-          "id": "11695",
-          "title": "????????????????",
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11695",
-          "comments": 9,
-          "views": 122,
-          "sentiment": "neutral",
-          "source": "dc",
-          "board": "erpis",
-          "category": "",
-          "likes": 0,
-          "utcIso": "2026-05-24T12:16:02.000Z"
         }
       ],
       "analysis": {
@@ -3752,5 +4034,6 @@
         }
       }
     ]
-  }
+  },
+  "lastUpdated": "2026-05-25T00:13:48Z"
 }
