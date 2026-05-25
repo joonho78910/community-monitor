@@ -1,15 +1,15 @@
 {
   "startDate": "2025-11-25",
-  "endDate": "2026-05-24",
+  "endDate": "2026-05-25",
   "timeUnit": "date",
   "sources": {
     "naver": {
       "label": "네이버 데이터랩",
-      "note": "datalab API. 2026-05-24까지 수집 OK."
+      "note": "datalab API. 2026-05-24까지 수집 OK (TARGET 2026-05-25은 lag 확인 필요)."
     },
     "google": {
       "label": "구글 트렌드",
-      "note": "trends.google.com widget multiline API (6mo daily, KR). Last build 2026-05-24."
+      "note": "trends.google.com widget multiline API (6mo daily, KR). Last build 2026-05-25."
     }
   },
   "series": [
@@ -1337,11 +1337,11 @@
           },
           {
             "period": "2026-05-08",
-            "ratio": 17
+            "ratio": 0
           },
           {
             "period": "2026-05-09",
-            "ratio": 0
+            "ratio": 18
           },
           {
             "period": "2026-05-10",
@@ -1357,11 +1357,11 @@
           },
           {
             "period": "2026-05-13",
-            "ratio": 5
+            "ratio": 4
           },
           {
             "period": "2026-05-14",
-            "ratio": 3
+            "ratio": 2
           },
           {
             "period": "2026-05-15",
@@ -1369,7 +1369,7 @@
           },
           {
             "period": "2026-05-16",
-            "ratio": 5
+            "ratio": 4
           },
           {
             "period": "2026-05-17",
@@ -1381,15 +1381,15 @@
           },
           {
             "period": "2026-05-19",
-            "ratio": 3
+            "ratio": 2
           },
           {
             "period": "2026-05-20",
-            "ratio": 4
+            "ratio": 3
           },
           {
             "period": "2026-05-21",
-            "ratio": 0
+            "ratio": 1
           },
           {
             "period": "2026-05-22",
@@ -1401,7 +1401,11 @@
           },
           {
             "period": "2026-05-24",
-            "ratio": 3
+            "ratio": 2
+          },
+          {
+            "period": "2026-05-25",
+            "ratio": 2
           }
         ]
       }
@@ -2150,7 +2154,7 @@
           },
           {
             "period": "2025-11-28",
-            "ratio": 21
+            "ratio": 0
           },
           {
             "period": "2025-11-29",
@@ -2422,7 +2426,7 @@
           },
           {
             "period": "2026-02-04",
-            "ratio": 19
+            "ratio": 0
           },
           {
             "period": "2026-02-05",
@@ -2430,27 +2434,27 @@
           },
           {
             "period": "2026-02-06",
-            "ratio": 57
+            "ratio": 50
           },
           {
             "period": "2026-02-07",
-            "ratio": 56
+            "ratio": 73
           },
           {
             "period": "2026-02-08",
-            "ratio": 70
-          },
-          {
-            "period": "2026-02-09",
-            "ratio": 35
-          },
-          {
-            "period": "2026-02-10",
             "ratio": 56
           },
           {
+            "period": "2026-02-09",
+            "ratio": 30
+          },
+          {
+            "period": "2026-02-10",
+            "ratio": 50
+          },
+          {
             "period": "2026-02-11",
-            "ratio": 35
+            "ratio": 32
           },
           {
             "period": "2026-02-12",
@@ -2458,23 +2462,23 @@
           },
           {
             "period": "2026-02-13",
-            "ratio": 41
+            "ratio": 35
           },
           {
             "period": "2026-02-14",
-            "ratio": 46
+            "ratio": 31
           },
           {
             "period": "2026-02-15",
-            "ratio": 42
+            "ratio": 36
           },
           {
             "period": "2026-02-16",
-            "ratio": 30
+            "ratio": 26
           },
           {
             "period": "2026-02-17",
-            "ratio": 30
+            "ratio": 21
           },
           {
             "period": "2026-02-18",
@@ -2482,39 +2486,39 @@
           },
           {
             "period": "2026-02-19",
-            "ratio": 38
-          },
-          {
-            "period": "2026-02-20",
-            "ratio": 29
-          },
-          {
-            "period": "2026-02-21",
-            "ratio": 25
-          },
-          {
-            "period": "2026-02-22",
-            "ratio": 20
-          },
-          {
-            "period": "2026-02-23",
-            "ratio": 21
-          },
-          {
-            "period": "2026-02-24",
-            "ratio": 32
-          },
-          {
-            "period": "2026-02-25",
-            "ratio": 20
-          },
-          {
-            "period": "2026-02-26",
             "ratio": 24
           },
           {
+            "period": "2026-02-20",
+            "ratio": 16
+          },
+          {
+            "period": "2026-02-21",
+            "ratio": 33
+          },
+          {
+            "period": "2026-02-22",
+            "ratio": 18
+          },
+          {
+            "period": "2026-02-23",
+            "ratio": 19
+          },
+          {
+            "period": "2026-02-24",
+            "ratio": 27
+          },
+          {
+            "period": "2026-02-25",
+            "ratio": 19
+          },
+          {
+            "period": "2026-02-26",
+            "ratio": 20
+          },
+          {
             "period": "2026-02-27",
-            "ratio": 22
+            "ratio": 0
           },
           {
             "period": "2026-02-28",
@@ -2538,7 +2542,7 @@
           },
           {
             "period": "2026-03-05",
-            "ratio": 18
+            "ratio": 19
           },
           {
             "period": "2026-03-06",
@@ -2582,7 +2586,7 @@
           },
           {
             "period": "2026-03-16",
-            "ratio": 24
+            "ratio": 0
           },
           {
             "period": "2026-03-17",
@@ -2618,7 +2622,7 @@
           },
           {
             "period": "2026-03-25",
-            "ratio": 20
+            "ratio": 0
           },
           {
             "period": "2026-03-26",
@@ -2818,7 +2822,7 @@
           },
           {
             "period": "2026-05-14",
-            "ratio": 4
+            "ratio": 3
           },
           {
             "period": "2026-05-15",
@@ -2826,11 +2830,11 @@
           },
           {
             "period": "2026-05-16",
-            "ratio": 3
+            "ratio": 2
           },
           {
             "period": "2026-05-17",
-            "ratio": 3
+            "ratio": 2
           },
           {
             "period": "2026-05-18",
@@ -2854,10 +2858,14 @@
           },
           {
             "period": "2026-05-23",
-            "ratio": 3
+            "ratio": 2
           },
           {
             "period": "2026-05-24",
+            "ratio": 2
+          },
+          {
+            "period": "2026-05-25",
             "ratio": 2
           }
         ]
@@ -3082,5 +3090,133 @@
       "game": "erpis"
     }
   ],
-  "lastUpdated": "2026-05-25T00:13:48Z"
+  "lastUpdated": "2026-05-25T22:52:48.309Z",
+  "spikes": [
+    {
+      "date": "2025-12-24",
+      "game": "anchorpanic",
+      "ratio_prev": 4.03726,
+      "ratio_cur": 12.1118,
+      "pct": 200
+    },
+    {
+      "date": "2025-12-30",
+      "game": "anchorpanic",
+      "ratio_prev": 7.14285,
+      "ratio_cur": 20.80745,
+      "pct": 191
+    },
+    {
+      "date": "2026-01-03",
+      "game": "anchorpanic",
+      "ratio_prev": 8.69565,
+      "ratio_cur": 13.66459,
+      "pct": 57
+    },
+    {
+      "date": "2026-02-04",
+      "game": "anchorpanic",
+      "ratio_prev": 6.52173,
+      "ratio_cur": 10.24844,
+      "pct": 57
+    },
+    {
+      "date": "2026-02-18",
+      "game": "anchorpanic",
+      "ratio_prev": 6.52173,
+      "ratio_cur": 11.18012,
+      "pct": 71
+    },
+    {
+      "date": "2026-04-23",
+      "game": "anchorpanic",
+      "ratio_prev": 4.34782,
+      "ratio_cur": 15.52795,
+      "pct": 257
+    },
+    {
+      "date": "2026-05-05",
+      "game": "anchorpanic",
+      "ratio_prev": 4.96894,
+      "ratio_cur": 15.8385,
+      "pct": 219
+    },
+    {
+      "date": "2026-05-06",
+      "game": "anchorpanic",
+      "ratio_prev": 15.8385,
+      "ratio_cur": 76.08695,
+      "pct": 380
+    },
+    {
+      "date": "2026-05-07",
+      "game": "anchorpanic",
+      "ratio_prev": 76.08695,
+      "ratio_cur": 100,
+      "pct": 31
+    },
+    {
+      "date": "2026-02-04",
+      "game": "erpis",
+      "ratio_prev": 5.23855,
+      "ratio_cur": 12.03079,
+      "pct": 130
+    },
+    {
+      "date": "2026-02-05",
+      "game": "erpis",
+      "ratio_prev": 12.03079,
+      "ratio_cur": 100,
+      "pct": 731
+    },
+    {
+      "date": "2026-04-16",
+      "game": "erpis",
+      "ratio_prev": 1.36119,
+      "ratio_cur": 55.90062,
+      "pct": 4007
+    },
+    {
+      "date": "2026-04-22",
+      "game": "erpis",
+      "ratio_prev": 28.26086,
+      "ratio_cur": 38.19875,
+      "pct": 35
+    },
+    {
+      "date": "2026-04-27",
+      "game": "erpis",
+      "ratio_prev": 18.94409,
+      "ratio_cur": 28.88198,
+      "pct": 52
+    },
+    {
+      "date": "2026-04-30",
+      "game": "erpis",
+      "ratio_prev": 36.95652,
+      "ratio_cur": 47.51552,
+      "pct": 29
+    },
+    {
+      "date": "2026-05-04",
+      "game": "erpis",
+      "ratio_prev": 20.18633,
+      "ratio_cur": 33.22981,
+      "pct": 65
+    },
+    {
+      "date": "2026-05-08",
+      "game": "erpis",
+      "ratio_prev": 24.84472,
+      "ratio_cur": 35.40372,
+      "pct": 42
+    },
+    {
+      "date": "2026-05-13",
+      "game": "erpis",
+      "ratio_prev": 26.39751,
+      "ratio_cur": 36.95652,
+      "pct": 40
+    }
+  ]
 }
