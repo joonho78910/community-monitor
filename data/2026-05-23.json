@@ -18,9 +18,12 @@
           "utcIso": "2026-05-23T14:55:17.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 189
         },
         {
           "id": "171568561",
@@ -35,9 +38,13 @@
           "utcIso": "2026-05-23T14:47:06.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie",
+            "guild"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 31
         },
         {
           "id": "171566182",
@@ -52,9 +59,13 @@
           "utcIso": "2026-05-23T14:23:56.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie",
+            "guild"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 53
         },
         {
           "id": "171565625",
@@ -70,10 +81,12 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "chitchat",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 273
         },
         {
           "id": "171564436",
@@ -88,9 +101,12 @@
           "utcIso": "2026-05-23T14:06:40.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 141
         },
         {
           "id": "171563555",
@@ -105,9 +121,13 @@
           "utcIso": "2026-05-23T13:58:19.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie",
+            "guild"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 118
         },
         {
           "id": "171561477",
@@ -122,9 +142,12 @@
           "utcIso": "2026-05-23T13:38:04.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 39
         },
         {
           "id": "171558995",
@@ -139,9 +162,12 @@
           "utcIso": "2026-05-23T13:16:15.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 92
         },
         {
           "id": "171556996",
@@ -156,9 +182,12 @@
           "utcIso": "2026-05-23T13:02:42.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 42
         },
         {
           "id": "171555557",
@@ -173,9 +202,12 @@
           "utcIso": "2026-05-23T12:51:42.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 314
         },
         {
           "id": "171554944",
@@ -190,9 +222,12 @@
           "utcIso": "2026-05-23T12:46:18.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 56
         },
         {
           "id": "171553540",
@@ -207,9 +242,12 @@
           "utcIso": "2026-05-23T12:35:09.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 181
         },
         {
           "id": "171553423",
@@ -225,10 +263,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 165
         },
         {
           "id": "171553107",
@@ -243,9 +283,12 @@
           "utcIso": "2026-05-23T12:31:40.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 152
         },
         {
           "id": "171552976",
@@ -260,9 +303,12 @@
           "utcIso": "2026-05-23T12:30:42.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 79
         },
         {
           "id": "171552296",
@@ -277,9 +323,12 @@
           "utcIso": "2026-05-23T12:25:55.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 67
         },
         {
           "id": "171547817",
@@ -294,9 +343,13 @@
           "utcIso": "2026-05-23T11:53:32.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha",
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 79
         },
         {
           "id": "171545834",
@@ -311,9 +364,12 @@
           "utcIso": "2026-05-23T11:36:53.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 163
         },
         {
           "id": "171545742",
@@ -328,9 +384,13 @@
           "utcIso": "2026-05-23T11:36:08.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha",
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 67
         },
         {
           "id": "171538407",
@@ -346,10 +406,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 617
         },
         {
           "id": "171536088",
@@ -365,10 +427,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 152
         },
         {
           "id": "171528316",
@@ -383,9 +447,12 @@
           "utcIso": "2026-05-23T08:34:13.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 115
         },
         {
           "id": "171527759",
@@ -400,9 +467,12 @@
           "utcIso": "2026-05-23T08:27:40.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 175
         },
         {
           "id": "171526861",
@@ -418,10 +488,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "guide",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 260
         },
         {
           "id": "171526503",
@@ -436,9 +508,12 @@
           "utcIso": "2026-05-23T08:13:07.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 216
         },
         {
           "id": "171524909",
@@ -453,9 +528,12 @@
           "utcIso": "2026-05-23T07:54:40.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 179
         },
         {
           "id": "171524346",
@@ -471,10 +549,13 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "newbie",
+            "guide",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 202
         },
         {
           "id": "171524010",
@@ -489,9 +570,12 @@
           "utcIso": "2026-05-23T07:43:11.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 494
         },
         {
           "id": "171523837",
@@ -507,10 +591,12 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "event",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 478
         },
         {
           "id": "171521464",
@@ -525,9 +611,12 @@
           "utcIso": "2026-05-23T07:11:44.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 165
         },
         {
           "id": "171521130",
@@ -542,9 +631,12 @@
           "utcIso": "2026-05-23T07:07:10.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 236
         },
         {
           "id": "171519223",
@@ -559,9 +651,12 @@
           "utcIso": "2026-05-23T06:41:27.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 434
         },
         {
           "id": "171518716",
@@ -576,9 +671,12 @@
           "utcIso": "2026-05-23T06:34:35.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 88
         },
         {
           "id": "171518423",
@@ -593,9 +691,13 @@
           "utcIso": "2026-05-23T06:30:25.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie",
+            "guild"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 174
         },
         {
           "id": "171518104",
@@ -610,9 +712,12 @@
           "utcIso": "2026-05-23T06:26:10.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "event"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 180
         },
         {
           "id": "171517990",
@@ -627,9 +732,12 @@
           "utcIso": "2026-05-23T06:24:31.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 41
         },
         {
           "id": "171517964",
@@ -645,10 +753,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "guide",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 113
         },
         {
           "id": "171517943",
@@ -663,9 +773,12 @@
           "utcIso": "2026-05-23T06:23:54.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 26
         },
         {
           "id": "171517892",
@@ -681,10 +794,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 117
         },
         {
           "id": "171517718",
@@ -700,10 +815,12 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "event",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 493
         },
         {
           "id": "171516011",
@@ -722,7 +839,8 @@
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 86
         },
         {
           "id": "171514561",
@@ -737,9 +855,12 @@
           "utcIso": "2026-05-23T05:38:36.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 197
         },
         {
           "id": "171512618",
@@ -754,9 +875,12 @@
           "utcIso": "2026-05-23T05:12:47.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 71
         },
         {
           "id": "171510581",
@@ -771,9 +895,13 @@
           "utcIso": "2026-05-23T04:45:54.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "balance",
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 188
         },
         {
           "id": "171503874",
@@ -788,9 +916,12 @@
           "utcIso": "2026-05-23T03:11:30.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 128
         },
         {
           "id": "171503125",
@@ -806,10 +937,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 350
         },
         {
           "id": "171502683",
@@ -824,9 +957,13 @@
           "utcIso": "2026-05-23T02:55:11.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie",
+            "guild"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 42
         },
         {
           "id": "171501844",
@@ -841,9 +978,13 @@
           "utcIso": "2026-05-23T02:42:46.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie",
+            "guild"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 81
         },
         {
           "id": "171501496",
@@ -858,9 +999,13 @@
           "utcIso": "2026-05-23T02:37:05.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha",
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 323
         },
         {
           "id": "171497633",
@@ -875,9 +1020,13 @@
           "utcIso": "2026-05-23T01:34:36.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie",
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 199
         },
         {
           "id": "171496047",
@@ -892,9 +1041,13 @@
           "utcIso": "2026-05-23T01:05:15.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie",
+            "guild"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 92
         },
         {
           "id": "171495799",
@@ -909,9 +1062,12 @@
           "utcIso": "2026-05-23T01:00:41.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 82
         },
         {
           "id": "171494845",
@@ -930,7 +1086,8 @@
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 119
         },
         {
           "id": "171493513",
@@ -945,9 +1102,12 @@
           "utcIso": "2026-05-23T00:07:29.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 351
         },
         {
           "id": "171491449",
@@ -962,9 +1122,12 @@
           "utcIso": "2026-05-22T23:05:40.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 288
         },
         {
           "id": "171489013",
@@ -979,9 +1142,12 @@
           "utcIso": "2026-05-22T21:21:20.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 317
         },
         {
           "id": "171488645",
@@ -997,10 +1163,12 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "newbie",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 131
         },
         {
           "id": "171488432",
@@ -1016,10 +1184,12 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "chitchat",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 252
         },
         {
           "id": "171488157",
@@ -1034,9 +1204,12 @@
           "utcIso": "2026-05-22T20:37:38.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 105
         },
         {
           "id": "171484936",
@@ -1051,9 +1224,12 @@
           "utcIso": "2026-05-22T18:19:52.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 116
         },
         {
           "id": "171482348",
@@ -1068,9 +1244,12 @@
           "utcIso": "2026-05-22T17:16:26.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 121
         },
         {
           "id": "171480159",
@@ -1085,9 +1264,13 @@
           "utcIso": "2026-05-22T16:39:14.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie",
+            "guild"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 46
         },
         {
           "id": "171479798",
@@ -1102,9 +1285,13 @@
           "utcIso": "2026-05-22T16:33:51.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie",
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 328
         },
         {
           "id": "171476856",
@@ -1119,9 +1306,12 @@
           "utcIso": "2026-05-22T15:55:34.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 233
         },
         {
           "id": "171474285",
@@ -1137,10 +1327,13 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "newbie",
+            "guide",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 339
         },
         {
           "id": "171472383",
@@ -1155,18 +1348,36 @@
           "utcIso": "2026-05-22T15:07:01.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha",
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 250
         }
       ],
       "stats": {
+        "total": 66,
+        "real_posts": 66,
+        "notices": 0,
+        "bugs": 0,
         "positive": 8,
         "negative": 8,
         "neutral": 50,
-        "total": 66,
         "sentiment_score": 0.0,
         "sentiment": "중립",
+        "competitor_mentions": 0,
+        "newbie_returning": 17,
+        "guild_recruit": 8,
+        "gacha": 5,
+        "event": 3,
+        "balance": 1,
+        "guide": 18,
+        "chitchat": 29,
+        "total_views": 5881,
+        "total_comments": 249,
+        "total_likes": 41,
         "tags": {
           "positive": 8,
           "negative": 8,
@@ -1400,9 +1611,12 @@
           "utcIso": "2026-05-23T11:50:33.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 182
         },
         {
           "id": "171547281",
@@ -1418,10 +1632,13 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "gacha",
+            "balance",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 62
         },
         {
           "id": "171537818",
@@ -1437,10 +1654,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "balance",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 183
         },
         {
           "id": "171532359",
@@ -1455,9 +1674,12 @@
           "utcIso": "2026-05-23T09:20:39.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guild"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 422
         },
         {
           "id": "171531280",
@@ -1473,10 +1695,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 154
         },
         {
           "id": "171522448",
@@ -1491,9 +1715,12 @@
           "utcIso": "2026-05-23T07:23:17.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 117
         },
         {
           "id": "171519514",
@@ -1508,9 +1735,12 @@
           "utcIso": "2026-05-23T06:45:17.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 321
         },
         {
           "id": "171518318",
@@ -1525,9 +1755,12 @@
           "utcIso": "2026-05-23T06:29:02.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 135
         },
         {
           "id": "171517379",
@@ -1543,10 +1776,13 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "gacha",
+            "balance",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 250
         },
         {
           "id": "171494963",
@@ -1561,9 +1797,12 @@
           "utcIso": "2026-05-23T00:41:59.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "balance"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 106
         },
         {
           "id": "171485990",
@@ -1578,9 +1817,12 @@
           "utcIso": "2026-05-22T18:57:19.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 173
         },
         {
           "id": "171485888",
@@ -1596,10 +1838,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 242
         },
         {
           "id": "171482763",
@@ -1615,10 +1859,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 277
         },
         {
           "id": "171475828",
@@ -1633,9 +1879,12 @@
           "utcIso": "2026-05-22T15:43:10.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 323
         },
         {
           "id": "171475173",
@@ -1651,10 +1900,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 168
         },
         {
           "id": "171475161",
@@ -1670,10 +1921,12 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "guide",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 154
         },
         {
           "id": "11652",
@@ -1689,10 +1942,12 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "chitchat",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 152
         },
         {
           "id": "11651",
@@ -1708,10 +1963,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 282
         },
         {
           "id": "11650",
@@ -1726,9 +1983,12 @@
           "utcIso": "2026-05-23T13:52:52.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 247
         },
         {
           "id": "11649",
@@ -1743,9 +2003,12 @@
           "utcIso": "2026-05-23T13:17:00.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 340
         },
         {
           "id": "11648",
@@ -1761,10 +2024,12 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "balance",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 323
         },
         {
           "id": "11647",
@@ -1780,10 +2045,13 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "balance",
+            "guide",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 266
         },
         {
           "id": "11646",
@@ -1799,10 +2067,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 150
         },
         {
           "id": "11645",
@@ -1821,7 +2091,8 @@
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 273
         },
         {
           "id": "11644",
@@ -1836,9 +2107,12 @@
           "utcIso": "2026-05-23T11:54:29.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 220
         },
         {
           "id": "11643",
@@ -1853,9 +2127,12 @@
           "utcIso": "2026-05-23T11:49:30.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 257
         },
         {
           "id": "11642",
@@ -1870,9 +2147,12 @@
           "utcIso": "2026-05-23T11:34:23.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 85
         },
         {
           "id": "11641",
@@ -1887,9 +2167,12 @@
           "utcIso": "2026-05-23T11:32:02.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 137
         },
         {
           "id": "11640",
@@ -1908,7 +2191,8 @@
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 142
         },
         {
           "id": "11639",
@@ -1923,9 +2207,12 @@
           "utcIso": "2026-05-23T11:13:06.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 210
         },
         {
           "id": "11638",
@@ -1941,10 +2228,13 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "gacha",
+            "balance",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 264
         },
         {
           "id": "11637",
@@ -1959,9 +2249,12 @@
           "utcIso": "2026-05-23T10:38:31.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "balance"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 106
         },
         {
           "id": "11636",
@@ -1980,7 +2273,8 @@
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 213
         },
         {
           "id": "11634",
@@ -1995,9 +2289,13 @@
           "utcIso": "2026-05-23T09:46:58.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "balance",
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 119
         },
         {
           "id": "11633",
@@ -2012,9 +2310,12 @@
           "utcIso": "2026-05-23T08:59:16.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 261
         },
         {
           "id": "11632",
@@ -2029,9 +2330,12 @@
           "utcIso": "2026-05-23T08:39:46.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 229
         },
         {
           "id": "11631",
@@ -2048,7 +2352,8 @@
           "sentiment": "neutral",
           "tags": [],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 113
         },
         {
           "id": "11630",
@@ -2063,9 +2368,12 @@
           "utcIso": "2026-05-23T08:31:11.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 231
         },
         {
           "id": "11629",
@@ -2081,10 +2389,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 247
         },
         {
           "id": "11628",
@@ -2099,9 +2409,13 @@
           "utcIso": "2026-05-23T08:04:39.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha",
+            "balance"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 272
         },
         {
           "id": "11626",
@@ -2116,9 +2430,12 @@
           "utcIso": "2026-05-23T07:52:43.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 194
         },
         {
           "id": "11625",
@@ -2133,9 +2450,14 @@
           "utcIso": "2026-05-23T07:47:06.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "competitor",
+            "gacha",
+            "guide"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 185
         },
         {
           "id": "11624",
@@ -2151,10 +2473,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 67
         },
         {
           "id": "11623",
@@ -2169,9 +2493,12 @@
           "utcIso": "2026-05-23T07:20:14.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 439
         },
         {
           "id": "11621",
@@ -2188,7 +2515,8 @@
           "sentiment": "neutral",
           "tags": [],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 400
         },
         {
           "id": "11620",
@@ -2204,10 +2532,12 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "balance",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 217
         },
         {
           "id": "11619",
@@ -2222,9 +2552,12 @@
           "utcIso": "2026-05-23T05:12:43.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 77
         },
         {
           "id": "11618",
@@ -2239,9 +2572,12 @@
           "utcIso": "2026-05-23T04:44:30.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 63
         },
         {
           "id": "11617",
@@ -2256,9 +2592,12 @@
           "utcIso": "2026-05-23T04:19:27.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "gacha"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 310
         },
         {
           "id": "11616",
@@ -2274,10 +2613,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 105
         },
         {
           "id": "11615",
@@ -2293,10 +2634,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "event",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 155
         },
         {
           "id": "11614",
@@ -2312,10 +2655,12 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "chitchat",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 243
         },
         {
           "id": "11613",
@@ -2330,9 +2675,12 @@
           "utcIso": "2026-05-23T02:38:24.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 274
         },
         {
           "id": "11612",
@@ -2348,10 +2696,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 134
         },
         {
           "id": "11611",
@@ -2367,10 +2717,12 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "gacha",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 140
         },
         {
           "id": "11610",
@@ -2385,9 +2737,12 @@
           "utcIso": "2026-05-23T00:39:44.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "balance"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 184
         },
         {
           "id": "11609",
@@ -2402,9 +2757,12 @@
           "utcIso": "2026-05-23T00:34:05.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 228
         },
         {
           "id": "11608",
@@ -2420,10 +2778,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 269
         },
         {
           "id": "11607",
@@ -2438,9 +2798,12 @@
           "utcIso": "2026-05-23T00:20:14.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 154
         },
         {
           "id": "11606",
@@ -2455,9 +2818,12 @@
           "utcIso": "2026-05-22T23:57:11.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "balance"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 179
         },
         {
           "id": "11605",
@@ -2473,10 +2839,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "chitchat",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 351
         },
         {
           "id": "11604",
@@ -2492,10 +2860,12 @@
           "author": "",
           "sentiment": "negative",
           "tags": [
+            "balance",
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 103
         },
         {
           "id": "11603",
@@ -2510,9 +2880,12 @@
           "utcIso": "2026-05-22T23:44:51.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 227
         },
         {
           "id": "11602",
@@ -2527,9 +2900,12 @@
           "utcIso": "2026-05-22T22:44:18.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "newbie"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 171
         },
         {
           "id": "11601",
@@ -2544,9 +2920,13 @@
           "utcIso": "2026-05-22T21:38:28.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "event",
+            "balance"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 424
         },
         {
           "id": "11600",
@@ -2562,10 +2942,12 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "chitchat",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 230
         },
         {
           "id": "11599",
@@ -2580,9 +2962,12 @@
           "utcIso": "2026-05-22T17:28:54.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 118
         },
         {
           "id": "11598",
@@ -2597,9 +2982,12 @@
           "utcIso": "2026-05-22T15:58:10.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 343
         },
         {
           "id": "11597",
@@ -2618,7 +3006,8 @@
             "negative"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 641
         },
         {
           "id": "11596",
@@ -2633,9 +3022,12 @@
           "utcIso": "2026-05-22T15:34:46.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 105
         },
         {
           "id": "11595",
@@ -2650,9 +3042,12 @@
           "utcIso": "2026-05-22T15:12:31.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "balance"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 202
         },
         {
           "id": "11594",
@@ -2668,10 +3063,12 @@
           "author": "",
           "sentiment": "positive",
           "tags": [
+            "chitchat",
             "positive"
           ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 229
         },
         {
           "id": "11593",
@@ -2686,18 +3083,35 @@
           "utcIso": "2026-05-22T15:02:30.000Z",
           "author": "",
           "sentiment": "neutral",
-          "tags": [],
+          "tags": [
+            "chitchat"
+          ],
           "body": "",
-          "comments_text": ""
+          "comments_text": "",
+          "engagement": 117
         }
       ],
       "stats": {
+        "total": 73,
+        "real_posts": 73,
+        "notices": 0,
+        "bugs": 0,
         "positive": 10,
         "negative": 21,
         "neutral": 42,
-        "total": 73,
         "sentiment_score": -0.151,
         "sentiment": "부정",
+        "competitor_mentions": 1,
+        "newbie_returning": 1,
+        "guild_recruit": 1,
+        "gacha": 14,
+        "event": 2,
+        "balance": 16,
+        "guide": 6,
+        "chitchat": 35,
+        "total_views": 7786,
+        "total_comments": 344,
+        "total_likes": 34,
         "tags": {
           "positive": 10,
           "negative": 21,
