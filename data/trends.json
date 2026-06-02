@@ -1,15 +1,15 @@
 {
  "startDate": "2025-11-27",
- "endDate": "2026-05-31",
+ "endDate": "2026-06-01",
  "timeUnit": "date",
  "sources": {
   "naver": {
    "label": "네이버 데이터랩",
-   "note": "datalab API. 2026-05-31까지 수집 OK."
+   "note": "datalab API. 2026-05-31까지 수집 OK. 2026-06-01은 datalab 1일 lag로 미수집(다음 실행 시 보충)."
   },
   "google": {
    "label": "구글 트렌드",
-   "note": "trends.google.com widget multiline API (6mo daily, KR). Last build 2026-05-31."
+   "note": "trends.google.com widget multiline API (6mo daily, KR). Last build 2026-06-01. 6/1 양 키워드 ratio=0 (필터됨)."
   }
  },
  "series": [
@@ -708,6 +708,10 @@
     ],
     "google": [
      {
+      "period": "2026-05-09",
+      "ratio": 26
+     },
+     {
       "period": "2026-05-18",
       "ratio": 3
      },
@@ -729,7 +733,7 @@
      },
      {
       "period": "2026-05-23",
-      "ratio": 3
+      "ratio": 2
      },
      {
       "period": "2026-05-24",
@@ -745,7 +749,7 @@
      },
      {
       "period": "2026-05-27",
-      "ratio": 3
+      "ratio": 2
      },
      {
       "period": "2026-05-28",
@@ -757,6 +761,10 @@
      },
      {
       "period": "2026-05-30",
+      "ratio": 2
+     },
+     {
+      "period": "2026-05-31",
       "ratio": 2
      }
     ]
@@ -1521,56 +1529,60 @@
     ],
     "google": [
      {
+      "period": "2026-01-06",
+      "ratio": 21
+     },
+     {
       "period": "2026-02-05",
       "ratio": 100
      },
      {
       "period": "2026-02-06",
-      "ratio": 57
-     },
-     {
-      "period": "2026-02-07",
-      "ratio": 68
-     },
-     {
-      "period": "2026-02-08",
-      "ratio": 63
-     },
-     {
-      "period": "2026-02-09",
-      "ratio": 33
-     },
-     {
-      "period": "2026-02-10",
-      "ratio": 58
-     },
-     {
-      "period": "2026-02-11",
-      "ratio": 31
-     },
-     {
-      "period": "2026-02-12",
       "ratio": 49
      },
      {
-      "period": "2026-02-13",
-      "ratio": 47
+      "period": "2026-02-07",
+      "ratio": 61
      },
      {
-      "period": "2026-02-14",
-      "ratio": 30
+      "period": "2026-02-08",
+      "ratio": 71
      },
      {
-      "period": "2026-02-15",
-      "ratio": 39
-     },
-     {
-      "period": "2026-02-16",
+      "period": "2026-02-09",
       "ratio": 32
      },
      {
+      "period": "2026-02-10",
+      "ratio": 56
+     },
+     {
+      "period": "2026-02-11",
+      "ratio": 42
+     },
+     {
+      "period": "2026-02-12",
+      "ratio": 35
+     },
+     {
+      "period": "2026-02-13",
+      "ratio": 48
+     },
+     {
+      "period": "2026-02-14",
+      "ratio": 33
+     },
+     {
+      "period": "2026-02-15",
+      "ratio": 30
+     },
+     {
+      "period": "2026-02-16",
+      "ratio": 33
+     },
+     {
       "period": "2026-02-17",
-      "ratio": 20
+      "ratio": 24
      },
      {
       "period": "2026-02-19",
@@ -1578,43 +1590,39 @@
      },
      {
       "period": "2026-02-20",
-      "ratio": 26
+      "ratio": 23
      },
      {
       "period": "2026-02-21",
-      "ratio": 36
+      "ratio": 39
+     },
+     {
+      "period": "2026-02-22",
+      "ratio": 19
+     },
+     {
+      "period": "2026-02-23",
+      "ratio": 21
      },
      {
       "period": "2026-02-24",
-      "ratio": 24
+      "ratio": 18
      },
      {
       "period": "2026-02-25",
       "ratio": 24
      },
      {
-      "period": "2026-02-26",
-      "ratio": 22
+      "period": "2026-03-01",
+      "ratio": 20
      },
      {
       "period": "2026-03-05",
-      "ratio": 22
+      "ratio": 23
      },
      {
-      "period": "2026-03-06",
-      "ratio": 25
-     },
-     {
-      "period": "2026-03-16",
-      "ratio": 17
-     },
-     {
-      "period": "2026-03-19",
-      "ratio": 22
-     },
-     {
-      "period": "2026-05-17",
-      "ratio": 25
+      "period": "2026-03-08",
+      "ratio": 20
      },
      {
       "period": "2026-05-18",
@@ -1666,7 +1674,11 @@
      },
      {
       "period": "2026-05-30",
-      "ratio": 3
+      "ratio": 4
+     },
+     {
+      "period": "2026-05-31",
+      "ratio": 2
      }
     ]
    }
@@ -1922,7 +1934,7 @@
    "source": "community"
   }
  ],
- "lastUpdated": "2026-06-01T07:30:00+09:00",
+ "lastUpdated": "2026-06-01T22:48:11.974129+00:00",
  "spikes": [
   {
    "date": "2025-12-24",
