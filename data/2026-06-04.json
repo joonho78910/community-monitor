@@ -1,0 +1,3482 @@
+{
+ "date": "2026-06-04",
+ "games": {
+  "anchorpanic": {
+   "name": "앵커패닉",
+   "posts": [
+    {
+     "id": "172786817",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "정보/공략",
+     "title": "응애용 토벌공략(화로즈덱)",
+     "comments": 8,
+     "utcIso": "2026-06-04T14:24:13.000Z",
+     "author": "",
+     "views": 101,
+     "likes": 8,
+     "url": "https://arca.live/b/anchorpanic/172786817",
+     "sentiment": "neutral",
+     "tags": [
+      "event",
+      "guide"
+     ],
+     "engagement": 221
+    },
+    {
+     "id": "172785457",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "양자 세계선찾기",
+     "comments": 2,
+     "utcIso": "2026-06-04T14:11:07.000Z",
+     "author": "",
+     "views": 49,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172785457",
+     "sentiment": "neutral",
+     "tags": [
+      "balance"
+     ],
+     "engagement": 59
+    },
+    {
+     "id": "172777890",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "제피린 좀 꼴리게 생겼네",
+     "comments": 2,
+     "utcIso": "2026-06-04T13:04:38.000Z",
+     "author": "",
+     "views": 69,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172777890",
+     "sentiment": "positive",
+     "tags": [
+      "chitchat",
+      "positive"
+     ],
+     "engagement": 79
+    },
+    {
+     "id": "172774327",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "신캐한정->구한정복각->신캐픽업->한정->구한정복각->신캐",
+     "comments": 11,
+     "utcIso": "2026-06-04T12:33:29.000Z",
+     "author": "",
+     "views": 112,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172774327",
+     "sentiment": "negative",
+     "tags": [
+      "gacha",
+      "negative"
+     ],
+     "engagement": 167
+    },
+    {
+     "id": "172772026",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "하지만 강한응애는 일단 진형을 바꿔본다",
+     "comments": 8,
+     "utcIso": "2026-06-04T12:13:21.000Z",
+     "author": "",
+     "views": 83,
+     "likes": 1,
+     "url": "https://arca.live/b/anchorpanic/172772026",
+     "sentiment": "neutral",
+     "tags": [
+      "balance"
+     ],
+     "engagement": 133
+    },
+    {
+     "id": "172771666",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "AI",
+     "title": "SD우리엘",
+     "comments": 4,
+     "utcIso": "2026-06-04T12:10:17.000Z",
+     "author": "",
+     "views": 52,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172771666",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 72
+    },
+    {
+     "id": "172768744",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "제피린 한정임?",
+     "comments": 9,
+     "utcIso": "2026-06-04T11:44:59.000Z",
+     "author": "",
+     "views": 97,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172768744",
+     "sentiment": "neutral",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 142
+    },
+    {
+     "id": "172768690",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "할배들 스콜피온 한테 쥐어터지고왔어..",
+     "comments": 4,
+     "utcIso": "2026-06-04T11:44:32.000Z",
+     "author": "",
+     "views": 62,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172768690",
+     "sentiment": "negative",
+     "tags": [
+      "chitchat",
+      "negative"
+     ],
+     "engagement": 82
+    },
+    {
+     "id": "172763164",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "뉴비진로좀 봐주세여",
+     "comments": 9,
+     "utcIso": "2026-06-04T10:57:29.000Z",
+     "author": "",
+     "views": 70,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172763164",
+     "sentiment": "neutral",
+     "tags": [
+      "newbie",
+      "guide"
+     ],
+     "engagement": 115
+    },
+    {
+     "id": "172757196",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "야한 응애들 다 어디감?",
+     "comments": 27,
+     "utcIso": "2026-06-04T10:05:34.000Z",
+     "author": "",
+     "views": 148,
+     "likes": 1,
+     "url": "https://arca.live/b/anchorpanic/172757196",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 293
+    },
+    {
+     "id": "172757165",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "온다 양자의 희망 2",
+     "comments": 4,
+     "utcIso": "2026-06-04T10:05:15.000Z",
+     "author": "",
+     "views": 81,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172757165",
+     "sentiment": "neutral",
+     "tags": [
+      "balance"
+     ],
+     "engagement": 101
+    },
+    {
+     "id": "172748310",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "토벌전은 연맹마다 갭차이가 엄청나네",
+     "comments": 3,
+     "utcIso": "2026-06-04T08:41:27.000Z",
+     "author": "",
+     "views": 100,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172748310",
+     "sentiment": "neutral",
+     "tags": [
+      "guild",
+      "event"
+     ],
+     "engagement": 115
+    },
+    {
+     "id": "172745665",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "앵접의 신호",
+     "comments": 3,
+     "utcIso": "2026-06-04T08:15:44.000Z",
+     "author": "",
+     "views": 104,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172745665",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 119
+    },
+    {
+     "id": "172744373",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "퉷퉷퉷",
+     "comments": 3,
+     "utcIso": "2026-06-04T08:02:55.000Z",
+     "author": "",
+     "views": 85,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172744373",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 100
+    },
+    {
+     "id": "172738793",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "ㄴr는 ㄱr끔 눈물을 흘린ㄷr...☆",
+     "comments": 6,
+     "utcIso": "2026-06-04T07:06:35.000Z",
+     "author": "",
+     "views": 85,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172738793",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 115
+    },
+    {
+     "id": "172734742",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "제피린 성능 어떰???",
+     "comments": 3,
+     "utcIso": "2026-06-04T06:22:25.000Z",
+     "author": "",
+     "views": 123,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172734742",
+     "sentiment": "neutral",
+     "tags": [
+      "balance",
+      "guide"
+     ],
+     "engagement": 138
+    },
+    {
+     "id": "172733192",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "신캐나왔다",
+     "comments": 4,
+     "utcIso": "2026-06-04T06:04:29.000Z",
+     "author": "",
+     "views": 138,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172733192",
+     "sentiment": "neutral",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 158
+    },
+    {
+     "id": "172731802",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "AI",
+     "title": "으리으리엘",
+     "comments": 4,
+     "utcIso": "2026-06-04T05:48:32.000Z",
+     "author": "",
+     "views": 78,
+     "likes": 1,
+     "url": "https://arca.live/b/anchorpanic/172731802",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 108
+    },
+    {
+     "id": "172731741",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "뭐 스콜피온 양자딜 5000만대?",
+     "comments": 9,
+     "utcIso": "2026-06-04T05:47:54.000Z",
+     "author": "",
+     "views": 101,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172731741",
+     "sentiment": "neutral",
+     "tags": [
+      "balance"
+     ],
+     "engagement": 146
+    },
+    {
+     "id": "172726866",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "1년1개월한 사람 레전드",
+     "comments": 2,
+     "utcIso": "2026-06-04T04:53:56.000Z",
+     "author": "",
+     "views": 114,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172726866",
+     "sentiment": "positive",
+     "tags": [
+      "chitchat",
+      "positive"
+     ],
+     "engagement": 124
+    },
+    {
+     "id": "172725437",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "이베트 속공공 vs 속치치 뭐가 더 낳음?",
+     "comments": 14,
+     "utcIso": "2026-06-04T04:36:14.000Z",
+     "author": "",
+     "views": 115,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172725437",
+     "sentiment": "neutral",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 185
+    },
+    {
+     "id": "172724079",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "진짜 스콜피온 도라이 정신병자인가",
+     "comments": 22,
+     "utcIso": "2026-06-04T04:20:30.000Z",
+     "author": "",
+     "views": 144,
+     "likes": 1,
+     "url": "https://arca.live/b/anchorpanic/172724079",
+     "sentiment": "negative",
+     "tags": [
+      "chitchat",
+      "negative"
+     ],
+     "engagement": 264
+    },
+    {
+     "id": "172718488",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "첫날에 쪼끔 기다렸다 칠걸 그랬나",
+     "comments": 7,
+     "utcIso": "2026-06-04T03:15:00.000Z",
+     "author": "",
+     "views": 103,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172718488",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 138
+    },
+    {
+     "id": "172710421",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "제피린 실루엣 언제나와",
+     "comments": 1,
+     "utcIso": "2026-06-04T01:29:55.000Z",
+     "author": "",
+     "views": 79,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172710421",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 84
+    },
+    {
+     "id": "172702274",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "우리엘 뽑기 vs 픽업선택으로 나엘라 뽑기",
+     "comments": 2,
+     "utcIso": "2026-06-03T23:07:55.000Z",
+     "author": "",
+     "views": 96,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172702274",
+     "sentiment": "neutral",
+     "tags": [
+      "gacha",
+      "guide"
+     ],
+     "engagement": 106
+    },
+    {
+     "id": "172690399",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "할배들 반사 기믹은 어케 깨야 돼...",
+     "comments": 6,
+     "utcIso": "2026-06-03T16:49:35.000Z",
+     "author": "",
+     "views": 118,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172690399",
+     "sentiment": "neutral",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 148
+    },
+    {
+     "id": "172685677",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "토벌전 스콜피온이 가장 아픈거같애",
+     "comments": 2,
+     "utcIso": "2026-06-03T15:43:21.000Z",
+     "author": "",
+     "views": 66,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172685677",
+     "sentiment": "neutral",
+     "tags": [
+      "event"
+     ],
+     "engagement": 76
+    }
+   ],
+   "date": "2026-06-04",
+   "stats": {
+    "total": 27,
+    "real_posts": 27,
+    "notices": 0,
+    "bugs": 0,
+    "negative": 3,
+    "positive": 2,
+    "competitor_mentions": 0,
+    "newbie_returning": 1,
+    "guild_recruit": 1,
+    "gacha": 4,
+    "event": 3,
+    "balance": 5,
+    "guide": 6,
+    "chitchat": 12,
+    "total_views": 2573,
+    "total_comments": 179,
+    "total_likes": 12,
+    "sentiment": "중립",
+    "sentiment_score": -0.037
+   },
+   "topEngaging": [
+    {
+     "id": "172757196",
+     "title": "야한 응애들 다 어디감?",
+     "url": "https://arca.live/b/anchorpanic/172757196",
+     "source": "arca",
+     "views": 148,
+     "comments": 27,
+     "likes": 1,
+     "engagement": 293,
+     "category": "질문"
+    },
+    {
+     "id": "172724079",
+     "title": "진짜 스콜피온 도라이 정신병자인가",
+     "url": "https://arca.live/b/anchorpanic/172724079",
+     "source": "arca",
+     "views": 144,
+     "comments": 22,
+     "likes": 1,
+     "engagement": 264,
+     "category": "일반"
+    },
+    {
+     "id": "172786817",
+     "title": "응애용 토벌공략(화로즈덱)",
+     "url": "https://arca.live/b/anchorpanic/172786817",
+     "source": "arca",
+     "views": 101,
+     "comments": 8,
+     "likes": 8,
+     "engagement": 221,
+     "category": "정보/공략"
+    },
+    {
+     "id": "172725437",
+     "title": "이베트 속공공 vs 속치치 뭐가 더 낳음?",
+     "url": "https://arca.live/b/anchorpanic/172725437",
+     "source": "arca",
+     "views": 115,
+     "comments": 14,
+     "likes": 0,
+     "engagement": 185,
+     "category": "질문"
+    },
+    {
+     "id": "172774327",
+     "title": "신캐한정->구한정복각->신캐픽업->한정->구한정복각->신캐",
+     "url": "https://arca.live/b/anchorpanic/172774327",
+     "source": "arca",
+     "views": 112,
+     "comments": 11,
+     "likes": 0,
+     "engagement": 167,
+     "category": "일반"
+    }
+   ],
+   "analysis": {
+    "dailySummary": "앵커패닉 2026-06-04 동향: 주요 토픽은 \"제피린 신캐 출시(화제)\" 외 8개. sentiment 재분류 결과 긍정 2건 / 부정 3건 / 중립 22건 (중립, score -0.037). 버그·시스템 불만 0건. 아카라이브 27건, DC인사이드 0건.",
+    "topIssues": [
+     {
+      "title": "야한 응애들 다 어디감?",
+      "url": "https://arca.live/b/anchorpanic/172757196",
+      "summary": "참여도 293 (조회 148, 댓글 27, 추천 1)",
+      "tone": "중립"
+     },
+     {
+      "title": "진짜 스콜피온 도라이 정신병자인가",
+      "url": "https://arca.live/b/anchorpanic/172724079",
+      "summary": "참여도 264 (조회 144, 댓글 22, 추천 1)",
+      "tone": "부정"
+     },
+     {
+      "title": "응애용 토벌공략(화로즈덱)",
+      "url": "https://arca.live/b/anchorpanic/172786817",
+      "summary": "참여도 221 (조회 101, 댓글 8, 추천 8)",
+      "tone": "중립"
+     }
+    ],
+    "bugReports": [],
+    "competitorMentions": [],
+    "trends": [],
+    "watchlist": [],
+    "keywords": [
+     {
+      "word": "제피린 신캐 출시(화제)",
+      "ids": [
+       "172777890",
+       "172768744",
+       "172734742",
+       "172733192",
+       "172710421"
+      ],
+      "count": 5
+     },
+     {
+      "word": "스콜피온 토벌보스(불만)",
+      "ids": [
+       "172768690",
+       "172731741",
+       "172724079",
+       "172685677",
+       "172690399"
+      ],
+      "count": 5
+     },
+     {
+      "word": "커뮤니티 잡담·밈",
+      "ids": [
+       "172772026",
+       "172745665",
+       "172744373",
+       "172738793",
+       "172757196"
+      ],
+      "count": 5
+     },
+     {
+      "word": "토벌전 공략·연맹 갭",
+      "ids": [
+       "172786817",
+       "172748310",
+       "172718488"
+      ],
+      "count": 3
+     },
+     {
+      "word": "우리엘·나엘라 뽑기 선택",
+      "ids": [
+       "172771666",
+       "172731802",
+       "172702274"
+      ],
+      "count": 3
+     },
+     {
+      "word": "양자덱·세계선",
+      "ids": [
+       "172785457",
+       "172757165"
+      ],
+      "count": 2
+     },
+     {
+      "word": "뉴비 육성·진로",
+      "ids": [
+       "172763164",
+       "172725437"
+      ],
+      "count": 2
+     },
+     {
+      "word": "가챠 한정 사이클(불만)",
+      "ids": [
+       "172774327"
+      ],
+      "count": 1
+     },
+     {
+      "word": "장기유저 화제(긍정)",
+      "ids": [
+       "172726866"
+      ],
+      "count": 1
+     }
+    ]
+   }
+  },
+  "erpis": {
+   "name": "에르피스",
+   "posts": [
+    {
+     "id": "12242",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "오늘의 엘피 일기",
+     "comments": 2,
+     "utcIso": "2026-06-04T13:27:26.000Z",
+     "author": "",
+     "views": 51,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12242",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 61
+    },
+    {
+     "id": "12241",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "에바겠지",
+     "comments": 9,
+     "utcIso": "2026-06-04T12:38:57.000Z",
+     "author": "",
+     "views": 99,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12241",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 144
+    },
+    {
+     "id": "12240",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "흠 금초로 뭐사지",
+     "comments": 14,
+     "utcIso": "2026-06-04T12:22:33.000Z",
+     "author": "",
+     "views": 90,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12240",
+     "sentiment": "neutral",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 160
+    },
+    {
+     "id": "12239",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "미암 배너 내려가고 나니까",
+     "comments": 2,
+     "utcIso": "2026-06-04T12:05:59.000Z",
+     "author": "",
+     "views": 79,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12239",
+     "sentiment": "neutral",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 89
+    },
+    {
+     "id": "12238",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "근데 사실 난",
+     "comments": 7,
+     "utcIso": "2026-06-04T12:00:47.000Z",
+     "author": "",
+     "views": 67,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12238",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 102
+    },
+    {
+     "id": "12237",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "하. 하. 하.",
+     "comments": 2,
+     "utcIso": "2026-06-04T11:53:29.000Z",
+     "author": "",
+     "views": 72,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12237",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 82
+    },
+    {
+     "id": "12236",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "그러니까 신캐 요약하자면",
+     "comments": 1,
+     "utcIso": "2026-06-04T11:49:24.000Z",
+     "author": "",
+     "views": 79,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12236",
+     "sentiment": "neutral",
+     "tags": [
+      "gacha",
+      "guide"
+     ],
+     "engagement": 84
+    },
+    {
+     "id": "12235",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "넵튠은 알아서 눈칫껏",
+     "comments": 4,
+     "utcIso": "2026-06-04T11:43:20.000Z",
+     "author": "",
+     "views": 63,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12235",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 83
+    },
+    {
+     "id": "12234",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "중섭신캐 맞춰서 화속 낸거아닌가",
+     "comments": 7,
+     "utcIso": "2026-06-04T11:35:05.000Z",
+     "author": "",
+     "views": 107,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12234",
+     "sentiment": "neutral",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 142
+    },
+    {
+     "id": "12233",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "월보가 화속이어도",
+     "comments": 6,
+     "utcIso": "2026-06-04T11:29:53.000Z",
+     "author": "",
+     "views": 58,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12233",
+     "sentiment": "neutral",
+     "tags": [
+      "event"
+     ],
+     "engagement": 88
+    },
+    {
+     "id": "12232",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "오늘 미암 배너 내려갔는데",
+     "comments": 4,
+     "utcIso": "2026-06-04T11:25:04.000Z",
+     "author": "",
+     "views": 71,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12232",
+     "sentiment": "neutral",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 91
+    },
+    {
+     "id": "12231",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "쫄몹이라고?",
+     "comments": 1,
+     "utcIso": "2026-06-04T11:10:41.000Z",
+     "author": "",
+     "views": 37,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12231",
+     "sentiment": "neutral",
+     "tags": [
+      "balance"
+     ],
+     "engagement": 42
+    },
+    {
+     "id": "12230",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "고정 쫄도 있고 나오는 쫄도 있는듯",
+     "comments": 7,
+     "utcIso": "2026-06-04T10:47:05.000Z",
+     "author": "",
+     "views": 105,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12230",
+     "sentiment": "neutral",
+     "tags": [
+      "balance"
+     ],
+     "engagement": 140
+    },
+    {
+     "id": "12229",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "이번 월보 속성 알아왔다 확률 99.99퍼센트",
+     "comments": 1,
+     "utcIso": "2026-06-04T10:43:58.000Z",
+     "author": "",
+     "views": 54,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12229",
+     "sentiment": "neutral",
+     "tags": [
+      "event",
+      "balance"
+     ],
+     "engagement": 59
+    },
+    {
+     "id": "12228",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "금요일 새벽5시에 월보누군지 뜰라나",
+     "comments": 0,
+     "utcIso": "2026-06-04T09:51:56.000Z",
+     "author": "",
+     "views": 27,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12228",
+     "sentiment": "neutral",
+     "tags": [
+      "event"
+     ],
+     "engagement": 27
+    },
+    {
+     "id": "172751692",
+     "source": "arca",
+     "board": "erpis",
+     "category": "",
+     "title": "조용하구만 ......",
+     "comments": 5,
+     "utcIso": "2026-06-04T09:13:59.000Z",
+     "author": "",
+     "views": 68,
+     "likes": 0,
+     "url": "https://arca.live/b/erphis/172751692",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 93
+    },
+    {
+     "id": "12227",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "빨리 40렙인가 39렙 찍어야해",
+     "comments": 3,
+     "utcIso": "2026-06-04T09:12:01.000Z",
+     "author": "",
+     "views": 51,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12227",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 66
+    },
+    {
+     "id": "12226",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "에르피스 일러도 AI 딸깍이야?",
+     "comments": 2,
+     "utcIso": "2026-06-04T08:42:02.000Z",
+     "author": "",
+     "views": 80,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12226",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 90
+    },
+    {
+     "id": "12225",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "로아 얘 있어야함요?",
+     "comments": 4,
+     "utcIso": "2026-06-04T05:27:19.000Z",
+     "author": "",
+     "views": 104,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12225",
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 124
+    },
+    {
+     "id": "12224",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "이것도 하다보니 재밋네",
+     "comments": 3,
+     "utcIso": "2026-06-04T05:07:25.000Z",
+     "author": "",
+     "views": 118,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12224",
+     "sentiment": "positive",
+     "tags": [
+      "chitchat",
+      "positive"
+     ],
+     "engagement": 133
+    },
+    {
+     "id": "12223",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "아 30퍼 페이백 왜 안하냐",
+     "comments": 0,
+     "utcIso": "2026-06-04T02:21:38.000Z",
+     "author": "",
+     "views": 51,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12223",
+     "sentiment": "negative",
+     "tags": [
+      "event",
+      "negative"
+     ],
+     "engagement": 51
+    },
+    {
+     "id": "12222",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "강적에 전장 효과라는게 있었네",
+     "comments": 2,
+     "utcIso": "2026-06-03T22:23:05.000Z",
+     "author": "",
+     "views": 90,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12222",
+     "sentiment": "neutral",
+     "tags": [
+      "balance"
+     ],
+     "engagement": 100
+    },
+    {
+     "id": "12221",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "솔레 8단은 넘사구나",
+     "comments": 4,
+     "utcIso": "2026-06-03T16:19:35.000Z",
+     "author": "",
+     "views": 105,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12221",
+     "sentiment": "neutral",
+     "tags": [
+      "balance"
+     ],
+     "engagement": 125
+    },
+    {
+     "id": "12220",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "중섭 신캐 미리보기(수속 수호)",
+     "comments": 1,
+     "utcIso": "2026-06-03T16:00:55.000Z",
+     "author": "",
+     "views": 130,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12220",
+     "sentiment": "neutral",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 135
+    },
+    {
+     "id": "12219",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "근데 확실히 미암 에셀 있는게 이번 갠레에선",
+     "comments": 0,
+     "utcIso": "2026-06-03T15:42:38.000Z",
+     "author": "",
+     "views": 79,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12219",
+     "sentiment": "neutral",
+     "tags": [
+      "event"
+     ],
+     "engagement": 79
+    },
+    {
+     "id": "12218",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "뉴비 미암 4각했엉ㅎㅎ",
+     "comments": 7,
+     "utcIso": "2026-06-03T15:32:27.000Z",
+     "author": "",
+     "views": 120,
+     "likes": 1,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12218",
+     "sentiment": "positive",
+     "tags": [
+      "newbie",
+      "positive"
+     ],
+     "engagement": 165
+    },
+    {
+     "id": "12217",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "♥♥",
+     "comments": 7,
+     "utcIso": "2026-06-03T15:27:45.000Z",
+     "author": "",
+     "views": 110,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12217",
+     "sentiment": "positive",
+     "tags": [
+      "chitchat",
+      "positive"
+     ],
+     "engagement": 145
+    }
+   ],
+   "date": "2026-06-04",
+   "stats": {
+    "total": 27,
+    "real_posts": 27,
+    "notices": 0,
+    "bugs": 0,
+    "negative": 1,
+    "positive": 3,
+    "competitor_mentions": 0,
+    "newbie_returning": 1,
+    "guild_recruit": 0,
+    "gacha": 6,
+    "event": 5,
+    "balance": 5,
+    "guide": 1,
+    "chitchat": 11,
+    "total_views": 2165,
+    "total_comments": 105,
+    "total_likes": 1,
+    "sentiment": "긍정",
+    "sentiment_score": 0.0741
+   },
+   "topEngaging": [
+    {
+     "id": "12218",
+     "title": "뉴비 미암 4각했엉ㅎㅎ",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12218",
+     "source": "dc",
+     "views": 120,
+     "comments": 7,
+     "likes": 1,
+     "engagement": 165,
+     "category": "일반"
+    },
+    {
+     "id": "12240",
+     "title": "흠 금초로 뭐사지",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12240",
+     "source": "dc",
+     "views": 90,
+     "comments": 14,
+     "likes": 0,
+     "engagement": 160,
+     "category": "일반"
+    },
+    {
+     "id": "12217",
+     "title": "♥♥",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12217",
+     "source": "dc",
+     "views": 110,
+     "comments": 7,
+     "likes": 0,
+     "engagement": 145,
+     "category": "일반"
+    },
+    {
+     "id": "12241",
+     "title": "에바겠지",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12241",
+     "source": "dc",
+     "views": 99,
+     "comments": 9,
+     "likes": 0,
+     "engagement": 144,
+     "category": "일반"
+    },
+    {
+     "id": "12234",
+     "title": "중섭신캐 맞춰서 화속 낸거아닌가",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12234",
+     "source": "dc",
+     "views": 107,
+     "comments": 7,
+     "likes": 0,
+     "engagement": 142,
+     "category": "일반"
+    }
+   ],
+   "analysis": {
+    "dailySummary": "에르피스 2026-06-04 동향: 주요 토픽은 \"월보 속성·쫄몹 추측(화제)\" 외 8개. sentiment 재분류 결과 긍정 3건 / 부정 1건 / 중립 23건 (긍정, score 0.0741). 버그·시스템 불만 0건. 아카라이브 1건, DC인사이드 26건.",
+    "topIssues": [
+     {
+      "title": "뉴비 미암 4각했엉ㅎㅎ",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12218",
+      "summary": "참여도 165 (조회 120, 댓글 7, 추천 1)",
+      "tone": "긍정"
+     },
+     {
+      "title": "흠 금초로 뭐사지",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12240",
+      "summary": "참여도 160 (조회 90, 댓글 14, 추천 0)",
+      "tone": "중립"
+     },
+     {
+      "title": "♥♥",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12217",
+      "summary": "참여도 145 (조회 110, 댓글 7, 추천 0)",
+      "tone": "긍정"
+     }
+    ],
+    "bugReports": [],
+    "competitorMentions": [],
+    "trends": [],
+    "watchlist": [],
+    "keywords": [
+     {
+      "word": "월보 속성·쫄몹 추측(화제)",
+      "ids": [
+       "12234",
+       "12233",
+       "12229",
+       "12228",
+       "12231",
+       "12230"
+      ],
+      "count": 6
+     },
+     {
+      "word": "커뮤니티 잡담",
+      "ids": [
+       "12242",
+       "12241",
+       "12238",
+       "12237",
+       "12217"
+      ],
+      "count": 5
+     },
+     {
+      "word": "미암 배너 종료",
+      "ids": [
+       "12239",
+       "12232",
+       "12219",
+       "12218"
+      ],
+      "count": 4
+     },
+     {
+      "word": "신규·복귀 즐기기(긍정)",
+      "ids": [
+       "12224",
+       "12227"
+      ],
+      "count": 2
+     },
+     {
+      "word": "중섭 신캐 미리보기",
+      "ids": [
+       "12236",
+       "12220"
+      ],
+      "count": 2
+     },
+     {
+      "word": "금초 소비 고민",
+      "ids": [
+       "12240",
+       "12225"
+      ],
+      "count": 2
+     },
+     {
+      "word": "강적·솔레 난이도",
+      "ids": [
+       "12222",
+       "12221"
+      ],
+      "count": 2
+     },
+     {
+      "word": "30% 페이백 미적용(불만)",
+      "ids": [
+       "12223"
+      ],
+      "count": 1
+     },
+     {
+      "word": "AI 일러스트 의문",
+      "ids": [
+       "12226"
+      ],
+      "count": 1
+     }
+    ]
+   }
+  }
+ },
+ "searchTrends": {
+  "startDate": "2025-11-27",
+  "endDate": "2026-06-04",
+  "timeUnit": "date",
+  "sources": {
+   "naver": {
+    "label": "네이버 데이터랩",
+    "note": "datalab API. 2026-06-03까지 수집 OK. 2026-06-04(타깃일)은 datalab 1일 lag로 미수집 (다음 실행 시 보충, lag 확인 필요)."
+   },
+   "google": {
+    "label": "구글 트렌드",
+    "note": "trends.google.com widget multiline API (6mo daily, KR). Last build 2026-06-04. 앵커패닉 6/1~6/4 ratio=0(필터됨, 시리즈 5/31 종료), 에르피스 6/4 ratio=2."
+   }
+  },
+  "series": [
+   {
+    "game": "anchorpanic",
+    "data": {
+     "naver": [
+      {
+       "period": "2025-11-25",
+       "ratio": 6.83229
+      },
+      {
+       "period": "2025-11-26",
+       "ratio": 9.31677
+      },
+      {
+       "period": "2025-11-27",
+       "ratio": 4.34782
+      },
+      {
+       "period": "2025-11-28",
+       "ratio": 5.59006
+      },
+      {
+       "period": "2025-11-29",
+       "ratio": 3.7267
+      },
+      {
+       "period": "2025-11-30",
+       "ratio": 3.41614
+      },
+      {
+       "period": "2025-12-01",
+       "ratio": 2.17391
+      },
+      {
+       "period": "2025-12-02",
+       "ratio": 5.90062
+      },
+      {
+       "period": "2025-12-03",
+       "ratio": 6.52173
+      },
+      {
+       "period": "2025-12-04",
+       "ratio": 6.52173
+      },
+      {
+       "period": "2025-12-05",
+       "ratio": 4.03726
+      },
+      {
+       "period": "2025-12-06",
+       "ratio": 5.90062
+      },
+      {
+       "period": "2025-12-07",
+       "ratio": 4.34782
+      },
+      {
+       "period": "2025-12-08",
+       "ratio": 6.52173
+      },
+      {
+       "period": "2025-12-09",
+       "ratio": 6.52173
+      },
+      {
+       "period": "2025-12-10",
+       "ratio": 5.59006
+      },
+      {
+       "period": "2025-12-11",
+       "ratio": 4.96894
+      },
+      {
+       "period": "2025-12-12",
+       "ratio": 4.65838
+      },
+      {
+       "period": "2025-12-13",
+       "ratio": 4.65838
+      },
+      {
+       "period": "2025-12-14",
+       "ratio": 6.21118
+      },
+      {
+       "period": "2025-12-15",
+       "ratio": 1.86335
+      },
+      {
+       "period": "2025-12-16",
+       "ratio": 5.90062
+      },
+      {
+       "period": "2025-12-17",
+       "ratio": 4.65838
+      },
+      {
+       "period": "2025-12-18",
+       "ratio": 5.2795
+      },
+      {
+       "period": "2025-12-22",
+       "ratio": 5.2795
+      },
+      {
+       "period": "2025-12-23",
+       "ratio": 4.03726
+      },
+      {
+       "period": "2025-12-24",
+       "ratio": 12.1118
+      },
+      {
+       "period": "2025-12-25",
+       "ratio": 9.93788
+      },
+      {
+       "period": "2025-12-26",
+       "ratio": 10.559
+      },
+      {
+       "period": "2025-12-27",
+       "ratio": 8.07453
+      },
+      {
+       "period": "2025-12-28",
+       "ratio": 4.03726
+      },
+      {
+       "period": "2025-12-29",
+       "ratio": 7.14285
+      },
+      {
+       "period": "2025-12-30",
+       "ratio": 20.80745
+      },
+      {
+       "period": "2025-12-31",
+       "ratio": 25.15527
+      },
+      {
+       "period": "2026-01-01",
+       "ratio": 21.42857
+      },
+      {
+       "period": "2026-01-02",
+       "ratio": 8.69565
+      },
+      {
+       "period": "2026-01-03",
+       "ratio": 13.66459
+      },
+      {
+       "period": "2026-01-04",
+       "ratio": 7.14285
+      },
+      {
+       "period": "2026-01-05",
+       "ratio": 9.62732
+      },
+      {
+       "period": "2026-01-06",
+       "ratio": 3.7267
+      },
+      {
+       "period": "2026-01-07",
+       "ratio": 5.59006
+      },
+      {
+       "period": "2026-01-08",
+       "ratio": 5.2795
+      },
+      {
+       "period": "2026-01-09",
+       "ratio": 3.10559
+      },
+      {
+       "period": "2026-01-10",
+       "ratio": 4.03726
+      },
+      {
+       "period": "2026-01-11",
+       "ratio": 3.41614
+      },
+      {
+       "period": "2026-01-12",
+       "ratio": 2.17391
+      },
+      {
+       "period": "2026-01-13",
+       "ratio": 1.86335
+      },
+      {
+       "period": "2026-01-14",
+       "ratio": 7.14285
+      },
+      {
+       "period": "2026-01-15",
+       "ratio": 4.65838
+      },
+      {
+       "period": "2026-01-16",
+       "ratio": 3.7267
+      },
+      {
+       "period": "2026-01-17",
+       "ratio": 4.34782
+      },
+      {
+       "period": "2026-01-18",
+       "ratio": 1.86335
+      },
+      {
+       "period": "2026-01-19",
+       "ratio": 4.96894
+      },
+      {
+       "period": "2026-01-20",
+       "ratio": 2.48447
+      },
+      {
+       "period": "2026-01-21",
+       "ratio": 2.48447
+      },
+      {
+       "period": "2026-01-22",
+       "ratio": 2.17391
+      },
+      {
+       "period": "2026-01-23",
+       "ratio": 1.86335
+      },
+      {
+       "period": "2026-01-24",
+       "ratio": 1.86335
+      },
+      {
+       "period": "2026-01-25",
+       "ratio": 2.17391
+      },
+      {
+       "period": "2026-01-26",
+       "ratio": 1.86335
+      },
+      {
+       "period": "2026-01-27",
+       "ratio": 1.55279
+      },
+      {
+       "period": "2026-01-28",
+       "ratio": 2.48447
+      },
+      {
+       "period": "2026-01-29",
+       "ratio": 4.03726
+      },
+      {
+       "period": "2026-01-30",
+       "ratio": 1.55279
+      },
+      {
+       "period": "2026-02-01",
+       "ratio": 1.55279
+      },
+      {
+       "period": "2026-02-02",
+       "ratio": 2.17391
+      },
+      {
+       "period": "2026-02-03",
+       "ratio": 6.52173
+      },
+      {
+       "period": "2026-02-04",
+       "ratio": 10.24844
+      },
+      {
+       "period": "2026-02-05",
+       "ratio": 8.07453
+      },
+      {
+       "period": "2026-02-06",
+       "ratio": 9.93788
+      },
+      {
+       "period": "2026-02-07",
+       "ratio": 5.90062
+      },
+      {
+       "period": "2026-02-08",
+       "ratio": 5.2795
+      },
+      {
+       "period": "2026-02-09",
+       "ratio": 6.83229
+      },
+      {
+       "period": "2026-02-10",
+       "ratio": 7.14285
+      },
+      {
+       "period": "2026-02-11",
+       "ratio": 2.17391
+      },
+      {
+       "period": "2026-02-12",
+       "ratio": 7.14285
+      },
+      {
+       "period": "2026-02-13",
+       "ratio": 5.90062
+      },
+      {
+       "period": "2026-02-14",
+       "ratio": 7.45341
+      },
+      {
+       "period": "2026-02-15",
+       "ratio": 7.45341
+      },
+      {
+       "period": "2026-02-16",
+       "ratio": 4.34782
+      },
+      {
+       "period": "2026-02-17",
+       "ratio": 6.52173
+      },
+      {
+       "period": "2026-02-18",
+       "ratio": 11.18012
+      },
+      {
+       "period": "2026-02-19",
+       "ratio": 4.96894
+      },
+      {
+       "period": "2026-02-20",
+       "ratio": 4.03726
+      },
+      {
+       "period": "2026-02-21",
+       "ratio": 3.41614
+      },
+      {
+       "period": "2026-02-22",
+       "ratio": 1.86335
+      },
+      {
+       "period": "2026-02-23",
+       "ratio": 5.59006
+      },
+      {
+       "period": "2026-02-25",
+       "ratio": 7.45341
+      },
+      {
+       "period": "2026-02-26",
+       "ratio": 1.55279
+      },
+      {
+       "period": "2026-02-28",
+       "ratio": 2.79503
+      },
+      {
+       "period": "2026-03-01",
+       "ratio": 1.55279
+      },
+      {
+       "period": "2026-03-02",
+       "ratio": 3.7267
+      },
+      {
+       "period": "2026-03-03",
+       "ratio": 6.21118
+      },
+      {
+       "period": "2026-03-04",
+       "ratio": 5.90062
+      },
+      {
+       "period": "2026-03-05",
+       "ratio": 2.17391
+      },
+      {
+       "period": "2026-03-06",
+       "ratio": 1.55279
+      },
+      {
+       "period": "2026-03-07",
+       "ratio": 1.55279
+      },
+      {
+       "period": "2026-03-09",
+       "ratio": 5.90062
+      },
+      {
+       "period": "2026-03-10",
+       "ratio": 2.79503
+      },
+      {
+       "period": "2026-03-11",
+       "ratio": 2.17391
+      },
+      {
+       "period": "2026-03-12",
+       "ratio": 3.41614
+      },
+      {
+       "period": "2026-03-13",
+       "ratio": 2.17391
+      },
+      {
+       "period": "2026-03-14",
+       "ratio": 2.48447
+      },
+      {
+       "period": "2026-03-15",
+       "ratio": 3.7267
+      },
+      {
+       "period": "2026-03-16",
+       "ratio": 2.48447
+      },
+      {
+       "period": "2026-03-17",
+       "ratio": 1.55279
+      },
+      {
+       "period": "2026-03-18",
+       "ratio": 8.69565
+      },
+      {
+       "period": "2026-03-19",
+       "ratio": 3.41614
+      },
+      {
+       "period": "2026-03-20",
+       "ratio": 2.48447
+      },
+      {
+       "period": "2026-03-21",
+       "ratio": 6.21118
+      },
+      {
+       "period": "2026-03-22",
+       "ratio": 3.41614
+      },
+      {
+       "period": "2026-03-23",
+       "ratio": 4.96894
+      },
+      {
+       "period": "2026-03-24",
+       "ratio": 4.96894
+      },
+      {
+       "period": "2026-03-25",
+       "ratio": 1.55279
+      },
+      {
+       "period": "2026-03-26",
+       "ratio": 3.7267
+      },
+      {
+       "period": "2026-03-27",
+       "ratio": 4.03726
+      },
+      {
+       "period": "2026-03-28",
+       "ratio": 3.10559
+      },
+      {
+       "period": "2026-03-31",
+       "ratio": 2.48447
+      },
+      {
+       "period": "2026-04-01",
+       "ratio": 3.10559
+      },
+      {
+       "period": "2026-04-02",
+       "ratio": 2.17391
+      },
+      {
+       "period": "2026-04-05",
+       "ratio": 3.41614
+      },
+      {
+       "period": "2026-04-06",
+       "ratio": 1.55279
+      },
+      {
+       "period": "2026-04-08",
+       "ratio": 5.59006
+      },
+      {
+       "period": "2026-04-09",
+       "ratio": 1.86335
+      },
+      {
+       "period": "2026-04-10",
+       "ratio": 2.79503
+      },
+      {
+       "period": "2026-04-11",
+       "ratio": 1.55279
+      },
+      {
+       "period": "2026-04-12",
+       "ratio": 2.17391
+      },
+      {
+       "period": "2026-04-13",
+       "ratio": 1.55279
+      },
+      {
+       "period": "2026-04-14",
+       "ratio": 4.65838
+      },
+      {
+       "period": "2026-04-15",
+       "ratio": 2.17391
+      },
+      {
+       "period": "2026-04-16",
+       "ratio": 1.86335
+      },
+      {
+       "period": "2026-04-19",
+       "ratio": 1.86335
+      },
+      {
+       "period": "2026-04-20",
+       "ratio": 1.55279
+      },
+      {
+       "period": "2026-04-22",
+       "ratio": 4.34782
+      },
+      {
+       "period": "2026-04-23",
+       "ratio": 15.52795
+      },
+      {
+       "period": "2026-04-24",
+       "ratio": 3.7267
+      },
+      {
+       "period": "2026-04-25",
+       "ratio": 4.65838
+      },
+      {
+       "period": "2026-04-26",
+       "ratio": 4.34782
+      },
+      {
+       "period": "2026-04-27",
+       "ratio": 4.34782
+      },
+      {
+       "period": "2026-04-28",
+       "ratio": 2.79503
+      },
+      {
+       "period": "2026-04-29",
+       "ratio": 4.03726
+      },
+      {
+       "period": "2026-04-30",
+       "ratio": 4.34782
+      },
+      {
+       "period": "2026-05-01",
+       "ratio": 3.41614
+      },
+      {
+       "period": "2026-05-03",
+       "ratio": 1.86335
+      },
+      {
+       "period": "2026-05-04",
+       "ratio": 4.96894
+      },
+      {
+       "period": "2026-05-05",
+       "ratio": 15.8385
+      },
+      {
+       "period": "2026-05-06",
+       "ratio": 76.08695
+      },
+      {
+       "period": "2026-05-07",
+       "ratio": 100
+      },
+      {
+       "period": "2026-05-08",
+       "ratio": 92.54658
+      },
+      {
+       "period": "2026-05-09",
+       "ratio": 85.40372
+      },
+      {
+       "period": "2026-05-10",
+       "ratio": 59.31677
+      },
+      {
+       "period": "2026-05-11",
+       "ratio": 54.65838
+      },
+      {
+       "period": "2026-05-12",
+       "ratio": 46.8944
+      },
+      {
+       "period": "2026-05-13",
+       "ratio": 32.29813
+      },
+      {
+       "period": "2026-05-14",
+       "ratio": 27.63975
+      },
+      {
+       "period": "2026-05-15",
+       "ratio": 22.6708
+      },
+      {
+       "period": "2026-05-16",
+       "ratio": 24.53416
+      },
+      {
+       "period": "2026-05-17",
+       "ratio": 16.14906
+      },
+      {
+       "period": "2026-05-18",
+       "ratio": 14.90683
+      },
+      {
+       "period": "2026-05-19",
+       "ratio": 13.04347
+      },
+      {
+       "period": "2026-05-20",
+       "ratio": 16.45962
+      },
+      {
+       "period": "2026-05-21",
+       "ratio": 11.49068
+      },
+      {
+       "period": "2026-05-22",
+       "ratio": 12.42236
+      },
+      {
+       "period": "2026-05-23",
+       "ratio": 14.90683
+      },
+      {
+       "period": "2026-05-24",
+       "ratio": 12.1118
+      },
+      {
+       "period": "2026-05-25",
+       "ratio": 14.90683
+      },
+      {
+       "period": "2026-05-26",
+       "ratio": 13.35403
+      },
+      {
+       "period": "2026-05-27",
+       "ratio": 22.04968
+      },
+      {
+       "period": "2026-05-28",
+       "ratio": 9.62732
+      },
+      {
+       "period": "2026-05-29",
+       "ratio": 4.96894
+      },
+      {
+       "period": "2026-05-30",
+       "ratio": 11.18012
+      },
+      {
+       "period": "2026-05-31",
+       "ratio": 5.2795
+      },
+      {
+       "period": "2026-06-01",
+       "ratio": 7.76397
+      },
+      {
+       "period": "2026-06-02",
+       "ratio": 4.03726
+      },
+      {
+       "period": "2026-06-03",
+       "ratio": 6.52173
+      }
+     ],
+     "google": [
+      {
+       "period": "2026-01-25",
+       "ratio": 21
+      },
+      {
+       "period": "2026-05-21",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-22",
+       "ratio": 1
+      },
+      {
+       "period": "2026-05-23",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-24",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-25",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-26",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-27",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-28",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-29",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-30",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-31",
+       "ratio": 3
+      }
+     ]
+    }
+   },
+   {
+    "game": "erpis",
+    "data": {
+     "naver": [
+      {
+       "period": "2025-11-25",
+       "ratio": 1.1687
+      },
+      {
+       "period": "2025-11-26",
+       "ratio": 0.71497
+      },
+      {
+       "period": "2025-11-27",
+       "ratio": 0.98996
+      },
+      {
+       "period": "2025-11-28",
+       "ratio": 0.83871
+      },
+      {
+       "period": "2025-11-29",
+       "ratio": 0.52248
+      },
+      {
+       "period": "2025-11-30",
+       "ratio": 0.96246
+      },
+      {
+       "period": "2025-12-01",
+       "ratio": 0.67372
+      },
+      {
+       "period": "2025-12-02",
+       "ratio": 0.87996
+      },
+      {
+       "period": "2025-12-03",
+       "ratio": 0.76997
+      },
+      {
+       "period": "2025-12-04",
+       "ratio": 1.20995
+      },
+      {
+       "period": "2025-12-05",
+       "ratio": 1.01746
+      },
+      {
+       "period": "2025-12-06",
+       "ratio": 0.96246
+      },
+      {
+       "period": "2025-12-07",
+       "ratio": 1.00371
+      },
+      {
+       "period": "2025-12-08",
+       "ratio": 0.92121
+      },
+      {
+       "period": "2025-12-09",
+       "ratio": 0.64622
+      },
+      {
+       "period": "2025-12-10",
+       "ratio": 0.68747
+      },
+      {
+       "period": "2025-12-11",
+       "ratio": 0.50873
+      },
+      {
+       "period": "2025-12-12",
+       "ratio": 0.74247
+      },
+      {
+       "period": "2025-12-13",
+       "ratio": 0.75622
+      },
+      {
+       "period": "2025-12-14",
+       "ratio": 0.97621
+      },
+      {
+       "period": "2025-12-15",
+       "ratio": 0.83871
+      },
+      {
+       "period": "2025-12-16",
+       "ratio": 0.74247
+      },
+      {
+       "period": "2025-12-17",
+       "ratio": 0.59122
+      },
+      {
+       "period": "2025-12-18",
+       "ratio": 0.67372
+      },
+      {
+       "period": "2025-12-19",
+       "ratio": 0.82496
+      },
+      {
+       "period": "2025-12-20",
+       "ratio": 0.50873
+      },
+      {
+       "period": "2025-12-21",
+       "ratio": 0.32998
+      },
+      {
+       "period": "2025-12-22",
+       "ratio": 0.48123
+      },
+      {
+       "period": "2025-12-23",
+       "ratio": 0.75622
+      },
+      {
+       "period": "2025-12-24",
+       "ratio": 0.72872
+      },
+      {
+       "period": "2025-12-25",
+       "ratio": 0.50873
+      },
+      {
+       "period": "2025-12-26",
+       "ratio": 0.57747
+      },
+      {
+       "period": "2025-12-27",
+       "ratio": 0.50873
+      },
+      {
+       "period": "2025-12-28",
+       "ratio": 0.46748
+      },
+      {
+       "period": "2025-12-29",
+       "ratio": 0.52248
+      },
+      {
+       "period": "2025-12-30",
+       "ratio": 0.41248
+      },
+      {
+       "period": "2025-12-31",
+       "ratio": 0.38498
+      },
+      {
+       "period": "2026-01-01",
+       "ratio": 0.27498
+      },
+      {
+       "period": "2026-01-02",
+       "ratio": 0.27498
+      },
+      {
+       "period": "2026-01-03",
+       "ratio": 0.46748
+      },
+      {
+       "period": "2026-01-04",
+       "ratio": 0.46748
+      },
+      {
+       "period": "2026-01-05",
+       "ratio": 0.50873
+      },
+      {
+       "period": "2026-01-06",
+       "ratio": 0.45373
+      },
+      {
+       "period": "2026-01-07",
+       "ratio": 0.42623
+      },
+      {
+       "period": "2026-01-08",
+       "ratio": 0.75622
+      },
+      {
+       "period": "2026-01-09",
+       "ratio": 0.46748
+      },
+      {
+       "period": "2026-01-10",
+       "ratio": 0.38498
+      },
+      {
+       "period": "2026-01-11",
+       "ratio": 0.38498
+      },
+      {
+       "period": "2026-01-12",
+       "ratio": 0.86621
+      },
+      {
+       "period": "2026-01-13",
+       "ratio": 0.63247
+      },
+      {
+       "period": "2026-01-14",
+       "ratio": 0.71497
+      },
+      {
+       "period": "2026-01-15",
+       "ratio": 0.49498
+      },
+      {
+       "period": "2026-01-16",
+       "ratio": 0.26124
+      },
+      {
+       "period": "2026-01-17",
+       "ratio": 0.53622
+      },
+      {
+       "period": "2026-01-18",
+       "ratio": 0.41248
+      },
+      {
+       "period": "2026-01-19",
+       "ratio": 0.50873
+      },
+      {
+       "period": "2026-01-20",
+       "ratio": 0.67372
+      },
+      {
+       "period": "2026-01-21",
+       "ratio": 0.52248
+      },
+      {
+       "period": "2026-01-22",
+       "ratio": 1.1137
+      },
+      {
+       "period": "2026-01-23",
+       "ratio": 2.62615
+      },
+      {
+       "period": "2026-01-24",
+       "ratio": 1.73243
+      },
+      {
+       "period": "2026-01-25",
+       "ratio": 2.36491
+      },
+      {
+       "period": "2026-01-26",
+       "ratio": 2.5849
+      },
+      {
+       "period": "2026-01-27",
+       "ratio": 2.6124
+      },
+      {
+       "period": "2026-01-28",
+       "ratio": 2.5024
+      },
+      {
+       "period": "2026-01-29",
+       "ratio": 2.37866
+      },
+      {
+       "period": "2026-01-30",
+       "ratio": 2.96988
+      },
+      {
+       "period": "2026-01-31",
+       "ratio": 3.43737
+      },
+      {
+       "period": "2026-02-01",
+       "ratio": 3.47861
+      },
+      {
+       "period": "2026-02-02",
+       "ratio": 4.30358
+      },
+      {
+       "period": "2026-02-03",
+       "ratio": 5.23855
+      },
+      {
+       "period": "2026-02-04",
+       "ratio": 12.03079
+      },
+      {
+       "period": "2026-02-05",
+       "ratio": 100
+      },
+      {
+       "period": "2026-02-06",
+       "ratio": 49.88312
+      },
+      {
+       "period": "2026-02-07",
+       "ratio": 36.10614
+      },
+      {
+       "period": "2026-02-08",
+       "ratio": 31.47256
+      },
+      {
+       "period": "2026-02-09",
+       "ratio": 24.99656
+      },
+      {
+       "period": "2026-02-10",
+       "ratio": 27.9802
+      },
+      {
+       "period": "2026-02-11",
+       "ratio": 23.08538
+      },
+      {
+       "period": "2026-02-12",
+       "ratio": 22.67289
+      },
+      {
+       "period": "2026-02-13",
+       "ratio": 20.41798
+      },
+      {
+       "period": "2026-02-14",
+       "ratio": 22.16416
+      },
+      {
+       "period": "2026-02-15",
+       "ratio": 24.18534
+      },
+      {
+       "period": "2026-02-16",
+       "ratio": 23.70411
+      },
+      {
+       "period": "2026-02-17",
+       "ratio": 26.57775
+      },
+      {
+       "period": "2026-02-18",
+       "ratio": 24.32283
+      },
+      {
+       "period": "2026-02-19",
+       "ratio": 28.15894
+      },
+      {
+       "period": "2026-02-20",
+       "ratio": 20.00549
+      },
+      {
+       "period": "2026-02-21",
+       "ratio": 16.45813
+      },
+      {
+       "period": "2026-02-22",
+       "ratio": 12.66327
+      },
+      {
+       "period": "2026-02-23",
+       "ratio": 12.70452
+      },
+      {
+       "period": "2026-02-24",
+       "ratio": 12.88326
+      },
+      {
+       "period": "2026-02-25",
+       "ratio": 10.88959
+      },
+      {
+       "period": "2026-02-26",
+       "ratio": 13.10325
+      },
+      {
+       "period": "2026-02-27",
+       "ratio": 10.07837
+      },
+      {
+       "period": "2026-02-28",
+       "ratio": 10.46335
+      },
+      {
+       "period": "2026-03-01",
+       "ratio": 10.87584
+      },
+      {
+       "period": "2026-03-02",
+       "ratio": 9.84463
+      },
+      {
+       "period": "2026-03-03",
+       "ratio": 8.71717
+      },
+      {
+       "period": "2026-03-04",
+       "ratio": 9.1159
+      },
+      {
+       "period": "2026-03-05",
+       "ratio": 8.60717
+      },
+      {
+       "period": "2026-03-06",
+       "ratio": 7.12223
+      },
+      {
+       "period": "2026-03-07",
+       "ratio": 6.26976
+      },
+      {
+       "period": "2026-03-08",
+       "ratio": 5.10105
+      },
+      {
+       "period": "2026-03-09",
+       "ratio": 4.52358
+      },
+      {
+       "period": "2026-03-10",
+       "ratio": 4.83981
+      },
+      {
+       "period": "2026-03-11",
+       "ratio": 4.53732
+      },
+      {
+       "period": "2026-03-12",
+       "ratio": 4.04234
+      },
+      {
+       "period": "2026-03-13",
+       "ratio": 3.50611
+      },
+      {
+       "period": "2026-03-14",
+       "ratio": 2.77739
+      },
+      {
+       "period": "2026-03-15",
+       "ratio": 3.53361
+      },
+      {
+       "period": "2026-03-16",
+       "ratio": 3.39612
+      },
+      {
+       "period": "2026-03-17",
+       "ratio": 3.24487
+      },
+      {
+       "period": "2026-03-18",
+       "ratio": 3.51986
+      },
+      {
+       "period": "2026-03-19",
+       "ratio": 3.79485
+      },
+      {
+       "period": "2026-03-20",
+       "ratio": 2.6399
+      },
+      {
+       "period": "2026-03-21",
+       "ratio": 2.46115
+      },
+      {
+       "period": "2026-03-22",
+       "ratio": 2.37866
+      },
+      {
+       "period": "2026-03-23",
+       "ratio": 2.5299
+      },
+      {
+       "period": "2026-03-24",
+       "ratio": 2.17241
+      },
+      {
+       "period": "2026-03-25",
+       "ratio": 2.5849
+      },
+      {
+       "period": "2026-03-26",
+       "ratio": 3.06613
+      },
+      {
+       "period": "2026-03-27",
+       "ratio": 1.97992
+      },
+      {
+       "period": "2026-03-28",
+       "ratio": 2.35116
+      },
+      {
+       "period": "2026-03-29",
+       "ratio": 2.37866
+      },
+      {
+       "period": "2026-03-30",
+       "ratio": 2.28241
+      },
+      {
+       "period": "2026-03-31",
+       "ratio": 2.18616
+      },
+      {
+       "period": "2026-04-01",
+       "ratio": 2.15866
+      },
+      {
+       "period": "2026-04-02",
+       "ratio": 3.42362
+      },
+      {
+       "period": "2026-04-03",
+       "ratio": 2.62615
+      },
+      {
+       "period": "2026-04-04",
+       "ratio": 1.93867
+      },
+      {
+       "period": "2026-04-05",
+       "ratio": 1.42994
+      },
+      {
+       "period": "2026-04-06",
+       "ratio": 1.55369
+      },
+      {
+       "period": "2026-04-07",
+       "ratio": 1.40244
+      },
+      {
+       "period": "2026-04-08",
+       "ratio": 1.69118
+      },
+      {
+       "period": "2026-04-09",
+       "ratio": 1.52619
+      },
+      {
+       "period": "2026-04-10",
+       "ratio": 1.33369
+      },
+      {
+       "period": "2026-04-11",
+       "ratio": 0.93496
+      },
+      {
+       "period": "2026-04-12",
+       "ratio": 0.92121
+      },
+      {
+       "period": "2026-04-13",
+       "ratio": 1.05871
+      },
+      {
+       "period": "2026-04-14",
+       "ratio": 1.51244
+      },
+      {
+       "period": "2026-04-15",
+       "ratio": 1.36119
+      },
+      {
+       "period": "2026-04-16",
+       "ratio": 55.90062
+      },
+      {
+       "period": "2026-04-17",
+       "ratio": 42.54658
+      },
+      {
+       "period": "2026-04-18",
+       "ratio": 35.09316
+      },
+      {
+       "period": "2026-04-19",
+       "ratio": 28.88198
+      },
+      {
+       "period": "2026-04-20",
+       "ratio": 27.32919
+      },
+      {
+       "period": "2026-04-21",
+       "ratio": 28.26086
+      },
+      {
+       "period": "2026-04-22",
+       "ratio": 38.19875
+      },
+      {
+       "period": "2026-04-23",
+       "ratio": 31.0559
+      },
+      {
+       "period": "2026-04-24",
+       "ratio": 27.95031
+      },
+      {
+       "period": "2026-04-25",
+       "ratio": 23.29192
+      },
+      {
+       "period": "2026-04-26",
+       "ratio": 18.94409
+      },
+      {
+       "period": "2026-04-27",
+       "ratio": 28.88198
+      },
+      {
+       "period": "2026-04-28",
+       "ratio": 30.74534
+      },
+      {
+       "period": "2026-04-29",
+       "ratio": 36.95652
+      },
+      {
+       "period": "2026-04-30",
+       "ratio": 47.51552
+      },
+      {
+       "period": "2026-05-01",
+       "ratio": 33.54037
+      },
+      {
+       "period": "2026-05-02",
+       "ratio": 22.36024
+      },
+      {
+       "period": "2026-05-03",
+       "ratio": 20.18633
+      },
+      {
+       "period": "2026-05-04",
+       "ratio": 33.22981
+      },
+      {
+       "period": "2026-05-05",
+       "ratio": 26.08695
+      },
+      {
+       "period": "2026-05-06",
+       "ratio": 24.53416
+      },
+      {
+       "period": "2026-05-07",
+       "ratio": 24.84472
+      },
+      {
+       "period": "2026-05-08",
+       "ratio": 35.40372
+      },
+      {
+       "period": "2026-05-09",
+       "ratio": 33.85093
+      },
+      {
+       "period": "2026-05-10",
+       "ratio": 35.40372
+      },
+      {
+       "period": "2026-05-11",
+       "ratio": 31.0559
+      },
+      {
+       "period": "2026-05-12",
+       "ratio": 26.39751
+      },
+      {
+       "period": "2026-05-13",
+       "ratio": 36.95652
+      },
+      {
+       "period": "2026-05-14",
+       "ratio": 27.63975
+      },
+      {
+       "period": "2026-05-15",
+       "ratio": 31.98757
+      },
+      {
+       "period": "2026-05-16",
+       "ratio": 21.11801
+      },
+      {
+       "period": "2026-05-17",
+       "ratio": 22.6708
+      },
+      {
+       "period": "2026-05-18",
+       "ratio": 20.18633
+      },
+      {
+       "period": "2026-05-19",
+       "ratio": 26.08695
+      },
+      {
+       "period": "2026-05-20",
+       "ratio": 21.11801
+      },
+      {
+       "period": "2026-05-21",
+       "ratio": 17.08074
+      },
+      {
+       "period": "2026-05-22",
+       "ratio": 21.42857
+      },
+      {
+       "period": "2026-05-23",
+       "ratio": 16.14906
+      },
+      {
+       "period": "2026-05-24",
+       "ratio": 14.59627
+      },
+      {
+       "period": "2026-05-25",
+       "ratio": 11.49068
+      },
+      {
+       "period": "2026-05-26",
+       "ratio": 15.21739
+      },
+      {
+       "period": "2026-05-27",
+       "ratio": 22.6708
+      },
+      {
+       "period": "2026-05-28",
+       "ratio": 16.14906
+      },
+      {
+       "period": "2026-05-29",
+       "ratio": 13.97515
+      },
+      {
+       "period": "2026-05-30",
+       "ratio": 12.1118
+      },
+      {
+       "period": "2026-05-31",
+       "ratio": 11.49068
+      },
+      {
+       "period": "2026-06-01",
+       "ratio": 12.1118
+      },
+      {
+       "period": "2026-06-02",
+       "ratio": 11.18012
+      },
+      {
+       "period": "2026-06-03",
+       "ratio": 9.62732
+      }
+     ],
+     "google": [
+      {
+       "period": "2026-02-05",
+       "ratio": 100
+      },
+      {
+       "period": "2026-02-06",
+       "ratio": 49
+      },
+      {
+       "period": "2026-02-07",
+       "ratio": 72
+      },
+      {
+       "period": "2026-02-08",
+       "ratio": 71
+      },
+      {
+       "period": "2026-02-09",
+       "ratio": 38
+      },
+      {
+       "period": "2026-02-10",
+       "ratio": 55
+      },
+      {
+       "period": "2026-02-11",
+       "ratio": 37
+      },
+      {
+       "period": "2026-02-12",
+       "ratio": 38
+      },
+      {
+       "period": "2026-02-13",
+       "ratio": 48
+      },
+      {
+       "period": "2026-02-14",
+       "ratio": 26
+      },
+      {
+       "period": "2026-02-15",
+       "ratio": 39
+      },
+      {
+       "period": "2026-02-16",
+       "ratio": 37
+      },
+      {
+       "period": "2026-02-17",
+       "ratio": 26
+      },
+      {
+       "period": "2026-02-19",
+       "ratio": 32
+      },
+      {
+       "period": "2026-02-20",
+       "ratio": 26
+      },
+      {
+       "period": "2026-02-21",
+       "ratio": 42
+      },
+      {
+       "period": "2026-02-22",
+       "ratio": 23
+      },
+      {
+       "period": "2026-02-23",
+       "ratio": 23
+      },
+      {
+       "period": "2026-02-24",
+       "ratio": 20
+      },
+      {
+       "period": "2026-02-25",
+       "ratio": 26
+      },
+      {
+       "period": "2026-03-01",
+       "ratio": 24
+      },
+      {
+       "period": "2026-03-05",
+       "ratio": 24
+      },
+      {
+       "period": "2026-05-21",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-22",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-23",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-24",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-25",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-26",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-27",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-28",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-29",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-30",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-31",
+       "ratio": 2
+      },
+      {
+       "period": "2026-06-01",
+       "ratio": 2
+      },
+      {
+       "period": "2026-06-02",
+       "ratio": 2
+      },
+      {
+       "period": "2026-06-03",
+       "ratio": 1
+      },
+      {
+       "period": "2026-06-04",
+       "ratio": 2
+      }
+     ]
+    }
+   }
+  ],
+  "events": [
+   {
+    "date": "2025-12-03",
+    "game": "anchorpanic",
+    "confidence": 1,
+    "label": "(추정) 게시물 활동 급증",
+    "detail": "게시물 14일 평균 대비 +178% 변동",
+    "url": ""
+   },
+   {
+    "date": "2025-12-24",
+    "game": "anchorpanic",
+    "confidence": 1,
+    "label": "(추정) 검색 활동 급증",
+    "detail": "검색량 14일 평균 대비 +141% 변동",
+    "url": ""
+   },
+   {
+    "date": "2025-12-30",
+    "game": "anchorpanic",
+    "confidence": 1,
+    "label": "(추정) 검색 활동 급증",
+    "detail": "검색량 14일 평균 대비 +225% 변동",
+    "url": ""
+   },
+   {
+    "date": "2025-12-31",
+    "game": "anchorpanic",
+    "confidence": 1,
+    "label": "(추정) 검색 활동 급증",
+    "detail": "검색량 14일 평균 대비 +233% 변동",
+    "url": ""
+   },
+   {
+    "date": "2026-01-01",
+    "game": "anchorpanic",
+    "confidence": 1,
+    "label": "(추정) 검색 활동 급증",
+    "detail": "검색량 14일 평균 대비 +140% 변동",
+    "url": ""
+   },
+   {
+    "date": "2026-02-02",
+    "game": "erpis",
+    "confidence": 1,
+    "label": "(추정) 검색 활동 급증",
+    "detail": "검색량 14일 평균 대비 +104% 변동",
+    "url": ""
+   },
+   {
+    "date": "2026-02-03",
+    "game": "anchorpanic",
+    "confidence": 1,
+    "label": "(추정) 검색 활동 급증",
+    "detail": "검색량 14일 평균 대비 +175% 변동",
+    "url": ""
+   },
+   {
+    "date": "2026-02-03",
+    "game": "erpis",
+    "confidence": 1,
+    "label": "(추정) 검색 활동 급증",
+    "detail": "검색량 14일 평균 대비 +120% 변동",
+    "url": ""
+   },
+   {
+    "date": "2026-02-04",
+    "game": "anchorpanic",
+    "confidence": 1,
+    "label": "(추정) 검색 활동 급증",
+    "detail": "검색량 14일 평균 대비 +313% 변동",
+    "url": ""
+   },
+   {
+    "date": "2026-02-04",
+    "game": "erpis",
+    "confidence": 1,
+    "label": "(추정) 검색 활동 급증",
+    "detail": "검색량 14일 평균 대비 +345% 변동",
+    "url": ""
+   },
+   {
+    "date": "2026-02-05",
+    "game": "erpis",
+    "confidence": 3,
+    "label": "에르피스 국내 출시",
+    "detail": "넵튠 퍼블리싱 비주얼 스쿼드 RPG 에르피스 국내 정식 출시.",
+    "url": ""
+   },
+   {
+    "date": "2026-02-06",
+    "game": "anchorpanic",
+    "confidence": 1,
+    "label": "(추정) 검색 활동 급증",
+    "detail": "검색량 14일 평균 대비 +189% 변동",
+    "url": ""
+   },
+   {
+    "date": "2026-02-10",
+    "game": "erpis",
+    "confidence": 1,
+    "label": "(추정) 게시물 활동 급증",
+    "detail": "게시물 14일 평균 대비 +230% 변동",
+    "url": ""
+   },
+   {
+    "date": "2026-03-18",
+    "game": "anchorpanic",
+    "confidence": 1,
+    "label": "(추정) 검색 활동 급증",
+    "detail": "검색량 14일 평균 대비 +176% 변동",
+    "url": ""
+   },
+   {
+    "date": "2026-04-02",
+    "game": "erpis",
+    "confidence": 1,
+    "label": "(추정) 게시물 활동 급증",
+    "detail": "게시물 14일 평균 대비 +125% 변동",
+    "url": ""
+   },
+   {
+    "confidence": 1,
+    "label": "(추정) 검색 활동 일시 증가",
+    "detail": "검색량 +35% 변동. 명확한 외부 이벤트 미확인.",
+    "url": "",
+    "date": "2026-04-22",
+    "game": "erpis"
+   },
+   {
+    "date": "2026-04-23",
+    "game": "anchorpanic",
+    "confidence": 3,
+    "label": "1주년 업데이트 사전예약 개시 (SSR 화이트 로즈)",
+    "detail": "1주년 기념 대규모 업데이트 사전예약 시작. 신규 SSR 에이전트 화이트 로즈 추가 및 최대 600회 무료 뽑기 예고.",
+    "url": "https://n.news.naver.com/mnews/article/009/0005670235?sid=101"
+   },
+   {
+    "confidence": 2,
+    "label": "TikTok Lite × 에르피스 쿠폰 콜라보 노출",
+    "detail": "블로그 다수에서 TikTok Lite 가입 보상 코드 및 에르피스 쿠폰 이벤트 공유.",
+    "url": "https://blog.naver.com/sladkwha1/224264277590",
+    "date": "2026-04-27",
+    "game": "erpis"
+   },
+   {
+    "date": "2026-04-30",
+    "game": "erpis",
+    "confidence": 1,
+    "label": "(추정) 게시물 활동 급증",
+    "detail": "게시물 14일 평균 대비 +294% 변동",
+    "url": ""
+   },
+   {
+    "confidence": 3,
+    "label": "출시 100일 기념 대규모 이벤트 시작",
+    "detail": "신규 5성 캐릭터 레티시아 추가, 월드보스 레이드, 시크릿 상점 오픈 등 100일 감사 이벤트 실시 (~5/21).",
+    "url": "https://m.sports.naver.com/esports/article/236/0000254824",
+    "date": "2026-05-04",
+    "game": "erpis"
+   },
+   {
+    "date": "2026-05-05",
+    "game": "anchorpanic",
+    "confidence": 2,
+    "label": "1주년 업데이트 직전 관심 급증",
+    "detail": "5/6 점검·5/7 업데이트 적용 직전 사전예약 마감일 효과로 검색량 상승.",
+    "url": "https://www.betanews.net/article/view/beta202605080007"
+   },
+   {
+    "date": "2026-05-06",
+    "game": "anchorpanic",
+    "confidence": 3,
+    "label": "1주년 업데이트 적용 & 양대마켓 역주행",
+    "detail": "서비스 1주년 대규모 업데이트 적용 당일 구글 플레이 인기 1위, DAU 전주 대비 5배 상승.",
+    "url": "https://n.news.naver.com/mnews/article/092/0002421887?sid=105"
+   },
+   {
+    "date": "2026-05-07",
+    "game": "anchorpanic",
+    "confidence": 3,
+    "label": "구글 인기 1위·애플 2위 동시 달성",
+    "detail": "구글 플레이 인기 순위 1위, 애플 앱스토어 인기 2위 동시 기록.",
+    "url": "https://n.news.naver.com/mnews/article/092/0002421887?sid=105"
+   },
+   {
+    "date": "2026-05-08",
+    "game": "anchorpanic",
+    "confidence": 1,
+    "label": "(추정) 검색 활동 급증",
+    "detail": "검색량 14일 평균 대비 +427% 변동",
+    "url": ""
+   },
+   {
+    "confidence": 1,
+    "label": "(추정) 앵커패닉 1주년 동반 검색",
+    "detail": "동일 기간 앵커패닉 1주년 업데이트로 넵튠 라인업 동반 검색량 상승.",
+    "url": "",
+    "date": "2026-05-08",
+    "game": "erpis"
+   },
+   {
+    "date": "2026-05-09",
+    "game": "anchorpanic",
+    "confidence": 1,
+    "label": "(추정) 검색 활동 급증",
+    "detail": "검색량 14일 평균 대비 +270% 변동",
+    "url": ""
+   },
+   {
+    "confidence": 2,
+    "label": "1분기 실적 발표 직전 관심 상승",
+    "detail": "5/15 넵튠 1Q 실적 공시(매출 314억·영업익 17억) 앞두고 신작 에르피스 매출 23.5억원 관련 검색 증가.",
+    "url": "https://n.news.naver.com/mnews/article/092/0002422957?sid=105",
+    "date": "2026-05-13",
+    "game": "erpis"
+   },
+   {
+    "date": "2026-05-26",
+    "game": "erpis",
+    "label": "길드전(길레) 시즌 종료 + 악몽침식 콘텐츠 화제",
+    "confidence": 1,
+    "source": "community",
+    "note": "네이버 검색량 +45.9% (전일 11.49068→16.77018). 커뮤니티 활동 기반 추정."
+   },
+   {
+    "date": "2026-05-27",
+    "game": "anchorpanic",
+    "confidence": 1,
+    "label": "신캐 우리엘 출시 점검 + 핫픽스(선택권 정상화)",
+    "detail": "네이버 검색량 +65.1% (13.35403→22.04968). 신캐 출시일이지만 커뮤니티는 무관심·걸름 분위기 우세, 우리엘 성능 평가도 부정. 점검 후 선택권 버그 핫픽스 적용.",
+    "source": "community"
+   },
+   {
+    "date": "2026-05-27",
+    "game": "erpis",
+    "confidence": 1,
+    "label": "신캐 니키타 픽업 + 점검 (12:00 종료)",
+    "detail": "네이버 검색량 +49.0% (15.21739→22.6708). 5/27 점검 + 니키타 신캐 픽업 + 스킨 미리보기 화제. 다만 상시뽑·운영 불만 글 다수.",
+    "source": "community"
+   },
+   {
+    "date": "2026-05-30",
+    "game": "anchorpanic",
+    "confidence": 1,
+    "label": "심연 신규 콘텐츠 경쟁 + 1주년 설문결과 발표",
+    "detail": "네이버 검색량 +125% (4.96894→11.18012). 5/30 커뮤니티는 심연(엔드 랭킹) 도전·점수 자랑 글 폭증, 화이트로즈 낙인(전낙 vs 미지와의연결) 메타 논쟁 활발. 5/30 밤 1주년 업데이트 채널 설문조사 결과 공지. 외부 뉴스/블로그 신규 매칭 없음.",
+    "source": "community"
+   }
+  ],
+  "lastUpdated": "2026-06-04T22:49:20.573237+00:00",
+  "spikes": [
+   {
+    "date": "2025-12-24",
+    "game": "anchorpanic",
+    "ratio_prev": 4.03726,
+    "ratio_cur": 12.1118,
+    "pct": 200
+   },
+   {
+    "date": "2025-12-30",
+    "game": "anchorpanic",
+    "ratio_prev": 7.14285,
+    "ratio_cur": 20.80745,
+    "pct": 191
+   },
+   {
+    "date": "2026-01-03",
+    "game": "anchorpanic",
+    "ratio_prev": 8.69565,
+    "ratio_cur": 13.66459,
+    "pct": 57
+   },
+   {
+    "date": "2026-02-04",
+    "game": "anchorpanic",
+    "ratio_prev": 6.52173,
+    "ratio_cur": 10.24844,
+    "pct": 57
+   },
+   {
+    "date": "2026-02-18",
+    "game": "anchorpanic",
+    "ratio_prev": 6.52173,
+    "ratio_cur": 11.18012,
+    "pct": 71
+   },
+   {
+    "date": "2026-04-23",
+    "game": "anchorpanic",
+    "ratio_prev": 4.34782,
+    "ratio_cur": 15.52795,
+    "pct": 257
+   },
+   {
+    "date": "2026-05-05",
+    "game": "anchorpanic",
+    "ratio_prev": 4.96894,
+    "ratio_cur": 15.8385,
+    "pct": 219
+   },
+   {
+    "date": "2026-05-06",
+    "game": "anchorpanic",
+    "ratio_prev": 15.8385,
+    "ratio_cur": 76.08695,
+    "pct": 380
+   },
+   {
+    "date": "2026-05-07",
+    "game": "anchorpanic",
+    "ratio_prev": 76.08695,
+    "ratio_cur": 100,
+    "pct": 31
+   },
+   {
+    "date": "2026-05-27",
+    "game": "anchorpanic",
+    "ratio_prev": 13.35403,
+    "ratio_cur": 22.04968,
+    "pct": 65
+   },
+   {
+    "date": "2026-05-30",
+    "game": "anchorpanic",
+    "ratio_prev": 4.96894,
+    "ratio_cur": 11.18012,
+    "pct": 125
+   },
+   {
+    "date": "2026-02-04",
+    "game": "erpis",
+    "ratio_prev": 5.23855,
+    "ratio_cur": 12.03079,
+    "pct": 130
+   },
+   {
+    "date": "2026-02-05",
+    "game": "erpis",
+    "ratio_prev": 12.03079,
+    "ratio_cur": 100,
+    "pct": 731
+   },
+   {
+    "date": "2026-04-16",
+    "game": "erpis",
+    "ratio_prev": 1.36119,
+    "ratio_cur": 55.90062,
+    "pct": 4007
+   },
+   {
+    "date": "2026-04-22",
+    "game": "erpis",
+    "ratio_prev": 28.26086,
+    "ratio_cur": 38.19875,
+    "pct": 35
+   },
+   {
+    "date": "2026-04-27",
+    "game": "erpis",
+    "ratio_prev": 18.94409,
+    "ratio_cur": 28.88198,
+    "pct": 52
+   },
+   {
+    "date": "2026-04-30",
+    "game": "erpis",
+    "ratio_prev": 36.95652,
+    "ratio_cur": 47.51552,
+    "pct": 29
+   },
+   {
+    "date": "2026-05-04",
+    "game": "erpis",
+    "ratio_prev": 20.18633,
+    "ratio_cur": 33.22981,
+    "pct": 65
+   },
+   {
+    "date": "2026-05-08",
+    "game": "erpis",
+    "ratio_prev": 24.84472,
+    "ratio_cur": 35.40372,
+    "pct": 42
+   },
+   {
+    "date": "2026-05-13",
+    "game": "erpis",
+    "ratio_prev": 26.39751,
+    "ratio_cur": 36.95652,
+    "pct": 40
+   },
+   {
+    "date": "2026-05-26",
+    "game": "erpis",
+    "ratio_prev": 11.49068,
+    "ratio_cur": 15.21739,
+    "pct": 32
+   },
+   {
+    "date": "2026-05-27",
+    "game": "erpis",
+    "ratio_prev": 15.21739,
+    "ratio_cur": 22.6708,
+    "pct": 49
+   }
+  ]
+ },
+ "lastUpdated": "2026-06-04T22:49:43.043633+00:00"
+}
