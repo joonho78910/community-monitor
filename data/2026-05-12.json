@@ -18,7 +18,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 195
+     "engagement": 195,
+     "sentiment": "neutral"
     },
     {
      "id": "11345",
@@ -35,7 +36,8 @@
       "newbie",
       "guild"
      ],
-     "engagement": 170
+     "engagement": 170,
+     "sentiment": "neutral"
     },
     {
      "id": "11344",
@@ -52,7 +54,8 @@
       "positive",
       "balance"
      ],
-     "engagement": 169
+     "engagement": 169,
+     "sentiment": "positive"
     },
     {
      "id": "11343",
@@ -69,7 +72,8 @@
       "balance",
       "guide"
      ],
-     "engagement": 311
+     "engagement": 311,
+     "sentiment": "neutral"
     },
     {
      "id": "11342",
@@ -85,7 +89,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 408
+     "engagement": 408,
+     "sentiment": "neutral"
     },
     {
      "id": "11341",
@@ -101,7 +106,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 142
+     "engagement": 142,
+     "sentiment": "neutral"
     },
     {
      "id": "11340",
@@ -118,7 +124,8 @@
       "positive",
       "newbie"
      ],
-     "engagement": 324
+     "engagement": 324,
+     "sentiment": "positive"
     },
     {
      "id": "11339",
@@ -135,7 +142,8 @@
       "newbie",
       "guild"
      ],
-     "engagement": 45
+     "engagement": 45,
+     "sentiment": "neutral"
     },
     {
      "id": "11338",
@@ -151,7 +159,8 @@
      "tags": [
       "guild"
      ],
-     "engagement": 57
+     "engagement": 57,
+     "sentiment": "neutral"
     },
     {
      "id": "11337",
@@ -167,7 +176,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 268
+     "engagement": 268,
+     "sentiment": "neutral"
     },
     {
      "id": "11336",
@@ -184,7 +194,8 @@
       "gacha",
       "guide"
      ],
-     "engagement": 258
+     "engagement": 258,
+     "sentiment": "neutral"
     },
     {
      "id": "11335",
@@ -200,7 +211,8 @@
      "tags": [
       "gacha"
      ],
-     "engagement": 131
+     "engagement": 131,
+     "sentiment": "neutral"
     },
     {
      "id": "11334",
@@ -217,7 +229,8 @@
       "newbie",
       "guild"
      ],
-     "engagement": 40
+     "engagement": 40,
+     "sentiment": "neutral"
     },
     {
      "id": "11333",
@@ -233,7 +246,8 @@
      "tags": [
       "bug"
      ],
-     "engagement": 368
+     "engagement": 368,
+     "sentiment": "neutral"
     },
     {
      "id": "11332",
@@ -250,7 +264,8 @@
       "newbie",
       "guide"
      ],
-     "engagement": 122
+     "engagement": 122,
+     "sentiment": "neutral"
     },
     {
      "id": "11331",
@@ -267,7 +282,8 @@
       "newbie",
       "guild"
      ],
-     "engagement": 150
+     "engagement": 150,
+     "sentiment": "neutral"
     },
     {
      "id": "11330",
@@ -286,7 +302,8 @@
       "balance",
       "guide"
      ],
-     "engagement": 331
+     "engagement": 331,
+     "sentiment": "neutral"
     },
     {
      "id": "11329",
@@ -303,7 +320,8 @@
       "newbie",
       "guild"
      ],
-     "engagement": 74
+     "engagement": 74,
+     "sentiment": "neutral"
     },
     {
      "id": "11328",
@@ -320,7 +338,8 @@
       "gacha",
       "guide"
      ],
-     "engagement": 315
+     "engagement": 315,
+     "sentiment": "neutral"
     },
     {
      "id": "11327",
@@ -336,7 +355,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 215
+     "engagement": 215,
+     "sentiment": "neutral"
     },
     {
      "id": "11326",
@@ -353,7 +373,8 @@
       "newbie",
       "guild"
      ],
-     "engagement": 116
+     "engagement": 116,
+     "sentiment": "neutral"
     },
     {
      "id": "11325",
@@ -369,7 +390,8 @@
      "tags": [
       "newbie"
      ],
-     "engagement": 140
+     "engagement": 140,
+     "sentiment": "neutral"
     },
     {
      "id": "11324",
@@ -385,7 +407,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 254
+     "engagement": 254,
+     "sentiment": "neutral"
     },
     {
      "id": "11323",
@@ -401,7 +424,8 @@
      "tags": [
       "balance"
      ],
-     "engagement": 103
+     "engagement": 103,
+     "sentiment": "neutral"
     },
     {
      "id": "11322",
@@ -418,7 +442,8 @@
       "event",
       "balance"
      ],
-     "engagement": 223
+     "engagement": 223,
+     "sentiment": "neutral"
     },
     {
      "id": "11321",
@@ -436,7 +461,8 @@
       "guild",
       "event"
      ],
-     "engagement": 128
+     "engagement": 128,
+     "sentiment": "neutral"
     },
     {
      "id": "11320",
@@ -452,7 +478,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 150
+     "engagement": 150,
+     "sentiment": "neutral"
     },
     {
      "id": "11319",
@@ -468,7 +495,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 217
+     "engagement": 217,
+     "sentiment": "neutral"
     },
     {
      "id": "11318",
@@ -484,7 +512,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 261
+     "engagement": 261,
+     "sentiment": "neutral"
     },
     {
      "id": "11317",
@@ -500,7 +529,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 264
+     "engagement": 264,
+     "sentiment": "neutral"
     },
     {
      "id": "11316",
@@ -516,7 +546,8 @@
      "tags": [
       "newbie"
      ],
-     "engagement": 613
+     "engagement": 613,
+     "sentiment": "neutral"
     },
     {
      "id": "11315",
@@ -532,7 +563,8 @@
      "tags": [
       "balance"
      ],
-     "engagement": 42
+     "engagement": 42,
+     "sentiment": "neutral"
     },
     {
      "id": "11314",
@@ -548,7 +580,8 @@
      "tags": [
       "gacha"
      ],
-     "engagement": 253
+     "engagement": 253,
+     "sentiment": "neutral"
     },
     {
      "id": "11313",
@@ -564,7 +597,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 180
+     "engagement": 180,
+     "sentiment": "neutral"
     },
     {
      "id": "11312",
@@ -580,7 +614,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 401
+     "engagement": 401,
+     "sentiment": "neutral"
     },
     {
      "id": "11311",
@@ -596,7 +631,8 @@
      "tags": [
       "gacha"
      ],
-     "engagement": 139
+     "engagement": 139,
+     "sentiment": "neutral"
     },
     {
      "id": "11310",
@@ -612,7 +648,8 @@
      "tags": [
       "gacha"
      ],
-     "engagement": 398
+     "engagement": 398,
+     "sentiment": "neutral"
     },
     {
      "id": "11309",
@@ -629,7 +666,8 @@
       "newbie",
       "guide"
      ],
-     "engagement": 278
+     "engagement": 278,
+     "sentiment": "neutral"
     },
     {
      "id": "11308",
@@ -645,7 +683,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 243
+     "engagement": 243,
+     "sentiment": "neutral"
     },
     {
      "id": "11307",
@@ -661,7 +700,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 138
+     "engagement": 138,
+     "sentiment": "neutral"
     },
     {
      "id": "11306",
@@ -677,7 +717,8 @@
      "tags": [
       "positive"
      ],
-     "engagement": 968
+     "engagement": 968,
+     "sentiment": "positive"
     },
     {
      "id": "11305",
@@ -694,7 +735,8 @@
       "newbie",
       "guide"
      ],
-     "engagement": 136
+     "engagement": 136,
+     "sentiment": "neutral"
     },
     {
      "id": "11304",
@@ -710,7 +752,8 @@
      "tags": [
       "balance"
      ],
-     "engagement": 103
+     "engagement": 103,
+     "sentiment": "neutral"
     },
     {
      "id": "11303",
@@ -726,7 +769,8 @@
      "tags": [
       "positive"
      ],
-     "engagement": 158
+     "engagement": 158,
+     "sentiment": "positive"
     },
     {
      "id": "11302",
@@ -742,7 +786,8 @@
      "tags": [
       "balance"
      ],
-     "engagement": 509
+     "engagement": 509,
+     "sentiment": "neutral"
     },
     {
      "id": "11301",
@@ -758,7 +803,8 @@
      "tags": [
       "negative"
      ],
-     "engagement": 225
+     "engagement": 225,
+     "sentiment": "negative"
     },
     {
      "id": "11300",
@@ -774,7 +820,8 @@
      "tags": [
       "positive"
      ],
-     "engagement": 364
+     "engagement": 364,
+     "sentiment": "positive"
     },
     {
      "id": "11299",
@@ -790,7 +837,8 @@
      "tags": [
       "positive"
      ],
-     "engagement": 397
+     "engagement": 397,
+     "sentiment": "positive"
     },
     {
      "id": "11298",
@@ -806,7 +854,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 384
+     "engagement": 384,
+     "sentiment": "neutral"
     },
     {
      "id": "11297",
@@ -822,7 +871,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 424
+     "engagement": 424,
+     "sentiment": "neutral"
     },
     {
      "id": "11296",
@@ -838,7 +888,8 @@
      "tags": [
       "bug"
      ],
-     "engagement": 320
+     "engagement": 320,
+     "sentiment": "neutral"
     },
     {
      "id": "11295",
@@ -855,7 +906,8 @@
       "newbie",
       "guide"
      ],
-     "engagement": 77
+     "engagement": 77,
+     "sentiment": "neutral"
     },
     {
      "id": "11294",
@@ -871,7 +923,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 187
+     "engagement": 187,
+     "sentiment": "neutral"
     },
     {
      "id": "11293",
@@ -887,7 +940,8 @@
      "tags": [
       "newbie"
      ],
-     "engagement": 224
+     "engagement": 224,
+     "sentiment": "neutral"
     },
     {
      "id": "11292",
@@ -903,7 +957,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 361
+     "engagement": 361,
+     "sentiment": "neutral"
     },
     {
      "id": "11291",
@@ -920,7 +975,8 @@
       "guild",
       "newbie"
      ],
-     "engagement": 139
+     "engagement": 139,
+     "sentiment": "neutral"
     },
     {
      "id": "11290",
@@ -939,7 +995,8 @@
       "gacha",
       "guide"
      ],
-     "engagement": 367
+     "engagement": 367,
+     "sentiment": "positive"
     },
     {
      "id": "11289",
@@ -955,7 +1012,8 @@
      "tags": [
       "gacha"
      ],
-     "engagement": 271
+     "engagement": 271,
+     "sentiment": "neutral"
     },
     {
      "id": "11288",
@@ -972,7 +1030,8 @@
       "newbie",
       "guide"
      ],
-     "engagement": 119
+     "engagement": 119,
+     "sentiment": "neutral"
     },
     {
      "id": "11287",
@@ -988,7 +1047,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 174
+     "engagement": 174,
+     "sentiment": "neutral"
     },
     {
      "id": "11286",
@@ -1005,7 +1065,8 @@
       "newbie",
       "guild"
      ],
-     "engagement": 83
+     "engagement": 83,
+     "sentiment": "neutral"
     },
     {
      "id": "11285",
@@ -1022,7 +1083,8 @@
       "gacha",
       "guide"
      ],
-     "engagement": 255
+     "engagement": 255,
+     "sentiment": "neutral"
     },
     {
      "id": "11284",
@@ -1038,7 +1100,8 @@
      "tags": [
       "guild"
      ],
-     "engagement": 324
+     "engagement": 324,
+     "sentiment": "neutral"
     },
     {
      "id": "11283",
@@ -1054,7 +1117,8 @@
      "tags": [
       "balance"
      ],
-     "engagement": 60
+     "engagement": 60,
+     "sentiment": "neutral"
     },
     {
      "id": "11281",
@@ -1071,7 +1135,8 @@
       "gacha",
       "guide"
      ],
-     "engagement": 140
+     "engagement": 140,
+     "sentiment": "neutral"
     },
     {
      "id": "11280",
@@ -1087,7 +1152,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 258
+     "engagement": 258,
+     "sentiment": "neutral"
     },
     {
      "id": "11279",
@@ -1103,7 +1169,8 @@
      "tags": [
       "negative"
      ],
-     "engagement": 718
+     "engagement": 718,
+     "sentiment": "negative"
     },
     {
      "id": "11278",
@@ -1119,7 +1186,8 @@
      "tags": [
       "guild"
      ],
-     "engagement": 390
+     "engagement": 390,
+     "sentiment": "neutral"
     },
     {
      "id": "11277",
@@ -1135,7 +1203,8 @@
      "tags": [
       "positive"
      ],
-     "engagement": 231
+     "engagement": 231,
+     "sentiment": "positive"
     },
     {
      "id": "11276",
@@ -1151,7 +1220,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 232
+     "engagement": 232,
+     "sentiment": "neutral"
     },
     {
      "id": "11275",
@@ -1167,7 +1237,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 409
+     "engagement": 409,
+     "sentiment": "neutral"
     },
     {
      "id": "11274",
@@ -1183,7 +1254,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 187
+     "engagement": 187,
+     "sentiment": "neutral"
     },
     {
      "id": "11273",
@@ -1200,7 +1272,8 @@
       "balance",
       "guide"
      ],
-     "engagement": 516
+     "engagement": 516,
+     "sentiment": "neutral"
     },
     {
      "id": "11272",
@@ -1216,7 +1289,8 @@
      "tags": [
       "newbie"
      ],
-     "engagement": 142
+     "engagement": 142,
+     "sentiment": "neutral"
     },
     {
      "id": "11271",
@@ -1233,7 +1307,8 @@
       "newbie",
       "guild"
      ],
-     "engagement": 328
+     "engagement": 328,
+     "sentiment": "neutral"
     },
     {
      "id": "11270",
@@ -1249,7 +1324,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 354
+     "engagement": 354,
+     "sentiment": "neutral"
     },
     {
      "id": "11269",
@@ -1266,7 +1342,8 @@
       "gacha",
       "guide"
      ],
-     "engagement": 254
+     "engagement": 254,
+     "sentiment": "neutral"
     },
     {
      "id": "11268",
@@ -1283,7 +1360,8 @@
       "gacha",
       "guide"
      ],
-     "engagement": 151
+     "engagement": 151,
+     "sentiment": "neutral"
     },
     {
      "id": "11267",
@@ -1299,7 +1377,8 @@
      "tags": [
       "bug"
      ],
-     "engagement": 249
+     "engagement": 249,
+     "sentiment": "neutral"
     },
     {
      "id": "11266",
@@ -1318,7 +1397,8 @@
       "gacha",
       "guide"
      ],
-     "engagement": 298
+     "engagement": 298,
+     "sentiment": "positive"
     },
     {
      "id": "11265",
@@ -1334,7 +1414,8 @@
      "tags": [
       "gacha"
      ],
-     "engagement": 165
+     "engagement": 165,
+     "sentiment": "neutral"
     },
     {
      "id": "11264",
@@ -1351,7 +1432,8 @@
       "newbie",
       "guild"
      ],
-     "engagement": 84
+     "engagement": 84,
+     "sentiment": "neutral"
     },
     {
      "id": "11263",
@@ -1367,7 +1449,8 @@
      "tags": [
       "gacha"
      ],
-     "engagement": 110
+     "engagement": 110,
+     "sentiment": "neutral"
     },
     {
      "id": "11262",
@@ -1383,7 +1466,8 @@
      "tags": [
       "bug"
      ],
-     "engagement": 39
+     "engagement": 39,
+     "sentiment": "neutral"
     },
     {
      "id": "11261",
@@ -1400,7 +1484,8 @@
       "newbie",
       "guild"
      ],
-     "engagement": 89
+     "engagement": 89,
+     "sentiment": "neutral"
     },
     {
      "id": "11260",
@@ -1417,7 +1502,8 @@
       "positive",
       "gacha"
      ],
-     "engagement": 129
+     "engagement": 129,
+     "sentiment": "positive"
     },
     {
      "id": "11259",
@@ -1434,7 +1520,8 @@
       "negative",
       "guide"
      ],
-     "engagement": 169
+     "engagement": 169,
+     "sentiment": "negative"
     },
     {
      "id": "11258",
@@ -1450,7 +1537,8 @@
      "tags": [
       "balance"
      ],
-     "engagement": 169
+     "engagement": 169,
+     "sentiment": "neutral"
     },
     {
      "id": "11257",
@@ -1466,7 +1554,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 163
+     "engagement": 163,
+     "sentiment": "neutral"
     },
     {
      "id": "11256",
@@ -1482,7 +1571,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 196
+     "engagement": 196,
+     "sentiment": "neutral"
     },
     {
      "id": "11255",
@@ -1499,7 +1589,8 @@
       "guild",
       "gacha"
      ],
-     "engagement": 199
+     "engagement": 199,
+     "sentiment": "neutral"
     },
     {
      "id": "11254",
@@ -1515,7 +1606,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 92
+     "engagement": 92,
+     "sentiment": "neutral"
     },
     {
      "id": "11253",
@@ -1531,7 +1623,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 155
+     "engagement": 155,
+     "sentiment": "neutral"
     },
     {
      "id": "11252",
@@ -1547,7 +1640,8 @@
      "tags": [
       "newbie"
      ],
-     "engagement": 229
+     "engagement": 229,
+     "sentiment": "neutral"
     },
     {
      "id": "11251",
@@ -1563,7 +1657,8 @@
      "tags": [
       "newbie"
      ],
-     "engagement": 193
+     "engagement": 193,
+     "sentiment": "neutral"
     },
     {
      "id": "11250",
@@ -1579,7 +1674,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 900
+     "engagement": 900,
+     "sentiment": "neutral"
     },
     {
      "id": "11249",
@@ -1595,7 +1691,8 @@
      "tags": [
       "balance"
      ],
-     "engagement": 235
+     "engagement": 235,
+     "sentiment": "neutral"
     },
     {
      "id": "11248",
@@ -1612,7 +1709,8 @@
       "newbie",
       "guild"
      ],
-     "engagement": 107
+     "engagement": 107,
+     "sentiment": "neutral"
     },
     {
      "id": "11247",
@@ -1628,7 +1726,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 129
+     "engagement": 129,
+     "sentiment": "neutral"
     },
     {
      "id": "11246",
@@ -1644,7 +1743,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 246
+     "engagement": 246,
+     "sentiment": "neutral"
     },
     {
      "id": "11245",
@@ -1662,7 +1762,8 @@
       "balance",
       "guide"
      ],
-     "engagement": 272
+     "engagement": 272,
+     "sentiment": "neutral"
     },
     {
      "id": "11244",
@@ -1679,7 +1780,8 @@
       "newbie",
       "guild"
      ],
-     "engagement": 89
+     "engagement": 89,
+     "sentiment": "neutral"
     },
     {
      "id": "11243",
@@ -1696,7 +1798,8 @@
       "positive",
       "event"
      ],
-     "engagement": 133
+     "engagement": 133,
+     "sentiment": "positive"
     },
     {
      "id": "11242",
@@ -1712,7 +1815,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 177
+     "engagement": 177,
+     "sentiment": "neutral"
     },
     {
      "id": "11241",
@@ -1728,7 +1832,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 365
+     "engagement": 365,
+     "sentiment": "neutral"
     },
     {
      "id": "11240",
@@ -1746,7 +1851,8 @@
       "balance",
       "guide"
      ],
-     "engagement": 352
+     "engagement": 352,
+     "sentiment": "positive"
     },
     {
      "id": "11239",
@@ -1762,7 +1868,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 494
+     "engagement": 494,
+     "sentiment": "neutral"
     },
     {
      "id": "11238",
@@ -1778,7 +1885,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 159
+     "engagement": 159,
+     "sentiment": "neutral"
     },
     {
      "id": "11237",
@@ -1794,7 +1902,8 @@
      "tags": [
       "balance"
      ],
-     "engagement": 203
+     "engagement": 203,
+     "sentiment": "neutral"
     },
     {
      "id": "11236",
@@ -1810,7 +1919,8 @@
      "tags": [
       "newbie"
      ],
-     "engagement": 273
+     "engagement": 273,
+     "sentiment": "neutral"
     },
     {
      "id": "11234",
@@ -1826,7 +1936,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 215
+     "engagement": 215,
+     "sentiment": "neutral"
     },
     {
      "id": "11233",
@@ -1842,7 +1953,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 243
+     "engagement": 243,
+     "sentiment": "neutral"
     },
     {
      "id": "11232",
@@ -1859,7 +1971,8 @@
       "newbie",
       "guide"
      ],
-     "engagement": 201
+     "engagement": 201,
+     "sentiment": "neutral"
     },
     {
      "id": "11230",
@@ -1876,7 +1989,8 @@
       "newbie",
       "guide"
      ],
-     "engagement": 173
+     "engagement": 173,
+     "sentiment": "neutral"
     },
     {
      "id": "11229",
@@ -1893,7 +2007,8 @@
       "event",
       "balance"
      ],
-     "engagement": 175
+     "engagement": 175,
+     "sentiment": "neutral"
     },
     {
      "id": "11228",
@@ -1909,7 +2024,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 682
+     "engagement": 682,
+     "sentiment": "neutral"
     },
     {
      "id": "5243",
@@ -1925,7 +2041,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 116
+     "engagement": 116,
+     "sentiment": "neutral"
     },
     {
      "id": "5242",
@@ -1941,7 +2058,8 @@
      "tags": [
       "positive"
      ],
-     "engagement": 142
+     "engagement": 142,
+     "sentiment": "positive"
     }
    ],
    "sources": [
@@ -1968,7 +2086,7 @@
     "total_comments": 550,
     "total_likes": 79,
     "sentiment": "긍정",
-    "sentiment_score": 0.085
+    "sentiment_score": 0.0847
    },
    "topEngaging": [
     {
@@ -2158,75 +2276,234 @@
     "keywords": [
      {
       "word": "복귀",
-      "count": 8
+      "count": 15,
+      "ids": [
+       "11345",
+       "11339",
+       "11334",
+       "11331",
+       "11329",
+       "11326",
+       "11325",
+       "11321",
+       "11291",
+       "11286",
+       "11271",
+       "11264",
+       "11261",
+       "11248",
+       "11244"
+      ]
      },
      {
       "word": "복귀협력",
-      "count": 6
+      "count": 13,
+      "ids": [
+       "11345",
+       "11339",
+       "11334",
+       "11329",
+       "11326",
+       "11321",
+       "11291",
+       "11286",
+       "11271",
+       "11264",
+       "11261",
+       "11248",
+       "11244"
+      ]
      },
      {
       "word": "질문",
-      "count": 6
+      "count": 20,
+      "ids": [
+       "11332",
+       "11330",
+       "11328",
+       "11327",
+       "11320",
+       "11319",
+       "11317",
+       "11309",
+       "11305",
+       "11295",
+       "11288",
+       "11287",
+       "11280",
+       "11275",
+       "11270",
+       "11266",
+       "11257",
+       "11241",
+       "11233",
+       "11230"
+      ]
      },
      {
       "word": "기존",
-      "count": 5
+      "count": 5,
+      "ids": [
+       "11334",
+       "11329",
+       "11326",
+       "11321",
+       "11286"
+      ]
      },
      {
       "word": "낙인",
-      "count": 5
+      "count": 6,
+      "ids": [
+       "11336",
+       "11324",
+       "11320",
+       "11313",
+       "11285",
+       "11268"
+      ]
      },
      {
       "word": "뉴비",
-      "count": 4
+      "count": 13,
+      "ids": [
+       "11340",
+       "11332",
+       "11330",
+       "11325",
+       "11305",
+       "11286",
+       "11266",
+       "11264",
+       "11252",
+       "11251",
+       "11245",
+       "11236",
+       "11232"
+      ]
      },
      {
       "word": "뉴비인데",
-      "count": 4
+      "count": 4,
+      "ids": [
+       "11332",
+       "11305",
+       "11266",
+       "11232"
+      ]
      },
      {
       "word": "심연",
-      "count": 4
+      "count": 5,
+      "ids": [
+       "11304",
+       "11249",
+       "11245",
+       "11237",
+       "11229"
+      ]
      },
      {
       "word": "애깅이",
-      "count": 3
+      "count": 3,
+      "ids": [
+       "11337",
+       "11313",
+       "11280"
+      ]
      },
      {
       "word": "구함",
-      "count": 3
+      "count": 3,
+      "ids": [
+       "11326",
+       "11321",
+       "11291"
+      ]
      },
      {
       "word": "명함",
-      "count": 3
+      "count": 3,
+      "ids": [
+       "11311",
+       "11269",
+       "11268"
+      ]
      },
      {
       "word": "로즈",
-      "count": 3
+      "count": 6,
+      "ids": [
+       "11324",
+       "11290",
+       "11289",
+       "11268",
+       "11266",
+       "11239"
+      ]
      },
      {
       "word": "협력",
-      "count": 3
+      "count": 15,
+      "ids": [
+       "11345",
+       "11339",
+       "11334",
+       "11331",
+       "11329",
+       "11326",
+       "11321",
+       "11291",
+       "11286",
+       "11284",
+       "11271",
+       "11264",
+       "11261",
+       "11248",
+       "11244"
+      ]
      },
      {
       "word": "할배들",
-      "count": 2
+      "count": 2,
+      "ids": [
+       "11342",
+       "11319"
+      ]
      },
      {
       "word": "일차",
-      "count": 2
+      "count": 2,
+      "ids": [
+       "11337",
+       "11251"
+      ]
      },
      {
       "word": "육성",
-      "count": 2
+      "count": 2,
+      "ids": [
+       "11328",
+       "11319"
+      ]
      },
      {
       "word": "파트너",
-      "count": 2
+      "count": 3,
+      "ids": [
+       "11326",
+       "11291",
+       "11271"
+      ]
      },
      {
       "word": "화이트",
-      "count": 2
+      "count": 3,
+      "ids": [
+       "11324",
+       "11266",
+       "11239"
+      ]
      }
     ]
    }
@@ -2249,7 +2526,8 @@
       "gacha",
       "guide"
      ],
-     "engagement": 277
+     "engagement": 277,
+     "sentiment": "neutral"
     },
     {
      "id": "3391",
@@ -2265,7 +2543,8 @@
      "tags": [
       "event"
      ],
-     "engagement": 326
+     "engagement": 326,
+     "sentiment": "neutral"
     },
     {
      "id": "3390",
@@ -2281,7 +2560,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 113
+     "engagement": 113,
+     "sentiment": "neutral"
     },
     {
      "id": "3389",
@@ -2299,7 +2579,8 @@
       "gacha",
       "guide"
      ],
-     "engagement": 202
+     "engagement": 202,
+     "sentiment": "positive"
     },
     {
      "id": "3388",
@@ -2315,7 +2596,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 145
+     "engagement": 145,
+     "sentiment": "neutral"
     },
     {
      "id": "10982",
@@ -2331,7 +2613,8 @@
      "tags": [
       "guild"
      ],
-     "engagement": 380
+     "engagement": 380,
+     "sentiment": "neutral"
     },
     {
      "id": "11019",
@@ -2347,7 +2630,8 @@
      "tags": [
       "gacha"
      ],
-     "engagement": 446
+     "engagement": 446,
+     "sentiment": "neutral"
     },
     {
      "id": "11018",
@@ -2363,7 +2647,8 @@
      "tags": [
       "balance"
      ],
-     "engagement": 145
+     "engagement": 145,
+     "sentiment": "neutral"
     },
     {
      "id": "11017",
@@ -2379,7 +2664,8 @@
      "tags": [
       "positive"
      ],
-     "engagement": 182
+     "engagement": 182,
+     "sentiment": "positive"
     },
     {
      "id": "11016",
@@ -2395,7 +2681,8 @@
      "tags": [
       "balance"
      ],
-     "engagement": 154
+     "engagement": 154,
+     "sentiment": "neutral"
     },
     {
      "id": "11015",
@@ -2411,7 +2698,8 @@
      "tags": [
       "positive"
      ],
-     "engagement": 215
+     "engagement": 215,
+     "sentiment": "positive"
     },
     {
      "id": "11014",
@@ -2427,7 +2715,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 76
+     "engagement": 76,
+     "sentiment": "neutral"
     },
     {
      "id": "11013",
@@ -2444,7 +2733,8 @@
       "positive",
       "newbie"
      ],
-     "engagement": 157
+     "engagement": 157,
+     "sentiment": "positive"
     },
     {
      "id": "11012",
@@ -2460,7 +2750,8 @@
      "tags": [
       "positive"
      ],
-     "engagement": 417
+     "engagement": 417,
+     "sentiment": "positive"
     },
     {
      "id": "11011",
@@ -2477,7 +2768,8 @@
       "newbie",
       "guide"
      ],
-     "engagement": 234
+     "engagement": 234,
+     "sentiment": "neutral"
     },
     {
      "id": "11010",
@@ -2494,7 +2786,8 @@
       "positive",
       "guide"
      ],
-     "engagement": 354
+     "engagement": 354,
+     "sentiment": "positive"
     },
     {
      "id": "11009",
@@ -2510,7 +2803,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 75
+     "engagement": 75,
+     "sentiment": "neutral"
     },
     {
      "id": "11008",
@@ -2526,7 +2820,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 66
+     "engagement": 66,
+     "sentiment": "neutral"
     },
     {
      "id": "11007",
@@ -2542,7 +2837,8 @@
      "tags": [
       "positive"
      ],
-     "engagement": 122
+     "engagement": 122,
+     "sentiment": "positive"
     },
     {
      "id": "11006",
@@ -2558,7 +2854,8 @@
      "tags": [
       "balance"
      ],
-     "engagement": 57
+     "engagement": 57,
+     "sentiment": "neutral"
     },
     {
      "id": "11005",
@@ -2574,7 +2871,8 @@
      "tags": [
       "guide"
      ],
-     "engagement": 360
+     "engagement": 360,
+     "sentiment": "neutral"
     },
     {
      "id": "11004",
@@ -2590,7 +2888,8 @@
      "tags": [
       "negative"
      ],
-     "engagement": 224
+     "engagement": 224,
+     "sentiment": "negative"
     },
     {
      "id": "11003",
@@ -2606,7 +2905,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 238
+     "engagement": 238,
+     "sentiment": "neutral"
     },
     {
      "id": "11002",
@@ -2622,7 +2922,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 113
+     "engagement": 113,
+     "sentiment": "neutral"
     },
     {
      "id": "11001",
@@ -2638,7 +2939,8 @@
      "tags": [
       "balance"
      ],
-     "engagement": 308
+     "engagement": 308,
+     "sentiment": "neutral"
     },
     {
      "id": "11000",
@@ -2654,7 +2956,8 @@
      "tags": [
       "positive"
      ],
-     "engagement": 691
+     "engagement": 691,
+     "sentiment": "positive"
     },
     {
      "id": "10999",
@@ -2671,7 +2974,8 @@
       "negative",
       "balance"
      ],
-     "engagement": 326
+     "engagement": 326,
+     "sentiment": "negative"
     },
     {
      "id": "10998",
@@ -2687,7 +2991,8 @@
      "tags": [
       "gacha"
      ],
-     "engagement": 168
+     "engagement": 168,
+     "sentiment": "neutral"
     },
     {
      "id": "10997",
@@ -2705,7 +3010,8 @@
       "event",
       "guide"
      ],
-     "engagement": 158
+     "engagement": 158,
+     "sentiment": "neutral"
     },
     {
      "id": "10996",
@@ -2721,7 +3027,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 181
+     "engagement": 181,
+     "sentiment": "neutral"
     },
     {
      "id": "10995",
@@ -2737,7 +3044,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 465
+     "engagement": 465,
+     "sentiment": "neutral"
     },
     {
      "id": "10994",
@@ -2753,7 +3061,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 358
+     "engagement": 358,
+     "sentiment": "neutral"
     },
     {
      "id": "10993",
@@ -2769,7 +3078,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 223
+     "engagement": 223,
+     "sentiment": "neutral"
     },
     {
      "id": "10992",
@@ -2785,7 +3095,8 @@
      "tags": [
       "negative"
      ],
-     "engagement": 236
+     "engagement": 236,
+     "sentiment": "negative"
     },
     {
      "id": "10991",
@@ -2801,7 +3112,8 @@
      "tags": [
       "event"
      ],
-     "engagement": 351
+     "engagement": 351,
+     "sentiment": "neutral"
     },
     {
      "id": "10990",
@@ -2818,7 +3130,8 @@
       "negative",
       "guide"
      ],
-     "engagement": 215
+     "engagement": 215,
+     "sentiment": "negative"
     },
     {
      "id": "10989",
@@ -2834,7 +3147,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 325
+     "engagement": 325,
+     "sentiment": "neutral"
     },
     {
      "id": "10988",
@@ -2850,7 +3164,8 @@
      "tags": [
       "gacha"
      ],
-     "engagement": 157
+     "engagement": 157,
+     "sentiment": "neutral"
     },
     {
      "id": "10987",
@@ -2867,7 +3182,8 @@
       "positive",
       "guide"
      ],
-     "engagement": 340
+     "engagement": 340,
+     "sentiment": "positive"
     },
     {
      "id": "10986",
@@ -2884,7 +3200,8 @@
       "balance",
       "guide"
      ],
-     "engagement": 207
+     "engagement": 207,
+     "sentiment": "neutral"
     },
     {
      "id": "10985",
@@ -2901,7 +3218,8 @@
       "positive",
       "balance"
      ],
-     "engagement": 286
+     "engagement": 286,
+     "sentiment": "positive"
     },
     {
      "id": "10984",
@@ -2917,7 +3235,8 @@
      "tags": [
       "gacha"
      ],
-     "engagement": 204
+     "engagement": 204,
+     "sentiment": "neutral"
     },
     {
      "id": "10983",
@@ -2933,7 +3252,8 @@
      "tags": [
       "gacha"
      ],
-     "engagement": 293
+     "engagement": 293,
+     "sentiment": "neutral"
     },
     {
      "id": "10981",
@@ -2949,7 +3269,8 @@
      "tags": [
       "chitchat"
      ],
-     "engagement": 217
+     "engagement": 217,
+     "sentiment": "neutral"
     },
     {
      "id": "10980",
@@ -2965,7 +3286,8 @@
      "tags": [
       "bug"
      ],
-     "engagement": 43
+     "engagement": 43,
+     "sentiment": "neutral"
     }
    ],
    "sources": [
@@ -2992,7 +3314,7 @@
     "total_comments": 189,
     "total_likes": 41,
     "sentiment": "긍정",
-    "sentiment_score": 0.133
+    "sentiment_score": 0.1333
    },
    "topEngaging": [
     {
@@ -3170,32 +3492,59 @@
     "keywords": [
      {
       "word": "월보",
-      "count": 4
+      "count": 4,
+      "ids": [
+       "11006",
+       "11001",
+       "10999",
+       "10985"
+      ]
      },
      {
       "word": "레티",
-      "count": 3
+      "count": 3,
+      "ids": [
+       "3389",
+       "11019",
+       "11015"
+      ]
      },
      {
       "word": "굿즈",
-      "count": 2
+      "count": 2,
+      "ids": [
+       "11012",
+       "11000"
+      ]
      },
      {
       "word": "추천좀",
-      "count": 2
+      "count": 2,
+      "ids": [
+       "11010",
+       "11007"
+      ]
      },
      {
       "word": "아니",
-      "count": 2
+      "count": 3,
+      "ids": [
+       "11002",
+       "10985",
+       "10980"
+      ]
      },
      {
       "word": "껏다켜야하",
-      "count": 2
+      "count": 1,
+      "ids": [
+       "10981"
+      ]
      }
     ]
    }
   }
  },
- "lastUpdated": "2026-06-09T10:14:21.502095+00:00",
+ "lastUpdated": "2026-06-09T10:18:34.707717+00:00",
  "trendsFile": "trends.json"
 }
