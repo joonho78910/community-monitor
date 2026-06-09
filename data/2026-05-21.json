@@ -2027,13 +2027,15 @@
       "title": "이번 길드레이드 보스 정보",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11524",
       "summary": "참여도 379 (조회 119, 댓글 1, 추천 8)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "중섭 위키의 길드레이드 공략을 GPT로 정리해 공유한 공략글."
      },
      {
       "title": "28주차 한정까지 내 가챠 계획 어떰?",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11510",
       "summary": "참여도 355 (조회 115, 댓글 12, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "자금이 부족해 일부 캐릭은 명함만, 레네시아·가디언 중 3각 하나만 하겠다는 등 28주차까지의 가챠 계획을 정리한 글."
      },
      {
       "title": "갤길 [에르피스갤러리]  길드원 모집 마지막 1명",
@@ -2158,7 +2160,7 @@
    }
   }
  },
- "lastUpdated": "2026-06-09T09:39:47.527646+00:00",
+ "lastUpdated": "2026-06-09T10:14:21.502095+00:00",
  "searchTrends": {
   "startDate": "2025-11-19",
   "endDate": "2026-05-21",
