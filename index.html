@@ -210,7 +210,8 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 .mbadge b{font-size:14px;font-weight:700;color:var(--text);font-variant-numeric:tabular-nums;letter-spacing:-0.01em;}
 .mbadge.pos b{color:var(--positive);}.mbadge.neg b{color:var(--negative);}.mbadge.neu b{color:var(--neutral);}
 .mbadge .ml{font-size:11px;color:var(--text-3);text-transform:uppercase;letter-spacing:0.04em;font-weight:600;}
-.summary-narr{background:linear-gradient(135deg,#f8fafc 0%,#f1f5f9 100%);border-left:3px solid var(--accent);padding:16px 18px;border-radius:6px;color:var(--text);font-size:14.5px;line-height:1.8;margin-bottom:14px;letter-spacing:-0.01em;}
+.summary-narr{background:var(--accent-bg);border:1px solid var(--border);border-left:5px solid var(--accent);padding:18px 22px;border-radius:10px;color:var(--text);font-size:16px;line-height:1.95;margin-bottom:14px;letter-spacing:-0.01em;box-shadow:var(--shadow);position:relative;}
+.summary-narr::before{content:"한눈에 보기";position:absolute;top:-9px;left:16px;background:var(--accent);color:#fff;font-size:10.5px;font-weight:700;letter-spacing:0.04em;padding:2px 9px;border-radius:9px;}
 .summary-narr strong{font-weight:700;color:var(--accent);}
 /* v0.5: issue body summary */
 .issue-summary{font-size:12.5px;color:var(--text-2);line-height:1.6;margin-top:2px;background:#f8fafc;border-radius:6px;padding:8px 11px;border-left:2px solid var(--border-strong);}
@@ -307,6 +308,28 @@ let rangeMode=false, rangeStart=null, rangeEnd=null, viewData=null, rangePick=[]
 function activeView(){return (rangeMode&&viewData)?viewData:curData;}
 function engOf(p){return (p.engagement!=null)?p.engagement:((p.views||0)+(p.comments||0)*20+(p.likes||0)*30);}
 function toneFromSent(s){return s==='positive'?'긍정':s==='negative'?'부정':'중립';}
+// v0.5.1: build a readable 1~2 sentence trend narrative from aggregated data (HTML, with <strong>)
+function richNarrative(game,label,nDays){
+  const s=game.stats||{}, a=game.analysis||{};
+  const real=s.real_posts||0, rd=real||1;
+  const negR=Math.round((s.negative||0)/rd*100), posR=Math.round((s.positive||0)/rd*100);
+  let mood;
+  const sc=s.sentiment_score||0;
+  if(sc<=-0.12) mood='부정적 분위기가 뚜렷';
+  else if(sc<=-0.05) mood='부정 정서가 다소 우세';
+  else if(sc>=0.12) mood='긍정적 반응이 뚜렷';
+  else if(sc>=0.05) mood='긍정 정서가 다소 우세';
+  else mood='대체로 중립적인 분위기';
+  const tops=(a.keywords||[]).slice(0,3).map(k=>esc(String(k.word||''))).filter(Boolean).join(', ');
+  const ti=(a.topIssues||[])[0];
+  const vol=nDays?(nDays+'일간 총 <strong>'+fmtNum(real)+'건</strong>(일평균 '+(Math.round(real/nDays*10)/10)+'건)의 글이 올라왔고'):('게시물 <strong>'+fmtNum(real)+'건</strong> 중');
+  let txt=label+' '+game.name+' 동향: '+vol+' <strong>'+mood+'</strong>했다(긍정 '+(s.positive||0)+'·부정 '+(s.negative||0)+'건, 부정률 '+negR+'%).';
+  if(tops) txt+=' 주요 화제는 '+tops+' 등이었으며,';
+  if(ti) txt+=' 가장 주목받은 글은 <strong>"'+esc(ti.title)+'"</strong>였다.';
+  else if(tops) txt+=' 두드러진 단일 이슈는 없었다.';
+  if((s.bugs||0)>0) txt+=' 버그·오류 제보가 '+s.bugs+'건 함께 관찰됐다.';
+  return txt;
+}
 // Aggregate multiple days (inclusive) that have data into one day-shaped object
 async function buildRangeView(){
   if(!rangeStart||!rangeEnd){viewData=null;return;}
@@ -361,12 +384,9 @@ async function buildRangeView(){
     days.forEach(dd=>{const g=dd.games&&dd.games[gk];if(g)(g.analysis&&g.analysis.bugReports||[]).forEach(b=>{const t=typeof b==='string'?b:b.title;const u=typeof b==='string'?'#':(b.url||'#');if(!seenB[u+t]){seenB[u+t]=1;bugReports.push({title:t,url:u});}});});
     const competitorMentions=[];const seenC={};
     days.forEach(dd=>{const g=dd.games&&dd.games[gk];if(g)(g.analysis&&g.analysis.competitorMentions||[]).forEach(cm=>{const k=cm.context;if(!seenC[k]){seenC[k]=1;competitorMentions.push(cm);}});});
-    const nDays=days.length;
-    const top3=keywords.slice(0,3).map(k=>k.word.replace(/\(.*\)/,'')).join(', ');
-    const narr=nameRef.games[gk].name+' '+lo+'~'+hi+' ('+nDays+'일) 누적 동향: 총 '+real.length+'건(일평균 '+(Math.round(real.length/nDays*10)/10)+'건), '+
-      '전반 정서 '+stats.sentiment+'(긍정 '+pos+'·부정 '+neg+', score '+score.toFixed(2)+'). 주요 토픽: '+(top3||'-')+'.';
+    // dailySummary left empty for range; render() builds a rich narrative via richNarrative()
     games[gk]={name:nameRef.games[gk].name,date:lo+'~'+hi,posts,stats,topEngaging,
-      analysis:{dailySummary:narr,topIssues,bugReports,competitorMentions,trends:[],watchlist:[],keywords}};
+      analysis:{dailySummary:'',topIssues,bugReports,competitorMentions,trends:[],watchlist:[],keywords}};
   });
   viewData={date:lo+'~'+hi,games,searchTrends:null,lastUpdated:days[days.length-1].lastUpdated,_range:{start:lo,end:hi,nDays:days.length}};
 }
@@ -773,7 +793,9 @@ function render(){
     '<span class="mbadge"><span class="ml">버그</span><b>'+(s.bugs||0)+'</b></span>'+
     '<span class="mbadge"><span class="ml">소스</span><b>아카 '+arcN+' / DC '+dcN+'</b></span>'+
     '</div>';
-  const narrTxt=(a.dailySummary||'').replace(/\s*sentiment 재분류[\s\S]*$/,'').replace(/\s*아카라이브[\s\S]*$/,'').trim()||'요약 없음';
+  const _storedClean=(a.dailySummary||'').replace(/\s*sentiment 재분류[\s\S]*$/,'').replace(/\s*아카라이브[\s\S]*$/,'').trim();
+  // Use hand-written narrative only if it's substantial (single-day, e.g. auto-build days); otherwise synthesize from data.
+  const narrHtml=(!rangeMode && _storedClean.length>=60)?esc(_storedClean):richNarrative(game, VD.date, (rangeMode&&VD._range)?VD._range.nDays:null);
   const summaryTitle=rangeMode?'기간 동향 요약':'일일 동향 요약';
   // v0.5 feature4: 하단 게시물용 토픽 칩
   const topicChips=(a.keywords||[]).slice(0,14).map(k=>{
@@ -783,7 +805,7 @@ function render(){
     return '<button class="'+cls+'" data-kw="'+esc(w)+'"'+idsAttr+'>#'+esc(w)+'<span class="cnt">'+(k.count||0)+'</span></button>';
   }).join('');
   c.innerHTML=statusHtml+'<div class="cards"><div class="card"><div class="label">게시물</div><div class="value">'+fmtNum(s.real_posts)+d1+'</div><div class="sub">공지 '+(s.notices||0)+'개 제외 '+dvs+'</div></div><div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+d2+'</div><div class="sub">긍정 '+s.positive+' · 부정 '+s.negative+' '+dvs+'</div></div><div class="card"><div class="label">총 조회수</div><div class="value">'+fmtK(s.total_views)+d3+'</div><div class="sub">평균 '+Math.round(s.total_views/Math.max(s.real_posts,1))+' / 글 '+dvs+'</div></div><div class="card"><div class="label">버그 의심</div><div class="value '+(s.bugs>0?'s-neg':'')+'">'+s.bugs+d4+'</div><div class="sub">자동 키워드 검출 '+dvs+'</div></div></div>'+
-    '<div class="section"><h2>'+summaryTitle+'</h2>'+metricBadges+'<div class="summary-narr">'+esc(narrTxt)+'</div><div class="keywords">'+kw+'</div><div class="section-note">상단 지표는 정량 요약 · 해시태그(#) 클릭 시 하단 전체 게시물에서 해당 토픽 글만 필터됩니다</div></div>'+
+    '<div class="section"><h2>'+summaryTitle+'</h2>'+metricBadges+'<div class="summary-narr">'+narrHtml+'</div><div class="keywords">'+kw+'</div><div class="section-note">상단 지표는 정량 요약 · 해시태그(#) 클릭 시 하단 전체 게시물에서 해당 토픽 글만 필터됩니다</div></div>'+
     ((activeView().searchTrends||trendsData)?'<div class="row"><div class="section"><h2>검색 트렌드 <span class="count" id="trend-range">30일</span></h2><div style="position:relative;height:280px;"><canvas id="trendChart"></canvas></div><div class="section-note">출처: 네이버 데이터랩 (실선, 일별) + 구글 트렌드 (점선, 일별) · 각 출처별 max=100 정규화</div></div><div class="section"><h2>검색량 스냅샷</h2><div class="trend-insight" id="trend-insight"></div></div></div>':'')+
     '<div class="row"><div class="section"><h2>핵심 이슈 <span class="count">'+(a.topIssues||[]).length+'</span></h2><ul class="issue-list">'+iss+'</ul><div class="section-note">순위는 조회 + 댓글 + 추천 가중 합산 기준</div></div><div class="section"><h2>주제별 분포</h2><div class="dist-bars">'+distBars+'</div><div class="section-note">중복 분류 가능 (한 글이 여러 카테고리 포함 가능)</div></div></div>'+
     '<div class="row"><div class="section"><h2>트렌드</h2><ul class="t-list">'+tr+'</ul></div><div class="section"><h2>계속 추적</h2><ul class="w-list">'+wt+'</ul></div></div>'+
