@@ -488,7 +488,7 @@ function renderCalendar(){
   daysL.innerHTML=buildMonthGrid(leftY,leftM,sel,today);
   daysR.innerHTML=buildMonthGrid(rightY,rightM,sel,today);
   popup.querySelectorAll('.cal-day-cell.has-data').forEach(el=>{
-    el.onclick=()=>{const d=el.dataset.d;if(!d)return;if(rangeMode){selectRangeDay(d);}else if(d!==sel){closePopup();loadDate(d);}};
+    el.onclick=(e)=>{if(e)e.stopPropagation();const d=el.dataset.d;if(!d)return;if(rangeMode){selectRangeDay(d);}else if(d!==sel){closePopup();loadDate(d);}};
   });
   document.getElementById('cal-month-prev').onclick=async()=>{
     let m=calViewMonth.month0-1,y=calViewMonth.year;
