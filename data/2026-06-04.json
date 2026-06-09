@@ -1283,13 +1283,15 @@
       "title": "흠 금초로 뭐사지",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12240",
       "summary": "참여도 160 (조회 90, 댓글 14, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "금색 초대장으로 무엇을 살지 고민하는 짧은 글."
      },
      {
       "title": "♥♥",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12217",
       "summary": "참여도 145 (조회 110, 댓글 7, 추천 0)",
-      "tone": "긍정"
+      "tone": "긍정",
+      "bodySummary": "하트(♥♥)만 남긴 짧은 감상/이미지 글."
      }
     ],
     "bugReports": [],
@@ -3482,5 +3484,5 @@
    }
   ]
  },
- "lastUpdated": "2026-06-09T09:39:47.527646+00:00"
+ "lastUpdated": "2026-06-09T10:14:21.502095+00:00"
 }
