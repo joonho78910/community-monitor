@@ -3134,7 +3134,8 @@
       "title": "굿즈 도착",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11012&page=5",
       "summary": "참여도 417 (조회 117, 댓글 9, 추천 4)",
-      "tone": "긍정"
+      "tone": "긍정",
+      "bodySummary": "주문한 굿즈가 도착했다는 인증 이미지 글."
      },
      {
       "title": "갤길 [비상] 5명 구인",
@@ -3195,6 +3196,6 @@
    }
   }
  },
- "lastUpdated": "2026-06-09T09:39:47.527646+00:00",
+ "lastUpdated": "2026-06-09T10:14:21.502095+00:00",
  "trendsFile": "trends.json"
 }
