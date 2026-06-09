@@ -456,31 +456,36 @@
       "title": "양자덱 티파니 (= 명중, 파괴, 양자셋 딜량 실험)",
       "url": "https://arca.live/b/anchorpanic/172996291",
       "summary": "참여도 719 (조회 179, 댓글 24, 추천 2)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "모듈 명중셋이 최고라는 실험 결론 공략. 댓글은 근성 90% 상황에서의 파괴셋 효과·성원작 차이를 토론."
      },
      {
       "title": "제피린 뽑을지말지 고민인데,",
       "url": "https://arca.live/b/anchorpanic/172998333",
       "summary": "참여도 563 (조회 163, 댓글 17, 추천 2)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "속도 버려 PVE계가 된 유저가 PVP특화 제피린을 뽑을지 고민(그래도 뽑을 예정). 댓글은 제피린 PVE 활용·나엘라를 토론."
      },
      {
       "title": "티파니 4명중 소신발언",
       "url": "https://arca.live/b/anchorpanic/173021121",
       "summary": "참여도 462 (조회 172, 댓글 10, 추천 3)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "티파니 치확/궁이 기도메타라 뉴비에겐 비효율이라는 소신 공략. 댓글은 과거 티아-티파니 딜차를 회상."
      },
      {
       "title": "레전드 상황 발생",
       "url": "https://arca.live/b/anchorpanic/173059628",
       "summary": "참여도 435 (조회 145, 댓글 10, 추천 3)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "속도덱에서 카디악 넣어 선턴 따도 후속타로 지는 PVP 푸념(신캐 비판). 댓글은 동속 방어 유리·필요 구성을 토론."
      },
      {
       "title": "아카챈 3명 모집",
       "url": "https://arca.live/b/anchorpanic/173006478",
       "summary": "참여도 304 (조회 134, 댓글 4, 추천 3)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "연맹 규칙·신규 모집 조건 공고. 댓글은 연맹 필수냐 질문·가입 관심."
      }
     ],
     "bugReports": [],
@@ -1223,7 +1228,8 @@
       "title": "비상",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12335",
       "summary": "참여도 564 (조회 104, 댓글 23, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "페이백 때 90일 가득 긁어둔 탐험계약이 6일 남아 6500만으로 연장해야겠다는 재화 근황."
      },
      {
       "title": "근데 플레어는 얼마나 세길래 역속에서 그냥 튀어나가지",
@@ -1235,7 +1241,8 @@
       "title": "중섭 신규 티어표",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12344",
       "summary": "참여도 386 (조회 196, 댓글 8, 추천 1)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "티어 변동 소식 — 구신 2.5, 리온 0티어 등극, 프레이야 떡락."
      },
      {
       "title": "뉴비 미스터리 투어 하기 넘 힘들어서 이거만들었다.",
@@ -1247,7 +1254,8 @@
       "title": "니키타 배지 뭐 쓰냐",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12354",
       "summary": "참여도 321 (조회 81, 댓글 12, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "추천대로 불패 배지에 방어 옵션을 달면 되는지 묻는 세팅 질문."
      }
     ],
     "bugReports": [],
@@ -3487,5 +3495,5 @@
    }
   ]
  },
- "lastUpdated": "2026-06-08T00:32:26.090583+00:00"
+ "lastUpdated": "2026-06-09T09:39:47.527646+00:00"
 }
