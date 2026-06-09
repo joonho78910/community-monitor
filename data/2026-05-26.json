@@ -1555,31 +1555,36 @@
       "title": "우당탕탕 1주년 리뷰",
       "url": "https://arca.live/b/anchorpanic/171801304",
       "summary": "참여도 1125 (조회 275, 댓글 29, 추천 9)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "1주년 마지막 날 소회와 운영 광고 호평 잡담. 댓글은 화로 풀돌 가성비를 상담."
      },
      {
       "title": "지정링크 vs 존버 ?",
       "url": "https://arca.live/b/anchorpanic/171819970",
       "summary": "참여도 635 (조회 155, 댓글 24, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "무과금 유저가 번개덱 지정링크 vs 존버를 상의. 댓글은 한정까지 재화 잠그기를 권유."
      },
      {
       "title": "1주년 유입 뉴비 이젠 개고수됨",
       "url": "https://arca.live/b/anchorpanic/171795773",
       "summary": "참여도 571 (조회 191, 댓글 7, 추천 8)",
-      "tone": "긍정"
+      "tone": "긍정",
+      "bodySummary": "1주년 홍보 보고 깡계로 25만원 질러버린 과금 고백/자조. 댓글은 '할배 대열 합류'라며 환영."
      },
      {
       "title": "이 허접들아ㅋㅋ 낼부턴 나도 할뷰12지다 ㅉㅉ",
       "url": "https://arca.live/b/anchorpanic/171786731",
       "summary": "참여도 534 (조회 124, 댓글 19, 추천 1)",
-      "tone": "긍정"
+      "tone": "긍정",
+      "bodySummary": "1주년 유입 마지막 날, 내일부터 들어올 뉴비는 화로 없이 맨땅이라는 잡담. 댓글은 상대적 박탈감·유입 절벽을 우려."
      },
      {
       "title": "1주년 유입 뉴비 비틱 달린다",
       "url": "https://arca.live/b/anchorpanic/171797461",
       "summary": "참여도 511 (조회 111, 댓글 11, 추천 6)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "생일 겸 1주년 마지막 원기옥(가챠) 자랑. 댓글은 SSR 많이 먹었다며 낙인을 토론."
      }
     ],
     "bugReports": [],
@@ -3174,25 +3179,29 @@
       "title": "뉴비 근황",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11789",
       "summary": "참여도 563 (조회 193, 댓글 5, 추천 9)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "18일차 뉴비의 정착 근황 — 배지 파밍에 빠지고 길레도 처음 도전, 식물 키우듯 천천히 하는 게 재밌다는 호의적 후기."
      },
      {
       "title": "길레 끝",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11787",
       "summary": "참여도 492 (조회 152, 댓글 17, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "3억클럽에 도달했는데 보스가 갑자기 단단해져 놀랐다는 토벌 후기."
      },
      {
       "title": "요새 이클 손이 잘 안가네",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11832",
       "summary": "참여도 472 (조회 152, 댓글 16, 추천 0)",
-      "tone": "부정"
+      "tone": "부정",
+      "bodySummary": "캐릭을 1파티에 넣긴 아깝고 2·3파티는 사수가 약해 배치를 고민하는 글."
      },
      {
       "title": "이번 길레는 공훈딸 열심히 함",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11806",
       "summary": "참여도 458 (조회 118, 댓글 14, 추천 2)",
-      "tone": "긍정"
+      "tone": "긍정",
+      "bodySummary": "레이드를 5번 많이 쳤다는 짧은 근황."
      }
     ],
     "bugReports": [
@@ -3801,5 +3810,5 @@
    }
   ]
  },
- "lastUpdated": "2026-05-27T00:52:21.861970Z"
+ "lastUpdated": "2026-06-09T09:39:47.527646+00:00"
 }
