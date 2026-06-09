@@ -1630,19 +1630,22 @@
       "title": "뉴비 지금 유입가능?",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12097",
       "summary": "참여도 212 (조회 162, 댓글 10, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "신규 유입이 지금 가능한지, 리세가 필수인지, 일퀘는 있는지를 묻는 뉴비 질문."
      },
      {
       "title": "목보스도 앰창이란 얘기 들은거같은데",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12102",
       "summary": "참여도 173 (조회 118, 댓글 11, 추천 0)",
-      "tone": "부정"
+      "tone": "부정",
+      "bodySummary": "목속성 보스는 120렙이 풀리고 나온다는 얘기에 그나마 다행이라면서도, 2천만 골드를 언제 모으냐고 부담을 토로한 글."
      },
      {
       "title": "미암 근데 존나 뒤지게 쎈데",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12105",
       "summary": "참여도 164 (조회 139, 댓글 5, 추천 0)",
-      "tone": "긍정"
+      "tone": "긍정",
+      "bodySummary": "미암이 너무 세다며 다른 캐릭에서 별을 떼서라도 미암에게 주고 싶다는 성능 감탄."
      }
     ],
     "bugReports": [],
@@ -3839,5 +3842,5 @@
    }
   ]
  },
- "lastUpdated": "2026-06-09T09:39:47.527646+00:00"
+ "lastUpdated": "2026-06-09T10:14:21.502095+00:00"
 }
