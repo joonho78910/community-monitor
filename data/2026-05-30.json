@@ -943,31 +943,36 @@
       "title": "양자 번개 서순 모듈",
       "url": "https://arca.live/b/anchorpanic/172212965",
       "summary": "참여도 585 (조회 385, 댓글 18, 추천 11)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "양자·번개덱 모듈/낙인 세팅 종합 가이드. 댓글은 오스카린 전낙·어알 명함 시 프로즈 운용을 질문."
      },
      {
       "title": "[ 결 론 ] 화로즈 전낙 vs 미지",
       "url": "https://arca.live/b/anchorpanic/172249542",
       "summary": "참여도 382 (조회 287, 댓글 13, 추천 3)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "화로즈 전낙 vs 미지와의연결 딜 수치를 상황별로 비교한 정밀 공략. 댓글은 전낙 1돌이 미지 명함으로 대체됐다 토론."
      },
      {
       "title": "화이트로즈 낙인 비교(전낙vs미지와의연결)",
       "url": "https://arca.live/b/anchorpanic/172199781",
       "summary": "참여도 284 (조회 214, 댓글 10, 추천 2)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "미지와의연결 vs 화로즈 전낙 낙인 비교 — PVP는 전낙, PVE는 미지가 낫다는 결론. 댓글은 전낙 몰빵(능부코)을 후회."
      },
      {
       "title": "ㅅㅂ 13층 뚫었다",
       "url": "https://arca.live/b/anchorpanic/172204963",
       "summary": "참여도 254 (조회 149, 댓글 19, 추천 1)",
-      "tone": "긍정"
+      "tone": "긍정",
+      "bodySummary": "심연 고점 자랑글. 댓글은 파티별 딜·'심연 폭파범' 농담."
      },
      {
       "title": "화로즈 전낙 풀돌 -완-",
       "url": "https://arca.live/b/anchorpanic/172261010",
       "summary": "참여도 224 (조회 169, 댓글 9, 추천 1)",
-      "tone": "긍정"
+      "tone": "긍정",
+      "bodySummary": "짧은 만족 잡담. 댓글은 회복량증가 옵션은 똥옵이라 토론."
      }
     ],
     "bugReports": [
@@ -1289,7 +1294,8 @@
       "title": "에챈 호감고닉 리스트",
       "url": "https://arca.live/b/erphis/172199324",
       "summary": "참여도 130 (조회 80, 댓글 10, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "짧은 한 단어 글('너')(본문 거의 없음)."
      },
      {
       "title": "뉴비정보) 40렙 소재채집 딸깍 / 일퀘 리롤",
@@ -1301,19 +1307,22 @@
       "title": "갠레 보스 또 지랄인가보네",
       "url": "https://arca.live/b/erphis/172224602",
       "summary": "참여도 114 (조회 84, 댓글 6, 추천 0)",
-      "tone": "부정"
+      "tone": "부정",
+      "bodySummary": "'안 쳐서 모름' 식 잡담. 댓글은 '내 딜러들이 순살치킨' 자조."
      },
      {
       "title": "유독 이 보스가 좆같은게 얘 나올때 챈망했음",
       "url": "https://arca.live/b/erphis/172264498",
       "summary": "참여도 98 (조회 78, 댓글 4, 추천 0)",
-      "tone": "부정"
+      "tone": "부정",
+      "bodySummary": "길레·강적·개인레이드 난이도가 동시에 올라 '챈 망함'이라는 푸념(본문 짧음)."
      },
      {
       "title": "앰창보스 치고있으니 걍 겜 정 존나 떨어지네",
       "url": "https://arca.live/b/erphis/172256241",
       "summary": "참여도 85 (조회 65, 댓글 2, 추천 1)",
-      "tone": "부정"
+      "tone": "부정",
+      "bodySummary": "2차 내실(보상)을 늘리거나 난이도를 낮추라는 요구. 댓글은 뒷라인이 녹아 답 없다 공감."
      }
     ],
     "bugReports": [],
@@ -3013,5 +3022,5 @@
    }
   ]
  },
- "lastUpdated": "2026-06-01T07:30:00+09:00"
+ "lastUpdated": "2026-06-09T09:39:47.527646+00:00"
 }
