@@ -196,6 +196,34 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 .delta-good{background:#dcfce7;color:#166534;}
 .delta-bad{background:#fee2e2;color:#991b1b;}
 .delta-flat{background:#f1f5f9;color:#64748b;}
+/* v0.5: range mode toggle */
+.view-toggle{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+.view-toggle button{background:var(--surface);border:0;padding:7px 13px;font-family:inherit;font-size:12.5px;font-weight:600;color:var(--text-2);cursor:pointer;transition:all 0.12s;}
+.view-toggle button+button{border-left:1px solid var(--border);}
+.view-toggle button.active{background:var(--accent);color:#fff;}
+.cal-day-cell.in-range{background:var(--accent-bg);color:var(--accent);border-radius:0;}
+.cal-day-cell.range-end{background:#475569 !important;color:#fff !important;font-weight:700;}
+.range-hint{font-size:11.5px;color:var(--text-3);font-weight:500;}
+/* v0.5: metric badge strip (정량 지표 분리) */
+.metric-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;}
+.mbadge{display:inline-flex;align-items:baseline;gap:6px;padding:7px 13px;border-radius:8px;background:#f8fafc;border:1px solid var(--border);font-size:12.5px;font-weight:500;color:var(--text-2);}
+.mbadge b{font-size:14px;font-weight:700;color:var(--text);font-variant-numeric:tabular-nums;letter-spacing:-0.01em;}
+.mbadge.pos b{color:var(--positive);}.mbadge.neg b{color:var(--negative);}.mbadge.neu b{color:var(--neutral);}
+.mbadge .ml{font-size:11px;color:var(--text-3);text-transform:uppercase;letter-spacing:0.04em;font-weight:600;}
+.summary-narr{background:linear-gradient(135deg,#f8fafc 0%,#f1f5f9 100%);border-left:3px solid var(--accent);padding:16px 18px;border-radius:6px;color:var(--text);font-size:14.5px;line-height:1.8;margin-bottom:14px;letter-spacing:-0.01em;}
+.summary-narr strong{font-weight:700;color:var(--accent);}
+/* v0.5: issue body summary */
+.issue-summary{font-size:12.5px;color:var(--text-2);line-height:1.6;margin-top:2px;background:#f8fafc;border-radius:6px;padding:8px 11px;border-left:2px solid var(--border-strong);}
+.issue-summary .qm{color:var(--text-3);font-weight:700;margin-right:4px;}
+/* v0.5: bottom topic chips */
+.topic-filter-bar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:12px;padding-bottom:12px;border-bottom:1px dashed var(--border);}
+.topic-filter-bar .filter-lbl{margin-right:2px;}
+.tchip{background:#f1f5f9;color:var(--text-2);border:1px solid transparent;border-radius:14px;padding:4px 11px;font-size:12px;font-weight:600;cursor:pointer;transition:all 0.12s;font-family:inherit;}
+.tchip:hover{background:var(--accent-bg);color:var(--accent);border-color:var(--accent);}
+.tchip.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.tchip.kw-neg{background:#fee2e2;color:#991b1b;}
+.tchip.kw-pos{background:#d1fae5;color:#065f46;}
+.tchip .cnt{opacity:0.6;font-weight:500;margin-left:4px;font-size:0.85em;}
 
 @media(max-width:980px){.cards{grid-template-columns:repeat(2,1fr);}.row{grid-template-columns:1fr;}}
 </style></head>
@@ -213,11 +241,15 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 </div>
 <div class="cal-wrap" id="cal-wrap">
   <span class="cal-icon">📅</span>
-  <span style="font-size:11px;color:var(--text-2);text-transform:uppercase;font-weight:700;letter-spacing:0.08em;">일자 선택</span>
+  <span class="view-toggle" id="view-toggle">
+    <button type="button" data-mode="single" class="active">일자</button>
+    <button type="button" data-mode="range">기간</button>
+  </span>
   <button class="cal-trigger" id="cal-trigger" type="button">
     <span id="cal-current">-</span>
     <span class="caret">▼</span>
   </button>
+  <span class="range-hint" id="range-hint"></span>
   <span class="cal-status" id="cal-status"></span>
   <div class="cal-nav">
     <button class="cal-btn" id="cal-prev" title="이전 데이터">‹ 이전</button>
@@ -270,6 +302,74 @@ let curData=null,prevData=null,actGame='',actSearch='',trendChart=null;
 let allDates=[];
 const dateCache={};
 let suppressHash=false;
+// v0.5: range mode
+let rangeMode=false, rangeStart=null, rangeEnd=null, viewData=null, rangePick=[];
+function activeView(){return (rangeMode&&viewData)?viewData:curData;}
+function engOf(p){return (p.engagement!=null)?p.engagement:((p.views||0)+(p.comments||0)*20+(p.likes||0)*30);}
+function toneFromSent(s){return s==='positive'?'긍정':s==='negative'?'부정':'중립';}
+// Aggregate multiple days (inclusive) that have data into one day-shaped object
+async function buildRangeView(){
+  if(!rangeStart||!rangeEnd){viewData=null;return;}
+  let lo=rangeStart,hi=rangeEnd; if(lo>hi){const t=lo;lo=hi;hi=t;}
+  const inRange=allDates.filter(d=>d>=lo&&d<=hi).sort(); // ascending
+  // ensure loaded
+  const need=inRange.filter(d=>!dateCache[d]);
+  if(need.length)await Promise.all(need.map(d=>fetch('data/'+d+'.json?ts='+Date.now()).then(r=>r.json()).then(j=>{dateCache[d]=j;}).catch(()=>{})));
+  const days=inRange.map(d=>dateCache[d]).filter(Boolean);
+  if(!days.length){viewData=null;return;}
+  const gameKeys=[];days.forEach(dd=>Object.keys(dd.games||{}).forEach(k=>{if(!gameKeys.includes(k))gameKeys.push(k);}));
+  const games={};
+  gameKeys.forEach(gk=>{
+    const nameRef=days.find(dd=>dd.games&&dd.games[gk]);
+    let posts=[];
+    days.forEach(dd=>{const g=dd.games&&dd.games[gk];if(g)posts=posts.concat((g.posts||[]));});
+    // dedupe by id
+    const seen={};posts=posts.filter(p=>{const k=String(p.id);if(seen[k])return false;seen[k]=1;return true;});
+    const real=posts.filter(p=>!(p.tags||[]).includes('notice'));
+    const pos=real.filter(p=>p.sentiment==='positive').length;
+    const neg=real.filter(p=>p.sentiment==='negative').length;
+    const cnt=t=>real.filter(p=>(p.tags||[]).includes(t)).length;
+    const rp=real.length||1;
+    const score=Math.round((pos-neg)/rp*1e4)/1e4;
+    const stats={total:posts.length,real_posts:real.length,notices:posts.length-real.length,
+      bugs:cnt('bug'),negative:neg,positive:pos,competitor_mentions:cnt('competitor'),
+      newbie_returning:cnt('newbie'),guild_recruit:cnt('guild'),gacha:cnt('gacha'),event:cnt('event'),
+      balance:cnt('balance'),guide:cnt('guide'),chitchat:cnt('chitchat'),
+      total_views:real.reduce((a,p)=>a+(p.views||0),0),total_comments:real.reduce((a,p)=>a+(p.comments||0),0),
+      total_likes:real.reduce((a,p)=>a+(p.likes||0),0),
+      sentiment:score>0.05?'긍정':(score<-0.05?'부정':'중립'),sentiment_score:score};
+    // topEngaging across range
+    const teArr=[...real].sort((a,b)=>engOf(b)-engOf(a)).slice(0,10);
+    const topEngaging=teArr.map(p=>({id:p.id,title:p.title,url:p.url,source:p.source,views:p.views,comments:p.comments,likes:p.likes,engagement:engOf(p),category:p.category||''}));
+    // topIssues = top 5 by engagement (carry bodySummary if present)
+    const issById={};days.forEach(dd=>{const g=dd.games&&dd.games[gk];if(g)(g.analysis&&g.analysis.topIssues||[]).forEach(it=>{if(it.url)issById[it.url]=it;});});
+    const topIssues=teArr.slice(0,5).map(p=>{
+      const ref=issById[p.url]||{};
+      return {title:p.title,url:p.url,summary:'참여도 '+engOf(p)+' (조회 '+(p.views||0)+', 댓글 '+(p.comments||0)+', 추천 '+(p.likes||0)+')',
+        tone:ref.tone||toneFromSent(p.sentiment),bodySummary:ref.bodySummary||''};
+    });
+    // keywords: merge by word across days, sum count, concat ids
+    const kwMap={};
+    days.forEach(dd=>{const g=dd.games&&dd.games[gk];if(g)(g.analysis&&g.analysis.keywords||[]).forEach(k=>{
+      const w=k.word;if(!kwMap[w])kwMap[w]={word:w,count:0,ids:[]};
+      (k.ids||[]).forEach(id=>{if(!kwMap[w].ids.includes(String(id)))kwMap[w].ids.push(String(id));});
+      kwMap[w].count=kwMap[w].ids.length||((kwMap[w].count||0)+(k.count||0));
+    });});
+    const keywords=Object.values(kwMap).sort((a,b)=>b.count-a.count).slice(0,16);
+    // bug/competitor merge
+    const bugReports=[];const seenB={};
+    days.forEach(dd=>{const g=dd.games&&dd.games[gk];if(g)(g.analysis&&g.analysis.bugReports||[]).forEach(b=>{const t=typeof b==='string'?b:b.title;const u=typeof b==='string'?'#':(b.url||'#');if(!seenB[u+t]){seenB[u+t]=1;bugReports.push({title:t,url:u});}});});
+    const competitorMentions=[];const seenC={};
+    days.forEach(dd=>{const g=dd.games&&dd.games[gk];if(g)(g.analysis&&g.analysis.competitorMentions||[]).forEach(cm=>{const k=cm.context;if(!seenC[k]){seenC[k]=1;competitorMentions.push(cm);}});});
+    const nDays=days.length;
+    const top3=keywords.slice(0,3).map(k=>k.word.replace(/\(.*\)/,'')).join(', ');
+    const narr=nameRef.games[gk].name+' '+lo+'~'+hi+' ('+nDays+'일) 누적 동향: 총 '+real.length+'건(일평균 '+(Math.round(real.length/nDays*10)/10)+'건), '+
+      '전반 정서 '+stats.sentiment+'(긍정 '+pos+'·부정 '+neg+', score '+score.toFixed(2)+'). 주요 토픽: '+(top3||'-')+'.';
+    games[gk]={name:nameRef.games[gk].name,date:lo+'~'+hi,posts,stats,topEngaging,
+      analysis:{dailySummary:narr,topIssues,bugReports,competitorMentions,trends:[],watchlist:[],keywords}};
+  });
+  viewData={date:lo+'~'+hi,games,searchTrends:null,lastUpdated:days[days.length-1].lastUpdated,_range:{start:lo,end:hi,nDays:days.length}};
+}
 const fS={source:"all",tag:"all",search:"",idFilter:null,idFilterLabel:""};
 const sS={field:"utcIso",dir:"desc"};
 
@@ -291,7 +391,7 @@ function parseHash(){
   return {date:p.get('date'),game:p.get('game'),src:p.get('src')||'all',tag:p.get('tag')||'all',q:p.get('q')||'',sort:p.get('sort')||'utcIso',dir:p.get('dir')||'desc'};
 }
 function updateHash(){
-  if(!curData||suppressHash)return;
+  if(!curData||suppressHash||rangeMode)return;
   const p=new URLSearchParams();
   p.set('date',curData.date);
   if(actGame)p.set('game',actGame);
@@ -338,7 +438,10 @@ function buildMonthGrid(year,month0,sel,today){
     const cls=['cal-day-cell'];
     if(has)cls.push('has-data');
     if(isSpike)cls.push('spike');
-    if(isSel)cls.push('selected');
+    if(rangeMode){
+      if(rangeStart&&rangeEnd){const lo=rangeStart<rangeEnd?rangeStart:rangeEnd,hi=rangeStart<rangeEnd?rangeEnd:rangeStart;if(c.iso>lo&&c.iso<hi)cls.push('in-range');if(c.iso===lo||c.iso===hi)cls.push('range-end');}
+      else if(rangeStart&&c.iso===rangeStart)cls.push('range-end');
+    } else if(isSel)cls.push('selected');
     if(isToday)cls.push('today');
     return '<div class="'+cls.join(' ')+'" data-d="'+c.iso+'">'+c.day+'</div>';
   }).join('');
@@ -365,7 +468,7 @@ function renderCalendar(){
   daysL.innerHTML=buildMonthGrid(leftY,leftM,sel,today);
   daysR.innerHTML=buildMonthGrid(rightY,rightM,sel,today);
   popup.querySelectorAll('.cal-day-cell.has-data').forEach(el=>{
-    el.onclick=()=>{const d=el.dataset.d;if(d&&d!==sel){closePopup();loadDate(d);}};
+    el.onclick=()=>{const d=el.dataset.d;if(!d)return;if(rangeMode){selectRangeDay(d);}else if(d!==sel){closePopup();loadDate(d);}};
   });
   document.getElementById('cal-month-prev').onclick=async()=>{
     let m=calViewMonth.month0-1,y=calViewMonth.year;
@@ -383,7 +486,15 @@ function renderCalendar(){
     calViewMonth={year:y,month0:m};renderCalendar();
     await fetchVisibleMonths();renderCalendar();
   };
-  if(curData){
+  const rangeHintEl=document.getElementById('range-hint');
+  if(rangeMode){
+    const triggerLabel=document.getElementById('cal-current');
+    if(rangeStart&&rangeEnd){const lo=rangeStart<rangeEnd?rangeStart:rangeEnd,hi=rangeStart<rangeEnd?rangeEnd:rangeStart;const n=allDates.filter(d=>d>=lo&&d<=hi).length;triggerLabel.innerHTML=esc(lo)+' ~ '+esc(hi);if(rangeHintEl)rangeHintEl.textContent='데이터 '+n+'일 집계';}
+    else if(rangeStart){triggerLabel.innerHTML=esc(rangeStart)+' ~ ?';if(rangeHintEl)rangeHintEl.textContent='종료일을 선택하세요';}
+    else{triggerLabel.innerHTML='기간 선택';if(rangeHintEl)rangeHintEl.textContent='시작일을 선택하세요';}
+    document.getElementById('cal-prev').disabled=true;document.getElementById('cal-next').disabled=true;
+  } else if(curData){
+    if(rangeHintEl)rangeHintEl.textContent='';
     const triggerLabel=document.getElementById('cal-current');
     triggerLabel.innerHTML=esc(curData.date)+' <span class="sub">'+relLabel(curData.date)+'</span>';
     const idx=allDates.indexOf(curData.date);
@@ -399,6 +510,28 @@ function renderCalendar(){
 }
 function openPopup(){const p=document.getElementById('cal-popup');const t=document.getElementById('cal-trigger');p.classList.add('open');t.classList.add('open');}
 function closePopup(){const p=document.getElementById('cal-popup');const t=document.getElementById('cal-trigger');p.classList.remove('open');t.classList.remove('open');}
+async function selectRangeDay(d){
+  if(!rangeStart||(rangeStart&&rangeEnd)){rangeStart=d;rangeEnd=null;viewData=null;renderCalendar();return;}
+  rangeEnd=d;let lo=rangeStart,hi=rangeEnd;if(lo>hi){const t=lo;lo=hi;hi=t;}rangeStart=lo;rangeEnd=hi;
+  closePopup();
+  document.getElementById('game-content').innerHTML='<div class="loading">기간 집계 중...</div>';
+  await buildRangeView();renderCalendar();render();updateHash();
+}
+function setRangeMode(on){
+  if(rangeMode===on)return;
+  rangeMode=on;
+  document.querySelectorAll('#view-toggle button').forEach(b=>b.classList.toggle('active',(b.dataset.mode==='range')===on));
+  if(on){
+    const end=(curData&&curData.date)||allDates[0];
+    const endIdx=allDates.indexOf(end);
+    const slice=allDates.slice(endIdx<0?0:endIdx,(endIdx<0?0:endIdx)+7).filter(Boolean);
+    rangeEnd=end;rangeStart=slice[slice.length-1]||end;
+    document.getElementById('game-content').innerHTML='<div class="loading">기간 집계 중...</div>';
+    buildRangeView().then(()=>{renderCalendar();render();updateHash();});
+  } else {
+    viewData=null;rangeStart=null;rangeEnd=null;renderCalendar();render();updateHash();
+  }
+}
 async function fetchVisibleMonths(){
   if(!calViewMonth)return;
   const y1=calViewMonth.year,m1=calViewMonth.month0;
@@ -428,6 +561,7 @@ async function loadIdx(){
   document.getElementById('cal-next').onclick=()=>{const idx=allDates.indexOf(curData&&curData.date);if(idx>0)loadDate(allDates[idx-1]);};
   document.getElementById('cal-latest').onclick=()=>{if(allDates[0]&&allDates[0]!==(curData&&curData.date))loadDate(allDates[0]);};
   document.getElementById('cal-trigger').onclick=togglePopup;
+  document.querySelectorAll('#view-toggle button').forEach(b=>{b.onclick=()=>{setRangeMode(b.dataset.mode==='range');if(b.dataset.mode==='range')togglePopup();};});
     // Lazy load: only fetch dates on demand. Calendar shows has-data from index.json directly.
   const hash=parseHash();
   if(hash.game)actGame=hash.game;
@@ -573,7 +707,9 @@ function compute7DayAvg(curDate){
   return {bugs:avgBugs,negRatio:avgNegRatio};
 }
 function render(){
-  const game=curData.games[actGame];
+  const VD=activeView();
+  if(!VD||!VD.games[actGame]){const ks=VD&&Object.keys(VD.games||{});if(ks&&ks.length)actGame=ks[0];else return;}
+  const game=VD.games[actGame];
   const s=game.stats,a=game.analysis||{};
   const app=document.getElementById('app');
   app.classList.remove('game-anchorpanic','game-erpis');
@@ -597,7 +733,7 @@ function render(){
     const idsAttr=k.ids&&k.ids.length?' data-ids="'+esc(k.ids.join(','))+'"':'';
     return '<span class="'+cls+'" data-kw="'+esc(w)+'"'+idsAttr+' style="font-size:'+size+'px;">#'+esc(w)+'<span class="cnt">'+c+'</span></span>';
   }).join('');
-  const iss=(a.topIssues||[]).map((it,i)=>{const m=(it.summary||'').match(/조회\s*(\d+),\s*댓글\s*(\d+),\s*추천\s*(-?\d+)/);const v=m?+m[1]:(it.views||0);const c=m?+m[2]:(it.comments||0);const l=m?+m[3]:(it.likes||0);return '<li class="issue-item"><a href="'+esc(it.url||'#')+'" target="_blank" rel="noopener"><div class="issue-title"><span class="rank">'+(i+1)+'.</span>'+esc(it.title)+'<span class="tone-badge tone-'+toneShort(it.tone)+'">'+esc(it.tone)+'</span></div><div class="issue-stats"><span><span class="lbl">조회</span>'+fmtNum(v)+'</span><span><span class="lbl">댓글</span>'+c+'</span><span><span class="lbl">추천</span>'+l+'</span></div></a></li>';}).join('');
+  const iss=(a.topIssues||[]).map((it,i)=>{const m=(it.summary||'').match(/조회\s*(\d+),\s*댓글\s*(\d+),\s*추천\s*(-?\d+)/);const v=m?+m[1]:(it.views||0);const c=m?+m[2]:(it.comments||0);const l=m?+m[3]:(it.likes||0);const bs=it.bodySummary?'<div class="issue-summary"><span class="qm">‟</span>'+esc(it.bodySummary)+'</div>':'';return '<li class="issue-item"><a href="'+esc(it.url||'#')+'" target="_blank" rel="noopener"><div class="issue-title"><span class="rank">'+(i+1)+'.</span>'+esc(it.title)+'<span class="tone-badge tone-'+toneShort(it.tone)+'">'+esc(it.tone)+'</span></div><div class="issue-stats"><span><span class="lbl">조회</span>'+fmtNum(v)+'</span><span><span class="lbl">댓글</span>'+c+'</span><span><span class="lbl">추천</span>'+l+'</span></div></a>'+bs+'</li>';}).join('');
   const groupCounts=CATS.map(c=>({...c,count:countGroup(real,c.tags),pct:Math.round(countGroup(real,c.tags)/RP*100)}));
   const tr=groupCounts.filter(g=>g.count>0).sort((a,b)=>b.count-a.count).map(g=>'<li class="t-item"><span class="marker" style="color:'+g.color+';">●</span><span class="body">'+g.label+' '+g.count+'건</span><span class="pct">'+g.pct+'%</span></li>').join('');
   const wt=(a.watchlist||[]).map(w=>'<li class="w-item"><span class="marker" style="color:var(--accent);">●</span><span class="body">'+esc(w)+'</span></li>').join('');
@@ -606,15 +742,15 @@ function render(){
   const tp=(game.topEngaging||[]).map((p,i)=>'<tr><td class="muted small" style="text-align:right;">'+(i+1)+'</td><td><span class="src-'+p.source+'">'+p.source.toUpperCase()+'</span></td><td class="title-cell"><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.title)+'</a></td><td class="small muted">'+esc(p.category||'-')+'</td><td style="text-align:right;">'+fmtNum(p.views)+'</td><td style="text-align:right;">'+p.comments+'</td><td style="text-align:right;">'+p.likes+'</td></tr>').join('');
   const distBars=groupCounts.map(g=>{const pct=g.pct;const w=Math.max(pct,1);return '<div class="dist-row"><div class="dist-label"><span class="dist-dot" style="background:'+g.color+';"></span>'+g.label+'</div><div class="dist-bar"><div class="dist-fill" style="width:'+w+'%;background:'+g.color+';"></div></div><div class="dist-pct">'+pct+'%</div></div>';}).join('');
   
-  const pg=prevData&&prevData.games&&prevData.games[actGame];
-  const ps=pg&&pg.stats||null;
+  const pg=(!rangeMode&&prevData&&prevData.games)?prevData.games[actGame]:null;
+  const ps=(pg&&pg.stats)||null;
   const dvs=ps?'<span class="muted small" style="margin-left:4px;">vs 전일</span>':'';
   const d1=ps?deltaHtml(s.real_posts,ps.real_posts):'';
   const d2=ps?deltaHtml(s.sentiment_score,ps.sentiment_score,{dp:2}):'';
   const d3=ps?deltaHtml(s.total_views,ps.total_views,{pct:true}):'';
   const d4=ps?deltaHtml(s.bugs,ps.bugs,{upIsBad:true}):'';
-  const stat=computeStatus(game, compute7DayAvg(curData.date));
-  const dateLabel=curData.date;
+  const stat=computeStatus(game, compute7DayAvg(rangeMode?rangeEnd:curData.date));
+  const dateLabel=VD.date;
   const formulaTip='컨디션 점수 (v2, 0-10):&#10;기본 7 + 감정×2.5 − 버그×0.4&#10;− max(0, 부정률−12%)×12 + max(0, 긍정률−5%)×5&#10;− 7일 평균 대비 이상 변동 보정&#10;&#10;7.0↑ 정상 · 5.5-7.0 평범 · 3.5-5.5 주의 · 3.5↓ 경고&#10;(게임 커뮤니티 부정률 10-15%는 평범 수준)';
   const gaugePct=Math.round(parseFloat(stat.score)*10);
   const factorChips=stat.factors.map(f=>'<span class="status-factor'+(f.kind?' '+f.kind:'')+'">'+esc(f.label)+'</span>').join('');
@@ -624,14 +760,36 @@ function render(){
     '<div class="status-right"><div class="status-score">'+stat.score+'<span class="denom">/10</span></div><div class="status-msg">'+esc(stat.msg)+'</div></div>'+
     '<button class="status-info" title="'+formulaTip+'">ⓘ</button>'+
     '</div>';
+  // v0.5 feature2: 정량 지표 배지 (줄글에서 분리)
+  const neuCnt=Math.max(0,(s.real_posts||0)-(s.positive||0)-(s.negative||0));
+  const arcN=real.filter(p=>p.source==='arca').length, dcN=real.filter(p=>p.source==='dc').length;
+  const scoreStr=((s.sentiment_score||0)>=0?'+':'')+(s.sentiment_score||0).toFixed(2);
+  const metricBadges='<div class="metric-badges">'+
+    '<span class="mbadge"><span class="ml">게시물</span><b>'+fmtNum(s.real_posts)+'</b></span>'+
+    '<span class="mbadge pos"><span class="ml">긍정</span><b>'+(s.positive||0)+'</b></span>'+
+    '<span class="mbadge neg"><span class="ml">부정</span><b>'+(s.negative||0)+'</b></span>'+
+    '<span class="mbadge neu"><span class="ml">중립</span><b>'+neuCnt+'</b></span>'+
+    '<span class="mbadge"><span class="ml">감정점수</span><b>'+scoreStr+'</b></span>'+
+    '<span class="mbadge"><span class="ml">버그</span><b>'+(s.bugs||0)+'</b></span>'+
+    '<span class="mbadge"><span class="ml">소스</span><b>아카 '+arcN+' / DC '+dcN+'</b></span>'+
+    '</div>';
+  const narrTxt=(a.dailySummary||'').replace(/\s*sentiment 재분류[\s\S]*$/,'').replace(/\s*아카라이브[\s\S]*$/,'').trim()||'요약 없음';
+  const summaryTitle=rangeMode?'기간 동향 요약':'일일 동향 요약';
+  // v0.5 feature4: 하단 게시물용 토픽 칩
+  const topicChips=(a.keywords||[]).slice(0,14).map(k=>{
+    const w=String(k.word||'');let cls='tchip';
+    if(w.includes('불만')||w.includes('부정'))cls+=' kw-neg';else if(w.includes('긍정')||w.includes('회복')||w.includes('호평'))cls+=' kw-pos';
+    const idsAttr=k.ids&&k.ids.length?' data-ids="'+esc(k.ids.join(','))+'"':'';
+    return '<button class="'+cls+'" data-kw="'+esc(w)+'"'+idsAttr+'>#'+esc(w)+'<span class="cnt">'+(k.count||0)+'</span></button>';
+  }).join('');
   c.innerHTML=statusHtml+'<div class="cards"><div class="card"><div class="label">게시물</div><div class="value">'+fmtNum(s.real_posts)+d1+'</div><div class="sub">공지 '+(s.notices||0)+'개 제외 '+dvs+'</div></div><div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+d2+'</div><div class="sub">긍정 '+s.positive+' · 부정 '+s.negative+' '+dvs+'</div></div><div class="card"><div class="label">총 조회수</div><div class="value">'+fmtK(s.total_views)+d3+'</div><div class="sub">평균 '+Math.round(s.total_views/Math.max(s.real_posts,1))+' / 글 '+dvs+'</div></div><div class="card"><div class="label">버그 의심</div><div class="value '+(s.bugs>0?'s-neg':'')+'">'+s.bugs+d4+'</div><div class="sub">자동 키워드 검출 '+dvs+'</div></div></div>'+
-    '<div class="section"><h2>일일 동향 요약</h2><div class="summary-box">'+esc(a.dailySummary||'')+'</div><div class="keywords">'+kw+'</div><div class="section-note">키워드 클릭 시 해당 단어로 전체 게시물에서 자동 검색됩니다</div></div>'+
-    ((curData.searchTrends||trendsData)?'<div class="row"><div class="section"><h2>검색 트렌드 <span class="count" id="trend-range">30일</span></h2><div style="position:relative;height:280px;"><canvas id="trendChart"></canvas></div><div class="section-note">출처: 네이버 데이터랩 (실선, 일별) + 구글 트렌드 (점선, 일별) · 각 출처별 max=100 정규화</div></div><div class="section"><h2>검색량 스냅샷</h2><div class="trend-insight" id="trend-insight"></div></div></div>':'')+
+    '<div class="section"><h2>'+summaryTitle+'</h2>'+metricBadges+'<div class="summary-narr">'+esc(narrTxt)+'</div><div class="keywords">'+kw+'</div><div class="section-note">상단 지표는 정량 요약 · 해시태그(#) 클릭 시 하단 전체 게시물에서 해당 토픽 글만 필터됩니다</div></div>'+
+    ((activeView().searchTrends||trendsData)?'<div class="row"><div class="section"><h2>검색 트렌드 <span class="count" id="trend-range">30일</span></h2><div style="position:relative;height:280px;"><canvas id="trendChart"></canvas></div><div class="section-note">출처: 네이버 데이터랩 (실선, 일별) + 구글 트렌드 (점선, 일별) · 각 출처별 max=100 정규화</div></div><div class="section"><h2>검색량 스냅샷</h2><div class="trend-insight" id="trend-insight"></div></div></div>':'')+
     '<div class="row"><div class="section"><h2>핵심 이슈 <span class="count">'+(a.topIssues||[]).length+'</span></h2><ul class="issue-list">'+iss+'</ul><div class="section-note">순위는 조회 + 댓글 + 추천 가중 합산 기준</div></div><div class="section"><h2>주제별 분포</h2><div class="dist-bars">'+distBars+'</div><div class="section-note">중복 분류 가능 (한 글이 여러 카테고리 포함 가능)</div></div></div>'+
     '<div class="row"><div class="section"><h2>트렌드</h2><ul class="t-list">'+tr+'</ul></div><div class="section"><h2>계속 추적</h2><ul class="w-list">'+wt+'</ul></div></div>'+
     '<div class="row"><div class="section"><h2>버그/오류 제보 <span class="count">'+(a.bugReports||[]).length+'</span></h2><ul class="bug-list">'+bg+'</ul></div><div class="section"><h2>경쟁작 언급 <span class="count">'+(a.competitorMentions||[]).length+'</span></h2><ul class="c-list">'+cp+'</ul></div></div>'+
     '<div class="section"><h2>참여도 TOP 10</h2><table class="post-table"><thead><tr><th style="width:36px;text-align:right;">#</th><th style="width:60px;">소스</th><th>제목</th><th style="width:90px;">카테고리</th><th style="width:70px;text-align:right;">조회</th><th style="width:60px;text-align:right;">댓글</th><th style="width:60px;text-align:right;">추천</th></tr></thead><tbody>'+tp+'</tbody></table><div class="section-note">순위는 조회 + 댓글 + 추천 가중 합산 기준</div></div>'+
-    '<div class="section" id="all-posts-section"><h2>전체 게시물 <span class="count">'+game.posts.length+'</span></h2><div class="filters"><div class="filter-grp"><span class="filter-lbl">소스</span><button class="filter-btn" data-type="source" data-val="all">전체</button><button class="filter-btn" data-type="source" data-val="arca">아카</button><button class="filter-btn" data-type="source" data-val="dc">DC</button></div><div class="filter-grp"><span class="filter-lbl">태그</span><button class="filter-btn" data-type="tag" data-val="all">전체</button><button class="filter-btn" data-type="tag" data-val="bug">버그</button><button class="filter-btn" data-type="tag" data-val="negative">부정</button><button class="filter-btn" data-type="tag" data-val="positive">긍정</button><button class="filter-btn" data-type="tag" data-val="newbie">뉴비</button><button class="filter-btn" data-type="tag" data-val="guild">길드</button><button class="filter-btn" data-type="tag" data-val="gacha">가챠</button><button class="filter-btn" data-type="tag" data-val="guide">공략</button><button class="filter-btn" data-type="tag" data-val="balance">밸런스</button></div><div class="filter-grp" style="margin-left:auto;border:0;padding:0;"><input type="text" id="search" class="search-input" placeholder="제목 검색..."></div></div><div class="posts-wrap"><table class="post-table" id="all-posts-table"><thead><tr><th style="width:50px;">소스</th><th>제목</th><th style="width:130px;">태그</th><th class="sortable" data-sort="utcIso" style="width:100px;">시각</th><th class="sortable" data-sort="views" style="width:70px;text-align:right;">조회</th><th class="sortable" data-sort="comments" style="width:60px;text-align:right;">댓글</th><th class="sortable" data-sort="likes" style="width:60px;text-align:right;">추천</th></tr></thead><tbody id="all-posts-body"></tbody></table></div></div>';
+    '<div class="section" id="all-posts-section"><h2>전체 게시물 <span class="count">'+game.posts.length+'</span></h2>'+(topicChips?'<div class="topic-filter-bar"><span class="filter-lbl">토픽</span>'+topicChips+'</div>':'')+'<div class="filters"><div class="filter-grp"><span class="filter-lbl">소스</span><button class="filter-btn" data-type="source" data-val="all">전체</button><button class="filter-btn" data-type="source" data-val="arca">아카</button><button class="filter-btn" data-type="source" data-val="dc">DC</button></div><div class="filter-grp"><span class="filter-lbl">태그</span><button class="filter-btn" data-type="tag" data-val="all">전체</button><button class="filter-btn" data-type="tag" data-val="bug">버그</button><button class="filter-btn" data-type="tag" data-val="negative">부정</button><button class="filter-btn" data-type="tag" data-val="positive">긍정</button><button class="filter-btn" data-type="tag" data-val="newbie">뉴비</button><button class="filter-btn" data-type="tag" data-val="guild">길드</button><button class="filter-btn" data-type="tag" data-val="gacha">가챠</button><button class="filter-btn" data-type="tag" data-val="guide">공략</button><button class="filter-btn" data-type="tag" data-val="balance">밸런스</button></div><div class="filter-grp" style="margin-left:auto;border:0;padding:0;"><input type="text" id="search" class="search-input" placeholder="제목 검색..."></div></div><div class="posts-wrap"><table class="post-table" id="all-posts-table"><thead><tr><th style="width:50px;">소스</th><th>제목</th><th style="width:130px;">태그</th><th class="sortable" data-sort="utcIso" style="width:100px;">시각</th><th class="sortable" data-sort="views" style="width:70px;text-align:right;">조회</th><th class="sortable" data-sort="comments" style="width:60px;text-align:right;">댓글</th><th class="sortable" data-sort="likes" style="width:60px;text-align:right;">추천</th></tr></thead><tbody id="all-posts-body"></tbody></table></div></div>';
   
   document.querySelectorAll('.filter-btn').forEach(b=>{
     if(b.dataset.val===fS[b.dataset.type])b.classList.add('active');
@@ -652,34 +810,36 @@ function render(){
       renderList();updateHash();
     };
   });
+  function applyTopicFilter(w,idsRaw,opts){
+    opts=opts||{};
+    const ids=idsRaw?idsRaw.split(','):[];
+    // toggle off if same topic already active (used by bottom chips)
+    if(opts.toggle&&fS.idFilterLabel===w&&fS.idFilter){
+      fS.idFilter=null;fS.idFilterLabel='';
+      renderList();syncTopicChips();updateHash();return;
+    }
+    if(ids.length){
+      fS.search='';fS.idFilter=ids;fS.idFilterLabel=w;fS.source='all';fS.tag='all';
+      const si=document.getElementById('search');if(si)si.value='';
+      document.querySelectorAll('.filter-btn').forEach(b=>{b.classList.toggle('active',b.dataset.val==='all');});
+    } else {
+      fS.search=w.toLowerCase();fS.idFilter=null;fS.idFilterLabel='';
+      const si=document.getElementById('search');if(si)si.value=w;
+    }
+    renderList();syncTopicChips();updateHash();
+    if(opts.scroll)document.getElementById('all-posts-section').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  function syncTopicChips(){
+    document.querySelectorAll('.tchip').forEach(ch=>{ch.classList.toggle('active', fS.idFilterLabel&&ch.dataset.kw===fS.idFilterLabel);});
+  }
   document.querySelectorAll('.keyword').forEach(k=>{
-    k.onclick=()=>{
-      const w=k.dataset.kw;
-      const idsRaw=k.dataset.ids||'';
-      const ids=idsRaw?idsRaw.split(','):[];
-      if(ids.length){
-        // Explicit topic→post mapping. Use idFilter, clear text search, reset other filters.
-        fS.search='';
-        fS.idFilter=ids;
-        fS.idFilterLabel=w;
-        fS.source='all';
-        fS.tag='all';
-        document.getElementById('search').value='';
-        document.querySelectorAll('.filter-btn').forEach(b=>{
-          b.classList.toggle('active', b.dataset.val==='all');
-        });
-      } else {
-        // Legacy substring search fallback
-        fS.search=w.toLowerCase();
-        fS.idFilter=null;
-        fS.idFilterLabel='';
-        document.getElementById('search').value=w;
-      }
-      renderList();updateHash();
-      document.getElementById('all-posts-section').scrollIntoView({behavior:'smooth',block:'start'});
-    };
+    k.onclick=()=>applyTopicFilter(k.dataset.kw,k.dataset.ids||'',{scroll:true});
   });
-  const trendsUse=curData.searchTrends||trendsData;if(trendsUse){try{renderTrendChart(trendsUse,actGame);}catch(e){console.warn('trend chart',e);}}
+  document.querySelectorAll('.tchip').forEach(ch=>{
+    ch.onclick=()=>applyTopicFilter(ch.dataset.kw,ch.dataset.ids||'',{toggle:true});
+  });
+  syncTopicChips();
+  const trendsUse=activeView().searchTrends||trendsData;if(trendsUse){try{renderTrendChart(trendsUse,actGame);}catch(e){console.warn('trend chart',e);}}
   renderList();
 }
 function renderTrendChart(st,activeGame){
@@ -691,8 +851,8 @@ function renderTrendChart(st,activeGame){
   const isLegacyArray=Array.isArray(game.data);
   const naverDataFull=isLegacyArray?game.data:(game.data.naver||[]);
   const googleDataFull=isLegacyArray?[]:(game.data.google||[]);
-  // Slice to ±15 days centered on curData.date — shows lead-up AND aftermath of spike
-  const sliceCenter=curData?curData.date:null;
+  // Slice to ±15 days centered on selected date (range: end date) — shows lead-up AND aftermath
+  const sliceCenter=rangeMode?rangeEnd:(curData?curData.date:null);
   function sliceCentered(arr){
     if(!sliceCenter||!arr.length)return arr;
     const cMs=new Date(sliceCenter+'T00:00:00Z').getTime();
@@ -772,7 +932,7 @@ function renderTrendChart(st,activeGame){
   }
 }
 function renderList(){
-  const game=curData.games[actGame];
+  const game=activeView().games[actGame];
   const body=document.getElementById('all-posts-body');
   if(!body)return;
   const idSet=fS.idFilter&&fS.idFilter.length?new Set(fS.idFilter.map(String)):null;
@@ -800,7 +960,7 @@ function renderList(){
       }
       banner.innerHTML='<span style="opacity:0.7;font-weight:500;">선택된 토픽:</span><span>#'+fS.idFilterLabel.replace(/[<>&]/g,'')+'</span><span style="opacity:0.7;font-weight:500;margin-left:auto;">'+filt.length+'건</span><button id="active-topic-clear" style="background:transparent;border:0;color:#3730a3;cursor:pointer;font-weight:600;font-size:13px;padding:2px 6px;">✕ 해제</button>';
       const btn=document.getElementById('active-topic-clear');
-      if(btn)btn.onclick=()=>{fS.idFilter=null;fS.idFilterLabel='';renderList();updateHash();};
+      if(btn)btn.onclick=()=>{fS.idFilter=null;fS.idFilterLabel='';document.querySelectorAll('.tchip.active').forEach(ch=>ch.classList.remove('active'));renderList();updateHash();};
     } else if(banner){
       banner.remove();
     }
