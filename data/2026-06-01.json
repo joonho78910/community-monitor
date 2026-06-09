@@ -657,31 +657,36 @@
       "title": "다들 심연 리트중인가",
       "url": "https://arca.live/b/anchorpanic/172425691",
       "summary": "참여도 193 (조회 113, 댓글 14, 추천 1)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "채널이 조용하다는 잡담. 댓글은 리트는 사치·1등 압도적이라 포기 등 자조."
      },
      {
       "title": "특별보급 머읾",
       "url": "https://arca.live/b/anchorpanic/172442871",
       "summary": "참여도 180 (조회 100, 댓글 10, 추천 3)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "쿠폰 코드(Ap6special26) 공유. 댓글은 코드 2개 줬다며 퍼주기 반응."
      },
      {
       "title": "2시간 남았는데 ㅈ됐네",
       "url": "https://arca.live/b/anchorpanic/172453709",
       "summary": "참여도 151 (조회 96, 댓글 11, 추천 0)",
-      "tone": "부정"
+      "tone": "부정",
+      "bodySummary": "칼란 6연속 사용 기록 짤 잡담. 댓글은 '앵패 사랑단'·복귀 드립."
      },
      {
       "title": "질문",
       "url": "https://arca.live/b/anchorpanic/172432470",
       "summary": "참여도 147 (조회 82, 댓글 13, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "6-11 스테이지에서 막힌 뉴비가 육성 조언을 요청. 댓글이 모듈 주옵 30렙·스킬 7렙을 맞추라 코치."
      },
      {
       "title": "심연 트라이 하다가 느낀 점",
       "url": "https://arca.live/b/anchorpanic/172461484",
       "summary": "참여도 139 (조회 79, 댓글 12, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "양자덱 메인딜러 크리율(치확)을 100% 맞추는지 질문. 댓글은 화로 미지끼면 92%·치확 우선 세팅을 토론."
      }
     ],
     "bugReports": [],
@@ -1611,13 +1616,15 @@
       "title": "26JUNESTART",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12100",
       "summary": "참여도 219 (조회 144, 댓글 3, 추천 6)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "쿠폰 코드(26JUNESTART) 보상(이성·골드·부석) 안내글."
      },
      {
       "title": "시발.. 레티 3각 직접 체감하니 말이 안되는데",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12099",
       "summary": "참여도 216 (조회 171, 댓글 5, 추천 2)",
-      "tone": "부정"
+      "tone": "부정",
+      "bodySummary": "스작·배지가 약한 스쿼드가 레티 3각 하나로 더 세진 게 어이없다며 3각성의 영향력을 토론."
      },
      {
       "title": "뉴비 지금 유입가능?",
@@ -3832,5 +3839,5 @@
    }
   ]
  },
- "lastUpdated": "2026-06-01T22:48:33.698862+00:00"
+ "lastUpdated": "2026-06-09T09:39:47.527646+00:00"
 }
