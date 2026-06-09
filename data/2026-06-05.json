@@ -492,19 +492,22 @@
       "title": "겜잘알인 제가 앵커패닉 티어표 제작해봄",
       "url": "https://arca.live/b/anchorpanic/172844571",
       "summary": "참여도 196 (조회 146, 댓글 8, 추천 1)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "티어표를 만든 자랑. 댓글은 정확하다·먼저 만들려 했다 반응."
      },
      {
       "title": "성원상자 쌀먹할까",
       "url": "https://arca.live/b/anchorpanic/172825662",
       "summary": "참여도 192 (조회 122, 댓글 12, 추천 1)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "스펙 다 올린 듯한 자랑/쌀먹 잡담. 댓글은 리트로 버틴다·쌀먹을 권유."
      },
      {
       "title": "외날면도기 쓰다가 ㅈㄴ베여서 처박아뒀는데",
       "url": "https://arca.live/b/anchorpanic/172834994",
       "summary": "참여도 151 (조회 101, 댓글 10, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "발뒤꿈치 굳은살을 깎다 울퉁불퉁해진 일상 잡담(게임 무관). 댓글은 각질 제거 도구를 추천."
      }
     ],
     "bugReports": [],
@@ -1505,13 +1508,15 @@
       "title": "기갱완",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12286",
       "summary": "참여도 163 (조회 78, 댓글 15, 추천 1)",
-      "tone": "긍정"
+      "tone": "긍정",
+      "bodySummary": "렉3·오스틴이 없는 사람은 대충 친다는 잡담."
      },
      {
       "title": "사왔다 리세계",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12279",
       "summary": "참여도 156 (조회 91, 댓글 11, 추천 1)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "재화를 존버하며 고사·레티·프레·리온·이네 구성으로 가면 되는지 묻는 질문."
      }
     ],
     "bugReports": [],
@@ -1621,7 +1626,7 @@
   "sources": {
    "naver": {
     "label": "네이버 데이터랩",
-    "note": "datalab API. 2026-06-03까지 수집분 보존. 2026-06-04~06-05는 이번 실행에서 NaverSearch datalab MCP 미연결로 미수집 (다음 실행 시 보충 필요)."
+    "note": "datalab API (NaverSearch MCP). 2026-06-05까지 수집 OK. 30일 윈도우(05-07~06-05) fresh fetch, 기존 동일 period와 값 일치 확인. 06-04/06-05 신규 추가."
    },
    "google": {
     "label": "구글 트렌드",
@@ -2332,6 +2337,14 @@
       {
        "period": "2026-06-03",
        "ratio": 6.52173
+      },
+      {
+       "period": "2026-06-04",
+       "ratio": 3.7267
+      },
+      {
+       "period": "2026-06-05",
+       "ratio": 1.55279
       }
      ],
      "google": [
@@ -3161,6 +3174,14 @@
       {
        "period": "2026-06-03",
        "ratio": 9.62732
+      },
+      {
+       "period": "2026-06-04",
+       "ratio": 9.62732
+      },
+      {
+       "period": "2026-06-05",
+       "ratio": 10.24844
       }
      ],
      "google": [
@@ -3582,7 +3603,7 @@
     "source": "community"
    }
   ],
-  "lastUpdated": "2026-06-05T22:44:06.519455+00:00",
+  "lastUpdated": "2026-06-08T00:11:42.748771+00:00",
   "spikes": [
    {
     "date": "2025-12-24",
@@ -3740,5 +3761,5 @@
    }
   ]
  },
- "lastUpdated": "2026-06-05T22:44:06.519503+00:00"
+ "lastUpdated": "2026-06-09T09:39:47.527646+00:00"
 }
