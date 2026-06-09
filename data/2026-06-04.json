@@ -587,19 +587,22 @@
       "title": "야한 응애들 다 어디감?",
       "url": "https://arca.live/b/anchorpanic/172757196",
       "summary": "참여도 293 (조회 148, 댓글 27, 추천 1)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "채널이 한산하다는 잡담. 댓글은 반짝하고 말 거라는 우려."
      },
      {
       "title": "진짜 스콜피온 도라이 정신병자인가",
       "url": "https://arca.live/b/anchorpanic/172724079",
       "summary": "참여도 264 (조회 144, 댓글 22, 추천 1)",
-      "tone": "부정"
+      "tone": "부정",
+      "bodySummary": "아스테버스트(전장효과)가 양자덱을 찢어 딜이 안 나온다는 토벌 푸념. 댓글은 상위권 5~6억 OTK·배치 대응법을 토론."
      },
      {
       "title": "응애용 토벌공략(화로즈덱)",
       "url": "https://arca.live/b/anchorpanic/172786817",
       "summary": "참여도 221 (조회 101, 댓글 8, 추천 8)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "토벌 보스 패턴·배치·세팅을 정리한 정성 공략(응애용). 댓글은 근성(불굴) 메커니즘을 질문·설명."
      }
     ],
     "bugReports": [],
@@ -1273,7 +1276,8 @@
       "title": "뉴비 미암 4각했엉ㅎㅎ",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12218",
       "summary": "참여도 165 (조회 120, 댓글 7, 추천 1)",
-      "tone": "긍정"
+      "tone": "긍정",
+      "bodySummary": "세팅을 갖췄는데도 '여기 못 깬다'는 난이도 푸념."
      },
      {
       "title": "흠 금초로 뭐사지",
@@ -3478,5 +3482,5 @@
    }
   ]
  },
- "lastUpdated": "2026-06-04T22:49:43.043633+00:00"
+ "lastUpdated": "2026-06-09T09:39:47.527646+00:00"
 }
