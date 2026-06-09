@@ -973,7 +973,8 @@
       "title": "이륙가능인가요",
       "url": "https://arca.live/b/anchorpanic/172570044",
       "summary": "참여도 173 (조회 93, 댓글 16, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "SSR/SR 선택권을 아직 안 쓴 뉴비가 덱이 애매하다며 방향을 물은 글. 댓글은 메인딜러(최소 앨리스)가 필요하고 우리엘은 PVP 조커픽이니 신캐를 기다리라고 조언."
      },
      {
       "title": "할뷰12지 또 뇌 대리해줘",
@@ -1837,13 +1838,15 @@
       "title": "스토리 다 본 사람 있냐",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12162",
       "summary": "참여도 131 (조회 71, 댓글 12, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "할 게 없어 스토리를 다 스킵했던 게 후회된다는 잡담."
      },
      {
       "title": "오스틴 이 미친놈",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12141",
       "summary": "참여도 128 (조회 108, 댓글 4, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "오스틴이 역속성인데도 이네리스보다 딜이 더 잘 박힌다는 성능 감탄."
      }
     ],
     "bugReports": [
@@ -4050,5 +4053,5 @@
   ],
   "lastUpdated": "2026-06-02T07:30:00+09:00"
  },
- "lastUpdated": "2026-06-09T09:39:47.527646+00:00"
+ "lastUpdated": "2026-06-09T10:14:21.502095+00:00"
 }
