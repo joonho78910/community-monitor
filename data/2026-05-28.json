@@ -1,2253 +1,2261 @@
 {
-  "date": "2026-05-28",
-  "games": {
-    "anchorpanic": {
-      "name": "앵커패닉",
-      "posts": [
-        {
-          "id": "171998653",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "이번에도 여우뽑60해야하나요?",
-          "comments": 4,
-          "utcIso": "2026-05-28T03:54:18.000Z",
-          "author": "다쿵",
-          "views": 108,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/171998653",
-          "tags": [
-            "gacha",
-            "guide"
-          ],
-          "engagement": 128,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "171998798",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "아 제발요",
-          "comments": 5,
-          "utcIso": "2026-05-28T03:56:00.000Z",
-          "author": "다발린",
-          "views": 92,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/171998798",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 117,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "171998873",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "난 여우뽑 안함",
-          "comments": 3,
-          "utcIso": "2026-05-28T03:56:53.000Z",
-          "author": "다발린",
-          "views": 115,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/171998873",
-          "tags": [
-            "gacha"
-          ],
-          "engagement": 130,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "171999931",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "1주년 유입 뉴빈데 이제 할배소리 들을 수 있냐?",
-          "comments": 7,
-          "utcIso": "2026-05-28T04:08:49.000Z",
-          "author": "와플향",
-          "views": 192,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/171999931",
-          "tags": [
-            "newbie",
-            "guide"
-          ],
-          "engagement": 227,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172000102",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "8250돌 모아라",
-          "comments": 1,
-          "utcIso": "2026-05-28T04:11:00.000Z",
-          "author": "Haley",
-          "views": 70,
-          "likes": 1,
-          "url": "https://arca.live/b/anchorpanic/172000102",
-          "tags": [
-            "gacha"
-          ],
-          "engagement": 85,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172001885",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "여우가 매번 나오는거임??",
-          "comments": 3,
-          "utcIso": "2026-05-28T04:31:10.000Z",
-          "author": "JJA",
-          "views": 111,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172001885",
-          "tags": [
-            "guide"
-          ],
-          "engagement": 126,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172002895",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "오 여우뽑 개혜자네",
-          "comments": 12,
-          "utcIso": "2026-05-28T04:43:30.000Z",
-          "author": "JJA",
-          "views": 181,
-          "likes": 1,
-          "url": "https://arca.live/b/anchorpanic/172002895",
-          "tags": [
-            "gacha",
-            "positive"
-          ],
-          "engagement": 251,
-          "sentiment": "positive"
-        },
-        {
-          "id": "172003610",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "흐음 번개알 글카스 영감이 떠오를려해",
-          "comments": 6,
-          "utcIso": "2026-05-28T04:52:59.000Z",
-          "author": "yems",
-          "views": 85,
-          "likes": 1,
-          "url": "https://arca.live/b/anchorpanic/172003610",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 125,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172006358",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "테스트 추가",
-          "comments": 2,
-          "utcIso": "2026-05-28T05:27:09.000Z",
-          "author": "그런거몰라요",
-          "views": 56,
-          "likes": 3,
-          "url": "https://arca.live/b/anchorpanic/172006358",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 96,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172006499",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "여우뽑 랜덤알 싼다",
-          "comments": 8,
-          "utcIso": "2026-05-28T05:28:39.000Z",
-          "author": "JJA",
-          "views": 155,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172006499",
-          "tags": [
-            "gacha"
-          ],
-          "engagement": 195,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172007300",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "껄렁리사 없는데",
-          "comments": 4,
-          "utcIso": "2026-05-28T05:37:59.000Z",
-          "author": "JJA",
-          "views": 96,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172007300",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 116,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172007702",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "메모장이네 굿",
-          "comments": 5,
-          "utcIso": "2026-05-28T05:42:38.000Z",
-          "author": "JJA",
-          "views": 100,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172007702",
-          "tags": [
-            "positive"
-          ],
-          "engagement": 125,
-          "sentiment": "positive"
-        },
-        {
-          "id": "172008307",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "[Web발신]너는나를존중해야한다",
-          "comments": 5,
-          "utcIso": "2026-05-28T05:49:36.000Z",
-          "author": "JJA",
-          "views": 104,
-          "likes": 4,
-          "url": "https://arca.live/b/anchorpanic/172008307",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 169,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172009351",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "할배들아 저항력 어디에 제일 투자 많이해?",
-          "comments": 9,
-          "utcIso": "2026-05-28T05:59:51.000Z",
-          "author": "ccjjfu",
-          "views": 129,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172009351",
-          "tags": [
-            "newbie",
-            "guide"
-          ],
-          "engagement": 174,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172011973",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "갑자기 멀티윈도우 안되네",
-          "comments": 4,
-          "utcIso": "2026-05-28T06:28:04.000Z",
-          "author": "희희카드",
-          "views": 64,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172011973",
-          "tags": [
-            "bug",
-            "negative"
-          ],
-          "engagement": 84,
-          "sentiment": "negative"
-        },
-        {
-          "id": "172014502",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "지피티랑 클로드 둘 다 써본사람?",
-          "comments": 12,
-          "utcIso": "2026-05-28T06:54:51.000Z",
-          "author": "JJA",
-          "views": 120,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172014502",
-          "tags": [
-            "guide"
-          ],
-          "engagement": 180,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172014899",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "아 그만좀 나오라고",
-          "comments": 6,
-          "utcIso": "2026-05-28T06:58:43.000Z",
-          "author": "slarky",
-          "views": 123,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172014899",
-          "tags": [
-            "negative"
-          ],
-          "engagement": 153,
-          "sentiment": "negative"
-        },
-        {
-          "id": "172016322",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "모듈 유효옵 잘먹는법 찾음 ㅋㅋ",
-          "comments": 3,
-          "utcIso": "2026-05-28T07:13:40.000Z",
-          "author": "리으응리을",
-          "views": 112,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172016322",
-          "tags": [
-            "positive"
-          ],
-          "engagement": 127,
-          "sentiment": "positive"
-        },
-        {
-          "id": "172019205",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "얘 왠지 겜하다보면 6돌될거같음",
-          "comments": 2,
-          "utcIso": "2026-05-28T07:43:40.000Z",
-          "author": "현창",
-          "views": 127,
-          "likes": 1,
-          "url": "https://arca.live/b/anchorpanic/172019205",
-          "tags": [
-            "gacha"
-          ],
-          "engagement": 147,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172021272",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "난 얘가 6돌 될 거 같음",
-          "comments": 5,
-          "utcIso": "2026-05-28T08:05:16.000Z",
-          "author": "l222",
-          "views": 129,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172021272",
-          "tags": [
-            "gacha"
-          ],
-          "engagement": 154,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172027380",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "스토리상 커넥터 섹스머신임?",
-          "comments": 10,
-          "utcIso": "2026-05-28T09:04:06.000Z",
-          "author": "현창",
-          "views": 174,
-          "likes": 1,
-          "url": "https://arca.live/b/anchorpanic/172027380",
-          "tags": [
-            "guide"
-          ],
-          "engagement": 234,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172027559",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "앵스피 1빠졋다",
-          "comments": 4,
-          "utcIso": "2026-05-28T09:05:42.000Z",
-          "author": "JJA",
-          "views": 84,
-          "likes": 1,
-          "url": "https://arca.live/b/anchorpanic/172027559",
-          "tags": [
-            "positive"
-          ],
-          "engagement": 114,
-          "sentiment": "positive"
-        },
-        {
-          "id": "172029247",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "스포일러",
-          "title": "스포) 화이트로즈 문자 일부",
-          "comments": 5,
-          "utcIso": "2026-05-28T09:23:04.000Z",
-          "author": "ㅇㅇ",
-          "views": 136,
-          "likes": 3,
-          "url": "https://arca.live/b/anchorpanic/172029247",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 191,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172032402",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "질문",
-          "title": "막기 <- 이새끼 대체 뭐임?",
-          "comments": 4,
-          "utcIso": "2026-05-28T09:55:26.000Z",
-          "author": "mmeell",
-          "views": 113,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172032402",
-          "tags": [
-            "guide"
-          ],
-          "engagement": 133,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172034923",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "오스카린 낙인",
-          "comments": 5,
-          "utcIso": "2026-05-28T10:18:15.000Z",
-          "author": "히메지마아케노",
-          "views": 111,
-          "likes": 1,
-          "url": "https://arca.live/b/anchorpanic/172034923",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 146,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172037233",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "타입 두개 쓰까는것보다 단일타입 조합 하는게 더 좋음?",
-          "comments": 11,
-          "utcIso": "2026-05-28T10:39:12.000Z",
-          "author": "해뜬다도르",
-          "views": 151,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172037233",
-          "tags": [
-            "guide"
-          ],
-          "engagement": 206,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172037656",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "저번 패치에 비해 조금도 강해지지안앗어",
-          "comments": 6,
-          "utcIso": "2026-05-28T10:43:08.000Z",
-          "author": "도라리",
-          "views": 108,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172037656",
-          "tags": [
-            "bug",
-            "negative"
-          ],
-          "engagement": 138,
-          "sentiment": "negative"
-        },
-        {
-          "id": "172038990",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "아 이제 앵커 숙제 해볼까",
-          "comments": 0,
-          "utcIso": "2026-05-28T10:55:26.000Z",
-          "author": "현창",
-          "views": 45,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172038990",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 45,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172049449",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "채널공지",
-          "title": "챈주 투표 결과 안내",
-          "comments": 3,
-          "utcIso": "2026-05-28T12:24:23.000Z",
-          "author": "여어",
-          "views": 116,
-          "likes": 6,
-          "url": "https://arca.live/b/anchorpanic/172049449",
-          "tags": [
-            "notice",
-            "newbie"
-          ],
-          "engagement": 191,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172049666",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "빨리 주말이 되서 콘이나 찍고 싶구나....",
-          "comments": 5,
-          "utcIso": "2026-05-28T12:25:49.000Z",
-          "author": "지존물퇴",
-          "views": 126,
-          "likes": 9,
-          "url": "https://arca.live/b/anchorpanic/172049666",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 241,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172058061",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "무슨 일이 벌어지는걸까?",
-          "comments": 10,
-          "utcIso": "2026-05-28T13:33:38.000Z",
-          "author": "ㅇㅇ",
-          "views": 156,
-          "likes": 1,
-          "url": "https://arca.live/b/anchorpanic/172058061",
-          "tags": [
-            "guide"
-          ],
-          "engagement": 216,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172067013",
-          "source": "arca",
-          "board": "anchorpanic",
-          "category": "",
-          "title": "칼란리사 뽑았는데",
-          "comments": 4,
-          "utcIso": "2026-05-28T14:57:22.000Z",
-          "author": "JJA",
-          "views": 84,
-          "likes": 0,
-          "url": "https://arca.live/b/anchorpanic/172067013",
-          "tags": [
-            "gacha"
-          ],
-          "engagement": 104,
-          "sentiment": "neutral"
-        }
-      ],
-      "date": "2026-05-28",
-      "stats": {
-        "total": 32,
-        "real_posts": 31,
-        "notices": 1,
-        "bugs": 2,
-        "negative": 3,
-        "positive": 4,
-        "competitor_mentions": 0,
-        "newbie_returning": 3,
-        "guild_recruit": 0,
-        "gacha": 8,
-        "event": 0,
-        "balance": 0,
-        "guide": 9,
-        "chitchat": 9,
-        "total_views": 3673,
-        "total_comments": 173,
-        "total_likes": 33,
-        "sentiment": "중립",
-        "sentiment_score": 0.032
-      },
-      "topEngaging": [
-        {
-          "id": "172002895",
-          "title": "오 여우뽑 개혜자네",
-          "url": "https://arca.live/b/anchorpanic/172002895",
-          "source": "arca",
-          "views": 181,
-          "comments": 12,
-          "likes": 1,
-          "engagement": 251,
-          "category": ""
-        },
-        {
-          "id": "172049666",
-          "title": "빨리 주말이 되서 콘이나 찍고 싶구나....",
-          "url": "https://arca.live/b/anchorpanic/172049666",
-          "source": "arca",
-          "views": 126,
-          "comments": 5,
-          "likes": 9,
-          "engagement": 241,
-          "category": ""
-        },
-        {
-          "id": "172027380",
-          "title": "스토리상 커넥터 섹스머신임?",
-          "url": "https://arca.live/b/anchorpanic/172027380",
-          "source": "arca",
-          "views": 174,
-          "comments": 10,
-          "likes": 1,
-          "engagement": 234,
-          "category": ""
-        },
-        {
-          "id": "171999931",
-          "title": "1주년 유입 뉴빈데 이제 할배소리 들을 수 있냐?",
-          "url": "https://arca.live/b/anchorpanic/171999931",
-          "source": "arca",
-          "views": 192,
-          "comments": 7,
-          "likes": 0,
-          "engagement": 227,
-          "category": ""
-        },
-        {
-          "id": "172058061",
-          "title": "무슨 일이 벌어지는걸까?",
-          "url": "https://arca.live/b/anchorpanic/172058061",
-          "source": "arca",
-          "views": 156,
-          "comments": 10,
-          "likes": 1,
-          "engagement": 216,
-          "category": ""
-        }
-      ],
-      "analysis": {
-        "dailySummary": "앵커패닉 2026-05-28 동향: 주요 토픽은 \"여우뽑/가챠\" 외 8개. sentiment 재분류 결과 긍정 4건 / 부정 3건 / 중립 25건 (중립, score 0.032). 버그·시스템 불만 2건. 아카라이브 32건, DC인사이드 0건.",
-        "topIssues": [
-          {
-            "title": "오 여우뽑 개혜자네",
-            "url": "https://arca.live/b/anchorpanic/172002895",
-            "summary": "참여도 251 (조회 181, 댓글 12, 추천 1)",
-            "tone": "긍정"
-          },
-          {
-            "title": "빨리 주말이 되서 콘이나 찍고 싶구나....",
-            "url": "https://arca.live/b/anchorpanic/172049666",
-            "summary": "참여도 241 (조회 126, 댓글 5, 추천 9)",
-            "tone": "중립"
-          },
-          {
-            "title": "스토리상 커넥터 섹스머신임?",
-            "url": "https://arca.live/b/anchorpanic/172027380",
-            "summary": "참여도 234 (조회 174, 댓글 10, 추천 1)",
-            "tone": "중립"
-          },
-          {
-            "title": "1주년 유입 뉴빈데 이제 할배소리 들을 수 있냐?",
-            "url": "https://arca.live/b/anchorpanic/171999931",
-            "summary": "참여도 227 (조회 192, 댓글 7, 추천 0)",
-            "tone": "중립"
-          }
-        ],
-        "bugReports": [
-          {
-            "title": "저번 패치에 비해 조금도 강해지지안앗어",
-            "url": "https://arca.live/b/anchorpanic/172037656"
-          },
-          {
-            "title": "갑자기 멀티윈도우 안되네",
-            "url": "https://arca.live/b/anchorpanic/172011973"
-          }
-        ],
-        "competitorMentions": [],
-        "trends": [
-          "sentiment: 긍정 4 / 부정 3 / 중립 25",
-          "주요 토픽: 여우뽑/가챠, 모듈/투자/스킬, 스토리/스포일러, 칼란리사, 1주년 뉴비/유입"
-        ],
-        "watchlist": [
-          "여우뽑(가챠) 만족도 추세",
-          "모듈/투자 가이드 수요 지속 여부",
-          "스토리·스포 반응 흐름",
-          "신캐(칼란리사) 픽업 평가",
-          "주말 토벌·콘 콘텐츠 참여"
-        ],
-        "keywords": [
-          {
-            "word": "여우뽑/가챠",
-            "count": 7,
-            "ids": [
-              "171998653",
-              "171998798",
-              "171998873",
-              "172000102",
-              "172001885",
-              "172002895",
-              "172006499"
-            ]
-          },
-          {
-            "word": "모듈/투자/스킬",
-            "count": 6,
-            "ids": [
-              "172009351",
-              "172016322",
-              "172019205",
-              "172021272",
-              "172037233",
-              "172037656"
-            ]
-          },
-          {
-            "word": "스토리/스포일러",
-            "count": 4,
-            "ids": [
-              "172027380",
-              "172029247",
-              "172034923",
-              "172058061"
-            ]
-          },
-          {
-            "word": "칼란리사",
-            "count": 2,
-            "ids": [
-              "172007300",
-              "172067013"
-            ]
-          },
-          {
-            "word": "1주년 뉴비/유입",
-            "count": 1,
-            "ids": [
-              "171999931"
-            ]
-          },
-          {
-            "word": "앵스피",
-            "count": 1,
-            "ids": [
-              "172027559"
-            ]
-          },
-          {
-            "word": "멀티윈도우 버그(불만)",
-            "count": 1,
-            "ids": [
-              "172011973"
-            ]
-          },
-          {
-            "word": "패치 체감(불만)",
-            "count": 1,
-            "ids": [
-              "172037656"
-            ]
-          },
-          {
-            "word": "챈주 투표 공지",
-            "count": 1,
-            "ids": [
-              "172049449"
-            ]
-          }
-        ]
-      }
+ "date": "2026-05-28",
+ "games": {
+  "anchorpanic": {
+   "name": "앵커패닉",
+   "posts": [
+    {
+     "id": "171998653",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "이번에도 여우뽑60해야하나요?",
+     "comments": 4,
+     "utcIso": "2026-05-28T03:54:18.000Z",
+     "author": "다쿵",
+     "views": 108,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/171998653",
+     "tags": [
+      "gacha",
+      "guide"
+     ],
+     "engagement": 128,
+     "sentiment": "neutral"
     },
-    "erpis": {
-      "name": "에르피스",
-      "posts": [
-        {
-          "id": "171974992",
-          "source": "arca",
-          "board": "erphis",
-          "category": "",
-          "title": "이제 배지작 본격적으로 해야해서 공부중인데",
-          "comments": 3,
-          "utcIso": "2026-05-27T19:53:59.000Z",
-          "author": "도이",
-          "views": 86,
-          "likes": 0,
-          "url": "https://arca.live/b/erphis/171974992",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 101,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "171984720",
-          "source": "arca",
-          "board": "erphis",
-          "category": "",
-          "title": "NIKITAGIFT28",
-          "comments": 3,
-          "utcIso": "2026-05-28T01:04:38.000Z",
-          "author": "현창",
-          "views": 72,
-          "likes": 4,
-          "url": "https://arca.live/b/erphis/171984720",
-          "tags": [
-            "event"
-          ],
-          "engagement": 127,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "171986949",
-          "source": "arca",
-          "board": "erphis",
-          "category": "",
-          "title": "겜 접을뻔함",
-          "comments": 8,
-          "utcIso": "2026-05-28T01:35:58.000Z",
-          "author": "현창",
-          "views": 153,
-          "likes": 0,
-          "url": "https://arca.live/b/erphis/171986949",
-          "tags": [
-            "negative"
-          ],
-          "engagement": 193,
-          "sentiment": "negative"
-        },
-        {
-          "id": "171996427",
-          "source": "arca",
-          "board": "erphis",
-          "category": "",
-          "title": "니키타양...미안하구려,,,,,,",
-          "comments": 1,
-          "utcIso": "2026-05-28T03:30:50.000Z",
-          "author": "리으응리을",
-          "views": 87,
-          "likes": 0,
-          "url": "https://arca.live/b/erphis/171996427",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 92,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11916",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "뽑니 마니 해도 나중에 보면",
-          "comments": 1,
-          "utcIso": "2026-05-28T04:40:36.000Z",
-          "author": "",
-          "views": 96,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11916",
-          "tags": [
-            "gacha"
-          ],
-          "engagement": 101,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11917",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "어제 에드컵보니 페이커 니키타 픽하던데 뽑죠",
-          "comments": 4,
-          "utcIso": "2026-05-28T05:22:32.000Z",
-          "author": "",
-          "views": 118,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11917",
-          "tags": [
-            "gacha"
-          ],
-          "engagement": 138,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172008553",
-          "source": "arca",
-          "board": "erphis",
-          "category": "",
-          "title": "니키타 좋냐",
-          "comments": 4,
-          "utcIso": "2026-05-28T05:52:30.000Z",
-          "author": "Uno",
-          "views": 85,
-          "likes": 0,
-          "url": "https://arca.live/b/erphis/172008553",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 105,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11918",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "330뽑만에 니키타 풀각했음",
-          "comments": 2,
-          "utcIso": "2026-05-28T06:39:42.000Z",
-          "author": "",
-          "views": 144,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11918",
-          "tags": [
-            "gacha",
-            "positive"
-          ],
-          "engagement": 154,
-          "sentiment": "positive"
-        },
-        {
-          "id": "11919",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "니키타 바이럴 좆되네",
-          "comments": 3,
-          "utcIso": "2026-05-28T06:46:03.000Z",
-          "author": "",
-          "views": 100,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11919",
-          "tags": [
-            "positive"
-          ],
-          "engagement": 115,
-          "sentiment": "positive"
-        },
-        {
-          "id": "11920",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "니키타의 승부처는 월보 쫄정리다",
-          "comments": 1,
-          "utcIso": "2026-05-28T06:49:06.000Z",
-          "author": "",
-          "views": 95,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11920",
-          "tags": [
-            "guide"
-          ],
-          "engagement": 100,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11921",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "미암니키타 결국 다 뽑아버렸네",
-          "comments": 2,
-          "utcIso": "2026-05-28T07:00:16.000Z",
-          "author": "",
-          "views": 94,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11921",
-          "tags": [
-            "gacha"
-          ],
-          "engagement": 104,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11922",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "아니 좀만 참아봐 에붕이들아",
-          "comments": 1,
-          "utcIso": "2026-05-28T07:00:20.000Z",
-          "author": "",
-          "views": 110,
-          "likes": 2,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11922",
-          "tags": [
-            "newbie"
-          ],
-          "engagement": 135,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172016160",
-          "source": "arca",
-          "board": "erphis",
-          "category": "",
-          "title": "어제오늘 하는 겜 가챠가 싹다망함",
-          "comments": 2,
-          "utcIso": "2026-05-28T07:11:57.000Z",
-          "author": "현창",
-          "views": 55,
-          "likes": 0,
-          "url": "https://arca.live/b/erphis/172016160",
-          "tags": [
-            "gacha",
-            "negative"
-          ],
-          "engagement": 65,
-          "sentiment": "negative"
-        },
-        {
-          "id": "172016713",
-          "source": "arca",
-          "board": "erphis",
-          "category": "",
-          "title": "니키타는 티어에도 안보이는데 거르면 되??",
-          "comments": 17,
-          "utcIso": "2026-05-28T07:17:49.000Z",
-          "author": "구원",
-          "views": 134,
-          "likes": 0,
-          "url": "https://arca.live/b/erphis/172016713",
-          "tags": [
-            "guide"
-          ],
-          "engagement": 219,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11923",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "니키타는 티어에도 없는데 거르면 대??",
-          "comments": 3,
-          "utcIso": "2026-05-28T07:18:39.000Z",
-          "author": "",
-          "views": 131,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11923",
-          "tags": [
-            "guide"
-          ],
-          "engagement": 146,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11924",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "니키타 월보 쫄정리로 쓴다 = 등수노린다",
-          "comments": 0,
-          "utcIso": "2026-05-28T07:22:48.000Z",
-          "author": "",
-          "views": 50,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11924",
-          "tags": [
-            "guide"
-          ],
-          "engagement": 50,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11925",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "이러고 물속 월보면 꽤 접겟는데",
-          "comments": 2,
-          "utcIso": "2026-05-28T07:23:47.000Z",
-          "author": "",
-          "views": 85,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11925",
-          "tags": [
-            "negative"
-          ],
-          "engagement": 95,
-          "sentiment": "negative"
-        },
-        {
-          "id": "11926",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "월보 쫄 역속성 이면 왜 니키타를 탓함?",
-          "comments": 2,
-          "utcIso": "2026-05-28T07:25:15.000Z",
-          "author": "",
-          "views": 93,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11926",
-          "tags": [
-            "guide"
-          ],
-          "engagement": 103,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11927",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "니키타 스텟이 근데 진짜 변태적이네",
-          "comments": 1,
-          "utcIso": "2026-05-28T07:40:44.000Z",
-          "author": "",
-          "views": 101,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11927",
-          "tags": [
-            "balance",
-            "positive"
-          ],
-          "engagement": 106,
-          "sentiment": "positive"
-        },
-        {
-          "id": "11928",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "암만봐도 니키타 뽑느니 미암 뽑아라",
-          "comments": 2,
-          "utcIso": "2026-05-28T07:51:15.000Z",
-          "author": "",
-          "views": 148,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11928",
-          "tags": [
-            "gacha"
-          ],
-          "engagement": 158,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11929",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "근데 미암 접대처럼 또 하는거 아니겠지??",
-          "comments": 1,
-          "utcIso": "2026-05-28T07:53:26.000Z",
-          "author": "",
-          "views": 75,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11929",
-          "tags": [
-            "guide"
-          ],
-          "engagement": 80,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172020970",
-          "source": "arca",
-          "board": "erphis",
-          "category": "",
-          "title": "니키타 생각해보니까",
-          "comments": 2,
-          "utcIso": "2026-05-28T08:01:59.000Z",
-          "author": "리으응리을",
-          "views": 57,
-          "likes": 0,
-          "url": "https://arca.live/b/erphis/172020970",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 67,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172021731",
-          "source": "arca",
-          "board": "erphis",
-          "category": "",
-          "title": "니키타 스텟 변태적이긴해",
-          "comments": 0,
-          "utcIso": "2026-05-28T08:10:18.000Z",
-          "author": "현창",
-          "views": 63,
-          "likes": 0,
-          "url": "https://arca.live/b/erphis/172021731",
-          "tags": [
-            "balance",
-            "positive"
-          ],
-          "engagement": 63,
-          "sentiment": "positive"
-        },
-        {
-          "id": "11930",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "니키타 막연하게 버텨지지않을까했는데",
-          "comments": 6,
-          "utcIso": "2026-05-28T08:26:58.000Z",
-          "author": "",
-          "views": 148,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11930",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 178,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172023834",
-          "source": "arca",
-          "board": "erphis",
-          "category": "",
-          "title": "니키타 10뽑비틱ㅋㅋㅋㅋ",
-          "comments": 2,
-          "utcIso": "2026-05-28T08:31:30.000Z",
-          "author": "시엘22",
-          "views": 88,
-          "likes": 0,
-          "url": "https://arca.live/b/erphis/172023834",
-          "tags": [
-            "gacha"
-          ],
-          "engagement": 98,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "172024387",
-          "source": "arca",
-          "board": "erphis",
-          "category": "질문",
-          "title": "기본 통상 케릭 중 3각성 우선순위 아는사람?",
-          "comments": 3,
-          "utcIso": "2026-05-28T08:36:34.000Z",
-          "author": "ironbeg",
-          "views": 84,
-          "likes": 0,
-          "url": "https://arca.live/b/erphis/172024387",
-          "tags": [
-            "guide"
-          ],
-          "engagement": 99,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11931",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "아니 강적10단계건 레이드9단계건 내놓으라고",
-          "comments": 0,
-          "utcIso": "2026-05-28T08:36:55.000Z",
-          "author": "",
-          "views": 56,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11931",
-          "tags": [
-            "negative"
-          ],
-          "engagement": 56,
-          "sentiment": "negative"
-        },
-        {
-          "id": "11932",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "고퀸 언제 퇴물되냐",
-          "comments": 6,
-          "utcIso": "2026-05-28T08:42:55.000Z",
-          "author": "",
-          "views": 135,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11932",
-          "tags": [
-            "balance",
-            "negative"
-          ],
-          "engagement": 165,
-          "sentiment": "negative"
-        },
-        {
-          "id": "11933",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "미니게임 스테이지 갯수 뭐냐",
-          "comments": 2,
-          "utcIso": "2026-05-28T09:25:48.000Z",
-          "author": "",
-          "views": 89,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11933",
-          "tags": [
-            "guide"
-          ],
-          "engagement": 99,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11934",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "오늘한걷..",
-          "comments": 1,
-          "utcIso": "2026-05-28T10:55:45.000Z",
-          "author": "",
-          "views": 43,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11934",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 48,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11935",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "니키타 센데",
-          "comments": 7,
-          "utcIso": "2026-05-28T11:16:50.000Z",
-          "author": "",
-          "views": 187,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11935",
-          "tags": [
-            "positive"
-          ],
-          "engagement": 222,
-          "sentiment": "positive"
-        },
-        {
-          "id": "172042598",
-          "source": "arca",
-          "board": "erphis",
-          "category": "",
-          "title": "니키타 EX 테스트",
-          "comments": 6,
-          "utcIso": "2026-05-28T11:28:43.000Z",
-          "author": "현창",
-          "views": 112,
-          "likes": 0,
-          "url": "https://arca.live/b/erphis/172042598",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 142,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11936",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "지피덱 니키타는 니키타리더로 쉬엘 압축해도 되겠군",
-          "comments": 0,
-          "utcIso": "2026-05-28T11:37:51.000Z",
-          "author": "",
-          "views": 76,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11936",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 76,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11937",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "이번 갠레는 무지성 아만사 에셀 박으면 되나",
-          "comments": 2,
-          "utcIso": "2026-05-28T11:54:39.000Z",
-          "author": "",
-          "views": 86,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11937",
-          "tags": [
-            "guild"
-          ],
-          "engagement": 96,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11938",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "와 중섭 오늘자 업뎃된 티어표인데",
-          "comments": 13,
-          "utcIso": "2026-05-28T13:21:34.000Z",
-          "author": "",
-          "views": 212,
-          "likes": 2,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11938",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 297,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11939",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "근데 짱깨 티어표 너무 신뢰는 ㄴㄴ",
-          "comments": 0,
-          "utcIso": "2026-05-28T13:55:09.000Z",
-          "author": "",
-          "views": 74,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11939",
-          "tags": [
-            "negative"
-          ],
-          "engagement": 74,
-          "sentiment": "negative"
-        },
-        {
-          "id": "11940",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "와 잠깐만 악몽 상점 초대장",
-          "comments": 11,
-          "utcIso": "2026-05-28T13:59:28.000Z",
-          "author": "",
-          "views": 128,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11940",
-          "tags": [
-            "chitchat"
-          ],
-          "engagement": 183,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11942",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "ex10 걍 토나오네",
-          "comments": 0,
-          "utcIso": "2026-05-28T14:29:43.000Z",
-          "author": "",
-          "views": 32,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11942",
-          "tags": [
-            "negative"
-          ],
-          "engagement": 32,
-          "sentiment": "negative"
-        },
-        {
-          "id": "11943",
-          "source": "dc",
-          "board": "erpis",
-          "category": "질문",
-          "title": "근데 로빈 스킨 오늘 나오는거 아니었음?",
-          "comments": 11,
-          "utcIso": "2026-05-28T14:30:20.000Z",
-          "author": "",
-          "views": 96,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11943",
-          "tags": [
-            "gacha",
-            "guide"
-          ],
-          "engagement": 151,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "11944",
-          "source": "dc",
-          "board": "erpis",
-          "category": "일반",
-          "title": "오늘 하루만 미접할게",
-          "comments": 1,
-          "utcIso": "2026-05-28T14:38:57.000Z",
-          "author": "",
-          "views": 61,
-          "likes": 0,
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11944",
-          "tags": [
-            "negative"
-          ],
-          "engagement": 66,
-          "sentiment": "negative"
-        }
-      ],
-      "date": "2026-05-28",
-      "stats": {
-        "total": 40,
-        "real_posts": 40,
-        "notices": 0,
-        "bugs": 0,
-        "negative": 8,
-        "positive": 5,
-        "competitor_mentions": 0,
-        "newbie_returning": 1,
-        "guild_recruit": 1,
-        "gacha": 8,
-        "event": 1,
-        "balance": 3,
-        "guide": 9,
-        "chitchat": 10,
-        "total_views": 3939,
-        "total_comments": 136,
-        "total_likes": 8,
-        "sentiment": "부정",
-        "sentiment_score": -0.075
-      },
-      "topEngaging": [
-        {
-          "id": "11938",
-          "title": "와 중섭 오늘자 업뎃된 티어표인데",
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11938",
-          "source": "dc",
-          "views": 212,
-          "comments": 13,
-          "likes": 2,
-          "engagement": 297,
-          "category": "일반"
-        },
-        {
-          "id": "11935",
-          "title": "니키타 센데",
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11935",
-          "source": "dc",
-          "views": 187,
-          "comments": 7,
-          "likes": 0,
-          "engagement": 222,
-          "category": "일반"
-        },
-        {
-          "id": "172016713",
-          "title": "니키타는 티어에도 안보이는데 거르면 되??",
-          "url": "https://arca.live/b/erphis/172016713",
-          "source": "arca",
-          "views": 134,
-          "comments": 17,
-          "likes": 0,
-          "engagement": 219,
-          "category": ""
-        },
-        {
-          "id": "171986949",
-          "title": "겜 접을뻔함",
-          "url": "https://arca.live/b/erphis/171986949",
-          "source": "arca",
-          "views": 153,
-          "comments": 8,
-          "likes": 0,
-          "engagement": 193,
-          "category": ""
-        },
-        {
-          "id": "11940",
-          "title": "와 잠깐만 악몽 상점 초대장",
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11940",
-          "source": "dc",
-          "views": 128,
-          "comments": 11,
-          "likes": 0,
-          "engagement": 183,
-          "category": "일반"
-        }
-      ],
-      "analysis": {
-        "dailySummary": "에르피스 2026-05-28 동향: 주요 토픽은 \"니키타(신캐 화제)\" 외 9개. sentiment 재분류 결과 긍정 5건 / 부정 8건 / 중립 27건 (부정, score -0.075). 버그·시스템 불만 0건. 아카라이브 12건, DC인사이드 28건.",
-        "topIssues": [
-          {
-            "title": "와 중섭 오늘자 업뎃된 티어표인데",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11938",
-            "summary": "참여도 297 (조회 212, 댓글 13, 추천 2)",
-            "tone": "중립"
-          },
-          {
-            "title": "니키타 센데",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11935",
-            "summary": "참여도 222 (조회 187, 댓글 7, 추천 0)",
-            "tone": "긍정"
-          },
-          {
-            "title": "니키타는 티어에도 안보이는데 거르면 되??",
-            "url": "https://arca.live/b/erphis/172016713",
-            "summary": "참여도 219 (조회 134, 댓글 17, 추천 0)",
-            "tone": "중립"
-          },
-          {
-            "title": "겜 접을뻔함",
-            "url": "https://arca.live/b/erphis/171986949",
-            "summary": "참여도 193 (조회 153, 댓글 8, 추천 0)",
-            "tone": "부정"
-          }
-        ],
-        "bugReports": [],
-        "competitorMentions": [],
-        "trends": [
-          "sentiment: 긍정 5 / 부정 8 / 중립 27",
-          "주요 토픽: 니키타(신캐 화제), 월보/쫄정리, 티어표/중섭, 미암 비교, 미접/접 이탈(부정)"
-        ],
-        "watchlist": [
-          "니키타 픽업 평가·실전 후기 추세",
-          "월보/쫄정리 메타 변동",
-          "티어표(중섭) 후속 반응",
-          "강적·레이드 컨텐츠 추가 요구",
-          "이탈 신호(미접/접) 모니터링"
-        ],
-        "keywords": [
-          {
-            "word": "니키타(신캐 화제)",
-            "count": 24,
-            "ids": [
-              "171984720",
-              "171986949",
-              "171996427",
-              "172008553",
-              "172016713",
-              "172020970",
-              "172021731",
-              "172023834",
-              "172042598",
-              "11917",
-              "11918",
-              "11919",
-              "11920",
-              "11921",
-              "11922",
-              "11923",
-              "11924",
-              "11925",
-              "11926",
-              "11927",
-              "11928",
-              "11930",
-              "11935",
-              "11936"
-            ]
-          },
-          {
-            "word": "월보/쫄정리",
-            "count": 4,
-            "ids": [
-              "11920",
-              "11924",
-              "11925",
-              "11926"
-            ]
-          },
-          {
-            "word": "티어표/중섭",
-            "count": 3,
-            "ids": [
-              "11923",
-              "11938",
-              "11939"
-            ]
-          },
-          {
-            "word": "미암 비교",
-            "count": 3,
-            "ids": [
-              "11921",
-              "11928",
-              "11929"
-            ]
-          },
-          {
-            "word": "미접/접 이탈(부정)",
-            "count": 3,
-            "ids": [
-              "11944",
-              "171986949",
-              "11925"
-            ]
-          },
-          {
-            "word": "강적·레이드 컨텐츠 부재(불만)",
-            "count": 1,
-            "ids": [
-              "11931"
-            ]
-          },
-          {
-            "word": "고퀸 퇴물(불만)",
-            "count": 1,
-            "ids": [
-              "11932"
-            ]
-          },
-          {
-            "word": "ex10 난이도(불만)",
-            "count": 1,
-            "ids": [
-              "11942"
-            ]
-          },
-          {
-            "word": "악몽 상점 초대장",
-            "count": 1,
-            "ids": [
-              "11940"
-            ]
-          },
-          {
-            "word": "가챠 망함(불만)",
-            "count": 1,
-            "ids": [
-              "172016160"
-            ]
-          }
-        ]
-      }
+    {
+     "id": "171998798",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "아 제발요",
+     "comments": 5,
+     "utcIso": "2026-05-28T03:56:00.000Z",
+     "author": "다발린",
+     "views": 92,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/171998798",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 117,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "171998873",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "난 여우뽑 안함",
+     "comments": 3,
+     "utcIso": "2026-05-28T03:56:53.000Z",
+     "author": "다발린",
+     "views": 115,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/171998873",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 130,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "171999931",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "1주년 유입 뉴빈데 이제 할배소리 들을 수 있냐?",
+     "comments": 7,
+     "utcIso": "2026-05-28T04:08:49.000Z",
+     "author": "와플향",
+     "views": 192,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/171999931",
+     "tags": [
+      "newbie",
+      "guide"
+     ],
+     "engagement": 227,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172000102",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "8250돌 모아라",
+     "comments": 1,
+     "utcIso": "2026-05-28T04:11:00.000Z",
+     "author": "Haley",
+     "views": 70,
+     "likes": 1,
+     "url": "https://arca.live/b/anchorpanic/172000102",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 85,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172001885",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "여우가 매번 나오는거임??",
+     "comments": 3,
+     "utcIso": "2026-05-28T04:31:10.000Z",
+     "author": "JJA",
+     "views": 111,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172001885",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 126,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172002895",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "오 여우뽑 개혜자네",
+     "comments": 12,
+     "utcIso": "2026-05-28T04:43:30.000Z",
+     "author": "JJA",
+     "views": 181,
+     "likes": 1,
+     "url": "https://arca.live/b/anchorpanic/172002895",
+     "tags": [
+      "gacha",
+      "positive"
+     ],
+     "engagement": 251,
+     "sentiment": "positive"
+    },
+    {
+     "id": "172003610",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "흐음 번개알 글카스 영감이 떠오를려해",
+     "comments": 6,
+     "utcIso": "2026-05-28T04:52:59.000Z",
+     "author": "yems",
+     "views": 85,
+     "likes": 1,
+     "url": "https://arca.live/b/anchorpanic/172003610",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 125,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172006358",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "테스트 추가",
+     "comments": 2,
+     "utcIso": "2026-05-28T05:27:09.000Z",
+     "author": "그런거몰라요",
+     "views": 56,
+     "likes": 3,
+     "url": "https://arca.live/b/anchorpanic/172006358",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 96,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172006499",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "여우뽑 랜덤알 싼다",
+     "comments": 8,
+     "utcIso": "2026-05-28T05:28:39.000Z",
+     "author": "JJA",
+     "views": 155,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172006499",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 195,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172007300",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "껄렁리사 없는데",
+     "comments": 4,
+     "utcIso": "2026-05-28T05:37:59.000Z",
+     "author": "JJA",
+     "views": 96,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172007300",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 116,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172007702",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "메모장이네 굿",
+     "comments": 5,
+     "utcIso": "2026-05-28T05:42:38.000Z",
+     "author": "JJA",
+     "views": 100,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172007702",
+     "tags": [
+      "positive"
+     ],
+     "engagement": 125,
+     "sentiment": "positive"
+    },
+    {
+     "id": "172008307",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "[Web발신]너는나를존중해야한다",
+     "comments": 5,
+     "utcIso": "2026-05-28T05:49:36.000Z",
+     "author": "JJA",
+     "views": 104,
+     "likes": 4,
+     "url": "https://arca.live/b/anchorpanic/172008307",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 169,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172009351",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "할배들아 저항력 어디에 제일 투자 많이해?",
+     "comments": 9,
+     "utcIso": "2026-05-28T05:59:51.000Z",
+     "author": "ccjjfu",
+     "views": 129,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172009351",
+     "tags": [
+      "newbie",
+      "guide"
+     ],
+     "engagement": 174,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172011973",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "갑자기 멀티윈도우 안되네",
+     "comments": 4,
+     "utcIso": "2026-05-28T06:28:04.000Z",
+     "author": "희희카드",
+     "views": 64,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172011973",
+     "tags": [
+      "bug",
+      "negative"
+     ],
+     "engagement": 84,
+     "sentiment": "negative"
+    },
+    {
+     "id": "172014502",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "지피티랑 클로드 둘 다 써본사람?",
+     "comments": 12,
+     "utcIso": "2026-05-28T06:54:51.000Z",
+     "author": "JJA",
+     "views": 120,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172014502",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 180,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172014899",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "아 그만좀 나오라고",
+     "comments": 6,
+     "utcIso": "2026-05-28T06:58:43.000Z",
+     "author": "slarky",
+     "views": 123,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172014899",
+     "tags": [
+      "negative"
+     ],
+     "engagement": 153,
+     "sentiment": "negative"
+    },
+    {
+     "id": "172016322",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "모듈 유효옵 잘먹는법 찾음 ㅋㅋ",
+     "comments": 3,
+     "utcIso": "2026-05-28T07:13:40.000Z",
+     "author": "리으응리을",
+     "views": 112,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172016322",
+     "tags": [
+      "positive"
+     ],
+     "engagement": 127,
+     "sentiment": "positive"
+    },
+    {
+     "id": "172019205",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "얘 왠지 겜하다보면 6돌될거같음",
+     "comments": 2,
+     "utcIso": "2026-05-28T07:43:40.000Z",
+     "author": "현창",
+     "views": 127,
+     "likes": 1,
+     "url": "https://arca.live/b/anchorpanic/172019205",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 147,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172021272",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "난 얘가 6돌 될 거 같음",
+     "comments": 5,
+     "utcIso": "2026-05-28T08:05:16.000Z",
+     "author": "l222",
+     "views": 129,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172021272",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 154,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172027380",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "스토리상 커넥터 섹스머신임?",
+     "comments": 10,
+     "utcIso": "2026-05-28T09:04:06.000Z",
+     "author": "현창",
+     "views": 174,
+     "likes": 1,
+     "url": "https://arca.live/b/anchorpanic/172027380",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 234,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172027559",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "앵스피 1빠졋다",
+     "comments": 4,
+     "utcIso": "2026-05-28T09:05:42.000Z",
+     "author": "JJA",
+     "views": 84,
+     "likes": 1,
+     "url": "https://arca.live/b/anchorpanic/172027559",
+     "tags": [
+      "positive"
+     ],
+     "engagement": 114,
+     "sentiment": "positive"
+    },
+    {
+     "id": "172029247",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "스포일러",
+     "title": "스포) 화이트로즈 문자 일부",
+     "comments": 5,
+     "utcIso": "2026-05-28T09:23:04.000Z",
+     "author": "ㅇㅇ",
+     "views": 136,
+     "likes": 3,
+     "url": "https://arca.live/b/anchorpanic/172029247",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 191,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172032402",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "질문",
+     "title": "막기 <- 이새끼 대체 뭐임?",
+     "comments": 4,
+     "utcIso": "2026-05-28T09:55:26.000Z",
+     "author": "mmeell",
+     "views": 113,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172032402",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 133,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172034923",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "오스카린 낙인",
+     "comments": 5,
+     "utcIso": "2026-05-28T10:18:15.000Z",
+     "author": "히메지마아케노",
+     "views": 111,
+     "likes": 1,
+     "url": "https://arca.live/b/anchorpanic/172034923",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 146,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172037233",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "타입 두개 쓰까는것보다 단일타입 조합 하는게 더 좋음?",
+     "comments": 11,
+     "utcIso": "2026-05-28T10:39:12.000Z",
+     "author": "해뜬다도르",
+     "views": 151,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172037233",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 206,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172037656",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "저번 패치에 비해 조금도 강해지지안앗어",
+     "comments": 6,
+     "utcIso": "2026-05-28T10:43:08.000Z",
+     "author": "도라리",
+     "views": 108,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172037656",
+     "tags": [
+      "bug",
+      "negative"
+     ],
+     "engagement": 138,
+     "sentiment": "negative"
+    },
+    {
+     "id": "172038990",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "아 이제 앵커 숙제 해볼까",
+     "comments": 0,
+     "utcIso": "2026-05-28T10:55:26.000Z",
+     "author": "현창",
+     "views": 45,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172038990",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 45,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172049449",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "채널공지",
+     "title": "챈주 투표 결과 안내",
+     "comments": 3,
+     "utcIso": "2026-05-28T12:24:23.000Z",
+     "author": "여어",
+     "views": 116,
+     "likes": 6,
+     "url": "https://arca.live/b/anchorpanic/172049449",
+     "tags": [
+      "notice",
+      "newbie"
+     ],
+     "engagement": 191,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172049666",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "빨리 주말이 되서 콘이나 찍고 싶구나....",
+     "comments": 5,
+     "utcIso": "2026-05-28T12:25:49.000Z",
+     "author": "지존물퇴",
+     "views": 126,
+     "likes": 9,
+     "url": "https://arca.live/b/anchorpanic/172049666",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 241,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172058061",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "무슨 일이 벌어지는걸까?",
+     "comments": 10,
+     "utcIso": "2026-05-28T13:33:38.000Z",
+     "author": "ㅇㅇ",
+     "views": 156,
+     "likes": 1,
+     "url": "https://arca.live/b/anchorpanic/172058061",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 216,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172067013",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "칼란리사 뽑았는데",
+     "comments": 4,
+     "utcIso": "2026-05-28T14:57:22.000Z",
+     "author": "JJA",
+     "views": 84,
+     "likes": 0,
+     "url": "https://arca.live/b/anchorpanic/172067013",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 104,
+     "sentiment": "neutral"
     }
-  },
-  "searchTrends": {
-    "endDate": "2026-05-28",
-    "sources": {
-      "naver": {
-        "label": "네이버 데이터랩",
-        "note": "datalab API. 2026-05-28까지 수집 OK."
-      },
-      "google": {
-        "label": "구글 트렌드",
-        "note": "trends.google.com widget multiline API (6mo daily, KR). Last build 2026-05-28."
-      }
+   ],
+   "date": "2026-05-28",
+   "stats": {
+    "total": 32,
+    "real_posts": 31,
+    "notices": 1,
+    "bugs": 2,
+    "negative": 3,
+    "positive": 4,
+    "competitor_mentions": 0,
+    "newbie_returning": 3,
+    "guild_recruit": 0,
+    "gacha": 8,
+    "event": 0,
+    "balance": 0,
+    "guide": 9,
+    "chitchat": 9,
+    "total_views": 3673,
+    "total_comments": 173,
+    "total_likes": 33,
+    "sentiment": "중립",
+    "sentiment_score": 0.032
+   },
+   "topEngaging": [
+    {
+     "id": "172002895",
+     "title": "오 여우뽑 개혜자네",
+     "url": "https://arca.live/b/anchorpanic/172002895",
+     "source": "arca",
+     "views": 181,
+     "comments": 12,
+     "likes": 1,
+     "engagement": 251,
+     "category": ""
     },
-    "series": [
+    {
+     "id": "172049666",
+     "title": "빨리 주말이 되서 콘이나 찍고 싶구나....",
+     "url": "https://arca.live/b/anchorpanic/172049666",
+     "source": "arca",
+     "views": 126,
+     "comments": 5,
+     "likes": 9,
+     "engagement": 241,
+     "category": ""
+    },
+    {
+     "id": "172027380",
+     "title": "스토리상 커넥터 섹스머신임?",
+     "url": "https://arca.live/b/anchorpanic/172027380",
+     "source": "arca",
+     "views": 174,
+     "comments": 10,
+     "likes": 1,
+     "engagement": 234,
+     "category": ""
+    },
+    {
+     "id": "171999931",
+     "title": "1주년 유입 뉴빈데 이제 할배소리 들을 수 있냐?",
+     "url": "https://arca.live/b/anchorpanic/171999931",
+     "source": "arca",
+     "views": 192,
+     "comments": 7,
+     "likes": 0,
+     "engagement": 227,
+     "category": ""
+    },
+    {
+     "id": "172058061",
+     "title": "무슨 일이 벌어지는걸까?",
+     "url": "https://arca.live/b/anchorpanic/172058061",
+     "source": "arca",
+     "views": 156,
+     "comments": 10,
+     "likes": 1,
+     "engagement": 216,
+     "category": ""
+    }
+   ],
+   "analysis": {
+    "dailySummary": "앵커패닉 2026-05-28 동향: 주요 토픽은 \"여우뽑/가챠\" 외 8개. sentiment 재분류 결과 긍정 4건 / 부정 3건 / 중립 25건 (중립, score 0.032). 버그·시스템 불만 2건. 아카라이브 32건, DC인사이드 0건.",
+    "topIssues": [
+     {
+      "title": "오 여우뽑 개혜자네",
+      "url": "https://arca.live/b/anchorpanic/172002895",
+      "summary": "참여도 251 (조회 181, 댓글 12, 추천 1)",
+      "tone": "긍정",
+      "bodySummary": "가챠 결과 '잘 뜬 것 같다'는 짧은 자랑(본문 거의 없음)."
+     },
+     {
+      "title": "빨리 주말이 되서 콘이나 찍고 싶구나....",
+      "url": "https://arca.live/b/anchorpanic/172049666",
+      "summary": "참여도 241 (조회 126, 댓글 5, 추천 9)",
+      "tone": "중립",
+      "bodySummary": "구독자 만명 찍는 꿈 잡담(본문 거의 없음)."
+     },
+     {
+      "title": "스토리상 커넥터 섹스머신임?",
+      "url": "https://arca.live/b/anchorpanic/172027380",
+      "summary": "참여도 234 (조회 174, 댓글 10, 추천 1)",
+      "tone": "중립",
+      "bodySummary": "스토리 스킵했는데 화이트로즈가 '다 따먹고 다닌다'는 스토리 잡담. 댓글은 '정자머신' 드립."
+     },
+     {
+      "title": "1주년 유입 뉴빈데 이제 할배소리 들을 수 있냐?",
+      "url": "https://arca.live/b/anchorpanic/171999931",
+      "summary": "참여도 227 (조회 192, 댓글 7, 추천 0)",
+      "tone": "중립",
+      "bodySummary": "1주년에 찍먹했다 정착한 유저가 양자덱 완성 후 다음 목표를 질문. 댓글은 심연·연맹토벌·피빕 노선과 연맹 영입을 제안."
+     }
+    ],
+    "bugReports": [
+     {
+      "title": "저번 패치에 비해 조금도 강해지지안앗어",
+      "url": "https://arca.live/b/anchorpanic/172037656"
+     },
+     {
+      "title": "갑자기 멀티윈도우 안되네",
+      "url": "https://arca.live/b/anchorpanic/172011973"
+     }
+    ],
+    "competitorMentions": [],
+    "trends": [
+     "sentiment: 긍정 4 / 부정 3 / 중립 25",
+     "주요 토픽: 여우뽑/가챠, 모듈/투자/스킬, 스토리/스포일러, 칼란리사, 1주년 뉴비/유입"
+    ],
+    "watchlist": [
+     "여우뽑(가챠) 만족도 추세",
+     "모듈/투자 가이드 수요 지속 여부",
+     "스토리·스포 반응 흐름",
+     "신캐(칼란리사) 픽업 평가",
+     "주말 토벌·콘 콘텐츠 참여"
+    ],
+    "keywords": [
+     {
+      "word": "여우뽑/가챠",
+      "count": 7,
+      "ids": [
+       "171998653",
+       "171998798",
+       "171998873",
+       "172000102",
+       "172001885",
+       "172002895",
+       "172006499"
+      ]
+     },
+     {
+      "word": "모듈/투자/스킬",
+      "count": 6,
+      "ids": [
+       "172009351",
+       "172016322",
+       "172019205",
+       "172021272",
+       "172037233",
+       "172037656"
+      ]
+     },
+     {
+      "word": "스토리/스포일러",
+      "count": 4,
+      "ids": [
+       "172027380",
+       "172029247",
+       "172034923",
+       "172058061"
+      ]
+     },
+     {
+      "word": "칼란리사",
+      "count": 2,
+      "ids": [
+       "172007300",
+       "172067013"
+      ]
+     },
+     {
+      "word": "1주년 뉴비/유입",
+      "count": 1,
+      "ids": [
+       "171999931"
+      ]
+     },
+     {
+      "word": "앵스피",
+      "count": 1,
+      "ids": [
+       "172027559"
+      ]
+     },
+     {
+      "word": "멀티윈도우 버그(불만)",
+      "count": 1,
+      "ids": [
+       "172011973"
+      ]
+     },
+     {
+      "word": "패치 체감(불만)",
+      "count": 1,
+      "ids": [
+       "172037656"
+      ]
+     },
+     {
+      "word": "챈주 투표 공지",
+      "count": 1,
+      "ids": [
+       "172049449"
+      ]
+     }
+    ]
+   }
+  },
+  "erpis": {
+   "name": "에르피스",
+   "posts": [
+    {
+     "id": "171974992",
+     "source": "arca",
+     "board": "erphis",
+     "category": "",
+     "title": "이제 배지작 본격적으로 해야해서 공부중인데",
+     "comments": 3,
+     "utcIso": "2026-05-27T19:53:59.000Z",
+     "author": "도이",
+     "views": 86,
+     "likes": 0,
+     "url": "https://arca.live/b/erphis/171974992",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 101,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "171984720",
+     "source": "arca",
+     "board": "erphis",
+     "category": "",
+     "title": "NIKITAGIFT28",
+     "comments": 3,
+     "utcIso": "2026-05-28T01:04:38.000Z",
+     "author": "현창",
+     "views": 72,
+     "likes": 4,
+     "url": "https://arca.live/b/erphis/171984720",
+     "tags": [
+      "event"
+     ],
+     "engagement": 127,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "171986949",
+     "source": "arca",
+     "board": "erphis",
+     "category": "",
+     "title": "겜 접을뻔함",
+     "comments": 8,
+     "utcIso": "2026-05-28T01:35:58.000Z",
+     "author": "현창",
+     "views": 153,
+     "likes": 0,
+     "url": "https://arca.live/b/erphis/171986949",
+     "tags": [
+      "negative"
+     ],
+     "engagement": 193,
+     "sentiment": "negative"
+    },
+    {
+     "id": "171996427",
+     "source": "arca",
+     "board": "erphis",
+     "category": "",
+     "title": "니키타양...미안하구려,,,,,,",
+     "comments": 1,
+     "utcIso": "2026-05-28T03:30:50.000Z",
+     "author": "리으응리을",
+     "views": 87,
+     "likes": 0,
+     "url": "https://arca.live/b/erphis/171996427",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 92,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11916",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "뽑니 마니 해도 나중에 보면",
+     "comments": 1,
+     "utcIso": "2026-05-28T04:40:36.000Z",
+     "author": "",
+     "views": 96,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11916",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 101,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11917",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "어제 에드컵보니 페이커 니키타 픽하던데 뽑죠",
+     "comments": 4,
+     "utcIso": "2026-05-28T05:22:32.000Z",
+     "author": "",
+     "views": 118,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11917",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 138,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172008553",
+     "source": "arca",
+     "board": "erphis",
+     "category": "",
+     "title": "니키타 좋냐",
+     "comments": 4,
+     "utcIso": "2026-05-28T05:52:30.000Z",
+     "author": "Uno",
+     "views": 85,
+     "likes": 0,
+     "url": "https://arca.live/b/erphis/172008553",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 105,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11918",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "330뽑만에 니키타 풀각했음",
+     "comments": 2,
+     "utcIso": "2026-05-28T06:39:42.000Z",
+     "author": "",
+     "views": 144,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11918",
+     "tags": [
+      "gacha",
+      "positive"
+     ],
+     "engagement": 154,
+     "sentiment": "positive"
+    },
+    {
+     "id": "11919",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "니키타 바이럴 좆되네",
+     "comments": 3,
+     "utcIso": "2026-05-28T06:46:03.000Z",
+     "author": "",
+     "views": 100,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11919",
+     "tags": [
+      "positive"
+     ],
+     "engagement": 115,
+     "sentiment": "positive"
+    },
+    {
+     "id": "11920",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "니키타의 승부처는 월보 쫄정리다",
+     "comments": 1,
+     "utcIso": "2026-05-28T06:49:06.000Z",
+     "author": "",
+     "views": 95,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11920",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 100,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11921",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "미암니키타 결국 다 뽑아버렸네",
+     "comments": 2,
+     "utcIso": "2026-05-28T07:00:16.000Z",
+     "author": "",
+     "views": 94,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11921",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 104,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11922",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "아니 좀만 참아봐 에붕이들아",
+     "comments": 1,
+     "utcIso": "2026-05-28T07:00:20.000Z",
+     "author": "",
+     "views": 110,
+     "likes": 2,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11922",
+     "tags": [
+      "newbie"
+     ],
+     "engagement": 135,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172016160",
+     "source": "arca",
+     "board": "erphis",
+     "category": "",
+     "title": "어제오늘 하는 겜 가챠가 싹다망함",
+     "comments": 2,
+     "utcIso": "2026-05-28T07:11:57.000Z",
+     "author": "현창",
+     "views": 55,
+     "likes": 0,
+     "url": "https://arca.live/b/erphis/172016160",
+     "tags": [
+      "gacha",
+      "negative"
+     ],
+     "engagement": 65,
+     "sentiment": "negative"
+    },
+    {
+     "id": "172016713",
+     "source": "arca",
+     "board": "erphis",
+     "category": "",
+     "title": "니키타는 티어에도 안보이는데 거르면 되??",
+     "comments": 17,
+     "utcIso": "2026-05-28T07:17:49.000Z",
+     "author": "구원",
+     "views": 134,
+     "likes": 0,
+     "url": "https://arca.live/b/erphis/172016713",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 219,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11923",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "니키타는 티어에도 없는데 거르면 대??",
+     "comments": 3,
+     "utcIso": "2026-05-28T07:18:39.000Z",
+     "author": "",
+     "views": 131,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11923",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 146,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11924",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "니키타 월보 쫄정리로 쓴다 = 등수노린다",
+     "comments": 0,
+     "utcIso": "2026-05-28T07:22:48.000Z",
+     "author": "",
+     "views": 50,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11924",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 50,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11925",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "이러고 물속 월보면 꽤 접겟는데",
+     "comments": 2,
+     "utcIso": "2026-05-28T07:23:47.000Z",
+     "author": "",
+     "views": 85,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11925",
+     "tags": [
+      "negative"
+     ],
+     "engagement": 95,
+     "sentiment": "negative"
+    },
+    {
+     "id": "11926",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "월보 쫄 역속성 이면 왜 니키타를 탓함?",
+     "comments": 2,
+     "utcIso": "2026-05-28T07:25:15.000Z",
+     "author": "",
+     "views": 93,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11926",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 103,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11927",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "니키타 스텟이 근데 진짜 변태적이네",
+     "comments": 1,
+     "utcIso": "2026-05-28T07:40:44.000Z",
+     "author": "",
+     "views": 101,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11927",
+     "tags": [
+      "balance",
+      "positive"
+     ],
+     "engagement": 106,
+     "sentiment": "positive"
+    },
+    {
+     "id": "11928",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "암만봐도 니키타 뽑느니 미암 뽑아라",
+     "comments": 2,
+     "utcIso": "2026-05-28T07:51:15.000Z",
+     "author": "",
+     "views": 148,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11928",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 158,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11929",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "근데 미암 접대처럼 또 하는거 아니겠지??",
+     "comments": 1,
+     "utcIso": "2026-05-28T07:53:26.000Z",
+     "author": "",
+     "views": 75,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11929",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 80,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172020970",
+     "source": "arca",
+     "board": "erphis",
+     "category": "",
+     "title": "니키타 생각해보니까",
+     "comments": 2,
+     "utcIso": "2026-05-28T08:01:59.000Z",
+     "author": "리으응리을",
+     "views": 57,
+     "likes": 0,
+     "url": "https://arca.live/b/erphis/172020970",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 67,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172021731",
+     "source": "arca",
+     "board": "erphis",
+     "category": "",
+     "title": "니키타 스텟 변태적이긴해",
+     "comments": 0,
+     "utcIso": "2026-05-28T08:10:18.000Z",
+     "author": "현창",
+     "views": 63,
+     "likes": 0,
+     "url": "https://arca.live/b/erphis/172021731",
+     "tags": [
+      "balance",
+      "positive"
+     ],
+     "engagement": 63,
+     "sentiment": "positive"
+    },
+    {
+     "id": "11930",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "니키타 막연하게 버텨지지않을까했는데",
+     "comments": 6,
+     "utcIso": "2026-05-28T08:26:58.000Z",
+     "author": "",
+     "views": 148,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11930",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 178,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172023834",
+     "source": "arca",
+     "board": "erphis",
+     "category": "",
+     "title": "니키타 10뽑비틱ㅋㅋㅋㅋ",
+     "comments": 2,
+     "utcIso": "2026-05-28T08:31:30.000Z",
+     "author": "시엘22",
+     "views": 88,
+     "likes": 0,
+     "url": "https://arca.live/b/erphis/172023834",
+     "tags": [
+      "gacha"
+     ],
+     "engagement": 98,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "172024387",
+     "source": "arca",
+     "board": "erphis",
+     "category": "질문",
+     "title": "기본 통상 케릭 중 3각성 우선순위 아는사람?",
+     "comments": 3,
+     "utcIso": "2026-05-28T08:36:34.000Z",
+     "author": "ironbeg",
+     "views": 84,
+     "likes": 0,
+     "url": "https://arca.live/b/erphis/172024387",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 99,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11931",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "아니 강적10단계건 레이드9단계건 내놓으라고",
+     "comments": 0,
+     "utcIso": "2026-05-28T08:36:55.000Z",
+     "author": "",
+     "views": 56,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11931",
+     "tags": [
+      "negative"
+     ],
+     "engagement": 56,
+     "sentiment": "negative"
+    },
+    {
+     "id": "11932",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "고퀸 언제 퇴물되냐",
+     "comments": 6,
+     "utcIso": "2026-05-28T08:42:55.000Z",
+     "author": "",
+     "views": 135,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11932",
+     "tags": [
+      "balance",
+      "negative"
+     ],
+     "engagement": 165,
+     "sentiment": "negative"
+    },
+    {
+     "id": "11933",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "미니게임 스테이지 갯수 뭐냐",
+     "comments": 2,
+     "utcIso": "2026-05-28T09:25:48.000Z",
+     "author": "",
+     "views": 89,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11933",
+     "tags": [
+      "guide"
+     ],
+     "engagement": 99,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11934",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "오늘한걷..",
+     "comments": 1,
+     "utcIso": "2026-05-28T10:55:45.000Z",
+     "author": "",
+     "views": 43,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11934",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 48,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11935",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "니키타 센데",
+     "comments": 7,
+     "utcIso": "2026-05-28T11:16:50.000Z",
+     "author": "",
+     "views": 187,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11935",
+     "tags": [
+      "positive"
+     ],
+     "engagement": 222,
+     "sentiment": "positive"
+    },
+    {
+     "id": "172042598",
+     "source": "arca",
+     "board": "erphis",
+     "category": "",
+     "title": "니키타 EX 테스트",
+     "comments": 6,
+     "utcIso": "2026-05-28T11:28:43.000Z",
+     "author": "현창",
+     "views": 112,
+     "likes": 0,
+     "url": "https://arca.live/b/erphis/172042598",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 142,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11936",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "지피덱 니키타는 니키타리더로 쉬엘 압축해도 되겠군",
+     "comments": 0,
+     "utcIso": "2026-05-28T11:37:51.000Z",
+     "author": "",
+     "views": 76,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11936",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 76,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11937",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "이번 갠레는 무지성 아만사 에셀 박으면 되나",
+     "comments": 2,
+     "utcIso": "2026-05-28T11:54:39.000Z",
+     "author": "",
+     "views": 86,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11937",
+     "tags": [
+      "guild"
+     ],
+     "engagement": 96,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11938",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "와 중섭 오늘자 업뎃된 티어표인데",
+     "comments": 13,
+     "utcIso": "2026-05-28T13:21:34.000Z",
+     "author": "",
+     "views": 212,
+     "likes": 2,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11938",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 297,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11939",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "근데 짱깨 티어표 너무 신뢰는 ㄴㄴ",
+     "comments": 0,
+     "utcIso": "2026-05-28T13:55:09.000Z",
+     "author": "",
+     "views": 74,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11939",
+     "tags": [
+      "negative"
+     ],
+     "engagement": 74,
+     "sentiment": "negative"
+    },
+    {
+     "id": "11940",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "와 잠깐만 악몽 상점 초대장",
+     "comments": 11,
+     "utcIso": "2026-05-28T13:59:28.000Z",
+     "author": "",
+     "views": 128,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11940",
+     "tags": [
+      "chitchat"
+     ],
+     "engagement": 183,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11942",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "ex10 걍 토나오네",
+     "comments": 0,
+     "utcIso": "2026-05-28T14:29:43.000Z",
+     "author": "",
+     "views": 32,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11942",
+     "tags": [
+      "negative"
+     ],
+     "engagement": 32,
+     "sentiment": "negative"
+    },
+    {
+     "id": "11943",
+     "source": "dc",
+     "board": "erpis",
+     "category": "질문",
+     "title": "근데 로빈 스킨 오늘 나오는거 아니었음?",
+     "comments": 11,
+     "utcIso": "2026-05-28T14:30:20.000Z",
+     "author": "",
+     "views": 96,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11943",
+     "tags": [
+      "gacha",
+      "guide"
+     ],
+     "engagement": 151,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "11944",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "오늘 하루만 미접할게",
+     "comments": 1,
+     "utcIso": "2026-05-28T14:38:57.000Z",
+     "author": "",
+     "views": 61,
+     "likes": 0,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11944",
+     "tags": [
+      "negative"
+     ],
+     "engagement": 66,
+     "sentiment": "negative"
+    }
+   ],
+   "date": "2026-05-28",
+   "stats": {
+    "total": 40,
+    "real_posts": 40,
+    "notices": 0,
+    "bugs": 0,
+    "negative": 8,
+    "positive": 5,
+    "competitor_mentions": 0,
+    "newbie_returning": 1,
+    "guild_recruit": 1,
+    "gacha": 8,
+    "event": 1,
+    "balance": 3,
+    "guide": 9,
+    "chitchat": 10,
+    "total_views": 3939,
+    "total_comments": 136,
+    "total_likes": 8,
+    "sentiment": "부정",
+    "sentiment_score": -0.075
+   },
+   "topEngaging": [
+    {
+     "id": "11938",
+     "title": "와 중섭 오늘자 업뎃된 티어표인데",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11938",
+     "source": "dc",
+     "views": 212,
+     "comments": 13,
+     "likes": 2,
+     "engagement": 297,
+     "category": "일반"
+    },
+    {
+     "id": "11935",
+     "title": "니키타 센데",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11935",
+     "source": "dc",
+     "views": 187,
+     "comments": 7,
+     "likes": 0,
+     "engagement": 222,
+     "category": "일반"
+    },
+    {
+     "id": "172016713",
+     "title": "니키타는 티어에도 안보이는데 거르면 되??",
+     "url": "https://arca.live/b/erphis/172016713",
+     "source": "arca",
+     "views": 134,
+     "comments": 17,
+     "likes": 0,
+     "engagement": 219,
+     "category": ""
+    },
+    {
+     "id": "171986949",
+     "title": "겜 접을뻔함",
+     "url": "https://arca.live/b/erphis/171986949",
+     "source": "arca",
+     "views": 153,
+     "comments": 8,
+     "likes": 0,
+     "engagement": 193,
+     "category": ""
+    },
+    {
+     "id": "11940",
+     "title": "와 잠깐만 악몽 상점 초대장",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11940",
+     "source": "dc",
+     "views": 128,
+     "comments": 11,
+     "likes": 0,
+     "engagement": 183,
+     "category": "일반"
+    }
+   ],
+   "analysis": {
+    "dailySummary": "에르피스 2026-05-28 동향: 주요 토픽은 \"니키타(신캐 화제)\" 외 9개. sentiment 재분류 결과 긍정 5건 / 부정 8건 / 중립 27건 (부정, score -0.075). 버그·시스템 불만 0건. 아카라이브 12건, DC인사이드 28건.",
+    "topIssues": [
+     {
+      "title": "와 중섭 오늘자 업뎃된 티어표인데",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11938",
+      "summary": "참여도 297 (조회 212, 댓글 13, 추천 2)",
+      "tone": "중립",
+      "bodySummary": "리온이 티어에서 강등당했지만 오래 해먹긴 했다는 잡담."
+     },
+     {
+      "title": "니키타 센데",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=11935",
+      "summary": "참여도 222 (조회 187, 댓글 7, 추천 0)",
+      "tone": "긍정",
+      "bodySummary": "공격 버프를 4~6스택 뿌려줘서 꽤 좋다는 캐릭 성능 평."
+     },
+     {
+      "title": "니키타는 티어에도 안보이는데 거르면 되??",
+      "url": "https://arca.live/b/erphis/172016713",
+      "summary": "참여도 219 (조회 134, 댓글 17, 추천 0)",
+      "tone": "중립",
+      "bodySummary": "다음 픽업(미암/니키타)을 뽑을지 묻는 글. 댓글은 미암 명함은 챙기되 니키타까지 가는 부담을 토론."
+     },
+     {
+      "title": "겜 접을뻔함",
+      "url": "https://arca.live/b/erphis/171986949",
+      "summary": "참여도 193 (조회 153, 댓글 8, 추천 0)",
+      "tone": "부정",
+      "bodySummary": "확정천장을 3번 칠 만큼 가챠가 퍼졌다는 잡담. 댓글은 니키타 성능·레이드 테스트를 예고."
+     }
+    ],
+    "bugReports": [],
+    "competitorMentions": [],
+    "trends": [
+     "sentiment: 긍정 5 / 부정 8 / 중립 27",
+     "주요 토픽: 니키타(신캐 화제), 월보/쫄정리, 티어표/중섭, 미암 비교, 미접/접 이탈(부정)"
+    ],
+    "watchlist": [
+     "니키타 픽업 평가·실전 후기 추세",
+     "월보/쫄정리 메타 변동",
+     "티어표(중섭) 후속 반응",
+     "강적·레이드 컨텐츠 추가 요구",
+     "이탈 신호(미접/접) 모니터링"
+    ],
+    "keywords": [
+     {
+      "word": "니키타(신캐 화제)",
+      "count": 24,
+      "ids": [
+       "171984720",
+       "171986949",
+       "171996427",
+       "172008553",
+       "172016713",
+       "172020970",
+       "172021731",
+       "172023834",
+       "172042598",
+       "11917",
+       "11918",
+       "11919",
+       "11920",
+       "11921",
+       "11922",
+       "11923",
+       "11924",
+       "11925",
+       "11926",
+       "11927",
+       "11928",
+       "11930",
+       "11935",
+       "11936"
+      ]
+     },
+     {
+      "word": "월보/쫄정리",
+      "count": 4,
+      "ids": [
+       "11920",
+       "11924",
+       "11925",
+       "11926"
+      ]
+     },
+     {
+      "word": "티어표/중섭",
+      "count": 3,
+      "ids": [
+       "11923",
+       "11938",
+       "11939"
+      ]
+     },
+     {
+      "word": "미암 비교",
+      "count": 3,
+      "ids": [
+       "11921",
+       "11928",
+       "11929"
+      ]
+     },
+     {
+      "word": "미접/접 이탈(부정)",
+      "count": 3,
+      "ids": [
+       "11944",
+       "171986949",
+       "11925"
+      ]
+     },
+     {
+      "word": "강적·레이드 컨텐츠 부재(불만)",
+      "count": 1,
+      "ids": [
+       "11931"
+      ]
+     },
+     {
+      "word": "고퀸 퇴물(불만)",
+      "count": 1,
+      "ids": [
+       "11932"
+      ]
+     },
+     {
+      "word": "ex10 난이도(불만)",
+      "count": 1,
+      "ids": [
+       "11942"
+      ]
+     },
+     {
+      "word": "악몽 상점 초대장",
+      "count": 1,
+      "ids": [
+       "11940"
+      ]
+     },
+     {
+      "word": "가챠 망함(불만)",
+      "count": 1,
+      "ids": [
+       "172016160"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "searchTrends": {
+  "endDate": "2026-05-28",
+  "sources": {
+   "naver": {
+    "label": "네이버 데이터랩",
+    "note": "datalab API. 2026-05-28까지 수집 OK."
+   },
+   "google": {
+    "label": "구글 트렌드",
+    "note": "trends.google.com widget multiline API (6mo daily, KR). Last build 2026-05-28."
+   }
+  },
+  "series": [
+   {
+    "game": "anchorpanic",
+    "data": {
+     "naver": [
       {
-        "game": "anchorpanic",
-        "data": {
-          "naver": [
-            {
-              "period": "2026-04-29",
-              "ratio": 4.03726
-            },
-            {
-              "period": "2026-04-30",
-              "ratio": 4.34782
-            },
-            {
-              "period": "2026-05-01",
-              "ratio": 3.41614
-            },
-            {
-              "period": "2026-05-03",
-              "ratio": 1.86335
-            },
-            {
-              "period": "2026-05-04",
-              "ratio": 4.96894
-            },
-            {
-              "period": "2026-05-05",
-              "ratio": 15.8385
-            },
-            {
-              "period": "2026-05-06",
-              "ratio": 76.08695
-            },
-            {
-              "period": "2026-05-07",
-              "ratio": 100
-            },
-            {
-              "period": "2026-05-08",
-              "ratio": 92.54658
-            },
-            {
-              "period": "2026-05-09",
-              "ratio": 85.40372
-            },
-            {
-              "period": "2026-05-10",
-              "ratio": 59.31677
-            },
-            {
-              "period": "2026-05-11",
-              "ratio": 54.65838
-            },
-            {
-              "period": "2026-05-12",
-              "ratio": 46.8944
-            },
-            {
-              "period": "2026-05-13",
-              "ratio": 32.29813
-            },
-            {
-              "period": "2026-05-14",
-              "ratio": 27.63975
-            },
-            {
-              "period": "2026-05-15",
-              "ratio": 22.6708
-            },
-            {
-              "period": "2026-05-16",
-              "ratio": 24.53416
-            },
-            {
-              "period": "2026-05-17",
-              "ratio": 16.14906
-            },
-            {
-              "period": "2026-05-18",
-              "ratio": 14.90683
-            },
-            {
-              "period": "2026-05-19",
-              "ratio": 13.04347
-            },
-            {
-              "period": "2026-05-20",
-              "ratio": 16.45962
-            },
-            {
-              "period": "2026-05-21",
-              "ratio": 11.49068
-            },
-            {
-              "period": "2026-05-22",
-              "ratio": 12.42236
-            },
-            {
-              "period": "2026-05-23",
-              "ratio": 14.90683
-            },
-            {
-              "period": "2026-05-24",
-              "ratio": 12.1118
-            },
-            {
-              "period": "2026-05-25",
-              "ratio": 14.90683
-            },
-            {
-              "period": "2026-05-26",
-              "ratio": 13.35403
-            },
-            {
-              "period": "2026-05-27",
-              "ratio": 22.04968
-            },
-            {
-              "period": "2026-05-28",
-              "ratio": 9.62732
-            }
-          ],
-          "google": [
-            {
-              "period": "2025-12-15",
-              "ratio": 18
-            },
-            {
-              "period": "2026-05-07",
-              "ratio": 16
-            },
-            {
-              "period": "2026-05-09",
-              "ratio": 19
-            },
-            {
-              "period": "2026-05-15",
-              "ratio": 4
-            },
-            {
-              "period": "2026-05-16",
-              "ratio": 5
-            },
-            {
-              "period": "2026-05-17",
-              "ratio": 3
-            },
-            {
-              "period": "2026-05-18",
-              "ratio": 3
-            },
-            {
-              "period": "2026-05-19",
-              "ratio": 3
-            },
-            {
-              "period": "2026-05-20",
-              "ratio": 3
-            },
-            {
-              "period": "2026-05-21",
-              "ratio": 2
-            },
-            {
-              "period": "2026-05-22",
-              "ratio": 1
-            },
-            {
-              "period": "2026-05-23",
-              "ratio": 2
-            },
-            {
-              "period": "2026-05-24",
-              "ratio": 3
-            },
-            {
-              "period": "2026-05-25",
-              "ratio": 2
-            },
-            {
-              "period": "2026-05-26",
-              "ratio": 2
-            },
-            {
-              "period": "2026-05-27",
-              "ratio": 2
-            },
-            {
-              "period": "2026-05-28",
-              "ratio": 4
-            }
-          ]
-        }
+       "period": "2026-04-29",
+       "ratio": 4.03726
       },
       {
-        "game": "erpis",
-        "data": {
-          "naver": [
-            {
-              "period": "2026-04-29",
-              "ratio": 36.95652
-            },
-            {
-              "period": "2026-04-30",
-              "ratio": 47.51552
-            },
-            {
-              "period": "2026-05-01",
-              "ratio": 33.54037
-            },
-            {
-              "period": "2026-05-02",
-              "ratio": 22.36024
-            },
-            {
-              "period": "2026-05-03",
-              "ratio": 20.18633
-            },
-            {
-              "period": "2026-05-04",
-              "ratio": 33.22981
-            },
-            {
-              "period": "2026-05-05",
-              "ratio": 26.08695
-            },
-            {
-              "period": "2026-05-06",
-              "ratio": 24.53416
-            },
-            {
-              "period": "2026-05-07",
-              "ratio": 24.84472
-            },
-            {
-              "period": "2026-05-08",
-              "ratio": 35.40372
-            },
-            {
-              "period": "2026-05-09",
-              "ratio": 33.85093
-            },
-            {
-              "period": "2026-05-10",
-              "ratio": 35.40372
-            },
-            {
-              "period": "2026-05-11",
-              "ratio": 31.0559
-            },
-            {
-              "period": "2026-05-12",
-              "ratio": 26.39751
-            },
-            {
-              "period": "2026-05-13",
-              "ratio": 36.95652
-            },
-            {
-              "period": "2026-05-14",
-              "ratio": 27.63975
-            },
-            {
-              "period": "2026-05-15",
-              "ratio": 31.98757
-            },
-            {
-              "period": "2026-05-16",
-              "ratio": 21.11801
-            },
-            {
-              "period": "2026-05-17",
-              "ratio": 22.6708
-            },
-            {
-              "period": "2026-05-18",
-              "ratio": 20.18633
-            },
-            {
-              "period": "2026-05-19",
-              "ratio": 26.08695
-            },
-            {
-              "period": "2026-05-20",
-              "ratio": 21.11801
-            },
-            {
-              "period": "2026-05-21",
-              "ratio": 17.08074
-            },
-            {
-              "period": "2026-05-22",
-              "ratio": 21.42857
-            },
-            {
-              "period": "2026-05-23",
-              "ratio": 16.14906
-            },
-            {
-              "period": "2026-05-24",
-              "ratio": 14.59627
-            },
-            {
-              "period": "2026-05-25",
-              "ratio": 11.49068
-            },
-            {
-              "period": "2026-05-26",
-              "ratio": 15.21739
-            },
-            {
-              "period": "2026-05-27",
-              "ratio": 22.6708
-            },
-            {
-              "period": "2026-05-28",
-              "ratio": 16.14906
-            }
-          ],
-          "google": [
-            {
-              "period": "2026-02-04",
-              "ratio": 16
-            },
-            {
-              "period": "2026-02-05",
-              "ratio": 100
-            },
-            {
-              "period": "2026-02-06",
-              "ratio": 54
-            },
-            {
-              "period": "2026-02-07",
-              "ratio": 68
-            },
-            {
-              "period": "2026-02-08",
-              "ratio": 75
-            },
-            {
-              "period": "2026-02-09",
-              "ratio": 33
-            },
-            {
-              "period": "2026-02-10",
-              "ratio": 59
-            },
-            {
-              "period": "2026-02-11",
-              "ratio": 31
-            },
-            {
-              "period": "2026-02-12",
-              "ratio": 45
-            },
-            {
-              "period": "2026-02-13",
-              "ratio": 41
-            },
-            {
-              "period": "2026-02-14",
-              "ratio": 39
-            },
-            {
-              "period": "2026-02-15",
-              "ratio": 41
-            },
-            {
-              "period": "2026-02-16",
-              "ratio": 29
-            },
-            {
-              "period": "2026-02-17",
-              "ratio": 23
-            },
-            {
-              "period": "2026-02-19",
-              "ratio": 39
-            },
-            {
-              "period": "2026-02-20",
-              "ratio": 21
-            },
-            {
-              "period": "2026-02-21",
-              "ratio": 33
-            },
-            {
-              "period": "2026-02-22",
-              "ratio": 20
-            },
-            {
-              "period": "2026-02-23",
-              "ratio": 25
-            },
-            {
-              "period": "2026-02-24",
-              "ratio": 21
-            },
-            {
-              "period": "2026-02-25",
-              "ratio": 21
-            },
-            {
-              "period": "2026-02-26",
-              "ratio": 16
-            },
-            {
-              "period": "2026-03-05",
-              "ratio": 23
-            },
-            {
-              "period": "2026-03-06",
-              "ratio": 17
-            },
-            {
-              "period": "2026-03-19",
-              "ratio": 16
-            },
-            {
-              "period": "2026-05-15",
-              "ratio": 3
-            },
-            {
-              "period": "2026-05-16",
-              "ratio": 3
-            },
-            {
-              "period": "2026-05-17",
-              "ratio": 2
-            },
-            {
-              "period": "2026-05-18",
-              "ratio": 2
-            },
-            {
-              "period": "2026-05-19",
-              "ratio": 2
-            },
-            {
-              "period": "2026-05-20",
-              "ratio": 3
-            },
-            {
-              "period": "2026-05-21",
-              "ratio": 2
-            },
-            {
-              "period": "2026-05-22",
-              "ratio": 2
-            },
-            {
-              "period": "2026-05-23",
-              "ratio": 3
-            },
-            {
-              "period": "2026-05-24",
-              "ratio": 2
-            },
-            {
-              "period": "2026-05-25",
-              "ratio": 2
-            },
-            {
-              "period": "2026-05-26",
-              "ratio": 2
-            },
-            {
-              "period": "2026-05-27",
-              "ratio": 2
-            },
-            {
-              "period": "2026-05-28",
-              "ratio": 2
-            }
-          ]
-        }
+       "period": "2026-04-30",
+       "ratio": 4.34782
+      },
+      {
+       "period": "2026-05-01",
+       "ratio": 3.41614
+      },
+      {
+       "period": "2026-05-03",
+       "ratio": 1.86335
+      },
+      {
+       "period": "2026-05-04",
+       "ratio": 4.96894
+      },
+      {
+       "period": "2026-05-05",
+       "ratio": 15.8385
+      },
+      {
+       "period": "2026-05-06",
+       "ratio": 76.08695
+      },
+      {
+       "period": "2026-05-07",
+       "ratio": 100
+      },
+      {
+       "period": "2026-05-08",
+       "ratio": 92.54658
+      },
+      {
+       "period": "2026-05-09",
+       "ratio": 85.40372
+      },
+      {
+       "period": "2026-05-10",
+       "ratio": 59.31677
+      },
+      {
+       "period": "2026-05-11",
+       "ratio": 54.65838
+      },
+      {
+       "period": "2026-05-12",
+       "ratio": 46.8944
+      },
+      {
+       "period": "2026-05-13",
+       "ratio": 32.29813
+      },
+      {
+       "period": "2026-05-14",
+       "ratio": 27.63975
+      },
+      {
+       "period": "2026-05-15",
+       "ratio": 22.6708
+      },
+      {
+       "period": "2026-05-16",
+       "ratio": 24.53416
+      },
+      {
+       "period": "2026-05-17",
+       "ratio": 16.14906
+      },
+      {
+       "period": "2026-05-18",
+       "ratio": 14.90683
+      },
+      {
+       "period": "2026-05-19",
+       "ratio": 13.04347
+      },
+      {
+       "period": "2026-05-20",
+       "ratio": 16.45962
+      },
+      {
+       "period": "2026-05-21",
+       "ratio": 11.49068
+      },
+      {
+       "period": "2026-05-22",
+       "ratio": 12.42236
+      },
+      {
+       "period": "2026-05-23",
+       "ratio": 14.90683
+      },
+      {
+       "period": "2026-05-24",
+       "ratio": 12.1118
+      },
+      {
+       "period": "2026-05-25",
+       "ratio": 14.90683
+      },
+      {
+       "period": "2026-05-26",
+       "ratio": 13.35403
+      },
+      {
+       "period": "2026-05-27",
+       "ratio": 22.04968
+      },
+      {
+       "period": "2026-05-28",
+       "ratio": 9.62732
       }
-    ]
-  },
-  "lastUpdated": "2026-05-29T00:37:44.975383+00:00"
+     ],
+     "google": [
+      {
+       "period": "2025-12-15",
+       "ratio": 18
+      },
+      {
+       "period": "2026-05-07",
+       "ratio": 16
+      },
+      {
+       "period": "2026-05-09",
+       "ratio": 19
+      },
+      {
+       "period": "2026-05-15",
+       "ratio": 4
+      },
+      {
+       "period": "2026-05-16",
+       "ratio": 5
+      },
+      {
+       "period": "2026-05-17",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-18",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-19",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-20",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-21",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-22",
+       "ratio": 1
+      },
+      {
+       "period": "2026-05-23",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-24",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-25",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-26",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-27",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-28",
+       "ratio": 4
+      }
+     ]
+    }
+   },
+   {
+    "game": "erpis",
+    "data": {
+     "naver": [
+      {
+       "period": "2026-04-29",
+       "ratio": 36.95652
+      },
+      {
+       "period": "2026-04-30",
+       "ratio": 47.51552
+      },
+      {
+       "period": "2026-05-01",
+       "ratio": 33.54037
+      },
+      {
+       "period": "2026-05-02",
+       "ratio": 22.36024
+      },
+      {
+       "period": "2026-05-03",
+       "ratio": 20.18633
+      },
+      {
+       "period": "2026-05-04",
+       "ratio": 33.22981
+      },
+      {
+       "period": "2026-05-05",
+       "ratio": 26.08695
+      },
+      {
+       "period": "2026-05-06",
+       "ratio": 24.53416
+      },
+      {
+       "period": "2026-05-07",
+       "ratio": 24.84472
+      },
+      {
+       "period": "2026-05-08",
+       "ratio": 35.40372
+      },
+      {
+       "period": "2026-05-09",
+       "ratio": 33.85093
+      },
+      {
+       "period": "2026-05-10",
+       "ratio": 35.40372
+      },
+      {
+       "period": "2026-05-11",
+       "ratio": 31.0559
+      },
+      {
+       "period": "2026-05-12",
+       "ratio": 26.39751
+      },
+      {
+       "period": "2026-05-13",
+       "ratio": 36.95652
+      },
+      {
+       "period": "2026-05-14",
+       "ratio": 27.63975
+      },
+      {
+       "period": "2026-05-15",
+       "ratio": 31.98757
+      },
+      {
+       "period": "2026-05-16",
+       "ratio": 21.11801
+      },
+      {
+       "period": "2026-05-17",
+       "ratio": 22.6708
+      },
+      {
+       "period": "2026-05-18",
+       "ratio": 20.18633
+      },
+      {
+       "period": "2026-05-19",
+       "ratio": 26.08695
+      },
+      {
+       "period": "2026-05-20",
+       "ratio": 21.11801
+      },
+      {
+       "period": "2026-05-21",
+       "ratio": 17.08074
+      },
+      {
+       "period": "2026-05-22",
+       "ratio": 21.42857
+      },
+      {
+       "period": "2026-05-23",
+       "ratio": 16.14906
+      },
+      {
+       "period": "2026-05-24",
+       "ratio": 14.59627
+      },
+      {
+       "period": "2026-05-25",
+       "ratio": 11.49068
+      },
+      {
+       "period": "2026-05-26",
+       "ratio": 15.21739
+      },
+      {
+       "period": "2026-05-27",
+       "ratio": 22.6708
+      },
+      {
+       "period": "2026-05-28",
+       "ratio": 16.14906
+      }
+     ],
+     "google": [
+      {
+       "period": "2026-02-04",
+       "ratio": 16
+      },
+      {
+       "period": "2026-02-05",
+       "ratio": 100
+      },
+      {
+       "period": "2026-02-06",
+       "ratio": 54
+      },
+      {
+       "period": "2026-02-07",
+       "ratio": 68
+      },
+      {
+       "period": "2026-02-08",
+       "ratio": 75
+      },
+      {
+       "period": "2026-02-09",
+       "ratio": 33
+      },
+      {
+       "period": "2026-02-10",
+       "ratio": 59
+      },
+      {
+       "period": "2026-02-11",
+       "ratio": 31
+      },
+      {
+       "period": "2026-02-12",
+       "ratio": 45
+      },
+      {
+       "period": "2026-02-13",
+       "ratio": 41
+      },
+      {
+       "period": "2026-02-14",
+       "ratio": 39
+      },
+      {
+       "period": "2026-02-15",
+       "ratio": 41
+      },
+      {
+       "period": "2026-02-16",
+       "ratio": 29
+      },
+      {
+       "period": "2026-02-17",
+       "ratio": 23
+      },
+      {
+       "period": "2026-02-19",
+       "ratio": 39
+      },
+      {
+       "period": "2026-02-20",
+       "ratio": 21
+      },
+      {
+       "period": "2026-02-21",
+       "ratio": 33
+      },
+      {
+       "period": "2026-02-22",
+       "ratio": 20
+      },
+      {
+       "period": "2026-02-23",
+       "ratio": 25
+      },
+      {
+       "period": "2026-02-24",
+       "ratio": 21
+      },
+      {
+       "period": "2026-02-25",
+       "ratio": 21
+      },
+      {
+       "period": "2026-02-26",
+       "ratio": 16
+      },
+      {
+       "period": "2026-03-05",
+       "ratio": 23
+      },
+      {
+       "period": "2026-03-06",
+       "ratio": 17
+      },
+      {
+       "period": "2026-03-19",
+       "ratio": 16
+      },
+      {
+       "period": "2026-05-15",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-16",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-17",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-18",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-19",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-20",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-21",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-22",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-23",
+       "ratio": 3
+      },
+      {
+       "period": "2026-05-24",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-25",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-26",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-27",
+       "ratio": 2
+      },
+      {
+       "period": "2026-05-28",
+       "ratio": 2
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "lastUpdated": "2026-06-09T09:39:47.527646+00:00"
 }
