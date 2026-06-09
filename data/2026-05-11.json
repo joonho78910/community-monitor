@@ -3207,7 +3207,8 @@
       "title": "조용한 갤에 비틱 간다",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10974&page=6",
       "summary": "참여도 738 (조회 298, 댓글 19, 추천 2)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "조용한 갤에 가챠 결과를 자랑하는 비틱 이미지 글."
      },
      {
       "title": "리세 사료 정리",
@@ -3325,6 +3326,6 @@
    }
   }
  },
- "lastUpdated": "2026-06-09T09:39:47.527646+00:00",
+ "lastUpdated": "2026-06-09T10:14:21.502095+00:00",
  "trendsFile": "trends.json"
 }
