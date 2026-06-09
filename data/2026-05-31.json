@@ -631,31 +631,36 @@
       "title": "앵커패닉 1주년 업데이트 채널 설문조사 결과",
       "url": "https://arca.live/b/anchorpanic/172293834",
       "summary": "참여도 300 (조회 185, 댓글 7, 추천 8)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "3차 채널 설문조사 결과 발표 — 응답 33명 최다, 뉴비(응애) 비중 21%로 증가. 댓글은 스토리할배 소외 농담."
      },
      {
       "title": "근데 칼란리사 번덱말인데..",
       "url": "https://arca.live/b/anchorpanic/172277770",
       "summary": "참여도 234 (조회 164, 댓글 12, 추천 1)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "번개덱(칼란·윈드리스·아이리스·린·에코) 시너지 구성을 질문. 댓글은 린-스트 조합 우위·윈드리스 과대평가를 토론."
      },
      {
       "title": "낙인 질문",
       "url": "https://arca.live/b/anchorpanic/172276715",
       "summary": "참여도 190 (조회 110, 댓글 14, 추천 1)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "스트·센토 낙인을 뭘 끼는지 질문. 댓글이 번개행 스트=에코낙인, 양자행 센토 식으로 정배를 안내."
      },
      {
       "title": "여기까진가",
       "url": "https://arca.live/b/anchorpanic/172301456",
       "summary": "참여도 190 (조회 140, 댓글 4, 추천 3)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "기록 갱신했다는 짧은 자랑(본문 거의 없음)."
      },
      {
       "title": "양자덱 명중셋이 낫지않음?",
       "url": "https://arca.live/b/anchorpanic/172286273",
       "summary": "참여도 171 (조회 121, 댓글 8, 추천 1)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "심연용 모듈셋(명중/속/양자) 구성과 파괴셋 비추 의견. 댓글은 2턴 타이밍 따라 명중이 낫다 토론."
      }
     ],
     "bugReports": [],
@@ -1416,19 +1421,22 @@
       "title": "진행계 나눔하면 가져감?",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12064",
       "summary": "참여도 170 (조회 135, 댓글 7, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "레티5각·리온·렉시3각·오팔에 5.5만을 써 광산이 1/3 남았다는 재화 소비 근황."
      },
      {
       "title": "근데 진짜 어디서 유입이 오는거임",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12077",
       "summary": "참여도 158 (조회 93, 댓글 13, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "다들 광고 보고 왔다는데 자긴 이 게임 광고를 본 적 없다는 잡담."
      },
      {
       "title": "갤 최초냐?",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12075",
       "summary": "참여도 156 (조회 106, 댓글 4, 추천 3)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "각인 10렙을 찍었다는 육성 근황 잡담."
      },
      {
       "title": "다음 회차 레이저 보스 돌아오면 게임 사라질듯",
@@ -1440,7 +1448,8 @@
       "title": "육성 재화 초기화 마려운 캐릭터",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=12092",
       "summary": "참여도 142 (조회 92, 댓글 10, 추천 0)",
-      "tone": "중립"
+      "tone": "중립",
+      "bodySummary": "모니카·비·쿠키·미하엘 중 쿠키가 좋지만 안 키워도 무방하고, 테오(시뮬) 유무로 평가가 갈린다는 캐릭 토론."
      }
     ],
     "bugReports": [],
@@ -3201,5 +3210,5 @@
    }
   ]
  },
- "lastUpdated": "2026-06-01T07:30:00+09:00"
+ "lastUpdated": "2026-06-09T09:39:47.527646+00:00"
 }
