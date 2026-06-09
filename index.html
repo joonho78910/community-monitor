@@ -655,24 +655,26 @@ function deltaHtml(cur,prev,opts){
   }
   return '<span class="delta '+cls+'">'+arrow+' '+valStr+'</span>';
 }
-function computeStatus(game, prev7Avg){
+function computeStatus(game, prev7Avg, nDays){
   const s=game.stats;
+  const days=Math.max(1, nDays||1);
+  const isRange=days>1;
   const rp=s.real_posts||1;
   const negRatio=s.negative/rp;
   const posRatio=s.positive/rp;
   const bugs=s.bugs||0;
+  const bugsPD=bugs/days;                        // 일평균 버그 (기간 모드 보정)
   const sent=s.sentiment_score||0;
   const lowVolume=rp<10;
   const sentLabel=s.sentiment||'중립';
 
-  // Score (0-10) — v2 calibrated for game communities
-  // 게임 커뮤니티 기준: 부정률 10~15%는 평범, 20%↑부터 이상
+  // Score (0-10) — v2 calibrated for game communities. 기간 모드는 일평균 기준으로 계산.
   let score=7;
   score+=sent*2.5;                              // sentiment 영향 약화 (3 → 2.5)
-  score-=bugs*0.4;                              // 버그 페널티 약화 (0.5 → 0.4)
-  score-=Math.max(0,negRatio-0.12)*12;          // 임계값 5%→12%, 가중치 20→12 (대폭 완화)
-  score+=Math.max(0,posRatio-0.05)*5;           // 긍정률 보너스 신규 (5%↑면 가산)
-  if(prev7Avg.bugs>0&&bugs>prev7Avg.bugs*2.5&&bugs>=3)score-=1;  // 평균의 2.5배 + 절대 3건 이상
+  score-=bugsPD*0.4;                            // 버그 페널티 (일평균 기준)
+  score-=Math.max(0,negRatio-0.12)*12;          // 임계값 12%, 가중치 12
+  score+=Math.max(0,posRatio-0.05)*5;           // 긍정률 보너스 (5%↑면 가산)
+  if(prev7Avg.bugs>0&&bugsPD>prev7Avg.bugs*2.5&&bugsPD>=1.5)score-=1;  // 평균의 2.5배 + 일평균 1.5건↑
   if(prev7Avg.negRatio>0&&negRatio>prev7Avg.negRatio*1.8&&negRatio>0.15)score-=0.6; // 1.8배 + 15% 이상
   score=Math.max(0,Math.min(10,score));
 
@@ -684,19 +686,20 @@ function computeStatus(game, prev7Avg){
   else{status='red';label='경고';icon='🔴';}
 
   // Factor chips (good/bad/neutral)
+  const bugLabel=isRange?`버그 ${bugs}건(일평균 ${bugsPD.toFixed(1)})`:`버그 ${bugs}건`;
   const factors=[
     {label:`감정 ${sentLabel}`, kind: sent>0.05?'good':(sent<-0.05?'bad':'')},
-    {label:`버그 ${bugs}건`,    kind: bugs>=2?'bad':''},
+    {label:bugLabel,    kind: bugsPD>=2?'bad':''},
     {label:`부정률 ${(negRatio*100).toFixed(1)}%`, kind: negRatio>0.20?'bad':(negRatio<0.05?'good':'')}
   ];
   if(posRatio>0.10) factors.push({label:`긍정률 ${(posRatio*100).toFixed(1)}%`, kind:'good'});
 
   // Interpretive message
   const reasons=[];
-  if(bugs>=2)reasons.push(`버그 ${bugs}건`);
+  if(bugsPD>=2)reasons.push(isRange?`버그 일평균 ${bugsPD.toFixed(1)}건`:`버그 ${bugs}건`);
   if(negRatio>0.20)reasons.push(`부정률 ${(negRatio*100).toFixed(1)}%`);
   if(sent<-0.10&&!lowVolume)reasons.push('정서 부정 우세');
-  if(prev7Avg.bugs>0&&bugs>prev7Avg.bugs*1.8&&bugs>=2)reasons.push(`버그 평소 ${(bugs/prev7Avg.bugs).toFixed(1)}배`);
+  if(prev7Avg.bugs>0&&bugsPD>prev7Avg.bugs*1.8&&bugsPD>=1.5)reasons.push(`버그 평소 ${(bugsPD/prev7Avg.bugs).toFixed(1)}배`);
 
   let msg;
   if(lowVolume){
@@ -769,7 +772,7 @@ function render(){
   const d2=ps?deltaHtml(s.sentiment_score,ps.sentiment_score,{dp:2}):'';
   const d3=ps?deltaHtml(s.total_views,ps.total_views,{pct:true}):'';
   const d4=ps?deltaHtml(s.bugs,ps.bugs,{upIsBad:true}):'';
-  const stat=computeStatus(game, compute7DayAvg(rangeMode?rangeEnd:curData.date));
+  const stat=computeStatus(game, compute7DayAvg(rangeMode?rangeEnd:curData.date), (rangeMode&&VD._range)?VD._range.nDays:1);
   const dateLabel=VD.date;
   const formulaTip='컨디션 점수 (v2, 0-10):&#10;기본 7 + 감정×2.5 − 버그×0.4&#10;− max(0, 부정률−12%)×12 + max(0, 긍정률−5%)×5&#10;− 7일 평균 대비 이상 변동 보정&#10;&#10;7.0↑ 정상 · 5.5-7.0 평범 · 3.5-5.5 주의 · 3.5↓ 경고&#10;(게임 커뮤니티 부정률 10-15%는 평범 수준)';
   const gaugePct=Math.round(parseFloat(stat.score)*10);
