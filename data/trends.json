@@ -1,15 +1,15 @@
 {
  "startDate": "2025-11-27",
- "endDate": "2026-06-16",
+ "endDate": "2026-06-17",
  "timeUnit": "date",
  "sources": {
   "naver": {
    "label": "네이버 데이터랩",
-   "note": "datalab API. 06-16 datalab 미수신(1일 lag, 06-17 새벽 미발행)→naver 시리즈 06-15까지. 오버랩 회귀 정규화 스케일 유지(factor 0.260873). 06-15 fresh 반영. 수동 재실행 시 06-16 fresh 덮어쓰기 권장. lag 확인 필요."
+   "note": "datalab API. 2026-06-17 미수신(1일 lag, 06-18 새벽 미발행)→naver 시리즈 06-16까지. 오버랩 회귀 정규화 스케일 유지(factor 0.260873). 06-16 fresh 반영. 수동 재실행 시 06-17 fresh 덮어쓰기 권장. lag 확인 필요."
   },
   "google": {
    "label": "구글 트렌드",
-   "note": "trends.google.com widget multiline API (daily, KR, 2025-11-27~2026-06-16). 전체 교체. resolution DAY. 앵커패닉 비제로 3일, 에르피스 비제로 37일."
+   "note": "trends.google.com widget multiline API (daily, KR, 2025-11-27~2026-06-17). 전체 교체. resolution DAY. 앵커패닉 비제로 5일, 에르피스 비제로 39일."
   }
  },
  "series": [
@@ -764,20 +764,32 @@
      {
       "period": "2026-06-15",
       "ratio": 1.86338
+     },
+     {
+      "period": "2026-06-16",
+      "ratio": 2.17394
      }
     ],
     "google": [
      {
-      "period": "2025-12-20",
-      "ratio": 22
+      "period": "2026-04-13",
+      "ratio": 16
      },
      {
-      "period": "2026-03-26",
-      "ratio": 17
+      "period": "2026-05-08",
+      "ratio": 18
      },
      {
-      "period": "2026-06-08",
-      "ratio": 2
+      "period": "2026-05-09",
+      "ratio": 28
+     },
+     {
+      "period": "2026-06-10",
+      "ratio": 1
+     },
+     {
+      "period": "2026-06-17",
+      "ratio": 1
      }
     ]
    }
@@ -1597,6 +1609,10 @@
      {
       "period": "2026-06-15",
       "ratio": 13.04365
+     },
+     {
+      "period": "2026-06-16",
+      "ratio": 13.66478
      }
     ],
     "google": [
@@ -1606,11 +1622,11 @@
      },
      {
       "period": "2026-02-06",
-      "ratio": 55
+      "ratio": 56
      },
      {
       "period": "2026-02-07",
-      "ratio": 64
+      "ratio": 65
      },
      {
       "period": "2026-02-08",
@@ -1618,27 +1634,31 @@
      },
      {
       "period": "2026-02-09",
-      "ratio": 36
+      "ratio": 29
      },
      {
       "period": "2026-02-10",
-      "ratio": 47
+      "ratio": 52
      },
      {
       "period": "2026-02-11",
-      "ratio": 40
+      "ratio": 38
+     },
+     {
+      "period": "2026-02-12",
+      "ratio": 50
      },
      {
       "period": "2026-02-13",
-      "ratio": 41
+      "ratio": 43
      },
      {
       "period": "2026-02-14",
-      "ratio": 31
+      "ratio": 30
      },
      {
       "period": "2026-02-15",
-      "ratio": 41
+      "ratio": 27
      },
      {
       "period": "2026-02-16",
@@ -1646,51 +1666,51 @@
      },
      {
       "period": "2026-02-17",
-      "ratio": 21
-     },
-     {
-      "period": "2026-02-18",
-      "ratio": 23
+      "ratio": 22
      },
      {
       "period": "2026-02-19",
-      "ratio": 27
+      "ratio": 25
      },
      {
       "period": "2026-02-20",
-      "ratio": 19
+      "ratio": 34
      },
      {
       "period": "2026-02-21",
-      "ratio": 42
+      "ratio": 39
      },
      {
       "period": "2026-02-22",
-      "ratio": 20
+      "ratio": 26
      },
      {
       "period": "2026-02-23",
-      "ratio": 16
+      "ratio": 25
      },
      {
       "period": "2026-02-24",
-      "ratio": 22
-     },
-     {
-      "period": "2026-02-25",
       "ratio": 20
      },
      {
-      "period": "2026-03-05",
+      "period": "2026-03-01",
       "ratio": 21
      },
      {
-      "period": "2026-03-12",
-      "ratio": 18
+      "period": "2026-03-05",
+      "ratio": 23
      },
      {
-      "period": "2026-04-02",
-      "ratio": 22
+      "period": "2026-03-08",
+      "ratio": 19
+     },
+     {
+      "period": "2026-03-16",
+      "ratio": 20
+     },
+     {
+      "period": "2026-04-28",
+      "ratio": 18
      },
      {
       "period": "2026-06-03",
@@ -1710,11 +1730,11 @@
      },
      {
       "period": "2026-06-07",
-      "ratio": 1
+      "ratio": 2
      },
      {
       "period": "2026-06-08",
-      "ratio": 1
+      "ratio": 2
      },
      {
       "period": "2026-06-09",
@@ -1730,7 +1750,7 @@
      },
      {
       "period": "2026-06-12",
-      "ratio": 3
+      "ratio": 2
      },
      {
       "period": "2026-06-13",
@@ -1742,11 +1762,15 @@
      },
      {
       "period": "2026-06-15",
-      "ratio": 3
+      "ratio": 2
      },
      {
       "period": "2026-06-16",
-      "ratio": 1
+      "ratio": 2
+     },
+     {
+      "period": "2026-06-17",
+      "ratio": 2
      }
     ]
    }
@@ -2024,9 +2048,17 @@
    "label": "(추정) 검색 급증 — 주간 쿠폰/콘텐츠 회차",
    "detail": "네이버 검색량 전일 대비 +77% (월간보스 갱신·주간 쿠폰코드 'FOREVERS2' 배포와 시기 일치, 6/13 '6월 2주차 쿠폰 코드 모음' 블로그 다수)",
    "url": "https://blog.naver.com/gim0304/224315022724"
+  },
+  {
+   "date": "2026-06-17",
+   "game": "anchorpanic",
+   "confidence": 1,
+   "label": "신캐 제피린 출시 — 커뮤니티 활동 급증",
+   "detail": "6/17 신규 캐릭터 \"제피린\" 픽업 출시. 아카라이브 앵커패닉 일일 게시물이 전일 30건대→75건으로 급증하며 출시 반응이 하루를 지배. 성능(자기 버프 메커니즘) 회의론과 모델링 호평이 공존. 네이버 datalab 06-17 미수신(lag)으로 검색 spike 미확인, 외부 보도 매칭 없음(커뮤니티 기반 추정).",
+   "source": "community"
   }
  ],
- "lastUpdated": "2026-06-16T22:52:46.000Z",
+ "lastUpdated": "2026-06-18T07:53:58.000Z",
  "spikes": [
   {
    "date": "2025-12-24",
