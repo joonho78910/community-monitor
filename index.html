@@ -340,6 +340,7 @@ async function buildRangeView(){
   // ensure loaded
   const need=inRange.filter(d=>!dateCache[d]);
   if(need.length)await Promise.all(need.map(d=>fetch('data/'+d+'.json?ts='+Date.now()).then(r=>r.json()).then(j=>{dateCache[d]=j;}).catch(()=>{})));
+  await ensure7DayCache(hi);
   const days=inRange.map(d=>dateCache[d]).filter(Boolean);
   if(!days.length){viewData=null;return;}
   const gameKeys=[];days.forEach(dd=>Object.keys(dd.games||{}).forEach(k=>{if(!gameKeys.includes(k))gameKeys.push(k);}));
@@ -624,6 +625,7 @@ async function loadDate(d){
       }
     }
   } catch(e) { /* version.json optional */ }
+  await ensure7DayCache(d);
   renderCalendar();
   render();
   updateHash();
@@ -717,6 +719,15 @@ function computeStatus(game, prev7Avg, nDays){
   }
 
   return {status,label,icon,score:score.toFixed(1),msg,factors};
+}
+async function ensure7DayCache(endDate){
+  // v0.5.2: 컨디션 7일 평균 보정용 직전 7일치 프리페치 (메일 리포트와 점수 산식 통일)
+  const target=new Date(endDate+'T00:00:00Z').getTime();
+  const need=allDates.filter(d=>{
+    const t=new Date(d+'T00:00:00Z').getTime();
+    return t>=target-7*86400000 && t<target && !dateCache[d];
+  });
+  if(need.length)await Promise.all(need.map(d=>fetch('data/'+d+'.json?ts='+Date.now()).then(r=>r.json()).then(j=>{dateCache[d]=j;}).catch(()=>{})));
 }
 function compute7DayAvg(curDate){
   // Compute prev-7-day averages for current game from dateCache
