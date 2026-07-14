@@ -229,6 +229,31 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 .game-erpis .topic-cell-chip{background:#f5f3ff;color:#5b21b6;}
 
 @media(max-width:980px){.cards{grid-template-columns:repeat(2,1fr);}.row{grid-template-columns:1fr;}}
+
+/* v0.6: 오늘 챙길 이슈 + 평소 대비 변화 */
+.watch-box{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--negative);border-radius:10px;padding:14px 18px;margin-bottom:14px;box-shadow:var(--shadow);}
+.watch-box.calm{border-left-color:#86efac;}
+.watch-box h3{margin:0 0 10px;font-size:12px;font-weight:700;color:var(--text-2);text-transform:uppercase;letter-spacing:0.06em;display:flex;align-items:center;gap:8px;}
+.watch-box h3 .wc{background:#fee2e2;color:#991b1b;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:700;}
+.watch-item{display:flex;align-items:baseline;gap:10px;padding:7px 0;border-top:1px solid var(--border);}
+.watch-item:first-of-type{border-top:0;}
+.watch-rank{color:var(--negative);font-weight:800;font-size:13px;min-width:14px;}
+.watch-main{flex:1;}
+.watch-title{font-weight:600;color:var(--text);font-size:13.5px;display:inline-block;}
+.watch-jump:hover{color:var(--accent);}
+.watch-meta{font-size:11.5px;color:var(--text-2);margin-top:2px;font-variant-numeric:tabular-nums;}
+.watch-streak{display:inline-block;background:#fef3c7;color:#92400e;font-size:10.5px;font-weight:700;padding:1px 7px;border-radius:8px;margin-left:6px;}
+.watch-empty{color:var(--text-2);font-size:13px;}
+.compare-strip{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;}
+.cmp-item{flex:1;min-width:150px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;box-shadow:var(--shadow);}
+.cmp-lbl{font-size:11px;color:var(--text-3);text-transform:uppercase;letter-spacing:0.05em;font-weight:600;}
+.cmp-val{font-size:18px;font-weight:700;margin-top:4px;font-variant-numeric:tabular-nums;display:flex;align-items:baseline;gap:8px;}
+.cmp-avg{font-size:11px;color:var(--text-2);margin-top:3px;font-variant-numeric:tabular-nums;}
+.cmp-delta{font-size:12px;font-weight:700;}
+.cmp-good{color:var(--positive);}.cmp-bad{color:var(--negative);}.cmp-flat{color:var(--text-3);}
+.spark{display:inline-flex;align-items:flex-end;gap:2px;height:22px;}
+.spark i{width:5px;background:var(--accent);border-radius:1px;opacity:0.5;display:inline-block;}
+.spark i.last{opacity:1;}
 </style></head>
 <body>
 <div class="app" id="app">
@@ -742,6 +767,72 @@ function compute7DayAvg(curDate){
   const avgNegRatio=samples.reduce((a,b)=>a+((b.negative||0)/Math.max(b.real_posts,1)),0)/samples.length;
   return {bugs:avgBugs,negRatio:avgNegRatio};
 }
+
+function _dOffset(dateStr,delta){const t=new Date(dateStr+'T00:00:00Z');t.setUTCDate(t.getUTCDate()+delta);return t.toISOString().slice(0,10);}
+function scoreOf(st){if(!st)return null;const rp=Math.max(st.real_posts||0,1);const neg=(st.negative||0)/rp;const pos=(st.positive||0)/rp;let sc=7+(st.sentiment_score||0)*2.5-(st.bugs||0)*0.4-Math.max(0,neg-0.12)*12+Math.max(0,pos-0.05)*5;return Math.max(0,Math.min(10,sc));}
+function recentStats(curDate,n,includeToday){
+  const out=[];const cur=new Date(curDate+'T00:00:00Z').getTime();
+  (allDates||[]).forEach(d=>{
+    const t=new Date(d+'T00:00:00Z').getTime();
+    const within=includeToday?(t<=cur&&t>cur-n*86400000):(t<cur&&t>=cur-n*86400000);
+    if(!within)return;
+    const dd=dateCache[d];const g=dd&&dd.games&&dd.games[actGame];
+    if(g&&g.stats)out.push({date:d,stats:g.stats,score:scoreOf(g.stats)});
+  });
+  out.sort((a,b)=>a.date<b.date?-1:1);return out;
+}
+function buildCompareStrip(game,curDate){
+  const prev=recentStats(curDate,7,false);
+  if(prev.length<2)return '';
+  const s=game.stats;const rp=Math.max(s.real_posts||0,1);
+  const todayNeg=(s.negative||0)/rp*100;const todaySent=s.sentiment_score||0;const todayScore=scoreOf(s);
+  const avg=arr=>arr.reduce((a,b)=>a+b,0)/arr.length;
+  const avgSent=avg(prev.map(p=>p.stats.sentiment_score||0));
+  const avgNeg=avg(prev.map(p=>((p.stats.negative||0)/Math.max(p.stats.real_posts,1))*100));
+  const avgScore=avg(prev.map(p=>p.score));
+  function cell(lbl,cur,av,dp,upIsGood,suffix){
+    const diff=cur-av;const eps=dp>=2?0.005:0.05;let cls='cmp-flat',arrow='→',txt='0';
+    if(Math.abs(diff)>=eps){arrow=diff>0?'▲':'▼';cls=((diff>0)===upIsGood)?'cmp-good':'cmp-bad';txt=Math.abs(diff).toFixed(dp)+(suffix||'');}
+    const curStr=((dp>=2&&cur>=0)?'+':'')+cur.toFixed(dp)+(suffix||'');
+    return '<div class="cmp-item"><div class="cmp-lbl">'+lbl+'</div><div class="cmp-val">'+curStr+' <span class="cmp-delta '+cls+'">'+arrow+' '+txt+'</span></div><div class="cmp-avg">7일 평균 '+av.toFixed(dp)+(suffix||'')+'</div></div>';
+  }
+  const series=recentStats(curDate,10,true);let spark='';
+  if(series.length>=3){
+    const vals=series.map(p=>p.score);const mx=Math.max.apply(null,vals),mn=Math.min.apply(null,vals);
+    spark='<div class="cmp-item" style="flex:1.4;"><div class="cmp-lbl">컨디션 추세 ('+series.length+'일)</div><div class="spark" style="margin-top:6px;">'+series.map((p,i)=>{const h=mx===mn?12:4+Math.round((p.score-mn)/(mx-mn)*16);return '<i class="'+(i===series.length-1?'last':'')+'" style="height:'+h+'px;" title="'+p.date+' · '+p.score.toFixed(1)+'"></i>';}).join('')+'</div><div class="cmp-avg">막대=일별 컨디션 · 맨 오른쪽이 오늘</div></div>';
+  }
+  return '<div class="compare-strip">'+cell('감정점수 (오늘)',todaySent,avgSent,2,true,'')+cell('부정률 (오늘)',todayNeg,avgNeg,1,false,'%')+cell('컨디션 (오늘)',todayScore,avgScore,1,true,'')+spark+'</div>';
+}
+function _labelTokens(w){return (String(w).replace(/[()]/g,' ').match(/[가-힣A-Za-z]{2,}/g)||[]).filter(t=>['불만','부정','긍정','회복','호평','화제','관련'].indexOf(t)<0);}
+function watchStreak(word,curDate){
+  const toks=_labelTokens(word);if(!toks.length)return 1;let streak=1;
+  for(let i=1;i<=6;i++){
+    const d=_dOffset(curDate,-i);const dd=dateCache[d];const g=dd&&dd.games&&dd.games[actGame];
+    if(!g)break;
+    const kws=(g.analysis&&g.analysis.keywords)||[];
+    const hit=kws.some(k=>{const w=String(k.word||'');if(!(w.indexOf('불만')>=0||w.indexOf('부정')>=0))return false;const t2=_labelTokens(w);return toks.some(t=>t2.indexOf(t)>=0);});
+    if(hit)streak++;else break;
+  }
+  return streak;
+}
+function buildWatchBox(game,curDate){
+  const a=game.analysis||{};const byId={};(game.posts||[]).forEach(p=>byId[String(p.id)]=p);
+  const negTopics=(a.keywords||[]).filter(k=>{const w=String(k.word||'');return w.indexOf('불만')>=0||w.indexOf('부정')>=0;});
+  const items=negTopics.map(k=>{
+    const ids=(k.ids||[]).map(String);const posts=ids.map(id=>byId[id]).filter(Boolean);
+    const eng=posts.reduce((x,p)=>x+(p.views||0)+(p.comments||0)*20+(p.likes||0)*30,0);
+    const comments=posts.reduce((x,p)=>x+(p.comments||0),0);
+    return {word:String(k.word),count:k.count||ids.length,eng,comments,streak:watchStreak(k.word,curDate),ids};
+  }).sort((x,y)=>(y.streak-x.streak)||(y.eng-x.eng)).slice(0,3);
+  if(!items.length)return '<div class="watch-box calm"><h3>오늘 챙기면 좋은 이슈</h3><div class="watch-empty">오늘은 부정으로 뭉친 이슈가 없어요 — 특별히 챙길 건 없습니다.</div></div>';
+  const rows=items.map((it,i)=>{
+    const sb=it.streak>=2?'<span class="watch-streak">'+it.streak+'일 연속</span>':'';
+    const idsAttr=(it.ids&&it.ids.length)?' data-ids="'+esc(it.ids.join(','))+'"':'';
+    return '<div class="watch-item"><span class="watch-rank">'+(i+1)+'</span><div class="watch-main"><div class="watch-title watch-jump" style="cursor:pointer;" data-kw="'+esc(it.word)+'"'+idsAttr+'>#'+esc(it.word)+sb+'</div><div class="watch-meta">관련 글 '+it.count+'건 · 동조(댓글) '+it.comments+' · 참여도 '+fmtNum(it.eng)+'</div></div></div>';
+  }).join('');
+  return '<div class="watch-box"><h3>오늘 챙기면 좋은 이슈 <span class="wc">'+items.length+'</span></h3>'+rows+'<div class="watch-meta" style="margin-top:8px;color:var(--text-3);">부정으로 뭉친 토픽을 규모·지속성 순으로 정리 · 제목 클릭 시 아래 전체 게시물에서 해당 글만 필터</div></div>';
+}
+
 function render(){
   const VD=activeView();
   if(!VD||!VD.games[actGame]){const ks=VD&&Object.keys(VD.games||{});if(ks&&ks.length)actGame=ks[0];else return;}
@@ -820,7 +911,8 @@ function render(){
     const idsAttr=k.ids&&k.ids.length?' data-ids="'+esc(k.ids.join(','))+'"':'';
     return '<button class="'+cls+'" data-kw="'+esc(w)+'"'+idsAttr+'>#'+esc(w)+'<span class="cnt">'+(k.count||0)+'</span></button>';
   }).join('');
-  c.innerHTML=statusHtml+'<div class="cards"><div class="card"><div class="label">게시물</div><div class="value">'+fmtNum(s.real_posts)+d1+'</div><div class="sub">공지 '+(s.notices||0)+'개 제외 '+dvs+'</div></div><div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+d2+'</div><div class="sub">긍정 '+s.positive+' · 부정 '+s.negative+' '+dvs+'</div></div><div class="card"><div class="label">총 조회수</div><div class="value">'+fmtK(s.total_views)+d3+'</div><div class="sub">평균 '+Math.round(s.total_views/Math.max(s.real_posts,1))+' / 글 '+dvs+'</div></div><div class="card"><div class="label">버그 의심</div><div class="value '+(s.bugs>0?'s-neg':'')+'">'+s.bugs+d4+'</div><div class="sub">자동 키워드 검출 '+dvs+'</div></div></div>'+
+  const _extraTop=rangeMode?'':(buildWatchBox(game,VD.date)+buildCompareStrip(game,VD.date));
+    c.innerHTML=statusHtml+_extraTop+'<div class="cards"><div class="card"><div class="label">게시물</div><div class="value">'+fmtNum(s.real_posts)+d1+'</div><div class="sub">공지 '+(s.notices||0)+'개 제외 '+dvs+'</div></div><div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+d2+'</div><div class="sub">긍정 '+s.positive+' · 부정 '+s.negative+' '+dvs+'</div></div><div class="card"><div class="label">총 조회수</div><div class="value">'+fmtK(s.total_views)+d3+'</div><div class="sub">평균 '+Math.round(s.total_views/Math.max(s.real_posts,1))+' / 글 '+dvs+'</div></div><div class="card"><div class="label">버그 의심</div><div class="value '+(s.bugs>0?'s-neg':'')+'">'+s.bugs+d4+'</div><div class="sub">자동 키워드 검출 '+dvs+'</div></div></div>'+
     '<div class="section"><h2>'+summaryTitle+'</h2>'+metricBadges+'<div class="summary-narr">'+narrHtml+'</div><div class="keywords">'+kw+'</div><div class="section-note">상단 지표는 정량 요약 · 해시태그(#) 클릭 시 하단 전체 게시물에서 해당 토픽 글만 필터됩니다</div></div>'+
     ((activeView().searchTrends||trendsData)?'<div class="row"><div class="section"><h2>검색 트렌드 <span class="count" id="trend-range">30일</span></h2><div style="position:relative;height:280px;"><canvas id="trendChart"></canvas></div><div class="section-note">출처: 네이버 데이터랩 (실선, 일별) + 구글 트렌드 (점선, 일별) · 각 출처별 max=100 정규화</div></div><div class="section"><h2>검색량 스냅샷</h2><div class="trend-insight" id="trend-insight"></div></div></div>':'')+
     '<div class="row"><div class="section"><h2>핵심 이슈 <span class="count">'+(a.topIssues||[]).length+'</span></h2><ul class="issue-list">'+iss+'</ul><div class="section-note">순위는 조회 + 댓글 + 추천 가중 합산 기준</div></div><div class="section"><h2>주제별 분포</h2><div class="dist-bars">'+distBars+'</div><div class="section-note">중복 분류 가능 (한 글이 여러 카테고리 포함 가능)</div></div></div>'+
@@ -872,6 +964,9 @@ function render(){
   }
   document.querySelectorAll('.keyword').forEach(k=>{
     k.onclick=()=>applyTopicFilter(k.dataset.kw,k.dataset.ids||'',{scroll:true});
+  });
+  document.querySelectorAll('.watch-jump').forEach(w=>{
+    w.onclick=()=>applyTopicFilter(w.dataset.kw,w.dataset.ids||'',{scroll:true});
   });
   document.querySelectorAll('.tchip').forEach(ch=>{
     ch.onclick=()=>applyTopicFilter(ch.dataset.kw,ch.dataset.ids||'',{toggle:true});
