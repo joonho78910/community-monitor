@@ -254,6 +254,13 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 .spark{display:inline-flex;align-items:flex-end;gap:2px;height:22px;}
 .spark i{width:5px;background:var(--accent);border-radius:1px;opacity:0.5;display:inline-block;}
 .spark i.last{opacity:1;}
+
+/* v0.6: 게시물 내보내기 */
+.filters{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.export-grp{display:flex;gap:6px;margin-left:auto;}
+.exp-btn{background:var(--surface);border:1px solid var(--border-strong);color:var(--text-2);font-family:inherit;font-size:12px;font-weight:600;padding:7px 12px;border-radius:7px;cursor:pointer;transition:all .15s;white-space:nowrap;}
+.exp-btn:hover{background:var(--accent-bg);color:var(--accent);border-color:var(--accent);}
+.exp-btn:active{transform:translateY(1px);}
 </style></head>
 <body>
 <div class="app" id="app">
@@ -960,7 +967,7 @@ function render(){
     '<div class="row"><div class="section"><h2>트렌드</h2><ul class="t-list">'+tr+'</ul></div><div class="section"><h2>계속 추적</h2><ul class="w-list">'+wt+'</ul></div></div>'+
     '<div class="row"><div class="section"><h2>버그/오류 제보 <span class="count">'+(a.bugReports||[]).length+'</span></h2><ul class="bug-list">'+bg+'</ul></div><div class="section"><h2>경쟁작 언급 <span class="count">'+(a.competitorMentions||[]).length+'</span></h2><ul class="c-list">'+cp+'</ul></div></div>'+
     '<div class="section"><h2>참여도 TOP 10</h2><table class="post-table"><thead><tr><th style="width:36px;text-align:right;">#</th><th style="width:60px;">소스</th><th>제목</th><th style="width:90px;">카테고리</th><th style="width:70px;text-align:right;">조회</th><th style="width:60px;text-align:right;">댓글</th><th style="width:60px;text-align:right;">추천</th></tr></thead><tbody>'+tp+'</tbody></table><div class="section-note">순위는 조회 + 댓글 + 추천 가중 합산 기준</div></div>'+
-    '<div class="section" id="all-posts-section"><h2>전체 게시물 <span class="count">'+game.posts.length+'</span></h2>'+(topicChips?'<div class="topic-filter-bar"><span class="filter-lbl">토픽</span>'+topicChips+'</div>':'')+'<div class="filters"><div class="filter-grp" style="border:0;padding:0;"><input type="text" id="search" class="search-input" placeholder="제목 검색..."></div></div><div class="posts-wrap"><table class="post-table" id="all-posts-table"><thead><tr><th style="width:50px;">소스</th><th>제목</th><th style="width:170px;">토픽</th><th class="sortable" data-sort="utcIso" style="width:100px;">시각</th><th class="sortable" data-sort="views" style="width:70px;text-align:right;">조회</th><th class="sortable" data-sort="comments" style="width:60px;text-align:right;">댓글</th><th class="sortable" data-sort="likes" style="width:60px;text-align:right;">추천</th></tr></thead><tbody id="all-posts-body"></tbody></table></div></div>';
+    '<div class="section" id="all-posts-section"><h2>전체 게시물 <span class="count">'+game.posts.length+'</span></h2>'+(topicChips?'<div class="topic-filter-bar"><span class="filter-lbl">토픽</span>'+topicChips+'</div>':'')+'<div class="filters"><div class="filter-grp" style="border:0;padding:0;"><input type="text" id="search" class="search-input" placeholder="제목 검색..."></div><div class="export-grp"><button id="export-csv" class="exp-btn" title="현재 필터된 목록을 CSV(엑셀)로 저장">⬇ CSV 내보내기</button><button id="export-md" class="exp-btn" title="현재 필터된 목록을 마크다운 표로 클립보드에 복사">⧉ 마크다운 복사</button></div></div><div class="posts-wrap"><table class="post-table" id="all-posts-table"><thead><tr><th style="width:50px;">소스</th><th>제목</th><th style="width:170px;">토픽</th><th class="sortable" data-sort="utcIso" style="width:100px;">시각</th><th class="sortable" data-sort="views" style="width:70px;text-align:right;">조회</th><th class="sortable" data-sort="comments" style="width:60px;text-align:right;">댓글</th><th class="sortable" data-sort="likes" style="width:60px;text-align:right;">추천</th></tr></thead><tbody id="all-posts-body"></tbody></table></div></div>';
   
   document.querySelectorAll('.filter-btn').forEach(b=>{
     if(b.dataset.val===fS[b.dataset.type])b.classList.add('active');
@@ -1012,6 +1019,8 @@ function render(){
   document.querySelectorAll('.tchip').forEach(ch=>{
     ch.onclick=()=>applyTopicFilter(ch.dataset.kw,ch.dataset.ids||'',{toggle:true});
   });
+  {const ec=document.getElementById('export-csv');if(ec)ec.onclick=exportCSV;
+   const em=document.getElementById('export-md');if(em)em.onclick=exportMD;}
   syncTopicChips();
   const trendsUse=activeView().searchTrends||trendsData;if(trendsUse){try{renderTrendChart(trendsUse,actGame);}catch(e){console.warn('trend chart',e);}}
   renderList();
@@ -1114,6 +1123,69 @@ function renderTrendChart(st,activeGame){
     }
   }
 }
+function _curFilteredSorted(){
+  const game=activeView().games[actGame];
+  const idSet=fS.idFilter&&fS.idFilter.length?new Set(fS.idFilter.map(String)):null;
+  let filt=(game.posts||[]).filter(p=>{
+    if((p.tags||[]).includes('notice'))return false;
+    if(idSet){if(!idSet.has(String(p.id)))return false;}
+    else{
+      if(fS.source!=='all'&&p.source!==fS.source)return false;
+      if(fS.tag!=='all'&&!(p.tags||[]).includes(fS.tag))return false;
+      if(fS.search&&!p.title.toLowerCase().includes(fS.search))return false;
+    }
+    return true;
+  });
+  const f=sS.field,d=sS.dir;
+  filt.sort((a,b)=>{let av,bv;if(f==='utcIso'){av=new Date(a.utcIso).getTime();bv=new Date(b.utcIso).getTime();}else{av=Number(a[f])||0;bv=Number(b[f])||0;}return d==='desc'?bv-av:av-bv;});
+  return {game,filt};
+}
+function _exportMeta(game){
+  const vd=activeView();
+  return {gameName:game.name||actGame, dateLabel:(vd&&vd.date)||'', topic:fS.idFilterLabel||'', search:fS.search||'',
+    now:new Date().toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})};
+}
+function _topicMap(game){const m={};((game.analysis&&game.analysis.keywords)||[]).forEach(k=>{(k.ids||[]).forEach(id=>{(m[String(id)]=m[String(id)]||[]).push(k.word);});});return m;}
+function _bodyMap(game){const m={};((game.analysis&&game.analysis.topIssues)||[]).forEach(it=>{if(it.url&&it.bodySummary)m[it.url]=it;});return m;}
+function _kst(iso){return new Date(iso).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',year:'2-digit',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'});}
+function _dlFile(name,text,mime){const blob=new Blob([text],{type:mime});const u=URL.createObjectURL(blob);const a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(u);a.remove();},120);}
+function _expBaseName(m){const safe=s=>String(s||'').replace(/[\\/:*?"<>|·]/g,'_').replace(/\s+/g,'').slice(0,24);const scope=m.topic?safe(m.topic):(m.search?safe(m.search):'전체');return 'community_'+actGame+'_'+String(m.dateLabel).replace(/[~]/g,'_')+'_'+scope;}
+function exportCSV(){
+  const {game,filt}=_curFilteredSorted();const m=_exportMeta(game);const tm=_topicMap(game);const bm=_bodyMap(game);
+  const q=v=>'"'+String(v==null?'':v).replace(/"/g,'""')+'"';
+  const head=['소스','제목','토픽','시각(KST)','조회','댓글','추천','감정','링크','본문요약(핵심이슈)'];
+  const rows=filt.map(p=>{
+    const topics=(tm[String(p.id)]||[]).join(' | ');
+    const b=bm[p.url];const sent=p.sentiment==='positive'?'긍정':p.sentiment==='negative'?'부정':'중립';
+    return [p.source?p.source.toUpperCase():'',p.title,topics,_kst(p.utcIso),p.views,p.comments,p.likes,sent,p.url,b?b.bodySummary:''].map(q).join(',');
+  });
+  const csv='﻿'+head.map(q).join(',')+'\r\n'+rows.join('\r\n');
+  _dlFile(_expBaseName(m)+'.csv',csv,'text/csv;charset=utf-8;');
+  _flashBtn('export-csv','⬇ '+filt.length+'건 저장됨');
+}
+function exportMD(){
+  const {game,filt}=_curFilteredSorted();const m=_exportMeta(game);const tm=_topicMap(game);const bm=_bodyMap(game);
+  const cell=s=>String(s==null?'':s).replace(/\|/g,'\\|').replace(/\n/g,' ').trim();
+  let md='# '+m.gameName+' 커뮤니티 게시물 내보내기\n\n';
+  md+='- 기간: '+m.dateLabel+'\n- 토픽 필터: '+(m.topic||'전체')+'\n- 검색어: '+(m.search||'없음')+'\n- 건수: '+filt.length+'건\n- 생성: '+m.now+'\n\n';
+  md+='| 소스 | 제목 | 토픽 | 시각(KST) | 조회 | 댓글 | 추천 | 감정 | 링크 |\n|---|---|---|---|---:|---:|---:|---|---|\n';
+  filt.forEach(p=>{
+    const topics=(tm[String(p.id)]||[]).map(w=>'#'+w).join(' ');
+    const sent=p.sentiment==='positive'?'긍정':p.sentiment==='negative'?'부정':'중립';
+    md+='| '+cell(p.source&&p.source.toUpperCase())+' | '+cell(p.title)+' | '+cell(topics)+' | '+cell(_kst(p.utcIso))+' | '+(p.views||0)+' | '+(p.comments||0)+' | '+(p.likes||0)+' | '+sent+' | ['+'원문'+']('+p.url+') |\n';
+  });
+  const issues=filt.map(p=>bm[p.url]).filter(Boolean);
+  if(issues.length){
+    md+='\n## 핵심 이슈 본문 요약\n\n';
+    const seen={};issues.forEach(it=>{if(seen[it.url])return;seen[it.url]=1;md+='- **'+cell(it.title)+'** ('+(it.tone||'')+') — '+cell(it.bodySummary)+'\n';});
+  }
+  md+='\n> 참고: 전체 글은 제목·지표·링크만 저장되며, 본문 요약은 핵심 이슈에 한해 제공됩니다.\n';
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(md).then(()=>_flashBtn('export-md','⧉ 복사됨! ('+filt.length+'건)')).catch(()=>{_dlFile(_expBaseName(m)+'.md',md,'text/markdown;charset=utf-8;');_flashBtn('export-md','⧉ 파일로 저장됨');});
+  } else {_dlFile(_expBaseName(m)+'.md',md,'text/markdown;charset=utf-8;');_flashBtn('export-md','⧉ 파일로 저장됨');}
+}
+function _flashBtn(id,txt){const b=document.getElementById(id);if(!b)return;const o=b.textContent;b.textContent=txt;b.disabled=true;setTimeout(()=>{b.textContent=o;b.disabled=false;},1600);}
+
 function renderList(){
   const game=activeView().games[actGame];
   const body=document.getElementById('all-posts-body');
