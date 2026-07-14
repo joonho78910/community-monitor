@@ -416,7 +416,13 @@ async function buildRangeView(){
     games[gk]={name:nameRef.games[gk].name,date:lo+'~'+hi,posts,stats,topEngaging,
       analysis:{dailySummary:'',topIssues,bugReports,competitorMentions,trends:[],watchlist:[],keywords}};
   });
-  viewData={date:lo+'~'+hi,games,searchTrends:null,lastUpdated:days[days.length-1].lastUpdated,_range:{start:lo,end:hi,nDays:days.length}};
+  // v0.6: prefetch preceding equal-length window for compare-strip
+  const _spanDays=Math.round((new Date(hi+'T00:00:00Z')-new Date(lo+'T00:00:00Z'))/86400000)+1;
+  const _pHi=_dOffset(lo,-1), _pLo=_dOffset(lo,-_spanDays);
+  const _prevDates=allDates.filter(d=>d>=_pLo&&d<=_pHi);
+  const _needP=_prevDates.filter(d=>!dateCache[d]);
+  if(_needP.length)await Promise.all(_needP.map(d=>fetch('data/'+d+'.json?ts='+Date.now()).then(r=>r.json()).then(j=>{dateCache[d]=j;}).catch(()=>{})));
+  viewData={date:lo+'~'+hi,games,searchTrends:null,lastUpdated:days[days.length-1].lastUpdated,_range:{start:lo,end:hi,nDays:days.length,prevStart:_pLo,prevEnd:_pHi}};
 }
 const fS={source:"all",tag:"all",search:"",idFilter:null,idFilterLabel:""};
 const sS={field:"utcIso",dir:"desc"};
@@ -769,7 +775,7 @@ function compute7DayAvg(curDate){
 }
 
 function _dOffset(dateStr,delta){const t=new Date(dateStr+'T00:00:00Z');t.setUTCDate(t.getUTCDate()+delta);return t.toISOString().slice(0,10);}
-function scoreOf(st){if(!st)return null;const rp=Math.max(st.real_posts||0,1);const neg=(st.negative||0)/rp;const pos=(st.positive||0)/rp;let sc=7+(st.sentiment_score||0)*2.5-(st.bugs||0)*0.4-Math.max(0,neg-0.12)*12+Math.max(0,pos-0.05)*5;return Math.max(0,Math.min(10,sc));}
+function scoreOf(st,nDays){if(!st)return null;const rp=Math.max(st.real_posts||0,1);const neg=(st.negative||0)/rp;const pos=(st.positive||0)/rp;const bugsPD=(st.bugs||0)/Math.max(nDays||1,1);let sc=7+(st.sentiment_score||0)*2.5-bugsPD*0.4-Math.max(0,neg-0.12)*12+Math.max(0,pos-0.05)*5;return Math.max(0,Math.min(10,sc));}
 function recentStats(curDate,n,includeToday){
   const out=[];const cur=new Date(curDate+'T00:00:00Z').getTime();
   (allDates||[]).forEach(d=>{
@@ -777,62 +783,94 @@ function recentStats(curDate,n,includeToday){
     const within=includeToday?(t<=cur&&t>cur-n*86400000):(t<cur&&t>=cur-n*86400000);
     if(!within)return;
     const dd=dateCache[d];const g=dd&&dd.games&&dd.games[actGame];
-    if(g&&g.stats)out.push({date:d,stats:g.stats,score:scoreOf(g.stats)});
+    if(g&&g.stats)out.push({date:d,stats:g.stats,score:scoreOf(g.stats,1)});
   });
   out.sort((a,b)=>a.date<b.date?-1:1);return out;
 }
-function buildCompareStrip(game,curDate){
-  const prev=recentStats(curDate,7,false);
+function aggFromDates(dates){
+  let real=0,pos=0,neg=0,bugs=0,n=0;
+  (dates||[]).forEach(d=>{const g=dateCache[d]&&dateCache[d].games&&dateCache[d].games[actGame];if(g&&g.stats){real+=g.stats.real_posts||0;pos+=g.stats.positive||0;neg+=g.stats.negative||0;bugs+=g.stats.bugs||0;n++;}});
+  if(!n)return null;const rp=Math.max(real,1);
+  return {real_posts:real,positive:pos,negative:neg,bugs,nDays:n,sentiment_score:(pos-neg)/rp,negRatio:neg/rp};
+}
+function _cmpCell(lbl,cur,av,dp,upIsGood,suffix,avgLbl){
+  const curStr=((dp>=2&&cur>=0)?'+':'')+cur.toFixed(dp)+(suffix||'');
+  if(av==null||isNaN(av)) return '<div class="cmp-item"><div class="cmp-lbl">'+lbl+'</div><div class="cmp-val">'+curStr+'</div><div class="cmp-avg">'+(avgLbl||'')+' 데이터 없음</div></div>';
+  const diff=cur-av;const eps=dp>=2?0.005:0.05;let cls='cmp-flat',arrow='→',txt='0';
+  if(Math.abs(diff)>=eps){arrow=diff>0?'▲':'▼';cls=((diff>0)===upIsGood)?'cmp-good':'cmp-bad';txt=Math.abs(diff).toFixed(dp)+(suffix||'');}
+  return '<div class="cmp-item"><div class="cmp-lbl">'+lbl+'</div><div class="cmp-val">'+curStr+' <span class="cmp-delta '+cls+'">'+arrow+' '+txt+'</span></div><div class="cmp-avg">'+(avgLbl||'')+' '+av.toFixed(dp)+(suffix||'')+'</div></div>';
+}
+function _sparkHtml(series,title){
+  if(!series||series.length<3)return '';
+  const vals=series.map(p=>p.score);const mx=Math.max.apply(null,vals),mn=Math.min.apply(null,vals);
+  return '<div class="cmp-item" style="flex:1.4;"><div class="cmp-lbl">'+title+'</div><div class="spark" style="margin-top:6px;">'+series.map((p,i)=>{const h=mx===mn?12:4+Math.round((p.score-mn)/(mx-mn)*16);return '<i class="'+(i===series.length-1?'last':'')+'" style="height:'+h+'px;" title="'+p.date+' · '+p.score.toFixed(1)+'"></i>';}).join('')+'</div><div class="cmp-avg">막대=일별 컨디션 · 맨 오른쪽이 최신</div></div>';
+}
+function buildCompareStrip(game,ctx){
+  if(ctx.mode==='range'){
+    const cur=aggFromDates(ctx.rangeDates)||game.stats;
+    const curSent=cur.sentiment_score||0;
+    const curNeg=(cur.negRatio!=null?cur.negRatio:(cur.negative||0)/Math.max(cur.real_posts,1))*100;
+    const curScore=scoreOf(cur,ctx.nDays||cur.nDays||1);
+    const prevDates=(allDates||[]).filter(d=>ctx.prevStart&&d>=ctx.prevStart&&d<=ctx.prevEnd);
+    const prev=aggFromDates(prevDates);
+    const pSent=prev?prev.sentiment_score:null;
+    const pNeg=prev?prev.negRatio*100:null;
+    const pScore=prev?scoreOf(prev,prev.nDays):null;
+    const series=(ctx.rangeDates||[]).map(d=>{const g=dateCache[d]&&dateCache[d].games&&dateCache[d].games[actGame];return g&&g.stats?{date:d,score:scoreOf(g.stats,1)}:null;}).filter(Boolean);
+    const al='직전 동일기간';
+    return '<div class="compare-strip">'+_cmpCell('감정점수 (기간)',curSent,pSent,2,true,'',al)+_cmpCell('부정률 (기간)',curNeg,pNeg,1,false,'%',al)+_cmpCell('컨디션 (기간 일평균)',curScore,pScore,1,true,'',al)+_sparkHtml(series,'컨디션 추세 ('+series.length+'일)')+'</div>';
+  }
+  const prev=recentStats(ctx.date,7,false);
   if(prev.length<2)return '';
   const s=game.stats;const rp=Math.max(s.real_posts||0,1);
-  const todayNeg=(s.negative||0)/rp*100;const todaySent=s.sentiment_score||0;const todayScore=scoreOf(s);
+  const todayNeg=(s.negative||0)/rp*100;const todaySent=s.sentiment_score||0;const todayScore=scoreOf(s,1);
   const avg=arr=>arr.reduce((a,b)=>a+b,0)/arr.length;
   const avgSent=avg(prev.map(p=>p.stats.sentiment_score||0));
   const avgNeg=avg(prev.map(p=>((p.stats.negative||0)/Math.max(p.stats.real_posts,1))*100));
   const avgScore=avg(prev.map(p=>p.score));
-  function cell(lbl,cur,av,dp,upIsGood,suffix){
-    const diff=cur-av;const eps=dp>=2?0.005:0.05;let cls='cmp-flat',arrow='→',txt='0';
-    if(Math.abs(diff)>=eps){arrow=diff>0?'▲':'▼';cls=((diff>0)===upIsGood)?'cmp-good':'cmp-bad';txt=Math.abs(diff).toFixed(dp)+(suffix||'');}
-    const curStr=((dp>=2&&cur>=0)?'+':'')+cur.toFixed(dp)+(suffix||'');
-    return '<div class="cmp-item"><div class="cmp-lbl">'+lbl+'</div><div class="cmp-val">'+curStr+' <span class="cmp-delta '+cls+'">'+arrow+' '+txt+'</span></div><div class="cmp-avg">7일 평균 '+av.toFixed(dp)+(suffix||'')+'</div></div>';
-  }
-  const series=recentStats(curDate,10,true);let spark='';
-  if(series.length>=3){
-    const vals=series.map(p=>p.score);const mx=Math.max.apply(null,vals),mn=Math.min.apply(null,vals);
-    spark='<div class="cmp-item" style="flex:1.4;"><div class="cmp-lbl">컨디션 추세 ('+series.length+'일)</div><div class="spark" style="margin-top:6px;">'+series.map((p,i)=>{const h=mx===mn?12:4+Math.round((p.score-mn)/(mx-mn)*16);return '<i class="'+(i===series.length-1?'last':'')+'" style="height:'+h+'px;" title="'+p.date+' · '+p.score.toFixed(1)+'"></i>';}).join('')+'</div><div class="cmp-avg">막대=일별 컨디션 · 맨 오른쪽이 오늘</div></div>';
-  }
-  return '<div class="compare-strip">'+cell('감정점수 (오늘)',todaySent,avgSent,2,true,'')+cell('부정률 (오늘)',todayNeg,avgNeg,1,false,'%')+cell('컨디션 (오늘)',todayScore,avgScore,1,true,'')+spark+'</div>';
+  const series=recentStats(ctx.date,10,true);
+  const al='7일 평균';
+  return '<div class="compare-strip">'+_cmpCell('감정점수 (오늘)',todaySent,avgSent,2,true,'',al)+_cmpCell('부정률 (오늘)',todayNeg,avgNeg,1,false,'%',al)+_cmpCell('컨디션 (오늘)',todayScore,avgScore,1,true,'',al)+_sparkHtml(series,'컨디션 추세 ('+series.length+'일)')+'</div>';
 }
 function _labelTokens(w){return (String(w).replace(/[()]/g,' ').match(/[가-힣A-Za-z]{2,}/g)||[]).filter(t=>['불만','부정','긍정','회복','호평','화제','관련'].indexOf(t)<0);}
+function _negTokenHit(kws,toks){return (kws||[]).some(k=>{const w=String(k.word||'');if(!(w.indexOf('불만')>=0||w.indexOf('부정')>=0))return false;const t2=_labelTokens(w);return toks.some(t=>t2.indexOf(t)>=0);});}
 function watchStreak(word,curDate){
   const toks=_labelTokens(word);if(!toks.length)return 1;let streak=1;
   for(let i=1;i<=6;i++){
     const d=_dOffset(curDate,-i);const dd=dateCache[d];const g=dd&&dd.games&&dd.games[actGame];
     if(!g)break;
-    const kws=(g.analysis&&g.analysis.keywords)||[];
-    const hit=kws.some(k=>{const w=String(k.word||'');if(!(w.indexOf('불만')>=0||w.indexOf('부정')>=0))return false;const t2=_labelTokens(w);return toks.some(t=>t2.indexOf(t)>=0);});
-    if(hit)streak++;else break;
+    if(_negTokenHit((g.analysis&&g.analysis.keywords)||[],toks))streak++;else break;
   }
   return streak;
 }
-function buildWatchBox(game,curDate){
+function topicDaysInRange(word,dates){
+  const toks=_labelTokens(word);if(!toks.length)return 1;let cnt=0;
+  (dates||[]).forEach(d=>{const g=dateCache[d]&&dateCache[d].games&&dateCache[d].games[actGame];if(g&&_negTokenHit((g.analysis&&g.analysis.keywords)||[],toks))cnt++;});
+  return cnt;
+}
+function buildWatchBox(game,ctx){
+  const isRange=ctx.mode==='range';
   const a=game.analysis||{};const byId={};(game.posts||[]).forEach(p=>byId[String(p.id)]=p);
   const negTopics=(a.keywords||[]).filter(k=>{const w=String(k.word||'');return w.indexOf('불만')>=0||w.indexOf('부정')>=0;});
   const items=negTopics.map(k=>{
     const ids=(k.ids||[]).map(String);const posts=ids.map(id=>byId[id]).filter(Boolean);
     const eng=posts.reduce((x,p)=>x+(p.views||0)+(p.comments||0)*20+(p.likes||0)*30,0);
     const comments=posts.reduce((x,p)=>x+(p.comments||0),0);
-    return {word:String(k.word),count:k.count||ids.length,eng,comments,streak:watchStreak(k.word,curDate),ids};
-  }).sort((x,y)=>(y.streak-x.streak)||(y.eng-x.eng)).slice(0,3);
-  if(!items.length)return '<div class="watch-box calm"><h3>오늘 챙기면 좋은 이슈</h3><div class="watch-empty">오늘은 부정으로 뭉친 이슈가 없어요 — 특별히 챙길 건 없습니다.</div></div>';
+    const persist=isRange?topicDaysInRange(k.word,ctx.rangeDates):watchStreak(k.word,ctx.date);
+    return {word:String(k.word),count:k.count||ids.length,eng,comments,persist,ids};
+  }).sort((x,y)=>(y.persist-x.persist)||(y.eng-x.eng)).slice(0,3);
+  const title=isRange?'이 기간 챙길 이슈':'오늘 챙기면 좋은 이슈';
+  if(!items.length)return '<div class="watch-box calm"><h3>'+title+'</h3><div class="watch-empty">'+(isRange?'이 기간에는':'오늘은')+' 부정으로 뭉친 이슈가 없어요 — 특별히 챙길 건 없습니다.</div></div>';
   const rows=items.map((it,i)=>{
-    const sb=it.streak>=2?'<span class="watch-streak">'+it.streak+'일 연속</span>':'';
+    let badge='';
+    if(isRange){if(it.persist>=2)badge='<span class="watch-streak">기간 중 '+it.persist+'일</span>';}
+    else{if(it.persist>=2)badge='<span class="watch-streak">'+it.persist+'일 연속</span>';}
     const idsAttr=(it.ids&&it.ids.length)?' data-ids="'+esc(it.ids.join(','))+'"':'';
-    return '<div class="watch-item"><span class="watch-rank">'+(i+1)+'</span><div class="watch-main"><div class="watch-title watch-jump" style="cursor:pointer;" data-kw="'+esc(it.word)+'"'+idsAttr+'>#'+esc(it.word)+sb+'</div><div class="watch-meta">관련 글 '+it.count+'건 · 동조(댓글) '+it.comments+' · 참여도 '+fmtNum(it.eng)+'</div></div></div>';
+    return '<div class="watch-item"><span class="watch-rank">'+(i+1)+'</span><div class="watch-main"><div class="watch-title watch-jump" style="cursor:pointer;" data-kw="'+esc(it.word)+'"'+idsAttr+'>#'+esc(it.word)+badge+'</div><div class="watch-meta">관련 글 '+it.count+'건 · 동조(댓글) '+it.comments+' · 참여도 '+fmtNum(it.eng)+'</div></div></div>';
   }).join('');
-  return '<div class="watch-box"><h3>오늘 챙기면 좋은 이슈 <span class="wc">'+items.length+'</span></h3>'+rows+'<div class="watch-meta" style="margin-top:8px;color:var(--text-3);">부정으로 뭉친 토픽을 규모·지속성 순으로 정리 · 제목 클릭 시 아래 전체 게시물에서 해당 글만 필터</div></div>';
+  const note=isRange?'부정으로 뭉친 토픽을 규모·기간 내 등장일 순으로 정리 · 제목 클릭 시 아래 전체 게시물에서 해당 글만 필터':'부정으로 뭉친 토픽을 규모·지속성 순으로 정리 · 제목 클릭 시 아래 전체 게시물에서 해당 글만 필터';
+  return '<div class="watch-box"><h3>'+title+' <span class="wc">'+items.length+'</span></h3>'+rows+'<div class="watch-meta" style="margin-top:8px;color:var(--text-3);">'+note+'</div></div>';
 }
-
 function render(){
   const VD=activeView();
   if(!VD||!VD.games[actGame]){const ks=VD&&Object.keys(VD.games||{});if(ks&&ks.length)actGame=ks[0];else return;}
@@ -911,7 +949,10 @@ function render(){
     const idsAttr=k.ids&&k.ids.length?' data-ids="'+esc(k.ids.join(','))+'"':'';
     return '<button class="'+cls+'" data-kw="'+esc(w)+'"'+idsAttr+'>#'+esc(w)+'<span class="cnt">'+(k.count||0)+'</span></button>';
   }).join('');
-  const _extraTop=rangeMode?'':(buildWatchBox(game,VD.date)+buildCompareStrip(game,VD.date));
+  let _ctx;
+    if(rangeMode&&VD._range){const _rd=(allDates||[]).filter(d=>d>=VD._range.start&&d<=VD._range.end).sort();_ctx={mode:'range',start:VD._range.start,end:VD._range.end,nDays:VD._range.nDays,prevStart:VD._range.prevStart,prevEnd:VD._range.prevEnd,rangeDates:_rd};}
+    else{_ctx={mode:'day',date:VD.date};}
+    const _extraTop=buildWatchBox(game,_ctx)+buildCompareStrip(game,_ctx);
     c.innerHTML=statusHtml+_extraTop+'<div class="cards"><div class="card"><div class="label">게시물</div><div class="value">'+fmtNum(s.real_posts)+d1+'</div><div class="sub">공지 '+(s.notices||0)+'개 제외 '+dvs+'</div></div><div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+d2+'</div><div class="sub">긍정 '+s.positive+' · 부정 '+s.negative+' '+dvs+'</div></div><div class="card"><div class="label">총 조회수</div><div class="value">'+fmtK(s.total_views)+d3+'</div><div class="sub">평균 '+Math.round(s.total_views/Math.max(s.real_posts,1))+' / 글 '+dvs+'</div></div><div class="card"><div class="label">버그 의심</div><div class="value '+(s.bugs>0?'s-neg':'')+'">'+s.bugs+d4+'</div><div class="sub">자동 키워드 검출 '+dvs+'</div></div></div>'+
     '<div class="section"><h2>'+summaryTitle+'</h2>'+metricBadges+'<div class="summary-narr">'+narrHtml+'</div><div class="keywords">'+kw+'</div><div class="section-note">상단 지표는 정량 요약 · 해시태그(#) 클릭 시 하단 전체 게시물에서 해당 토픽 글만 필터됩니다</div></div>'+
     ((activeView().searchTrends||trendsData)?'<div class="row"><div class="section"><h2>검색 트렌드 <span class="count" id="trend-range">30일</span></h2><div style="position:relative;height:280px;"><canvas id="trendChart"></canvas></div><div class="section-note">출처: 네이버 데이터랩 (실선, 일별) + 구글 트렌드 (점선, 일별) · 각 출처별 max=100 정규화</div></div><div class="section"><h2>검색량 스냅샷</h2><div class="trend-insight" id="trend-insight"></div></div></div>':'')+
