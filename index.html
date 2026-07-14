@@ -261,6 +261,15 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 .exp-btn{background:var(--surface);border:1px solid var(--border-strong);color:var(--text-2);font-family:inherit;font-size:12px;font-weight:600;padding:7px 12px;border-radius:7px;cursor:pointer;transition:all .15s;white-space:nowrap;}
 .exp-btn:hover{background:var(--accent-bg);color:var(--accent);border-color:var(--accent);}
 .exp-btn:active{transform:translateY(1px);}
+
+/* v0.6: 본문/댓글 펼쳐보기 */
+.detail-toggle{background:transparent;border:0;color:var(--accent);cursor:pointer;font-size:12px;padding:0 4px;margin-left:4px;line-height:1;}
+.detail-toggle:hover{opacity:.7;}
+.post-detail>td{background:#f8fafc;border-top:0;padding:10px 16px 14px 34px;}
+.pd-body{font-size:13px;color:var(--text);white-space:pre-wrap;line-height:1.65;margin-bottom:8px;}
+.pd-cmts .pd-lbl{font-size:11px;font-weight:700;color:var(--text-3);text-transform:uppercase;letter-spacing:.05em;}
+.pd-cmts ul{margin:4px 0 0;padding-left:18px;}
+.pd-cmts li{font-size:12.5px;color:var(--text-2);margin:2px 0;line-height:1.5;}
 </style></head>
 <body>
 <div class="app" id="app">
@@ -1153,11 +1162,11 @@ function _expBaseName(m){const safe=s=>String(s||'').replace(/[\\/:*?"<>|·]/g,'
 function exportCSV(){
   const {game,filt}=_curFilteredSorted();const m=_exportMeta(game);const tm=_topicMap(game);const bm=_bodyMap(game);
   const q=v=>'"'+String(v==null?'':v).replace(/"/g,'""')+'"';
-  const head=['소스','제목','토픽','시각(KST)','조회','댓글','추천','감정','링크','본문요약(핵심이슈)'];
+  const head=['소스','제목','토픽','시각(KST)','조회','댓글','추천','감정','본문','주요댓글','링크','본문요약(핵심이슈)'];
   const rows=filt.map(p=>{
     const topics=(tm[String(p.id)]||[]).join(' | ');
     const b=bm[p.url];const sent=p.sentiment==='positive'?'긍정':p.sentiment==='negative'?'부정':'중립';
-    return [p.source?p.source.toUpperCase():'',p.title,topics,_kst(p.utcIso),p.views,p.comments,p.likes,sent,p.url,b?b.bodySummary:''].map(q).join(',');
+    return [p.source?p.source.toUpperCase():'',p.title,topics,_kst(p.utcIso),p.views,p.comments,p.likes,sent,p.body||'',(p.topComments||[]).join(' / '),p.url,b?b.bodySummary:''].map(q).join(',');
   });
   const csv='﻿'+head.map(q).join(',')+'\r\n'+rows.join('\r\n');
   _dlFile(_expBaseName(m)+'.csv',csv,'text/csv;charset=utf-8;');
@@ -1174,17 +1183,30 @@ function exportMD(){
     const sent=p.sentiment==='positive'?'긍정':p.sentiment==='negative'?'부정':'중립';
     md+='| '+cell(p.source&&p.source.toUpperCase())+' | '+cell(p.title)+' | '+cell(topics)+' | '+cell(_kst(p.utcIso))+' | '+(p.views||0)+' | '+(p.comments||0)+' | '+(p.likes||0)+' | '+sent+' | ['+'원문'+']('+p.url+') |\n';
   });
+  const withBody=filt.filter(p=>(p.body&&p.body.length)||(p.topComments&&p.topComments.length));
+  if(withBody.length){
+    md+='\n## 본문·댓글 (수집된 글 '+withBody.length+'건)\n\n';
+    withBody.forEach(p=>{
+      md+='### '+cell(p.title)+'\n';
+      md+='- '+(p.source?p.source.toUpperCase():'')+' · 조회 '+(p.views||0)+' · 댓글 '+(p.comments||0)+' · 추천 '+(p.likes||0)+' · [원문]('+p.url+')\n';
+      if(p.body)md+='- 본문: '+cell(p.body)+'\n';
+      if(p.topComments&&p.topComments.length)md+='- 댓글: '+p.topComments.map(c=>cell(c)).join(' / ')+'\n';
+      md+='\n';
+    });
+  }
   const issues=filt.map(p=>bm[p.url]).filter(Boolean);
   if(issues.length){
     md+='\n## 핵심 이슈 본문 요약\n\n';
     const seen={};issues.forEach(it=>{if(seen[it.url])return;seen[it.url]=1;md+='- **'+cell(it.title)+'** ('+(it.tone||'')+') — '+cell(it.bodySummary)+'\n';});
   }
-  md+='\n> 참고: 전체 글은 제목·지표·링크만 저장되며, 본문 요약은 핵심 이슈에 한해 제공됩니다.\n';
+  md+='\n> 참고: 본문·댓글은 참여도 상위 및 댓글이 달린 글 위주로 수집됩니다(잡담·단문 일부 제외). 핵심 이슈는 별도 요약을 제공합니다.\n';
   if(navigator.clipboard&&navigator.clipboard.writeText){
     navigator.clipboard.writeText(md).then(()=>_flashBtn('export-md','⧉ 복사됨! ('+filt.length+'건)')).catch(()=>{_dlFile(_expBaseName(m)+'.md',md,'text/markdown;charset=utf-8;');_flashBtn('export-md','⧉ 파일로 저장됨');});
   } else {_dlFile(_expBaseName(m)+'.md',md,'text/markdown;charset=utf-8;');_flashBtn('export-md','⧉ 파일로 저장됨');}
 }
 function _flashBtn(id,txt){const b=document.getElementById(id);if(!b)return;const o=b.textContent;b.textContent=txt;b.disabled=true;setTimeout(()=>{b.textContent=o;b.disabled=false;},1600);}
+
+function toggleDetail(btn){var tr=btn.closest("tr");if(!tr)return;var d=tr.nextElementSibling;if(!d||!d.classList.contains("post-detail"))return;var show=d.style.display==="none";d.style.display=show?"":"none";btn.textContent=show?"▴":"▾";}
 
 function renderList(){
   const game=activeView().games[actGame];
@@ -1233,13 +1255,20 @@ function renderList(){
     const dt=new Date(p.utcIso).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'});
     const tps=topicByPost[String(p.id)]||[];
     const topics=tps.length?tps.map(w=>'<span class="topic-cell-chip">#'+esc(w)+'</span>').join(''):'<span class="muted small">-</span>';
+    const hasD=(p.body&&p.body.length)||(p.topComments&&p.topComments.length);
+    const toggle=hasD?' <button class="detail-toggle" onclick="toggleDetail(this)" title="본문·댓글 보기">▾</button>':'';
+    let detail='';
+    if(hasD){
+      const cmts=(p.topComments||[]).map(c=>'<li>'+esc(c)+'</li>').join('');
+      detail='<tr class="post-detail" style="display:none;"><td colspan="7">'+(p.body?'<div class="pd-body">'+esc(p.body)+'</div>':'')+(cmts?'<div class="pd-cmts"><span class="pd-lbl">주요 댓글</span><ul>'+cmts+'</ul></div>':'')+'</td></tr>';
+    }
     return '<tr><td><span class="src-'+p.source+'">'+p.source.toUpperCase()+'</span></td>'+
-      '<td class="title-cell"><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.title)+'</a></td>'+
+      '<td class="title-cell"><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.title)+'</a>'+toggle+'</td>'+
       '<td>'+topics+'</td>'+
       '<td class="muted small">'+dt+'</td>'+
       '<td style="text-align:right;">'+fmtNum(p.views)+'</td>'+
       '<td style="text-align:right;">'+p.comments+'</td>'+
-      '<td style="text-align:right;">'+p.likes+'</td></tr>';
+      '<td style="text-align:right;">'+p.likes+'</td></tr>'+detail;
   }).join('');
 }
 window.addEventListener('hashchange',()=>{
