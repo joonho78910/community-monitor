@@ -1,15 +1,15 @@
 {
  "startDate": "2025-11-25",
- "endDate": "2026-07-16",
+ "endDate": "2026-07-17",
  "timeUnit": "date",
  "sources": {
   "naver": {
    "label": "네이버 데이터랩",
-   "note": "datalab API. endDate=TARGET+1=2026-07-17로 조회(당일 제외 룰 회피). 2026-07-16 당일값은 미집계(07-17 오전 실행 시점 미반영)로 07-15까지 반영. incremental append+overwrite."
+   "note": "datalab API. endDate=TARGET+1=2026-07-18로 조회(당일 제외 룰 회피). 단 2026-07-17 당일값은 datalab 미집계로 07-16까지만 반영(재시도 1회 후에도 미집계). incremental append+overwrite."
   },
   "google": {
    "label": "구글 트렌드",
-   "note": "구글 트렌드 widget API. 2025-11-25~2026-07-16 custom range + DAY resolution(234p). ratio>0 필터. 매 빌드 fresh 전체 교체. 앵커패닉은 상대검색량이 낮아 대부분 0."
+   "note": "구글 트렌드 widget API. 2025-11-25~2026-07-17 custom range + DAY resolution(235p). ratio>0 필터. 매 빌드 fresh 전체 교체. 앵커패닉은 상대검색량이 낮아 대부분 0."
   }
  },
  "series": [
@@ -868,23 +868,35 @@
      {
       "period": "2026-07-15",
       "ratio": 15.06849
+     },
+     {
+      "period": "2026-07-16",
+      "ratio": 8.21917
      }
     ],
     "google": [
      {
-      "period": "2026-05-09",
-      "ratio": 23
+      "period": "2025-12-04",
+      "ratio": 21
+     },
+     {
+      "period": "2026-03-11",
+      "ratio": 22
+     },
+     {
+      "period": "2026-05-07",
+      "ratio": 20
+     },
+     {
+      "period": "2026-05-14",
+      "ratio": 31
+     },
+     {
+      "period": "2026-06-10",
+      "ratio": 16
      },
      {
       "period": "2026-07-06",
-      "ratio": 1
-     },
-     {
-      "period": "2026-07-07",
-      "ratio": 1
-     },
-     {
-      "period": "2026-07-08",
       "ratio": 1
      }
     ]
@@ -1825,36 +1837,32 @@
      {
       "period": "2026-07-15",
       "ratio": 83.56164
+     },
+     {
+      "period": "2026-07-16",
+      "ratio": 98.63013
      }
     ],
     "google": [
-     {
-      "period": "2025-12-22",
-      "ratio": 18
-     },
-     {
-      "period": "2026-02-04",
-      "ratio": 18
-     },
      {
       "period": "2026-02-05",
       "ratio": 100
      },
      {
       "period": "2026-02-06",
-      "ratio": 59
+      "ratio": 61
      },
      {
       "period": "2026-02-07",
-      "ratio": 65
+      "ratio": 62
      },
      {
       "period": "2026-02-08",
-      "ratio": 79
+      "ratio": 70
      },
      {
       "period": "2026-02-09",
-      "ratio": 33
+      "ratio": 34
      },
      {
       "period": "2026-02-10",
@@ -1862,19 +1870,23 @@
      },
      {
       "period": "2026-02-11",
-      "ratio": 34
+      "ratio": 35
      },
      {
       "period": "2026-02-12",
-      "ratio": 54
+      "ratio": 47
      },
      {
       "period": "2026-02-13",
-      "ratio": 37
+      "ratio": 44
      },
      {
       "period": "2026-02-14",
-      "ratio": 41
+      "ratio": 33
+     },
+     {
+      "period": "2026-02-15",
+      "ratio": 42
      },
      {
       "period": "2026-02-16",
@@ -1882,55 +1894,43 @@
      },
      {
       "period": "2026-02-17",
-      "ratio": 27
-     },
-     {
-      "period": "2026-02-18",
-      "ratio": 18
+      "ratio": 20
      },
      {
       "period": "2026-02-19",
-      "ratio": 36
-     },
-     {
-      "period": "2026-02-20",
-      "ratio": 21
-     },
-     {
-      "period": "2026-02-21",
-      "ratio": 42
-     },
-     {
-      "period": "2026-02-22",
       "ratio": 32
      },
      {
+      "period": "2026-02-20",
+      "ratio": 19
+     },
+     {
+      "period": "2026-02-21",
+      "ratio": 37
+     },
+     {
+      "period": "2026-02-22",
+      "ratio": 22
+     },
+     {
       "period": "2026-02-23",
-      "ratio": 20
+      "ratio": 22
      },
      {
       "period": "2026-02-24",
-      "ratio": 22
+      "ratio": 19
      },
      {
       "period": "2026-02-25",
-      "ratio": 23
+      "ratio": 19
      },
      {
-      "period": "2026-03-05",
-      "ratio": 20
-     },
-     {
-      "period": "2026-03-16",
+      "period": "2026-02-26",
       "ratio": 22
      },
      {
-      "period": "2026-03-28",
-      "ratio": 20
-     },
-     {
-      "period": "2026-07-02",
-      "ratio": 1
+      "period": "2026-03-05",
+      "ratio": 22
      },
      {
       "period": "2026-07-03",
@@ -1946,11 +1946,15 @@
      },
      {
       "period": "2026-07-06",
-      "ratio": 2
+      "ratio": 3
+     },
+     {
+      "period": "2026-07-07",
+      "ratio": 1
      },
      {
       "period": "2026-07-08",
-      "ratio": 3
+      "ratio": 2
      },
      {
       "period": "2026-07-09",
@@ -1958,7 +1962,7 @@
      },
      {
       "period": "2026-07-10",
-      "ratio": 2
+      "ratio": 3
      },
      {
       "period": "2026-07-11",
@@ -1966,15 +1970,15 @@
      },
      {
       "period": "2026-07-12",
-      "ratio": 3
-     },
-     {
-      "period": "2026-07-13",
       "ratio": 2
      },
      {
+      "period": "2026-07-13",
+      "ratio": 1
+     },
+     {
       "period": "2026-07-14",
-      "ratio": 4
+      "ratio": 3
      },
      {
       "period": "2026-07-15",
@@ -1982,6 +1986,10 @@
      },
      {
       "period": "2026-07-16",
+      "ratio": 3
+     },
+     {
+      "period": "2026-07-17",
       "ratio": 2
      }
     ]
@@ -2423,6 +2431,14 @@
    "label": "(추정) 검색 관심 상승",
    "detail": "네이버 검색 전일 대비 +29.17% (절대 +19.2). 커뮤니티는 여름 이벤트 예고·반주년 유입 화제.",
    "url": ""
+  },
+  {
+   "date": "2026-07-16",
+   "game": "erpis",
+   "confidence": 1,
+   "label": "(추정) 검색 활동 급증",
+   "detail": "검색량 전일 대비 +18.0% (뉴스/블로그 매칭 없음; 커뮤니티에서는 2주년 신캐 3종 공개가 화제)",
+   "url": ""
   }
  ],
  "spikes": [
@@ -2521,57 +2537,57 @@
    "date": "2026-06-17",
    "game": "anchorpanic",
    "pct": 400.0,
-   "cur": 44.872,
-   "prev": 8.974
+   "cur": 47.945,
+   "prev": 9.589
   },
   {
    "date": "2026-06-20",
    "game": "anchorpanic",
    "pct": 50.0,
-   "cur": 19.231,
-   "prev": 12.821
+   "cur": 20.548,
+   "prev": 13.699
   },
   {
    "date": "2026-06-22",
    "game": "anchorpanic",
    "pct": 157.1,
-   "cur": 23.077,
-   "prev": 8.974
+   "cur": 24.658,
+   "prev": 9.589
   },
   {
    "date": "2026-06-28",
    "game": "anchorpanic",
    "pct": 85.7,
-   "cur": 16.667,
-   "prev": 8.974
+   "cur": 17.808,
+   "prev": 9.589
   },
   {
    "date": "2026-06-29",
    "game": "anchorpanic",
    "pct": 38.5,
-   "cur": 23.077,
-   "prev": 16.667
+   "cur": 24.658,
+   "prev": 17.808
   },
   {
    "date": "2026-07-06",
    "game": "anchorpanic",
    "pct": 44.4,
-   "cur": 16.667,
-   "prev": 11.538
+   "cur": 17.808,
+   "prev": 12.329
   },
   {
    "date": "2026-07-08",
    "game": "anchorpanic",
    "pct": 109.1,
-   "cur": 29.487,
-   "prev": 14.103
+   "cur": 31.507,
+   "prev": 15.068
   },
   {
    "date": "2026-07-12",
    "game": "anchorpanic",
    "pct": 33.3,
-   "cur": 10.256,
-   "prev": 7.692
+   "cur": 10.959,
+   "prev": 8.219
   },
   {
    "date": "2026-02-04",
@@ -2682,57 +2698,64 @@
    "date": "2026-06-17",
    "game": "erpis",
    "pct": 34.1,
-   "cur": 75.641,
-   "prev": 56.41
+   "cur": 80.822,
+   "prev": 60.274
   },
   {
    "date": "2026-06-18",
    "game": "erpis",
    "pct": 22.0,
-   "cur": 92.308,
-   "prev": 75.641
+   "cur": 98.63,
+   "prev": 80.822
   },
   {
    "date": "2026-06-23",
    "game": "erpis",
    "pct": 50.0,
-   "cur": 73.077,
-   "prev": 48.718
+   "cur": 78.082,
+   "prev": 52.055
   },
   {
    "date": "2026-06-24",
    "game": "erpis",
    "pct": 28.1,
-   "cur": 93.59,
-   "prev": 73.077
+   "cur": 100,
+   "prev": 78.082
   },
   {
    "date": "2026-07-04",
    "game": "erpis",
    "pct": 50.0,
-   "cur": 65.385,
-   "prev": 43.59
+   "cur": 69.863,
+   "prev": 46.575
   },
   {
    "date": "2026-07-06",
    "game": "erpis",
    "pct": 17.8,
-   "cur": 67.949,
-   "prev": 57.692
+   "cur": 72.603,
+   "prev": 61.644
   },
   {
    "date": "2026-07-08",
    "game": "erpis",
    "pct": 53.2,
-   "cur": 92.308,
-   "prev": 60.256
+   "cur": 98.63,
+   "prev": 64.384
   },
   {
    "date": "2026-07-14",
    "game": "erpis",
-   "pct": 29.17,
+   "pct": 29.2,
    "cur": 84.931,
    "prev": 65.753
+  },
+  {
+   "date": "2026-07-16",
+   "game": "erpis",
+   "pct": 18.0,
+   "cur": 98.63,
+   "prev": 83.562
   }
  ],
  "lastUpdated": "2026-07-17T08:01:04.108559+09:00"
