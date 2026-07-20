@@ -81,6 +81,7 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 .issue-item{padding:12px 0;border-bottom:1px solid #f1f5f9;}
 .issue-item:last-child{border-bottom:0;}
 .issue-item a{color:var(--text);text-decoration:none;display:flex;flex-direction:column;gap:5px;}
+.issue-nolink{color:var(--text);display:flex;flex-direction:column;gap:5px;}
 .issue-item a:hover .issue-title{color:var(--accent);}
 .issue-title{font-weight:600;font-size:13.5px;display:flex;align-items:center;gap:8px;line-height:1.4;}
 .issue-title .rank{font-variant-numeric:tabular-nums;color:var(--text-3);font-weight:500;font-size:12px;min-width:18px;}
@@ -914,7 +915,20 @@ function render(){
     const idsAttr=k.ids&&k.ids.length?' data-ids="'+esc(k.ids.join(','))+'"':'';
     return '<span class="'+cls+'" data-kw="'+esc(w)+'"'+idsAttr+' style="font-size:'+size+'px;">#'+esc(w)+'<span class="cnt">'+c+'</span></span>';
   }).join('');
-  const iss=(a.topIssues||[]).map((it,i)=>{const m=(it.summary||'').match(/조회\s*(\d+),\s*댓글\s*(\d+),\s*추천\s*(-?\d+)/);const v=m?+m[1]:(it.views||0);const c=m?+m[2]:(it.comments||0);const l=m?+m[3]:(it.likes||0);const bs=it.bodySummary?'<div class="issue-summary"><span class="qm">‟</span>'+esc(it.bodySummary)+'</div>':'';return '<li class="issue-item"><a href="'+esc(it.url||'#')+'" target="_blank" rel="noopener"><div class="issue-title"><span class="rank">'+(i+1)+'.</span>'+esc(it.title)+'<span class="tone-badge tone-'+toneShort(it.tone)+'">'+esc(it.tone)+'</span></div><div class="issue-stats"><span><span class="lbl">조회</span>'+fmtNum(v)+'</span><span><span class="lbl">댓글</span>'+c+'</span><span><span class="lbl">추천</span>'+l+'</span></div></a>'+bs+'</li>';}).join('');
+  const _issById={};(game.posts||[]).forEach(p=>_issById[String(p.id)]=p);
+  const iss=(a.topIssues||[]).map((it,i)=>{
+    let post=null;
+    if(!it.url){const idm=(it.bodySummary||'').match(/\((\d{4,})\)/)||(it.bodySummary||'').match(/(\d{4,})/);if(idm)post=_issById[idm[1]]||null;}
+    const iu=it.url||(post&&post.url)||'';
+    const m=(it.summary||'').match(/조회\s*(\d+),\s*댓글\s*(\d+),\s*추천\s*(-?\d+)/);
+    const v=m?+m[1]:(it.views!=null?it.views:(post?post.views:0));
+    const c=m?+m[2]:(it.comments!=null?it.comments:(post?post.comments:0));
+    const l=m?+m[3]:(it.likes!=null?it.likes:(post?post.likes:0));
+    const bs=it.bodySummary?'<div class="issue-summary"><span class="qm">‟</span>'+esc(it.bodySummary)+'</div>':'';
+    const head='<div class="issue-title"><span class="rank">'+(i+1)+'.</span>'+esc(it.title)+'<span class="tone-badge tone-'+toneShort(it.tone)+'">'+esc(it.tone)+'</span></div><div class="issue-stats"><span><span class="lbl">조회</span>'+fmtNum(v)+'</span><span><span class="lbl">댓글</span>'+c+'</span><span><span class="lbl">추천</span>'+l+'</span></div>';
+    const inner=iu?'<a href="'+esc(iu)+'" target="_blank" rel="noopener">'+head+'</a>':'<div class="issue-nolink">'+head+'</div>';
+    return '<li class="issue-item">'+inner+bs+'</li>';
+  }).join('');
   const groupCounts=CATS.map(c=>({...c,count:countGroup(real,c.tags),pct:Math.round(countGroup(real,c.tags)/RP*100)}));
   const tr=groupCounts.filter(g=>g.count>0).sort((a,b)=>b.count-a.count).map(g=>'<li class="t-item"><span class="marker" style="color:'+g.color+';">●</span><span class="body">'+g.label+' '+g.count+'건</span><span class="pct">'+g.pct+'%</span></li>').join('');
   const wt=(a.watchlist||[]).map(w=>'<li class="w-item"><span class="marker" style="color:var(--accent);">●</span><span class="body">'+esc(w)+'</span></li>').join('');
