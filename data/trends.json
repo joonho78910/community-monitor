@@ -1,15 +1,15 @@
 {
  "startDate": "2025-11-25",
- "endDate": "2026-07-30",
+ "endDate": "2026-07-31",
  "timeUnit": "date",
  "sources": {
   "naver": {
    "label": "네이버 데이터랩",
-   "note": "datalab API. 2026-07-30 실행에서 커넥터 복구되어 07-22~07-29 백필(endDate=TARGET+1 조회). TARGET(07-30) 당일치는 datalab 미집계로 누락 — 익일 재조회 필요. 네이버 시리즈는 30일창 정규화라 07-22 경계에서 스케일 차이 존재."
+   "note": "datalab API. 2026-07-31 실행: endDate=2026-07-31+1로 조회했으나 2026-07-31 당일치 미집계 → 최신 07-30 반영(앵커 32.18/에르피스 42.53). incremental append."
   },
   "google": {
    "label": "구글 트렌드",
-   "note": "구글 트렌드 widget API. 2025-11-25~2026-07-30 custom range + DAY resolution(248p). ratio>0 필터. fresh 전체 교체. 국내 구글 검색량이 낮아 대부분 0(앵커 5p, 에르피스 39p). TARGET(07-30) 포함."
+   "note": "구글 트렌드 widget API. 2025-11-25~2026-07-31 custom range + DAY resolution 전체 fresh 교체."
   }
  },
  "series": [
@@ -916,19 +916,39 @@
      {
       "period": "2026-07-29",
       "ratio": 31.03448
+     },
+     {
+      "period": "2026-07-30",
+      "ratio": 32.1839
      }
     ],
     "google": [
      {
-      "period": "2026-03-29",
-      "ratio": 19
-     },
-     {
-      "period": "2026-05-09",
+      "period": "2026-02-17",
       "ratio": 20
      },
      {
+      "period": "2026-05-08",
+      "ratio": 18
+     },
+     {
+      "period": "2026-05-09",
+      "ratio": 24
+     },
+     {
+      "period": "2026-06-12",
+      "ratio": 16
+     },
+     {
+      "period": "2026-07-26",
+      "ratio": 1
+     },
+     {
       "period": "2026-07-27",
+      "ratio": 1
+     },
+     {
+      "period": "2026-07-28",
       "ratio": 1
      },
      {
@@ -1933,9 +1953,21 @@
      {
       "period": "2026-07-29",
       "ratio": 64.36781
+     },
+     {
+      "period": "2026-07-30",
+      "ratio": 42.52873
      }
     ],
     "google": [
+     {
+      "period": "2025-12-10",
+      "ratio": 20
+     },
+     {
+      "period": "2026-02-04",
+      "ratio": 27
+     },
      {
       "period": "2026-02-05",
       "ratio": 100
@@ -1946,103 +1978,87 @@
      },
      {
       "period": "2026-02-07",
-      "ratio": 68
+      "ratio": 64
      },
      {
       "period": "2026-02-08",
-      "ratio": 77
+      "ratio": 62
      },
      {
       "period": "2026-02-09",
-      "ratio": 30
+      "ratio": 46
      },
      {
       "period": "2026-02-10",
-      "ratio": 54
+      "ratio": 57
      },
      {
       "period": "2026-02-11",
-      "ratio": 33
+      "ratio": 34
      },
      {
       "period": "2026-02-12",
-      "ratio": 52
+      "ratio": 53
      },
      {
       "period": "2026-02-13",
-      "ratio": 47
-     },
-     {
-      "period": "2026-02-14",
       "ratio": 45
      },
      {
+      "period": "2026-02-14",
+      "ratio": 38
+     },
+     {
       "period": "2026-02-15",
-      "ratio": 41
-     },
-     {
-      "period": "2026-02-16",
-      "ratio": 29
-     },
-     {
-      "period": "2026-02-17",
-      "ratio": 24
-     },
-     {
-      "period": "2026-02-18",
-      "ratio": 16
-     },
-     {
-      "period": "2026-02-19",
-      "ratio": 26
-     },
-     {
-      "period": "2026-02-20",
-      "ratio": 20
-     },
-     {
-      "period": "2026-02-21",
-      "ratio": 43
-     },
-     {
-      "period": "2026-02-22",
-      "ratio": 29
-     },
-     {
-      "period": "2026-02-23",
-      "ratio": 18
-     },
-     {
-      "period": "2026-02-24",
-      "ratio": 22
-     },
-     {
-      "period": "2026-02-25",
-      "ratio": 27
-     },
-     {
-      "period": "2026-02-26",
-      "ratio": 25
-     },
-     {
-      "period": "2026-02-28",
       "ratio": 37
      },
      {
+      "period": "2026-02-16",
+      "ratio": 31
+     },
+     {
+      "period": "2026-02-17",
+      "ratio": 29
+     },
+     {
+      "period": "2026-02-19",
+      "ratio": 29
+     },
+     {
+      "period": "2026-02-20",
+      "ratio": 23
+     },
+     {
+      "period": "2026-02-21",
+      "ratio": 21
+     },
+     {
+      "period": "2026-02-22",
+      "ratio": 21
+     },
+     {
+      "period": "2026-02-23",
+      "ratio": 25
+     },
+     {
+      "period": "2026-02-24",
+      "ratio": 24
+     },
+     {
+      "period": "2026-02-25",
+      "ratio": 23
+     },
+     {
+      "period": "2026-02-26",
+      "ratio": 20
+     },
+     {
       "period": "2026-03-05",
-      "ratio": 22
-     },
-     {
-      "period": "2026-04-30",
-      "ratio": 17
-     },
-     {
-      "period": "2026-07-16",
-      "ratio": 2
+      "ratio": 25
      },
      {
       "period": "2026-07-17",
-      "ratio": 3
+      "ratio": 2
      },
      {
       "period": "2026-07-18",
@@ -2090,6 +2106,10 @@
      },
      {
       "period": "2026-07-30",
+      "ratio": 2
+     },
+     {
+      "period": "2026-07-31",
       "ratio": 1
      }
     ]
@@ -2970,5 +2990,5 @@
    "prev": 12.64367
   }
  ],
- "lastUpdated": "2026-07-30T07:55:00+09:00"
+ "lastUpdated": "2026-07-31T07:30:00+09:00"
 }
