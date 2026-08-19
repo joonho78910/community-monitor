@@ -367,7 +367,7 @@ function richNarrative(game,label,nDays){
   const tops=(a.keywords||[]).slice(0,3).map(k=>esc(String(k.word||''))).filter(Boolean).join(', ');
   const ti=(a.topIssues||[])[0];
   const vol=nDays?(nDays+'일간 총 <strong>'+fmtNum(real)+'건</strong>(일평균 '+(Math.round(real/nDays*10)/10)+'건)의 글이 올라왔고'):('게시물 <strong>'+fmtNum(real)+'건</strong> 중');
-  let txt=label+' '+game.name+' 동향: '+vol+' <strong>'+mood+'</strong>했다(긍정 '+(s.positive||0)+'·부정 '+(s.negative||0)+'건, 부정률 '+negR+'%).';
+  let txt=label+' '+gname(actGame,game)+' 동향: '+vol+' <strong>'+mood+'</strong>했다(긍정 '+(s.positive||0)+'·부정 '+(s.negative||0)+'건, 부정률 '+negR+'%).';
   if(tops) txt+=' 주요 화제는 '+tops+' 등이었으며,';
   if(ti) txt+=' 가장 주목받은 글은 <strong>"'+esc(ti.title)+'"</strong>였다.';
   else if(tops) txt+=' 두드러진 단일 이슈는 없었다.';
@@ -430,7 +430,7 @@ async function buildRangeView(){
     const competitorMentions=[];const seenC={};
     days.forEach(dd=>{const g=dd.games&&dd.games[gk];if(g)(g.analysis&&g.analysis.competitorMentions||[]).forEach(cm=>{const k=cm.context;if(!seenC[k]){seenC[k]=1;competitorMentions.push(cm);}});});
     // dailySummary left empty for range; render() builds a rich narrative via richNarrative()
-    games[gk]={name:nameRef.games[gk].name,date:lo+'~'+hi,posts,stats,topEngaging,
+    games[gk]={name:gname(gk,nameRef.games[gk]),date:lo+'~'+hi,posts,stats,topEngaging,
       analysis:{dailySummary:'',topIssues,bugReports,competitorMentions,trends:[],watchlist:[],keywords}};
   });
   // v0.6: prefetch preceding equal-length window for compare-strip
@@ -678,13 +678,18 @@ async function loadDate(d){
   render();
   updateHash();
 }
+// v0.7: 게임 표시명 폴백 — 데이터에 name이 없어도 탭/문구가 비지 않도록
+const GAME_LABELS={anchorpanic:'앵커패닉',erpis:'에르피스'};
+function gname(key,g){
+  return (g&&g.name)||GAME_LABELS[key]||key||'';
+}
 function buildTabs(games){
   const el=document.getElementById('tabs');
   el.innerHTML='';
   games.forEach(key=>{
     const btn=document.createElement('button');
     btn.className='tab'+(key===actGame?' active':'');
-    btn.textContent=curData.games[key].name;
+    btn.textContent=gname(key,curData.games[key]);
     btn.onclick=()=>{actGame=key;document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));btn.classList.add('active');renderCalendar();render();updateHash();};
     el.appendChild(btn);
   });
@@ -1165,7 +1170,7 @@ function _curFilteredSorted(){
 }
 function _exportMeta(game){
   const vd=activeView();
-  return {gameName:game.name||actGame, dateLabel:(vd&&vd.date)||'', topic:fS.idFilterLabel||'', search:fS.search||'',
+  return {gameName:gname(actGame,game), dateLabel:(vd&&vd.date)||'', topic:fS.idFilterLabel||'', search:fS.search||'',
     now:new Date().toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})};
 }
 function _topicMap(game){const m={};((game.analysis&&game.analysis.keywords)||[]).forEach(k=>{(k.ids||[]).forEach(id=>{(m[String(id)]=m[String(id)]||[]).push(k.word);});});return m;}
