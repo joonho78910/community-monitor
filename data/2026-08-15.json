@@ -1,0 +1,1695 @@
+{
+ "date": "2026-08-15",
+ "generatedAt": "2026-08-16T01:17:17Z",
+ "games": {
+  "anchorpanic": {
+   "name": "앵커패닉",
+   "date": "2026-08-15",
+   "posts": [
+    {
+     "id": "179938476",
+     "source": "arca",
+     "board": "anchorpanic",
+     "url": "https://arca.live/b/anchorpanic/179938476",
+     "category": "",
+     "title": "내가 명한다",
+     "comments": 4,
+     "utcIso": "2026-08-14T16:35:02.000Z",
+     "author": "그런거몰라요",
+     "views": 86,
+     "likes": 2,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "179951874",
+     "source": "arca",
+     "board": "anchorpanic",
+     "url": "https://arca.live/b/anchorpanic/179951874",
+     "category": "",
+     "title": "만약 나눔한다하면",
+     "comments": 5,
+     "utcIso": "2026-08-15T00:23:32.000Z",
+     "author": "희희카드",
+     "views": 90,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "179958345",
+     "source": "arca",
+     "board": "anchorpanic",
+     "url": "https://arca.live/b/anchorpanic/179958345",
+     "category": "",
+     "title": "100",
+     "comments": 16,
+     "utcIso": "2026-08-15T02:28:52.000Z",
+     "author": "하냥",
+     "views": 101,
+     "likes": 3,
+     "sentiment": "positive",
+     "tags": [
+      "positive"
+     ],
+     "isNotice": false,
+     "body": "화이트로즈 나올 때 시작했는데 이제 100 찍음 !! 호메떼 호메뗴",
+     "topComments": [
+      "이제부터 시작이다 애송이...ㅋㅋㅋ",
+      "맛있게 익었네 크",
+      "만렙아니니까 아가네",
+      "아가챈 들어와야겠네"
+     ]
+    },
+    {
+     "id": "179969841",
+     "source": "arca",
+     "board": "anchorpanic",
+     "url": "https://arca.live/b/anchorpanic/179969841",
+     "category": "",
+     "title": "유카리햄 진짜 뒤지게 약하네 ㅋㅋ",
+     "comments": 10,
+     "utcIso": "2026-08-15T05:20:50.000Z",
+     "author": "지존물퇴",
+     "views": 94,
+     "likes": 1,
+     "sentiment": "negative",
+     "tags": [
+      "balance",
+      "negative"
+     ],
+     "isNotice": false,
+     "body": "pvp 서브팟 딜러 필요해서 유카리 한번 넣고 돌려보는데 정말 버러지같은 성능이군",
+     "topComments": [
+      "키울 재화도 아까워서 1렙상태로 유기함",
+      "30렙기준 첫턴 댐감 18퍼라 버티는건 나쁘지 않아보이는데 그거 밖에 없는 븅신 맞는듯",
+      "어떻게 1인궁 강습 딜러 마인드가 피해감소 ㅋㅋ"
+     ]
+    },
+    {
+     "id": "179969864",
+     "source": "arca",
+     "board": "anchorpanic",
+     "url": "https://arca.live/b/anchorpanic/179969864",
+     "category": "질문",
+     "title": "늒네 여우뽑 질문",
+     "comments": 5,
+     "utcIso": "2026-08-15T05:21:06.000Z",
+     "author": "ㅇㅇ",
+     "views": 56,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "gacha",
+      "guide"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "179974300",
+     "source": "arca",
+     "board": "anchorpanic",
+     "url": "https://arca.live/b/anchorpanic/179974300",
+     "category": "",
+     "title": "진짜 재화 구역질 나오네",
+     "comments": 3,
+     "utcIso": "2026-08-15T06:23:56.000Z",
+     "author": "용자왕가가갓콜라보기원",
+     "views": 69,
+     "likes": 0,
+     "sentiment": "negative",
+     "tags": [
+      "negative"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "179979338",
+     "source": "arca",
+     "board": "anchorpanic",
+     "url": "https://arca.live/b/anchorpanic/179979338",
+     "category": "",
+     "title": "맞아 이런일이 있었어",
+     "comments": 3,
+     "utcIso": "2026-08-15T07:36:00.000Z",
+     "author": "l222",
+     "views": 66,
+     "likes": 2,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "179989118",
+     "source": "arca",
+     "board": "anchorpanic",
+     "url": "https://arca.live/b/anchorpanic/179989118",
+     "category": "",
+     "title": "아 스트루나 강간하고싶네",
+     "comments": 2,
+     "utcIso": "2026-08-15T09:41:05.000Z",
+     "author": "현창",
+     "views": 71,
+     "likes": 1,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "179993625",
+     "source": "arca",
+     "board": "anchorpanic",
+     "url": "https://arca.live/b/anchorpanic/179993625",
+     "category": "",
+     "title": "아 토벌 짜증나네",
+     "comments": 4,
+     "utcIso": "2026-08-15T10:30:22.000Z",
+     "author": "현창",
+     "views": 50,
+     "likes": 0,
+     "sentiment": "negative",
+     "tags": [
+      "event",
+      "negative"
+     ],
+     "isNotice": false,
+     "body": "수동하면 버튼 분명 눌렀는데 스킬 안씀 시간이 너무 짧은거같음",
+     "topComments": [
+      "배속을 줄이기",
+      "수동을한다곳"
+     ]
+    },
+    {
+     "id": "179995033",
+     "source": "arca",
+     "board": "anchorpanic",
+     "url": "https://arca.live/b/anchorpanic/179995033",
+     "category": "",
+     "title": "아가앵붕 토벌 열심히 했음",
+     "comments": 10,
+     "utcIso": "2026-08-15T10:44:54.000Z",
+     "author": "현창",
+     "views": 91,
+     "likes": 1,
+     "sentiment": "positive",
+     "tags": [
+      "event",
+      "positive"
+     ],
+     "isNotice": false,
+     "body": "번개덱 왜케 점수 안나와. 기술도 둘다 100찍었우. 이제 3덱 뭐키우지",
+     "topComments": [
+      "번덱 필수요소가 넘 많은 듯"
+     ]
+    },
+    {
+     "id": "180001890",
+     "source": "arca",
+     "board": "anchorpanic",
+     "url": "https://arca.live/b/anchorpanic/180001890",
+     "category": "",
+     "title": "티파니도 마인드 나와주면 안되냐",
+     "comments": 4,
+     "utcIso": "2026-08-15T11:55:06.000Z",
+     "author": "지존물퇴",
+     "views": 68,
+     "likes": 3,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false,
+     "body": "티파니 마인드로 첫턴궁만 받으면 레전드 첫턴궁 발싸덱 탄생인데 중섭에선 얘 SR이라매",
+     "topComments": [
+      "중섭이랑 다른 겜이니깐 걍 만들어주",
+      "ㄹㅇ..... 그런데 이런건 죽어도 짱섭 따라갈거란거임 ㅋㅋ"
+     ]
+    }
+   ],
+   "stats": {
+    "total": 11,
+    "real_posts": 11,
+    "notices": 0,
+    "bugs": 0,
+    "negative": 3,
+    "positive": 2,
+    "competitor_mentions": 0,
+    "newbie_returning": 0,
+    "guild_recruit": 0,
+    "gacha": 1,
+    "event": 2,
+    "balance": 1,
+    "guide": 1,
+    "chitchat": 5,
+    "total_views": 842,
+    "total_comments": 66,
+    "total_likes": 13,
+    "sentiment": "부정",
+    "sentiment_score": -0.091
+   },
+   "topEngaging": [
+    {
+     "id": "179958345",
+     "title": "100",
+     "url": "https://arca.live/b/anchorpanic/179958345",
+     "source": "arca",
+     "comments": 16,
+     "views": 101,
+     "likes": 3,
+     "engagement": 511,
+     "sentiment": "positive"
+    },
+    {
+     "id": "179969841",
+     "title": "유카리햄 진짜 뒤지게 약하네 ㅋㅋ",
+     "url": "https://arca.live/b/anchorpanic/179969841",
+     "source": "arca",
+     "comments": 10,
+     "views": 94,
+     "likes": 1,
+     "engagement": 324,
+     "sentiment": "negative"
+    },
+    {
+     "id": "179995033",
+     "title": "아가앵붕 토벌 열심히 했음",
+     "url": "https://arca.live/b/anchorpanic/179995033",
+     "source": "arca",
+     "comments": 10,
+     "views": 91,
+     "likes": 1,
+     "engagement": 321,
+     "sentiment": "positive"
+    },
+    {
+     "id": "180001890",
+     "title": "티파니도 마인드 나와주면 안되냐",
+     "url": "https://arca.live/b/anchorpanic/180001890",
+     "source": "arca",
+     "comments": 4,
+     "views": 68,
+     "likes": 3,
+     "engagement": 238,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "179938476",
+     "title": "내가 명한다",
+     "url": "https://arca.live/b/anchorpanic/179938476",
+     "source": "arca",
+     "comments": 4,
+     "views": 86,
+     "likes": 2,
+     "engagement": 226,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "179951874",
+     "title": "만약 나눔한다하면",
+     "url": "https://arca.live/b/anchorpanic/179951874",
+     "source": "arca",
+     "comments": 5,
+     "views": 90,
+     "likes": 0,
+     "engagement": 190,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "179979338",
+     "title": "맞아 이런일이 있었어",
+     "url": "https://arca.live/b/anchorpanic/179979338",
+     "source": "arca",
+     "comments": 3,
+     "views": 66,
+     "likes": 2,
+     "engagement": 186,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "179969864",
+     "title": "늒네 여우뽑 질문",
+     "url": "https://arca.live/b/anchorpanic/179969864",
+     "source": "arca",
+     "comments": 5,
+     "views": 56,
+     "likes": 0,
+     "engagement": 156,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "179989118",
+     "title": "아 스트루나 강간하고싶네",
+     "url": "https://arca.live/b/anchorpanic/179989118",
+     "source": "arca",
+     "comments": 2,
+     "views": 71,
+     "likes": 1,
+     "engagement": 141,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "179993625",
+     "title": "아 토벌 짜증나네",
+     "url": "https://arca.live/b/anchorpanic/179993625",
+     "source": "arca",
+     "comments": 4,
+     "views": 50,
+     "likes": 0,
+     "engagement": 130,
+     "sentiment": "negative"
+    }
+   ],
+   "analysis": {
+    "keywords": [
+     {
+      "word": "덱/조합 공략",
+      "count": 3,
+      "ids": [
+       "179969841",
+       "179989118",
+       "180001890"
+      ]
+     },
+     {
+      "word": "토벌(불만)",
+      "count": 2,
+      "ids": [
+       "179993625",
+       "179995033"
+      ]
+     },
+     {
+      "word": "재화/과금(불만)",
+      "count": 2,
+      "ids": [
+       "179969864",
+       "179974300"
+      ]
+     },
+     {
+      "word": "메를로/마인드",
+      "count": 1,
+      "ids": [
+       "180001890"
+      ]
+     }
+    ],
+    "topIssues": [
+     {
+      "id": "179958345",
+      "title": "100",
+      "url": "https://arca.live/b/anchorpanic/179958345",
+      "source": "arca",
+      "comments": 16,
+      "views": 101,
+      "likes": 3,
+      "tone": "positive",
+      "bodySummary": "화이트로즈 출시 시점에 시작해 드디어 100레벨을 찍었다는 성취 보고. 댓글은 축하와 함께 \"이제 시작\"이라는 농담으로 받았다."
+     },
+     {
+      "id": "179969841",
+      "title": "유카리햄 진짜 뒤지게 약하네 ㅋㅋ",
+      "url": "https://arca.live/b/anchorpanic/179969841",
+      "source": "arca",
+      "comments": 10,
+      "views": 94,
+      "likes": 1,
+      "tone": "negative",
+      "bodySummary": "PVP 서브 딜러로 유카리를 넣어봤는데 성능이 형편없다는 혹평. 댓글도 1렙으로 방치했다, 강습 딜러 마인드가 피해감소인 게 말이 되냐며 동조했다."
+     },
+     {
+      "id": "179995033",
+      "title": "아가앵붕 토벌 열심히 했음",
+      "url": "https://arca.live/b/anchorpanic/179995033",
+      "source": "arca",
+      "comments": 10,
+      "views": 91,
+      "likes": 1,
+      "tone": "positive",
+      "bodySummary": "토벌을 열심히 돌렸지만 번개덱 점수가 안 나온다는 글. 댓글에서 번개덱은 필수 요소가 너무 많다는 구조적 지적이 나왔다."
+     },
+     {
+      "id": "180001890",
+      "title": "티파니도 마인드 나와주면 안되냐",
+      "url": "https://arca.live/b/anchorpanic/180001890",
+      "source": "arca",
+      "comments": 4,
+      "views": 68,
+      "likes": 3,
+      "tone": "neutral",
+      "bodySummary": "티파니가 마인드로 첫턴 궁만 받으면 첫턴 폭딜덱이 완성되는데 중섭에선 SR이라는 아쉬움. 댓글은 중섭과 다른 게임이니 만들어달라면서도 결국 중섭을 따라갈 것이라 봤다."
+     },
+     {
+      "id": "179938476",
+      "title": "내가 명한다",
+      "url": "https://arca.live/b/anchorpanic/179938476",
+      "source": "arca",
+      "comments": 4,
+      "views": 86,
+      "likes": 2,
+      "tone": "neutral",
+      "bodySummary": ""
+     }
+    ],
+    "dailySummary": "100레벨 달성 자랑처럼 반가운 글도 있었지만 하루의 무게는 불만 쪽에 있었다. 유카리 성능에 대한 혹평이 댓글까지 번졌고, 수동 조작에서 스킬이 안 나간다는 지적과 번개덱 점수가 안 나온다는 답답함이 이어졌다. 재화 수급에 대한 반복적인 피로도 다시 얼굴을 내밀었다."
+   }
+  },
+  "erpis": {
+   "name": "에르피스",
+   "date": "2026-08-15",
+   "posts": [
+    {
+     "id": "15114",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15114",
+     "category": "쿠폰",
+     "title": "PATIENCE",
+     "comments": 1,
+     "utcIso": "2026-08-14T15:08:34.000Z",
+     "author": "ㅇㅇ",
+     "views": 137,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15115",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15115",
+     "category": "일반",
+     "title": "오 상시천장에서 웬일로 똥캐 안나오지",
+     "comments": 7,
+     "utcIso": "2026-08-14T15:29:36.000Z",
+     "author": "ㅇㅇ",
+     "views": 140,
+     "likes": 0,
+     "sentiment": "positive",
+     "tags": [
+      "gacha",
+      "positive"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "179934610",
+     "source": "arca",
+     "board": "erphis",
+     "url": "https://arca.live/b/erphis/179934610",
+     "category": "",
+     "title": "PATIENCE",
+     "comments": 3,
+     "utcIso": "2026-08-14T15:39:33.000Z",
+     "author": "엘라",
+     "views": 78,
+     "likes": 1,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "179935649",
+     "source": "arca",
+     "board": "erphis",
+     "url": "https://arca.live/b/erphis/179935649",
+     "category": "질문",
+     "title": "리세하는데 이륙가능?",
+     "comments": 3,
+     "utcIso": "2026-08-14T15:53:30.000Z",
+     "author": "하나노어주바",
+     "views": 119,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "newbie_returning"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15116",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15116",
+     "category": "일반",
+     "title": "아 몰라",
+     "comments": 2,
+     "utcIso": "2026-08-14T16:18:44.000Z",
+     "author": "00",
+     "views": 76,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15117",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15117",
+     "category": "일반",
+     "title": "악몽 in20각인가?",
+     "comments": 2,
+     "utcIso": "2026-08-14T16:36:00.000Z",
+     "author": "ㅇㅇ",
+     "views": 71,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15118",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15118",
+     "category": "일반",
+     "title": "지금 리세 몇뽑가능?",
+     "comments": 3,
+     "utcIso": "2026-08-14T16:46:32.000Z",
+     "author": "ㅇㅇ",
+     "views": 114,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "newbie_returning",
+      "gacha"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "179943407",
+     "source": "arca",
+     "board": "erphis",
+     "url": "https://arca.live/b/erphis/179943407",
+     "category": "",
+     "title": "이렇게 찔끔찔끔 줘서 280뽑 언제 채워 팍팍 뿌려조",
+     "comments": 4,
+     "utcIso": "2026-08-14T18:23:27.000Z",
+     "author": "레타",
+     "views": 99,
+     "likes": 0,
+     "sentiment": "negative",
+     "tags": [
+      "gacha",
+      "negative"
+     ],
+     "isNotice": false,
+     "topComments": [
+      "지난번엔 하루에 상시 10개씩 줬음",
+      "아직 한정 시작도 안했잖아"
+     ]
+    },
+    {
+     "id": "15120",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15120",
+     "category": "일반",
+     "title": "부자됐네",
+     "comments": 5,
+     "utcIso": "2026-08-14T20:54:31.000Z",
+     "author": "ㅇㅇ",
+     "views": 122,
+     "likes": 0,
+     "sentiment": "positive",
+     "tags": [
+      "positive"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "179948825",
+     "source": "arca",
+     "board": "erphis",
+     "url": "https://arca.live/b/erphis/179948825",
+     "category": "",
+     "title": "갤에 광고 계속 뜨길래 뭔겜인지 물어보려고 왔는데",
+     "comments": 4,
+     "utcIso": "2026-08-14T22:45:21.000Z",
+     "author": "음장젠칸아루",
+     "views": 105,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15121",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15121",
+     "category": "일반",
+     "title": "조개 40개 됬는데 까보면 얼마나 나올까?",
+     "comments": 3,
+     "utcIso": "2026-08-14T23:05:45.000Z",
+     "author": "ㅇㅇ",
+     "views": 90,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15122",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15122",
+     "category": "일반",
+     "title": "팅게 평가 언제나오려나",
+     "comments": 8,
+     "utcIso": "2026-08-14T23:08:27.000Z",
+     "author": "할머니틀니도둑",
+     "views": 117,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15123",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15123",
+     "category": "일반",
+     "title": "딱 이번주에 레니애들 나왔으면",
+     "comments": 2,
+     "utcIso": "2026-08-15T00:36:15.000Z",
+     "author": "ㅇㅇ",
+     "views": 76,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15124",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15124",
+     "category": "일반",
+     "title": "자힐 미친너마",
+     "comments": 2,
+     "utcIso": "2026-08-15T01:07:50.000Z",
+     "author": "무끼",
+     "views": 84,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15125",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15125",
+     "category": "일반",
+     "title": "렉시 하나 먹을방법 있음?",
+     "comments": 4,
+     "utcIso": "2026-08-15T01:32:50.000Z",
+     "author": "ㅇㅇ",
+     "views": 77,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15126",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15126",
+     "category": "일반",
+     "title": "뉴비 카오스 워커 8단계 잡을려면 뭘 해야 하나요?",
+     "comments": 9,
+     "utcIso": "2026-08-15T01:41:45.000Z",
+     "author": "ㅇㅇ",
+     "views": 86,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "newbie_returning"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15127",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15127",
+     "category": "일반",
+     "title": "과거의 유적은 왜 안열리는 건가요?",
+     "comments": 1,
+     "utcIso": "2026-08-15T01:46:17.000Z",
+     "author": "ㅇㅇ",
+     "views": 60,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "179957516",
+     "source": "arca",
+     "board": "erphis",
+     "url": "https://arca.live/b/erphis/179957516",
+     "category": "질문",
+     "title": "미안한데 한번만 더 리세 질문합니다.",
+     "comments": 3,
+     "utcIso": "2026-08-15T02:15:50.000Z",
+     "author": "하나노어주바",
+     "views": 87,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "newbie_returning",
+      "guide"
+     ],
+     "isNotice": false,
+     "body": "리온은 포기하고 둘중에 하나로 시작해서 20일날 선택권으로 살려는데 하나만 골리주십쇼!",
+     "topComments": [
+      "1번으로 시작해서 금색초대장으로 델리스데려오고 지금픽업중인 레이븐뽑으면될거같은데 무소과금이면 다음주 한정들어가야해서 2번계정으로 시작해야함",
+      "아니면 1번으로시작하고 레이븐거른다는선택지도있음",
+      "레이브거르고 1"
+     ]
+    },
+    {
+     "id": "15128",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15128",
+     "category": "일반",
+     "title": "금역 9단 찍먹 후기",
+     "comments": 0,
+     "utcIso": "2026-08-15T02:16:48.000Z",
+     "author": "ㅇㅇ",
+     "views": 59,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "event"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15129",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15129",
+     "category": "일반",
+     "title": "금역 네뷸라 생존 세계선",
+     "comments": 0,
+     "utcIso": "2026-08-15T02:27:11.000Z",
+     "author": "ㅇㅇ",
+     "views": 61,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "event"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15130",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15130",
+     "category": "질문",
+     "title": "뉴빈데 걍 출발모집에 박으면 됨?",
+     "comments": 11,
+     "utcIso": "2026-08-15T02:40:44.000Z",
+     "author": "ㅇㅇ",
+     "views": 124,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "guild_recruit"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15131",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15131",
+     "category": "일반",
+     "title": "금역 9단 1팟",
+     "comments": 12,
+     "utcIso": "2026-08-15T02:57:04.000Z",
+     "author": "ㅇㅇ",
+     "views": 123,
+     "likes": 0,
+     "sentiment": "positive",
+     "tags": [
+      "event",
+      "positive"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15132",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15132",
+     "category": "일반",
+     "title": "랜덤초대장 쓴 사람 있냐",
+     "comments": 6,
+     "utcIso": "2026-08-15T03:45:43.000Z",
+     "author": "ㅇㅇ",
+     "views": 124,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "gacha"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15133",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15133",
+     "category": "일반",
+     "title": "금역 2,3팟은 포기",
+     "comments": 4,
+     "utcIso": "2026-08-15T04:01:38.000Z",
+     "author": "ㅇㅇ",
+     "views": 71,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "event"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15134",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15134",
+     "category": "일반",
+     "title": "담주 길레구나",
+     "comments": 5,
+     "utcIso": "2026-08-15T04:08:41.000Z",
+     "author": "ㅇㅇ",
+     "views": 64,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15135",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15135",
+     "category": "일반",
+     "title": "로아 0각 쓸만한가?",
+     "comments": 5,
+     "utcIso": "2026-08-15T04:43:08.000Z",
+     "author": "할머니틀니도둑",
+     "views": 69,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15136",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15136",
+     "category": "일반",
+     "title": "랜초 함정 너무많다 확정픽 사라",
+     "comments": 3,
+     "utcIso": "2026-08-15T04:49:02.000Z",
+     "author": "ㅇㅇ",
+     "views": 100,
+     "likes": 0,
+     "sentiment": "negative",
+     "tags": [
+      "negative"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15137",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15137",
+     "category": "일반",
+     "title": "일단 내 아내는 아님",
+     "comments": 6,
+     "utcIso": "2026-08-15T04:58:36.000Z",
+     "author": "ㅇㅇ",
+     "views": 118,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15138",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15138",
+     "category": "일반",
+     "title": "님들 리세 이렇게 나왔는데 일단 킵 하고 리세 더 할까?",
+     "comments": 5,
+     "utcIso": "2026-08-15T05:22:02.000Z",
+     "author": "shebdj",
+     "views": 108,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "newbie_returning"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15139",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15139",
+     "category": "질문",
+     "title": "리온 레티 에셀 이거 걍 가면 되는 거지?",
+     "comments": 1,
+     "utcIso": "2026-08-15T06:09:31.000Z",
+     "author": "ㅇㅇ",
+     "views": 71,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15140",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15140",
+     "category": "일반",
+     "title": "아시발20일 존나안오네",
+     "comments": 1,
+     "utcIso": "2026-08-15T06:16:04.000Z",
+     "author": "ㅇㅇ",
+     "views": 76,
+     "likes": 0,
+     "sentiment": "negative",
+     "tags": [
+      "negative"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "179974310",
+     "source": "arca",
+     "board": "erphis",
+     "url": "https://arca.live/b/erphis/179974310",
+     "category": "질문",
+     "title": "지금 시작해도 됨?",
+     "comments": 3,
+     "utcIso": "2026-08-15T06:24:01.000Z",
+     "author": "고자라니내가",
+     "views": 97,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15141",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15141",
+     "category": "일반",
+     "title": "이런 ㅅㅂ 이건 무슨 ㅈ버그냐",
+     "comments": 4,
+     "utcIso": "2026-08-15T07:22:54.000Z",
+     "author": "캣판완장",
+     "views": 108,
+     "likes": 0,
+     "sentiment": "negative",
+     "tags": [
+      "bug",
+      "negative"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15142",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15142",
+     "category": "질문",
+     "title": "뉴비 리세 3시간 결과 킵해야할까..",
+     "comments": 5,
+     "utcIso": "2026-08-15T08:02:01.000Z",
+     "author": "늅늅",
+     "views": 128,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "newbie_returning"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "179982690",
+     "source": "arca",
+     "board": "erphis",
+     "url": "https://arca.live/b/erphis/179982690",
+     "category": "",
+     "title": "할배들은 즐겁게 쇼핑하고 있겍지....",
+     "comments": 6,
+     "utcIso": "2026-08-15T08:20:24.000Z",
+     "author": "레타",
+     "views": 85,
+     "likes": 0,
+     "sentiment": "negative",
+     "tags": [
+      "negative"
+     ],
+     "isNotice": false,
+     "body": "하아...할배가 부럽다 난 거지네...",
+     "topComments": [
+      "응애 할배 부럽따",
+      "할배잔아..."
+     ]
+    },
+    {
+     "id": "15143",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15143",
+     "category": "일반",
+     "title": "생각있으면 그라도스말고 빛속을 열어라",
+     "comments": 5,
+     "utcIso": "2026-08-15T09:31:58.000Z",
+     "author": "ㅇㅇ",
+     "views": 65,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15144",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15144",
+     "category": "일반",
+     "title": "이번에 뿌리는 상시 모았다가 나중에 캐릭풀 늘어나면 쓸까",
+     "comments": 13,
+     "utcIso": "2026-08-15T09:35:00.000Z",
+     "author": "ㅇㅇ",
+     "views": 159,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15145",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15145",
+     "category": "일반",
+     "title": "뉴비들 반드시 해야할 것",
+     "comments": 6,
+     "utcIso": "2026-08-15T10:20:16.000Z",
+     "author": "할머니틀니도둑",
+     "views": 142,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "newbie_returning"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15147",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15147",
+     "category": "일반",
+     "title": "흠 개인레이드 리트 좀만 해볼까",
+     "comments": 1,
+     "utcIso": "2026-08-15T10:55:00.000Z",
+     "author": "ㅇㅇ",
+     "views": 54,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15148",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15148",
+     "category": "일반",
+     "title": "글섭 매출 2천달러 나오던데 어케 운영함",
+     "comments": 5,
+     "utcIso": "2026-08-15T11:03:04.000Z",
+     "author": "ㅇㅇ",
+     "views": 133,
+     "likes": 0,
+     "sentiment": "negative",
+     "tags": [
+      "guide",
+      "negative"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15149",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15149",
+     "category": "일반",
+     "title": "담주 화요일에 넵튠 1주 사줄게",
+     "comments": 0,
+     "utcIso": "2026-08-15T11:08:03.000Z",
+     "author": "ㅇㅇ",
+     "views": 42,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "179998410",
+     "source": "arca",
+     "board": "erphis",
+     "url": "https://arca.live/b/erphis/179998410",
+     "category": "",
+     "title": "할배들도 별빛 모자라다...",
+     "comments": 9,
+     "utcIso": "2026-08-15T11:20:33.000Z",
+     "author": "현창",
+     "views": 85,
+     "likes": 0,
+     "sentiment": "negative",
+     "tags": [
+      "negative"
+     ],
+     "isNotice": false,
+     "body": "이걸 누구코에 붙이냐 ㄹㅇ...",
+     "topComments": [
+      "그럼 내나 ㅡㅡ",
+      "중복뜨니까 힘빠졍",
+      "난 저거 이네 맨디 나오는거 아니면 다꽝이라 안사는중",
+      "초대장 나도 사고싶더..."
+     ]
+    },
+    {
+     "id": "15150",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15150",
+     "category": "일반",
+     "title": "이거봤닝?",
+     "comments": 2,
+     "utcIso": "2026-08-15T11:23:50.000Z",
+     "author": "마나토끼",
+     "views": 102,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15151",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15151",
+     "category": "일반",
+     "title": "리세계 리온 없으면 꼬움? 레티 미암 로아",
+     "comments": 5,
+     "utcIso": "2026-08-15T11:37:04.000Z",
+     "author": "ㅇㅇ",
+     "views": 90,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "newbie_returning"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15152",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15152",
+     "category": "일반",
+     "title": "혹시 리세로 리온 맨디 레티 3개 직접 먹어본 게이 있음?",
+     "comments": 2,
+     "utcIso": "2026-08-15T11:45:44.000Z",
+     "author": "ㅇㅇ",
+     "views": 67,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "newbie_returning"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15153",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15153",
+     "category": "일반",
+     "title": "리세 한시간차 레티+맨디+미암 이륙가능...?",
+     "comments": 14,
+     "utcIso": "2026-08-15T12:41:43.000Z",
+     "author": "ㅇㅇ",
+     "views": 109,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "newbie_returning"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "180007102",
+     "source": "arca",
+     "board": "erphis",
+     "url": "https://arca.live/b/erphis/180007102",
+     "category": "질문",
+     "title": "픽업 준비 뭐해야하는지랑, 금색초대장 누구 뽑을지 추천좀 해줘!!",
+     "comments": 4,
+     "utcIso": "2026-08-15T12:46:06.000Z",
+     "author": "체루빔",
+     "views": 55,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "gacha",
+      "guide"
+     ],
+     "isNotice": false,
+     "body": "지금 덱 상태 이런데 레티 5각까지 안달려도 되겠지?? 28주 픽업? 그친구들 준비하면 되려나? 재화 1.5천장치밖에 없긴해. 그리고 금색초대장 안쓰고 있는데 어떻게 쓰는게 효율 좋을까??",
+     "topComments": [
+      "레티 3각이 가성비임",
+      "금색초대장은 누구 쓰는게 좋음??",
+      "있을거 다 있는거아닌가 갖고있다가 상시나 픽뚫로2각되면 마물치기 ㄱ",
+      "요샌 금초캐들 밸류 떡락해서 안사고 픽업권20개가 나음"
+     ]
+    },
+    {
+     "id": "15154",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15154",
+     "category": "일반",
+     "title": "뉴비 하루종일 리세해서 뽑음요",
+     "comments": 7,
+     "utcIso": "2026-08-15T13:26:27.000Z",
+     "author": "ㅇㅇ",
+     "views": 129,
+     "likes": 1,
+     "sentiment": "positive",
+     "tags": [
+      "newbie_returning",
+      "gacha",
+      "positive"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15155",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15155",
+     "category": "일반",
+     "title": "대체 유튜브 광고 어떻게 해야 나오는 거임",
+     "comments": 3,
+     "utcIso": "2026-08-15T13:45:47.000Z",
+     "author": "뜌따이",
+     "views": 71,
+     "likes": 0,
+     "sentiment": "neutral",
+     "tags": [
+      "guide"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15156",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15156",
+     "category": "일반",
+     "title": "비 안렌같은애들은 리워크 안해주남?",
+     "comments": 2,
+     "utcIso": "2026-08-15T14:23:30.000Z",
+     "author": "ㅇㅇ",
+     "views": 46,
+     "likes": 0,
+     "sentiment": "negative",
+     "tags": [
+      "balance",
+      "negative"
+     ],
+     "isNotice": false
+    },
+    {
+     "id": "15157",
+     "source": "dc",
+     "board": "erpis",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15157",
+     "category": "일반",
+     "title": "갠레 천만 함 해봤어",
+     "comments": 2,
+     "utcIso": "2026-08-15T14:36:54.000Z",
+     "author": "ㅇㅇ",
+     "views": 88,
+     "likes": 1,
+     "sentiment": "neutral",
+     "tags": [
+      "event"
+     ],
+     "isNotice": false
+    }
+   ],
+   "stats": {
+    "total": 51,
+    "real_posts": 51,
+    "notices": 0,
+    "bugs": 1,
+    "negative": 8,
+    "positive": 4,
+    "competitor_mentions": 0,
+    "newbie_returning": 11,
+    "guild_recruit": 1,
+    "gacha": 6,
+    "event": 5,
+    "balance": 1,
+    "guide": 4,
+    "chitchat": 21,
+    "total_views": 4761,
+    "total_comments": 223,
+    "total_likes": 3,
+    "sentiment": "부정",
+    "sentiment_score": -0.078
+   },
+   "topEngaging": [
+    {
+     "id": "15144",
+     "title": "이번에 뿌리는 상시 모았다가 나중에 캐릭풀 늘어나면 쓸까",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15144",
+     "source": "dc",
+     "comments": 13,
+     "views": 159,
+     "likes": 0,
+     "engagement": 419,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "15153",
+     "title": "리세 한시간차 레티+맨디+미암 이륙가능...?",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15153",
+     "source": "dc",
+     "comments": 14,
+     "views": 109,
+     "likes": 0,
+     "engagement": 389,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "15131",
+     "title": "금역 9단 1팟",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15131",
+     "source": "dc",
+     "comments": 12,
+     "views": 123,
+     "likes": 0,
+     "engagement": 363,
+     "sentiment": "positive"
+    },
+    {
+     "id": "15130",
+     "title": "뉴빈데 걍 출발모집에 박으면 됨?",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15130",
+     "source": "dc",
+     "comments": 11,
+     "views": 124,
+     "likes": 0,
+     "engagement": 344,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "15154",
+     "title": "뉴비 하루종일 리세해서 뽑음요",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15154",
+     "source": "dc",
+     "comments": 7,
+     "views": 129,
+     "likes": 1,
+     "engagement": 299,
+     "sentiment": "positive"
+    },
+    {
+     "id": "15115",
+     "title": "오 상시천장에서 웬일로 똥캐 안나오지",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15115",
+     "source": "dc",
+     "comments": 7,
+     "views": 140,
+     "likes": 0,
+     "engagement": 280,
+     "sentiment": "positive"
+    },
+    {
+     "id": "15122",
+     "title": "팅게 평가 언제나오려나",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15122",
+     "source": "dc",
+     "comments": 8,
+     "views": 117,
+     "likes": 0,
+     "engagement": 277,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "15126",
+     "title": "뉴비 카오스 워커 8단계 잡을려면 뭘 해야 하나요?",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15126",
+     "source": "dc",
+     "comments": 9,
+     "views": 86,
+     "likes": 0,
+     "engagement": 266,
+     "sentiment": "neutral"
+    },
+    {
+     "id": "179998410",
+     "title": "할배들도 별빛 모자라다...",
+     "url": "https://arca.live/b/erphis/179998410",
+     "source": "arca",
+     "comments": 9,
+     "views": 85,
+     "likes": 0,
+     "engagement": 265,
+     "sentiment": "negative"
+    },
+    {
+     "id": "15145",
+     "title": "뉴비들 반드시 해야할 것",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15145",
+     "source": "dc",
+     "comments": 6,
+     "views": 142,
+     "likes": 0,
+     "engagement": 262,
+     "sentiment": "neutral"
+    }
+   ],
+   "analysis": {
+    "keywords": [
+     {
+      "word": "리세/뉴비 유입",
+      "count": 12,
+      "ids": [
+       "179935649",
+       "15118",
+       "15126",
+       "179957516",
+       "15138",
+       "179974310",
+       "15142",
+       "15145",
+       "15151",
+       "15152",
+       "15153",
+       "15154"
+      ]
+     },
+     {
+      "word": "갠레/금역",
+      "count": 7,
+      "ids": [
+       "15126",
+       "15128",
+       "15129",
+       "15131",
+       "15133",
+       "15147",
+       "15157"
+      ]
+     },
+     {
+      "word": "한정 뽑기/과금",
+      "count": 4,
+      "ids": [
+       "15115",
+       "15132",
+       "15144",
+       "180007102"
+      ]
+     },
+     {
+      "word": "레티시아 육성",
+      "count": 4,
+      "ids": [
+       "15139",
+       "15151",
+       "15152",
+       "15153"
+      ]
+     },
+     {
+      "word": "매출/운영(불만)",
+      "count": 3,
+      "ids": [
+       "179948825",
+       "15148",
+       "15155"
+      ]
+     },
+     {
+      "word": "쿠폰/이벤트",
+      "count": 2,
+      "ids": [
+       "15114",
+       "179934610"
+      ]
+     }
+    ],
+    "topIssues": [
+     {
+      "id": "15144",
+      "title": "이번에 뿌리는 상시 모았다가 나중에 캐릭풀 늘어나면 쓸까",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15144",
+      "source": "dc",
+      "comments": 13,
+      "views": 159,
+      "likes": 0,
+      "tone": "neutral",
+      "bodySummary": ""
+     },
+     {
+      "id": "15153",
+      "title": "리세 한시간차 레티+맨디+미암 이륙가능...?",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15153",
+      "source": "dc",
+      "comments": 14,
+      "views": 109,
+      "likes": 0,
+      "tone": "neutral",
+      "bodySummary": ""
+     },
+     {
+      "id": "15131",
+      "title": "금역 9단 1팟",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15131",
+      "source": "dc",
+      "comments": 12,
+      "views": 123,
+      "likes": 0,
+      "tone": "positive",
+      "bodySummary": ""
+     },
+     {
+      "id": "15130",
+      "title": "뉴빈데 걍 출발모집에 박으면 됨?",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=15130",
+      "source": "dc",
+      "comments": 11,
+      "views": 124,
+      "likes": 0,
+      "tone": "neutral",
+      "bodySummary": ""
+     },
+     {
+      "id": "179998410",
+      "title": "할배들도 별빛 모자라다...",
+      "url": "https://arca.live/b/erphis/179998410",
+      "source": "arca",
+      "comments": 9,
+      "views": 85,
+      "likes": 0,
+      "tone": "negative",
+      "bodySummary": "별빛 재화가 고인물 기준으로도 모자라다는 토로. 댓글은 중복이 떠서 힘이 빠진다, 특정 캐릭이 아니면 사지 않는다는 반응으로 이어졌다."
+     }
+    ],
+    "dailySummary": "금역 9단 공략과 파티 후기가 올라오는 한편, 리세 결과를 봐달라는 상담이 하루 종일 이어졌다. 고인물조차 별빛이 모자라다는 토로와 랜덤초대장이 함정이 많다는 지적이 겹치며 재화 체감이 다시 도마에 올랐다."
+   }
+  }
+ }
+}
