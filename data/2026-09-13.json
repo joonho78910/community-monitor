@@ -1,0 +1,206 @@
+{
+"date": "2026-09-13",
+"games": {
+"anchorpanic": {
+"name": "앵커패닉",
+"date": "2026-09-13",
+"posts": [
+{"id":"182853011","source":"arca","board":"anchorpanic","category":"","title":"아시발 어제 앵커 접속안했다","comments":12,"utcIso":"2026-09-13T01:53:37.000Z","author":"현창","views":81,"likes":0,"isNotice":false,"url":"https://arca.live/b/anchorpanic/182853011","engagement":321,"sentiment":"negative","tags":["chitchat","negative"],"body":"시발 내 조각","topComments":[]},
+{"id":"182854075","source":"arca","board":"anchorpanic","category":"","title":"한 2시간정도 심연쳤는데","comments":5,"utcIso":"2026-09-13T02:09:13.000Z","author":"l222","views":75,"likes":0,"isNotice":false,"url":"https://arca.live/b/anchorpanic/182854075","engagement":175,"sentiment":"negative","tags":["negative"],"body":"번덱 고점이 안나온다..","topComments":["이번에 점수가 낮게나와","2턴 천만 찎는데 고점이 2천만 이었어..."]},
+{"id":"182860674","source":"arca","board":"anchorpanic","category":"","title":"스트루나 스킨을 살까 말까","comments":5,"utcIso":"2026-09-13T03:46:12.000Z","author":"yems","views":55,"likes":0,"isNotice":false,"url":"https://arca.live/b/anchorpanic/182860674","engagement":155,"sentiment":"neutral","tags":["gacha"],"body":"흐음.. 인게임은 이쁜데 일러가 미묘하네","topComments":["스트루나 근데 기본 복장이 노래부르면서 땀 흥건히 흘려서 약간 쿱쿱한 냄새 날 거 같아서 꼴림","난 일단 다샀어 스킨"]},
+{"id":"182862306","source":"arca","board":"anchorpanic","category":"","title":"점심 뭐먹지에엥","comments":7,"utcIso":"2026-09-13T04:09:01.000Z","author":"도라리","views":48,"likes":0,"isNotice":false,"url":"https://arca.live/b/anchorpanic/182862306","engagement":188,"sentiment":"neutral","tags":["chitchat"],"body":"지에엥","topComments":["햄부기","치킨!","굶지에"]},
+{"id":"182883040","source":"arca","board":"anchorpanic","category":"","title":"그래서 가위 허벌년 좋아? 풀돌해야됌?","comments":2,"utcIso":"2026-09-13T08:29:21.000Z","author":"퀸덤","views":81,"likes":0,"isNotice":false,"url":"https://arca.live/b/anchorpanic/182883040","engagement":121,"sentiment":"neutral","tags":["guide"],"body":"그냥 딱 3돌만 해두긴 했는데 풀풀하고 헤메크년이랑 써본애 있음? 그냥 스톱해? 성능어때?","topComments":["가성비와 현명함의 4돌단 어떰","나도 4돌까지만 함"]}
+],
+"stats": {
+"total": 5,
+"real_posts": 5,
+"notices": 0,
+"bugs": 0,
+"negative": 2,
+"positive": 0,
+"competitor_mentions": 0,
+"newbie_returning": 0,
+"guild_recruit": 0,
+"gacha": 1,
+"event": 0,
+"balance": 0,
+"guide": 1,
+"chitchat": 2,
+"total_views": 340,
+"total_comments": 31,
+"total_likes": 0,
+"sentiment": "부정",
+"sentiment_score": -0.4
+},
+"topEngaging": [
+{"id":"182853011","title":"아시발 어제 앵커 접속안했다","url":"https://arca.live/b/anchorpanic/182853011","source":"arca","views":81,"comments":12,"likes":0,"engagement":321,"category":"","sentiment":"negative"},
+{"id":"182862306","title":"점심 뭐먹지에엥","url":"https://arca.live/b/anchorpanic/182862306","source":"arca","views":48,"comments":7,"likes":0,"engagement":188,"category":"","sentiment":"neutral"},
+{"id":"182854075","title":"한 2시간정도 심연쳤는데","url":"https://arca.live/b/anchorpanic/182854075","source":"arca","views":75,"comments":5,"likes":0,"engagement":175,"category":"","sentiment":"negative"},
+{"id":"182860674","title":"스트루나 스킨을 살까 말까","url":"https://arca.live/b/anchorpanic/182860674","source":"arca","views":55,"comments":5,"likes":0,"engagement":155,"category":"","sentiment":"neutral"},
+{"id":"182883040","title":"그래서 가위 허벌년 좋아? 풀돌해야됌?","url":"https://arca.live/b/anchorpanic/182883040","source":"arca","views":81,"comments":2,"likes":0,"engagement":121,"category":"","sentiment":"neutral"}
+],
+"analysis": {
+"dailySummary": "앵커패닉은 다섯 건, 채널이 사실상 멈춰 선 하루였다. 그 적은 글마저 손해와 정체 쪽으로 기울었다. 하루 접속을 놓쳐 조각을 날렸다는 글이 댓글 12개로 가장 붐볐고, 두 시간을 들여 심연을 돌았는데 번개덱 고점이 올라가지 않는다는 토로에는 '이번엔 점수가 낮게 나온다', '2턴 천만인데 고점이 2천만이었다'는 비슷한 사례가 붙었다. 나머지는 스트루나 스킨이 인게임은 예쁜데 일러가 미묘하다는 구매 고민, 가위와 헤메크를 3돌에서 멈출지 풀돌할지 묻는 성능 문의, 그리고 점심 메뉴 잡담이었다. DC 오스카린 갤러리는 9/4 이후 새 글이 없어 휴면이 열흘을 넘겼고, 앵커패닉 커뮤니티는 아카 단일 채널로 더 좁아졌다.",
+"topIssues": [
+{"title":"아시발 어제 앵커 접속안했다","url":"https://arca.live/b/anchorpanic/182853011","tone":"negative","id":"182853011","source":"arca","comments":12,"views":81,"likes":0,"bodySummary":"전날 접속을 걸러 출석 보상 조각을 놓쳤다는 짧은 탄식글. 본문은 '시발 내 조각' 한 줄뿐이지만 댓글 12개가 붙어 이날 채널에서 가장 활발한 스레드가 됐다. 매일 접속 여부가 육성 재화와 직결되는 구조가 배경에 있다."},
+{"title":"점심 뭐먹지에엥","url":"https://arca.live/b/anchorpanic/182862306","tone":"neutral","id":"182862306","source":"arca","comments":7,"views":48,"likes":0,"bodySummary":"점심 메뉴를 묻는 게임 무관 잡담글로, 햄버거·치킨 추천과 '굶지에' 같은 농담이 달렸다. 게임 이슈가 없는 날 채널을 채우는 전형적인 친목 스레드다."},
+{"title":"한 2시간정도 심연쳤는데","url":"https://arca.live/b/anchorpanic/182854075","tone":"negative","id":"182854075","source":"arca","comments":5,"views":75,"likes":0,"bodySummary":"두 시간을 투자해 심연을 돌았지만 번개덱 고점이 올라가지 않는다는 토로. 댓글에서도 '이번엔 점수가 낮게 나온다', '2턴에 천만을 찍는데 고점은 2천만에 그쳤다'는 유사 사례가 이어져 이번 시즌 점수 상한에 대한 공통된 정체감이 드러났다."},
+{"title":"스트루나 스킨을 살까 말까","url":"https://arca.live/b/anchorpanic/182860674","tone":"neutral","id":"182860674","source":"arca","comments":5,"views":55,"likes":0,"bodySummary":"스트루나 스킨이 인게임 모델은 예쁜데 일러스트가 미묘하다며 구매를 망설이는 글. 댓글은 기본 복장 콘셉트에 대한 취향 옹호와 '난 일단 스킨 다 샀다'는 구매 인증이 섞여, 일러·모델링 괴리가 반복 지적돼온 흐름과 이어진다."},
+{"title":"그래서 가위 허벌년 좋아? 풀돌해야됌?","url":"https://arca.live/b/anchorpanic/182883040","tone":"neutral","id":"182883040","source":"arca","comments":2,"views":81,"likes":0,"bodySummary":"해당 캐릭터를 3돌에서 멈출지 풀돌까지 갈지, 헤메크와 함께 써본 사람이 있는지 묻는 투자 판단 질문. 댓글은 '가성비와 현명함의 4돌', '나도 4돌까지만 했다'로 4돌 선에서 끊는 게 합리적이라는 쪽으로 모였다."}
+],
+"bugReports": [],
+"competitorMentions": [],
+"trends": [
+"채널 활동 5건 — 연휴급 저활동, 게임 무관 잡담이 참여도 2위",
+"출석 미접속으로 조각 손실 — 일일 접속 의존 구조에 대한 피로",
+"심연 번개덱 고점 정체 — 시간 투자 대비 점수가 안 오른다는 공통 체감",
+"스트루나 스킨 구매 고민 — 인게임 모델 대비 일러 괴리 반복 지적",
+"돌파는 4돌 선에서 멈추는 게 가성비라는 공감대",
+"DC 오스카린 갤러리 9/4 이후 신규 글 0 — 휴면 10일 초과"
+],
+"watchlist": [
+"채널 활동량 5건 — 이틀 연속 한 자릿수, 게임 내 이슈 고갈이 뚜렷",
+"심연 점수 정체 — 투자 대비 보상감 저하가 굳으면 엔드 콘텐츠 이탈 사유가 될 수 있음",
+"일일 접속 의존 — 하루 결석이 곧 손실로 체감돼 복귀 장벽으로 작용할 소지",
+"스킨 일러·모델링 괴리 — 과금 상품 신뢰도와 직결",
+"DC 오스카린 갤러리 휴면 장기화 — 단일 채널 의존 심화",
+"네이버 검색량 2026-09-13 당일치 미집계 — 다음 실행에서 보충 필요"
+],
+"keywords": [
+{"word":"심연 번개덱 고점 정체(불만)","ids":["182854075"],"count":1},
+{"word":"출석 미접속 조각 손실(불만)","ids":["182853011"],"count":1},
+{"word":"스트루나 스킨 구매 고민","ids":["182860674"],"count":1},
+{"word":"가위·헤메크 돌파 성능 문의","ids":["182883040"],"count":1},
+{"word":"과금 판단(스킨·돌파)","ids":["182860674","182883040"],"count":2},
+{"word":"일상 잡담(점심)","ids":["182862306"],"count":1}
+]
+}
+},
+"erpis": {
+"name": "에르피스",
+"date": "2026-09-13",
+"posts": [
+{"id":"17196","source":"dc","board":"erpis","category":"일반","title":"아이시발","comments":5,"utcIso":"2026-09-12T15:08:25.000Z","author":"뜌따이","views":76,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17196","engagement":176,"sentiment":"negative","tags":["negative"],"body":"880만 찍어서 아 씁 아쉽네 이러고 있었는데 란 배지 뺀 상태였음 배지 들어갔음 기갱이었네 ㅅㅂ","topComments":["아 이제 진짜 유기함 천만은 못보겠다 이번엔","포기하지마!! 맞서 싸워!!"]},
+{"id":"17197","source":"dc","board":"erpis","category":"일반","title":"in30 되려나","comments":3,"utcIso":"2026-09-12T15:49:41.000Z","author":"할머니틀니도둑","views":86,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17197","engagement":146,"sentiment":"neutral","tags":["chitchat"],"body":"불안해서 멈출수가없네","topComments":["30은 되긋네"]},
+{"id":"17198","source":"dc","board":"erpis","category":"일반","title":"뉴비들은 월보보상 몇정도받음","comments":14,"utcIso":"2026-09-12T15:49:59.000Z","author":"ㅇㅇ","views":188,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17198","engagement":468,"sentiment":"neutral","tags":["newbie_returning"],"topComments":["막날에 치려고 아직 안쳤대!!","일일보상안받음?","즉시 접속","3번치면 오팔골드 파별3개씩받는데;;"]},
+{"id":"17200","source":"dc","board":"erpis","category":"일반","title":"사람이 죽었다","comments":2,"utcIso":"2026-09-12T17:10:06.000Z","author":"ㅇㅇ","views":88,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17200","engagement":128,"sentiment":"neutral","tags":["chitchat"],"body":"살인사건이야! (AI 이미지 생성글)","topComments":[]},
+{"id":"17201","source":"dc","board":"erpis","category":"질문","title":"운영자 씹탱아 뭔 락걸어놨냐?","comments":2,"utcIso":"2026-09-12T17:18:22.000Z","author":"ㅇㅇ","views":84,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17201","engagement":124,"sentiment":"negative","tags":["bugs","negative"],"body":"지금 14.9 인데 방금 14.6 에서 마지막 피버 스타트 하는데 화면 멈추더니 튕김 지금 기갱각 2번 튕긴걸로 날림 대답해봐 씹탱아","topComments":[]},
+{"id":"17202","source":"dc","board":"erpis","category":"일반","title":"새벽2시에 잠도 안자고 열심히 리트하면서 쳐다보고 있는데","comments":1,"utcIso":"2026-09-12T17:20:48.000Z","author":"ㅇㅇ","views":67,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17202","engagement":87,"sentiment":"neutral","tags":["chitchat"]},
+{"id":"17203","source":"dc","board":"erpis","category":"일반","title":"안렌 쓔발 해봐","comments":2,"utcIso":"2026-09-12T17:25:28.000Z","author":"사료부족","views":84,"likes":1,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17203","engagement":154,"sentiment":"neutral","tags":["chitchat"],"body":"안렌 쓔우우우발!!!","topComments":[]},
+{"id":"17204","source":"dc","board":"erpis","category":"일반","title":"사이코 5각 vs 맨디 명함","comments":5,"utcIso":"2026-09-12T17:37:03.000Z","author":"ㅇㅇ","views":110,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17204","engagement":210,"sentiment":"neutral","tags":["guide"],"body":"맨디가 성능 더 좋음?","topComments":["사이코 25각도 맨디씀","25각은 평생 탱 안써도 될거같은데?","그래도 딜벞없어서 안쓰"]},
+{"id":"17205","source":"dc","board":"erpis","category":"일반","title":"섭종할때까지 리세만 할겨?","comments":1,"utcIso":"2026-09-12T19:18:16.000Z","author":"ㅇㅇ","views":100,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17205","engagement":120,"sentiment":"negative","tags":["negative"],"body":"무슨삶을 살고있는거야?...","topComments":["한달마다 찾아오눈 고문일뿐이다"]},
+{"id":"17206","source":"dc","board":"erpis","category":"일반","title":"이자벨 들어갈걸 그랬나","comments":9,"utcIso":"2026-09-12T20:11:10.000Z","author":"ㅇㅇ","views":164,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17206","engagement":344,"sentiment":"neutral","tags":["guide"],"body":"상위권 힐압축덱 맛있어보이네","topComments":["존버하면 안리스 맨디 나이팅게일하면 되니까 자리 없어보이긴함 당장 지금이 꼬움","1뽑 비틱 ㄱㄱ","명함은 잇는데??","명함도쓸만한가 흠","나 명함으로 친거"]},
+{"id":"17207","source":"dc","board":"erpis","category":"정보/정보/공략","title":"월보 완","comments":6,"utcIso":"2026-09-12T23:12:14.000Z","author":"할머니틀니도둑","views":154,"likes":2,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17207","engagement":334,"sentiment":"neutral","tags":["guide"],"body":"1500만. 레티 3: 불꽃 치피 / 가디언 3: 용맹 치확 / 아만사 5: 광폭 치피 / 레니 3: 비색 막기 / 맨디 3: 인도 치유 / 리온 4: 광폭 치피 / 레이븐 3: 불꽃 치피 / 미암 3: 용맹 치피. 고정 피버: 레티 가디언 아만사 / 레니 / 리온. 아만사 쓰는 힙스터 출격완료, 가디언이랑 딜 비비는게 함정. 방깍: 레티, 가디언, 아만사, 레니. 첫 어그로: 맨디 -> 레니 -> 레이븐. 광폭 이후: 레티 -> 가디언 -> 아만사 -> 맨디 -> 레니. 배치 1. 돌격을 맨디랑 같은열에 둬서 보스 어그로 빼고 적 돌격한테 붙임 2. 사수를 밑으로 내리고, 레니를 위에 둬서 후열 쫄 어그로 분산시킴 3. 레이븐 밑에 리온 둬서 조금이라도 리온 스턴 확률 줄여서 쫄 정리시킴 (고점은 어차피 둘다 스턴 안걸려야 하긴함). 1430만 참고용 딜표","topComments":["보니까 잠재 차이가 확실히 많이 나는듯 내가 레이븐이 600만딜을 넘게 치는데 미암은 저거보다 훨씬 못침 200만 아래도 자주나옴","3각 가성비맨이라 포기했다","하 시발 말하다보닊 상위랭커 1700만의 벽 어케 깨는지 알았다 미암 3각이 아니라 이런거였군","50확률을 랭커보다 1.5배 더 터트리면 됨 ㄱㄱ","6각이구나.."]},
+{"id":"17208","source":"dc","board":"erpis","category":"일반","title":"갠레 완","comments":3,"utcIso":"2026-09-13T00:13:55.000Z","author":"할머니틀니도둑","views":91,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17208","engagement":151,"sentiment":"neutral","tags":["chitchat"],"body":"월보에 힘 다 썼어 대충칠래 위스키 키우기 싫어","topComments":["필리아 나도 키운김에 넣는데 걍 존나 쓸모없는 느낌","고각이면 좀 다르긴할텐데 흠","그냥 언령짬통"]},
+{"id":"17209","source":"dc","board":"erpis","category":"일반","title":"리트만 하냐고 묻는건 우문이다","comments":0,"utcIso":"2026-09-13T02:29:02.000Z","author":"ㅇㅇ","views":40,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17209","engagement":40,"sentiment":"neutral","tags":["chitchat"]},
+{"id":"17210","source":"dc","board":"erpis","category":"일반","title":"명함단 1000만","comments":8,"utcIso":"2026-09-13T02:30:15.000Z","author":"마나토끼","views":148,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17210","engagement":308,"sentiment":"positive","tags":["guide","positive"],"body":"미암리더 핵심은 원거리 피버 기절 리트. 미암 리더라서 치명타는 대부분 터짐. 란은 4각임. 가디언 명함 레이븐 명함 미암 명함","topComments":["아니 명함단 (5각 3각) 뭐냐 ㅋㅋ","저건 디폴트임ㅋㅋ","와머고 카카시간다","일케하면 피버는 수동으로 지정하는거?","피버는 레티 레니 리온만 지정 오토ㄱ","아니 이런기능이 있었네 ㅋㅋ 그래도 레이븐보단 미암 피버 주는거구나"]},
+{"id":"17211","source":"dc","board":"erpis","category":"일반","title":"디시인사이드 길마할 인재 없냐?","comments":15,"utcIso":"2026-09-13T02:31:59.000Z","author":"ㅇㅇ","views":112,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17211","engagement":412,"sentiment":"neutral","tags":["guild_recruit"],"body":"나 마몬이나 소요방 가고싶음 가면 거기 길마해야될듯","topComments":["뉴비 버려??? 뉴비들중에서 1짱될거임","너 가면 우리 길드가 망한다고","이제 인원도 거의 안빠지던데","아니면 길드 공지로 올려봐","근데 어차피 지난번에도 상위길드 스카웃와서 길마할 인재 있으면 도망가려했는데 없어서 안갔음"]},
+{"id":"17212","source":"dc","board":"erpis","category":"일반","title":"뱃지를 어덧개잘맞춣가..","comments":3,"utcIso":"2026-09-13T02:43:35.000Z","author":"Siniz","views":65,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17212","engagement":125,"sentiment":"neutral","tags":["guide"],"body":"머리가아프군아","topComments":["공% 높은거 위주로 꾸린담에 그담 치확% 위주로 꾸린담에 그담에 치피% 맞춰보셈 나도 2번째 단계쯤에서 막히는중","공퍼가 젤우선인게신기핞,,","치명타 배율도 공격력이 높아야 높아지지"]},
+{"id":"17213","source":"dc","board":"erpis","category":"일반","title":"사이코 낄때랑 맨디 넣은거랑 딜 차이가 없네..","comments":12,"utcIso":"2026-09-13T03:24:14.000Z","author":"ㅇㅇ","views":89,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17213","engagement":329,"sentiment":"neutral","tags":["guide"],"body":"뭐고 이거","topComments":["엥 그럴리가 사이코 꼈을때 애들이 몇틱 더 잘살아서 오래 팼던가 아니면 사이코꼈을 떄 크리가 개지리게 나온거같은데 맨디가 숨만쉬고 있어도 주는 딜버프가 상당해서","그니까 사이코는 딜 벞 아예 없는데 맨디 이번에 떠서 90렙에 스킬작 대충이라곤 해도.. 기갱 안되는게 아니라 딜 10퍼 딸리는데 머지","스킬작 덜 되있으면 유지력부족으로 딜러들 생존 시간이 더 짧아서 그렇거나 뭐 월보면 사이코가 역속이라 더 오래버텨서 오래 힐해주는데 맨디는 금방 죽었거나 그런듯?","미암 리더 주고 싶은데 오스틴 쓰니까 오스틴 리더 안주면 광폭 전에 두마리누움","스펙이 낮으면 낮을수록 오스틴 리더 꽤 괜찮음 은근 딜지분 꽤 되서","사이코 평타딜이 맨디 딜버프를 넘어서는건가? 그럴 리가 없는데 나도 듣고보니 이상하네 둘다 영상을 봐야 판독이 되지 않을까싶은데"]},
+{"id":"17214","source":"dc","board":"erpis","category":"길드","title":"갤길 디시인사이드 마감","comments":6,"utcIso":"2026-09-13T03:26:47.000Z","author":"ㅇㅇ","views":53,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17214","engagement":173,"sentiment":"neutral","tags":["guild_recruit"],"body":"댓닉 조건없음 미접 5일쯤 보는중","topComments":["파밍용계정","아직안옴","받음","자리아직있나요 ? 루나","마감"]},
+{"id":"17215","source":"dc","board":"erpis","category":"길드","title":"디시인사이드 미접 5일로 변경","comments":1,"utcIso":"2026-09-13T03:33:38.000Z","author":"ㅇㅇ","views":63,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17215","engagement":83,"sentiment":"neutral","tags":["guild_recruit"]},
+{"id":"17216","source":"dc","board":"erpis","category":"일반","title":"월정액 2번 그렇게 창렬인가 주는 재화량을 계산해보자","comments":2,"utcIso":"2026-09-13T03:41:53.000Z","author":"ㅇㅇ","views":109,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17216","engagement":149,"sentiment":"positive","tags":["positive"],"body":"사는 즉시 2640오팔, 매일 150오팔, 총 7140 오팔(= 23뽑 가량) 주고 상시뽑 30연차. 한달마다 5성 0.5마리, 4성 올5각 고인물기준 매우 보수적으로 잡아서 빨별 20개(+6) (2달이면 52개). 실제로는 4성 2,3마리 나오는 경우가 꽤 흔해서 빨별 수급이 더 됨. 뉴비는 빨별 덜 받긴 하는데 어차피 4성 내실 채우는 게 자체로 이득임. 교환소, 피빕 보상, 개인레이드 보상 등으로 정보카드 쌀먹으로 픽업권 얻을 수 있어서 ㅇㅇ. 아무튼 고인물 기준 3만3천원에 25뽑이고(보수적으로 잡은 거라 26~28뽑 정도는 나옴), 광고는 안 사도 볼 수는 있으니 계산에 뺐지만 월정액2번 사면 다 볼 테니 이것도 추가재화라 할 수 있어서 이것까지 고려하면 꽤 혜자고","topComments":["가성비의 마지노선","30% 받고 사면 가성비 아니면 ㄴㄴ"]},
+{"id":"17217","source":"dc","board":"erpis","category":"일반","title":"결국 in100 사출당함","comments":3,"utcIso":"2026-09-13T04:18:10.000Z","author":"ㅇㅇ","views":87,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17217","engagement":147,"sentiment":"neutral","tags":["chitchat"],"body":"다들 월보에 진심이구만","topComments":["이거는 다들 존나 열심히함","열심히 = 딸깍 후 물떠놓고 기도하기","150가진 갠찮드"]},
+{"id":"17218","source":"dc","board":"erpis","category":"일반","title":"허수아비 무속성","comments":2,"utcIso":"2026-09-13T04:49:30.000Z","author":"마나토끼","views":63,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17218","engagement":103,"sentiment":"neutral","tags":["guide"],"body":"러스트 3각은 얼마나 쌜까 존나 궁금해지네","topComments":["한 400만나옴","가디언 520 아울 450 러스트 395"]},
+{"id":"17219","source":"dc","board":"erpis","category":"일반","title":"이용제한 언제쯤 풀리나요?","comments":2,"utcIso":"2026-09-13T05:13:37.000Z","author":"ㅇㅇ","views":73,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17219","engagement":113,"sentiment":"neutral","tags":["chitchat"],"body":"토요일에 먹었는데 갤분이 UID알려주셔서 문의는 해놨어요 담주즘에 풀리나요??","topComments":["주말이라 출근 안할거라 평일 기다려야될듯","감사합니다!!"]},
+{"id":"17220","source":"dc","board":"erpis","category":"일반","title":"근데 질문","comments":2,"utcIso":"2026-09-13T05:58:38.000Z","author":"족발핑","views":54,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17220","engagement":94,"sentiment":"neutral","tags":["guide"],"body":"리온에 인장박을만한가치가있음?","topComments":["앞으로 나올 픽업들에는 돈써서 3각 달아주겠다 생각하면 할만하고 소과금정도면 그냥 픽뚫 기다릴듯","정답이긴하네용 ㅎ감사"]},
+{"id":"17221","source":"dc","board":"erpis","category":"일반","title":"내일 치타들 달릴거 생각하니까 내 무습다","comments":0,"utcIso":"2026-09-13T07:45:23.000Z","author":"뜌따이","views":70,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17221","engagement":70,"sentiment":"neutral","tags":["chitchat"]},
+{"id":"17222","source":"dc","board":"erpis","category":"일반","title":"아이라가 좀 고민되네","comments":7,"utcIso":"2026-09-13T08:01:44.000Z","author":"뜌따이","views":101,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17222","engagement":241,"sentiment":"neutral","tags":["gacha"],"body":"예의 30뽑만 할지 반천만 볼지 고민중","topComments":["반천하고 픽뚫나면 성광사해 너 뽑기 못참잖아","그럴까","여기 파딱들 고민하는척하다가 출시되면 뽑아서 오우오와 바이럴하는거 종특임 ?;;","고민하는 척하는게 아니라 진짜 고민하는 거임 얘 보내고 나면 다음 목속 돌격이 플라인데 플라는 58주차에 나와서 고민인거임","넌 모르겟는데, 다른 한주딱은 무조건 그러다 뽑더라 ㅋㅋㅋ"]},
+{"id":"17223","source":"dc","board":"erpis","category":"일반","title":"현재 찻집 총 걸음수","comments":1,"utcIso":"2026-09-13T08:13:19.000Z","author":"뜌따이","views":69,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17223","engagement":89,"sentiment":"neutral","tags":["chitchat"]},
+{"id":"17224","source":"dc","board":"erpis","category":"일반","title":"할게 너무 없네요...","comments":3,"utcIso":"2026-09-13T08:17:13.000Z","author":"ㅇㅇ","views":124,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17224","engagement":184,"sentiment":"negative","tags":["negative"],"topComments":["뉴비야 겜좀해라"]},
+{"id":"17225","source":"dc","board":"erpis","category":"일반","title":"끼얏호우 20초후 기갱각","comments":1,"utcIso":"2026-09-13T09:15:33.000Z","author":"ㅇㅇ","views":49,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17225","engagement":69,"sentiment":"positive","tags":["positive"]},
+{"id":"17226","source":"dc","board":"erpis","category":"일반","title":"뉴비 이상이 너무 부족해요","comments":1,"utcIso":"2026-09-13T11:14:17.000Z","author":"ㅇㅇ","views":50,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17226","engagement":70,"sentiment":"negative","tags":["newbie_returning","negative"]},
+{"id":"17227","source":"dc","board":"erpis","category":"일반","title":"내일에 큰거올라나","comments":2,"utcIso":"2026-09-13T12:02:14.000Z","author":"ㅇㅇ","views":61,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17227","engagement":101,"sentiment":"neutral","tags":["chitchat"],"topComments":["2차 각인?"]},
+{"id":"17228","source":"dc","board":"erpis","category":"일반","title":"악몽의 침식좀 쉬엄쉬엄 해다오","comments":0,"utcIso":"2026-09-13T12:07:12.000Z","author":"ㅇㅇ","views":42,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17228","engagement":42,"sentiment":"negative","tags":["negative"]},
+{"id":"17229","source":"dc","board":"erpis","category":"일반","title":"등수 너무 떨어져서 전화한통 했다","comments":1,"utcIso":"2026-09-13T12:52:41.000Z","author":"ㅇㅇ","views":60,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17229","engagement":80,"sentiment":"negative","tags":["negative"]},
+{"id":"17230","source":"dc","board":"erpis","category":"일반","title":"아오 운빨","comments":0,"utcIso":"2026-09-13T13:04:29.000Z","author":"ㅇㅇ","views":42,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17230","engagement":42,"sentiment":"negative","tags":["negative"]},
+{"id":"17231","source":"dc","board":"erpis","category":"질문","title":"산과강 7단계 왜안뚫림","comments":0,"utcIso":"2026-09-13T13:14:50.000Z","author":"깃좀","views":42,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17231","engagement":42,"sentiment":"neutral","tags":["guide"]},
+{"id":"17232","source":"dc","board":"erpis","category":"일반","title":"월보라는게 한달에 한번이야?","comments":2,"utcIso":"2026-09-13T14:25:22.000Z","author":"ㅇㅇ","views":68,"likes":0,"isNotice":false,"url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17232","engagement":108,"sentiment":"neutral","tags":["newbie_returning"],"body":"그럼 5성캐릭하나 사기도 어렵겟네","topComments":["뉴비는 파별로 돌파가방,골경사는게 진짜임","감사한거지요."]},
+{"id":"182853123","source":"arca","board":"erphis","category":"","title":"사랑은 파러웨이~~ 우리 둘이서 포에버~~","comments":4,"utcIso":"2026-09-13T01:55:22.000Z","author":"현창","views":58,"likes":0,"isNotice":false,"url":"https://arca.live/b/erphis/182853123","engagement":138,"sentiment":"neutral","tags":["chitchat"],"body":"버닝하트~~버닝하트~~ 꿈만큼은~~~제발 in10좀","topComments":[]},
+{"id":"182894060","source":"arca","board":"erphis","category":"","title":"골경 없어서 폐사직전....","comments":1,"utcIso":"2026-09-13T10:23:14.000Z","author":"아재도겜한다","views":39,"likes":0,"isNotice":false,"url":"https://arca.live/b/erphis/182894060","engagement":59,"sentiment":"negative","tags":["negative"],"body":"할수있는게 없다.......","topComments":[]},
+{"id":"182910068","source":"arca","board":"erphis","category":"","title":"뉴비 처음으로 10단계 꺴다","comments":2,"utcIso":"2026-09-13T13:14:57.000Z","author":"daboyz","views":38,"likes":0,"isNotice":false,"url":"https://arca.live/b/erphis/182910068","engagement":78,"sentiment":"positive","tags":["newbie_returning","positive"],"body":"할배들아 긴장해라 뉴비가 간다 후 다음번에는 더올라가주마","topComments":[]},
+{"id":"182917268","source":"arca","board":"erphis","category":"","title":"그냥 찍먹 해봤는데 재밌네","comments":7,"utcIso":"2026-09-13T14:33:30.000Z","author":"블로우","views":76,"likes":0,"isNotice":false,"url":"https://arca.live/b/erphis/182917268","engagement":216,"sentiment":"positive","tags":["newbie_returning","positive"],"body":"한정뽑 끝나기 전에 알았더라면 쩝","topComments":["한정뽑해둔 리세계 나눔 중..","아쉽지만 나눔참여는 깡계라..","음? 이 챈 안되나? 유입 누구든 환영인 분위기라 상관 없을 것 같은데.. 잠시만..","생각 있으시면 댓글 주세요 챈글로 문의해보겠음","계정 나눔으로 인한 피해는 누구도 책임지지 않음 / 나눔은 중복 참여 금지 및 깡계는 영구차단 — 공지에 적혀있네요","일단 글은 남겼으니 허락해주시면 원하시는대로 하시지요 ㅎㅎ"]}
+],
+"stats": {
+"total": 40,
+"real_posts": 40,
+"notices": 0,
+"bugs": 1,
+"negative": 9,
+"positive": 5,
+"competitor_mentions": 0,
+"newbie_returning": 4,
+"guild_recruit": 3,
+"gacha": 1,
+"event": 0,
+"balance": 0,
+"guide": 8,
+"chitchat": 9,
+"total_views": 3237,
+"total_comments": 141,
+"total_likes": 3,
+"sentiment": "부정",
+"sentiment_score": -0.1
+},
+"topEngaging": [
+{"id":"17198","title":"뉴비들은 월보보상 몇정도받음","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17198","source":"dc","views":188,"comments":14,"likes":0,"engagement":468,"category":"일반","sentiment":"neutral"},
+{"id":"17211","title":"디시인사이드 길마할 인재 없냐?","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17211","source":"dc","views":112,"comments":15,"likes":0,"engagement":412,"category":"일반","sentiment":"neutral"},
+{"id":"17206","title":"이자벨 들어갈걸 그랬나","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17206","source":"dc","views":164,"comments":9,"likes":0,"engagement":344,"category":"일반","sentiment":"neutral"},
+{"id":"17207","title":"월보 완","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17207","source":"dc","views":154,"comments":6,"likes":2,"engagement":334,"category":"정보/정보/공략","sentiment":"neutral"},
+{"id":"17213","title":"사이코 낄때랑 맨디 넣은거랑 딜 차이가 없네..","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17213","source":"dc","views":89,"comments":12,"likes":0,"engagement":329,"category":"일반","sentiment":"neutral"},
+{"id":"17210","title":"명함단 1000만","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17210","source":"dc","views":148,"comments":8,"likes":0,"engagement":308,"category":"일반","sentiment":"positive"},
+{"id":"17222","title":"아이라가 좀 고민되네","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17222","source":"dc","views":101,"comments":7,"likes":0,"engagement":241,"category":"일반","sentiment":"neutral"},
+{"id":"182917268","title":"그냥 찍먹 해봤는데 재밌네","url":"https://arca.live/b/erphis/182917268","source":"arca","views":76,"comments":7,"likes":0,"engagement":216,"category":"","sentiment":"positive"}
+],
+"analysis": {
+"dailySummary": "에르피스는 월간보스 마감이 하루를 통째로 삼켰다. 880만을 찍고 나서야 란 배지를 빼놓은 걸 알아챘다는 탄식, in30·in100 커트라인 앞의 초조함, 새벽 두 시까지 리트를 붙잡고 있다는 자조가 줄줄이 올라왔고, 반대편에는 1500만 완주 공략과 명함단 1000만 달성, 20초 남기고 기갱각을 잡았다는 인증이 섰다. 성능 토론도 활발해 사이코 5각과 맨디 명함 중 무엇이 나은지, 왜 둘의 딜 차이가 없는지를 두고 열두 개 댓글이 오갔고 상위권 힐압축덱·배지 우선순위·인장 가치 같은 세팅 질문이 뒤를 이었다. 갤러리 길드는 길마를 맡을 사람을 찾는 글과 마감·미접 기준 변경 공지가 같은 날 올라와 운영 공백이 드러났다. 불만은 튕김으로 기갱각을 두 번 날렸다는 성토, 골경과 이상이 없어 할 수 있는 게 없다는 뉴비의 재화 부족, 악몽의 침식을 쉬엄쉬엄 해달라는 피로로 모였고, 월정액 2번이 3만3천원에 25뽑어치라 꽤 혜자라는 계산글이 드물게 긍정 축을 만들었다. 찍먹하러 왔다가 재밌다는 아카 유입 글에 리세 계정 나눔이 붙은 것도 이날의 밝은 장면이었다.",
+"topIssues": [
+{"title":"뉴비들은 월보보상 몇정도받음","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17198","tone":"neutral","id":"17198","source":"dc","comments":14,"views":188,"likes":0,"bodySummary":"뉴비가 월간보스에서 실제로 어느 정도 보상을 받는지 묻는 글로, 댓글 14개가 붙어 이날 참여도 1위를 기록했다. 답변은 '막날에 치려고 아직 안 친 사람도 있다', '3번 치면 오팔·골드·파별 3개씩 받는다'처럼 구체적인 수치 안내로 이어졌고, 일일 보상을 안 받고 있는 것 아니냐는 확인도 나왔다. (본문은 이미지 위주로 텍스트 미수집)"},
+{"title":"디시인사이드 길마할 인재 없냐?","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17211","tone":"neutral","id":"17211","source":"dc","comments":15,"views":112,"likes":0,"bodySummary":"현 길마가 상위 길드(마몬·소요방)로 옮기고 싶은데 가면 그쪽 길마를 맡아야 한다며 후임을 구한 글. 댓글은 '뉴비 버리냐', '너 가면 우리 길드 망한다'는 만류와 '인원은 이제 거의 안 빠진다'는 반론, 길드 공지로 공개 모집하라는 제안이 이어졌다. 지난번에도 스카웃 제안을 후임이 없어 포기했다는 언급이 나와 갤러리 길드의 운영 인력 공백이 반복 문제임이 드러났다."},
+{"title":"이자벨 들어갈걸 그랬나","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17206","tone":"neutral","id":"17206","source":"dc","comments":9,"views":164,"likes":0,"bodySummary":"상위권의 힐 압축덱을 보고 이자벨을 넣었어야 했나 고민하는 글. 댓글은 존버하면 안리스·맨디·나이팅게일 조합으로 가면 되니 이자벨 자리는 좁아 보이지만 '당장 지금이 꼬인다'는 현실론, 명함만으로도 쓸 만한지에 대한 문답으로 이어졌다."},
+{"title":"월보 완","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17207","tone":"neutral","id":"17207","source":"dc","comments":6,"views":154,"likes":2,"bodySummary":"1500만 완주 세팅을 각 캐릭터의 각성·낙인·부옵까지 공개한 상세 공략글. 고정 피버 지정, 방깍 순서, 첫 어그로 순서와 함께 돌격을 맨디와 같은 열에 둬 보스 어그로를 빼고 사수를 내려 후열 쫄 어그로를 분산시키는 배치 3원칙을 정리했다. 댓글에서는 잠재 차이가 크다(레이븐 600만 vs 미암 200만 이하)는 비교와 '상위랭커 1700만의 벽은 미암 3각이 아니라 이런 것이었다'는 깨달음, 3각 가성비에서 포기했다는 반응이 이어졌다."},
+{"title":"사이코 낄때랑 맨디 넣은거랑 딜 차이가 없네..","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17213","tone":"neutral","id":"17213","source":"dc","comments":12,"views":89,"likes":0,"bodySummary":"딜버프가 전혀 없는 사이코와 딜버프를 주는 맨디를 바꿔 껴도 딜 차이가 없다는 의문 제기. 댓글은 사이코가 역속성이라 더 오래 버텨 힐 지속이 길었을 가능성, 맨디의 스킬작이 덜 돼 유지력이 부족해 딜러 생존 시간이 짧았을 가능성, 오스틴 리더의 딜 지분 등을 놓고 12개가 오갔으나 결론은 나지 않고 '둘 다 영상을 봐야 판독되겠다'로 정리됐다."}
+],
+"bugReports": [
+{"title":"운영자 씹탱아 뭔 락걸어놨냐?","url":"https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17201"}
+],
+"competitorMentions": [],
+"trends": [
+"월간보스 마감일 — 기갱·리트·순위 커트라인 이야기가 하루의 8할",
+"1500만 완주 공략·명함단 1000만 달성 등 상위권 세팅 공유 활발",
+"사이코 5각 vs 맨디 명함 딜 비교 미제 — 댓글 12개에도 결론 미도출",
+"배지 우선순위(공% > 치확% > 치피%)·인장 가치 등 세팅 질문 다수",
+"갤러리 길드 길마 공백 — 후임 모집글과 미접 기준 변경이 같은 날",
+"튕김으로 기갱각 2회 손실 — 운영 성토(버그 리포트 1건)",
+"뉴비 재화 부족(골경·이상) — '할 수 있는 게 없다'는 진입 장벽 토로",
+"월정액 2번 3만3천원=25뽑 계산글 — 드문 과금 가성비 긍정 평가",
+"아카 유입 '찍먹했는데 재밌다' + 리세 계정 나눔 — 소규모 유입 지속",
+"DC 오스카린(앵커패닉) 갤러리는 9/4 이후 신규 글 0"
+],
+"watchlist": [
+"튕김으로 인한 기갱각 손실 — 순위 보상과 직결돼 이틀 연속 제기, 재발 시 불만 확산 위험",
+"갤러리 길드 길마 공백 — 커뮤니티 구심점 이탈 시 DC 활동량 급감 가능",
+"뉴비 재화 부족(골경·이상) — 반주년 이후 유입이 초반 구간에서 막히는 신호",
+"월간보스 리트 피로 — '한달마다 찾아오는 고문'이라는 표현이 나올 만큼 구조적 소모 체감",
+"사이코 vs 맨디 딜 불일치 — 버프 수치가 체감되지 않는다면 밸런스 확인 필요",
+"악몽의 침식 난이도·빈도 피로 지속",
+"네이버 검색량 2026-09-13 당일치 미집계 — 다음 실행에서 보충 필요"
+],
+"keywords": [
+{"word":"월보 순위 경쟁·기갱","ids":["17196","17197","17207","17210","17217","17225","17229","182853123"],"count":8},
+{"word":"덱·배지 세팅 질문","ids":["17206","17212","17218","17220","17231"],"count":5},
+{"word":"뉴비 유입·보상 문의","ids":["17198","17232","17226","182917268"],"count":4},
+{"word":"길드(갤길) 길마 공백·모집","ids":["17211","17214","17215"],"count":3},
+{"word":"리트 반복 피로(불만)","ids":["17202","17205","17209"],"count":3},
+{"word":"사이코 vs 맨디 딜 비교","ids":["17204","17213"],"count":2},
+{"word":"재화 부족(골경·이상)(불만)","ids":["182894060","17226"],"count":2},
+{"word":"튕김으로 기갱 실패(불만)","ids":["17201"],"count":1},
+{"word":"월정액2 가성비(긍정)","ids":["17216"],"count":1},
+{"word":"아이라 픽업 뽑기 고민","ids":["17222"],"count":1}
+]
+}
+}
+},
+"searchTrends": null,
+"generatedAt": "2026-09-14T09:30:00+09:00"
+}
