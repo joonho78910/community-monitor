@@ -1,0 +1,731 @@
+{
+ "date": "2026-09-20",
+ "games": {
+  "anchorpanic": {
+   "name": "앵커패닉",
+   "date": "2026-09-20",
+   "posts": [
+    {
+     "id": "183544572",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "히히히 퀸덤만 2연속 만났다",
+     "comments": 2,
+     "utcIso": "2026-09-20T03:42:45.000Z",
+     "author": "ㅇㅇ (211.234)",
+     "views": 66,
+     "likes": 0,
+     "isNotice": false,
+     "url": "https://arca.live/b/anchorpanic/183544572",
+     "engagement": 106,
+     "sentiment": "positive",
+     "tags": [
+      "chitchat"
+     ],
+     "body": "겜 개재밌다 ㄹㅇ",
+     "topComments": [
+      "2연속이 가능하다고?"
+     ]
+    },
+    {
+     "id": "183577004",
+     "source": "arca",
+     "board": "anchorpanic",
+     "category": "",
+     "title": "홍엽이 즉사에 안당할때가 있던데 기준이 대체 뭐지",
+     "comments": 2,
+     "utcIso": "2026-09-20T10:12:15.000Z",
+     "author": "지존물퇴",
+     "views": 55,
+     "likes": 0,
+     "isNotice": false,
+     "url": "https://arca.live/b/anchorpanic/183577004",
+     "engagement": 95,
+     "sentiment": "neutral",
+     "tags": [
+      "guide",
+      "balance"
+     ],
+     "body": "홍엽이 피 1되면 사실상 어떤 피해도 안입는 무적 상태여서 힐 받으면 풀피 상태로 불사 꺼질 때까지 풀피인 채로 있는데 이거랑 연관이 있는건가 아다리 잘 맞으면 피1 상태로 무적 진입해서 즉사 안당해줘서 아무도 즉사 안당하게 해주는데 어떨땐 그냥 얄짤없이 드러누워서 뭔가 긴가민가하네",
+     "topComments": [
+      "순수딜로 죽을때까지 맏으면 무적켜지고 죽을딜아닌 처형피까지만 받으면 무적 발동전 처형인건가? 암튼 신기하네",
+      "호옹"
+     ]
+    }
+   ],
+   "stats": {
+    "total": 2,
+    "real_posts": 2,
+    "notices": 0,
+    "bugs": 0,
+    "negative": 0,
+    "positive": 1,
+    "competitor_mentions": 0,
+    "newbie_returning": 0,
+    "guild_recruit": 0,
+    "gacha": 0,
+    "event": 0,
+    "balance": 1,
+    "guide": 1,
+    "chitchat": 1,
+    "total_views": 121,
+    "total_comments": 4,
+    "total_likes": 0,
+    "sentiment": "긍정",
+    "sentiment_score": 0.5
+   },
+   "topEngaging": [
+    {
+     "id": "183544572",
+     "title": "히히히 퀸덤만 2연속 만났다",
+     "url": "https://arca.live/b/anchorpanic/183544572",
+     "source": "arca",
+     "views": 66,
+     "comments": 2,
+     "likes": 0,
+     "engagement": 106,
+     "category": "",
+     "sentiment": "positive"
+    },
+    {
+     "id": "183577004",
+     "title": "홍엽이 즉사에 안당할때가 있던데 기준이 대체 뭐지",
+     "url": "https://arca.live/b/anchorpanic/183577004",
+     "source": "arca",
+     "views": 55,
+     "comments": 2,
+     "likes": 0,
+     "engagement": 95,
+     "category": "",
+     "sentiment": "neutral"
+    }
+   ],
+   "analysis": {
+    "dailySummary": "앵커패닉 채널은 하루 종일 글 두 건에 그쳤다. 아카라이브에서 퀸덤 2연속 조우 자랑 하나와 홍엽 즉사 판정이 왜 들쭉날쭉한지 묻는 메커니즘 추론 하나가 전부였고, DC 갤러리는 이번에도 신규 글이 없었다. 그나마 홍엽 글은 \"피 1에서 무적 진입하면 파티가 즉사를 피하는 것 같은데 어떨 땐 그냥 눕는다\"는 관찰에 댓글도 같이 추측만 하다 끝나, 핵심 전투 규칙이 확정되지 않은 채 유저 추론에 맡겨진 상태를 드러냈다. 불만글은 한 건도 없었지만 그건 논쟁할 소재 자체가 없었기 때문에 가깝다. 다음 업데이트 전까지 채널 활력이 바닥을 유지할 가능성이 높다.",
+    "topIssues": [
+     {
+      "title": "홍엽이 즉사에 안당할때가 있던데 기준이 대체 뭐지",
+      "url": "https://arca.live/b/anchorpanic/183577004",
+      "tone": "neutral",
+      "id": "183577004",
+      "source": "arca",
+      "comments": 2,
+      "views": 55,
+      "likes": 0,
+      "bodySummary": "홍엽의 즉사 판정이 들쭉날쭉하다며 불사 상태와의 상호작용을 추론해 올린 메커니즘 분석글. 작성자는 체력 1에서 무적에 진입하면 파티 전체가 즉사를 피하는 것 같은데 어떤 때는 그냥 눕는다며 기준을 모르겠다고 했고, 댓글에서도 \"순수딜로 죽을 때까지 맞으면 무적, 처형 피까지만 받으면 무적 발동 전 처형인가\"라며 같이 추측만 하다 끝났다. 핵심 전투 메커니즘이 공식 설명 없이 유저 추론에 맡겨져 있는 상태를 보여준다."
+     },
+     {
+      "title": "히히히 퀸덤만 2연속 만났다",
+      "url": "https://arca.live/b/anchorpanic/183544572",
+      "tone": "positive",
+      "id": "183544572",
+      "source": "arca",
+      "comments": 2,
+      "views": 66,
+      "likes": 0,
+      "bodySummary": "퀸덤을 연속 두 번 만났다는 짧은 운 자랑글. 본문은 \"겜 개재밌다 ㄹㅇ\" 한 줄이고 댓글도 \"2연속이 가능하다고?\" 하나뿐이지만, 이날 앵커패닉 채널에서 나온 유일한 긍정 신호였다."
+     }
+    ],
+    "bugReports": [],
+    "competitorMentions": [],
+    "trends": [
+     "일일 게시물 2건 (아카 2 / DC 0) — 전날 11건에서 82% 급감, 관측 이래 최저 수준",
+     "DC 앵커패닉(오스카린) 갤러리 신규 글 0건 — 최신 글이 9/5에 멈춘 사실상 휴면 상태",
+     "부정 글 0건이지만 총 댓글 4개·좋아요 0으로 논쟁 자체가 부재",
+     "유일한 게임 화제가 홍엽 즉사 판정 추론 — 공식 공략 부재를 유저 추론이 메우는 패턴 반복",
+     "네이버 검색량 4.43→1.85로 반토막, 저볼륨 구간이라 노이즈 가능성은 있음"
+    ],
+    "watchlist": [
+     "채널 활성 2건 — 관측 이래 최저치, 업데이트 공백기 이탈 가속 신호로 최우선 관찰",
+     "DC 갤러리 완전 휴면(9/5 이후 0건) — 커뮤니티 축이 아카 단일 채널로 좁아진 구조적 리스크",
+     "홍엽 즉사 판정 등 핵심 메커니즘이 공식 설명 없이 유저 추론에 방치 — 공략 문서화 필요",
+     "네이버 검색량 1.85까지 하락 — 저볼륨이라 일부 날짜는 최소집계 미달로 결측 발생 중"
+    ],
+    "keywords": [
+     {
+      "word": "홍엽 즉사 판정 불명확",
+      "count": 1,
+      "ids": [
+       "183577004"
+      ]
+     },
+     {
+      "word": "퀸덤 연속 조우 (긍정)",
+      "count": 1,
+      "ids": [
+       "183544572"
+      ]
+     },
+     {
+      "word": "채널 초저활성",
+      "count": 2,
+      "ids": [
+       "183544572",
+       "183577004"
+      ]
+     }
+    ]
+   }
+  },
+  "erpis": {
+   "name": "에르피스",
+   "date": "2026-09-20",
+   "posts": [
+    {
+     "id": "17432",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "건실하게 살걸",
+     "comments": 2,
+     "utcIso": "2026-09-19T15:10:47.000Z",
+     "author": "할머니틀니도둑",
+     "views": 120,
+     "likes": 0,
+     "isNotice": false,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17432",
+     "engagement": 160,
+     "sentiment": "neutral",
+     "tags": [
+      "gacha"
+     ],
+     "body": "4번째 5각 캐릭 추가",
+     "topComments": []
+    },
+    {
+     "id": "17433",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "아니 보스 미친새기 죤나세네",
+     "comments": 0,
+     "utcIso": "2026-09-19T15:23:50.000Z",
+     "author": "ㅇㅇ",
+     "views": 78,
+     "likes": 0,
+     "isNotice": false,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17433",
+     "engagement": 78,
+     "sentiment": "negative",
+     "tags": [
+      "balance",
+      "chitchat"
+     ],
+     "body": "가디언 ㅅㅂ 삼류보지",
+     "topComments": []
+    },
+    {
+     "id": "17434",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "보스 시발 새기 모든걸 동원해도 못버딛네",
+     "comments": 0,
+     "utcIso": "2026-09-19T17:53:21.000Z",
+     "author": "ㅇㅇ",
+     "views": 76,
+     "likes": 0,
+     "isNotice": false,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17434",
+     "engagement": 76,
+     "sentiment": "negative",
+     "tags": [
+      "balance"
+     ],
+     "body": "시발 난이도보소",
+     "topComments": []
+    },
+    {
+     "id": "17435",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "어케하는거여",
+     "comments": 2,
+     "utcIso": "2026-09-19T19:02:34.000Z",
+     "author": "마나토끼",
+     "views": 119,
+     "likes": 0,
+     "isNotice": false,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17435",
+     "engagement": 159,
+     "sentiment": "neutral",
+     "tags": [
+      "guide",
+      "balance"
+     ],
+     "body": "광폭할때 레티 뒤지던데",
+     "topComments": [
+      "나도",
+      "탱을 넣어"
+     ]
+    },
+    {
+     "id": "17436",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "갠래 짜증나네",
+     "comments": 2,
+     "utcIso": "2026-09-20T00:08:10.000Z",
+     "author": "할머니틀니도둑",
+     "views": 121,
+     "likes": 0,
+     "isNotice": false,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17436",
+     "engagement": 161,
+     "sentiment": "negative",
+     "tags": [
+      "event",
+      "balance"
+     ],
+     "body": "1팟도 피버 한번 돌릴듯 말듯 간당간당하고 3팟도 피버 한번 돌릴듯 말듯 리트하다가 때려쳤음 마지막날 조합 카카시하러 다시와야지",
+     "topComments": [
+      "고사 명함도 잘만 버틴다 고사는 거품이다 글 쓰자마자 ㅅㅂ 존나아픔",
+      "ㅋㅋㅋ"
+     ]
+    },
+    {
+     "id": "17437",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "가디언 살리는 배치하면 레티 뒤지고 적절히 맞게 배치하면 둘다 뒤지고",
+     "comments": 0,
+     "utcIso": "2026-09-20T01:05:05.000Z",
+     "author": "ㅇㅇ",
+     "views": 60,
+     "likes": 0,
+     "isNotice": false,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17437",
+     "engagement": 60,
+     "sentiment": "negative",
+     "tags": [
+      "balance"
+     ],
+     "body": "뚫린쪽 뒤에 있던 언령도 같이 뒤지고 ㅅㅂ 쓰레기겜",
+     "topComments": []
+    },
+    {
+     "id": "17438",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "걍 갠레 지지 치고 그만해야지",
+     "comments": 0,
+     "utcIso": "2026-09-20T02:11:22.000Z",
+     "author": "ㅇㅇ",
+     "views": 62,
+     "likes": 0,
+     "isNotice": false,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17438",
+     "engagement": 62,
+     "sentiment": "negative",
+     "tags": [
+      "event",
+      "balance"
+     ],
+     "body": "보스 딜 너무 아파서 답이 없음 빠르게 후퇴한다 ㅌㅌ",
+     "topComments": []
+    },
+    {
+     "id": "17440",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "아이라 후기",
+     "comments": 8,
+     "utcIso": "2026-09-20T04:03:21.000Z",
+     "author": "사료부족",
+     "views": 181,
+     "likes": 1,
+     "isNotice": false,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17440",
+     "engagement": 371,
+     "sentiment": "neutral",
+     "tags": [
+      "guide",
+      "gacha"
+     ],
+     "body": "깃 치확 치피 공속옵 좋은 공속 깃도 쓸만해 보임 고점은 할배들 생각대로 치피부패 치확 안터지는거 신경 쓰이면 치확 그리고 수속에서만 깡패 늅이라 스펙 저조 피버 한번 씀 수속만 잘해 아이라 평가 뽑지마아어아",
+     "topComments": [
+      "치피깃이면 치확치피 몇정도 나옴",
+      "립확",
+      "치피깃이면 85퍼 치확 29퍼 버프 치피 30퍼 치확 15퍼 자법 생각해야해욤",
+      "치피깃으로 하면 딜 어느정도 나오는지도 테스트 가능?",
+      "@뜌따이 일하는중이라 일 끝마고 올릴게욥",
+      "@사료부족"
+     ]
+    },
+    {
+     "id": "17441",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "갠레 보스 좆밥인데?",
+     "comments": 0,
+     "utcIso": "2026-09-20T07:48:38.000Z",
+     "author": "ㅇㅇ(211.234)",
+     "views": 72,
+     "likes": 0,
+     "isNotice": false,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17441",
+     "engagement": 72,
+     "sentiment": "neutral",
+     "tags": [
+      "event",
+      "balance"
+     ],
+     "body": "까먹고 있다가 갤보고 시작했다",
+     "topComments": []
+    },
+    {
+     "id": "17442",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "갤 활성화 1일차) 안리스까지",
+     "comments": 2,
+     "utcIso": "2026-09-20T08:46:28.000Z",
+     "author": "ㅇㅇ(119.70)",
+     "views": 92,
+     "likes": 0,
+     "isNotice": false,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17442",
+     "engagement": 132,
+     "sentiment": "neutral",
+     "tags": [
+      "chitchat"
+     ],
+     "body": "",
+     "topComments": [
+      "빨리 시간이 갔으면 좋겠군"
+     ]
+    },
+    {
+     "id": "17443",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "이번 테두리는 못따겠네",
+     "comments": 4,
+     "utcIso": "2026-09-20T09:19:08.000Z",
+     "author": "ㅇㅇ",
+     "views": 98,
+     "likes": 0,
+     "isNotice": false,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17443",
+     "engagement": 178,
+     "sentiment": "negative",
+     "tags": [
+      "event",
+      "balance"
+     ],
+     "body": "스펙부족 능지부족 ㅅㄱ 좆망겜 안함",
+     "topComments": [
+      "천천히혀",
+      "레이저 이새끼만 나오면 좆같긴함",
+      "나도 처음에 50위 안에 아무리 쇼해도 못들었는데 지금은 여유있게 들어가더라. 당장 큰 차이가 벌어지는것도 아니니 여유있게 해. ㅎㅎ 과거인거지"
+     ]
+    },
+    {
+     "id": "183574020",
+     "source": "arca",
+     "board": "erphis",
+     "category": "질문",
+     "title": "지금 신캐중 뽑을만한애 있음? 아님 존버?",
+     "comments": 2,
+     "utcIso": "2026-09-20T09:37:18.000Z",
+     "author": "불신지옥",
+     "views": 51,
+     "likes": 0,
+     "isNotice": false,
+     "url": "https://arca.live/b/erphis/183574020",
+     "engagement": 91,
+     "sentiment": "neutral",
+     "tags": [
+      "gacha",
+      "guide"
+     ],
+     "body": "어떰?",
+     "topComments": [
+      "성광사까지 버로우중"
+     ]
+    },
+    {
+     "id": "17444",
+     "source": "dc",
+     "board": "erpis",
+     "category": "일반",
+     "title": "레이저만 하면 정떨어지네",
+     "comments": 2,
+     "utcIso": "2026-09-20T14:06:25.000Z",
+     "author": "ㅇㅇ",
+     "views": 58,
+     "likes": 0,
+     "isNotice": false,
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17444",
+     "engagement": 98,
+     "sentiment": "negative",
+     "tags": [
+      "event",
+      "balance"
+     ],
+     "body": "그냥 이거로 끝냄 in50될듯",
+     "topComments": [
+      "첫날 대충치고 마지막날에 카카시 해서 쳐야지 하다가 첫날친걸로 in50 유지돼서 대충한게 몇번째인지 기억도안남",
+      "나도 똑같은데 그 기간동안 상위권 존나 쳐접어서 올라갈각 가끔 보인거지 뭐"
+     ]
+    }
+   ],
+   "stats": {
+    "total": 13,
+    "real_posts": 13,
+    "notices": 0,
+    "bugs": 0,
+    "negative": 7,
+    "positive": 0,
+    "competitor_mentions": 0,
+    "newbie_returning": 0,
+    "guild_recruit": 0,
+    "gacha": 3,
+    "event": 5,
+    "balance": 9,
+    "guide": 3,
+    "chitchat": 2,
+    "total_views": 1188,
+    "total_comments": 24,
+    "total_likes": 1,
+    "sentiment": "부정",
+    "sentiment_score": -0.5385
+   },
+   "topEngaging": [
+    {
+     "id": "17440",
+     "title": "아이라 후기",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17440",
+     "source": "dc",
+     "views": 181,
+     "comments": 8,
+     "likes": 1,
+     "engagement": 371,
+     "category": "일반",
+     "sentiment": "neutral"
+    },
+    {
+     "id": "17443",
+     "title": "이번 테두리는 못따겠네",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17443",
+     "source": "dc",
+     "views": 98,
+     "comments": 4,
+     "likes": 0,
+     "engagement": 178,
+     "category": "일반",
+     "sentiment": "negative"
+    },
+    {
+     "id": "17436",
+     "title": "갠래 짜증나네",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17436",
+     "source": "dc",
+     "views": 121,
+     "comments": 2,
+     "likes": 0,
+     "engagement": 161,
+     "category": "일반",
+     "sentiment": "negative"
+    },
+    {
+     "id": "17432",
+     "title": "건실하게 살걸",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17432",
+     "source": "dc",
+     "views": 120,
+     "comments": 2,
+     "likes": 0,
+     "engagement": 160,
+     "category": "일반",
+     "sentiment": "neutral"
+    },
+    {
+     "id": "17435",
+     "title": "어케하는거여",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17435",
+     "source": "dc",
+     "views": 119,
+     "comments": 2,
+     "likes": 0,
+     "engagement": 159,
+     "category": "일반",
+     "sentiment": "neutral"
+    }
+   ],
+   "analysis": {
+    "dailySummary": "에르피스는 개인레이드(갠레) 난이도가 하루를 통째로 지배했다. 13건 중 7건이 부정이었고, 그 대부분이 \"보스 시발 새기 모든걸 동원해도 못버딛네\", \"가디언 살리는 배치하면 레티 뒤지고 맞게 배치하면 둘 다 뒤진다\"처럼 배치·딜량 요구가 과하다는 성토였다. 주목할 점은 불만이 단순 푸념을 넘어 \"걍 갠레 지지 치고 그만해야지\", \"스펙부족 능지부족 ㅅㄱ 좆망겜 안함\", \"그냥 이거로 끝냄\"처럼 명시적 포기 선언으로 나타났다는 것이다. 레이저 기믹은 서로 다른 두 글에서 독립적으로 지목됐다. 반대 신호도 있었다. 갠레 보스가 할 만하다는 반박글, 테두리 포기글에 붙은 \"천천히혀 / 나도 처음엔 50위 못 들었는데 지금은 여유있게 들어간다\"는 달래기 댓글, 그리고 댓글 8개로 이날 최다 반응을 모은 신규 픽업 아이라 세팅 후기가 그것이다. 다만 그 후기조차 결론이 \"아이라 평가: 뽑지마\"였다는 점에서, 난이도와 픽업 가치 양쪽에서 동시에 냉각되는 흐름이다.",
+    "topIssues": [
+     {
+      "title": "아이라 후기",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17440",
+      "tone": "neutral",
+      "id": "17440",
+      "source": "dc",
+      "comments": 8,
+      "views": 181,
+      "likes": 1,
+      "bodySummary": "신규 캐릭터 아이라 실사용 후기. 치확·치피·공속 깃 세팅을 비교하며 \"고점은 할배들 생각대로 치피부패\", \"수속에서만 깡패, 늅이라 스펙 저조\"라고 정리하고 마지막을 \"아이라 평가: 뽑지마\"로 맺었다. 댓글 8개는 반박보다 세팅 질문(\"치피깃이면 치확치피 몇 정도 나옴\", \"딜 어느 정도 나오는지 테스트 가능?\")으로 쏠려, 픽업 캐릭이 혹평을 받으면서도 세팅 정보 수요는 살아 있는 이중 구조를 보여준다."
+     },
+     {
+      "title": "이번 테두리는 못따겠네",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17443",
+      "tone": "negative",
+      "id": "17443",
+      "source": "dc",
+      "comments": 4,
+      "views": 98,
+      "likes": 0,
+      "bodySummary": "개인레이드 보상 테두리를 이번엔 못 딸 것 같다며 \"스펙부족 능지부족 ㅅㄱ 좆망겜 안함\"으로 끝낸 이탈성 성토글. 댓글은 오히려 달래는 쪽으로 \"천천히혀\", \"나도 처음엔 50위 못 들었는데 지금은 여유있게 들어간다\"는 경험담이 붙었지만, \"레이저 이새끼만 나오면 좆같긴함\"으로 레이저 기믹에 대한 공감도 함께 나왔다."
+     },
+     {
+      "title": "갠래 짜증나네",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17436",
+      "tone": "negative",
+      "id": "17436",
+      "source": "dc",
+      "comments": 2,
+      "views": 121,
+      "likes": 0,
+      "bodySummary": "개인레이드가 짜증난다는 글. 1팟·3팟 모두 피버를 한 번 돌릴 듯 말 듯 간당간당해 리트하다 때려쳤고 마지막 날 조합 카카시나 하러 오겠다는 내용. 댓글에서 \"고사 명함도 잘만 버틴다, 고사는 거품\"이라고 반박하던 유저가 곧바로 \"글 쓰자마자 ㅅㅂ 존나아픔\"이라고 번복해, 체급 논쟁이 실측 앞에서 무너지는 장면이 그대로 남았다."
+     },
+     {
+      "title": "건실하게 살걸",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17432",
+      "tone": "neutral",
+      "id": "17432",
+      "source": "dc",
+      "comments": 2,
+      "views": 120,
+      "likes": 0,
+      "bodySummary": "\"건실하게 살걸\"이라는 자조적 제목에 본문은 \"4번째 5각 캐릭 추가\" 한 줄. 과금 후회를 농담으로 포장한 5각 달성 인증글로, 이날 조회 상위권에 들었지만 댓글은 붙지 않았다."
+     },
+     {
+      "title": "어케하는거여",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17435",
+      "tone": "neutral",
+      "id": "17435",
+      "source": "dc",
+      "comments": 2,
+      "views": 119,
+      "likes": 0,
+      "bodySummary": "광폭 페이즈에서 레티가 죽는다며 대처법을 묻는 질문글. 댓글은 \"나도\", \"탱을 넣어\" 두 줄로 짧게 끝났다. 같은 날 17437의 \"가디언 살리는 배치하면 레티 뒤지고, 맞게 배치하면 둘 다 뒤진다\"와 묶여, 이번 보스의 배치 요구가 해법 공유 없이 불만으로만 쌓이고 있음을 보여준다."
+     }
+    ],
+    "bugReports": [],
+    "competitorMentions": [],
+    "trends": [
+     "일일 게시물 13건 (아카 1 / DC 12) — 전날 17건에서 24% 감소, 사흘 연속 하락",
+     "부정 7건(53.8%)으로 최근 2주 내 최고 부정률 — 전량이 개인레이드 관련",
+     "개인레이드(갠레) 토픽 5건 + 보스 난이도 5건 — 사실상 단일 이슈가 하루를 점유",
+     "명시적 포기·이탈 표현 4건 (\"지지 치고 그만\", \"좆망겜 안함\", \"이거로 끝냄\")",
+     "레이저 기믹이 서로 다른 두 글에서 독립 지목 — 특정 기믹 단위로 불만이 수렴",
+     "조회 1위(181)·댓글 1위(8)는 아이라 세팅 후기 — 결론은 \"뽑지마\"로 픽업 가치 부정",
+     "네이버 검색량 15.50→11.44(-26%)로 아이라 픽업 효과 사실상 소진"
+    ],
+    "watchlist": [
+     "개인레이드 난이도 불만 7건 — 단일 콘텐츠가 하루 부정 전량을 만든 사례, 최우선 관찰",
+     "명시적 포기·이탈 선언 4건 — \"그만해야지 / 안함 / 이거로 끝냄\"은 주간 콘텐츠 이탈의 직접 신호",
+     "레이저 기믹 단독 지목 2건 — 보스 전체가 아니라 특정 기믹이 원인으로 특정되기 시작",
+     "\"가디언 살리면 레티 죽고 맞게 배치하면 둘 다 죽는다\" — 해법이 없다는 프레임이 형성 중",
+     "신규 픽업 아이라 후기 결론이 \"뽑지마\" — 출시 사흘 만의 평가 하향, 다음 픽업 반응에 영향 관찰",
+     "검색량 3일 연속 하락(26.57→16.24→15.50→11.44) — 픽업 트래픽이 커뮤니티 냉각과 동조",
+     "반대로 신규·저스펙 유저를 달래는 댓글도 등장 — 잔류층의 자정 시도가 유지되는지 확인 필요"
+    ],
+    "keywords": [
+     {
+      "word": "개인레이드(갠레) (불만)",
+      "count": 5,
+      "ids": [
+       "17436",
+       "17438",
+       "17441",
+       "17443",
+       "17444"
+      ]
+     },
+     {
+      "word": "보스 난이도·딜 과다 (불만)",
+      "count": 5,
+      "ids": [
+       "17433",
+       "17434",
+       "17437",
+       "17438",
+       "17443"
+      ]
+     },
+     {
+      "word": "이탈/포기 선언 (불만)",
+      "count": 4,
+      "ids": [
+       "17436",
+       "17438",
+       "17443",
+       "17444"
+      ]
+     },
+     {
+      "word": "가디언·레티 배치 딜레마",
+      "count": 3,
+      "ids": [
+       "17433",
+       "17435",
+       "17437"
+      ]
+     },
+     {
+      "word": "레이저 기믹 (불만)",
+      "count": 2,
+      "ids": [
+       "17443",
+       "17444"
+      ]
+     },
+     {
+      "word": "아이라 신캐 평가",
+      "count": 2,
+      "ids": [
+       "17440",
+       "183574020"
+      ]
+     },
+     {
+      "word": "뽑기·존버 고민",
+      "count": 2,
+      "ids": [
+       "183574020",
+       "17432"
+      ]
+     },
+     {
+      "word": "in50 순위 체감",
+      "count": 2,
+      "ids": [
+       "17443",
+       "17444"
+      ]
+     },
+     {
+      "word": "갤 활성화 시도",
+      "count": 1,
+      "ids": [
+       "17442"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "searchTrends": null,
+ "generatedAt": "2026-09-21T09:10:51+09:00"
+}
