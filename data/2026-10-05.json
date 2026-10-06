@@ -1,0 +1,997 @@
+{
+  "date": "2026-10-05",
+  "games": {
+    "anchorpanic": {
+      "name": "anchorpanic",
+      "date": "2026-10-05",
+      "posts": [
+        {
+          "id": "185070361",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/185070361",
+          "category": "",
+          "title": "김앵뿡 그 시간이야",
+          "author": "yems",
+          "comments": 4,
+          "views": 48,
+          "likes": 0,
+          "utcIso": "2026-10-05T14:52:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 128,
+          "body": "'잘자콘줘' 한마디 밤 인사 글."
+        },
+        {
+          "id": "185065872",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/185065872",
+          "category": "",
+          "title": "혹시나 유입있으면 리세",
+          "author": "그런거몰라요",
+          "comments": 3,
+          "views": 55,
+          "likes": 1,
+          "utcIso": "2026-10-05T14:04:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "newbie_returning",
+            "gacha"
+          ],
+          "engagement": 145,
+          "body": "'이베트 뽑아' 한마디 글.",
+          "topComments": [
+            "이베트 없어도 스팅키스 넣고 돌아갈 것 같다, 이베트와 키스 중 고르라면 키스인 시대가 온 듯하다"
+          ]
+        },
+        {
+          "id": "185043591",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/185043591",
+          "category": "",
+          "title": "시작할라고 글좀 찾아봤는데",
+          "author": "DAHliA",
+          "comments": 9,
+          "views": 87,
+          "likes": 0,
+          "utcIso": "2026-10-05T10:38:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "newbie_returning",
+            "gacha",
+            "guide"
+          ],
+          "engagement": 267,
+          "body": "지금 무엇을 뽑고 시작하면 되는지 묻는 신규 입문 글. 화이트로즈가 나오면 뽑아야 한다는 건 알겠다는 내용.",
+          "topComments": [
+            "그냥 아끼다가 화이트로즈 나올 때 몰빵하라",
+            "스팅키스 하나 정도는 뽑아도 괜찮다",
+            "리세는 안 해도 되지만 돌을 아끼려면 하나 뽑고 가라",
+            "노랑티켓은 다 써도 괜찮다"
+          ]
+        },
+        {
+          "id": "185036324",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/185036324",
+          "category": "",
+          "title": "행정관아 쿠폰 언제주노",
+          "author": "ㅇㅇ (175.197)",
+          "comments": 1,
+          "views": 59,
+          "likes": 0,
+          "utcIso": "2026-10-05T09:24:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "engagement": 79,
+          "body": "'몬데이인데' 하며 쿠폰 지급 시점을 묻는 글.",
+          "topComments": [
+            "휴일이라 내일 주려나"
+          ]
+        },
+        {
+          "id": "185034960",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/185034960",
+          "category": "",
+          "title": "요즘 양자덱 키우고 있었는데",
+          "author": "ㅇㅇ (118.235)",
+          "comments": 0,
+          "views": 41,
+          "likes": 0,
+          "utcIso": "2026-10-05T09:10:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 41,
+          "body": "'린 알 키우러 이쿠욧' 한마디 글."
+        },
+        {
+          "id": "185011992",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/185011992",
+          "category": "질문",
+          "title": "스팅키스 모듈이랑 낙인은 어캐 세팅함 ?",
+          "author": "하냥",
+          "comments": 7,
+          "views": 101,
+          "likes": 0,
+          "utcIso": "2026-10-05T04:53:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "balance"
+          ],
+          "engagement": 241,
+          "body": "모듈은 4막 2생 등으로 하는지, 낙인은 전용낙인이 맞는지 묻는 글. PVP를 우선해 맞추고 싶다는 설명.",
+          "topComments": [
+            "PVP는 딜러 빼고 전부 탱모듈에 속도를 챙겨야 한다",
+            "피빕은 4쇄2공을 끼고 번덱에 넣는다",
+            "둘 다 전낙 필수",
+            "PVE에서 방어·생명 옵션은 쓰는 경우가 없다"
+          ]
+        },
+        {
+          "id": "185000553",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/185000553",
+          "category": "",
+          "title": "네푸루는 이제 5주 뒤인가",
+          "author": "yems",
+          "comments": 4,
+          "views": 67,
+          "likes": 0,
+          "utcIso": "2026-10-05T02:28:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 147,
+          "body": "'재화는 좀 모아둘 수 있겠네'라는 한마디 글.",
+          "topComments": [
+            "많이 모아둬야지",
+            "화로 낙인을 풀임? 이번에 안 뽑으면 12만 내고 뽑아야 한다"
+          ]
+        },
+        {
+          "id": "184998289",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/184998289",
+          "category": "",
+          "title": "카지노 덱이 더 강해져버렸다",
+          "author": "그런거몰라요",
+          "comments": 8,
+          "views": 94,
+          "likes": 0,
+          "utcIso": "2026-10-05T01:54:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 254,
+          "body": "'제발 칼란 쓰기 싫다, 은퇴 좀 해'라며 번덱 주력 칼란에 대한 짜증을 쏟아낸 글.",
+          "topComments": [
+            "공략 ㄱ",
+            "네가 선택한 번덱이다 악으로 깡으로 리트해라"
+          ]
+        },
+        {
+          "id": "184994083",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/184994083",
+          "category": "",
+          "title": "갑자기 네푸루 기대되노",
+          "author": "ㅇㅇ (118.235)",
+          "comments": 1,
+          "views": 75,
+          "likes": 0,
+          "utcIso": "2026-10-05T00:31:00Z",
+          "sentiment": "positive",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 95,
+          "body": "스팅이 네푸루 그르 스트번개를 넘는 것 아니냐는 기대감.",
+          "topComments": [
+            "네푸루 딜러냐"
+          ]
+        },
+        {
+          "id": "184987930",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/184987930",
+          "category": "",
+          "title": "칼란아 힘내줘",
+          "author": "l222",
+          "comments": 4,
+          "views": 83,
+          "likes": 0,
+          "utcIso": "2026-10-04T19:54:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance",
+            "guide"
+          ],
+          "engagement": 163,
+          "body": "2턴딜 4,700만인데 6턴딜은 1억이라 3배가 안 나오는 이유를 묻는 글.",
+          "topComments": [
+            "스트보다 명화가 더 좋은지?",
+            "훨씬 좋던데",
+            "명화가 2돌이라 그냥 스트 쓴다"
+          ]
+        },
+        {
+          "id": "184985534",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/184985534",
+          "category": "",
+          "title": "얼음 300이 이상한거 같대서 다시 때려봤음ㅇㅇ",
+          "author": "아블",
+          "comments": 4,
+          "views": 72,
+          "likes": 0,
+          "utcIso": "2026-10-04T18:11:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance",
+            "guide"
+          ],
+          "engagement": 152,
+          "body": "전날 얼음 3팀 300 논쟁 후 세팅 동일하게 다시 쳐서 5번덱 580이 나왔다는 검증글. 낙인·돌파 구성을 공개.",
+          "topComments": [
+            "스팅을 번덱에 쓰면 번덱 딜이 2배 이상 될 것이다",
+            "잡덱에서 몇백만 가지고 노력할 필요 없다",
+            "얼음 그냥 버려라"
+          ]
+        }
+      ],
+      "stats": {
+        "notices": 0,
+        "bugs": 0,
+        "negative": 1,
+        "positive": 1,
+        "competitor_mentions": 0,
+        "newbie_returning": 2,
+        "guild_recruit": 0,
+        "gacha": 4,
+        "event": 1,
+        "balance": 4,
+        "guide": 4,
+        "chitchat": 2,
+        "total": 11,
+        "real_posts": 11,
+        "total_views": 782,
+        "total_comments": 45,
+        "total_likes": 1,
+        "sentiment_score": 0.0,
+        "sentiment": "중립"
+      },
+      "topEngaging": [
+        {
+          "id": "185043591",
+          "title": "시작할라고 글좀 찾아봤는데",
+          "url": "https://arca.live/b/anchorpanic/185043591",
+          "source": "arca",
+          "views": 87,
+          "comments": 9,
+          "likes": 0,
+          "engagement": 267,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "184998289",
+          "title": "카지노 덱이 더 강해져버렸다",
+          "url": "https://arca.live/b/anchorpanic/184998289",
+          "source": "arca",
+          "views": 94,
+          "comments": 8,
+          "likes": 0,
+          "engagement": 254,
+          "category": "",
+          "sentiment": "negative"
+        },
+        {
+          "id": "185011992",
+          "title": "스팅키스 모듈이랑 낙인은 어캐 세팅함 ?",
+          "url": "https://arca.live/b/anchorpanic/185011992",
+          "source": "arca",
+          "views": 101,
+          "comments": 7,
+          "likes": 0,
+          "engagement": 241,
+          "category": "질문",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "184987930",
+          "title": "칼란아 힘내줘",
+          "url": "https://arca.live/b/anchorpanic/184987930",
+          "source": "arca",
+          "views": 83,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 163,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "184985534",
+          "title": "얼음 300이 이상한거 같대서 다시 때려봤음ㅇㅇ",
+          "url": "https://arca.live/b/anchorpanic/184985534",
+          "source": "arca",
+          "views": 72,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 152,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "185000553",
+          "title": "네푸루는 이제 5주 뒤인가",
+          "url": "https://arca.live/b/anchorpanic/185000553",
+          "source": "arca",
+          "views": 67,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 147,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "185065872",
+          "title": "혹시나 유입있으면 리세",
+          "url": "https://arca.live/b/anchorpanic/185065872",
+          "source": "arca",
+          "views": 55,
+          "comments": 3,
+          "likes": 1,
+          "engagement": 145,
+          "category": "",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis": {
+        "dailySummary": "앵커패닉 채널은 전날(6건)보다 늘어난 11건으로, 연휴가 끝난 평일의 차분한 분위기였다. 네푸루 픽업이 5주 뒤라는 이야기와 함께 재화를 모아야 한다는 기대감이 퍼졌고, 신규·복귀 유저가 무엇을 뽑고 시작할지 묻는 글에 '화이트로즈 때까지 아끼라'는 답이 모였다. 한편 번덱 주력 칼란에 대한 지긋지긋함, 얼음덱 성능 논쟁의 재검증 등 덱 성능 이야기가 이어졌고, 전반 정서는 중립에 가까웠다.",
+        "topIssues": [
+          {
+            "title": "시작할라고 글좀 찾아봤는데",
+            "url": "https://arca.live/b/anchorpanic/185043591",
+            "tone": "neutral",
+            "id": "185043591",
+            "source": "arca",
+            "comments": 9,
+            "views": 87,
+            "likes": 0,
+            "bodySummary": "시작을 앞두고 글을 찾아봤는데 지금 무엇을 뽑고 시작하면 되는지 묻는 입문 글. 댓글은 화이트로즈가 나올 때까지 아끼다 몰빵하라, 스팅키스 하나쯤은 뽑아도 된다, 리세는 안 해도 되고 노랑티켓은 다 써도 괜찮다는 안내였다."
+          },
+          {
+            "title": "카지노 덱이 더 강해져버렸다",
+            "url": "https://arca.live/b/anchorpanic/184998289",
+            "tone": "negative",
+            "id": "184998289",
+            "source": "arca",
+            "comments": 8,
+            "views": 94,
+            "likes": 0,
+            "bodySummary": "'제발 칼란 쓰기 싫다, 은퇴 좀 해'라며 번덱 주력 칼란에 대한 짜증을 쏟은 글. 댓글은 공략을 보라는 조언과, 네가 선택한 번덱이니 악으로 깡으로 리트하라는 반응이었다."
+          },
+          {
+            "title": "스팅키스 모듈이랑 낙인은 어캐 세팅함 ?",
+            "url": "https://arca.live/b/anchorpanic/185011992",
+            "tone": "neutral",
+            "id": "185011992",
+            "source": "arca",
+            "comments": 7,
+            "views": 101,
+            "likes": 0,
+            "bodySummary": "스팅키스 모듈은 4막 2생이 맞는지, 낙인은 전용낙인이 맞는지 묻고 PVP를 우선해 맞추고 싶다는 글. 댓글은 PVP는 딜러 빼고 탱모듈에 속도를 챙겨야 한다, 둘 다 전낙이 필수, PVE에서 방어·생명 옵션은 쓰는 경우가 없다는 정보가 오갔다."
+          },
+          {
+            "title": "칼란아 힘내줘",
+            "url": "https://arca.live/b/anchorpanic/184987930",
+            "tone": "neutral",
+            "id": "184987930",
+            "source": "arca",
+            "comments": 4,
+            "views": 83,
+            "likes": 0,
+            "bodySummary": "2턴딜 4,700만인데 6턴딜이 1억이라 3배가 안 나오는 이유를 묻는 글. 댓글은 스트보다 명화가 훨씬 좋은지에 대한 질의응답이었고, 명화가 2돌이라 스트를 쓴다는 답이 나왔다."
+          },
+          {
+            "title": "얼음 300이 이상한거 같대서 다시 때려봤음ㅇㅇ",
+            "url": "https://arca.live/b/anchorpanic/184985534",
+            "tone": "neutral",
+            "id": "184985534",
+            "source": "arca",
+            "comments": 4,
+            "views": 72,
+            "likes": 0,
+            "bodySummary": "전날 얼음 3팀 300 논쟁 이후 같은 세팅으로 다시 쳐서 5번덱 580이 나왔다는 검증글. 댓글은 스팅을 번덱에 쓰면 딜이 2배 이상 오를 것이고 잡덱에 몇백만 가지고 노력할 필요 없다, 얼음은 버리라는 의견이었다."
+          }
+        ],
+        "bugReports": [],
+        "competitorMentions": [],
+        "trends": [
+          "채널 활동 11건 — 전일(6건) 대비 증가",
+          "네푸루 픽업(약 5주 뒤)에 맞춘 재화 모으기 정서",
+          "신규·복귀 입문 뽑기 질문과 번덱·스팅키스 편성 논의 활발"
+        ],
+        "watchlist": [
+          "네푸루 픽업 반응·재화 부담",
+          "번덱 칼란 의존에 대한 피로감 확산 여부",
+          "얼음덱 성능 불만 지속 여부"
+        ],
+        "keywords": [
+          {
+            "word": "네푸루·재화 계획",
+            "count": 3,
+            "ids": [
+              "185000553",
+              "184994083",
+              "185065872"
+            ]
+          },
+          {
+            "word": "신규·복귀 입문 뽑기 조언",
+            "count": 2,
+            "ids": [
+              "185043591",
+              "185065872"
+            ]
+          },
+          {
+            "word": "번덱·스팅키스 편성",
+            "count": 3,
+            "ids": [
+              "185011992",
+              "184985534",
+              "184987930"
+            ]
+          },
+          {
+            "word": "칼란 불만(불만)",
+            "count": 2,
+            "ids": [
+              "184998289",
+              "184987930"
+            ]
+          },
+          {
+            "word": "얼음덱 성능 재검증",
+            "count": 1,
+            "ids": [
+              "184985534"
+            ]
+          },
+          {
+            "word": "쿠폰 문의",
+            "count": 1,
+            "ids": [
+              "185036324"
+            ]
+          }
+        ]
+      }
+    },
+    "erpis": {
+      "name": "erpis",
+      "date": "2026-10-05",
+      "posts": [
+        {
+          "id": "185001195",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/185001195",
+          "category": "",
+          "title": "하루 1씹덕송 추천 4일차",
+          "author": "현창",
+          "comments": 4,
+          "views": 39,
+          "likes": 0,
+          "utcIso": "2026-10-05T02:37:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 119,
+          "body": "tsuchiya - my fate(리인의 날개 ED) 노래 추천 연재글.",
+          "topComments": [
+            "나나? 그 걸크러쉬 만화였던가"
+          ]
+        },
+        {
+          "id": "184998908",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/184998908",
+          "category": "게임공지",
+          "title": "[커뮤니티] 고백 대작전! 사랑의 게이지를 채워줘!",
+          "author": "현창",
+          "comments": 6,
+          "views": 55,
+          "likes": 0,
+          "utcIso": "2026-10-05T02:03:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event",
+            "notices"
+          ],
+          "engagement": 175,
+          "body": "공식 커뮤니티 이벤트 공지.",
+          "topComments": [
+            "어 흐"
+          ]
+        },
+        {
+          "id": "17807",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17807",
+          "category": "일반",
+          "title": "배속버그 ㄹㅇ개꿀이네 ㅋㅋ",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 76,
+          "likes": 0,
+          "utcIso": "2026-10-05T12:49:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "bugs"
+          ],
+          "engagement": 96,
+          "body": "이거 시스템으로 넣어주면 안되냐는 글.",
+          "topComments": [
+            "나도 할래"
+          ]
+        },
+        {
+          "id": "17806",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17806",
+          "category": "일반",
+          "title": "뱃지 락걸렸나",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 51,
+          "likes": 0,
+          "utcIso": "2026-10-05T12:23:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "bugs"
+          ],
+          "engagement": 71,
+          "body": "'아오' 한마디."
+        },
+        {
+          "id": "17805",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17805",
+          "category": "일반",
+          "title": "뽑기",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 43,
+          "likes": 0,
+          "utcIso": "2026-10-05T11:59:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 63,
+          "body": "페이·플레어를 뽑는 게 좋은지, 나중에 티어 높은 애들을 못 뽑는 건 아닌지 묻는 글.",
+          "topComments": [
+            "그렇게 생각하면 뽑아야 할 애들이 몇 없다, 페이는 몰라도 플레어는 뽑기를 추천"
+          ]
+        },
+        {
+          "id": "17804",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17804",
+          "category": "일반",
+          "title": "두 계정 중 선택 조언",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 61,
+          "likes": 0,
+          "utcIso": "2026-10-05T08:30:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "newbie_returning",
+            "guide",
+            "gacha"
+          ],
+          "engagement": 81,
+          "body": "친구가 주는 남는 계정 두 개 중 어느 쪽이 나은지 묻는 글.",
+          "topComments": [
+            "리세 기준 1번은 리온·맨디·이네리스·엔보이, 2번은 리온·맨디·에스텔·아스트레아·엔보이가 유효, 어차피 찍먹용이면 아무거나 골라도 된다, 돈 쓸 거면 리세계 추천"
+          ]
+        },
+        {
+          "id": "17802",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17802",
+          "category": "일반",
+          "title": "스읍 어카지",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 81,
+          "likes": 0,
+          "utcIso": "2026-10-05T08:15:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guild_recruit"
+          ],
+          "engagement": 121,
+          "body": "길레 랜덤 추첨을 하려 했는데 3일 미접자가 2명이라 내일 해야겠다는 길드 운영 푸념."
+        },
+        {
+          "id": "17801",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17801",
+          "category": "일반",
+          "title": "레이드 존나 귀찮네",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 79,
+          "likes": 0,
+          "utcIso": "2026-10-05T04:00:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 99,
+          "body": "조합 찾기도 귀찮아 딸칵하겠다는 레이드 피로 푸념."
+        },
+        {
+          "id": "17800",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17800",
+          "category": "일반",
+          "title": "심심하고 할거없어서",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 90,
+          "likes": 0,
+          "utcIso": "2026-10-05T03:40:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 170,
+          "topComments": [
+            "돈 많은 청년",
+            "와 PVP 최강이라도 되시려고요?"
+          ]
+        },
+        {
+          "id": "17799",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17799",
+          "category": "공식",
+          "title": "[커뮤니티] 고백 대작전! 사랑의 ♥️게이지를 채워줘!",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 83,
+          "likes": 2,
+          "utcIso": "2026-10-05T02:02:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event",
+            "notices"
+          ],
+          "engagement": 163,
+          "body": "공식 커뮤니티 이벤트 공지."
+        },
+        {
+          "id": "17798",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17798",
+          "category": "일반",
+          "title": "10뽑에 떠도 비틱이 아님 정상 보통임",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 63,
+          "likes": 0,
+          "utcIso": "2026-10-05T01:19:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 63,
+          "body": "정상적으로만 나왔으면 좋겠다, 풀천이 비틱이라는 취지(돈 많은 것)."
+        },
+        {
+          "id": "17797",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17797",
+          "category": "일반",
+          "title": "결장 기록보니까 존나 역겨워짐 ㅋㅋ",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 100,
+          "likes": 0,
+          "utcIso": "2026-10-04T22:05:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 120,
+          "body": "'비비적비비적 ㅋㅋ'",
+          "topComments": [
+            "ㅋㅋㅋㅋㅋㅋㅋ 땀내 그득하노"
+          ]
+        }
+      ],
+      "stats": {
+        "notices": 2,
+        "bugs": 2,
+        "negative": 1,
+        "positive": 0,
+        "competitor_mentions": 0,
+        "newbie_returning": 1,
+        "guild_recruit": 1,
+        "gacha": 3,
+        "event": 2,
+        "balance": 1,
+        "guide": 1,
+        "chitchat": 3,
+        "total": 12,
+        "real_posts": 12,
+        "total_views": 821,
+        "total_comments": 23,
+        "total_likes": 2,
+        "sentiment_score": -0.083,
+        "sentiment": "부정"
+      },
+      "topEngaging": [
+        {
+          "id": "184998908",
+          "title": "[커뮤니티] 고백 대작전! 사랑의 게이지를 채워줘!",
+          "url": "https://arca.live/b/erphis/184998908",
+          "source": "arca",
+          "views": 55,
+          "comments": 6,
+          "likes": 0,
+          "engagement": 175,
+          "category": "게임공지",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "17800",
+          "title": "심심하고 할거없어서",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17800",
+          "source": "dc",
+          "views": 90,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 170,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "17799",
+          "title": "[커뮤니티] 고백 대작전! 사랑의 ♥️게이지를 채워줘!",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17799",
+          "source": "dc",
+          "views": 83,
+          "comments": 1,
+          "likes": 2,
+          "engagement": 163,
+          "category": "공식",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "17802",
+          "title": "스읍 어카지",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17802",
+          "source": "dc",
+          "views": 81,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 121,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "17797",
+          "title": "결장 기록보니까 존나 역겨워짐 ㅋㅋ",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17797",
+          "source": "dc",
+          "views": 100,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 120,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "185001195",
+          "title": "하루 1씹덕송 추천 4일차",
+          "url": "https://arca.live/b/erphis/185001195",
+          "source": "arca",
+          "views": 39,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 119,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "17801",
+          "title": "레이드 존나 귀찮네",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17801",
+          "source": "dc",
+          "views": 79,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 99,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "17807",
+          "title": "배속버그 ㄹㅇ개꿀이네 ㅋㅋ",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17807",
+          "source": "dc",
+          "views": 76,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 96,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "17804",
+          "title": "두 계정 중 선택 조언",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17804",
+          "source": "dc",
+          "views": 61,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 81,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "17806",
+          "title": "뱃지 락걸렸나",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17806",
+          "source": "dc",
+          "views": 51,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 71,
+          "category": "일반",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis": {
+        "dailySummary": "에르피스는 12건(아카 2 / DC 10)으로 전날(23건)보다 크게 줄어든 한산한 하루였다. 공식 '고백 대작전' 커뮤니티 이벤트 공지가 올라왔고, DC에서는 '배속버그'가 개꿀이라며 시스템에 넣어달라는 글과 뱃지 락 의문이 눈에 띄었다. 그 외에는 레이드가 귀찮다는 피로감과 길레 운영 푸념, 계정·뽑기 조언 질문 정도였고 정서는 중립에 가까웠다.",
+        "topIssues": [
+          {
+            "title": "심심하고 할거없어서",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17800",
+            "tone": "neutral",
+            "id": "17800",
+            "source": "dc",
+            "comments": 4,
+            "views": 90,
+            "likes": 0,
+            "bodySummary": "'심심하고 할거없어서'라는 제목만 있는 글(본문 없음). 댓글은 돈 많은 청년이라는 놀림과 PVP 최강이라도 되려는 거냐는 농담이었다."
+          },
+          {
+            "title": "[커뮤니티] 고백 대작전! 사랑의 게이지를 채워줘!",
+            "url": "https://arca.live/b/erphis/184998908",
+            "tone": "neutral",
+            "id": "184998908",
+            "source": "arca",
+            "comments": 6,
+            "views": 55,
+            "likes": 0,
+            "bodySummary": "공식 '고백 대작전! 사랑의 게이지를 채워줘!' 커뮤니티 이벤트 공지(본문 거의 없음). 댓글은 단문 반응 정도였다."
+          },
+          {
+            "title": "[커뮤니티] 고백 대작전! 사랑의 ♥️게이지를 채워줘!",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17799",
+            "tone": "neutral",
+            "id": "17799",
+            "source": "dc",
+            "comments": 1,
+            "views": 83,
+            "likes": 2,
+            "bodySummary": "같은 '고백 대작전' 공식 이벤트 공지의 DC 게시글. 추천 2건, 댓글 1건으로 반응은 적었다."
+          },
+          {
+            "title": "스읍 어카지",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17802",
+            "tone": "neutral",
+            "id": "17802",
+            "source": "dc",
+            "comments": 2,
+            "views": 81,
+            "likes": 0,
+            "bodySummary": "길레 랜덤 추첨을 하려 했는데 3일 미접자가 2명이라 내일 해야겠다는 길드 운영 푸념. 댓글 2건."
+          },
+          {
+            "title": "배속버그 ㄹㅇ개꿀이네 ㅋㅋ",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17807",
+            "tone": "neutral",
+            "id": "17807",
+            "source": "dc",
+            "comments": 1,
+            "views": 76,
+            "likes": 0,
+            "bodySummary": "'배속버그 ㄹㅇ 개꿀이네'라며 시스템으로 넣어주면 안 되냐고 쓴 글. 댓글은 나도 하고 싶다는 공감이었다."
+          }
+        ],
+        "bugReports": [
+          {
+            "title": "배속버그 ㄹㅇ개꿀이네 ㅋㅋ",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17807",
+            "id": "17807",
+            "source": "dc",
+            "detail": "배속 관련 버그를 이용 중이라며 시스템에 정식 반영해 달라는 글(댓글 1건, 구체 재현 방법 없음). 뱃지 락 의문 글(17806)도 같은 시간대 등장."
+          }
+        ],
+        "competitorMentions": [],
+        "trends": [
+          "채널 활동 12건 (아카 2 / DC 10) — 전일(23건) 대비 감소",
+          "공식 '고백 대작전' 커뮤니티 이벤트 공지",
+          "배속버그 활용 언급, 레이드·길레 피로"
+        ],
+        "watchlist": [
+          "배속버그 언급 확산 여부·운영 대응",
+          "콘텐츠 공백 정서 지속 여부",
+          "고백 대작전 이벤트 참여 반응"
+        ],
+        "keywords": [
+          {
+            "word": "배속·뱃지 이슈",
+            "count": 2,
+            "ids": [
+              "17807",
+              "17806"
+            ]
+          },
+          {
+            "word": "가챠·비틱 논쟁",
+            "count": 2,
+            "ids": [
+              "17798",
+              "17805"
+            ]
+          },
+          {
+            "word": "뉴비·계정 조언",
+            "count": 2,
+            "ids": [
+              "17804",
+              "17805"
+            ]
+          },
+          {
+            "word": "레이드·길레 피로(불만)",
+            "count": 2,
+            "ids": [
+              "17801",
+              "17802"
+            ]
+          },
+          {
+            "word": "고백 대작전 이벤트",
+            "count": 2,
+            "ids": [
+              "17799",
+              "184998908"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "searchTrends": null,
+  "generatedAt": "2026-10-06T00:22:40+00:00"
+}
