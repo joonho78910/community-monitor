@@ -1,0 +1,931 @@
+{
+  "date": "2026-10-11",
+  "games": {
+    "anchorpanic": {
+      "name": "anchorpanic",
+      "date": "2026-10-11",
+      "posts": [
+        {
+          "id": "185619500",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/185619500",
+          "category": "",
+          "title": "인싸챈 또 시작이네",
+          "author": "yems",
+          "comments": 6,
+          "views": 55,
+          "likes": 2,
+          "utcIso": "2026-10-11T09:34:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 235,
+          "body": "(본문 거의 없음)",
+          "topComments": [
+            "다 놀러갔구나ㅏㅏ"
+          ]
+        },
+        {
+          "id": "185582726",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/185582726",
+          "category": "",
+          "title": "또 연휴나고 다 사라졌네",
+          "author": "그런거몰라요",
+          "comments": 6,
+          "views": 86,
+          "likes": 2,
+          "utcIso": "2026-10-11T01:24:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 266,
+          "body": "연휴가 끝나자 유저들이 다 사라졌다는 푸념(본문 없음).",
+          "topComments": [
+            "내연휴를 돌려줘ㅓㅓ",
+            "눈을 떴구나 다시 감아라 콘"
+          ]
+        }
+      ],
+      "stats": {
+        "notices": 0,
+        "bugs": 0,
+        "negative": 1,
+        "positive": 0,
+        "competitor_mentions": 0,
+        "newbie_returning": 0,
+        "guild_recruit": 0,
+        "gacha": 0,
+        "event": 0,
+        "balance": 0,
+        "guide": 0,
+        "chitchat": 2,
+        "total": 2,
+        "real_posts": 2,
+        "total_views": 141,
+        "total_comments": 12,
+        "total_likes": 4,
+        "sentiment_score": -0.5,
+        "sentiment": "부정"
+      },
+      "topEngaging": [
+        {
+          "id": "185582726",
+          "title": "또 연휴나고 다 사라졌네",
+          "url": "https://arca.live/b/anchorpanic/185582726",
+          "source": "arca",
+          "views": 86,
+          "comments": 6,
+          "likes": 2,
+          "engagement": 266,
+          "category": "",
+          "sentiment": "negative"
+        },
+        {
+          "id": "185619500",
+          "title": "인싸챈 또 시작이네",
+          "url": "https://arca.live/b/anchorpanic/185619500",
+          "source": "arca",
+          "views": 55,
+          "comments": 6,
+          "likes": 2,
+          "engagement": 235,
+          "category": "",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis": {
+        "dailySummary": "앵커패닉은 2건뿐인 극도로 한산한 일요일이었다. 연휴가 끝나자 사람들이 다 사라졌다는 푸념과 다들 놀러 갔다는 농담 댓글이 전부였고, 이슈로 번질 만한 게임 내용 글은 없었다. DC 앵커패닉 갤러리는 이날도 글이 확인되지 않았다. 정서는 가벼운 아쉬움 정도로 무난했다.",
+        "topIssues": [
+          {
+            "title": "또 연휴나고 다 사라졌네",
+            "url": "https://arca.live/b/anchorpanic/185582726",
+            "tone": "negative",
+            "id": "185582726",
+            "source": "arca",
+            "comments": 6,
+            "views": 86,
+            "likes": 2,
+            "bodySummary": "연휴가 끝나자 유저들이 다 사라졌다는 푸념(본문 없음). 댓글은 내 연휴를 돌려달라는 반응과 눈을 떴으니 다시 감으라는 농담."
+          },
+          {
+            "title": "인싸챈 또 시작이네",
+            "url": "https://arca.live/b/anchorpanic/185619500",
+            "tone": "neutral",
+            "id": "185619500",
+            "source": "arca",
+            "comments": 6,
+            "views": 55,
+            "likes": 2,
+            "bodySummary": "인싸챈이 또 시작이라는 제목만 있는 글(본문 거의 없음). 댓글은 다들 놀러 갔다는 한마디."
+          }
+        ],
+        "bugReports": [],
+        "competitorMentions": [],
+        "trends": [
+          "채널 활동 2건 — 전일(7건) 대비 감소",
+          "연휴 종료 후 유저 활동 위축",
+          "DC 앵커패닉 갤러리 글 확인 안 됨(목록 응답 비어 있음)"
+        ],
+        "watchlist": [
+          "평일 복귀 후 채널 활동량 회복 여부",
+          "DC 앵커패닉 갤러리 크롤링 누락 여부"
+        ],
+        "keywords": [
+          {
+            "word": "연휴 후 한산(푸념)",
+            "count": 2,
+            "ids": [
+              "185582726",
+              "185619500"
+            ]
+          }
+        ]
+      }
+    },
+    "erpis": {
+      "name": "erpis",
+      "date": "2026-10-11",
+      "posts": [
+        {
+          "id": "185563250",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/185563250",
+          "category": "질문",
+          "title": "레이드 훈수 좀...",
+          "author": "분재게이머",
+          "comments": 4,
+          "views": 70,
+          "likes": 0,
+          "utcIso": "2026-10-10T15:47:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance",
+            "guide"
+          ],
+          "engagement": 150,
+          "body": "스샷 1군 8마리를 배치해 3번 반복해 치는데 점수가 더 잘 나올 덱 구성, 3회 각각 다른 덱을 써야 하는지, 배치 팁을 묻는 글. 댓글은 지금 갠레는 레이븐보다 아울이 낫고 고스트사무라이를 빼라는 조언이었고, 따라 하니 20만점 올랐다는 후기도 있다.",
+          "topComments": [
+            "아무래도 지금 갠레는 레이븐보다 아울이 낫겠죠",
+            "고스트사무라이도 빼고 엔조이 ㄱ",
+            "엔조이랑 아울 확인요!",
+            "덕분에 20만점 업!! 감사 ㅋㅋ"
+          ]
+        },
+        {
+          "id": "17950",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17950",
+          "category": "일반",
+          "title": "스텔라 악몽 고점덱에서 쓰이나보네",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 59,
+          "likes": 0,
+          "utcIso": "2026-10-11T13:44:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 79
+        },
+        {
+          "id": "17949",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17949",
+          "category": "일반",
+          "title": "성광사나오고 피빕공격자주 들어오네",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 51,
+          "likes": 0,
+          "utcIso": "2026-10-11T13:21:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 91,
+          "body": "그냥 딸칵으로 1등하게 해달라는 한 줄 글."
+        },
+        {
+          "id": "17948",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17948",
+          "category": "일반",
+          "title": "월보 리트할 생각은 없어짐ㅅㄱ",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 44,
+          "likes": 0,
+          "utcIso": "2026-10-11T13:00:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 44
+        },
+        {
+          "id": "17947",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17947",
+          "category": "일반",
+          "title": "피빕 in10 보상 내려놓으니까 좀 편한게",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 64,
+          "likes": 0,
+          "utcIso": "2026-10-11T12:56:00Z",
+          "sentiment": "positive",
+          "tags": [
+            "balance",
+            "guide"
+          ],
+          "engagement": 124,
+          "body": "레이드 때 배지를 돌려써도 원상복구가 필요 없고, 접은 유저 자리에 문지기를 세워두니 매일 오던 공격이 사라져 편해졌다는 팁. 댓글은 문지기를 세우면 공격이 줄어든다는 공감과 방어 순위 푸념.",
+          "topComments": [
+            "어디에나 접은 문지기가 있군",
+            "문지기 세워두기 전까지만 해도 매일 공격 적게는 10번 많으면 20번까지도 왔었는데 세워두고 나서 공격이 이젠 안와서 편하긴 하더라"
+          ]
+        },
+        {
+          "id": "17946",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17946",
+          "category": "일반",
+          "title": "Pvp",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 47,
+          "likes": 0,
+          "utcIso": "2026-10-11T12:31:00Z",
+          "sentiment": "positive",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 87,
+          "body": "막판에 자리를 뺏고 3연 방어에 성공했다는 자랑."
+        },
+        {
+          "id": "17945",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17945",
+          "category": "일반",
+          "title": "씹 4번 튕겼는데 2번이 기갱각",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 31,
+          "likes": 0,
+          "utcIso": "2026-10-11T12:25:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 71,
+          "body": "지랄이라는 한 줄 불만. 댓글은 폰 과열 때문 아니냐, 리트 50번쯤 하면 앱이 튕긴다는 반응.",
+          "topComments": [
+            "이정도면 폰이 너무 과열되서 그런거 아님...?",
+            "앱플도 리트50번쯤하면 튕김"
+          ]
+        },
+        {
+          "id": "17944",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17944",
+          "category": "일반",
+          "title": "렉시 퇴물된다매",
+          "author": "ㅇㅇ",
+          "comments": 8,
+          "views": 89,
+          "likes": 0,
+          "utcIso": "2026-10-11T12:20:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "balance",
+            "gacha"
+          ],
+          "engagement": 249,
+          "body": "에스텔·가디언·성광사가 나올 때마다 렉시가 퇴물이 된다는 얘기와 달리 사기캐였다며 한섭 1주년까지 리트하게 생겼다고 토로한 글. 댓글은 누가 퇴물이라 했느냐는 반응.",
+          "topComments": [
+            "미친 에숭이들",
+            "누가 퇴물된데?"
+          ]
+        },
+        {
+          "id": "17943",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17943",
+          "category": "일반",
+          "title": "지금 월보 랭크 갱신 안되는거 같긴한데",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 38,
+          "likes": 0,
+          "utcIso": "2026-10-11T11:15:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 38
+        },
+        {
+          "id": "17942",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17942",
+          "category": "일반",
+          "title": "그니까 황금라인 페이 플레어 안리스 쉐리",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 67,
+          "likes": 0,
+          "utcIso": "2026-10-11T10:56:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha",
+            "balance"
+          ],
+          "engagement": 167,
+          "body": "페이 명함·플레어 3각·안리스 3각·쉐리 3각 이상이 정석이냐는 확인 글. 댓글은 플레어 명함·안리스 3각·쉐리 명함이 정배라는 답과 페이는 필수가 아니라는 반응.",
+          "topComments": [
+            "플레어 명함 안리스 3각 쉐리 명함 이게 정배",
+            "페이는 아니던데 필수는",
+            "지갑마니열리겠군"
+          ]
+        },
+        {
+          "id": "17941",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17941",
+          "category": "일반",
+          "title": "연습) ㅍ",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 32,
+          "likes": 0,
+          "utcIso": "2026-10-11T10:48:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 32
+        },
+        {
+          "id": "17940",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17940",
+          "category": "일반",
+          "title": "오늘은 상시10뽑하는날 물떠놓고 기도합니다",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 63,
+          "likes": 0,
+          "utcIso": "2026-10-11T10:22:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 123,
+          "body": "상시 10연차에서 리온·레이븐·미암 중 하나가 나오길 비는 글.",
+          "topComments": [
+            "보나마나 그거 ㅇㅇ",
+            "제발 안렌 비 카구야 안비카ㅠ"
+          ]
+        },
+        {
+          "id": "17939",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17939",
+          "category": "일반",
+          "title": "아 시발",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 92,
+          "likes": 0,
+          "utcIso": "2026-10-11T08:08:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "event"
+          ],
+          "engagement": 172,
+          "body": "굿즈 과금 공략이라 당연히 제외일 줄 알았는데 이벤트에 당첨됐었다며 아쉬워하는 글. 댓글은 누군가에겐 1위 공략이라는 반응.",
+          "topComments": [
+            "누군가에겐 1위 공략"
+          ]
+        },
+        {
+          "id": "17938",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17938",
+          "category": "일반",
+          "title": "몬나를 무시하지마라",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 63,
+          "likes": 0,
+          "utcIso": "2026-10-11T07:21:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 63
+        },
+        {
+          "id": "17937",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17937",
+          "category": "일반",
+          "title": "천만단 합류",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 83,
+          "likes": 0,
+          "utcIso": "2026-10-11T06:58:00Z",
+          "sentiment": "positive",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 103
+        },
+        {
+          "id": "17935",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17935",
+          "category": "일반",
+          "title": "고점 기회 튕겨서 날아가는거 진짜 보상 없냐",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 62,
+          "likes": 0,
+          "utcIso": "2026-10-11T01:50:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 122,
+          "body": "튕김으로 고점 기회가 날아가는 것에 대한 보상이 없느냐는 불만. 튕기는 건 대부분 고점이라는 지적, 튕긴 뒤 한 번 더 기회가 있어도 후반 크리티컬이 안 뜬다는 반응이 이어짐.",
+          "topComments": [
+            "이제 이 글 썻으니깐 고점 자체가 안나오는 병 걸림",
+            "팅기고 고점 기회 1번 더주던데 후반에 크리 안뜨더라"
+          ]
+        },
+        {
+          "id": "17934",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17934",
+          "category": "질문",
+          "title": "당첨자 안내의 게임 상품은 언제 주는지 아는사람?",
+          "author": "ㅇㅇ",
+          "comments": 7,
+          "views": 52,
+          "likes": 0,
+          "utcIso": "2026-10-11T01:45:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "engagement": 192,
+          "body": "설문까지 제출했는데 이벤트 당첨 상품이 아직 안 왔다며 지급 시점을 묻는 글. 댓글은 고백대작전 이벤트 보상과 함께 이달 안, 아마 16일 안에 들어올 것이라는 답.",
+          "topComments": [
+            "반주년때 이벤한 사람들이 2달이 지난 지금에야 받고 있는걸...",
+            "못해도 이번달내로는 들어올거고 아마 16일 내로 들어오지 않을까 고백대작전 이벤 보상이랑 같이 들어올거 같은데"
+          ]
+        },
+        {
+          "id": "17933",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17933",
+          "category": "질문",
+          "title": "미스터리 사건 22개 질문좀",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 62,
+          "likes": 0,
+          "utcIso": "2026-10-11T01:24:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 162,
+          "body": "미스터리 22사건 조건(스테이지별 사건 수)을 이해한 게 맞는지 묻는 글. 댓글은 1스테를 제외하고 2~5스테에서 행상인·조석갯벌만 나오면 6스테가 열리며, 3스테 6사건 루트가 안 되면 리셋하라는 안내.",
+          "topComments": [
+            "굳이 3~4스테에서 행상인이랑 조석갯벌 나와야하는건 아님 1스테 제외하고 2~5스테 사이에서 두개 나오기만 하면 6스테 열리는걸로 알고 있음",
+            "3스테에서 6사건 루트가 안되면 바로 리셋하면 됨"
+          ]
+        },
+        {
+          "id": "17932",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17932",
+          "category": "일반",
+          "title": "기갱이 안돼..",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 48,
+          "likes": 0,
+          "utcIso": "2026-10-11T01:11:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 68
+        },
+        {
+          "id": "17931",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17931",
+          "category": "일반",
+          "title": "각인은 증표안사면 느린듯..",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 55,
+          "likes": 0,
+          "utcIso": "2026-10-10T23:28:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 55
+        },
+        {
+          "id": "17930",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17930",
+          "category": "일반",
+          "title": "오픈유저 각인 상황",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 129,
+          "likes": 0,
+          "utcIso": "2026-10-10T20:39:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "balance"
+          ],
+          "engagement": 209,
+          "body": "풀과금 유저는 올10까지 찍히려나 궁금해하는 글. 댓글에서 각자 각인 레벨 구성(8/8/9, 10/8/8 등)을 공유하며 탐색 3단계 이후 오팔 투자 효율은 체감이 적다는 반응.",
+          "topComments": [
+            "8 8 9 / 10 8 8 / 10 8 8 / 10 8 8 탐색 3단계 열고선 오팔 안씀",
+            "난 3단계 열고 3개다 풀오팔 꼬박꼬박 하다가 한 2달전부터 안썻는데 별차이안나네"
+          ]
+        },
+        {
+          "id": "17929",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17929",
+          "category": "일반",
+          "title": "46일차 드디어 각인 첫 9레벨",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 72,
+          "likes": 0,
+          "utcIso": "2026-10-10T17:13:00Z",
+          "sentiment": "positive",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 92
+        },
+        {
+          "id": "17928",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17928",
+          "category": "일반",
+          "title": "진짜 이번엔 스텔라 30뽑만 한다",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 85,
+          "likes": 0,
+          "utcIso": "2026-10-10T16:31:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 145,
+          "body": "30뽑에 안 나오면 가차없이 거르겠다는 다짐 글.",
+          "topComments": [
+            "니ㅡ도 40뽑만딱한다",
+            "예의 3각 ㄱ"
+          ]
+        },
+        {
+          "id": "17927",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17927",
+          "category": "일반",
+          "title": "빛나는 증표 3개 모았는데 누구한테 쓰면 좋을까요?",
+          "author": "ㅇㅇ",
+          "comments": 10,
+          "views": 87,
+          "likes": 0,
+          "utcIso": "2026-10-10T16:09:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "gacha"
+          ],
+          "engagement": 287,
+          "body": "빛나는 증표 3개를 지금 캐릭터 중 누구에게 쓸지, 신캐를 기다릴지 묻는 글. 댓글은 안리스(버퍼+힐러)가 가장 낫다는 추천.",
+          "topComments": [
+            "안리스가 가장 나아보이긴 함 인권버퍼+힐러라",
+            "답변 주신 분들 감사드려요^^"
+          ]
+        }
+      ],
+      "stats": {
+        "notices": 0,
+        "bugs": 0,
+        "negative": 5,
+        "positive": 4,
+        "competitor_mentions": 0,
+        "newbie_returning": 0,
+        "guild_recruit": 0,
+        "gacha": 5,
+        "event": 2,
+        "balance": 14,
+        "guide": 7,
+        "chitchat": 2,
+        "total": 24,
+        "real_posts": 24,
+        "total_views": 1545,
+        "total_comments": 69,
+        "total_likes": 0,
+        "sentiment_score": -0.042,
+        "sentiment": "중립"
+      },
+      "topEngaging": [
+        {
+          "id": "17927",
+          "title": "빛나는 증표 3개 모았는데 누구한테 쓰면 좋을까요?",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17927",
+          "source": "dc",
+          "views": 87,
+          "comments": 10,
+          "likes": 0,
+          "engagement": 287,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "17944",
+          "title": "렉시 퇴물된다매",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17944",
+          "source": "dc",
+          "views": 89,
+          "comments": 8,
+          "likes": 0,
+          "engagement": 249,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "17930",
+          "title": "오픈유저 각인 상황",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17930",
+          "source": "dc",
+          "views": 129,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 209,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "17934",
+          "title": "당첨자 안내의 게임 상품은 언제 주는지 아는사람?",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17934",
+          "source": "dc",
+          "views": 52,
+          "comments": 7,
+          "likes": 0,
+          "engagement": 192,
+          "category": "질문",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "17939",
+          "title": "아 시발",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17939",
+          "source": "dc",
+          "views": 92,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 172,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "17942",
+          "title": "그니까 황금라인 페이 플레어 안리스 쉐리",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17942",
+          "source": "dc",
+          "views": 67,
+          "comments": 5,
+          "likes": 0,
+          "engagement": 167,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "17933",
+          "title": "미스터리 사건 22개 질문좀",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17933",
+          "source": "dc",
+          "views": 62,
+          "comments": 5,
+          "likes": 0,
+          "engagement": 162,
+          "category": "질문",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "185563250",
+          "title": "레이드 훈수 좀...",
+          "url": "https://arca.live/b/erphis/185563250",
+          "source": "arca",
+          "views": 70,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 150,
+          "category": "질문",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "17928",
+          "title": "진짜 이번엔 스텔라 30뽑만 한다",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17928",
+          "source": "dc",
+          "views": 85,
+          "comments": 3,
+          "likes": 0,
+          "engagement": 145,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "17947",
+          "title": "피빕 in10 보상 내려놓으니까 좀 편한게",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17947",
+          "source": "dc",
+          "views": 64,
+          "comments": 3,
+          "likes": 0,
+          "engagement": 124,
+          "category": "일반",
+          "sentiment": "positive"
+        }
+      ],
+      "analysis": {
+        "dailySummary": "에르피스는 DC 갤러리 중심으로 24건이 올라와 전날보다 약간 줄었다. 갤러리의 주된 불만은 리트·기갱 중 앱이 튕겨 고점 기회가 날아가는 문제로, 튕김에 대한 보상이 없느냐는 글과 폰 과열 탓이라는 반응이 나왔다. 렉시가 퇴물이 된다는 말과 달리 계속 리트해야 한다는 푸념, 이벤트 당첨 상품이 언제 오느냐는 문의도 눈에 띄었다. 한편 각인 레벨 공유와 방어 문지기 팁, 천만단 합류 같은 후기는 긍정적이었으나 전반 정서는 약한 부정이었다.",
+        "topIssues": [
+          {
+            "title": "렉시 퇴물된다매",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17944",
+            "tone": "negative",
+            "id": "17944",
+            "source": "dc",
+            "comments": 8,
+            "views": 89,
+            "likes": 0,
+            "bodySummary": "에스텔·가디언·성광사가 나오면 렉시가 퇴물이 된다더니 사기캐였다며 한섭 1주년까지 리트하게 생겼다고 토로. 댓글은 누가 퇴물이라 했느냐는 반응."
+          },
+          {
+            "title": "빛나는 증표 3개 모았는데 누구한테 쓰면 좋을까요?",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17927",
+            "tone": "neutral",
+            "id": "17927",
+            "source": "dc",
+            "comments": 10,
+            "views": 87,
+            "likes": 0,
+            "bodySummary": "빛나는 증표 3개를 누구에게 쓸지 묻는 글. 댓글은 안리스(버퍼+힐러)가 가장 낫다는 추천이었고 작성자가 감사를 전함."
+          },
+          {
+            "title": "당첨자 안내의 게임 상품은 언제 주는지 아는사람?",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17934",
+            "tone": "neutral",
+            "id": "17934",
+            "source": "dc",
+            "comments": 7,
+            "views": 52,
+            "likes": 0,
+            "bodySummary": "설문까지 제출한 이벤트 당첨 게임 상품이 아직 안 왔다며 지급 시점을 묻는 글. 댓글은 고백대작전 보상과 함께 이번 달 안, 16일 안에 들어올 것이라는 답."
+          },
+          {
+            "title": "고점 기회 튕겨서 날아가는거 진짜 보상 없냐",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17935",
+            "tone": "negative",
+            "id": "17935",
+            "source": "dc",
+            "comments": 3,
+            "views": 62,
+            "likes": 0,
+            "bodySummary": "튕김으로 고점 기회가 날아가는 것에 보상이 없느냐는 불만. 댓글은 튕기는 건 대부분 고점이라는 지적과 재기회에도 후반 크리티컬이 안 뜬다는 반응."
+          },
+          {
+            "title": "오픈유저 각인 상황",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=17930",
+            "tone": "neutral",
+            "id": "17930",
+            "source": "dc",
+            "comments": 4,
+            "views": 129,
+            "likes": 0,
+            "bodySummary": "풀과금 유저는 올10 각인이 찍히려나 궁금해하는 글. 댓글에서 각자 각인 구성을 공유하며 탐색 3단계 이후 오팔 투자 효율은 체감이 적다는 의견."
+          }
+        ],
+        "bugReports": [],
+        "competitorMentions": [],
+        "trends": [
+          "채널 활동 24건 (아카 1 / DC 23) — 전일(37건) 대비 감소",
+          "튕김·기갱 불만과 보상 요구",
+          "이벤트 당첨 상품 지급 지연 문의",
+          "각인·증표 육성 정보 공유"
+        ],
+        "watchlist": [
+          "앱 튕김(과열 의심) 불만 확산 여부",
+          "이벤트 당첨 상품 16일 지급 이행",
+          "렉시·스텔라 평가 변화"
+        ],
+        "keywords": [
+          {
+            "word": "월보·갠레·레이드 구성",
+            "count": 5,
+            "ids": [
+              "185563250",
+              "17948",
+              "17943",
+              "17942",
+              "17944"
+            ]
+          },
+          {
+            "word": "튕김·기갱 불만(불만)",
+            "count": 3,
+            "ids": [
+              "17945",
+              "17932",
+              "17935"
+            ]
+          },
+          {
+            "word": "각인·증표 육성",
+            "count": 4,
+            "ids": [
+              "17931",
+              "17930",
+              "17929",
+              "17927"
+            ]
+          },
+          {
+            "word": "신캐 평가(스텔라·렉시)",
+            "count": 4,
+            "ids": [
+              "17950",
+              "17949",
+              "17944",
+              "17928"
+            ]
+          },
+          {
+            "word": "뽑기 기도·고민",
+            "count": 3,
+            "ids": [
+              "17940",
+              "17928",
+              "17942"
+            ]
+          },
+          {
+            "word": "이벤트 상품 지연·당첨 문의",
+            "count": 2,
+            "ids": [
+              "17934",
+              "17939"
+            ]
+          },
+          {
+            "word": "피빕·방어 순위",
+            "count": 3,
+            "ids": [
+              "17947",
+              "17946",
+              "17949"
+            ]
+          },
+          {
+            "word": "미스터리 사건 질문",
+            "count": 1,
+            "ids": [
+              "17933"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "searchTrends": null,
+  "generatedAt": "2026-10-12T00:24:53+00:00"
+}
