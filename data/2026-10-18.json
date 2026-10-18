@@ -1,0 +1,771 @@
+{
+  "date": "2026-10-18",
+  "games": {
+    "anchorpanic": {
+      "name": "anchorpanic",
+      "date": "2026-10-18",
+      "posts": [
+        {
+          "id": "186295345",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/186295345",
+          "category": "",
+          "title": "월요일에는 행정관이 공지써줄라나",
+          "author": "yems",
+          "comments": 4,
+          "views": 58,
+          "likes": 0,
+          "utcIso": "2026-10-18T05:51:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "engagement": 138,
+          "body": "월요일에 운영진이 공지를 올려줄지 기다리는 글."
+        },
+        {
+          "id": "186291688",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/186291688",
+          "category": "질문",
+          "title": "키스 개조는 어케 가져가??",
+          "author": "DAHliA",
+          "comments": 5,
+          "views": 70,
+          "likes": 0,
+          "utcIso": "2026-10-18T05:10:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 170,
+          "body": "키스 개조 방향을 묻는 육성 질문."
+        },
+        {
+          "id": "186289012",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/186289012",
+          "category": "",
+          "title": "앵부이 1파티 모듈 대충 다캤어",
+          "author": "DAHliA",
+          "comments": 6,
+          "views": 70,
+          "likes": 3,
+          "utcIso": "2026-10-18T04:36:00Z",
+          "sentiment": "positive",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 280,
+          "body": "1파티 모듈 작업을 대충 마쳤다는 성취 공유글(추천 3)."
+        },
+        {
+          "id": "186288681",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/186288681",
+          "category": "질문",
+          "title": "아직1.5주년인가요?",
+          "author": "Dkdmwb",
+          "comments": 9,
+          "views": 79,
+          "likes": 0,
+          "utcIso": "2026-10-18T04:32:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "engagement": 259,
+          "body": "1.5주년 이벤트가 아직 진행 중인지 묻는 글(댓글 9)."
+        },
+        {
+          "id": "186271791",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/186271791",
+          "category": "질문",
+          "title": "화속 모듈",
+          "author": "l222",
+          "comments": 3,
+          "views": 45,
+          "likes": 0,
+          "utcIso": "2026-10-17T22:42:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 105,
+          "body": "화속 모듈 세팅 질문."
+        }
+      ],
+      "stats": {
+        "notices": 0,
+        "bugs": 0,
+        "negative": 0,
+        "positive": 1,
+        "competitor_mentions": 0,
+        "newbie_returning": 0,
+        "guild_recruit": 0,
+        "gacha": 0,
+        "event": 2,
+        "balance": 0,
+        "guide": 3,
+        "chitchat": 0,
+        "total": 5,
+        "real_posts": 5,
+        "total_views": 322,
+        "total_comments": 27,
+        "total_likes": 3,
+        "sentiment_score": 0.2,
+        "sentiment": "긍정"
+      },
+      "topEngaging": [
+        {
+          "id": "186289012",
+          "title": "앵부이 1파티 모듈 대충 다캤어",
+          "url": "https://arca.live/b/anchorpanic/186289012",
+          "source": "arca",
+          "views": 70,
+          "comments": 6,
+          "likes": 3,
+          "engagement": 280,
+          "category": "",
+          "sentiment": "positive"
+        },
+        {
+          "id": "186288681",
+          "title": "아직1.5주년인가요?",
+          "url": "https://arca.live/b/anchorpanic/186288681",
+          "source": "arca",
+          "views": 79,
+          "comments": 9,
+          "likes": 0,
+          "engagement": 259,
+          "category": "질문",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "186291688",
+          "title": "키스 개조는 어케 가져가??",
+          "url": "https://arca.live/b/anchorpanic/186291688",
+          "source": "arca",
+          "views": 70,
+          "comments": 5,
+          "likes": 0,
+          "engagement": 170,
+          "category": "질문",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "186295345",
+          "title": "월요일에는 행정관이 공지써줄라나",
+          "url": "https://arca.live/b/anchorpanic/186295345",
+          "source": "arca",
+          "views": 58,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 138,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "186271791",
+          "title": "화속 모듈",
+          "url": "https://arca.live/b/anchorpanic/186271791",
+          "source": "arca",
+          "views": 45,
+          "comments": 3,
+          "likes": 0,
+          "engagement": 105,
+          "category": "질문",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis": {
+        "dailySummary": "앵커패닉은 이날 5건으로 한산했다. 운영 공지를 기다리는 글과 1.5주년이 아직 진행 중인지 묻는 글이 올라와 이벤트 관련 정보 갈증이 드러났다. 그 외에는 키스 개조 방향, 화속 모듈, 1파티 모듈 완성 인증 등 육성 이야기가 중심이었고 전반 정서는 중립에서 약한 긍정이었다.",
+        "topIssues": [
+          {
+            "title": "아직1.5주년인가요?",
+            "url": "https://arca.live/b/anchorpanic/186288681",
+            "tone": "neutral",
+            "id": "186288681",
+            "source": "arca",
+            "comments": 9,
+            "views": 79,
+            "likes": 0,
+            "bodySummary": "1.5주년이 아직 진행 중인지 묻는 글(댓글 9)."
+          },
+          {
+            "title": "앵부이 1파티 모듈 대충 다캤어",
+            "url": "https://arca.live/b/anchorpanic/186289012",
+            "tone": "positive",
+            "id": "186289012",
+            "source": "arca",
+            "comments": 6,
+            "views": 70,
+            "likes": 3,
+            "bodySummary": "1파티 모듈을 대충 다 맞췄다는 성취 공유(댓글 6, 추천 3)."
+          },
+          {
+            "title": "키스 개조는 어케 가져가??",
+            "url": "https://arca.live/b/anchorpanic/186291688",
+            "tone": "neutral",
+            "id": "186291688",
+            "source": "arca",
+            "comments": 5,
+            "views": 70,
+            "likes": 0,
+            "bodySummary": "키스 개조 방향을 묻는 육성 질문(댓글 5)."
+          },
+          {
+            "title": "월요일에는 행정관이 공지써줄라나",
+            "url": "https://arca.live/b/anchorpanic/186295345",
+            "tone": "neutral",
+            "id": "186295345",
+            "source": "arca",
+            "comments": 4,
+            "views": 58,
+            "likes": 0,
+            "bodySummary": "월요일에 운영진 공지가 나올지 기다리는 글(댓글 4)."
+          },
+          {
+            "title": "화속 모듈",
+            "url": "https://arca.live/b/anchorpanic/186271791",
+            "tone": "neutral",
+            "id": "186271791",
+            "source": "arca",
+            "comments": 3,
+            "views": 45,
+            "likes": 0,
+            "bodySummary": "화속 모듈 세팅 질문(댓글 3)."
+          }
+        ],
+        "bugReports": [],
+        "competitorMentions": [],
+        "trends": [
+          "채널 활동 5건",
+          "공지 대기"
+        ],
+        "watchlist": [
+          "월요일 공지",
+          "1.5주년 진행 여부"
+        ],
+        "keywords": [
+          {
+            "word": "1.5주년·공지 문의",
+            "count": 2,
+            "ids": [
+              "186295345",
+              "186288681"
+            ]
+          },
+          {
+            "word": "키스·모듈 육성",
+            "count": 3,
+            "ids": [
+              "186291688",
+              "186289012",
+              "186271791"
+            ]
+          }
+        ]
+      }
+    },
+    "erpis": {
+      "name": "erpis",
+      "date": "2026-10-18",
+      "posts": [
+        {
+          "id": "186295281",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/186295281",
+          "category": "",
+          "title": "갠레 소스",
+          "author": "현창",
+          "comments": 1,
+          "views": 38,
+          "likes": 0,
+          "utcIso": "2026-10-18T05:50:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 58,
+          "body": "갠레 공략 정보 요청."
+        },
+        {
+          "id": "18143",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18143",
+          "category": "일반",
+          "title": "다음 픽업을 맞춰보자",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 84,
+          "likes": 0,
+          "utcIso": "2026-10-18T12:28:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 164
+        },
+        {
+          "id": "18142",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18142",
+          "category": "일반",
+          "title": "3개월동안 이성풀로 박고",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 79,
+          "likes": 0,
+          "utcIso": "2026-10-18T12:05:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 119
+        },
+        {
+          "id": "18141",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18141",
+          "category": "질문",
+          "title": "안녕하세요! 뉴비질문드려봐요..!",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 75,
+          "likes": 0,
+          "utcIso": "2026-10-18T11:25:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "newbie_returning"
+          ],
+          "engagement": 135,
+          "body": "오늘 시작한 뉴비가 덱 조합과 이번 신캐를 모두 3성까지 가야 하는지 묻는 글. 댓글은 무소과면 명함만 따는 것도 힘드니 0티어권만 명함을 추천한다는 조언.",
+          "topComments": [
+            "무소과면 명함만 따는 것도 힘들어서 0티어권만 명함 따는 걸 추천"
+          ]
+        },
+        {
+          "id": "18140",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18140",
+          "category": "일반",
+          "title": "갠레가 예전에도 이렇게 쎄졌나?",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 48,
+          "likes": 0,
+          "utcIso": "2026-10-18T06:22:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 48
+        },
+        {
+          "id": "18139",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18139",
+          "category": "정보",
+          "title": "갠레 소스",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 132,
+          "likes": 0,
+          "utcIso": "2026-10-18T05:52:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 172,
+          "body": "갠레 공략 정리. 1덱 고점 1500만 이상, 2덱 900만 이상, 3덱 600~700만이지만 생존 난이도가 최상이라 3덱은 1초 만에 터져 유기한다는 내용. 배지·피버는 고인물이 아니면 못 쓰는 구성이라는 언급. 댓글은 '안 해' 등 반응.",
+          "topComments": [
+            "안해",
+            "않싯팔"
+          ]
+        },
+        {
+          "id": "18137",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18137",
+          "category": "일반",
+          "title": "다음 픽업은 탱커라 거름되디?",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 83,
+          "likes": 0,
+          "utcIso": "2026-10-18T05:45:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 103
+        },
+        {
+          "id": "18136",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18136",
+          "category": "일반",
+          "title": "ㅋㅋ",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 46,
+          "likes": 0,
+          "utcIso": "2026-10-18T05:36:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 46
+        },
+        {
+          "id": "18135",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18135",
+          "category": "일반",
+          "title": "갠레",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 56,
+          "likes": 0,
+          "utcIso": "2026-10-18T03:58:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 76
+        },
+        {
+          "id": "18134",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18134",
+          "category": "일반",
+          "title": "그래서 2차각인 언제 나옴",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 33,
+          "likes": 0,
+          "utcIso": "2026-10-18T03:55:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "engagement": 33
+        },
+        {
+          "id": "18133",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18133",
+          "category": "일반",
+          "title": "갠레 불쾌지수 존나 높노",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 71,
+          "likes": 0,
+          "utcIso": "2026-10-18T03:04:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 111
+        },
+        {
+          "id": "18132",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18132",
+          "category": "일반",
+          "title": "접는다",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 149,
+          "likes": 0,
+          "utcIso": "2026-10-18T00:50:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 229,
+          "body": "갠레가 게임이냐며 접겠다는 글. 댓글은 딜이 많이 나온 것 아니냐는 반론과, 5만 트라이에 생존 세계선이 한 번 나온다, 목속 보스 딜이라도 낮춰줬으면 좋겠다는 공감.",
+          "topComments": [
+            "목속 얘는 진짜 딜만이라도 낮춰줬으면 좋겠음"
+          ]
+        },
+        {
+          "id": "18130",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18130",
+          "category": "일반",
+          "title": "레이드 유기할게",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 125,
+          "likes": 0,
+          "utcIso": "2026-10-17T15:25:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 165,
+          "body": "테두리 보상만 받고 레이드를 유기하겠다는 글. 댓글은 막날쯤 되면 할 게 없어서 결국 칠 것이라는 반응.",
+          "topComments": [
+            "막날쯤되면 할꺼없어서 칠꺼면서"
+          ]
+        }
+      ],
+      "stats": {
+        "notices": 0,
+        "bugs": 0,
+        "negative": 4,
+        "positive": 0,
+        "competitor_mentions": 0,
+        "newbie_returning": 1,
+        "guild_recruit": 0,
+        "gacha": 3,
+        "event": 1,
+        "balance": 5,
+        "guide": 3,
+        "chitchat": 1,
+        "total": 13,
+        "real_posts": 13,
+        "total_views": 1019,
+        "total_comments": 22,
+        "total_likes": 0,
+        "sentiment_score": -0.308,
+        "sentiment": "부정"
+      },
+      "topEngaging": [
+        {
+          "id": "18132",
+          "title": "접는다",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18132",
+          "source": "dc",
+          "views": 149,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 229,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "18139",
+          "title": "갠레 소스",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18139",
+          "source": "dc",
+          "views": 132,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 172,
+          "category": "정보",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18130",
+          "title": "레이드 유기할게",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18130",
+          "source": "dc",
+          "views": 125,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 165,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "18143",
+          "title": "다음 픽업을 맞춰보자",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18143",
+          "source": "dc",
+          "views": 84,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 164,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18141",
+          "title": "안녕하세요! 뉴비질문드려봐요..!",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18141",
+          "source": "dc",
+          "views": 75,
+          "comments": 3,
+          "likes": 0,
+          "engagement": 135,
+          "category": "질문",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18142",
+          "title": "3개월동안 이성풀로 박고",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18142",
+          "source": "dc",
+          "views": 79,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 119,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18133",
+          "title": "갠레 불쾌지수 존나 높노",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18133",
+          "source": "dc",
+          "views": 71,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 111,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "18137",
+          "title": "다음 픽업은 탱커라 거름되디?",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18137",
+          "source": "dc",
+          "views": 83,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 103,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18135",
+          "title": "갠레",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18135",
+          "source": "dc",
+          "views": 56,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 76,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "186295281",
+          "title": "갠레 소스",
+          "url": "https://arca.live/b/erphis/186295281",
+          "source": "arca",
+          "views": 38,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 58,
+          "category": "",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis": {
+        "dailySummary": "에르피스는 갠레 불만이 하루를 지배했다. 갠레가 게임이냐며 접겠다는 글, 레이드를 유기하겠다는 글, 불쾌지수가 높다는 글이 이어졌고 특히 목속 보스의 딜이 너무 세다는 공감이 달렸다. 한편 갠레 공략 정리글은 3덱 생존 난이도가 최상이라 1초 만에 터진다고 전했다. 다음 픽업과 2차 각인 일정을 궁금해하는 글도 있어 전반 정서는 부정이었다.",
+        "topIssues": [
+          {
+            "title": "접는다",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18132",
+            "tone": "negative",
+            "id": "18132",
+            "source": "dc",
+            "comments": 4,
+            "views": 149,
+            "likes": 0,
+            "bodySummary": "갠레가 게임이냐며 접겠다는 글(댓글 4, 조회 149). 딜은 많이 나온 것 아니냐는 반론과 목속 보스 딜을 낮춰달라는 공감."
+          },
+          {
+            "title": "갠레 소스",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18139",
+            "tone": "neutral",
+            "id": "18139",
+            "source": "dc",
+            "comments": 2,
+            "views": 132,
+            "likes": 0,
+            "bodySummary": "갠레 공략 정리(댓글 2, 조회 132). 1덱 1500만·2덱 900만·3덱 600~700만 고점이나 3덱은 생존 난이도 최상이라 1초 만에 터진다."
+          },
+          {
+            "title": "레이드 유기할게",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18130",
+            "tone": "negative",
+            "id": "18130",
+            "source": "dc",
+            "comments": 2,
+            "views": 125,
+            "likes": 0,
+            "bodySummary": "테두리만 받고 레이드를 유기하겠다는 글(댓글 2). 막날에는 결국 칠 것이라는 반응."
+          },
+          {
+            "title": "안녕하세요! 뉴비질문드려봐요..!",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18141",
+            "tone": "neutral",
+            "id": "18141",
+            "source": "dc",
+            "comments": 3,
+            "views": 75,
+            "likes": 0,
+            "bodySummary": "오늘 시작한 뉴비의 덱·뽑기 질문(댓글 3). 0티어권만 명함을 추천한다는 조언."
+          },
+          {
+            "title": "갠레 불쾌지수 존나 높노",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18133",
+            "tone": "negative",
+            "id": "18133",
+            "source": "dc",
+            "comments": 2,
+            "views": 71,
+            "likes": 0,
+            "bodySummary": "갠레 불쾌지수가 높다는 불만(댓글 2)."
+          }
+        ],
+        "bugReports": [],
+        "competitorMentions": [],
+        "trends": [
+          "채널 활동 13건 (아카 1 / DC 12)",
+          "갠레 불만 지속"
+        ],
+        "watchlist": [
+          "갠레 난이도 불만",
+          "2차 각인 공지"
+        ],
+        "keywords": [
+          {
+            "word": "갠레 불만·유기",
+            "count": 5,
+            "ids": [
+              "18130",
+              "18132",
+              "18133",
+              "18140",
+              "18135"
+            ]
+          },
+          {
+            "word": "갠레 공략",
+            "count": 1,
+            "ids": [
+              "18139"
+            ]
+          },
+          {
+            "word": "다음 픽업·각인 기대",
+            "count": 4,
+            "ids": [
+              "18143",
+              "18137",
+              "18134",
+              "18142"
+            ]
+          },
+          {
+            "word": "뉴비 질문",
+            "count": 1,
+            "ids": [
+              "18141"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "searchTrends": null,
+  "generatedAt": "2026-10-18T23:53:59+00:00"
+}
