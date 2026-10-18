@@ -1,0 +1,999 @@
+{
+  "date": "2026-10-17",
+  "games": {
+    "anchorpanic": {
+      "name": "anchorpanic",
+      "date": "2026-10-17",
+      "posts": [
+        {
+          "id": "186238541",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/186238541",
+          "category": "질문",
+          "title": "복귀 뉴비 도움!",
+          "author": "Capter",
+          "comments": 3,
+          "views": 80,
+          "likes": 0,
+          "utcIso": "2026-10-17T12:26:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "newbie_returning"
+          ],
+          "engagement": 140,
+          "body": "복귀·뉴비가 육성 방향을 묻는 도움 요청글."
+        },
+        {
+          "id": "186228655",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/186228655",
+          "category": "",
+          "title": "달러가 다 어디가찌....",
+          "author": "무드릭해방",
+          "comments": 4,
+          "views": 72,
+          "likes": 0,
+          "utcIso": "2026-10-17T10:48:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 152,
+          "body": "달러(재화)가 금방 사라진다는 푸념. 댓글은 모듈을 올갈이하는 유저도 이번 패치부터 달러가 플러스 마이너스 제로이고 만렙 확장 이후 달러 수요가 늘었다는 공감.",
+          "topComments": [
+            "이번패치부터 달러 플마제로임 만렙 확장 패치 이후"
+          ]
+        },
+        {
+          "id": "186221499",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/186221499",
+          "category": "",
+          "title": "뉴비 연맹 들어가고 싶은데",
+          "author": "벼린데",
+          "comments": 9,
+          "views": 114,
+          "likes": 1,
+          "utcIso": "2026-10-17T09:35:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guild_recruit",
+            "newbie_returning"
+          ],
+          "engagement": 324,
+          "body": "숙제만 매일 할 수 있는 정도인데 받아줄 연맹이 있는지 묻는 글. 댓글은 챈 연맹 추천, 이벤트 참여 중이라 가입이 안 된다는 문의, 숙제만 오래 해도 강해진다는 격려.",
+          "topComments": [
+            "챈연맹 ㄱㄱ",
+            "진심 숙제만해도 오래하면 강해짐"
+          ]
+        },
+        {
+          "id": "186190970",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/186190970",
+          "category": "",
+          "title": "크아아악 네푸루 못참겟다",
+          "author": "yems",
+          "comments": 3,
+          "views": 79,
+          "likes": 1,
+          "utcIso": "2026-10-17T03:49:00Z",
+          "sentiment": "positive",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 169,
+          "body": "신규 캐릭터 네푸루 출시를 기다리기 힘들다는 기대감 글."
+        },
+        {
+          "id": "186189056",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/186189056",
+          "category": "",
+          "title": "셤보고왔따",
+          "author": "그런거몰라요",
+          "comments": 5,
+          "views": 66,
+          "likes": 0,
+          "utcIso": "2026-10-17T03:21:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 166,
+          "body": "시험 보고 왔다는 잡담."
+        },
+        {
+          "id": "186183545",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/186183545",
+          "category": "질문",
+          "title": "리세 가이드 질문 좀",
+          "author": "제작쉬었음청년",
+          "comments": 4,
+          "views": 91,
+          "likes": 0,
+          "utcIso": "2026-10-17T01:57:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "newbie_returning"
+          ],
+          "engagement": 171,
+          "body": "1.5주년 때 달리려고 가볍게 돌려보는 중인데 우편 10장+신입 1장 해서 11장밖에 안 된다는 질문. 댓글은 상점 특별 보급 패키지의 무료 보급팩과 아스테리온까지 하면 20장 이상이라고 안내.",
+          "topComments": [
+            "상점 -> 특별 보급 패키지 -> 기본 보급에서 무료 보급팩 다 먹기, 신입 1장 + 아스테리온 하면 20장"
+          ]
+        },
+        {
+          "id": "186175483",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/186175483",
+          "category": "",
+          "title": "이제 복각까지 얼마 안남았는데",
+          "author": "그런거몰라요",
+          "comments": 6,
+          "views": 84,
+          "likes": 0,
+          "utcIso": "2026-10-16T22:34:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "engagement": 204,
+          "body": "복각이 얼마 안 남았는데 왜 이리 조용하냐는 글. 댓글은 앵꺼 최후의 날 등 농담.",
+          "topComments": [
+            "앵꺼 최후의 날......"
+          ]
+        },
+        {
+          "id": "186163755",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/186163755",
+          "category": "질문",
+          "title": "섹스키스 이거 맞아요?",
+          "author": "무드릭해방",
+          "comments": 2,
+          "views": 117,
+          "likes": 0,
+          "utcIso": "2026-10-16T16:05:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 157,
+          "body": "키스 관련 세팅(개조)이 맞는지 묻는 질문글."
+        },
+        {
+          "id": "186160921",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/186160921",
+          "category": "",
+          "title": "와 스팅 미쳤네",
+          "author": "응애",
+          "comments": 6,
+          "views": 123,
+          "likes": 0,
+          "utcIso": "2026-10-16T15:29:00Z",
+          "sentiment": "positive",
+          "tags": [
+            "gacha",
+            "balance"
+          ],
+          "engagement": 243,
+          "body": "4돌에 3낙하고 스트 대신 스팅을 써봤더니 번덱 딜이 2배 이상 나온다는 후기. 댓글은 PVE라면 필수이며 낙인이 본체, 몸은 천천히, 성원은 재능1 정도면 충분하다는 조언. 낙인의 공증버프를 확인하고 뽑겠다는 반응.",
+          "topComments": [
+            "pve 관심있으면 필수다 번덱 2-3배 차이",
+            "낙인이 본체긴하지 몸은 조각작으로 천천히, 성원은 재능1 정도"
+          ]
+        }
+      ],
+      "stats": {
+        "notices": 0,
+        "bugs": 0,
+        "negative": 1,
+        "positive": 2,
+        "competitor_mentions": 0,
+        "newbie_returning": 3,
+        "guild_recruit": 1,
+        "gacha": 2,
+        "event": 1,
+        "balance": 1,
+        "guide": 3,
+        "chitchat": 2,
+        "total": 9,
+        "real_posts": 9,
+        "total_views": 826,
+        "total_comments": 42,
+        "total_likes": 2,
+        "sentiment_score": 0.111,
+        "sentiment": "긍정"
+      },
+      "topEngaging": [
+        {
+          "id": "186221499",
+          "title": "뉴비 연맹 들어가고 싶은데",
+          "url": "https://arca.live/b/anchorpanic/186221499",
+          "source": "arca",
+          "views": 114,
+          "comments": 9,
+          "likes": 1,
+          "engagement": 324,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "186160921",
+          "title": "와 스팅 미쳤네",
+          "url": "https://arca.live/b/anchorpanic/186160921",
+          "source": "arca",
+          "views": 123,
+          "comments": 6,
+          "likes": 0,
+          "engagement": 243,
+          "category": "",
+          "sentiment": "positive"
+        },
+        {
+          "id": "186175483",
+          "title": "이제 복각까지 얼마 안남았는데",
+          "url": "https://arca.live/b/anchorpanic/186175483",
+          "source": "arca",
+          "views": 84,
+          "comments": 6,
+          "likes": 0,
+          "engagement": 204,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "186183545",
+          "title": "리세 가이드 질문 좀",
+          "url": "https://arca.live/b/anchorpanic/186183545",
+          "source": "arca",
+          "views": 91,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 171,
+          "category": "질문",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "186190970",
+          "title": "크아아악 네푸루 못참겟다",
+          "url": "https://arca.live/b/anchorpanic/186190970",
+          "source": "arca",
+          "views": 79,
+          "comments": 3,
+          "likes": 1,
+          "engagement": 169,
+          "category": "",
+          "sentiment": "positive"
+        },
+        {
+          "id": "186189056",
+          "title": "셤보고왔따",
+          "url": "https://arca.live/b/anchorpanic/186189056",
+          "source": "arca",
+          "views": 66,
+          "comments": 5,
+          "likes": 0,
+          "engagement": 166,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "186163755",
+          "title": "섹스키스 이거 맞아요?",
+          "url": "https://arca.live/b/anchorpanic/186163755",
+          "source": "arca",
+          "views": 117,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 157,
+          "category": "질문",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis": {
+        "dailySummary": "앵커패닉은 이날 9건으로 조용했다. 스팅을 4돌에 3낙하로 써보니 번덱 딜이 2~3배 나온다는 후기가 가장 높은 조회를 얻었고, 네푸루 출시를 기다린다는 기대감도 보였다. 반면 만렙 확장 이후 달러가 금방 마른다는 푸념이 나왔다. 복귀·뉴비의 연맹 문의와 1.5주년 가챠권 수급 질문이 이어져 전반 정서는 중립이었다.",
+        "topIssues": [
+          {
+            "title": "와 스팅 미쳤네",
+            "url": "https://arca.live/b/anchorpanic/186160921",
+            "tone": "positive",
+            "id": "186160921",
+            "source": "arca",
+            "comments": 6,
+            "views": 123,
+            "likes": 0,
+            "bodySummary": "스팅을 4돌 3낙으로 써보니 번덱 딜이 2배 이상 나온다는 후기(댓글 6). PVE라면 필수이며 낙인이 본체라는 조언."
+          },
+          {
+            "title": "뉴비 연맹 들어가고 싶은데",
+            "url": "https://arca.live/b/anchorpanic/186221499",
+            "tone": "neutral",
+            "id": "186221499",
+            "source": "arca",
+            "comments": 9,
+            "views": 114,
+            "likes": 1,
+            "bodySummary": "숙제만 가능한 뉴비도 받아줄 연맹이 있는지 묻는 글(댓글 9). 챈 연맹 추천과 이벤트 참여 중 가입 제한 문의."
+          },
+          {
+            "title": "달러가 다 어디가찌....",
+            "url": "https://arca.live/b/anchorpanic/186228655",
+            "tone": "negative",
+            "id": "186228655",
+            "source": "arca",
+            "comments": 4,
+            "views": 72,
+            "likes": 0,
+            "bodySummary": "달러가 금방 사라진다는 푸념(댓글 4). 만렙 확장 패치 이후 달러가 플마제로라는 공감."
+          },
+          {
+            "title": "리세 가이드 질문 좀",
+            "url": "https://arca.live/b/anchorpanic/186183545",
+            "tone": "neutral",
+            "id": "186183545",
+            "source": "arca",
+            "comments": 4,
+            "views": 91,
+            "likes": 0,
+            "bodySummary": "1.5주년 대비 가챠권 수가 11장뿐이라는 질문(댓글 4). 상점 무료 보급팩과 아스테리온으로 20장 이상이 된다는 안내."
+          },
+          {
+            "title": "크아아악 네푸루 못참겟다",
+            "url": "https://arca.live/b/anchorpanic/186190970",
+            "tone": "positive",
+            "id": "186190970",
+            "source": "arca",
+            "comments": 3,
+            "views": 79,
+            "likes": 1,
+            "bodySummary": "네푸루 출시를 못 참겠다는 기대감 글(댓글 3, 추천 1)."
+          }
+        ],
+        "bugReports": [],
+        "competitorMentions": [],
+        "trends": [
+          "채널 활동 9건",
+          "스팅 성능 호평",
+          "달러 부족 푸념"
+        ],
+        "watchlist": [
+          "1.5주년 공지",
+          "달러 수급 불만"
+        ],
+        "keywords": [
+          {
+            "word": "뉴비·복귀 질문",
+            "count": 3,
+            "ids": [
+              "186238541",
+              "186221499",
+              "186183545"
+            ]
+          },
+          {
+            "word": "스팅·키스 성능(긍정)",
+            "count": 2,
+            "ids": [
+              "186160921",
+              "186163755"
+            ]
+          },
+          {
+            "word": "복각·네푸루 기대",
+            "count": 2,
+            "ids": [
+              "186190970",
+              "186175483"
+            ]
+          },
+          {
+            "word": "달러 부족(불만)",
+            "count": 1,
+            "ids": [
+              "186228655"
+            ]
+          }
+        ]
+      }
+    },
+    "erpis": {
+      "name": "erpis",
+      "date": "2026-10-17",
+      "posts": [
+        {
+          "id": "186195479",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/186195479",
+          "category": "",
+          "title": "빨리 갠레 날먹소스 끓여와",
+          "author": "시엘22",
+          "comments": 4,
+          "views": 43,
+          "likes": 0,
+          "utcIso": "2026-10-17T04:51:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 123,
+          "body": "개인레이드(갠레) 공략 정보를 달라는 글."
+        },
+        {
+          "id": "18129",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18129",
+          "category": "일반",
+          "title": "아니시발 레니시아 대지껴도 원콤남",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 94,
+          "likes": 0,
+          "utcIso": "2026-10-17T14:45:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 154,
+          "body": "갠레에서 레니시아가 죽는 문제를 두고 욕설 섞인 불만. 댓글은 정상이라는 반응과 욕설.",
+          "topComments": [
+            "정상임"
+          ]
+        },
+        {
+          "id": "18128",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18128",
+          "category": "일반",
+          "title": "여태 픽업3각하믄서 만족스러운 캐릭?",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 80,
+          "likes": 0,
+          "utcIso": "2026-10-17T14:05:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 100
+        },
+        {
+          "id": "18127",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18127",
+          "category": "일반",
+          "title": "반천 픽뚫 확인요",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 91,
+          "likes": 0,
+          "utcIso": "2026-10-17T13:03:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 171,
+          "body": "스텔라 1각을 했다는 글. 댓글은 10뽑 더 하면 2장 뜰 것, 확천은 페이에게 쓸 예정.",
+          "topComments": [
+            "10뽑더하믄 바로2장뜰꺼잉",
+            "확천 그냥 페이한테 박을 예정"
+          ]
+        },
+        {
+          "id": "18126",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18126",
+          "category": "일반",
+          "title": "개인적으로 스텔라 3각 해준거에 만족한다.",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 89,
+          "likes": 0,
+          "utcIso": "2026-10-17T12:10:00Z",
+          "sentiment": "positive",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 109,
+          "body": "스텔라 3각 결과에 만족한다는 후기."
+        },
+        {
+          "id": "18125",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18125",
+          "category": "일반",
+          "title": "아 갠레 존나 불쾌하네",
+          "author": "ㅇㅇ",
+          "comments": 7,
+          "views": 115,
+          "likes": 0,
+          "utcIso": "2026-10-17T11:05:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 255,
+          "body": "갠레 불쾌하다는 불만글. 댓글은 광폭화와 함께 인장이 터져 1초 만에 전멸해 리트 횟수를 다 썼고, 고점 1800만 정도를 보지만 레니시아가 거의 확정적으로 죽어 리트해도 답이 없다는 하소연.",
+          "topComments": [
+            "광폭화하고 인장 다 터지면서 1초만에 전멸해서 리트 횟수 다씀",
+            "레니시아가 90%확률로 무조건 뒤지기땜에 리트해도 답없음"
+          ]
+        },
+        {
+          "id": "18124",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18124",
+          "category": "일반",
+          "title": "갠레 줴줴이야",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 82,
+          "likes": 0,
+          "utcIso": "2026-10-17T09:14:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 122,
+          "body": "갠레 보스가 순두부처럼 터진다는 불만."
+        },
+        {
+          "id": "18123",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18123",
+          "category": "일반",
+          "title": "엔보이가 녹는다고 빡쳐하는 사람이 있을거라고 생각한다.",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 97,
+          "likes": 0,
+          "utcIso": "2026-10-17T05:51:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 97
+        },
+        {
+          "id": "18122",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18122",
+          "category": "질문",
+          "title": "스텔라 월보에 쓰일수 있음?",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 97,
+          "likes": 0,
+          "utcIso": "2026-10-17T05:14:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 137,
+          "body": "스텔라가 레티·멘디를 밀어내고 월보에 쓰일 수 있는지 묻는 글. 댓글은 사수보다 딜이 강해 가능성이 있다는 의견.",
+          "topComments": [
+            "사수 씹어먹는 딜이라 가능성 있을수도?"
+          ]
+        },
+        {
+          "id": "18121",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18121",
+          "category": "질문",
+          "title": "스텔라 명함이랑 1각 차이 크냐?",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 133,
+          "likes": 0,
+          "utcIso": "2026-10-17T04:05:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 253,
+          "body": "스텔라 명함과 1각의 차이를 묻는 글. 댓글은 월보처럼 범위딜이 중요한 곳에서 차이가 날 것이며 중섭에서는 이미 쓰이고 있고, 한섭은 리온이 현역이라 3사수를 쓰는 반면 중섭은 인플레로 목속 월보에 레니·안리스·스텔라 3언령을 쓴다는 설명.",
+          "topComments": [
+            "월보에서 쓴다면 차이날듯 범위라",
+            "중섭에선 이미 쓰이고 있음, 목속 월보에서 레니 안리스 스텔라 3언령"
+          ]
+        },
+        {
+          "id": "18120",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18120",
+          "category": "일반",
+          "title": "1파티 몰빵하니까",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 70,
+          "likes": 0,
+          "utcIso": "2026-10-17T00:50:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 70
+        },
+        {
+          "id": "18119",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18119",
+          "category": "일반",
+          "title": "갠레 보스 애미뒤졌네",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 72,
+          "likes": 0,
+          "utcIso": "2026-10-16T23:22:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 72
+        },
+        {
+          "id": "18118",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18118",
+          "category": "일반",
+          "title": "할배가 우리 스텔라 짬지좀 볼까",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 150,
+          "likes": 0,
+          "utcIso": "2026-10-16T22:45:00Z",
+          "sentiment": "positive",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 190,
+          "body": "스텔라 딜이 엄청 세다는 글. 댓글은 고점이 아닐 것이고 5각 스텔라는 500만을 치는 세계선도 있을 것이라는 반응.",
+          "topComments": [
+            "고점아님 레니시아터져서"
+          ]
+        },
+        {
+          "id": "18117",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18117",
+          "category": "일반",
+          "title": "러스트 3각 갖고싶다",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 99,
+          "likes": 0,
+          "utcIso": "2026-10-16T22:26:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 159,
+          "body": "명함 러스트가 속성빨로 리온을 위협한다는 글. 댓글은 리온을 갖고 싶다, 통언뜬이·월보상점 존버가 답이라는 의견.",
+          "topComments": [
+            "통언뜬이랑 월보상점 존버가 답"
+          ]
+        },
+        {
+          "id": "18116",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18116",
+          "category": "일반",
+          "title": "근데 레알 스텔라 나쁘지않은듯",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 134,
+          "likes": 0,
+          "utcIso": "2026-10-16T21:24:00Z",
+          "sentiment": "positive",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 174,
+          "body": "훈련장 목속 러스트4각·스텔라3각으로 언령 치고도 딜이 나쁘지 않아 1팟에 넣어볼까 한다는 글. 댓글은 리온이 명함이라 딜그래프에 안 보여 슬프다, 3각 스텔라는 월보에서 범위딜로 더 좋아 보인다는 반응.",
+          "topComments": [
+            "확실히 3각스텔라는 상당히 좋아보임 월보때는 범위딜때문에 더 좋겠지"
+          ]
+        },
+        {
+          "id": "18115",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18115",
+          "category": "일반",
+          "title": "ㅠ 2~3팟키우자",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 53,
+          "likes": 0,
+          "utcIso": "2026-10-16T21:12:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 53
+        },
+        {
+          "id": "18114",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18114",
+          "category": "일반",
+          "title": "머지 난이도9인데 8로나오고 딜량이줄었는데",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 76,
+          "likes": 0,
+          "utcIso": "2026-10-16T21:01:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 116
+        }
+      ],
+      "stats": {
+        "notices": 0,
+        "bugs": 0,
+        "negative": 4,
+        "positive": 3,
+        "competitor_mentions": 0,
+        "newbie_returning": 0,
+        "guild_recruit": 0,
+        "gacha": 5,
+        "event": 0,
+        "balance": 9,
+        "guide": 3,
+        "chitchat": 0,
+        "total": 17,
+        "real_posts": 17,
+        "total_views": 1575,
+        "total_comments": 39,
+        "total_likes": 0,
+        "sentiment_score": -0.059,
+        "sentiment": "부정"
+      },
+      "topEngaging": [
+        {
+          "id": "18125",
+          "title": "아 갠레 존나 불쾌하네",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18125",
+          "source": "dc",
+          "views": 115,
+          "comments": 7,
+          "likes": 0,
+          "engagement": 255,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "18121",
+          "title": "스텔라 명함이랑 1각 차이 크냐?",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18121",
+          "source": "dc",
+          "views": 133,
+          "comments": 6,
+          "likes": 0,
+          "engagement": 253,
+          "category": "질문",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18118",
+          "title": "할배가 우리 스텔라 짬지좀 볼까",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18118",
+          "source": "dc",
+          "views": 150,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 190,
+          "category": "일반",
+          "sentiment": "positive"
+        },
+        {
+          "id": "18116",
+          "title": "근데 레알 스텔라 나쁘지않은듯",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18116",
+          "source": "dc",
+          "views": 134,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 174,
+          "category": "일반",
+          "sentiment": "positive"
+        },
+        {
+          "id": "18127",
+          "title": "반천 픽뚫 확인요",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18127",
+          "source": "dc",
+          "views": 91,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 171,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18117",
+          "title": "러스트 3각 갖고싶다",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18117",
+          "source": "dc",
+          "views": 99,
+          "comments": 3,
+          "likes": 0,
+          "engagement": 159,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18129",
+          "title": "아니시발 레니시아 대지껴도 원콤남",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18129",
+          "source": "dc",
+          "views": 94,
+          "comments": 3,
+          "likes": 0,
+          "engagement": 154,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "18122",
+          "title": "스텔라 월보에 쓰일수 있음?",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18122",
+          "source": "dc",
+          "views": 97,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 137,
+          "category": "질문",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "186195479",
+          "title": "빨리 갠레 날먹소스 끓여와",
+          "url": "https://arca.live/b/erphis/186195479",
+          "source": "arca",
+          "views": 43,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 123,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18124",
+          "title": "갠레 줴줴이야",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18124",
+          "source": "dc",
+          "views": 82,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 122,
+          "category": "일반",
+          "sentiment": "negative"
+        }
+      ],
+      "analysis": {
+        "dailySummary": "에르피스는 스텔라 평가와 개인레이드(갠레) 불만이 하루를 갈랐다. 스텔라는 3각 만족 후기, 월보에서 레티·멘디를 대체할 수 있는지, 명함 대비 1각 차이를 묻는 글 등 긍정 섞인 논의가 이어졌다. 한편 갠레에서 인장이 터지며 순식간에 전멸하고 레니시아가 죽는 문제를 두고 욕설 섞인 불만이 연달아 올라와 전반 정서는 부정 쪽으로 기울었다.",
+        "topIssues": [
+          {
+            "title": "아 갠레 존나 불쾌하네",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18125",
+            "tone": "negative",
+            "id": "18125",
+            "source": "dc",
+            "comments": 7,
+            "views": 115,
+            "likes": 0,
+            "bodySummary": "갠레가 불쾌하다는 불만(댓글 7). 광폭화와 인장 폭발로 1초 만에 전멸해 리트 횟수를 모두 쓰고, 고점 1800만이어도 레니시아가 죽어 답이 없다는 하소연."
+          },
+          {
+            "title": "스텔라 명함이랑 1각 차이 크냐?",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18121",
+            "tone": "neutral",
+            "id": "18121",
+            "source": "dc",
+            "comments": 6,
+            "views": 133,
+            "likes": 0,
+            "bodySummary": "스텔라 명함과 1각의 차이를 묻는 글(댓글 6, 조회 133). 월보 범위딜에서 차이가 나고 중섭에서는 목속 월보에 3언령으로 쓴다는 설명."
+          },
+          {
+            "title": "근데 레알 스텔라 나쁘지않은듯",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18116",
+            "tone": "positive",
+            "id": "18116",
+            "source": "dc",
+            "comments": 2,
+            "views": 134,
+            "likes": 0,
+            "bodySummary": "훈련장 목속에서 러스트4각·스텔라3각으로 딜이 나쁘지 않아 1팟 편성을 고려하는 글(댓글 2). 3각 스텔라는 월보에서 더 좋을 것이라는 반응."
+          },
+          {
+            "title": "할배가 우리 스텔라 짬지좀 볼까",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18118",
+            "tone": "positive",
+            "id": "18118",
+            "source": "dc",
+            "comments": 2,
+            "views": 150,
+            "likes": 0,
+            "bodySummary": "스텔라 딜이 엄청 세다는 글(댓글 2, 조회 150). 5각 스텔라는 500만 세계선도 있을 것이라는 반응."
+          },
+          {
+            "title": "반천 픽뚫 확인요",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18127",
+            "tone": "neutral",
+            "id": "18127",
+            "source": "dc",
+            "comments": 4,
+            "views": 91,
+            "likes": 0,
+            "bodySummary": "스텔라 1각 인증글(댓글 4). 10뽑 더 하면 2장 뜰 것이라는 반응."
+          }
+        ],
+        "bugReports": [],
+        "competitorMentions": [],
+        "trends": [
+          "채널 활동 17건 (아카 1 / DC 16)",
+          "스텔라 성능 논의",
+          "갠레 불만 급증"
+        ],
+        "watchlist": [
+          "갠레 난이도 불만",
+          "스텔라 월보 활용"
+        ],
+        "keywords": [
+          {
+            "word": "스텔라 성능·평가(긍정)",
+            "count": 5,
+            "ids": [
+              "18116",
+              "18118",
+              "18121",
+              "18122",
+              "18126"
+            ]
+          },
+          {
+            "word": "갠레(개인레이드) 불만",
+            "count": 4,
+            "ids": [
+              "18119",
+              "18124",
+              "18125",
+              "18129"
+            ]
+          },
+          {
+            "word": "픽업·뽑기 고민",
+            "count": 4,
+            "ids": [
+              "18117",
+              "18121",
+              "18127",
+              "18128"
+            ]
+          },
+          {
+            "word": "밸런스·편성",
+            "count": 5,
+            "ids": [
+              "18114",
+              "18115",
+              "18120",
+              "18123",
+              "18122"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "searchTrends": null,
+  "generatedAt": "2026-10-18T23:53:59+00:00"
+}
