@@ -1,0 +1,1987 @@
+{
+  "date": "2026-10-30",
+  "games": {
+    "anchorpanic": {
+      "name": "anchorpanic",
+      "date": "2026-10-30",
+      "posts": [
+        {
+          "id": "187579493",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187579493",
+          "category": "",
+          "title": "막 화가 난다니까?",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 73,
+          "likes": 2,
+          "utcIso": "2026-10-30T14:46:22Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 253
+        },
+        {
+          "id": "187578717",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187578717",
+          "category": "",
+          "title": "깨달았다",
+          "author": "ㅇㅇ",
+          "comments": 9,
+          "views": 57,
+          "likes": 0,
+          "utcIso": "2026-10-30T14:38:18Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 237
+        },
+        {
+          "id": "187578482",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187578482",
+          "category": "",
+          "title": "이것들 어캄?",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 53,
+          "likes": 1,
+          "utcIso": "2026-10-30T14:35:58Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 163
+        },
+        {
+          "id": "187576363",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187576363",
+          "category": "질문",
+          "title": "자자 형님들",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 51,
+          "likes": 1,
+          "utcIso": "2026-10-30T14:15:39Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 121
+        },
+        {
+          "id": "187575687",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187575687",
+          "category": "질문",
+          "title": "이륙가능?",
+          "author": "ㅇㅇ",
+          "comments": 16,
+          "views": 104,
+          "likes": 1,
+          "utcIso": "2026-10-30T14:09:10Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "newbie_returning"
+          ],
+          "engagement": 454,
+          "body": "광고 배너 캐릭터가 이쁘지만 안 쓰는 캐릭 같다는 하소연과 함께 이륙해도 되는지 묻는 글.",
+          "topComments": [
+            "이륙 허가 한다!",
+            "화로즈 있으면 게임 접근성이 쉬워져서 성장하는 재미",
+            "리세로 화로즈 2돌이면 바로 이륙"
+          ]
+        },
+        {
+          "id": "187574206",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187574206",
+          "category": "",
+          "title": "이건 머임",
+          "author": "ㅇㅇ",
+          "comments": 8,
+          "views": 76,
+          "likes": 3,
+          "utcIso": "2026-10-30T13:54:30Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 326
+        },
+        {
+          "id": "187572279",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187572279",
+          "category": "",
+          "title": "내일은 즐거운 월말교환",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 61,
+          "likes": 0,
+          "utcIso": "2026-10-30T13:36:29Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "engagement": 121
+        },
+        {
+          "id": "187571101",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187571101",
+          "category": "질문",
+          "title": "이거 워따 쓰는겨?",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 55,
+          "likes": 0,
+          "utcIso": "2026-10-30T13:26:10Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 155
+        },
+        {
+          "id": "187569541",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187569541",
+          "category": "",
+          "title": "어라 ㅅㅂ 떡글본게 4시간전인데",
+          "author": "ㅇㅇ",
+          "comments": 9,
+          "views": 68,
+          "likes": 0,
+          "utcIso": "2026-10-30T13:12:24Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 248
+        },
+        {
+          "id": "187568037",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187568037",
+          "category": "질문",
+          "title": "야 김할배!!!",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 56,
+          "likes": 1,
+          "utcIso": "2026-10-30T12:59:15Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 166
+        },
+        {
+          "id": "187567952",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187567952",
+          "category": "",
+          "title": "뿌빠뿌바이",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 33,
+          "likes": 0,
+          "utcIso": "2026-10-30T12:58:35Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 73
+        },
+        {
+          "id": "187562183",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187562183",
+          "category": "",
+          "title": "뽑기 다시 질문",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 68,
+          "likes": 0,
+          "utcIso": "2026-10-30T12:15:09Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "gacha"
+          ],
+          "engagement": 168
+        },
+        {
+          "id": "187561606",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187561606",
+          "category": "질문",
+          "title": "지금 뉴비는 픽업 뭐 들어가면됨?",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 65,
+          "likes": 0,
+          "utcIso": "2026-10-30T12:11:14Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "newbie_returning"
+          ],
+          "engagement": 165
+        },
+        {
+          "id": "187560446",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187560446",
+          "category": "",
+          "title": "생각좀 해보자",
+          "author": "ㅇㅇ",
+          "comments": 8,
+          "views": 74,
+          "likes": 0,
+          "utcIso": "2026-10-30T12:01:53Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 234
+        },
+        {
+          "id": "187560084",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187560084",
+          "category": "",
+          "title": "내일 드디어 7일 선택권 받는다",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 59,
+          "likes": 0,
+          "utcIso": "2026-10-30T11:58:58Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 99
+        },
+        {
+          "id": "187554878",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187554878",
+          "category": "",
+          "title": "이거 왜이럼",
+          "author": "ㅇㅇ",
+          "comments": 11,
+          "views": 79,
+          "likes": 0,
+          "utcIso": "2026-10-30T11:16:37Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 299,
+          "body": "앱을 지웠다 깔아도 계속 이상하다는 글. 저장공간 부족(10GB 간당간당) 이슈로 추정하는 댓글.",
+          "topComments": [
+            "컴 폰?",
+            "폰인데 저장공간 부족 이슈인듯",
+            "저장공간 확인하니까 10기가 간당간당"
+          ]
+        },
+        {
+          "id": "187550284",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187550284",
+          "category": "",
+          "title": "복귀할만한가",
+          "author": "ㅇㅇ",
+          "comments": 9,
+          "views": 84,
+          "likes": 0,
+          "utcIso": "2026-10-30T10:35:33Z",
+          "sentiment": "neutral",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 264
+        },
+        {
+          "id": "187546494",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187546494",
+          "category": "",
+          "title": "무과금 누비도 할 수 있따",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 101,
+          "likes": 3,
+          "utcIso": "2026-10-30T10:00:56Z",
+          "sentiment": "positive",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 311
+        },
+        {
+          "id": "187541804",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187541804",
+          "category": "",
+          "title": "(권한 있나)",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 56,
+          "likes": 0,
+          "utcIso": "2026-10-30T09:14:21Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 176
+        },
+        {
+          "id": "187541259",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187541259",
+          "category": "",
+          "title": "아아 알립니다 대충 10시30에서 11시쯤에",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 74,
+          "likes": 2,
+          "utcIso": "2026-10-30T09:09:08Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 214
+        },
+        {
+          "id": "187539735",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187539735",
+          "category": "",
+          "title": "이 놈들아 뉴비죽는다!!",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 110,
+          "likes": 2,
+          "utcIso": "2026-10-30T08:53:38Z",
+          "sentiment": "neutral",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 290
+        },
+        {
+          "id": "187539612",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187539612",
+          "category": "",
+          "title": "출시때 뭔가 뭔가해서 리세하다가 다른세계 지키러갔엇는데",
+          "author": "ㅇㅇ",
+          "comments": 12,
+          "views": 99,
+          "likes": 1,
+          "utcIso": "2026-10-30T08:52:22Z",
+          "sentiment": "positive",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 369,
+          "body": "출시 때 리세하다 떠났다가 복귀해 사료·빵빵한 게임이 돼 있다고 놀란 글.",
+          "topComments": [
+            "분재of분재라서 화로즈까지만 달리고 일퀘만",
+            "1.5주년 뉴비 보기 공지에서 리세가이드 봐봐"
+          ]
+        },
+        {
+          "id": "187538224",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187538224",
+          "category": "",
+          "title": "화로 5돌하고 스팅뽑기 나쁘지않네",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 81,
+          "likes": 4,
+          "utcIso": "2026-10-30T08:38:49Z",
+          "sentiment": "positive",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 301
+        },
+        {
+          "id": "187538064",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187538064",
+          "category": "",
+          "title": "음 내가 해야할거 딱 알았다.",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 49,
+          "likes": 2,
+          "utcIso": "2026-10-30T08:37:12Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 209
+        },
+        {
+          "id": "187536102",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187536102",
+          "category": "",
+          "title": "아싸 퇴근이당",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 40,
+          "likes": 2,
+          "utcIso": "2026-10-30T08:17:21Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 160
+        },
+        {
+          "id": "187532565",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187532565",
+          "category": "",
+          "title": "이베트->얘 지정 뽑기로 가져갈 정도야??",
+          "author": "ㅇㅇ",
+          "comments": 15,
+          "views": 123,
+          "likes": 0,
+          "utcIso": "2026-10-30T07:36:43Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 423,
+          "body": "이베트를 지정 뽑기로 가져갈 정도인지 묻는 글.",
+          "topComments": [
+            "유입할 때 바로 지정해서 들고갔음 필수는 아니고 있으면 좋은 정도",
+            "돌 아끼는 게 나아 보임"
+          ]
+        },
+        {
+          "id": "187530850",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187530850",
+          "category": "",
+          "title": "몬가 글 마구 쓰고싶은데",
+          "author": "ㅇㅇ",
+          "comments": 13,
+          "views": 85,
+          "likes": 3,
+          "utcIso": "2026-10-30T07:17:06Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 435
+        },
+        {
+          "id": "187525452",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187525452",
+          "category": "",
+          "title": "이개 어떠캐 댄거지 할배들?!",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 92,
+          "likes": 1,
+          "utcIso": "2026-10-30T06:13:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 242
+        },
+        {
+          "id": "187522739",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187522739",
+          "category": "질문",
+          "title": "뉴비 질문 좀",
+          "author": "ㅇㅇ",
+          "comments": 7,
+          "views": 115,
+          "likes": 0,
+          "utcIso": "2026-10-30T05:42:21Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "newbie_returning"
+          ],
+          "engagement": 255
+        },
+        {
+          "id": "187519113",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187519113",
+          "category": "",
+          "title": "저항력 생각보다 많이 부족하네",
+          "author": "ㅇㅇ",
+          "comments": 9,
+          "views": 86,
+          "likes": 0,
+          "utcIso": "2026-10-30T04:59:14Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 266,
+          "body": "화로 낙인 강화로 저항력이 벌써 바닥났다는 글.",
+          "topComments": [
+            "주말에 지원나옴",
+            "7일 저항패키지를 반드시 살것"
+          ]
+        },
+        {
+          "id": "187518095",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187518095",
+          "category": "",
+          "title": "쟁탈전도 의외로 재밋음",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 65,
+          "likes": 0,
+          "utcIso": "2026-10-30T04:46:40Z",
+          "sentiment": "positive",
+          "tags": [
+            "event"
+          ],
+          "engagement": 185
+        },
+        {
+          "id": "187515566",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187515566",
+          "category": "",
+          "title": "할배들 윈드리스랑 에코 둘 중 뭐가 좋음?",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 78,
+          "likes": 0,
+          "utcIso": "2026-10-30T04:15:54Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 198
+        },
+        {
+          "id": "187515164",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187515164",
+          "category": "",
+          "title": "7일차 뉴비 입장에서 스팅키스 뽑는거 추천",
+          "author": "ㅇㅇ",
+          "comments": 21,
+          "views": 151,
+          "likes": 3,
+          "utcIso": "2026-10-30T04:11:37Z",
+          "sentiment": "positive",
+          "tags": [
+            "guide",
+            "newbie_returning",
+            "gacha"
+          ],
+          "engagement": 661,
+          "body": "막히던 콘텐츠가 사라졌고 화로즈·스팅키스 둘만 올려도 극한·틈새가 밀린다는 7일차 뉴비의 스팅키스 추천 글. 쟁탈전에서 110렙 넘는 고참 메인팟을 이긴 경험도 공유.",
+          "topComments": [
+            "그 110렙 혹시 난가..",
+            "생생한 경험담 ㄱㅅ",
+            "픽뚫 6번 연속 맞으니까 너무 힘들어.. 게임 지우고 싶어",
+            "길게보고 꾸준히 하기만 하면 되는겜이야"
+          ]
+        },
+        {
+          "id": "187513469",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187513469",
+          "category": "",
+          "title": "뉴비 튜토 끝!!",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 72,
+          "likes": 1,
+          "utcIso": "2026-10-30T03:51:12Z",
+          "sentiment": "neutral",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 142
+        },
+        {
+          "id": "187511965",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187511965",
+          "category": "",
+          "title": "챈 vs 갤",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 92,
+          "likes": 0,
+          "utcIso": "2026-10-30T03:33:02Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 192
+        },
+        {
+          "id": "187511826",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187511826",
+          "category": "",
+          "title": "pc클라로는 연맹 검색이 안되나",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 47,
+          "likes": 0,
+          "utcIso": "2026-10-30T03:31:14Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guild_recruit"
+          ],
+          "engagement": 167
+        },
+        {
+          "id": "187511023",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187511023",
+          "category": "질문",
+          "title": "화로즈 풀돌하면",
+          "author": "ㅇㅇ",
+          "comments": 17,
+          "views": 120,
+          "likes": 0,
+          "utcIso": "2026-10-30T03:20:43Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "gacha"
+          ],
+          "engagement": 460,
+          "body": "화로즈 3돌 전무 상태에서 스팅키스 명전을 들어갈지, 화로즈를 더 칠지 묻는 질문.",
+          "topComments": [
+            "화로즈 풀돌하면 다음픽업이 좋다 해서 일단 대기",
+            "스팅키스는 픽업이라 복각 가능해 급하지 않다",
+            "전무는 명함만"
+          ]
+        },
+        {
+          "id": "187510903",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187510903",
+          "category": "",
+          "title": "와 진짜 알니타 다시봐도 미쳣네",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 63,
+          "likes": 1,
+          "utcIso": "2026-10-30T03:19:10Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 173
+        },
+        {
+          "id": "187510201",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187510201",
+          "category": "질문",
+          "title": "지금 키워줄만한 캐릭 하나 추천점용",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 76,
+          "likes": 0,
+          "utcIso": "2026-10-30T03:10:28Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 156
+        },
+        {
+          "id": "187510142",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187510142",
+          "category": "",
+          "title": "생각해보니",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 26,
+          "likes": 0,
+          "utcIso": "2026-10-30T03:09:44Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 46
+        },
+        {
+          "id": "187507083",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187507083",
+          "category": "",
+          "title": "광고보고 함 찍먹해보려구 옴",
+          "author": "ㅇㅇ",
+          "comments": 18,
+          "views": 118,
+          "likes": 1,
+          "utcIso": "2026-10-30T02:29:43Z",
+          "sentiment": "positive",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 508,
+          "body": "광고를 보고 찍먹하러 왔다는 글. 리세로 화이트로즈(화로즈)가 나오면 바로 광산을 캐 풀돌로 달린다는 계획.",
+          "topComments": [
+            "리세계나 돌계 없이 맨땅 스타트해도 좋은 시기",
+            "화로 첫 리세에 킷타!!!!",
+            "상시 털기에 레이븐만 나왔네"
+          ]
+        },
+        {
+          "id": "187505791",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187505791",
+          "category": "",
+          "title": "오늘 시작하면 손해보는거 머임",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 85,
+          "likes": 0,
+          "utcIso": "2026-10-30T02:12:31Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 165
+        },
+        {
+          "id": "187505724",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187505724",
+          "category": "질문",
+          "title": "할배들아 전기는 요즘 머씀?",
+          "author": "ㅇㅇ",
+          "comments": 10,
+          "views": 65,
+          "likes": 0,
+          "utcIso": "2026-10-30T02:11:26Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 265
+        },
+        {
+          "id": "187505619",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187505619",
+          "category": "",
+          "title": "갠적으로 제일 안좋은애라고 생각하는",
+          "author": "ㅇㅇ",
+          "comments": 11,
+          "views": 106,
+          "likes": 0,
+          "utcIso": "2026-10-30T02:09:44Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 326,
+          "body": "특정 캐릭터를 고정딜·버스트·메커니즘·마인드 모두 '쓰레기'로 꼽은 평가 글.",
+          "topComments": [
+            "마인드 신기하던데 트루딜",
+            "약해서 문제지"
+          ]
+        },
+        {
+          "id": "187505471",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187505471",
+          "category": "",
+          "title": "디오션 속치마는 어떤 놈이 입혀놓은걸까",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 54,
+          "likes": 0,
+          "utcIso": "2026-10-30T02:07:51Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 74
+        },
+        {
+          "id": "187504826",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187504826",
+          "category": "",
+          "title": "그만 나와",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 75,
+          "likes": 1,
+          "utcIso": "2026-10-30T01:59:00Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 165
+        },
+        {
+          "id": "187500990",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187500990",
+          "category": "",
+          "title": "제발 쉬운곳 만나게 해주세요×5",
+          "author": "ㅇㅇ",
+          "comments": 8,
+          "views": 82,
+          "likes": 0,
+          "utcIso": "2026-10-30T01:03:22Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 242
+        },
+        {
+          "id": "187500022",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187500022",
+          "category": "",
+          "title": "문득 생각남",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 50,
+          "likes": 2,
+          "utcIso": "2026-10-30T00:51:50Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 230
+        },
+        {
+          "id": "187499919",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187499919",
+          "category": "",
+          "title": "카디악 3돌 효과가 좋은건가",
+          "author": "ㅇㅇ",
+          "comments": 8,
+          "views": 57,
+          "likes": 1,
+          "utcIso": "2026-10-30T00:50:06Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 247
+        },
+        {
+          "id": "187498238",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187498238",
+          "category": "창작/콘",
+          "title": "딸깍 딸깍",
+          "author": "ㅇㅇ",
+          "comments": 12,
+          "views": 201,
+          "likes": 6,
+          "utcIso": "2026-10-30T00:21:15Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 621,
+          "body": "미병장 콘 일러스트·짤 글(조회 201, 추천 6). 본문은 거의 없음.",
+          "topComments": [
+            "미병장님 근무시간입니다",
+            "인게임도 귀여운데 콘은 더 귀엽네"
+          ]
+        },
+        {
+          "id": "187497891",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187497891",
+          "category": "",
+          "title": "광고보고 왔는데 오늘 30일이면 20뽑 날린거야? 그런거야!!",
+          "author": "ㅇㅇ",
+          "comments": 10,
+          "views": 108,
+          "likes": 0,
+          "utcIso": "2026-10-30T00:15:11Z",
+          "sentiment": "neutral",
+          "tags": [
+            "newbie_returning",
+            "gacha"
+          ],
+          "engagement": 308,
+          "body": "광고 보고 왔는데 오늘이 30일이면 20뽑을 날린 거냐는 글.",
+          "topComments": [
+            "1.5주년 출석보상은 소급적용이라 7일 늦게 들어와도 얻을 수 있어",
+            "턴마다 스킬 다 써줘야해서 오토가 갑"
+          ]
+        },
+        {
+          "id": "187496621",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187496621",
+          "category": "",
+          "title": "챈글 한페이지 넘어가는거 오랜만이네",
+          "author": "ㅇㅇ",
+          "comments": 11,
+          "views": 61,
+          "likes": 0,
+          "utcIso": "2026-10-29T23:50:25Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 281
+        },
+        {
+          "id": "187495129",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187495129",
+          "category": "",
+          "title": "씐나는 금요일!",
+          "author": "ㅇㅇ",
+          "comments": 10,
+          "views": 69,
+          "likes": 1,
+          "utcIso": "2026-10-29T23:15:17Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 299
+        },
+        {
+          "id": "187493588",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187493588",
+          "category": "질문",
+          "title": "여우뽑 뭐사? 비장품 뭐사??",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 80,
+          "likes": 0,
+          "utcIso": "2026-10-29T22:36:01Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "gacha"
+          ],
+          "engagement": 120
+        },
+        {
+          "id": "187492858",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187492858",
+          "category": "",
+          "title": "계정랩 올리기 힘드네..",
+          "author": "ㅇㅇ",
+          "comments": 11,
+          "views": 64,
+          "likes": 0,
+          "utcIso": "2026-10-29T22:12:36Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 284
+        },
+        {
+          "id": "187491125",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187491125",
+          "category": "",
+          "title": "게임 한지 벌써 일주일 ㄹㅇ이가",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 69,
+          "likes": 1,
+          "utcIso": "2026-10-29T20:45:10Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 159
+        },
+        {
+          "id": "187489530",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187489530",
+          "category": "",
+          "title": "떡 돌리는 거 보고 찍먹해보려고",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 80,
+          "likes": 5,
+          "utcIso": "2026-10-29T19:13:11Z",
+          "sentiment": "positive",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 350
+        },
+        {
+          "id": "187488259",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187488259",
+          "category": "",
+          "title": "신용카드라는거 진짜 좋은거네",
+          "author": "ㅇㅇ",
+          "comments": 8,
+          "views": 95,
+          "likes": 4,
+          "utcIso": "2026-10-29T18:20:40Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 375
+        },
+        {
+          "id": "187487996",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187487996",
+          "category": "",
+          "title": "아직 6지라 그런가?",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 58,
+          "likes": 1,
+          "utcIso": "2026-10-29T18:11:37Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 168
+        },
+        {
+          "id": "187483915",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187483915",
+          "category": "",
+          "title": "행동력이 없으니",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 57,
+          "likes": 0,
+          "utcIso": "2026-10-29T16:39:26Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 137
+        },
+        {
+          "id": "187483727",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187483727",
+          "category": "",
+          "title": "배신하고 오겟슴",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 61,
+          "likes": 0,
+          "utcIso": "2026-10-29T16:36:12Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 121
+        },
+        {
+          "id": "187482736",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187482736",
+          "category": "",
+          "title": "4돌 낙인은 했다 그래도",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 71,
+          "likes": 1,
+          "utcIso": "2026-10-29T16:20:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 141
+        },
+        {
+          "id": "187478829",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187478829",
+          "category": "",
+          "title": "부족하다...부족해...",
+          "author": "ㅇㅇ",
+          "comments": 9,
+          "views": 69,
+          "likes": 2,
+          "utcIso": "2026-10-29T15:28:29Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 309
+        }
+      ],
+      "stats": {
+        "notices": 0,
+        "bugs": 0,
+        "negative": 7,
+        "positive": 14,
+        "competitor_mentions": 0,
+        "newbie_returning": 12,
+        "guild_recruit": 1,
+        "gacha": 10,
+        "event": 2,
+        "balance": 0,
+        "guide": 12,
+        "chitchat": 35,
+        "total": 63,
+        "real_posts": 63,
+        "total_views": 4852,
+        "total_comments": 441,
+        "total_likes": 60,
+        "sentiment_score": 0.111,
+        "sentiment": "긍정"
+      },
+      "topEngaging": [
+        {
+          "id": "187515164",
+          "title": "7일차 뉴비 입장에서 스팅키스 뽑는거 추천",
+          "url": "https://arca.live/b/anchorpanic/187515164",
+          "source": "arca",
+          "views": 151,
+          "comments": 21,
+          "likes": 3,
+          "engagement": 661,
+          "category": "",
+          "sentiment": "positive"
+        },
+        {
+          "id": "187498238",
+          "title": "딸깍 딸깍",
+          "url": "https://arca.live/b/anchorpanic/187498238",
+          "source": "arca",
+          "views": 201,
+          "comments": 12,
+          "likes": 6,
+          "engagement": 621,
+          "category": "창작/콘",
+          "sentiment": "positive"
+        },
+        {
+          "id": "187507083",
+          "title": "광고보고 함 찍먹해보려구 옴",
+          "url": "https://arca.live/b/anchorpanic/187507083",
+          "source": "arca",
+          "views": 118,
+          "comments": 18,
+          "likes": 1,
+          "engagement": 508,
+          "category": "",
+          "sentiment": "positive"
+        },
+        {
+          "id": "187511023",
+          "title": "화로즈 풀돌하면",
+          "url": "https://arca.live/b/anchorpanic/187511023",
+          "source": "arca",
+          "views": 120,
+          "comments": 17,
+          "likes": 0,
+          "engagement": 460,
+          "category": "질문",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "187575687",
+          "title": "이륙가능?",
+          "url": "https://arca.live/b/anchorpanic/187575687",
+          "source": "arca",
+          "views": 104,
+          "comments": 16,
+          "likes": 1,
+          "engagement": 454,
+          "category": "질문",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "187530850",
+          "title": "몬가 글 마구 쓰고싶은데",
+          "url": "https://arca.live/b/anchorpanic/187530850",
+          "source": "arca",
+          "views": 85,
+          "comments": 13,
+          "likes": 3,
+          "engagement": 435,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "187532565",
+          "title": "이베트->얘 지정 뽑기로 가져갈 정도야??",
+          "url": "https://arca.live/b/anchorpanic/187532565",
+          "source": "arca",
+          "views": 123,
+          "comments": 15,
+          "likes": 0,
+          "engagement": 423,
+          "category": "",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis": {
+        "dailySummary": "앵커패닉은 1.5주년 업데이트 사흘째에도 광고를 보고 온 신규·복귀 유저의 이륙 문의가 이어졌다. '이륙가능?', '복귀할만한가', '광고보고 찍먹' 같은 글에 고참들이 화로즈만 있으면 게임이 쉬워진다며 이륙을 허가하는 훈훈한 분위기가 하루를 채웠고, 7일차 뉴비의 스팅키스 추천과 쟁탈전에서 고참을 이겼다는 후기가 가장 큰 반응을 얻었다. 저항력 소진과 앱 오류, 일부 캐릭터 평가 불만은 소수에 그쳐 전반 정서는 긍정 쪽으로 기운 분위기였다.",
+        "topIssues": [
+          {
+            "title": "7일차 뉴비 입장에서 스팅키스 뽑는거 추천",
+            "url": "https://arca.live/b/anchorpanic/187515164",
+            "tone": "positive",
+            "id": "187515164",
+            "source": "arca",
+            "comments": 21,
+            "views": 151,
+            "likes": 3,
+            "bodySummary": "7일차 뉴비가 화로즈·스팅키스만 올려도 극한·틈새 콘텐츠가 밀리고 쟁탈전에서 110렙 넘는 고참 메인팟도 이겼다며 스팅키스 뽑기를 강력 추천한 글(댓글 21, 조회 151). 공감과 경험담이 이어졌고 픽뚫 연속 실패로 게임을 지우고 싶다는 호소엔 길게 보고 꾸준히 하라는 격려가 달렸다."
+          },
+          {
+            "title": "딸깍 딸깍",
+            "url": "https://arca.live/b/anchorpanic/187498238",
+            "tone": "positive",
+            "id": "187498238",
+            "source": "arca",
+            "comments": 12,
+            "views": 201,
+            "likes": 6,
+            "bodySummary": "창작/콘 말머리의 미병장 콘 일러스트·짤 글(댓글 12, 조회 201, 추천 6)로 하루 최고 조회를 얻었다. 본문은 거의 없고 귀엽다는 반응 위주."
+          },
+          {
+            "title": "광고보고 함 찍먹해보려구 옴",
+            "url": "https://arca.live/b/anchorpanic/187507083",
+            "tone": "positive",
+            "id": "187507083",
+            "source": "arca",
+            "comments": 18,
+            "views": 118,
+            "likes": 1,
+            "bodySummary": "광고를 보고 찍먹하러 와 리세로 화이트로즈가 나오면 광산을 캐 풀돌로 달리겠다는 글(댓글 18, 조회 118). 맨땅 시작해도 좋은 시기라는 호응과 상시 뽑기에 레이븐만 나왔다는 아쉬움이 달렸다."
+          },
+          {
+            "title": "화로즈 풀돌하면",
+            "url": "https://arca.live/b/anchorpanic/187511023",
+            "tone": "neutral",
+            "id": "187511023",
+            "source": "arca",
+            "comments": 17,
+            "views": 120,
+            "likes": 0,
+            "bodySummary": "화로즈 3돌 전무 상태에서 스팅키스 명전을 갈지 화로즈를 더 칠지 묻는 질문(댓글 17, 조회 120). 화로즈 풀돌 후 다음 픽업이 좋다는 의견과 스팅키스는 복각이 있어 급하지 않다는 조언."
+          },
+          {
+            "title": "이륙가능?",
+            "url": "https://arca.live/b/anchorpanic/187575687",
+            "tone": "neutral",
+            "id": "187575687",
+            "source": "arca",
+            "comments": 16,
+            "views": 104,
+            "likes": 1,
+            "bodySummary": "이륙해도 되는지 묻는 글(댓글 16, 조회 104). 광고 배너 캐릭터 대신 화로즈가 핵심이며 리세로 화로즈 2돌이면 바로 이륙이라는 답과 이륙 허가 댓글이 달렸다."
+          }
+        ],
+        "bugReports": [
+          {
+            "title": "이거 왜이럼",
+            "url": "https://arca.live/b/anchorpanic/187554878",
+            "id": "187554878",
+            "source": "arca",
+            "detail": "앱을 지웠다 깔아도 계속 오류가 난다는 글(댓글 11, 조회 79). 저장공간 부족 가능성이 언급됨."
+          },
+          {
+            "title": "pc클라로는 연맹 검색이 안되나",
+            "url": "https://arca.live/b/anchorpanic/187511826",
+            "id": "187511826",
+            "source": "arca",
+            "detail": "PC 클라이언트에서 연맹 검색이 안 된다는 문의(댓글 6)."
+          }
+        ],
+        "competitorMentions": [],
+        "trends": [
+          "1.5주년 3일차 신규·복귀 이륙 문의 지속(63건)",
+          "화로즈·스팅키스 뽑기 전략 논의",
+          "쟁탈전 후기 호평·저항력 소진 푸념"
+        ],
+        "watchlist": [
+          "신규 유입 잔존 및 이탈 여부",
+          "저항력 부족·앱 설치 오류 반응",
+          "월말 교환·신규 픽업 반응"
+        ],
+        "keywords": [
+          {
+            "word": "신규 유입·이륙 질문",
+            "count": 14,
+            "ids": [
+              "187575687",
+              "187561606",
+              "187550284",
+              "187546494",
+              "187539735",
+              "187539612",
+              "187522739",
+              "187515164",
+              "187513469",
+              "187507083",
+              "187505791",
+              "187497891",
+              "187489530",
+              "187483727"
+            ]
+          },
+          {
+            "word": "화로즈·스팅키스·뽑기",
+            "count": 10,
+            "ids": [
+              "187562183",
+              "187560084",
+              "187538224",
+              "187532565",
+              "187515164",
+              "187511023",
+              "187499919",
+              "187497891",
+              "187493588",
+              "187482736"
+            ]
+          },
+          {
+            "word": "챈 잡담·창작",
+            "count": 10,
+            "ids": [
+              "187572279",
+              "187569541",
+              "187567952",
+              "187536102",
+              "187530850",
+              "187511965",
+              "187498238",
+              "187496621",
+              "187495129",
+              "187489530"
+            ]
+          },
+          {
+            "word": "덱·캐릭 선택 질문",
+            "count": 8,
+            "ids": [
+              "187574206",
+              "187571101",
+              "187515566",
+              "187515164",
+              "187510201",
+              "187505724",
+              "187505471",
+              "187499919"
+            ]
+          },
+          {
+            "word": "저항력·육성 푸념(불만)",
+            "count": 7,
+            "ids": [
+              "187579493",
+              "187519113",
+              "187505619",
+              "187504826",
+              "187492858",
+              "187483915",
+              "187478829"
+            ]
+          },
+          {
+            "word": "PC 클라·오류(불만)",
+            "count": 3,
+            "ids": [
+              "187554878",
+              "187541804",
+              "187511826"
+            ]
+          },
+          {
+            "word": "쟁탈전",
+            "count": 2,
+            "ids": [
+              "187518095",
+              "187500990"
+            ]
+          }
+        ]
+      }
+    },
+    "erpis": {
+      "name": "erpis",
+      "date": "2026-10-30",
+      "posts": [
+        {
+          "id": "187541293",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/187541293",
+          "category": "",
+          "title": "이번 할로윈 or 내년 할로윈에 나올",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 52,
+          "likes": 0,
+          "utcIso": "2026-10-30T09:09:23Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 132
+        },
+        {
+          "id": "187528416",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/187528416",
+          "category": "",
+          "title": "아오 글로리랜드",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 35,
+          "likes": 0,
+          "utcIso": "2026-10-30T06:48:04Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 75
+        },
+        {
+          "id": "187496244",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/187496244",
+          "category": "",
+          "title": "고민된다",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 58,
+          "likes": 0,
+          "utcIso": "2026-10-29T23:41:38Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 118
+        },
+        {
+          "id": "187493804",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/187493804",
+          "category": "",
+          "title": "하루 1씹덕곡 추천 21일차",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 30,
+          "likes": 0,
+          "utcIso": "2026-10-29T22:42:05Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 70
+        },
+        {
+          "id": "18372",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18372",
+          "category": "일반",
+          "title": "에효 쓰레기게임",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 69,
+          "likes": 0,
+          "utcIso": "2026-10-30T13:05:46Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 89
+        },
+        {
+          "id": "18371",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18371",
+          "category": "일반",
+          "title": "죄다 접어서 그런가 이번 아레나 조편성 좃됐네",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 77,
+          "likes": 1,
+          "utcIso": "2026-10-30T07:43:32Z",
+          "sentiment": "negative",
+          "tags": [
+            "event"
+          ],
+          "engagement": 127,
+          "body": "친구들이 접어 아레나 조편성이 망했다는 글.",
+          "topComments": [
+            "이게 뭔가 하는 사람들을 몰아서 넣은것 같은데"
+          ]
+        },
+        {
+          "id": "18370",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18370",
+          "category": "일반",
+          "title": "다나와",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 93,
+          "likes": 0,
+          "utcIso": "2026-10-30T03:26:30Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 113
+        },
+        {
+          "id": "18369",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18369",
+          "category": "일반",
+          "title": "아직도 ex5 못깨는 사람 있냐?ㅎ",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 88,
+          "likes": 0,
+          "utcIso": "2026-10-30T00:43:52Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 168
+        },
+        {
+          "id": "18368",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18368",
+          "category": "일반",
+          "title": "상시천장 좀 그만 먹고싶다",
+          "author": "ㅇㅇ",
+          "comments": 11,
+          "views": 121,
+          "likes": 0,
+          "utcIso": "2026-10-30T00:24:13Z",
+          "sentiment": "negative",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 341,
+          "body": "상시 천장을 그만 먹고 싶다, 비틱 좀 하게 해달라는 푸념.",
+          "topComments": [
+            "나두 벗어나게해줘",
+            "그래서 뭐나옴",
+            "제시카",
+            "2각이라 힘들듯"
+          ]
+        },
+        {
+          "id": "18367",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18367",
+          "category": "일반",
+          "title": "페이너프먹었네",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 154,
+          "likes": 0,
+          "utcIso": "2026-10-29T23:55:19Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance"
+          ],
+          "engagement": 234,
+          "body": "신규 스킨(동탄룩)을 묻는 글. 구글 애르피스엔 저렇게 뜬다는 댓글.",
+          "topComments": [
+            "뉴 스킨임?",
+            "구글 애르피스에는 저렇게 뜨던데"
+          ]
+        },
+        {
+          "id": "18364",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18364",
+          "category": "일반",
+          "title": "솔직히 지옥주 버틸 자신이 없다",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 104,
+          "likes": 0,
+          "utcIso": "2026-10-29T20:23:48Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 184,
+          "body": "오픈 초기 지옥주는 광산이라도 있어 버텼는데 이번엔 졸업당할 것 같다는 글.",
+          "topComments": [
+            "안리스만 뽑자",
+            "셰리까지는 뽑아야 될 듯"
+          ]
+        },
+        {
+          "id": "18363",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18363",
+          "category": "일반",
+          "title": "근데 얘네 지금 자해 위주류 신캐찍어내는데",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 119,
+          "likes": 0,
+          "utcIso": "2026-10-29T17:43:19Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 199,
+          "body": "다음 한정캐를 자해덱 핵심축으로 내 메타를 만들려는 것 같다는 우려.",
+          "topComments": [
+            "그런듯 명함뽑음?",
+            "난 뽑았지 이미",
+            "신규 컨텐츠!?!!라는 행복회로"
+          ]
+        },
+        {
+          "id": "18362",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18362",
+          "category": "일반",
+          "title": "이게 진짜 뭐라는지 하나도 모르겠다",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 152,
+          "likes": 0,
+          "utcIso": "2026-10-29T16:24:50Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 252,
+          "body": "페이 계수를 보니 구려 보여 거르겠다는 글. 아군이 피해를 입을수록 전스 스택이 쌓여 강해진다는 설명과 브루저라는 반박.",
+          "topComments": [
+            "계수만보면 구린건 아님",
+            "페이는 극딜러가 아니라 브루저",
+            "그래서 3각해야함?"
+          ]
+        },
+        {
+          "id": "18361",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18361",
+          "category": "일반",
+          "title": "그래서다들 페이 명함은함?",
+          "author": "ㅇㅇ",
+          "comments": 8,
+          "views": 152,
+          "likes": 0,
+          "utcIso": "2026-10-29T15:19:10Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 312,
+          "body": "페이 명함을 다들 뽑았는지 묻는 글.",
+          "topComments": [
+            "다음달 1일에 뽑으려고",
+            "페이는 명함 하긴 해야지",
+            "페이 아직 기간 널널하니 기다렸다 뽑아라",
+            "이미 명함은 천장으로 쳐놈"
+          ]
+        }
+      ],
+      "stats": {
+        "notices": 0,
+        "bugs": 0,
+        "negative": 6,
+        "positive": 0,
+        "competitor_mentions": 0,
+        "newbie_returning": 0,
+        "guild_recruit": 0,
+        "gacha": 2,
+        "event": 1,
+        "balance": 1,
+        "guide": 1,
+        "chitchat": 9,
+        "total": 14,
+        "real_posts": 14,
+        "total_views": 1304,
+        "total_comments": 54,
+        "total_likes": 1,
+        "sentiment_score": -0.429,
+        "sentiment": "부정"
+      },
+      "topEngaging": [
+        {
+          "id": "18368",
+          "title": "상시천장 좀 그만 먹고싶다",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18368",
+          "source": "dc",
+          "views": 121,
+          "comments": 11,
+          "likes": 0,
+          "engagement": 341,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "18361",
+          "title": "그래서다들 페이 명함은함?",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18361",
+          "source": "dc",
+          "views": 152,
+          "comments": 8,
+          "likes": 0,
+          "engagement": 312,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18362",
+          "title": "이게 진짜 뭐라는지 하나도 모르겠다",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18362",
+          "source": "dc",
+          "views": 152,
+          "comments": 5,
+          "likes": 0,
+          "engagement": 252,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18367",
+          "title": "페이너프먹었네",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18367",
+          "source": "dc",
+          "views": 154,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 234,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18363",
+          "title": "근데 얘네 지금 자해 위주류 신캐찍어내는데",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18363",
+          "source": "dc",
+          "views": 119,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 199,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "18364",
+          "title": "솔직히 지옥주 버틸 자신이 없다",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18364",
+          "source": "dc",
+          "views": 104,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 184,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "18369",
+          "title": "아직도 ex5 못깨는 사람 있냐?ㅎ",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18369",
+          "source": "dc",
+          "views": 88,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 168,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "187541293",
+          "title": "이번 할로윈 or 내년 할로윈에 나올",
+          "url": "https://arca.live/b/erphis/187541293",
+          "source": "arca",
+          "views": 52,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 132,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18371",
+          "title": "죄다 접어서 그런가 이번 아레나 조편성 좃됐네",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18371",
+          "source": "dc",
+          "views": 77,
+          "comments": 1,
+          "likes": 1,
+          "engagement": 127,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "187496244",
+          "title": "고민된다",
+          "url": "https://arca.live/b/erphis/187496244",
+          "source": "arca",
+          "views": 58,
+          "comments": 3,
+          "likes": 0,
+          "engagement": 118,
+          "category": "",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis": {
+        "dailySummary": "에르피스는 페이 명함·3각 논의가 이어지는 가운데 상시 천장, 지옥주 부담, 자해덱 신캐 위주 출시를 두고 푸념이 두드러졌다. 상시천장 좀 그만 먹고 싶다는 글(댓글 11)과 오픈 초기 지옥주를 버틸 자신이 없다는 글, 에효 쓰레기게임이라는 한 줄 불만이 겹쳐 부정 신호가 뚜렷했고 페이 성능은 브루저 평가와 계수 논란으로 갈렸다. 글 수는 14건으로 적었지만 전반 정서는 뚜렷한 부정이었다.",
+        "topIssues": [
+          {
+            "title": "상시천장 좀 그만 먹고싶다",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18368",
+            "tone": "negative",
+            "id": "18368",
+            "source": "dc",
+            "comments": 11,
+            "views": 121,
+            "likes": 0,
+            "bodySummary": "상시 천장을 그만 먹고 싶다, 비틱 좀 하게 해달라는 푸념(댓글 11, 조회 121). 나도 벗어나고 싶다는 공감과 뭐가 나왔냐, 2각이라 힘들겠다는 댓글."
+          },
+          {
+            "title": "그래서다들 페이 명함은함?",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18361",
+            "tone": "neutral",
+            "id": "18361",
+            "source": "dc",
+            "comments": 8,
+            "views": 152,
+            "likes": 0,
+            "bodySummary": "페이 명함을 다들 뽑았는지 묻는 글(댓글 8, 조회 152). 다음달 1일에 뽑겠다, 천장으로 명함을 쳤다는 답과 기간이 넉넉하니 기다리자는 조언."
+          },
+          {
+            "title": "이게 진짜 뭐라는지 하나도 모르겠다",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18362",
+            "tone": "neutral",
+            "id": "18362",
+            "source": "dc",
+            "comments": 5,
+            "views": 152,
+            "likes": 0,
+            "bodySummary": "계수를 보니 구려 보여 거르겠다는 글(댓글 5, 조회 152). 아군 피해가 쌓일수록 강해지는 브루저형이라는 반박과 3각하면 속성증뎀 팀버프가 붙는다는 설명이 달렸다."
+          },
+          {
+            "title": "페이너프먹었네",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18367",
+            "tone": "neutral",
+            "id": "18367",
+            "source": "dc",
+            "comments": 4,
+            "views": 154,
+            "likes": 0,
+            "bodySummary": "페이 너프를 먹었다는 제목의 글(댓글 4, 조회 154). 본문은 신규 스킨(동탄룩) 문의로 구글 에르피스에는 저렇게 뜬다는 댓글."
+          },
+          {
+            "title": "근데 얘네 지금 자해 위주류 신캐찍어내는데",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18363",
+            "tone": "negative",
+            "id": "18363",
+            "source": "dc",
+            "comments": 4,
+            "views": 119,
+            "likes": 0,
+            "bodySummary": "신캐를 자해덱 핵심으로 낼 것 같아 메타를 만들려는 느낌이라는 우려(댓글 4, 조회 119). 이미 명함을 뽑았다는 반응과 신규 콘텐츠를 기대하는 행복회로 댓글."
+          }
+        ],
+        "bugReports": [],
+        "competitorMentions": [],
+        "trends": [
+          "페이 명함·3각·계수 논쟁",
+          "상시천장·지옥주 부담 푸념",
+          "자해덱 위주 신캐 출시 우려"
+        ],
+        "watchlist": [
+          "페이 뽑기 후 성능 평가",
+          "신캐 메타 쏠림·가챠 불만 확산 여부"
+        ],
+        "keywords": [
+          {
+            "word": "지옥주·신캐 흐름 불만",
+            "count": 4,
+            "ids": [
+              "18372",
+              "18371",
+              "18364",
+              "18363"
+            ]
+          },
+          {
+            "word": "페이 뽑기·성능",
+            "count": 2,
+            "ids": [
+              "18367",
+              "18361"
+            ]
+          },
+          {
+            "word": "아레나·레이드",
+            "count": 2,
+            "ids": [
+              "18371",
+              "18369"
+            ]
+          },
+          {
+            "word": "할로윈·신스킨",
+            "count": 2,
+            "ids": [
+              "187541293",
+              "187528416"
+            ]
+          },
+          {
+            "word": "상시천장·가챠 불만",
+            "count": 1,
+            "ids": [
+              "18368"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "searchTrends": null,
+  "generatedAt": "2026-10-30T22:37:05+00:00"
+}
