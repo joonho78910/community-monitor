@@ -1,0 +1,1771 @@
+{
+  "date": "2026-10-31",
+  "games": {
+    "anchorpanic": {
+      "name": "anchorpanic",
+      "date": "2026-10-31",
+      "posts": [
+        {
+          "id": "187673463",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187673463",
+          "category": "",
+          "title": "뉴비들이 잘 자라고 있구나",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 88,
+          "likes": 0,
+          "utcIso": "2026-10-31T14:30:21Z",
+          "sentiment": "positive",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 128
+        },
+        {
+          "id": "187672944",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187672944",
+          "category": "",
+          "title": "?¿؟⁇⁈﹖？𓃇",
+          "author": "ㅇㅇ",
+          "comments": 13,
+          "views": 79,
+          "likes": 0,
+          "utcIso": "2026-10-31T14:25:06Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 339,
+          "body": "주말 잡담 글. 다들 어디 갔냐는 반응.",
+          "topComments": [
+            "주말치곤 번잡했지않음?",
+            "그럼에도 나는 좀더 원한다!"
+          ]
+        },
+        {
+          "id": "187667809",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187667809",
+          "category": "",
+          "title": "뉴비공략 보다가 생각났는데",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 56,
+          "likes": 0,
+          "utcIso": "2026-10-31T13:35:19Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "newbie_returning"
+          ],
+          "engagement": 96,
+          "body": "강화재료로 R/SR 낙인을 쓰면 달러가 많이 소모된다는 팁 글.",
+          "topComments": [
+            "아 진짜?? 1년반 겜하면서 이걸 몰랐네"
+          ]
+        },
+        {
+          "id": "187663716",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187663716",
+          "category": "",
+          "title": "어때",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 62,
+          "likes": 0,
+          "utcIso": "2026-10-31T12:55:04Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 162
+        },
+        {
+          "id": "187654187",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187654187",
+          "category": "",
+          "title": "최후의빛은 왤케 밀 마음이 안들지",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 50,
+          "likes": 0,
+          "utcIso": "2026-10-31T11:19:05Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 110,
+          "body": "최후의빛을 밀 마음이 안 든다는 글.",
+          "topComments": [
+            "영웅풀 적을땐 못밀어 냅두셈"
+          ]
+        },
+        {
+          "id": "187651612",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187651612",
+          "category": "",
+          "title": "(중요) 내일 상점 교환소 리셋임",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 75,
+          "likes": 0,
+          "utcIso": "2026-10-31T10:50:41Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "engagement": 155,
+          "body": "내일 상점 교환소가 리셋되니 뽑기권을 다 사라는 뉴비 안내.",
+          "topComments": [
+            "앙 바꿔머것서"
+          ]
+        },
+        {
+          "id": "187650806",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187650806",
+          "category": "질문",
+          "title": "낙인 분해 질문 하나만",
+          "author": "ㅇㅇ",
+          "comments": 9,
+          "views": 60,
+          "likes": 1,
+          "utcIso": "2026-10-31T10:40:40Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "gacha"
+          ],
+          "engagement": 270,
+          "body": "낙인 분해 질문. SSR은 미지·분배 외 갈아도 되는지.",
+          "topComments": [
+            "SSR은 일단 냅두기, SR은 운명 빼고 다 갈기",
+            "R은 경험치로 쓰면 됨"
+          ]
+        },
+        {
+          "id": "187650479",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187650479",
+          "category": "질문",
+          "title": "속도 질문 하나만",
+          "author": "ㅇㅇ",
+          "comments": 9,
+          "views": 60,
+          "likes": 0,
+          "utcIso": "2026-10-31T10:36:20Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "balance"
+          ],
+          "engagement": 240,
+          "body": "화로 속도 조절을 위해 낙인 속도 옵션을 빼야 하는지 묻는 글.",
+          "topComments": [
+            "화로즈 속도 빼고 딜관련 챙기기 가능",
+            "PVE는 순서가 더 중요하고 속도 집착할 게 아님"
+          ]
+        },
+        {
+          "id": "187650399",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187650399",
+          "category": "",
+          "title": "할배들 화로에 모듈 다 갈아넣어와써!!!",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 73,
+          "likes": 0,
+          "utcIso": "2026-10-31T10:35:26Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 173,
+          "body": "화로에 모듈을 다 갈아넣었다는 글.",
+          "topComments": [
+            "이제 공격->치피 기본공격으로 전부 갈면 된다",
+            "모듈 300개 정도 있었는데 다 써버림"
+          ]
+        },
+        {
+          "id": "187650172",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187650172",
+          "category": "",
+          "title": "아 글카스 영감이 떠오른다",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 25,
+          "likes": 0,
+          "utcIso": "2026-10-31T10:32:43Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 85
+        },
+        {
+          "id": "187646954",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187646954",
+          "category": "질문",
+          "title": "이륙해도됨?",
+          "author": "ㅇㅇ",
+          "comments": 8,
+          "views": 74,
+          "likes": 0,
+          "utcIso": "2026-10-31T09:54:15Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "newbie_returning"
+          ],
+          "engagement": 234,
+          "body": "이륙해도 되는지 묻는 글(티아 패키지 구매).",
+          "topComments": [
+            "이륙조건 돼서 ㄱㅊ",
+            "화로즈 3돌까지는 필수로 달려야",
+            "선택권은 확실히 필요할 때 쓰는 게 좋다"
+          ]
+        },
+        {
+          "id": "187644363",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187644363",
+          "category": "",
+          "title": "오늘도 4~6 모듈 파밍 허탕이네",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 42,
+          "likes": 0,
+          "utcIso": "2026-10-31T09:24:27Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 82,
+          "body": "4~6 모듈 파밍이 오늘도 허탕이라는 푸념.",
+          "topComments": [
+            "물욕센서 걸려있는듯"
+          ]
+        },
+        {
+          "id": "187643152",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187643152",
+          "category": "",
+          "title": "더 강해질 껀덕지를 찾아보고있는데",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 33,
+          "likes": 0,
+          "utcIso": "2026-10-31T09:10:33Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 53
+        },
+        {
+          "id": "187642925",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187642925",
+          "category": "",
+          "title": "야이 앵붕이들아",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 40,
+          "likes": 0,
+          "utcIso": "2026-10-31T09:08:22Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 100
+        },
+        {
+          "id": "187641869",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187641869",
+          "category": "질문",
+          "title": "속도버프 % 옵션은",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 57,
+          "likes": 0,
+          "utcIso": "2026-10-31T08:55:47Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "balance"
+          ],
+          "engagement": 177,
+          "body": "속도버프 % 옵션의 의미를 묻는 질문.",
+          "topComments": [
+            "본인 속도가 그 %만큼 올라가는 것",
+            "방어버프가 이론상 가치가 제일 높음"
+          ]
+        },
+        {
+          "id": "187641174",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187641174",
+          "category": "",
+          "title": "뉴비들 이것도 있음(링크잘못걸어서 수정)",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 84,
+          "likes": 0,
+          "utcIso": "2026-10-31T08:46:55Z",
+          "sentiment": "neutral",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 144
+        },
+        {
+          "id": "187636579",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187636579",
+          "category": "",
+          "title": "와 씨발 진짜 패닉 올거같음",
+          "author": "ㅇㅇ",
+          "comments": 10,
+          "views": 127,
+          "likes": 2,
+          "utcIso": "2026-10-31T07:51:43Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 387,
+          "body": "모듈 공격 옵션이 100판 넘게 돌려도 안 뜬다는 좌절 글.",
+          "topComments": [
+            "일단 공격 올려 쓰다 치명 나오면 갈아끼워라",
+            "급하게 하려 하면 끝이 없다, 스토리 밀며 찬찬히",
+            "내가 이겼어 칭찬과 축하를"
+          ]
+        },
+        {
+          "id": "187631355",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187631355",
+          "category": "",
+          "title": "이거 왤캐 귀엽냐 ㅋㅋㅋㅋㅋㅋㅋㅋ",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 86,
+          "likes": 0,
+          "utcIso": "2026-10-31T06:43:33Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 166
+        },
+        {
+          "id": "187630410",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187630410",
+          "category": "",
+          "title": "이제 이것도 해줄만한거같은데",
+          "author": "ㅇㅇ",
+          "comments": 21,
+          "views": 133,
+          "likes": 0,
+          "utcIso": "2026-10-31T06:31:33Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 553,
+          "body": "3.3 신규 스킨은 그렇다 쳐도 구스킨 선택 복각이 있으면 좋겠다는 글.",
+          "topComments": [
+            "스킨패스 2칸 고수하면 영원히 복각이 안 나온다",
+            "복각은 기본보상 없이 구매보상만 남겨도 들어오는 게 맞다",
+            "스킨은 진짜 너무 기약없이 기다려야해서"
+          ]
+        },
+        {
+          "id": "187629242",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187629242",
+          "category": "",
+          "title": "ㅇㅇ",
+          "author": "ㅇㅇ",
+          "comments": 8,
+          "views": 89,
+          "likes": 4,
+          "utcIso": "2026-10-31T06:16:42Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 369,
+          "body": "화로즈·오스카린·이베트 등 모듈 세트·옵션 세팅 정리 글.",
+          "topComments": [
+            "양자덱에 쓸 거면 4명중이 더 나음",
+            "나중에 짜투리로 쓰면 방사를 못넣으니 파괴 쓰는 것",
+            "공략은 아니고 사진 올려달라 해서"
+          ]
+        },
+        {
+          "id": "187629129",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187629129",
+          "category": "",
+          "title": "완성했다",
+          "author": "ㅇㅇ",
+          "comments": 9,
+          "views": 66,
+          "likes": 1,
+          "utcIso": "2026-10-31T06:15:10Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 276,
+          "body": "플러그인(모듈) 세팅 완성 후기.",
+          "topComments": [
+            "치확 10 기공 12 찍고 공 4로 조절하는 게 더 좋다",
+            "다른애들 균등하게 올려주는 게 좋아"
+          ]
+        },
+        {
+          "id": "187627448",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187627448",
+          "category": "질문",
+          "title": "모듈 뭐 제작은없음?",
+          "author": "ㅇㅇ",
+          "comments": 12,
+          "views": 90,
+          "likes": 0,
+          "utcIso": "2026-10-31T05:53:57Z",
+          "sentiment": "negative",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 330,
+          "body": "모듈 제작이 없냐는 푸념. 5옵션이 안 나온다는 욕설 섞인 불만.",
+          "topComments": [
+            "초반 모듈작이 빡시지만 맞추면 성장 보람",
+            "3개월 고통 이후엔 모듈이 넘쳐난다",
+            "이건 억까가 맞네"
+          ]
+        },
+        {
+          "id": "187627357",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187627357",
+          "category": "질문",
+          "title": "왜 못 뚫는지 모르겠네",
+          "author": "ㅇㅇ",
+          "comments": 19,
+          "views": 110,
+          "likes": 0,
+          "utcIso": "2026-10-31T05:52:37Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 490,
+          "body": "화로 덱이 이 정도면 뚫을 줄 알았는데 안 뚫린다는 질문. 속도(화로 62·오스카린 97 등)가 느려 선빵을 못 친다는 조언이 이어짐.",
+          "topComments": [
+            "속도가 넘 느리다 100정도는 맞춰주면 좋다",
+            "오스카린 속도비례로 아군 속도가 오른다",
+            "모듈 육성 탭에서 개조가 가능"
+          ]
+        },
+        {
+          "id": "187626247",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187626247",
+          "category": "",
+          "title": "진짜 미친게임 같아",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 116,
+          "likes": 1,
+          "utcIso": "2026-10-31T05:38:33Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 266,
+          "body": "스브보다 오래한 게임이라며 만원도 안 쓰고 SSR을 퍼준다고 극찬한 글.",
+          "topComments": [
+            "분재+천박으로 이만한 게임도 없다",
+            "분재최적화인거 확실",
+            "이게 게임이지!!"
+          ]
+        },
+        {
+          "id": "187624974",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187624974",
+          "category": "",
+          "title": "대충30분정도해봤는데",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 69,
+          "likes": 0,
+          "utcIso": "2026-10-31T05:22:19Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 149,
+          "body": "30분 정도 해본 신규의 소감, 월정액을 지를 듯.",
+          "topComments": [
+            "그정도 적절함"
+          ]
+        },
+        {
+          "id": "187624206",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187624206",
+          "category": "",
+          "title": "응애 막혓우",
+          "author": "ㅇㅇ",
+          "comments": 9,
+          "views": 68,
+          "likes": 0,
+          "utcIso": "2026-10-31T05:12:29Z",
+          "sentiment": "neutral",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 248,
+          "body": "일반 12-13 특수 5-10에서 막혔다는 뉴비 질문.",
+          "topComments": [
+            "오스카린 속도 높이니까 된다",
+            "선빵 치는 게 중요"
+          ]
+        },
+        {
+          "id": "187623999",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187623999",
+          "category": "",
+          "title": "저항력 끝!",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 34,
+          "likes": 0,
+          "utcIso": "2026-10-31T05:10:12Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 74,
+          "body": "화로 낙인 80 풀 강화로 저항력이 벌써 바닥났다는 푸념."
+        },
+        {
+          "id": "187622032",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187622032",
+          "category": "",
+          "title": "일단 찍먹을해",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 43,
+          "likes": 0,
+          "utcIso": "2026-10-31T04:46:18Z",
+          "sentiment": "neutral",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 83
+        },
+        {
+          "id": "187621070",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187621070",
+          "category": "",
+          "title": "인스타 광고봤는데",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 80,
+          "likes": 2,
+          "utcIso": "2026-10-31T04:34:34Z",
+          "sentiment": "neutral",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 220,
+          "body": "인스타 광고를 보고 왔다는 글.",
+          "topComments": [
+            "내 아내임"
+          ]
+        },
+        {
+          "id": "187619151",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187619151",
+          "category": "",
+          "title": "날씨 좋네",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 43,
+          "likes": 0,
+          "utcIso": "2026-10-31T04:09:32Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 83
+        },
+        {
+          "id": "187616162",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187616162",
+          "category": "",
+          "title": "어제 쟁탈 100점차로 졌네",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 63,
+          "likes": 1,
+          "utcIso": "2026-10-31T03:32:57Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "engagement": 133
+        },
+        {
+          "id": "187615316",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187615316",
+          "category": "",
+          "title": "조졌네",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 82,
+          "likes": 1,
+          "utcIso": "2026-10-31T03:22:11Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 232,
+          "body": "쟁탈전 매칭이 가혹하다는 글.",
+          "topComments": [
+            "쟁탈1등vs첫쟁탈",
+            "뉴비 손목꺾기 우우"
+          ]
+        },
+        {
+          "id": "187613921",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187613921",
+          "category": "",
+          "title": "크아악!! 쟁탈 오늘 상대도 늙크크야",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 52,
+          "likes": 0,
+          "utcIso": "2026-10-31T03:03:51Z",
+          "sentiment": "negative",
+          "tags": [
+            "event"
+          ],
+          "engagement": 72
+        },
+        {
+          "id": "187613046",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187613046",
+          "category": "",
+          "title": "조진거같은데",
+          "author": "ㅇㅇ",
+          "comments": 7,
+          "views": 79,
+          "likes": 1,
+          "utcIso": "2026-10-31T02:52:18Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 249,
+          "body": "11-15에서 화로 풀돌이 가능한지 묻는 질문.",
+          "topComments": [
+            "특수 극한이 재화 더 많이 줌",
+            "일반은 540 특수 720 극한 900"
+          ]
+        },
+        {
+          "id": "187609652",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187609652",
+          "category": "",
+          "title": "배신겜 개재밌네 ㅅㅂ",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 96,
+          "likes": 0,
+          "utcIso": "2026-10-31T02:01:07Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 176,
+          "body": "왜 이렇게 재밌냐는 호평 글. 픽뚫 천장 240인데도 재밌다는 반응.",
+          "topComments": [
+            "가챠가 있는 몬헌 아웃랜더스",
+            "몬헌은 아본이 끝이야"
+          ]
+        },
+        {
+          "id": "187608833",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187608833",
+          "category": "",
+          "title": "깊은고민중",
+          "author": "ㅇㅇ",
+          "comments": 9,
+          "views": 82,
+          "likes": 2,
+          "utcIso": "2026-10-31T01:47:47Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 322,
+          "body": "성원 상자·핵·티켓 중 무엇을 살지 묻는 글. 과금 단가를 비교.",
+          "topComments": [
+            "역시 성원이구나",
+            "성원. 근데 나도 5개월은 티켓 먼저 산듯",
+            "티켓은 어디서든 모인단 마인드"
+          ]
+        },
+        {
+          "id": "187608195",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187608195",
+          "category": "",
+          "title": "다들 주말이라고 놀러갔나",
+          "author": "ㅇㅇ",
+          "comments": 8,
+          "views": 57,
+          "likes": 0,
+          "utcIso": "2026-10-31T01:37:22Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 217
+        },
+        {
+          "id": "187602565",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/187602565",
+          "category": "",
+          "title": "3돌은 가능하다 그죠",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 81,
+          "likes": 0,
+          "utcIso": "2026-10-31T00:06:17Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 161,
+          "body": "3돌은 가능하겠냐는 질문.",
+          "topComments": [
+            "무과금 3돌에 낙인은 무조건가능",
+            "풀천이면 5돌 낙인에 다른 것도 가능"
+          ]
+        }
+      ],
+      "stats": {
+        "notices": 0,
+        "bugs": 0,
+        "negative": 6,
+        "positive": 6,
+        "competitor_mentions": 0,
+        "newbie_returning": 7,
+        "guild_recruit": 0,
+        "gacha": 1,
+        "event": 3,
+        "balance": 2,
+        "guide": 8,
+        "chitchat": 22,
+        "total": 38,
+        "real_posts": 38,
+        "total_views": 2704,
+        "total_comments": 231,
+        "total_likes": 16,
+        "sentiment_score": 0.0,
+        "sentiment": "중립"
+      },
+      "topEngaging": [
+        {
+          "id": "187630410",
+          "title": "이제 이것도 해줄만한거같은데",
+          "url": "https://arca.live/b/anchorpanic/187630410",
+          "source": "arca",
+          "views": 133,
+          "comments": 21,
+          "likes": 0,
+          "engagement": 553,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "187627357",
+          "title": "왜 못 뚫는지 모르겠네",
+          "url": "https://arca.live/b/anchorpanic/187627357",
+          "source": "arca",
+          "views": 110,
+          "comments": 19,
+          "likes": 0,
+          "engagement": 490,
+          "category": "질문",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "187636579",
+          "title": "와 씨발 진짜 패닉 올거같음",
+          "url": "https://arca.live/b/anchorpanic/187636579",
+          "source": "arca",
+          "views": 127,
+          "comments": 10,
+          "likes": 2,
+          "engagement": 387,
+          "category": "",
+          "sentiment": "negative"
+        },
+        {
+          "id": "187629242",
+          "title": "ㅇㅇ",
+          "url": "https://arca.live/b/anchorpanic/187629242",
+          "source": "arca",
+          "views": 89,
+          "comments": 8,
+          "likes": 4,
+          "engagement": 369,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "187672944",
+          "title": "?¿؟⁇⁈﹖？𓃇",
+          "url": "https://arca.live/b/anchorpanic/187672944",
+          "source": "arca",
+          "views": 79,
+          "comments": 13,
+          "likes": 0,
+          "engagement": 339,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "187627448",
+          "title": "모듈 뭐 제작은없음?",
+          "url": "https://arca.live/b/anchorpanic/187627448",
+          "source": "arca",
+          "views": 90,
+          "comments": 12,
+          "likes": 0,
+          "engagement": 330,
+          "category": "질문",
+          "sentiment": "negative"
+        },
+        {
+          "id": "187608833",
+          "title": "깊은고민중",
+          "url": "https://arca.live/b/anchorpanic/187608833",
+          "source": "arca",
+          "views": 82,
+          "comments": 9,
+          "likes": 2,
+          "engagement": 322,
+          "category": "",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis": {
+        "dailySummary": "앵커패닉은 월말 토요일답게 신규·복귀 유저의 질문이 중심이었다. 화로즈 모듈 세팅과 속도·낙인 육성법을 묻는 글에 고참들이 길게 답해주는 분위기가 이어졌고, 스킨 선택 복각 요청이 하루 최다 댓글을 모았다. 모듈 옵션이 안 뜬다는 푸념과 저항력 소진, 쟁탈전 매칭 불만이 일부 있었지만 분재·가챠 호평도 함께 나와 전반 정서는 완만한 중립 이하로 크게 기울지 않았다.",
+        "topIssues": [
+          {
+            "title": "이제 이것도 해줄만한거같은데",
+            "url": "https://arca.live/b/anchorpanic/187630410",
+            "tone": "neutral",
+            "id": "187630410",
+            "source": "arca",
+            "comments": 21,
+            "views": 133,
+            "likes": 0,
+            "bodySummary": "3.3 신규 스킨은 그렇다 쳐도 구스킨 선택 복각이 있으면 좋겠다는 글(댓글 21, 조회 133). 스킨패스 2칸만 고수하면 복각이 안 나온다는 우려와, 복각은 구매보상만 남겨도 들어오는 게 맞다는 공감이 이어졌다."
+          },
+          {
+            "title": "왜 못 뚫는지 모르겠네",
+            "url": "https://arca.live/b/anchorpanic/187627357",
+            "tone": "neutral",
+            "id": "187627357",
+            "source": "arca",
+            "comments": 19,
+            "views": 110,
+            "likes": 0,
+            "bodySummary": "화로 덱으로 왜 못 뚫는지 묻는 질문(댓글 19, 조회 110). 속도가 느려 선빵을 못 치니 100 근처로 맞추고 오스카린 속도를 올리라는 조언과 모듈 개조 탭 안내가 달렸다."
+          },
+          {
+            "title": "와 씨발 진짜 패닉 올거같음",
+            "url": "https://arca.live/b/anchorpanic/187636579",
+            "tone": "negative",
+            "id": "187636579",
+            "source": "arca",
+            "comments": 10,
+            "views": 127,
+            "likes": 2,
+            "bodySummary": "모듈 공격 옵션이 100판을 돌려도 안 뜬다는 좌절 글(댓글 10, 조회 127, 추천 2). 일단 공격을 올려 쓰다 치명이 나오면 교체하라는 조언과, 급하게 하지 말고 스토리를 밀며 찬찬히 하라는 격려가 달렸다."
+          },
+          {
+            "title": "ㅇㅇ",
+            "url": "https://arca.live/b/anchorpanic/187629242",
+            "tone": "neutral",
+            "id": "187629242",
+            "source": "arca",
+            "comments": 8,
+            "views": 89,
+            "likes": 4,
+            "bodySummary": "화로즈·오스카린·이베트 등 모듈 세트와 옵션 세팅을 정리해 올린 글(댓글 8, 조회 89, 추천 4). 양자덱엔 4명중이 낫다, 범용성을 위해 파괴를 쓴다는 추가 설명이 이어졌다."
+          },
+          {
+            "title": "모듈 뭐 제작은없음?",
+            "url": "https://arca.live/b/anchorpanic/187627448",
+            "tone": "negative",
+            "id": "187627448",
+            "source": "arca",
+            "comments": 12,
+            "views": 90,
+            "likes": 0,
+            "bodySummary": "모듈 제작이 없냐며 5옵션이 안 나온다고 욕설 섞어 푸념한 글(댓글 12, 조회 90). 초반 모듈작은 빡세지만 맞추면 보람이 있고 3개월 뒤엔 넘쳐난다는 위로와 억까라는 공감이 갈렸다."
+          }
+        ],
+        "bugReports": [],
+        "competitorMentions": [],
+        "trends": [
+          "모듈 세팅·속도·낙인 육성 질문 다수(신규 유입 지속)",
+          "스킨 선택 복각 요청 최다 댓글",
+          "모듈 옵션 파밍·저항력 소진 푸념"
+        ],
+        "watchlist": [
+          "모듈 파밍 피로감 확산 여부",
+          "스킨 복각 요구 반응",
+          "월초 상점·교환소 리셋 후 신규 유저 정착"
+        ],
+        "keywords": [
+          {
+            "word": "신규 유입·이륙 질문",
+            "count": 9,
+            "ids": [
+              "187673463",
+              "187667809",
+              "187646954",
+              "187641174",
+              "187621070",
+              "187624974",
+              "187622032",
+              "187624206",
+              "187651612"
+            ]
+          },
+          {
+            "word": "모듈 파밍·옵션(불만)",
+            "count": 6,
+            "ids": [
+              "187636579",
+              "187644363",
+              "187627448",
+              "187650399",
+              "187629129",
+              "187629242"
+            ]
+          },
+          {
+            "word": "낙인·속도·육성 질문",
+            "count": 6,
+            "ids": [
+              "187650806",
+              "187650479",
+              "187641869",
+              "187667809",
+              "187627357",
+              "187613046"
+            ]
+          },
+          {
+            "word": "주말 잡담",
+            "count": 5,
+            "ids": [
+              "187608195",
+              "187619151",
+              "187672944",
+              "187642925",
+              "187650172"
+            ]
+          },
+          {
+            "word": "저항력·막힘(불만)",
+            "count": 4,
+            "ids": [
+              "187623999",
+              "187627357",
+              "187654187",
+              "187624206"
+            ]
+          },
+          {
+            "word": "앵커패닉 호평(긍정)",
+            "count": 4,
+            "ids": [
+              "187626247",
+              "187609652",
+              "187673463",
+              "187631355"
+            ]
+          },
+          {
+            "word": "쟁탈전",
+            "count": 3,
+            "ids": [
+              "187616162",
+              "187615316",
+              "187613921"
+            ]
+          },
+          {
+            "word": "뽑기·성원 고민",
+            "count": 3,
+            "ids": [
+              "187608833",
+              "187663716",
+              "187602565"
+            ]
+          },
+          {
+            "word": "스킨 복각 요청",
+            "count": 1,
+            "ids": [
+              "187630410"
+            ]
+          }
+        ]
+      }
+    },
+    "erpis": {
+      "name": "erpis",
+      "date": "2026-10-31",
+      "posts": [
+        {
+          "id": "187653220",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/187653220",
+          "category": "",
+          "title": "심심해서 올리는소소한 길레 4왕정보",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 53,
+          "likes": 1,
+          "utcIso": "2026-10-31T11:08:25Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "engagement": 163,
+          "body": "길레 4왕 능력치 정보 공유 글. 공헌도 딸 최적 보스라는 설명."
+        },
+        {
+          "id": "187647112",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/187647112",
+          "category": "",
+          "title": "신캐스킨",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 41,
+          "likes": 0,
+          "utcIso": "2026-10-31T09:56:10Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 141,
+          "body": "신캐스킨 글. 나오자마자 뽑을 오팔 준비 완료.",
+          "topComments": [
+            "키보토스 출신이엇어"
+          ]
+        },
+        {
+          "id": "187642377",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/187642377",
+          "category": "",
+          "title": "하루 1씹덕곡 추천 22일차",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 24,
+          "likes": 0,
+          "utcIso": "2026-10-31T09:01:36Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 64
+        },
+        {
+          "id": "187622760",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/187622760",
+          "category": "",
+          "title": "길드 이거 뺏기기도하네 ㅋㅋㅋㅋ",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 38,
+          "likes": 0,
+          "utcIso": "2026-10-31T04:55:08Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guild_recruit"
+          ],
+          "engagement": 78,
+          "body": "현생 바빠 며칠 못 들어갔더니 길드장을 뺏겼다는 글."
+        },
+        {
+          "id": "187611300",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/187611300",
+          "category": "",
+          "title": "으 배신하느라 정신없네.,",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 48,
+          "likes": 0,
+          "utcIso": "2026-10-31T02:26:07Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 168
+        },
+        {
+          "id": "18389",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18389",
+          "category": "일반",
+          "title": "잠시후 월초다 ㅎ 별빛 묵어야지",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 39,
+          "likes": 0,
+          "utcIso": "2026-10-31T14:49:29Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "engagement": 79
+        },
+        {
+          "id": "18388",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18388",
+          "category": "일반",
+          "title": "재화 부족한 사람들아(고래제외)페이뽑는건 좋은디",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 62,
+          "likes": 0,
+          "utcIso": "2026-10-31T14:43:51Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 142,
+          "body": "재화 부족한 유저는 월요일 다음 캐릭터를 보고 뽑자는 글.",
+          "topComments": [
+            "이러다 줄초상 나겠노",
+            "슬슬 죽은애들 제삿상차려줘야함"
+          ]
+        },
+        {
+          "id": "18387",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18387",
+          "category": "일반",
+          "title": "페이 평가",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 106,
+          "likes": 0,
+          "utcIso": "2026-10-31T12:04:48Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 186,
+          "body": "레이븐·리온을 기준으로 3각 갈지, 5각은 오바인지 논의하는 페이 평가 글.",
+          "topComments": [
+            "인장패키지 사서 3각 간다",
+            "레이븐 고각이 그렇게 좋다니"
+          ]
+        },
+        {
+          "id": "18386",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18386",
+          "category": "일반",
+          "title": "글서 고각유저분들도 페이는 그닥임?",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 57,
+          "likes": 0,
+          "utcIso": "2026-10-31T11:53:10Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 97,
+          "body": "고각 유저의 페이 평가를 묻는 글.",
+          "topComments": [
+            "상위길드 랭커들 말걸어보셈",
+            "세다고"
+          ]
+        },
+        {
+          "id": "18385",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18385",
+          "category": "일반",
+          "title": "겜 조지긴 한 것 같은데",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 75,
+          "likes": 0,
+          "utcIso": "2026-10-31T11:24:07Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 135,
+          "body": "갤길 유입도 끊기고 가챠도 빡세지면 죽을 일만 남았다며 게임사가 뭐라도 해야 한다는 글.",
+          "topComments": [
+            "진짜 냉정하게 이제 가라... 모드",
+            "유입도 없는데 가챠가 미쳤음",
+            "나도 곧 갈듯"
+          ]
+        },
+        {
+          "id": "18384",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18384",
+          "category": "일반",
+          "title": "오늘의 뻘글",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 48,
+          "likes": 0,
+          "utcIso": "2026-10-31T07:56:05Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 68
+        },
+        {
+          "id": "18383",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18383",
+          "category": "일반",
+          "title": "페이 1각만할까 흠",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 79,
+          "likes": 0,
+          "utcIso": "2026-10-31T04:41:33Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 119
+        },
+        {
+          "id": "18382",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18382",
+          "category": "일반",
+          "title": "다들 피빕 조합 어케쓰고 있냐",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 81,
+          "likes": 0,
+          "utcIso": "2026-10-31T02:28:30Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "event"
+          ],
+          "engagement": 181
+        },
+        {
+          "id": "18381",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18381",
+          "category": "일반",
+          "title": "1등",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 92,
+          "likes": 0,
+          "utcIso": "2026-10-31T01:38:10Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 132
+        },
+        {
+          "id": "18380",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18380",
+          "category": "일반",
+          "title": "흠 조졌네",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 117,
+          "likes": 0,
+          "utcIso": "2026-10-30T23:41:59Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 197,
+          "body": "명함·돌 보유 현황과 오팔 소요 정리 글.",
+          "topComments": [
+            "시키 월보캔데 거른다고",
+            "해봤자 명함뽑인데 성능나오나?"
+          ]
+        },
+        {
+          "id": "18379",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18379",
+          "category": "일반",
+          "title": "메이 후기",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 101,
+          "likes": 0,
+          "utcIso": "2026-10-30T22:56:30Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 101,
+          "body": "메이 후기. 키우지 말라는 부정 평가.",
+          "topComments": [
+            "캐릭풀 없는 뉴비는 키울만 하지만 재화 없어 못 키움",
+            "딜 50만 기대값은 나오긴함"
+          ]
+        },
+        {
+          "id": "18378",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18378",
+          "category": "일반",
+          "title": "대충 쳐본 페이딜",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 106,
+          "likes": 0,
+          "utcIso": "2026-10-30T22:12:07Z",
+          "sentiment": "positive",
+          "tags": [
+            "gacha",
+            "balance"
+          ],
+          "engagement": 186,
+          "body": "페이 딜 후기: 레니x덱 돌격으로 딜이 괜찮다.",
+          "topComments": [
+            "몇각임?",
+            "풀",
+            "역시 3각할만하네"
+          ]
+        },
+        {
+          "id": "18377",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18377",
+          "category": "일반",
+          "title": "넵튠은 믿고 걸러야지 ㅇㅇ",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 87,
+          "likes": 2,
+          "utcIso": "2026-10-30T21:32:23Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 227,
+          "body": "넵튠 신규 퍼블 게임들과 에르피스를 싸잡아 깎아내린 글. 이터널리턴·앵커패닉 등도 넵튠 것이냐는 반응.",
+          "topComments": [
+            "퍼블치곤 유저편의 잘봐주고 소통도 잘해줘서 호감",
+            "겜이 다 개똥겜을 가져오는게 문제"
+          ]
+        },
+        {
+          "id": "18376",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18376",
+          "category": "일반",
+          "title": "환상쳐보니 페이조은거가튼데",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 86,
+          "likes": 0,
+          "utcIso": "2026-10-30T21:16:00Z",
+          "sentiment": "positive",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 126,
+          "body": "페이가 3각 가디언을 이기며 몸도 단단해 보인다는 평가 글.",
+          "topComments": [
+            "레이븐도 3각해줘야 돼서"
+          ]
+        },
+        {
+          "id": "18375",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18375",
+          "category": "일반",
+          "title": "넵튠 신규 퍼블겜 대충 찾아봤는데",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 71,
+          "likes": 0,
+          "utcIso": "2026-10-30T20:41:47Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 151,
+          "body": "넵튠 신규 퍼블 게임을 찾아봤는데 처참했다는 글.",
+          "topComments": [
+            "넵튠은 똥전문가인듯",
+            "주딱이 할만하데서 깔았는데"
+          ]
+        },
+        {
+          "id": "18374",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18374",
+          "category": "일반",
+          "title": "그래서 페이 피빕",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 82,
+          "likes": 0,
+          "utcIso": "2026-10-30T16:24:36Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha",
+            "event"
+          ],
+          "engagement": 202,
+          "body": "페이를 이자벨과 어떻게 쓰는지, PvP 성능을 묻는 글.",
+          "topComments": [
+            "페이 피빕에서 쓰는 사람을 못봄",
+            "침투 잘시켜 장기전 가면 셈"
+          ]
+        }
+      ],
+      "stats": {
+        "notices": 0,
+        "bugs": 0,
+        "negative": 4,
+        "positive": 2,
+        "competitor_mentions": 0,
+        "newbie_returning": 0,
+        "guild_recruit": 1,
+        "gacha": 7,
+        "event": 4,
+        "balance": 1,
+        "guide": 2,
+        "chitchat": 9,
+        "total": 21,
+        "real_posts": 21,
+        "total_views": 1493,
+        "total_comments": 68,
+        "total_likes": 3,
+        "sentiment_score": -0.095,
+        "sentiment": "부정"
+      },
+      "topEngaging": [
+        {
+          "id": "18377",
+          "title": "넵튠은 믿고 걸러야지 ㅇㅇ",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18377",
+          "source": "dc",
+          "views": 87,
+          "comments": 4,
+          "likes": 2,
+          "engagement": 227,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "18374",
+          "title": "그래서 페이 피빕",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18374",
+          "source": "dc",
+          "views": 82,
+          "comments": 6,
+          "likes": 0,
+          "engagement": 202,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18380",
+          "title": "흠 조졌네",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18380",
+          "source": "dc",
+          "views": 117,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 197,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18387",
+          "title": "페이 평가",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18387",
+          "source": "dc",
+          "views": 106,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 186,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18378",
+          "title": "대충 쳐본 페이딜",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18378",
+          "source": "dc",
+          "views": 106,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 186,
+          "category": "일반",
+          "sentiment": "positive"
+        },
+        {
+          "id": "18382",
+          "title": "다들 피빕 조합 어케쓰고 있냐",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18382",
+          "source": "dc",
+          "views": 81,
+          "comments": 5,
+          "likes": 0,
+          "engagement": 181,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "187611300",
+          "title": "으 배신하느라 정신없네.,",
+          "url": "https://arca.live/b/erphis/187611300",
+          "source": "arca",
+          "views": 48,
+          "comments": 6,
+          "likes": 0,
+          "engagement": 168,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "187653220",
+          "title": "심심해서 올리는소소한 길레 4왕정보",
+          "url": "https://arca.live/b/erphis/187653220",
+          "source": "arca",
+          "views": 53,
+          "comments": 4,
+          "likes": 1,
+          "engagement": 163,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18375",
+          "title": "넵튠 신규 퍼블겜 대충 찾아봤는데",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18375",
+          "source": "dc",
+          "views": 71,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 151,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "18388",
+          "title": "재화 부족한 사람들아(고래제외)페이뽑는건 좋은디",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18388",
+          "source": "dc",
+          "views": 62,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 142,
+          "category": "일반",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis": {
+        "dailySummary": "에르피스는 페이 3각·5각 논쟁이 이어지는 가운데 유입이 끊기고 가챠가 빡세졌다는 위기감이 두드러졌다. 갤길 가입자도 씨가 말랐다, 이제 가라 모드라는 글이 공감을 얻었고, 넵튠 퍼블리싱 신작들을 싸잡아 깎아내리는 글도 올라와 퍼블리셔 신뢰 문제로 번졌다. 반면 페이 딜이 좋다는 후기도 일부 있어 성능 평가는 갈렸으나 전반 정서는 부정 쪽이었다.",
+        "topIssues": [
+          {
+            "title": "넵튠은 믿고 걸러야지 ㅇㅇ",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18377",
+            "tone": "negative",
+            "id": "18377",
+            "source": "dc",
+            "comments": 4,
+            "views": 87,
+            "likes": 2,
+            "bodySummary": "넵튠 신규 퍼블 게임들과 에르피스를 싸잡아 깎아내린 글(댓글 4, 조회 87, 추천 2). 퍼블치곤 유저편의와 소통은 호감이지만 가져오는 겜이 문제라는 반응과, 바람의 흔적은 찍먹해보겠다는 댓글."
+          },
+          {
+            "title": "그래서 페이 피빕",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18374",
+            "tone": "neutral",
+            "id": "18374",
+            "source": "dc",
+            "comments": 6,
+            "views": 82,
+            "likes": 0,
+            "bodySummary": "페이를 이자벨과 어떻게 쓰는지, PvP 성능을 묻는 글(댓글 6, 조회 82). 아직 피빕에서 쓰는 사람을 못 봤다, 침투를 잘 시켜 장기전에 강하다는 의견."
+          },
+          {
+            "title": "페이 평가",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18387",
+            "tone": "neutral",
+            "id": "18387",
+            "source": "dc",
+            "comments": 4,
+            "views": 106,
+            "likes": 0,
+            "bodySummary": "페이 평가 글(댓글 4, 조회 106). 레이븐·리온이 3각 기준점이라며 인장패키지로 3각을 가겠다는 반응이 나왔다."
+          },
+          {
+            "title": "겜 조지긴 한 것 같은데",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18385",
+            "tone": "negative",
+            "id": "18385",
+            "source": "dc",
+            "comments": 3,
+            "views": 75,
+            "likes": 0,
+            "bodySummary": "겜이 조진 것 같다는 글(댓글 3, 조회 75). 갤길 가입자도 씨가 말랐고 유입이 없는데 가챠가 미쳤다, 이제 가라 모드라는 댓글이 공감을 얻었다."
+          },
+          {
+            "title": "대충 쳐본 페이딜",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18378",
+            "tone": "positive",
+            "id": "18378",
+            "source": "dc",
+            "comments": 4,
+            "views": 106,
+            "likes": 0,
+            "bodySummary": "페이 딜 후기(댓글 4, 조회 106). 레니x덱 돌격으로 딜이 괜찮고 몸도 단단해 3각할만하다는 반응."
+          }
+        ],
+        "bugReports": [],
+        "competitorMentions": [],
+        "trends": [
+          "페이 3각·5각 평가 논쟁",
+          "유입 고갈·가챠 압박 푸념",
+          "넵튠 퍼블 게임 신뢰 비판"
+        ],
+        "watchlist": [
+          "이탈·가챠 불만 확산 여부",
+          "넵튠 퍼블 관련 비판 지속 여부",
+          "월초 신규 픽업 반응"
+        ],
+        "keywords": [
+          {
+            "word": "페이 평가·3각 논쟁",
+            "count": 8,
+            "ids": [
+              "18387",
+              "18386",
+              "18383",
+              "18378",
+              "18376",
+              "18374",
+              "18388",
+              "18382"
+            ]
+          },
+          {
+            "word": "길레·갠레·길드",
+            "count": 4,
+            "ids": [
+              "187653220",
+              "187622760",
+              "187611300",
+              "18382"
+            ]
+          },
+          {
+            "word": "유입 고갈·가챠 불만",
+            "count": 3,
+            "ids": [
+              "18385",
+              "18388",
+              "187611300"
+            ]
+          },
+          {
+            "word": "신캐 스킨·월초 뽑기",
+            "count": 3,
+            "ids": [
+              "187647112",
+              "18389",
+              "18388"
+            ]
+          },
+          {
+            "word": "넵튠 퍼블 게임 평가(불만)",
+            "count": 2,
+            "ids": [
+              "18377",
+              "18375"
+            ]
+          },
+          {
+            "word": "명함·돌 보유 현황",
+            "count": 2,
+            "ids": [
+              "18380",
+              "18379"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "searchTrends": null,
+  "generatedAt": "2026-10-31T22:36:31+00:00"
+}
