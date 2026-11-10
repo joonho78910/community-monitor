@@ -1,0 +1,2078 @@
+{
+  "date": "2026-11-10",
+  "games": {
+    "anchorpanic": {
+      "name": "anchorpanic",
+      "date": "2026-11-10",
+      "posts": [
+        {
+          "id": "188663264",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188663264",
+          "category": "",
+          "title": "목격담",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 64,
+          "likes": 1,
+          "utcIso": "2026-11-10T08:04:17Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 134
+        },
+        {
+          "id": "188664097",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188664097",
+          "category": "",
+          "title": "최애대사도 미달이였네",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 41,
+          "likes": 0,
+          "utcIso": "2026-11-10T08:12:29Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 121,
+          "body": "챈질하느라 바빠서 다 넘겼는데 1.5주년 굿즈는 아깝다는 글.",
+          "topComments": [
+            "최애대사 이벤시작전부터 기다렸는데 떠있을때 까먹고 들어가니 이미 집계중"
+          ]
+        },
+        {
+          "id": "188664788",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188664788",
+          "category": "",
+          "title": "화로 어찌저찌 3강 찍음",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 51,
+          "likes": 1,
+          "utcIso": "2026-11-10T08:19:06Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 121
+        },
+        {
+          "id": "188665098",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188665098",
+          "category": "질문",
+          "title": "뉴비 화로즈 풀돌 인증과 몇가지(좀 많음) 질문",
+          "author": "ㅇㅇ",
+          "comments": 13,
+          "views": 98,
+          "likes": 1,
+          "utcIso": "2026-11-10T08:22:32Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "newbie_returning",
+            "gacha"
+          ],
+          "engagement": 388,
+          "body": "화로즈 풀돌 뉴비가 스팅 전용각인 필요 여부, 덱 구성, 특수 스토리, 7일차 SSR 선택권, 체급 올리는 순서, 여우뽑 60회 여부 등 6가지를 질문.",
+          "topComments": [
+            "1. 전낙 있어야 훨씬 좋음 2. 릴리라 빼고 스팅키스 4. 티파니 5. 모듈작부터",
+            "특수 극한이 재화 더 많이줌 필요할때 파먹어",
+            "자세한 답변 고마워! 여우도 오늘까지인걸로 아는데 빨리 광산 밀어야겠네"
+          ]
+        },
+        {
+          "id": "188665355",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188665355",
+          "category": "",
+          "title": "목격담 오늘 까지임",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 62,
+          "likes": 2,
+          "utcIso": "2026-11-10T08:24:57Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 182
+        },
+        {
+          "id": "188665699",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188665699",
+          "category": "",
+          "title": "아니 ㅁㅊ ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 77,
+          "likes": 0,
+          "utcIso": "2026-11-10T08:28:12Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 157
+        },
+        {
+          "id": "188668376",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188668376",
+          "category": "",
+          "title": "으으 치유밴 으으",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 62,
+          "likes": 1,
+          "utcIso": "2026-11-10T08:53:41Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 112
+        },
+        {
+          "id": "188668740",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188668740",
+          "category": "",
+          "title": "지금 패스사도 만렙가능할까",
+          "author": "ㅇㅇ",
+          "comments": 9,
+          "views": 66,
+          "likes": 0,
+          "utcIso": "2026-11-10T08:57:18Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 246,
+          "body": "패스렙 24쯤인데 50 될지, 화로즈 스킨이 드레스인지 묻는 글.",
+          "topComments": [
+            "기간 한참 남아서 겜 꾸준히 하면 걍 만렙 됨",
+            "통행협약"
+          ]
+        },
+        {
+          "id": "188672372",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188672372",
+          "category": "",
+          "title": "연맹 필수임?",
+          "author": "ㅇㅇ",
+          "comments": 10,
+          "views": 75,
+          "likes": 0,
+          "utcIso": "2026-11-10T09:27:49Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guild_recruit"
+          ],
+          "engagement": 275,
+          "body": "쌈박질 싫어하는데 연맹이 필수인지 묻는 글.",
+          "topComments": [
+            "무조건 필수 연맹에 들가있는것만으로 주당 720돌이 무료로 들어옴",
+            "연맹 안하면 진짜 할거없어",
+            "기냥 아무 연맹 들어가도 되더라"
+          ]
+        },
+        {
+          "id": "188673484",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188673484",
+          "category": "",
+          "title": "문득 든 생각이지만",
+          "author": "ㅇㅇ",
+          "comments": 0,
+          "views": 35,
+          "likes": 0,
+          "utcIso": "2026-11-10T09:36:29Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 35
+        },
+        {
+          "id": "188674416",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188674416",
+          "category": "",
+          "title": "ㅋㅋㅋㅋㅋ 결국 천안문 당한건가",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 92,
+          "likes": 0,
+          "utcIso": "2026-11-10T09:44:04Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 212,
+          "topComments": [
+            "자주 그랬었어 ㅋㅋㅋ",
+            "아크릴 그 흔들거리던 거 짤린 거임?",
+            "네이버가 검열심하긴해"
+          ]
+        },
+        {
+          "id": "188676419",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188676419",
+          "category": "",
+          "title": "본진 주년 공방 망해따",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 89,
+          "likes": 0,
+          "utcIso": "2026-11-10T10:01:37Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 169
+        },
+        {
+          "id": "188680007",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188680007",
+          "category": "",
+          "title": "이벤트 다털어라",
+          "author": "ㅇㅇ",
+          "comments": 7,
+          "views": 68,
+          "likes": 0,
+          "utcIso": "2026-11-10T10:30:55Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "engagement": 208,
+          "body": "오늘이 마지막임",
+          "topComments": [
+            "우편함에 3000저항력 쌓여있는데 털게없어",
+            "먹을게 달러뿐인데?"
+          ]
+        },
+        {
+          "id": "188684374",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188684374",
+          "category": "",
+          "title": "다음 픽업캐를 뽑아야할까...",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 48,
+          "likes": 0,
+          "utcIso": "2026-11-10T11:06:22Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 68
+        },
+        {
+          "id": "188685926",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188685926",
+          "category": "",
+          "title": "굿바이.",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 76,
+          "likes": 0,
+          "utcIso": "2026-11-10T11:19:00Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 136
+        },
+        {
+          "id": "188687170",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188687170",
+          "category": "",
+          "title": "아이리스 스킨 복각좀..",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 45,
+          "likes": 0,
+          "utcIso": "2026-11-10T11:29:54Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "engagement": 85
+        },
+        {
+          "id": "188691783",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188691783",
+          "category": "",
+          "title": "시발 뉴비 막차다",
+          "author": "ㅇㅇ",
+          "comments": 7,
+          "views": 75,
+          "likes": 0,
+          "utcIso": "2026-11-10T12:11:45Z",
+          "sentiment": "negative",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 215,
+          "body": "화로 명전과 스팅을 뽑고 1돌파라도 해보려는데 픽뚫이 심해 현질을 더 해야 하나 고민.",
+          "topComments": [
+            "1돌 아무 의미 없으니 최소 2돌이라도 못할거 같으면 그냥 보내주자",
+            "2돌하면 3돌까지 조각작으로 금방 해결가능",
+            "과금 가능하면 딱 3돌까지만 하면 진짜 쾌적하긴해.."
+          ]
+        },
+        {
+          "id": "188695485",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188695485",
+          "category": "",
+          "title": "정말 오래 기다렸다",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 28,
+          "likes": 0,
+          "utcIso": "2026-11-10T12:45:37Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 48
+        },
+        {
+          "id": "188696158",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188696158",
+          "category": "",
+          "title": "77ㅓ억",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 49,
+          "likes": 1,
+          "utcIso": "2026-11-10T12:52:15Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 179
+        },
+        {
+          "id": "188696983",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188696983",
+          "category": "",
+          "title": "님들아 미니게임 했냐",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 54,
+          "likes": 1,
+          "utcIso": "2026-11-10T12:59:40Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 204,
+          "body": "이 겜 다 좋은데 미니게임 좀 제대로 내놨으면, 아니면 빨리 깰 수 있게 해달라, 너무 느리다는 불만.",
+          "topComments": [
+            "미니게임이 잇엇어?",
+            "새 캐릭터 낼 때마다 스토리랑 미니게임도 내잖아 그거 하면 재화 줌",
+            "얼마안걸림 지금 바로 해도됨"
+          ]
+        },
+        {
+          "id": "188697979",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188697979",
+          "category": "",
+          "title": "나는 경고햇다",
+          "author": "ㅇㅇ",
+          "comments": 14,
+          "views": 112,
+          "likes": 3,
+          "utcIso": "2026-11-10T13:08:42Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 482,
+          "body": "Ai로 만들어서라도 올려라 1시간 52분 남았다",
+          "topComments": [
+            "움직이는 할머니를 모두에게 보여주마",
+            "미달되더라도 혹시라도 전부지급 해주지않을까..?",
+            "전부 지급해주더라도 괘씸죄로 처벌이다",
+            "이거보고 챈구독 취소햇다"
+          ]
+        },
+        {
+          "id": "188698646",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188698646",
+          "category": "",
+          "title": "그가 공약을 걸었습니다",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 52,
+          "likes": 1,
+          "utcIso": "2026-11-10T13:14:46Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 162
+        },
+        {
+          "id": "188698965",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188698965",
+          "category": "",
+          "title": "괜찮다고 해줘",
+          "author": "ㅇㅇ",
+          "comments": 14,
+          "views": 91,
+          "likes": 0,
+          "utcIso": "2026-11-10T13:17:34Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 371,
+          "body": "오늘 밤 시작해 광산 재화가 부족해 현질로 돌파 중인데 연속 2번 천장, 거의 모든 픽업에서 천장을 쳐 마음이 꺾인다며 명함만으로도 괜찮다고 말해달라는 글. 게임은 재밌어서 픽업 종료까지 해보겠다고 함.",
+          "topComments": [
+            "화로 복각 끝나도 패스상자조각+한정조각작+추후 아스테비콘으로 얻을 수 있어서 ㄱㅊ",
+            "정 안되면 나중에 돌모아서 아스테비콘 하나 쓰면됨",
+            "제대로 쓰려면 이베트 티파니 오스카린 아이리스를 다 키워야하니 나중에 풀돌시켜도 됨",
+            "오케이 딱대 오래 진득하게 해주겟어"
+          ]
+        },
+        {
+          "id": "188703084",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188703084",
+          "category": "질문",
+          "title": "화로 풀돌 막차 컷!!! + 진로 질문",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 56,
+          "likes": 2,
+          "utcIso": "2026-11-10T13:54:45Z",
+          "sentiment": "positive",
+          "tags": [
+            "guide",
+            "gacha"
+          ],
+          "engagement": 176
+        },
+        {
+          "id": "188705331",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188705331",
+          "category": "창작/콘",
+          "title": "화로즈 그려봄.",
+          "author": "ㅇㅇ",
+          "comments": 13,
+          "views": 96,
+          "likes": 15,
+          "utcIso": "2026-11-10T14:16:50Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 806,
+          "body": "4일 밤 시작해 일주일째 하는 중인 유저가 화로즈 그림을 올림. AI 이미지로 광고하는 게임이라 안 좋게 봤던 걸 미안하게 생각한다고 함.",
+          "topComments": [
+            "캬ㅑ 내아내 화로 일루와잇!!!!",
+            "지피티에 채색해달라해봐",
+            "챈의 보배다",
+            "굿"
+          ]
+        },
+        {
+          "id": "188706250",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188706250",
+          "category": "",
+          "title": "내일 페이백 해주면 좋겟다",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 27,
+          "likes": 0,
+          "utcIso": "2026-11-10T14:25:14Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 47
+        },
+        {
+          "id": "188707294",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188707294",
+          "category": "",
+          "title": "이시스 누나 최고",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 48,
+          "likes": 1,
+          "utcIso": "2026-11-10T14:35:07Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 118
+        },
+        {
+          "id": "188707902",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188707902",
+          "category": "",
+          "title": "근데 진짜 상줘야하는거 아니냐",
+          "author": "ㅇㅇ",
+          "comments": 12,
+          "views": 97,
+          "likes": 0,
+          "utcIso": "2026-11-10T14:41:20Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 337,
+          "body": "완장들의 뉴비 가이드 공략이 너무 잘 쓰여 감탄했다, 챈할배들도 최고, 검색하면 궁금한 건 대부분 나온다는 칭찬 글.",
+          "topComments": [
+            "검색같은거 하지말고 핑프해주셈 빨리",
+            "이 넷중 하나라도 취향 맞으면 할만할거임 그외에서 가치를 찾는다면 좀 비추임",
+            "세개나 맞네 어쩐지 겜 재밌더라 ㅋㅋㅋㅋ 애정하는 게임 생겨서 행복함"
+          ]
+        },
+        {
+          "id": "188708105",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188708105",
+          "category": "",
+          "title": "겜 7일째.",
+          "author": "ㅇㅇ",
+          "comments": 11,
+          "views": 84,
+          "likes": 1,
+          "utcIso": "2026-11-10T14:43:22Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 334,
+          "body": "4일 밤 시작해 화로즈 풀돌전낙까지 한 7일차 유저가 일일 루틴(정보·자원·기지·모듈 파밍)을 정리하고 피드백을 구함.",
+          "topComments": [
+            "천천히 해 천천히",
+            "화로즈 다 키웠으니 양자 조합이랑 번덱조합 맞추면 더 재밌을거임",
+            "저항력은 다 모듈에 박는다 생각하는게 편함"
+          ]
+        },
+        {
+          "id": "188607921",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188607921",
+          "category": "",
+          "title": "응애챈 3위",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 73,
+          "likes": 0,
+          "utcIso": "2026-11-09T15:06:49Z",
+          "sentiment": "positive",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 153
+        },
+        {
+          "id": "188608141",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188608141",
+          "category": "",
+          "title": "절대 막차타",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 55,
+          "likes": 1,
+          "utcIso": "2026-11-09T15:09:07Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 105
+        },
+        {
+          "id": "188611557",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188611557",
+          "category": "",
+          "title": "칼질의 시간이다",
+          "author": "ㅇㅇ",
+          "comments": 14,
+          "views": 111,
+          "likes": 0,
+          "utcIso": "2026-11-09T15:49:16Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 391,
+          "topComments": [
+            "2주만에 사망자 장례",
+            "으악!! 주딱이 뉴비팬다!!"
+          ]
+        },
+        {
+          "id": "188613530",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188613530",
+          "category": "",
+          "title": "엄",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 69,
+          "likes": 0,
+          "utcIso": "2026-11-09T16:17:55Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 149
+        },
+        {
+          "id": "188621684",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188621684",
+          "category": "",
+          "title": "다음패치이후로는 제발",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 80,
+          "likes": 2,
+          "utcIso": "2026-11-09T21:31:29Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 220,
+          "body": "6주 간격은 이해하지만 이벤트 상점 소프트리셋을 안 할 거면 수량이라도 늘려달라, 상점 다 털고 달러 바꾸는 게 현타 온다는 글.",
+          "topComments": [
+            "뉴비들도 있으니 괜찮다고봄",
+            "적당히 배신하면서 천천히 써",
+            "개조칩이랑 능부코만이라도 늘려줘"
+          ]
+        },
+        {
+          "id": "188625795",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188625795",
+          "category": "",
+          "title": "앵패도 블프 패키지 팜?",
+          "author": "ㅇㅇ",
+          "comments": 7,
+          "views": 60,
+          "likes": 0,
+          "utcIso": "2026-11-09T23:50:33Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 200,
+          "body": "작년에 블프 패키지 팔았었는지 묻는 글.",
+          "topComments": [
+            "블랙프라이데이 패키지",
+            "아 없는듯..?"
+          ]
+        },
+        {
+          "id": "188627390",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188627390",
+          "category": "",
+          "title": "빵",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 49,
+          "likes": 0,
+          "utcIso": "2026-11-10T00:24:01Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 169
+        },
+        {
+          "id": "188627475",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188627475",
+          "category": "",
+          "title": "화로 4돌인데 제발 한장만 더줘라",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 62,
+          "likes": 1,
+          "utcIso": "2026-11-10T00:25:33Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 172
+        },
+        {
+          "id": "188628113",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188628113",
+          "category": "",
+          "title": "야!!! 김 앵 붕!!!",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 69,
+          "likes": 2,
+          "utcIso": "2026-11-10T00:37:48Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 209
+        },
+        {
+          "id": "188628285",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188628285",
+          "category": "",
+          "title": "가챠 계획",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 63,
+          "likes": 2,
+          "utcIso": "2026-11-10T00:41:05Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 243
+        },
+        {
+          "id": "188628899",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188628899",
+          "category": "",
+          "title": "앵커패닉의 패왕색 패기!",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 57,
+          "likes": 3,
+          "utcIso": "2026-11-10T00:52:41Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 247
+        },
+        {
+          "id": "188629065",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188629065",
+          "category": "AI",
+          "title": "네플루릭스",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 61,
+          "likes": 3,
+          "utcIso": "2026-11-10T00:55:28Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 271,
+          "topComments": [
+            "내아내 일루와잇!!!"
+          ]
+        },
+        {
+          "id": "188629558",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188629558",
+          "category": "",
+          "title": "최근 에로랩스 배신겜 하나 손 댔는데...",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 81,
+          "likes": 0,
+          "utcIso": "2026-11-10T01:03:28Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 201,
+          "body": "다른 게임에 너무 질러 매몰비용 때문에 탈출도 못 하고 반성 중이라는 글.",
+          "topComments": [
+            "배신한거롱"
+          ]
+        },
+        {
+          "id": "188629932",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188629932",
+          "category": "연맹",
+          "title": "마감",
+          "author": "ㅇㅇ",
+          "comments": 13,
+          "views": 104,
+          "likes": 3,
+          "utcIso": "2026-11-10T01:09:09Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 454,
+          "body": "연맹 [아카라이브]에서 레벨·컨텐츠 강요 없이 함께할 연맹원을 모집한다는 글.",
+          "topComments": [
+            "혹시 예약가능?",
+            "레벨 43 뉴비 신청했음",
+            "승인 완"
+          ]
+        },
+        {
+          "id": "188630625",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188630625",
+          "category": "",
+          "title": "리세하려 하는데 가이드대로 하면 됨? 아니면 다른 캐 뽑아야해?",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 74,
+          "likes": 0,
+          "utcIso": "2026-11-10T01:19:55Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "newbie_returning",
+            "gacha"
+          ],
+          "engagement": 174,
+          "body": "우연히 찾아와 SRPG라 해보려는데 누구를 뽑아야 하는지 묻는 글.",
+          "topComments": [
+            "맵이 격자판이란거 외에는 srpg하고능 거리가 먼데",
+            "가이드 대로 우선 오늘이 픽업 마지막이라서 화로즈 무조건 들고가야해"
+          ]
+        },
+        {
+          "id": "188633260",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188633260",
+          "category": "",
+          "title": "한정 스킨은 복각 잘 없지?",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 46,
+          "likes": 0,
+          "utcIso": "2026-11-10T02:01:02Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha",
+            "event"
+          ],
+          "engagement": 86
+        },
+        {
+          "id": "188634168",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188634168",
+          "category": "",
+          "title": "타임어택이다",
+          "author": "ㅇㅇ",
+          "comments": 6,
+          "views": 66,
+          "likes": 0,
+          "utcIso": "2026-11-10T02:13:45Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 186
+        },
+        {
+          "id": "188635515",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188635515",
+          "category": "",
+          "title": "혼모노 화로즈 오우너까지 하루전",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 41,
+          "likes": 0,
+          "utcIso": "2026-11-10T02:33:13Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 101
+        },
+        {
+          "id": "188636199",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188636199",
+          "category": "",
+          "title": "네플루",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 49,
+          "likes": 0,
+          "utcIso": "2026-11-10T02:42:45Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 129
+        },
+        {
+          "id": "188636812",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188636812",
+          "category": "",
+          "title": "21일차 막차 탔다!",
+          "author": "ㅇㅇ",
+          "comments": 10,
+          "views": 65,
+          "likes": 2,
+          "utcIso": "2026-11-10T02:50:47Z",
+          "sentiment": "positive",
+          "tags": [
+            "newbie_returning"
+          ],
+          "engagement": 325
+        },
+        {
+          "id": "188636968",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188636968",
+          "category": "",
+          "title": "최후의 화로 5돌 땃냐!!!",
+          "author": "ㅇㅇ",
+          "comments": 14,
+          "views": 77,
+          "likes": 2,
+          "utcIso": "2026-11-10T02:52:46Z",
+          "sentiment": "negative",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 417,
+          "body": "마지막 11회에서 기어이 1뽑 더 하게 만들고, 5돌 가려니 조각이 더 필요하다며 황당해하는 글.",
+          "topComments": [
+            "조각작 안했음?",
+            "열린날부터 하는중인데 이상하네...",
+            "난 부족한적이 한번도 없었는데"
+          ]
+        },
+        {
+          "id": "188637103",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188637103",
+          "category": "",
+          "title": "홍엽을 뽑을까 말까",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 40,
+          "likes": 0,
+          "utcIso": "2026-11-10T02:54:37Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha"
+          ],
+          "engagement": 100
+        },
+        {
+          "id": "188637422",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188637422",
+          "category": "",
+          "title": "화로즈 다음에도 조각 얻을 수 있지?",
+          "author": "ㅇㅇ",
+          "comments": 14,
+          "views": 89,
+          "likes": 0,
+          "utcIso": "2026-11-10T02:58:38Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 369,
+          "body": "현질 아니면 더 이상 뽑기할 재화가 없는데 화로즈 조각을 나중에도 얻을 수 있는지 묻는 글.",
+          "topComments": [
+            "메인 싹 밀면됨 저항이 없으면 상점에서 긁어봐",
+            "전부 꼬라박기엔 내일 신캐 나온다고해서",
+            "화로가 지금 0티어인데 유기하기에는 매우 손해라고 들음"
+          ]
+        },
+        {
+          "id": "188638076",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188638076",
+          "category": "",
+          "title": "인간적으로 우리도 궁금하다고!!",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 76,
+          "likes": 0,
+          "utcIso": "2026-11-10T03:06:41Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 156
+        },
+        {
+          "id": "188639081",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188639081",
+          "category": "",
+          "title": "홍엽 쓰는 할뷰지없나",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 58,
+          "likes": 0,
+          "utcIso": "2026-11-10T03:18:40Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 118
+        },
+        {
+          "id": "188639238",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188639238",
+          "category": "",
+          "title": "패키지 생각있으면 오늘사셈들",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 49,
+          "likes": 0,
+          "utcIso": "2026-11-10T03:20:16Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 69
+        },
+        {
+          "id": "188639438",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188639438",
+          "category": "질문",
+          "title": "이거 양자만 뒤지게 올리면되지?",
+          "author": "ㅇㅇ",
+          "comments": 13,
+          "views": 106,
+          "likes": 0,
+          "utcIso": "2026-11-10T03:22:39Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "engagement": 366,
+          "body": "이런 게 있는 줄 몰랐다며 양자만 올리면 되는지 묻는 글.",
+          "topComments": [
+            "양자 우선 올리고 다음 pve냐 pvp주력이냐 따라서 속성선택",
+            "저거는 무조건 양자 번개만 올리믄 된다"
+          ]
+        },
+        {
+          "id": "188640271",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188640271",
+          "category": "",
+          "title": "시틈보상좀 개편해주라",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 48,
+          "likes": 1,
+          "utcIso": "2026-11-10T03:32:20Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 118
+        },
+        {
+          "id": "188641620",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188641620",
+          "category": "",
+          "title": "천만도 못넘기네",
+          "author": "ㅇㅇ",
+          "comments": 10,
+          "views": 73,
+          "likes": 1,
+          "utcIso": "2026-11-10T03:47:40Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 303,
+          "body": "할배들은 억 단위로 나오는데 천만도 못 넘긴다는 토벌 점수 푸념.",
+          "topComments": [
+            "아직 탈 정도는아님",
+            "이제 파츠하나씩 만들면 됨"
+          ]
+        },
+        {
+          "id": "188641794",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188641794",
+          "category": "",
+          "title": "내 아내임",
+          "author": "ㅇㅇ",
+          "comments": 18,
+          "views": 129,
+          "likes": 6,
+          "utcIso": "2026-11-10T03:49:30Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 669,
+          "body": "풀돌 막차탐",
+          "topComments": [
+            "이제 수영복 입혀주고 스팅도 뽑아서 입혀주면됨",
+            "겜 시작하자마자 제일 먼저 산게 그거임 ㅋㅋ",
+            "지금말고 다음 픽업 때 고수할래.."
+          ]
+        },
+        {
+          "id": "188642417",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188642417",
+          "category": "",
+          "title": "아 근데 다음 픽업 걱정이네",
+          "author": "ㅇㅇ",
+          "comments": 5,
+          "views": 89,
+          "likes": 0,
+          "utcIso": "2026-11-10T03:56:34Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 189,
+          "body": "또 풀돌 어떻게 달리냐, 그렇다고 한정을 참을 수도 없다는 다음 픽업 걱정.",
+          "topComments": [
+            "네플루는 나중에 복각 한 번 하니까 이번엔 여유되는대로 ㄱㄱ"
+          ]
+        },
+        {
+          "id": "188643846",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188643846",
+          "category": "",
+          "title": "네푸루를 풀돌한다해도 화염덱 파츠가 없음",
+          "author": "ㅇㅇ",
+          "comments": 9,
+          "views": 103,
+          "likes": 0,
+          "utcIso": "2026-11-10T04:14:14Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 283,
+          "body": "네푸루를 풀돌해도 화염덱 파츠가 없어 명함만 따는 게 맞겠냐는 고민.",
+          "topComments": [
+            "명전하고 다음 복각까지 파츠 맞추고 ㄱㄱ",
+            "그르나슈 말곤 쓸 게 없다는 거임"
+          ]
+        },
+        {
+          "id": "188648613",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188648613",
+          "category": "",
+          "title": "밥먹을때 무엇보다 조용해지는챈",
+          "author": "ㅇㅇ",
+          "comments": 8,
+          "views": 70,
+          "likes": 0,
+          "utcIso": "2026-11-10T05:13:49Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 230
+        },
+        {
+          "id": "188654560",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188654560",
+          "category": "",
+          "title": "화염 추가타서폿이 마렵다",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 52,
+          "likes": 1,
+          "utcIso": "2026-11-10T06:26:59Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 122
+        },
+        {
+          "id": "188658730",
+          "source": "arca",
+          "url": "https://arca.live/b/anchorpanic/188658730",
+          "category": "",
+          "title": "제발 빨리!! 내일이 왔으면 좋겠어",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 64,
+          "likes": 0,
+          "utcIso": "2026-11-10T07:13:27Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 144
+        }
+      ],
+      "stats": {
+        "notices": 0,
+        "bugs": 0,
+        "negative": 11,
+        "positive": 13,
+        "competitor_mentions": 0,
+        "newbie_returning": 5,
+        "guild_recruit": 1,
+        "gacha": 8,
+        "event": 3,
+        "balance": 0,
+        "guide": 4,
+        "chitchat": 49,
+        "total": 64,
+        "real_posts": 64,
+        "total_views": 4376,
+        "total_comments": 388,
+        "total_likes": 61,
+        "sentiment_score": 0.031,
+        "sentiment": "중립"
+      },
+      "topEngaging": [
+        {
+          "id": "188705331",
+          "title": "화로즈 그려봄.",
+          "url": "https://arca.live/b/anchorpanic/188705331",
+          "source": "arca",
+          "views": 96,
+          "comments": 13,
+          "likes": 15,
+          "engagement": 806,
+          "category": "창작/콘",
+          "sentiment": "positive"
+        },
+        {
+          "id": "188641794",
+          "title": "내 아내임",
+          "url": "https://arca.live/b/anchorpanic/188641794",
+          "source": "arca",
+          "views": 129,
+          "comments": 18,
+          "likes": 6,
+          "engagement": 669,
+          "category": "",
+          "sentiment": "positive"
+        },
+        {
+          "id": "188697979",
+          "title": "나는 경고햇다",
+          "url": "https://arca.live/b/anchorpanic/188697979",
+          "source": "arca",
+          "views": 112,
+          "comments": 14,
+          "likes": 3,
+          "engagement": 482,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "188629932",
+          "title": "마감",
+          "url": "https://arca.live/b/anchorpanic/188629932",
+          "source": "arca",
+          "views": 104,
+          "comments": 13,
+          "likes": 3,
+          "engagement": 454,
+          "category": "연맹",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "188636968",
+          "title": "최후의 화로 5돌 땃냐!!!",
+          "url": "https://arca.live/b/anchorpanic/188636968",
+          "source": "arca",
+          "views": 77,
+          "comments": 14,
+          "likes": 2,
+          "engagement": 417,
+          "category": "",
+          "sentiment": "negative"
+        },
+        {
+          "id": "188611557",
+          "title": "칼질의 시간이다",
+          "url": "https://arca.live/b/anchorpanic/188611557",
+          "source": "arca",
+          "views": 111,
+          "comments": 14,
+          "likes": 0,
+          "engagement": 391,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "188665098",
+          "title": "뉴비 화로즈 풀돌 인증과 몇가지(좀 많음) 질문",
+          "url": "https://arca.live/b/anchorpanic/188665098",
+          "source": "arca",
+          "views": 98,
+          "comments": 13,
+          "likes": 1,
+          "engagement": 388,
+          "category": "질문",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "188698965",
+          "title": "괜찮다고 해줘",
+          "url": "https://arca.live/b/anchorpanic/188698965",
+          "source": "arca",
+          "views": 91,
+          "comments": 14,
+          "likes": 0,
+          "engagement": 371,
+          "category": "",
+          "sentiment": "negative"
+        },
+        {
+          "id": "188637422",
+          "title": "화로즈 다음에도 조각 얻을 수 있지?",
+          "url": "https://arca.live/b/anchorpanic/188637422",
+          "source": "arca",
+          "views": 89,
+          "comments": 14,
+          "likes": 0,
+          "engagement": 369,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "188639438",
+          "title": "이거 양자만 뒤지게 올리면되지?",
+          "url": "https://arca.live/b/anchorpanic/188639438",
+          "source": "arca",
+          "views": 106,
+          "comments": 13,
+          "likes": 0,
+          "engagement": 366,
+          "category": "질문",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis": {
+        "dailySummary": "화로즈 복각 픽업 마지막 날이던 화요일, 앵커패닉 채널은 하루 종일 '막차' 분위기로 들끓었다. 풀돌·5돌을 찍었다는 인증과 픽뚫·연속 천장으로 마음이 꺾였다는 하소연이 교차했고, 다음 날 나올 한정 네푸루를 앞두고 재화를 아껴야 하나는 고민이 이어졌다. 1.5주년 현실 목격담 카페 이벤트 마감 독려 글이 쏟아졌고 이벤트 상점 수량·시틈 보상 개편 요구와 미니게임 불만도 나왔지만, 뉴비 가이드에 대한 칭찬과 팬아트가 이를 상쇄해 전반 정서는 중립에 가까웠다.",
+        "topIssues": [
+          {
+            "title": "괜찮다고 해줘",
+            "url": "https://arca.live/b/anchorpanic/188698965",
+            "tone": "negative",
+            "id": "188698965",
+            "source": "arca",
+            "comments": 14,
+            "views": 91,
+            "likes": 0,
+            "bodySummary": "광산 재화가 부족해 현질로 돌파하다 연속 천장을 맞아 마음이 꺾였다는 하소연(댓글 14). 복각이 끝나도 패스상자 조각·한정 조각작·아스테비콘으로 얻을 수 있고 다른 캐릭도 키워야 하니 나중에 풀돌해도 된다는 위로가 이어지자 글쓴이는 오래 하겠다고 답했다."
+          },
+          {
+            "title": "화로즈 다음에도 조각 얻을 수 있지?",
+            "url": "https://arca.live/b/anchorpanic/188637422",
+            "tone": "neutral",
+            "id": "188637422",
+            "source": "arca",
+            "comments": 14,
+            "views": 89,
+            "likes": 0,
+            "bodySummary": "현질 외엔 뽑기 재화가 없는데 화로즈 조각을 나중에도 얻을 수 있는지 묻는 글(댓글 14). 메인을 밀고 상점을 긁으라는 조언과, 다음 날 신캐가 나와 전부 꼬라박기 어렵다는 고민, 화로가 0티어라 유기하면 손해라는 의견이 맞섰다."
+          },
+          {
+            "title": "내 아내임",
+            "url": "https://arca.live/b/anchorpanic/188641794",
+            "tone": "positive",
+            "id": "188641794",
+            "source": "arca",
+            "comments": 18,
+            "views": 129,
+            "likes": 6,
+            "bodySummary": "화로즈 풀돌 막차를 탔다는 인증 글(댓글 18, 추천 6, 이날 최다 반응). 수영복 스킨을 입혀주라는 반응과 스킨부터 샀다는 댓글 등 축하 분위기였다. (본문 거의 없음)"
+          },
+          {
+            "title": "화로즈 그려봄.",
+            "url": "https://arca.live/b/anchorpanic/188705331",
+            "tone": "positive",
+            "id": "188705331",
+            "source": "arca",
+            "comments": 13,
+            "views": 96,
+            "likes": 15,
+            "bodySummary": "일주일차 유저가 직접 그린 화로즈 그림(추천 15). AI 이미지 광고 게임이라 안 좋게 봤던 걸 미안하게 생각한다는 소감에 '챈의 보배'라는 호응이 달렸다."
+          },
+          {
+            "title": "다음패치이후로는 제발",
+            "url": "https://arca.live/b/anchorpanic/188621684",
+            "tone": "negative",
+            "id": "188621684",
+            "source": "arca",
+            "comments": 4,
+            "views": 80,
+            "likes": 2,
+            "bodySummary": "6주 간격은 이해하지만 이벤트 상점 소프트리셋이 없다면 수량이라도 늘려달라는 요구 글. 뉴비가 있으니 괜찮다는 반론과 개조칩·능부코만이라도 늘려달라는 동조가 함께 나왔다."
+          }
+        ],
+        "bugReports": [],
+        "competitorMentions": [],
+        "trends": [
+          "화로즈 복각 막차 풀돌 러시",
+          "한정 네푸루 출시 대기",
+          "1.5주년 카페 이벤트 마감",
+          "픽뚫·천장 과금 피로"
+        ],
+        "watchlist": [
+          "네푸루 출시(11/11) 초기 반응",
+          "연속 픽업에 따른 과금 피로",
+          "이벤트 상점 수량·시틈 보상 불만"
+        ],
+        "keywords": [
+          {
+            "word": "화로즈 복각 막차·풀돌",
+            "count": 13,
+            "ids": [
+              "188608141",
+              "188627475",
+              "188634168",
+              "188636812",
+              "188636968",
+              "188637422",
+              "188641794",
+              "188664788",
+              "188665098",
+              "188691783",
+              "188698965",
+              "188703084",
+              "188708105"
+            ]
+          },
+          {
+            "word": "한정 네푸루 출시 기대",
+            "count": 11,
+            "ids": [
+              "188627390",
+              "188628285",
+              "188628899",
+              "188629065",
+              "188635515",
+              "188636199",
+              "188642417",
+              "188643846",
+              "188658730",
+              "188639081",
+              "188637103"
+            ]
+          },
+          {
+            "word": "1.5주년 목격담 이벤트 마감",
+            "count": 8,
+            "ids": [
+              "188628113",
+              "188638076",
+              "188663264",
+              "188665355",
+              "188664097",
+              "188697979",
+              "188698646",
+              "188680007"
+            ]
+          },
+          {
+            "word": "뉴비·복귀 질문",
+            "count": 8,
+            "ids": [
+              "188630625",
+              "188639438",
+              "188665098",
+              "188668740",
+              "188672372",
+              "188703084",
+              "188708105",
+              "188637422"
+            ]
+          },
+          {
+            "word": "딜·토벌 점수",
+            "count": 6,
+            "ids": [
+              "188641620",
+              "188613530",
+              "188639081",
+              "188643846",
+              "188654560",
+              "188696158"
+            ]
+          },
+          {
+            "word": "픽뚫·과금 피로(불만)",
+            "count": 5,
+            "ids": [
+              "188627475",
+              "188636968",
+              "188642417",
+              "188691783",
+              "188698965"
+            ]
+          },
+          {
+            "word": "가이드·팬아트(긍정)",
+            "count": 5,
+            "ids": [
+              "188707902",
+              "188705331",
+              "188641794",
+              "188707294",
+              "188607921"
+            ]
+          },
+          {
+            "word": "상점·보상 구조(불만)",
+            "count": 3,
+            "ids": [
+              "188621684",
+              "188640271",
+              "188680007"
+            ]
+          },
+          {
+            "word": "연맹 모집·가입",
+            "count": 2,
+            "ids": [
+              "188629932",
+              "188672372"
+            ]
+          },
+          {
+            "word": "미니게임·치유밴(불만)",
+            "count": 2,
+            "ids": [
+              "188696983",
+              "188668376"
+            ]
+          }
+        ]
+      }
+    },
+    "erpis": {
+      "name": "erpis",
+      "date": "2026-11-10",
+      "posts": [
+        {
+          "id": "188627121",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/188627121",
+          "category": "",
+          "title": "근데 월보 치고잇음?",
+          "author": "ㅇㅇ",
+          "comments": 7,
+          "views": 54,
+          "likes": 0,
+          "utcIso": "2026-11-10T00:18:55Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 194,
+          "body": "소스 내놔",
+          "topComments": [
+            "도자기 = 월보덱인거지?",
+            "대충 자동돌려서 모름",
+            "당연히 오토아녀?!"
+          ]
+        },
+        {
+          "id": "188631142",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/188631142",
+          "category": "게임공지",
+          "title": "[안내] 새로운 탐험가 영야 합류 안내!",
+          "author": "ㅇㅇ",
+          "comments": 1,
+          "views": 40,
+          "likes": 0,
+          "utcIso": "2026-11-10T01:28:30Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 60
+        },
+        {
+          "id": "188661031",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/188661031",
+          "category": "",
+          "title": "겜 몇개 삭제함",
+          "author": "ㅇㅇ",
+          "comments": 7,
+          "views": 58,
+          "likes": 0,
+          "utcIso": "2026-11-10T07:40:16Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 198,
+          "body": "이젠 오직 에르피스, 앵커패닉, 무기미도, 그놈은 드래곤, 스텔라소라 뿐이라며 게임 몇 개를 삭제했다는 글.",
+          "topComments": [
+            "멀바"
+          ]
+        },
+        {
+          "id": "188675337",
+          "source": "arca",
+          "url": "https://arca.live/b/erphis/188675337",
+          "category": "",
+          "title": "사이트 업데이트 (2026.11.10)",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 36,
+          "likes": 1,
+          "utcIso": "2026-11-10T09:52:22Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "engagement": 106
+        },
+        {
+          "id": "18507",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18507",
+          "category": "일반",
+          "title": "나도 갠레처음으로 인50이다 ㅎ",
+          "author": "ㅇㅇ",
+          "comments": 7,
+          "views": 94,
+          "likes": 0,
+          "utcIso": "2026-11-09T17:05:46Z",
+          "sentiment": "positive",
+          "tags": [
+            "event"
+          ],
+          "engagement": 234,
+          "body": "42등, 3팟 딜량이 너무 구데기다",
+          "topComments": [
+            "3팟에 탱 하나만 써도 될 거 같은데 그라가스가 딜이 쎈 보스는 아니라서 원탱으로도 충분",
+            "아스가없음 티미도안키워서",
+            "아스 명함효율 줫대서 있으면 좋긴 한데 월보 상점에 아스 올때까지 존버"
+          ]
+        },
+        {
+          "id": "18508",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18508",
+          "category": "일반",
+          "title": "내가하는겜들이 다 주년을 맞이함",
+          "author": "ㅇㅇ",
+          "comments": 14,
+          "views": 146,
+          "likes": 0,
+          "utcIso": "2026-11-09T19:30:50Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 426,
+          "body": "76일째 에르피스만 유일하게 과금하며 하는 중. 스타 세이비어·블루 아카이브 주년과 비교하며, 에르피스도 분재겜으로 매력은 있지만 돈을 다 넣는데 할 게 너무 없어 겁나 비싼 망겜이라고 평가. 컨텐츠에 신경 써주길 바란다고 함.",
+          "topComments": [
+            "킹갓짱 프리코네는안했구만",
+            "프리코네 길드장 4년하고 3년째 분재 유기중",
+            "블아 지금 5주년 이벤트중임? 맛볼까.."
+          ]
+        },
+        {
+          "id": "18509",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18509",
+          "category": "일반",
+          "title": "명절때",
+          "author": "ㅇㅇ",
+          "comments": 3,
+          "views": 80,
+          "likes": 0,
+          "utcIso": "2026-11-09T20:23:11Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 140,
+          "body": "2채널까지 활성화되던 에르피스는 없다, 뉴비 95%가 다 빠졌다는 글.",
+          "topComments": [
+            "나있자나 반주년 뉴비 나만살아남은듯",
+            "나 있어 환상향에서 잘 사는중"
+          ]
+        },
+        {
+          "id": "18510",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18510",
+          "category": "일반",
+          "title": "잠깐 마음 떳었는데",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 125,
+          "likes": 0,
+          "utcIso": "2026-11-10T03:20:08Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 205,
+          "body": "배신겜 갤이 터진 걸 보니 에르피스나 열심히 해야겠다, 완장들 항상 감사하다는 글.",
+          "topComments": [
+            "갤이 터질 화력이 있다는게 부럽구만",
+            "화력이 아니라 분탕이 완장 먹고 정보글 쳐지우고 나감"
+          ]
+        },
+        {
+          "id": "18511",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18511",
+          "category": "일반",
+          "title": "에르피스 과금할돈으로 스위치2샀는데",
+          "author": "ㅇㅇ",
+          "comments": 4,
+          "views": 101,
+          "likes": 0,
+          "utcIso": "2026-11-10T06:59:56Z",
+          "sentiment": "neutral",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 181,
+          "body": "만자천홍이 재미없다, 에르피스에 과금할 걸 그랬나 하는 글.",
+          "topComments": [
+            "스2 아직 할게임 없다고 생각해서 난 내년에 살까 고민중"
+          ]
+        },
+        {
+          "id": "18512",
+          "source": "dc",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18512",
+          "category": "일반",
+          "title": "병슨겜",
+          "author": "ㅇㅇ",
+          "comments": 2,
+          "views": 54,
+          "likes": 0,
+          "utcIso": "2026-11-10T13:33:07Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat"
+          ],
+          "engagement": 94,
+          "body": "러스트 노각과 성능차이를 알려줄 방법이 없다. 픽업 때 아니면 못 먹고, 소과금은 명함도 거르며, 사람이 없어 빅데이터도 없어 딜 차이 원인을 아무도 모른다는 푸념.",
+          "topComments": [
+            "내가 명함 실험단은 맡아줄 수 있긴 함"
+          ]
+        }
+      ],
+      "stats": {
+        "notices": 0,
+        "bugs": 0,
+        "negative": 3,
+        "positive": 3,
+        "competitor_mentions": 0,
+        "newbie_returning": 0,
+        "guild_recruit": 0,
+        "gacha": 0,
+        "event": 2,
+        "balance": 0,
+        "guide": 0,
+        "chitchat": 8,
+        "total": 10,
+        "real_posts": 10,
+        "total_views": 788,
+        "total_comments": 51,
+        "total_likes": 1,
+        "sentiment_score": 0.0,
+        "sentiment": "중립"
+      },
+      "topEngaging": [
+        {
+          "id": "18508",
+          "title": "내가하는겜들이 다 주년을 맞이함",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18508",
+          "source": "dc",
+          "views": 146,
+          "comments": 14,
+          "likes": 0,
+          "engagement": 426,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "18507",
+          "title": "나도 갠레처음으로 인50이다 ㅎ",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18507",
+          "source": "dc",
+          "views": 94,
+          "comments": 7,
+          "likes": 0,
+          "engagement": 234,
+          "category": "일반",
+          "sentiment": "positive"
+        },
+        {
+          "id": "18510",
+          "title": "잠깐 마음 떳었는데",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18510",
+          "source": "dc",
+          "views": 125,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 205,
+          "category": "일반",
+          "sentiment": "positive"
+        },
+        {
+          "id": "188661031",
+          "title": "겜 몇개 삭제함",
+          "url": "https://arca.live/b/erphis/188661031",
+          "source": "arca",
+          "views": 58,
+          "comments": 7,
+          "likes": 0,
+          "engagement": 198,
+          "category": "",
+          "sentiment": "positive"
+        },
+        {
+          "id": "188627121",
+          "title": "근데 월보 치고잇음?",
+          "url": "https://arca.live/b/erphis/188627121",
+          "source": "arca",
+          "views": 54,
+          "comments": 7,
+          "likes": 0,
+          "engagement": 194,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18511",
+          "title": "에르피스 과금할돈으로 스위치2샀는데",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18511",
+          "source": "dc",
+          "views": 101,
+          "comments": 4,
+          "likes": 0,
+          "engagement": 181,
+          "category": "일반",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18509",
+          "title": "명절때",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18509",
+          "source": "dc",
+          "views": 80,
+          "comments": 3,
+          "likes": 0,
+          "engagement": 140,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "188675337",
+          "title": "사이트 업데이트 (2026.11.10)",
+          "url": "https://arca.live/b/erphis/188675337",
+          "source": "arca",
+          "views": 36,
+          "comments": 2,
+          "likes": 1,
+          "engagement": 106,
+          "category": "",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "18512",
+          "title": "병슨겜",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18512",
+          "source": "dc",
+          "views": 54,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 94,
+          "category": "일반",
+          "sentiment": "negative"
+        },
+        {
+          "id": "188631142",
+          "title": "[안내] 새로운 탐험가 영야 합류 안내!",
+          "url": "https://arca.live/b/erphis/188631142",
+          "source": "arca",
+          "views": 40,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 60,
+          "category": "게임공지",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis": {
+        "dailySummary": "에르피스는 신규 탐험가 영야 합류 공지가 올라왔지만 커뮤니티는 조용하고 가라앉은 분위기였다. DC에서는 돈은 다 넣는데 할 게 너무 없다는 비교 글이 가장 많은 댓글을 모았고, 반주년 뉴비가 거의 다 빠졌다는 이야기와 노각 성능을 검증할 사람도 없다는 직설적 푸념이 나왔다. 반면 갠레 첫 인50 달성 자랑과 결국 에르피스만 남겼다는 애정 글도 있어 정서는 긍정과 부정이 맞선 중립이었다.",
+        "topIssues": [
+          {
+            "title": "내가하는겜들이 다 주년을 맞이함",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18508",
+            "tone": "negative",
+            "id": "18508",
+            "source": "dc",
+            "comments": 14,
+            "views": 146,
+            "likes": 0,
+            "bodySummary": "76일째 유일하게 과금 중인 유저가 블루 아카이브·스타 세이비어 주년과 비교하며 에르피스는 돈을 다 넣는데 할 게 너무 없는 '비싼 망겜'이라고 평가하고 콘텐츠 보강을 요청(댓글 14, 조회 146). 댓글은 프리코네·블아 등 타겜 이야기로 흘렀다."
+          },
+          {
+            "title": "나도 갠레처음으로 인50이다 ㅎ",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18507",
+            "tone": "positive",
+            "id": "18507",
+            "source": "dc",
+            "comments": 7,
+            "views": 94,
+            "likes": 0,
+            "bodySummary": "갠레에서 처음 인50(42등)을 달성했지만 3팟 딜량이 아쉽다는 글(댓글 7). 원탱으로 줄이고 딜러를 늘리라는 조언과 아스 명함은 월보 상점을 기다리라는 의견이 달렸다."
+          },
+          {
+            "title": "겜 몇개 삭제함",
+            "url": "https://arca.live/b/erphis/188661031",
+            "tone": "positive",
+            "id": "188661031",
+            "source": "arca",
+            "comments": 7,
+            "views": 58,
+            "likes": 0,
+            "bodySummary": "다른 게임들을 정리하고 에르피스 등 몇 개만 남겼다는 글(댓글 7). 짧은 호응 위주의 반응이었다. (본문 거의 없음)"
+          },
+          {
+            "title": "명절때",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18509",
+            "tone": "negative",
+            "id": "18509",
+            "source": "dc",
+            "comments": 3,
+            "views": 80,
+            "likes": 0,
+            "bodySummary": "한때 2채널까지 붐비던 에르피스는 없고 뉴비 95%가 빠졌다는 글. 반주년 뉴비인데 나만 살아남았다는 댓글 등 소수 잔류 유저의 반응이 달렸다."
+          },
+          {
+            "title": "병슨겜",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=18512",
+            "tone": "negative",
+            "id": "18512",
+            "source": "dc",
+            "comments": 2,
+            "views": 54,
+            "likes": 0,
+            "bodySummary": "픽업 때 아니면 얻기 어렵고 이용자가 적어 러스트 노각과 각성 차이를 검증할 데이터가 없다는 푸념. 명함 실험을 맡아보겠다는 댓글이 하나 달렸다."
+          }
+        ],
+        "bugReports": [],
+        "competitorMentions": [],
+        "trends": [
+          "콘텐츠 부족·가성비 불만",
+          "유저 이탈 체감",
+          "신규 탐험가 영야 합류"
+        ],
+        "watchlist": [
+          "콘텐츠 부족 불만 지속",
+          "잔존 유저 감소",
+          "영야 출시 반응"
+        ],
+        "keywords": [
+          {
+            "word": "콘텐츠 부족·망겜 푸념(불만)",
+            "count": 3,
+            "ids": [
+              "18508",
+              "18509",
+              "18512"
+            ]
+          },
+          {
+            "word": "유저 이탈·뉴비 감소",
+            "count": 3,
+            "ids": [
+              "18509",
+              "188661031",
+              "18510"
+            ]
+          },
+          {
+            "word": "갠레·월보 딜",
+            "count": 3,
+            "ids": [
+              "18507",
+              "188627121",
+              "18512"
+            ]
+          },
+          {
+            "word": "타겜 주년 비교",
+            "count": 3,
+            "ids": [
+              "18508",
+              "18511",
+              "188661031"
+            ]
+          },
+          {
+            "word": "신규 탐험가 영야",
+            "count": 2,
+            "ids": [
+              "188631142",
+              "188675337"
+            ]
+          },
+          {
+            "word": "갤 분탕 사태",
+            "count": 1,
+            "ids": [
+              "18510"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "searchTrends": null,
+  "generatedAt": "2026-11-10T22:38:10+00:00"
+}
