@@ -195,7 +195,6 @@
           "url": "https://arca.live/b/anchorpanic/154444688",
           "source": "arca",
           "tags": [
-            "bug",
             "balance",
             "guide"
           ],
@@ -261,7 +260,6 @@
           "url": "https://arca.live/b/anchorpanic/154437621",
           "source": "arca",
           "tags": [
-            "bug",
             "guide"
           ],
           "engagement": 528
@@ -356,7 +354,7 @@
         "total": 21,
         "real_posts": 21,
         "notices": 0,
-        "bugs": 2,
+        "bugs": 0,
         "negative": 0,
         "positive": 1,
         "competitor_mentions": 0,
@@ -486,7 +484,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "앵커패닉 채널 2025-11-21 동향: 주요 화제는 연맹·길드 모집, 공략·정보 공유. 중립적 정서가 우세하며 (긍정 1 vs 부정 0), 버그 의심 신고 2건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 20건, DC 1건이 작성되어 아카라이브가 채널 활동의 중심입니다.",
+        "dailySummary": "앵커패닉 채널 2025-11-21 동향: 주요 화제는 연맹·길드 모집, 공략·정보 공유. 중립적 정서가 우세하며 (긍정 1 vs 부정 0), 아카라이브 20건, DC 1건이 작성되어 아카라이브가 채널 활동의 중심입니다.",
         "topIssues": [
           {
             "title": "(내용수정)이번 토벌전 개인적인 생각 그리고 모듈의 변화 의견?",
@@ -519,16 +517,7 @@
             "tone": "중립"
           }
         ],
-        "bugReports": [
-          {
-            "title": "(수정)토벌전 종결셋팅 양자덱 영상 - 기술레벨 첨부",
-            "url": "https://arca.live/b/anchorpanic/154444688"
-          },
-          {
-            "title": "(내용수정)이번 토벌전 개인적인 생각 그리고 모듈의 변화 의견?",
-            "url": "https://arca.live/b/anchorpanic/154437621"
-          }
-        ],
+        "bugReports": [],
         "competitorMentions": [],
         "trends": [
           "복귀협력/뉴비 유입 글 2건 - 10%",
@@ -539,7 +528,6 @@
         ],
         "watchlist": [
           "복귀협력 매칭 수요 지속 여부",
-          "버그 재발 추적: (수정)토벌전 종결셋팅 양자덱 영상 - 기술레벨 첨부",
           "난이도 조정에 대한 후속 여론"
         ],
         "keywords": [
