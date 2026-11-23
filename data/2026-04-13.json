@@ -592,7 +592,8 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=9509&page=33",
           "source": "dc",
           "tags": [
-            "notice"
+            "notice",
+            "bug"
           ],
           "engagement": 334
         },
@@ -1290,5 +1291,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:58.478Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
