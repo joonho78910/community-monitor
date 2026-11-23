@@ -546,7 +546,8 @@
           "url": "https://arca.live/b/anchorpanic/158205954",
           "source": "arca",
           "tags": [
-            "chitchat"
+            "chitchat",
+            "bug"
           ],
           "engagement": 235
         },
@@ -996,7 +997,7 @@
         "total": 61,
         "real_posts": 61,
         "notices": 0,
-        "bugs": 2,
+        "bugs": 3,
         "negative": 1,
         "positive": 4,
         "competitor_mentions": 0,
@@ -1126,7 +1127,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "앵커패닉 채널 2025-12-30 동향: 주요 화제는 공략·정보 공유. 특히 \"광고\" 관련 글이 5회 언급되며 가장 활발한 키워드. 중립적 정서가 우세하며 (긍정 4 vs 부정 1), 버그 의심 신고 2건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 61건, DC 0건이 작성되어 아카라이브가 채널 활동의 중심입니다.",
+        "dailySummary": "앵커패닉 채널 2025-12-30 동향: 주요 화제는 공략·정보 공유. 특히 \"광고\" 관련 글이 5회 언급되며 가장 활발한 키워드. 중립적 정서가 우세하며 (긍정 4 vs 부정 1), 버그 의심 신고 3건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 61건, DC 0건이 작성되어 아카라이브가 채널 활동의 중심입니다.",
         "topIssues": [
           {
             "title": "유입 뉴비들에게",
@@ -1163,6 +1164,10 @@
           {
             "title": "야한건안돼광고뭐냐",
             "url": "https://arca.live/b/anchorpanic/158208132"
+          },
+          {
+            "title": "오늘 링링 핫픽스하네",
+            "url": "https://arca.live/b/anchorpanic/158205954"
           },
           {
             "title": "네트워크 다운로드 오류?",
