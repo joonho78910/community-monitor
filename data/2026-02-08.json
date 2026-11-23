@@ -438,8 +438,8 @@
           "잡담 3건"
         ],
         "watchlist": [
-          "버그 재발 추적: 심연 보스 버그있음",
-          "난이도 조정에 대한 후속 여론"
+          "난이도 조정에 대한 후속 여론",
+          "버그 재발 추적: 심연 보스 버그있음"
         ],
         "keywords": [
           {
@@ -3369,7 +3369,6 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=1636&page=177",
           "source": "dc",
           "tags": [
-            "bug",
             "guide"
           ],
           "engagement": 1807
@@ -5645,7 +5644,7 @@
         "total": 321,
         "real_posts": 321,
         "notices": 0,
-        "bugs": 4,
+        "bugs": 3,
         "negative": 18,
         "positive": 36,
         "competitor_mentions": 0,
@@ -5775,7 +5774,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "에르피스 채널 2026-02-08 동향: 주요 화제는 공략·정보 공유. 특히 \"리세\" 관련 글이 14회 언급되며 가장 활발한 키워드. 전반적 정서는 호의적이며 (긍정 36 vs 부정 18), 버그 의심 신고 4건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 91건, DC 230건이 작성되어 양쪽이 비교적 고르게 활동했습니다.",
+        "dailySummary": "에르피스 채널 2026-02-08 동향: 주요 화제는 공략·정보 공유. 특히 \"리세\" 관련 글이 14회 언급되며 가장 활발한 키워드. 전반적 정서는 호의적이며 (긍정 36 vs 부정 18), 버그 의심 신고 3건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 91건, DC 230건이 작성되어 양쪽이 비교적 고르게 활동했습니다.",
         "topIssues": [
           {
             "title": "미스터리 투어 6단계 공략 (+추가팁)",
@@ -5812,10 +5811,6 @@
           {
             "title": "아이폰11로 겜하면 튕김",
             "url": "https://arca.live/b/erphis/161856178"
-          },
-          {
-            "title": "(수정) 제시카 vs 베티아",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=1636&page=177"
           },
           {
             "title": "델리스 0티어 아니냐? 말안되는데",
@@ -5920,5 +5915,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:56.888Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
