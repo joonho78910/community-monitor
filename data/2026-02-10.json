@@ -1166,7 +1166,8 @@
           "url": "https://arca.live/b/erphis/162018214",
           "source": "arca",
           "tags": [
-            "notice"
+            "notice",
+            "bug"
           ],
           "engagement": 373
         },
@@ -1826,7 +1827,8 @@
           "url": "https://arca.live/b/erphis/162001513",
           "source": "arca",
           "tags": [
-            "notice"
+            "notice",
+            "bug"
           ],
           "engagement": 330
         },
@@ -6295,7 +6297,8 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=2241&page=166",
           "source": "dc",
           "tags": [
-            "notice"
+            "notice",
+            "bug"
           ],
           "engagement": 789
         },
@@ -8883,5 +8886,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:56.988Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
