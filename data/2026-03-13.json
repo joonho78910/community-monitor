@@ -800,7 +800,8 @@
           "url": "https://arca.live/b/erphis/164743645",
           "source": "arca",
           "tags": [
-            "notice"
+            "notice",
+            "bug"
           ],
           "engagement": 487
         },
@@ -1395,7 +1396,8 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=7882&page=64",
           "source": "dc",
           "tags": [
-            "notice"
+            "notice",
+            "bug"
           ],
           "engagement": 576
         },
@@ -2241,5 +2243,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:57.977Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
