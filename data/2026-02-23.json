@@ -4360,9 +4360,7 @@
           "likes": 3,
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=5640&page=104",
           "source": "dc",
-          "tags": [
-            "bug"
-          ],
+          "tags": [],
           "engagement": 253
         },
         {
@@ -4424,7 +4422,7 @@
         "total": 247,
         "real_posts": 244,
         "notices": 3,
-        "bugs": 3,
+        "bugs": 2,
         "negative": 13,
         "positive": 15,
         "competitor_mentions": 0,
@@ -4554,7 +4552,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "에르피스 채널 2026-02-23 동향: 주요 화제는 공략·정보 공유, 콘텐츠 난이도/메타. 특히 \"길레\" 관련 글이 14회 언급되며 가장 활발한 키워드. 중립적 정서가 우세하며 (긍정 15 vs 부정 13), 버그 의심 신고 3건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 61건, DC 183건이 작성되어 양쪽이 비교적 고르게 활동했습니다.",
+        "dailySummary": "에르피스 채널 2026-02-23 동향: 주요 화제는 공략·정보 공유, 콘텐츠 난이도/메타. 특히 \"길레\" 관련 글이 14회 언급되며 가장 활발한 키워드. 중립적 정서가 우세하며 (긍정 15 vs 부정 13), 버그 의심 신고 2건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 61건, DC 183건이 작성되어 양쪽이 비교적 고르게 활동했습니다.",
         "topIssues": [
           {
             "title": "갤 최초냐?",
@@ -4595,10 +4593,6 @@
           {
             "title": "미스테리투어 초기화버그같은건 안나나...",
             "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=5647&page=104"
-          },
-          {
-            "title": "길레 공훈배율 수정해야함",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=5640&page=104"
           }
         ],
         "competitorMentions": [],
@@ -4695,5 +4689,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:57.500Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
