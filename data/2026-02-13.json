@@ -672,7 +672,6 @@
           "url": "https://arca.live/b/erphis/162343516",
           "source": "arca",
           "tags": [
-            "bug",
             "guide"
           ],
           "engagement": 1653
@@ -1870,7 +1869,6 @@
           "url": "https://arca.live/b/erphis/162264411",
           "source": "arca",
           "tags": [
-            "bug",
             "guide"
           ],
           "engagement": 184
@@ -5547,7 +5545,7 @@
         "total": 306,
         "real_posts": 306,
         "notices": 0,
-        "bugs": 4,
+        "bugs": 2,
         "negative": 8,
         "positive": 25,
         "competitor_mentions": 0,
@@ -5677,7 +5675,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "에르피스 채널 2026-02-13 동향: 주요 화제는 공략·정보 공유, 신규 캐릭터 가챠. 특히 \"필데나\" 관련 글이 15회 언급되며 가장 활발한 키워드. 전반적 정서는 호의적이며 (긍정 25 vs 부정 8), 버그 의심 신고 4건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 93건, DC 213건이 작성되어 양쪽이 비교적 고르게 활동했습니다.",
+        "dailySummary": "에르피스 채널 2026-02-13 동향: 주요 화제는 공략·정보 공유, 신규 캐릭터 가챠. 특히 \"필데나\" 관련 글이 15회 언급되며 가장 활발한 키워드. 전반적 정서는 호의적이며 (긍정 25 vs 부정 8), 버그 의심 신고 2건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 93건, DC 213건이 작성되어 양쪽이 비교적 고르게 활동했습니다.",
         "topIssues": [
           {
             "title": "분재겜은 물만주는게 정석임",
@@ -5712,14 +5710,6 @@
         ],
         "bugReports": [
           {
-            "title": "(수정)프레이아 배지 옵션에 대한 고찰(feat.고찰은 AI가)",
-            "url": "https://arca.live/b/erphis/162343516"
-          },
-          {
-            "title": "파티수정할거있나",
-            "url": "https://arca.live/b/erphis/162264411"
-          },
-          {
             "title": "리옹 나오면 풀오팔 때려박고 3각 안되면 접는 게임 맞지?",
             "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=3281&page=147"
           },
@@ -5740,7 +5730,7 @@
         ],
         "watchlist": [
           "복귀협력 매칭 수요 지속 여부",
-          "버그 재발 추적: (수정)프레이아 배지 옵션에 대한 고찰(feat.고찰은 AI가)",
+          "버그 재발 추적: 리옹 나오면 풀오팔 때려박고 3각 안되면 접는 게임 맞지?",
           "난이도 조정에 대한 후속 여론",
           "차기 픽업 캐릭터 출시 반응"
         ],
@@ -5822,5 +5812,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:57.122Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
