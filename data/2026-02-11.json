@@ -3147,7 +3147,6 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=2693&page=158",
           "source": "dc",
           "tags": [
-            "bug",
             "guide"
           ],
           "engagement": 3489
@@ -6544,7 +6543,7 @@
         "total": 359,
         "real_posts": 359,
         "notices": 0,
-        "bugs": 4,
+        "bugs": 3,
         "negative": 14,
         "positive": 31,
         "competitor_mentions": 0,
@@ -6674,7 +6673,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "에르피스 채널 2026-02-11 동향: 주요 화제는 공략·정보 공유, 이벤트·쿠폰. 특히 \"리세\" 관련 글이 19회 언급되며 가장 활발한 키워드. 중립적 정서가 우세하며 (긍정 31 vs 부정 14), 버그 의심 신고 4건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 89건, DC 270건이 작성되어 DC인사이드가 채널 활동의 중심입니다.",
+        "dailySummary": "에르피스 채널 2026-02-11 동향: 주요 화제는 공략·정보 공유, 이벤트·쿠폰. 특히 \"리세\" 관련 글이 19회 언급되며 가장 활발한 키워드. 중립적 정서가 우세하며 (긍정 31 vs 부정 14), 버그 의심 신고 3건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 89건, DC 270건이 작성되어 DC인사이드가 채널 활동의 중심입니다.",
         "topIssues": [
           {
             "title": "번역기) 앞으로 나올 캐릭터들 각성 추천",
@@ -6719,10 +6718,6 @@
           {
             "title": "미스터리 투어 왜 6단계 안열리지",
             "url": "https://arca.live/b/erphis/162066190"
-          },
-          {
-            "title": "미스터리 공략 수정해야할듯?",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=2693&page=158"
           }
         ],
         "competitorMentions": [],
@@ -6819,5 +6814,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:57.037Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
