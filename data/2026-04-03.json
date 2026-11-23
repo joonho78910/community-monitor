@@ -96,9 +96,7 @@
           "likes": 1,
           "url": "https://arca.live/b/anchorpanic/166639829",
           "source": "arca",
-          "tags": [
-            "bug"
-          ],
+          "tags": [],
           "engagement": 1083
         },
         {
@@ -449,7 +447,7 @@
         "total": 27,
         "real_posts": 26,
         "notices": 1,
-        "bugs": 2,
+        "bugs": 1,
         "negative": 0,
         "positive": 7,
         "competitor_mentions": 0,
@@ -579,7 +577,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "앵커패닉 채널 2026-04-03 동향: 전반적 정서는 호의적이며 (긍정 7 vs 부정 0), 버그 의심 신고 2건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 26건, DC 0건이 작성되어 아카라이브가 채널 활동의 중심입니다.",
+        "dailySummary": "앵커패닉 채널 2026-04-03 동향: 전반적 정서는 호의적이며 (긍정 7 vs 부정 0), 버그 의심 신고 1건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 26건, DC 0건이 작성되어 아카라이브가 채널 활동의 중심입니다.",
         "topIssues": [
           {
             "title": "(수정) 그래도 개선 사항 같은거 말해야 하니...",
@@ -614,10 +612,6 @@
         ],
         "bugReports": [
           {
-            "title": "(수정) 그래도 개선 사항 같은거 말해야 하니...",
-            "url": "https://arca.live/b/anchorpanic/166639829"
-          },
-          {
             "title": "오늘 굿즈 당첨 안되면 똥싸버리겠음",
             "url": "https://arca.live/b/anchorpanic/166605027"
           }
@@ -631,7 +625,7 @@
         ],
         "watchlist": [
           "복귀협력 매칭 수요 지속 여부",
-          "버그 재발 추적: (수정) 그래도 개선 사항 같은거 말해야 하니...",
+          "버그 재발 추적: 오늘 굿즈 당첨 안되면 똥싸버리겠음",
           "차기 픽업 캐릭터 출시 반응"
         ],
         "keywords": [
@@ -1507,7 +1501,8 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=9120&page=41",
           "source": "dc",
           "tags": [
-            "notice"
+            "notice",
+            "bug"
           ],
           "engagement": 304
         },
@@ -2082,5 +2077,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:58.333Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
