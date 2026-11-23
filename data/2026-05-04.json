@@ -797,7 +797,6 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10624&page=12",
           "source": "dc",
           "tags": [
-            "bug",
             "positive",
             "guide"
           ],
@@ -1430,7 +1429,7 @@
         "total": 69,
         "real_posts": 66,
         "notices": 3,
-        "bugs": 2,
+        "bugs": 1,
         "negative": 2,
         "positive": 10,
         "competitor_mentions": 1,
@@ -1560,7 +1559,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "에르피스 채널 2026-05-04 동향: 주요 화제는 이벤트·쿠폰. 특히 \"근데\" 관련 글이 4회 언급되며 가장 활발한 키워드. 전반적 정서는 호의적이며 (긍정 10 vs 부정 2), 버그 의심 신고 2건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 15건, DC 51건이 작성되어 DC인사이드가 채널 활동의 중심입니다.",
+        "dailySummary": "에르피스 채널 2026-05-04 동향: 주요 화제는 이벤트·쿠폰. 특히 \"근데\" 관련 글이 4회 언급되며 가장 활발한 키워드. 전반적 정서는 호의적이며 (긍정 10 vs 부정 2), 버그 의심 신고 1건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 15건, DC 51건이 작성되어 DC인사이드가 채널 활동의 중심입니다.",
         "topIssues": [
           {
             "title": "뉴비 인권 만들어 왔음",
@@ -1597,10 +1596,6 @@
           {
             "title": "얘네 미니게임 이벤트 찐빠 낸 것 같은데",
             "url": "https://arca.live/b/erphis/169632194"
-          },
-          {
-            "title": "ex 클리어 파티 수정했음 참고할사람하셈",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=10624&page=12"
           }
         ],
         "competitorMentions": [
@@ -1675,5 +1670,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:58.827Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
