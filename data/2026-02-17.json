@@ -905,7 +905,8 @@
           "url": "https://arca.live/b/erphis/162659383",
           "source": "arca",
           "tags": [
-            "notice"
+            "notice",
+            "bug"
           ],
           "engagement": 469
         },
@@ -4983,5 +4984,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:57.250Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
