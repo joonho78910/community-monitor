@@ -366,8 +366,8 @@
           "잡담 8건"
         ],
         "watchlist": [
-          "버그 재발 추적: 네온 버그도 방치하는거 짜증나네",
-          "난이도 조정에 대한 후속 여론"
+          "난이도 조정에 대한 후속 여론",
+          "버그 재발 추적: 네온 버그도 방치하는거 짜증나네"
         ],
         "keywords": []
       }
@@ -1047,7 +1047,8 @@
           "url": "https://arca.live/b/erphis/163920621",
           "source": "arca",
           "tags": [
-            "notice"
+            "notice",
+            "bug"
           ],
           "engagement": 240
         },
@@ -2063,7 +2064,8 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=7169&page=77",
           "source": "dc",
           "tags": [
-            "notice"
+            "notice",
+            "bug"
           ],
           "engagement": 340
         },
@@ -2305,7 +2307,8 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=7150&page=77",
           "source": "dc",
           "tags": [
-            "notice"
+            "notice",
+            "bug"
           ],
           "engagement": 308
         },
@@ -2932,5 +2935,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:57.786Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
