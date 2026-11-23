@@ -1063,7 +1063,6 @@
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=7704&page=67",
           "source": "dc",
           "tags": [
-            "bug",
             "balance"
           ],
           "engagement": 938
@@ -2176,7 +2175,7 @@
         "total": 110,
         "real_posts": 110,
         "notices": 0,
-        "bugs": 2,
+        "bugs": 1,
         "negative": 4,
         "positive": 11,
         "competitor_mentions": 1,
@@ -2306,7 +2305,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "에르피스 채널 2026-03-10 동향: 주요 화제는 공략·정보 공유, 신규 캐릭터 가챠. 특히 \"고사\" 관련 글이 5회 언급되며 가장 활발한 키워드. 전반적 정서는 호의적이며 (긍정 11 vs 부정 4), 버그 의심 신고 2건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 19건, DC 91건이 작성되어 DC인사이드가 채널 활동의 중심입니다.",
+        "dailySummary": "에르피스 채널 2026-03-10 동향: 주요 화제는 공략·정보 공유, 신규 캐릭터 가챠. 특히 \"고사\" 관련 글이 5회 언급되며 가장 활발한 키워드. 전반적 정서는 호의적이며 (긍정 11 vs 부정 4), 버그 의심 신고 1건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 19건, DC 91건이 작성되어 DC인사이드가 채널 활동의 중심입니다.",
         "topIssues": [
           {
             "title": "아니 고사 좋은건 좋은건데",
@@ -2341,10 +2340,6 @@
         ],
         "bugReports": [
           {
-            "title": "에르피스 갤 4컷 만화 1화(수정본)",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=7704&page=67"
-          },
-          {
             "title": "안되겟다 고사씹년 너프하고 카구야 버프해서 0티어 만들어야한다",
             "url": "https://gall.dcinside.com/mgallery/board/view/?id=erpis&no=7656&page=68"
           }
@@ -2367,7 +2362,7 @@
         ],
         "watchlist": [
           "복귀협력 매칭 수요 지속 여부",
-          "버그 재발 추적: 에르피스 갤 4컷 만화 1화(수정본)",
+          "버그 재발 추적: 안되겟다 고사씹년 너프하고 카구야 버프해서 0티어 만들어야한다",
           "난이도 조정에 대한 후속 여론",
           "차기 픽업 캐릭터 출시 반응"
         ],
@@ -2449,5 +2444,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:57.920Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
