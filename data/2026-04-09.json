@@ -177,9 +177,7 @@
           "likes": 2,
           "url": "https://arca.live/b/anchorpanic/167165931",
           "source": "arca",
-          "tags": [
-            "bug"
-          ],
+          "tags": [],
           "engagement": 654
         },
         {
@@ -384,7 +382,7 @@
         "total": 23,
         "real_posts": 23,
         "notices": 0,
-        "bugs": 2,
+        "bugs": 1,
         "negative": 1,
         "positive": 3,
         "competitor_mentions": 0,
@@ -514,7 +512,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "앵커패닉 채널 2026-04-09 동향: 전반적 정서는 호의적이며 (긍정 3 vs 부정 1), 버그 의심 신고 2건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 23건, DC 0건이 작성되어 아카라이브가 채널 활동의 중심입니다.",
+        "dailySummary": "앵커패닉 채널 2026-04-09 동향: 전반적 정서는 호의적이며 (긍정 3 vs 부정 1), 버그 의심 신고 1건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 23건, DC 0건이 작성되어 아카라이브가 채널 활동의 중심입니다.",
         "topIssues": [
           {
             "title": "아이리스 관련 수정",
@@ -551,10 +549,6 @@
           {
             "title": "이제 슬슬 연맹 pvp도 기술렙 반영해주면 안되나",
             "url": "https://arca.live/b/anchorpanic/167217524"
-          },
-          {
-            "title": "아이리스 관련 수정",
-            "url": "https://arca.live/b/anchorpanic/167165931"
           }
         ],
         "competitorMentions": [],
@@ -566,8 +560,8 @@
           "잡담 12건"
         ],
         "watchlist": [
-          "버그 재발 추적: 이제 슬슬 연맹 pvp도 기술렙 반영해주면 안되나",
           "난이도 조정에 대한 후속 여론",
+          "버그 재발 추적: 이제 슬슬 연맹 pvp도 기술렙 반영해주면 안되나",
           "차기 픽업 캐릭터 출시 반응"
         ],
         "keywords": [
@@ -1635,5 +1629,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:58.423Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
