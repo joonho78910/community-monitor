@@ -290,7 +290,6 @@
           "url": "https://arca.live/b/anchorpanic/163360759",
           "source": "arca",
           "tags": [
-            "bug",
             "guide"
           ],
           "engagement": 525
@@ -321,7 +320,7 @@
         "total": 19,
         "real_posts": 19,
         "notices": 0,
-        "bugs": 2,
+        "bugs": 1,
         "negative": 0,
         "positive": 0,
         "competitor_mentions": 0,
@@ -451,7 +450,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "앵커패닉 채널 2026-02-26 동향: 주요 화제는 공략·정보 공유, 이벤트·쿠폰. 중립적 정서가 우세하며 (긍정 0 vs 부정 0), 버그 의심 신고 2건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 19건, DC 0건이 작성되어 아카라이브가 채널 활동의 중심입니다.",
+        "dailySummary": "앵커패닉 채널 2026-02-26 동향: 주요 화제는 공략·정보 공유, 이벤트·쿠폰. 중립적 정서가 우세하며 (긍정 0 vs 부정 0), 버그 의심 신고 1건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 19건, DC 0건이 작성되어 아카라이브가 채널 활동의 중심입니다.",
         "topIssues": [
           {
             "title": "으흐흐♡",
@@ -488,10 +487,6 @@
           {
             "title": "이겜 이해 안되는거 하나",
             "url": "https://arca.live/b/anchorpanic/163401685"
-          },
-          {
-            "title": "음 마법소녀 세팅 완료 (수정 업데이트)",
-            "url": "https://arca.live/b/anchorpanic/163360759"
           }
         ],
         "competitorMentions": [],
@@ -7582,5 +7577,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:57.614Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
