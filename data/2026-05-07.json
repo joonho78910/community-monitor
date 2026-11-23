@@ -2433,7 +2433,6 @@
           "url": "https://arca.live/b/anchorpanic/169899653",
           "source": "arca",
           "tags": [
-            "bug",
             "newbie",
             "guide"
           ],
@@ -2970,7 +2969,7 @@
         "total": 181,
         "real_posts": 181,
         "notices": 0,
-        "bugs": 8,
+        "bugs": 7,
         "negative": 6,
         "positive": 14,
         "competitor_mentions": 0,
@@ -3100,7 +3099,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "앵커패닉 채널 2026-05-07 동향: 주요 화제는 복귀협력/뉴비 유입 매칭, 공략·정보 공유. 특히 \"질문\" 관련 글이 8회 언급되며 가장 활발한 키워드. 중립적 정서가 우세하며 (긍정 14 vs 부정 6), 버그 의심 신고 8건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 178건, DC 3건이 작성되어 아카라이브가 채널 활동의 중심입니다.",
+        "dailySummary": "앵커패닉 채널 2026-05-07 동향: 주요 화제는 복귀협력/뉴비 유입 매칭, 공략·정보 공유. 특히 \"질문\" 관련 글이 8회 언급되며 가장 활발한 키워드. 중립적 정서가 우세하며 (긍정 14 vs 부정 6), 버그 의심 신고 7건이 보고되고 있어 모니터링이 필요합니다. 아카라이브 178건, DC 3건이 작성되어 아카라이브가 채널 활동의 중심입니다.",
         "topIssues": [
           {
             "title": "뉴비를 위한 간단한 마인드 유닛 정리",
@@ -3157,10 +3156,6 @@
           {
             "title": "네트워크 오류5 머냐고",
             "url": "https://arca.live/b/anchorpanic/169900127"
-          },
-          {
-            "title": "뉴비들이 알아야할 필수정보",
-            "url": "https://arca.live/b/anchorpanic/169899653"
           },
           {
             "title": "찍먹 해볼랬는데 다운오류 하루죙일뜨네",
@@ -4151,5 +4146,5 @@
     }
   },
   "lastUpdated": "2026-05-15T04:09:58.889Z",
-  "trendsFile": "_trends.json"
+  "trendsFile": "trends.json"
 }
