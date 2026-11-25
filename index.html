@@ -281,7 +281,7 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 <div class="header">
   <div>
     <h1>커뮤니티 동향 대시보드</h1>
-    <div class="sub">앵커패닉 · 에르피스 일일 모니터링</div>
+    <div class="sub">앵커패닉 · 에르피스 · 막다보니 천하통일 · 검신제로 일일 모니터링</div>
   </div>
   <div class="header-right">
     <div id="meta-build" style="font-weight:600;color:var(--text-2);font-size:11.5px;letter-spacing:0.02em;"></div>
@@ -687,7 +687,7 @@ const GAME_LABELS={anchorpanic:'앵커패닉',erpis:'에르피스',tkdefense:'�
 const GAME_COLORS={anchorpanic:'#1d4ed8',erpis:'#7c3aed',tkdefense:'#b45309',dawnswake:'#0f766e'};
 const SRC_LABELS={arca:'아카',dc:'DC',cafe:'카페',lounge:'라운지',discord:'디스코드'};
 function gname(key,g){
-  return (g&&g.name)||GAME_LABELS[key]||key||'';
+  return GAME_LABELS[key]||(g&&g.name)||key||'';
 }
 function buildTabs(games){
   const el=document.getElementById('tabs');
