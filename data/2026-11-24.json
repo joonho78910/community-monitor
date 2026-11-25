@@ -2,7 +2,7 @@
   "date": "2026-11-24",
   "games": {
     "anchorpanic": {
-      "name": "anchorpanic",
+      "name": "앵커패닉",
       "date": "2026-11-24",
       "posts": [
         {
@@ -1276,7 +1276,7 @@
       }
     },
     "erpis": {
-      "name": "erpis",
+      "name": "에르피스",
       "date": "2026-11-24",
       "posts": [
         {
@@ -2772,28 +2772,356 @@
             "balance"
           ],
           "engagement": 118
+        },
+        {
+          "id": "1574439797827834009",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574439797827834009",
+          "category": "general",
+          "title": "They didn't mention in the patch notes I think but I hope they fix General Bong ",
+          "author": "CHEEKZ",
+          "comments": 2,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-23T15:01:39Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "balance"
+          ],
+          "body": "They didn't mention in the patch notes I think but I hope they fix General Bong water just out healing everything forever",
+          "engagement": 40
+        },
+        {
+          "id": "1574445259864277156",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574445259864277156",
+          "category": "general",
+          "title": "How do i clear the sword arts master quest...",
+          "author": "! ɴ.ᴋ",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-23T15:23:21Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "body": "How do i clear the sword arts master quest...",
+          "engagement": 20
+        },
+        {
+          "id": "1574538119280066670",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574538119280066670",
+          "category": "general",
+          "title": "Are they good,i do not have enough summon for yellow hero so can i use purple he",
+          "author": "Thủy Linh",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-23T21:32:21Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha",
+            "newbie_returning"
+          ],
+          "body": "Are they good,i do not have enough summon for yellow hero so can i use purple hero",
+          "engagement": 20
+        },
+        {
+          "id": "1574577238865612932",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574577238865612932",
+          "category": "general",
+          "title": "Any information about new server??",
+          "author": "Fuschia",
+          "comments": 2,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T00:07:47Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "body": "Any information about new server??",
+          "engagement": 40
+        },
+        {
+          "id": "1574629283236806687",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574629283236806687",
+          "category": "general",
+          "title": "quick update, it was just announced! a new server Asia 5 opens 2026년 11월 26일 오전 ",
+          "author": "Dawn's Wake (운영)",
+          "comments": 0,
+          "views": 0,
+          "likes": 1,
+          "utcIso": "2026-11-24T03:34:36Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "body": "quick update, it was just announced! a new server Asia 5 opens 2026년 11월 26일 오전 10:00, full notice is in 📣┃announcements",
+          "engagement": 30
+        },
+        {
+          "id": "1574601851129831536",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574601851129831536",
+          "category": "general",
+          "title": "Li xiangjun best must have Sr Xiaoyu good buffer Jiang Linyu if you use atk spee",
+          "author": "No.999",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T01:45:35Z",
+          "sentiment": "positive",
+          "tags": [
+            "guide"
+          ],
+          "body": "Li xiangjun best must have Sr Xiaoyu good buffer Jiang Linyu if you use atk speed team Ji chenyu also good buffer but you must manual him",
+          "engagement": 0
+        },
+        {
+          "id": "1574603664868380683",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574603664868380683",
+          "category": "general",
+          "title": "You need that ape sutra from wish shop too if you play atk speed character",
+          "author": "No.999",
+          "comments": 0,
+          "views": 0,
+          "likes": 1,
+          "utcIso": "2026-11-24T01:52:48Z",
+          "sentiment": "positive",
+          "tags": [
+            "guide"
+          ],
+          "body": "You need that ape sutra from wish shop too if you play atk speed character",
+          "engagement": 30
+        },
+        {
+          "id": "1574681715241132093",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574681715241132093",
+          "category": "general",
+          "title": "where should I spam stamina pals",
+          "author": "Blanca",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T07:02:57Z",
+          "sentiment": "neutral",
+          "tags": [
+            "newbie_returning"
+          ],
+          "body": "where should I spam stamina pals",
+          "engagement": 20
+        },
+        {
+          "id": "1574704228931477546",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574704228931477546",
+          "category": "general",
+          "title": "just beat Mu Lian / lmao take 5 hours at level 32",
+          "author": "Blanca",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T08:32:24Z",
+          "sentiment": "positive",
+          "tags": [
+            "chitchat"
+          ],
+          "body": "just beat Mu Lian / lmao take 5 hours at level 32",
+          "engagement": 20
+        },
+        {
+          "id": "1574706148425343017",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574706148425343017",
+          "category": "general",
+          "title": "Mu lian need stun when he dance",
+          "author": "No.999",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T08:40:02Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "body": "Mu lian need stun when he dance",
+          "engagement": 0
+        },
+        {
+          "id": "1574712515030548641",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574712515030548641",
+          "category": "general",
+          "title": "btw any reliable tier list around buddy???",
+          "author": "Blanca",
+          "comments": 2,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T09:05:20Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "body": "btw any reliable tier list around buddy???",
+          "engagement": 40
+        },
+        {
+          "id": "1574724567560364073",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574724567560364073",
+          "category": "general",
+          "title": "Idk. every tier list I saw different the newest one didn't even include all curr",
+          "author": "No.999",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T09:53:13Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "body": "Idk. every tier list I saw different the newest one didn't even include all current character",
+          "engagement": 0
+        },
+        {
+          "id": "1574725396501626971",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574725396501626971",
+          "category": "general",
+          "title": "Don't rush to buy elixir with jade . Use pvp token",
+          "author": "No.999",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T09:56:31Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "gacha"
+          ],
+          "body": "Don't rush to buy elixir with jade . Use pvp token",
+          "engagement": 0
+        },
+        {
+          "id": "1574726205675016223",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574726205675016223",
+          "category": "general",
+          "title": "If you wanna go poison team you need that SSR poison girl + amantha you need to ",
+          "author": "No.999",
+          "comments": 0,
+          "views": 0,
+          "likes": 2,
+          "utcIso": "2026-11-24T09:59:44Z",
+          "sentiment": "positive",
+          "tags": [
+            "guide",
+            "gacha"
+          ],
+          "body": "If you wanna go poison team you need that SSR poison girl + amantha you need to make her SSR which hard . Getting p5 Sr you wanted far harder than pulling SSR",
+          "engagement": 60
+        },
+        {
+          "id": "1574751212178374657",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574751212178374657",
+          "category": "general",
+          "title": "One more tip don't wasted to much wen ( money ) you need that a lot to buy treas",
+          "author": "No.999",
+          "comments": 0,
+          "views": 0,
+          "likes": 1,
+          "utcIso": "2026-11-24T11:39:06Z",
+          "sentiment": "positive",
+          "tags": [
+            "guide"
+          ],
+          "body": "One more tip don't wasted to much wen ( money ) you need that a lot to buy treasure from faction. Those item expensive af",
+          "engagement": 30
+        },
+        {
+          "id": "1574797098245820437",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574797098245820437",
+          "category": "general",
+          "title": "Oh yeah I forgot to tell in this game there is 2 kind of damage internal and ext",
+          "author": "No.999",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T14:41:26Z",
+          "sentiment": "positive",
+          "tags": [
+            "guide"
+          ],
+          "body": "Oh yeah I forgot to tell in this game there is 2 kind of damage internal and external. Make sure 2 your main DPS have different type of damage",
+          "engagement": 0
+        },
+        {
+          "id": "1574797577595916351",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574797577595916351",
+          "category": "general",
+          "title": "tomorrow will pull for zhuge",
+          "author": "Blanca",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T14:43:20Z",
+          "sentiment": "positive",
+          "tags": [
+            "gacha"
+          ],
+          "body": "tomorrow will pull for zhuge",
+          "engagement": 20
+        },
+        {
+          "id": "1574687217496887297",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1573162673267417230/1574687217496887297",
+          "category": "bug-report",
+          "title": "@Dawn's Wake I experienced the same, this bug is still hasn't been fixed  (스레드: ",
+          "author": "Al Ri",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T07:24:48Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs"
+          ],
+          "body": "@Dawn's Wake I experienced the same, this bug is still hasn't been fixed  (스레드: Boss mechanic is not working correctly — 위장 상태가 체력 20% 이후 풀 회복까지 계속 유지됨)",
+          "engagement": 0
         }
       ],
       "stats": {
         "notices": 0,
-        "bugs": 2,
-        "negative": 1,
-        "positive": 0,
+        "bugs": 4,
+        "negative": 3,
+        "positive": 7,
         "competitor_mentions": 0,
-        "newbie_returning": 0,
+        "newbie_returning": 2,
         "guild_recruit": 0,
-        "gacha": 0,
-        "event": 0,
-        "balance": 2,
-        "guide": 0,
-        "chitchat": 0,
-        "total": 2,
-        "real_posts": 2,
+        "gacha": 4,
+        "event": 2,
+        "balance": 3,
+        "guide": 10,
+        "chitchat": 1,
+        "total": 20,
+        "real_posts": 20,
         "total_views": 131,
-        "total_comments": 4,
-        "total_likes": 0,
-        "sentiment_score": -0.5,
-        "sentiment": "부정"
+        "total_comments": 15,
+        "total_likes": 5,
+        "sentiment_score": 0.2,
+        "sentiment": "긍정"
       },
       "topEngaging": [
         {
@@ -2819,11 +3147,118 @@
           "engagement": 93,
           "category": "😈버그 제보",
           "sentiment": "neutral"
+        },
+        {
+          "id": "1574726205675016223",
+          "title": "If you wanna go poison team you need that SSR poison girl + amantha you need to ",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574726205675016223",
+          "source": "discord",
+          "views": 0,
+          "comments": 0,
+          "likes": 2,
+          "engagement": 60,
+          "category": "general",
+          "sentiment": "positive"
+        },
+        {
+          "id": "1574439797827834009",
+          "title": "They didn't mention in the patch notes I think but I hope they fix General Bong ",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574439797827834009",
+          "source": "discord",
+          "views": 0,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 40,
+          "category": "general",
+          "sentiment": "negative"
+        },
+        {
+          "id": "1574577238865612932",
+          "title": "Any information about new server??",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574577238865612932",
+          "source": "discord",
+          "views": 0,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 40,
+          "category": "general",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "1574712515030548641",
+          "title": "btw any reliable tier list around buddy???",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574712515030548641",
+          "source": "discord",
+          "views": 0,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 40,
+          "category": "general",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "1574629283236806687",
+          "title": "quick update, it was just announced! a new server Asia 5 opens 2026년 11월 26일 오전 ",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574629283236806687",
+          "source": "discord",
+          "views": 0,
+          "comments": 0,
+          "likes": 1,
+          "engagement": 30,
+          "category": "general",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "1574603664868380683",
+          "title": "You need that ape sutra from wish shop too if you play atk speed character",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574603664868380683",
+          "source": "discord",
+          "views": 0,
+          "comments": 0,
+          "likes": 1,
+          "engagement": 30,
+          "category": "general",
+          "sentiment": "positive"
+        },
+        {
+          "id": "1574751212178374657",
+          "title": "One more tip don't wasted to much wen ( money ) you need that a lot to buy treas",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574751212178374657",
+          "source": "discord",
+          "views": 0,
+          "comments": 0,
+          "likes": 1,
+          "engagement": 30,
+          "category": "general",
+          "sentiment": "positive"
+        },
+        {
+          "id": "1574445259864277156",
+          "title": "How do i clear the sword arts master quest...",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574445259864277156",
+          "source": "discord",
+          "views": 0,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 20,
+          "category": "general",
+          "sentiment": "neutral"
         }
       ],
       "analysis": {
-        "dailySummary": "검신제로는 국내 네이버 라운지에 유저 글이 두 건뿐인 조용한 하루였지만, 둘 다 신규 협객 제갈록의 5잠재(5돌) 효과가 실제로 발동하지 않는 것 같다는 버그 제보였다. 첫 글에 공식이 정상 작동이라고 설명했으나, 작성자가 영상을 첨부해 효과와 중첩 이펙트가 보이지 않는다고 다시 묻자 공식이 설명 오류를 사과하고 다시 설명했다. 디스코드에서는 신기루 마지막 보스 기믹 버그 제보가 7명으로 늘었고 Steam 출시 시점 문의가 여러 곳에서 이어졌다.",
+        "dailySummary": "검신제로는 국내 네이버 라운지에 유저 글이 두 건뿐이었지만, 둘 다 신규 협객 제갈록의 5잠재(5돌) 효과가 실제로 발동하지 않는 것 같다는 버그 제보였다. 공식이 처음엔 정상 작동이라고 답했다가, 작성자가 영상을 붙여 다시 묻자 설명 오류를 사과하고 다시 설명했다. 글로벌 디스코드 #general 은 베테랑 유저가 뉴비 질문(덱 구성, SR 육성, 재화 사용, 보스 공략)에 길게 답해 주는 우호적인 분위기였고, 운영 계정이 Asia 5 새 서버(11-26 10:00) 오픈을 알렸다. 다만 #bug-report 에서는 신기루 끝 보스 위장 기믹 버그가 아직 안 고쳐졌다는 동조 글이 추가됐고, 봉 장군의 회복이 과하다는 밸런스 불만도 한 건 나왔다.",
         "topIssues": [
+          {
+            "title": "제갈록 5잠재 효과 2차 질의(영상 포함)",
+            "url": "https://game.naver.com/lounge/Dawns_Edge/board/detail/8502892",
+            "tone": "neutral",
+            "id": "8502892",
+            "source": "lounge",
+            "comments": 2,
+            "views": 53,
+            "likes": 0,
+            "bodySummary": "앞선 공식 답변을 확인했지만 실제 플레이에서 효과와 권인 중첩 이펙트가 보이지 않는다며 영상을 첨부해 다시 물은 글. 슬랙 모니터 기준, 공식이 이전 설명이 틀렸다고 사과하고 다시 설명했다."
+          },
           {
             "title": "제갈록 5돌 효과가 미구현이에요?",
             "url": "https://game.naver.com/lounge/Dawns_Edge/board/detail/8501892",
@@ -2836,15 +3271,37 @@
             "bodySummary": "제갈록 5돌 효과가 미구현 아니냐는 버그 제보. 절초 시 보랏빛 원형 폭발 이펙트까지는 보이지만 기대한 큰 폭발 피해가 나오지 않는다며, 그게 5잠재 효과라면 쓸모없다고 했다. 공식이 정상 작동이라는 설명 댓글을 달았다."
           },
           {
-            "title": "제갈록 5잠재 효과 2차 질의(영상 포함)",
-            "url": "https://game.naver.com/lounge/Dawns_Edge/board/detail/8502892",
-            "tone": "neutral",
-            "id": "8502892",
-            "source": "lounge",
-            "comments": 2,
-            "views": 53,
+            "title": "@Dawn's Wake I experienced the same, this bug is still hasn't been fixed  (스레드: ",
+            "url": "https://discord.com/channels/1501498947435364452/1573162673267417230/1574687217496887297",
+            "tone": "negative",
+            "id": "1574687217496887297",
+            "source": "discord",
+            "comments": 0,
+            "views": 0,
             "likes": 0,
-            "bodySummary": "앞선 공식 답변을 확인했지만 실제 플레이에서 효과와 권인 중첩 이펙트가 보이지 않는다며 영상을 첨부해 다시 물은 글. 슬랙 모니터 기준, 공식이 이전 설명이 틀렸다고 사과하고 다시 설명했다."
+            "bodySummary": "디스코드 #bug-report 의 '보스 기믹이 설명대로 작동하지 않는다' 스레드(11-20 개설)에 11-24 추가된 동조 글. 보스가 궁수가 곁에 있을 때만 위장해야 하는데 체력 20% 이후로는 풀 회복될 때까지 계속 위장 상태가 유지된다는 원 제보에 '나도 같은 현상, 아직 안 고쳐졌다'고 운영 계정을 태그했다."
+          },
+          {
+            "title": "They didn't mention in the patch notes I think but I hope they fix General Bong ",
+            "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574439797827834009",
+            "tone": "negative",
+            "id": "1574439797827834009",
+            "source": "discord",
+            "comments": 2,
+            "views": 0,
+            "likes": 0,
+            "bodySummary": "#general 에서 패치 노트에 언급이 없었다며 봉 장군의 물(회복)이 모든 걸 끝없이 회복시킨다고 고쳐 주길 바란다는 글. 다른 유저는 오늘은 그런 일이 없었다고 했고, 딜이 부족할 때만 생긴다는 답이 붙었다."
+          },
+          {
+            "title": "If you wanna go poison team you need that SSR poison girl + amantha you need to ",
+            "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574726205675016223",
+            "tone": "positive",
+            "id": "1574726205675016223",
+            "source": "discord",
+            "comments": 0,
+            "views": 0,
+            "likes": 2,
+            "bodySummary": "#general 의 베테랑 유저(No.999)가 뉴비 질문에 답하며 독 덱을 하려면 SSR 독 캐릭터와 아만사를 SSR 로 만들어야 해 어렵고, 원하는 SR 을 5돌 만드는 것이 SSR 뽑기보다 더 어렵다고 조언한 글(반응 2). 같은 흐름에서 옥으로 영약을 사지 말고 PVP 토큰을 쓰라는 팁도 이어졌다."
           }
         ],
         "bugReports": [
@@ -2854,22 +3311,27 @@
             "summary": "영상 첨부 재질의, 공식이 설명 오류 사과 후 재설명"
           },
           {
-            "title": "신기루 끝 보스 기믹 버그 (디스코드, 7명)",
-            "url": "https://discord.com/channels/1501498947435364452",
-            "summary": "슬랙 봇 요약 기준 제보 6명→7명으로 증가, 계속 확인 필요"
+            "title": "신기루 끝 보스 위장 기믹 버그",
+            "url": "https://discord.com/channels/1501498947435364452/1573162673267417230/1574687217496887297",
+            "summary": "체력 20% 이후 위장이 풀 회복까지 유지, 11-24 '아직 안 고쳐짐' 동조 추가"
+          },
+          {
+            "title": "봉 장군 물 회복 과다",
+            "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1574439797827834009",
+            "summary": "패치 노트에 언급 없음, 딜 부족 시에만 발생한다는 답글"
           }
         ],
         "competitorMentions": [],
         "trends": [
           "제갈록 5잠재 효과 논란·공식 설명 정정",
-          "신기루 끝 보스 기믹 버그(디스코드 7명)",
-          "Steam 출시 시점 문의",
-          "Asia 5 새 서버 오픈"
+          "신기루 끝 보스 기믹 버그 미수정",
+          "디스코드 뉴비 Q&A·육성 팁 공유 활발",
+          "Asia 5 새 서버 오픈(11-26)"
         ],
         "watchlist": [
           "제갈록 5잠재 효과 실제 발동 여부(공식 설명 번복)",
-          "신기루 끝 보스 기믹 버그 제보 증가(7명)",
-          "앱플레이어 실행 불가·로그인 계정 취소 표시"
+          "신기루 끝 보스 위장 기믹 버그 미수정(11-20 제보 이후 동조 지속)",
+          "봉 장군 회복량 과다 밸런스 불만"
         ],
         "keywords": [
           {
@@ -2881,20 +3343,84 @@
             ]
           },
           {
-            "word": "버그 제보 재질의(영상 첨부)",
+            "word": "신기루 끝 보스 위장 기믹 버그",
             "count": 1,
             "ids": [
-              "8502892"
+              "1574687217496887297"
+            ]
+          },
+          {
+            "word": "봉 장군 물 회복 과다(밸런스)",
+            "count": 1,
+            "ids": [
+              "1574439797827834009"
+            ]
+          },
+          {
+            "word": "Asia 5 새 서버 오픈",
+            "count": 2,
+            "ids": [
+              "1574577238865612932",
+              "1574629283236806687"
+            ]
+          },
+          {
+            "word": "SR 육성·덱 추천(공속·독 덱)",
+            "count": 4,
+            "ids": [
+              "1574601851129831536",
+              "1574603664868380683",
+              "1574726205675016223",
+              "1574538119280066670"
+            ]
+          },
+          {
+            "word": "티어표 문의",
+            "count": 2,
+            "ids": [
+              "1574712515030548641",
+              "1574724567560364073"
+            ]
+          },
+          {
+            "word": "재화 사용 팁(옥·은전·PVP 토큰)",
+            "count": 2,
+            "ids": [
+              "1574725396501626971",
+              "1574751212178374657"
+            ]
+          },
+          {
+            "word": "보스 공략(무련 스턴)",
+            "count": 2,
+            "ids": [
+              "1574704228931477546",
+              "1574706148425343017"
+            ]
+          },
+          {
+            "word": "제갈록 픽업 뽑기 예정",
+            "count": 1,
+            "ids": [
+              "1574797577595916351"
+            ]
+          },
+          {
+            "word": "퀘스트·스태미나 등 뉴비 질문",
+            "count": 2,
+            "ids": [
+              "1574445259864277156",
+              "1574681715241132093"
             ]
           }
         ],
-        "discordSummary": "디스코드 직접 읽기는 로그인 만료로 실패해 슬랙 dawnswake-monitor 봇 요약으로 대체했다. 11-24 하루 동안 신기루 마지막 보스 위장·회복 기믹 버그 제보가 6명에서 7명으로 늘었고, 앱플레이어 실행 불가·튕김(4명), 로그인 시 계정 취소 표시(2명), Google 결제 오류(1명)가 계속 확인 필요로 남았다. Asia 5 새 서버 오픈 공지가 나갔고, 오후에는 'Steam 언제 나오나' 문의가 세 곳에서 이어졌다.",
+        "discordSummary": "11-25 재수집 때 디스코드를 직접 읽었다(general·한국어-채널·customer-support·bug-report·feedback). 당일 대화는 거의 #general(39건)에 몰렸고, 베테랑 유저가 SR 육성·독/공속 덱·재화 사용 팁을 알려 주는 뉴비 Q&A 위주로 분위기는 우호적이었으며 운영 계정이 Asia 5 새 서버 오픈(11-26 10:00)을 안내했다. #bug-report 에서는 신기루 끝 보스 위장 기믹 버그 스레드에 '아직 안 고쳐졌다'는 글이 1건 추가됐고, 한국어-채널·customer-support·feedback 은 당일 글이 없었다.",
         "exec": {
-          "headline": "라운지는 조용했지만 제갈록 5잠재 효과 미발동 제보에 공식 설명이 번복됐습니다.",
+          "headline": "라운지는 제갈록 5잠재 효과 논란, 디스코드는 우호적인 뉴비 Q&A 속에 보스 기믹 버그 미수정 지적이 이어졌습니다.",
           "reasons": [
-            "라운지 유저 글 2건이 모두 제갈록 5잠재 효과 미발동 의심 제보",
+            "라운지 유저 글 2건 모두 제갈록 5잠재 효과 미발동 의심 제보",
             "공식이 정상 작동이라고 했다가 설명 오류를 사과하고 재설명",
-            "디스코드 신기루 끝 보스 기믹 버그 제보 7명, Steam 출시 문의 지속(슬랙 요약)"
+            "디스코드 #bug-report 에 신기루 끝 보스 위장 기믹 버그 '아직 안 고쳐짐' 동조 추가"
           ],
           "watchShort": "제갈록 5잠재 효과",
           "watch": "제갈록 5잠재 효과가 실제로 발동하지 않는다는 영상 제보에 공식 설명이 한 번 번복됐습니다. 실제 동작을 확인해 수정 여부까지 공지하지 않으면 신규 협객 과금 신뢰에 영향을 줄 수 있습니다.",
@@ -2908,5 +3434,5 @@
     "action": "앵커패닉 PC 클라이언트 설치 불가 제보 사실 확인"
   },
   "searchTrends": null,
-  "generatedAt": "2026-11-25T14:27:09+09:00"
+  "generatedAt": "2026-11-25T14:58:12+09:00"
 }
