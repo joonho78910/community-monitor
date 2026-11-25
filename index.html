@@ -143,6 +143,8 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 .title-cell{max-width:380px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .loading{padding:60px;text-align:center;color:var(--text-3);font-size:13px;}
 .trend-insight{display:flex;flex-direction:column;gap:14px;}
+.trend-empty{display:flex;flex-direction:column;justify-content:center;gap:6px;height:100%;min-height:120px;padding:16px;border:1px dashed var(--border);border-radius:8px;background:#f8fafc;color:var(--text-2);font-size:12.5px;line-height:1.6;}
+.trend-empty b{color:var(--text);font-size:13px;}
 .ti-block{font-size:12.5px;}
 .ti-label{font-size:10.5px;color:var(--text-3);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px;font-weight:600;}
 .ti-row{display:flex;align-items:center;gap:8px;padding:4px 0;font-variant-numeric:tabular-nums;}
@@ -1064,7 +1066,18 @@ function renderTrendChart(st,activeGame){
   if(!canvas||!st||!Array.isArray(st.series))return;
   if(trendChart){try{trendChart.destroy();}catch(e){}trendChart=null;}
   const game=st.series.find(s=>s.game===activeGame);
-  if(!game||!game.data)return;
+  const NAVER_NOTE='네이버 데이터랩 검색량은 2026-11-25부터 수집하지 않습니다(조회 도구 지원 종료, 직접 수집 불가).';
+  function trendEmpty(title,why){
+    const box='<div class="trend-empty"><b>'+title+'</b><span>'+why+'</span><span>'+NAVER_NOTE+'</span></div>';
+    canvas.style.display='none';
+    let holder=canvas.parentNode.querySelector('.trend-empty');
+    if(holder)holder.outerHTML=box;else canvas.insertAdjacentHTML('afterend',box);
+    const ie=document.getElementById('trend-insight');
+    if(ie)ie.innerHTML='<div class="trend-empty"><b>스냅샷 데이터 없음</b><span>'+why+'</span></div>';
+  }
+  canvas.style.display='';
+  {const old=canvas.parentNode.querySelector('.trend-empty');if(old)old.remove();}
+  if(!game||!game.data){trendEmpty('검색 트렌드 데이터 없음','이 게임은 아직 검색 트렌드 수집 대상에 없습니다. 구글 트렌드 수집에 추가되면 다음 날부터 표시됩니다.');return;}
   const isLegacyArray=Array.isArray(game.data);
   const naverDataFull=[]; // 2026-11-25: 네이버 데이터랩 수집 중단 → 구글만 표시
   const googleDataFull=isLegacyArray?[]:(game.data.google||[]);
@@ -1097,6 +1110,8 @@ function renderTrendChart(st,activeGame){
     if(googleDataFull.length&&(!gCovStart||d>=gCovStart)&&(!gCovEnd||d<=gCovEnd))return 0;
     return null;
   });
+  if(!googleDataFull.length){trendEmpty('검색 트렌드 데이터 없음','이 게임의 구글 트렌드 값이 아직 수집되지 않았습니다.');return;}
+  if(!gVals.some(v=>v!=null&&v>0)){trendEmpty('표시할 검색량 없음 ('+(dates[0]||'')+' ~ '+(dates[dates.length-1]||'')+')','이 기간 구글 트렌드 값이 모두 0입니다. 구글은 검색량이 일정 수준 미만이면 0으로 집계하므로, 검색량이 너무 적어 그래프·스냅샷을 만들 수 없습니다.');return;}
   const color=GAME_COLORS[activeGame]||'#7c3aed';
   const fillBg=color+'14';
   const ptRadius=dates.map(d=>d===sliceCenter?6.5:(eventByDate[d]?5.5:2.2));
