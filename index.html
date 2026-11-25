@@ -284,7 +284,7 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 <div class="header">
   <div>
     <h1>커뮤니티 동향 대시보드</h1>
-    <div class="sub">앵커패닉 · 에르피스 · 막다보니 천하통일 · 검신제로 일일 모니터링</div>
+    <div class="sub">막다보니 천하통일 · 검신제로 · 앵커패닉 · 에르피스 일일 모니터링</div>
   </div>
   <div class="header-right">
     <div id="meta-build" style="font-weight:600;color:var(--text-2);font-size:11.5px;letter-spacing:0.02em;"></div>
@@ -661,7 +661,7 @@ async function loadDate(d){
     if(dateCache[pd]){prevData=dateCache[pd];}
     else{try{const r2=await fetch('data/'+pd+'.json?ts='+Date.now());prevData=await r2.json();dateCache[pd]=prevData;}catch(e){prevData=null;}}
   } else { prevData=null; }
-  const games=Object.keys(curData.games);
+  const games=sortGames(Object.keys(curData.games));
   if(!actGame||!games.includes(actGame))actGame=games[0];
   buildTabs(games);
   document.getElementById('meta-info').textContent='업데이트: '+new Date(curData.lastUpdated).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'});
@@ -687,6 +687,8 @@ async function loadDate(d){
 }
 // v0.7: 게임 표시명 폴백 — 데이터에 name이 없어도 탭/문구가 비지 않도록
 const GAME_LABELS={anchorpanic:'앵커패닉',erpis:'에르피스',tkdefense:'막다보니 천하통일',dawnswake:'검신제로'};
+const GAME_ORDER=['tkdefense','dawnswake','anchorpanic','erpis'];
+function sortGames(ks){return ks.slice().sort((a,b)=>{const ia=GAME_ORDER.indexOf(a),ib=GAME_ORDER.indexOf(b);return (ia<0?99:ia)-(ib<0?99:ib);});}
 const GAME_COLORS={anchorpanic:'#1d4ed8',erpis:'#7c3aed',tkdefense:'#b45309',dawnswake:'#0f766e'};
 const SRC_LABELS={arca:'아카',dc:'DC',cafe:'카페',lounge:'라운지',discord:'디스코드'};
 function gname(key,g){
@@ -904,7 +906,7 @@ function buildWatchBox(game,ctx){
 }
 function render(){
   const VD=activeView();
-  if(!VD||!VD.games[actGame]){const ks=VD&&Object.keys(VD.games||{});if(ks&&ks.length)actGame=ks[0];else return;}
+  if(!VD||!VD.games[actGame]){const ks=VD&&sortGames(Object.keys(VD.games||{}));if(ks&&ks.length)actGame=ks[0];else return;}
   const game=VD.games[actGame];
   const s=game.stats,a=game.analysis||{};
   const app=document.getElementById('app');
