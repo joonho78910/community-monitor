@@ -1855,7 +1855,8 @@
           "utcIso": "2026-11-24T13:30:59Z",
           "sentiment": "neutral",
           "tags": [
-            "chitchat"
+            "chitchat",
+            "inquiry"
           ],
           "engagement": 35
         },
@@ -1872,7 +1873,8 @@
           "utcIso": "2026-11-24T13:11:16Z",
           "sentiment": "neutral",
           "tags": [
-            "guild_recruit"
+            "guild_recruit",
+            "inquiry"
           ],
           "engagement": 36
         },
@@ -1889,7 +1891,8 @@
           "utcIso": "2026-11-24T12:19:20Z",
           "sentiment": "neutral",
           "tags": [
-            "event"
+            "event",
+            "inquiry"
           ],
           "engagement": 50
         },
@@ -1968,7 +1971,8 @@
           "sentiment": "neutral",
           "tags": [
             "event",
-            "newbie_returning"
+            "newbie_returning",
+            "inquiry"
           ],
           "engagement": 59
         },
@@ -1985,7 +1989,8 @@
           "utcIso": "2026-11-24T04:30:29Z",
           "sentiment": "neutral",
           "tags": [
-            "event"
+            "event",
+            "inquiry"
           ],
           "engagement": 44
         },
@@ -2021,7 +2026,8 @@
           "sentiment": "neutral",
           "tags": [
             "gacha",
-            "guide"
+            "guide",
+            "inquiry"
           ],
           "engagement": 147
         },
@@ -2031,7 +2037,7 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574469974326771773",
           "category": "general",
           "title": "are stage packs worth spending yuan bao on",
-          "author": "ㅇㅇ",
+          "author": "XiaoYa",
           "comments": 2,
           "views": 0,
           "likes": 0,
@@ -2039,7 +2045,8 @@
           "sentiment": "neutral",
           "tags": [
             "guide",
-            "gacha"
+            "gacha",
+            "inquiry"
           ],
           "engagement": 40,
           "body": "are stage packs worth spending yuan bao on",
@@ -2054,7 +2061,7 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574477392104267867",
           "category": "general",
           "title": "Whats the premium currency rate for the yuanbao?",
-          "author": "ㅇㅇ",
+          "author": "James",
           "comments": 0,
           "views": 0,
           "likes": 0,
@@ -2062,7 +2069,8 @@
           "sentiment": "neutral",
           "tags": [
             "guide",
-            "gacha"
+            "gacha",
+            "inquiry"
           ],
           "engagement": 0,
           "body": "Whats the premium currency rate for the yuanbao?"
@@ -2073,7 +2081,7 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574549268067258499",
           "category": "general",
           "title": "Yeah happened multiple times / So freakin dumb it pisses me off (할버디어가 맵 옆으로 회전공",
-          "author": "ㅇㅇ",
+          "author": "Codyerd",
           "comments": 1,
           "views": 0,
           "likes": 0,
@@ -2092,7 +2100,7 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574587110638231634",
           "category": "general",
           "title": "Yep, annoys me about as much as units all squeezing into the top of the screen s",
-          "author": "ㅇㅇ",
+          "author": "∩oodle",
           "comments": 1,
           "views": 0,
           "likes": 0,
@@ -2110,7 +2118,7 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574588857465446402",
           "category": "general",
           "title": "I got it once it sounds cool but is pretty much useless. It doesnt even shoot on",
-          "author": "ㅇㅇ",
+          "author": "Pay2Lose",
           "comments": 1,
           "views": 0,
           "likes": 1,
@@ -2131,7 +2139,7 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574588989757722626",
           "category": "general",
           "title": "how to reroll on ios guys?",
-          "author": "ㅇㅇ",
+          "author": "iamTing",
           "comments": 0,
           "views": 0,
           "likes": 0,
@@ -2139,7 +2147,8 @@
           "sentiment": "neutral",
           "tags": [
             "guide",
-            "newbie_returning"
+            "newbie_returning",
+            "inquiry"
           ],
           "engagement": 0,
           "body": "how to reroll on ios guys?"
@@ -2150,7 +2159,7 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574589039909142650",
           "category": "general",
           "title": "Yea i definitely get a lot of vibes from this where it's made by people who don'",
-          "author": "ㅇㅇ",
+          "author": "∩oodle",
           "comments": 0,
           "views": 0,
           "likes": 0,
@@ -2168,7 +2177,7 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574600004872577228",
           "category": "general",
           "title": "@TKD_GM Are new server openings an automatic process based on player threshold o",
-          "author": "ㅇㅇ",
+          "author": "∩oodle",
           "comments": 2,
           "views": 0,
           "likes": 1,
@@ -2177,7 +2186,8 @@
           "tags": [
             "guide",
             "newbie_returning",
-            "event"
+            "event",
+            "inquiry"
           ],
           "engagement": 70,
           "body": "@TKD_GM Are new server openings an automatic process based on player threshold or do devs have to manually decide to open new ones?",
@@ -2192,7 +2202,7 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574602584688169093",
           "category": "general",
           "title": "It's just a question trying to understand their process since so many people are",
-          "author": "ㅇㅇ",
+          "author": "∩oodle",
           "comments": 0,
           "views": 0,
           "likes": 1,
@@ -2210,7 +2220,7 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574653654466695281",
           "category": "general",
           "title": "lvl 25, stage 46, atk: 896, lf alliance",
-          "author": "ㅇㅇ",
+          "author": "XiaoYa",
           "comments": 2,
           "views": 0,
           "likes": 1,
@@ -2232,12 +2242,12 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574678346472755320",
           "category": "general",
           "title": "@TKD_GM @Tiny War_Admin cant use the code",
-          "author": "ㅇㅇ",
+          "author": "SynTaX",
           "comments": 2,
           "views": 0,
           "likes": 1,
           "utcIso": "2026-11-24T06:49:00Z",
-          "sentiment": "neutral",
+          "sentiment": "negative",
           "tags": [
             "event",
             "bugs"
@@ -2255,7 +2265,7 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574691026843476010",
           "category": "general",
           "title": "Is is smart to buy the random tactician from the monthly pack?",
-          "author": "ㅇㅇ",
+          "author": "jij",
           "comments": 2,
           "views": 0,
           "likes": 0,
@@ -2263,7 +2273,8 @@
           "sentiment": "neutral",
           "tags": [
             "guide",
-            "gacha"
+            "gacha",
+            "inquiry"
           ],
           "engagement": 40,
           "body": "Is is smart to buy the random tactician from the monthly pack?",
@@ -2278,7 +2289,7 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574703820049616937",
           "category": "general",
           "title": "What do people mean by rerolling their account?",
-          "author": "ㅇㅇ",
+          "author": "Noah",
           "comments": 0,
           "views": 0,
           "likes": 0,
@@ -2286,7 +2297,8 @@
           "sentiment": "neutral",
           "tags": [
             "guide",
-            "newbie_returning"
+            "newbie_returning",
+            "inquiry"
           ],
           "engagement": 0,
           "body": "What do people mean by rerolling their account?"
@@ -2297,14 +2309,15 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574708309762768896",
           "category": "general",
           "title": "Another question what is this wang li. a general tacatician jade or a skin?",
-          "author": "ㅇㅇ",
+          "author": "jij",
           "comments": 3,
           "views": 0,
           "likes": 0,
           "utcIso": "2026-11-24T08:48:00Z",
           "sentiment": "neutral",
           "tags": [
-            "guide"
+            "guide",
+            "inquiry"
           ],
           "engagement": 60,
           "body": "Another question what is this wang li. a general tacatician jade or a skin?",
@@ -2320,7 +2333,7 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574720325999005737",
           "category": "general",
           "title": "Is Yang Yi worth for 6500 coins?",
-          "author": "ㅇㅇ",
+          "author": "Agaeti",
           "comments": 1,
           "views": 0,
           "likes": 0,
@@ -2328,7 +2341,8 @@
           "sentiment": "neutral",
           "tags": [
             "guide",
-            "gacha"
+            "gacha",
+            "inquiry"
           ],
           "engagement": 20,
           "body": "Is Yang Yi worth for 6500 coins?",
@@ -2342,14 +2356,15 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574755311938437153",
           "category": "general",
           "title": "Open Server 3, Please",
-          "author": "ㅇㅇ",
+          "author": "Lê Trung Đức",
           "comments": 0,
           "views": 0,
           "likes": 0,
           "utcIso": "2026-11-24T11:55:00Z",
           "sentiment": "neutral",
           "tags": [
-            "event"
+            "event",
+            "inquiry"
           ],
           "engagement": 0,
           "body": "Open Server 3, Please"
@@ -2360,14 +2375,15 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574762966077673516",
           "category": "general",
           "title": "open server 3 please",
-          "author": "ㅇㅇ",
+          "author": "low",
           "comments": 0,
           "views": 0,
           "likes": 0,
           "utcIso": "2026-11-24T12:25:00Z",
           "sentiment": "neutral",
           "tags": [
-            "event"
+            "event",
+            "inquiry"
           ],
           "engagement": 0,
           "body": "open server 3 please"
@@ -2378,7 +2394,7 @@
           "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1574787831430258740",
           "category": "general",
           "title": "Will there be more coupon codes even after day 7? @TKD_GM @Tiny War_Admin",
-          "author": "ㅇㅇ",
+          "author": "SynTaX",
           "comments": 0,
           "views": 0,
           "likes": 0,
@@ -2386,32 +2402,180 @@
           "sentiment": "neutral",
           "tags": [
             "guide",
-            "event"
+            "event",
+            "inquiry"
           ],
           "engagement": 0,
           "body": "Will there be more coupon codes even after day 7? @TKD_GM @Tiny War_Admin"
+        },
+        {
+          "id": "1574592148169429126",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564211271719592006/1574592148169429126",
+          "category": "builds-and-tips",
+          "title": "Ooof the gacha for generals/stratagists is brutal.  Up to lv 31 and havent pulle",
+          "author": "Dr.Spiffy",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T01:07:02Z",
+          "sentiment": "negative",
+          "tags": [
+            "gacha",
+            "balance"
+          ],
+          "body": "Ooof the gacha for generals/stratagists is brutal.  Up to lv 31 and havent pulled one yet",
+          "engagement": 20
+        },
+        {
+          "id": "1574592441963782166",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564211271719592006/1574592441963782166",
+          "category": "builds-and-tips",
+          "title": "Yep, without rerolling or whaling your odds are slim to none outside of the mont",
+          "author": "∩oodle",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T01:08:12Z",
+          "sentiment": "negative",
+          "tags": [
+            "gacha"
+          ],
+          "body": "Yep, without rerolling or whaling your odds are slim to none outside of the monthly box ones",
+          "engagement": 0
+        },
+        {
+          "id": "1574616871573913662",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564211271719592006/1574616871573913662",
+          "category": "builds-and-tips",
+          "title": "How do you deploy multiple strategists at the same time? Is that possible?",
+          "author": "Ben",
+          "comments": 2,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T02:45:17Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "inquiry"
+          ],
+          "body": "How do you deploy multiple strategists at the same time? Is that possible?",
+          "engagement": 40
+        },
+        {
+          "id": "1574467625659138169",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564211271719592006/1574467625659138169",
+          "category": "builds-and-tips",
+          "title": "How do I get this character?",
+          "author": "tomandjyesoo",
+          "comments": 1,
+          "views": 0,
+          "likes": 1,
+          "utcIso": "2026-11-23T16:52:14Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "gacha",
+            "inquiry"
+          ],
+          "body": "How do I get this character?",
+          "engagement": 50
+        },
+        {
+          "id": "1574691487072129095",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564211271719592006/1574691487072129095",
+          "category": "builds-and-tips",
+          "title": "where do you recommend spending guild coins?",
+          "author": "Chechemaru",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T07:41:46Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "guild_recruit",
+            "inquiry"
+          ],
+          "body": "where do you recommend spending guild coins?",
+          "engagement": 0
+        },
+        {
+          "id": "1574666348817162242",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564211791918268447/1574666348817162242",
+          "category": "events",
+          "title": "Here's today's coupon code!   Code: DYNASTY  Redeem by: Jan 31, 2027, 14:59 UTC ",
+          "author": "TKD_GM",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-24T06:01:53Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "body": "Here's today's coupon code!   Code: DYNASTY  Redeem by: Jan 31, 2027, 14:59 UTC   How to redeem: Personal Info > Redeem Code",
+          "engagement": 0
         }
       ],
       "stats": {
         "notices": 1,
         "bugs": 3,
-        "negative": 5,
+        "negative": 8,
         "positive": 2,
         "competitor_mentions": 0,
         "newbie_returning": 6,
-        "guild_recruit": 3,
-        "gacha": 6,
-        "event": 9,
-        "balance": 2,
-        "guide": 13,
+        "guild_recruit": 4,
+        "gacha": 9,
+        "event": 10,
+        "balance": 3,
+        "guide": 16,
         "chitchat": 2,
-        "total": 28,
-        "real_posts": 27,
+        "total": 34,
+        "real_posts": 33,
         "total_views": 2015,
-        "total_comments": 27,
-        "total_likes": 8,
-        "sentiment_score": -0.107,
-        "sentiment": "부정"
+        "total_comments": 31,
+        "total_likes": 9,
+        "sentiment_score": -0.176,
+        "sentiment": "부정",
+        "community": {
+          "volume": 66,
+          "participants": 33,
+          "complaints": 9,
+          "inquiries": 22,
+          "bySource": {
+            "cafe": {
+              "posts": 10,
+              "views": 2015,
+              "participants": 10,
+              "complaints": 1,
+              "inquiries": 6,
+              "positive": 2,
+              "negative": 1
+            },
+            "discord": {
+              "messages": 56,
+              "participants": 23,
+              "sampled": 24,
+              "channels": {
+                "general": 45,
+                "builds-and-tips": 10,
+                "events": 1,
+                "자유-채팅": 0,
+                "버그-제보": 0
+              },
+              "complaints": 8,
+              "inquiries": 16,
+              "positive": 2,
+              "negative": 8
+            }
+          }
+        }
       },
       "topEngaging": [
         {
@@ -2508,7 +2672,7 @@
           "likes": 1,
           "engagement": 70,
           "category": "general",
-          "sentiment": "neutral"
+          "sentiment": "negative"
         },
         {
           "id": "1574708309762768896",
@@ -2536,7 +2700,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "막다보니 천하통일은 국내 네이버 카페와 글로벌 디스코드 모두 출시 초반 신규 유저 흐름이 이어졌다. 카페에서는 6일차 쿠폰 코드 공지(조회 933)가 가장 많이 읽혔고 '쿠폰 더 달라'는 글이 여러 개 올라왔으며, 해외 거주 유저가 쓴 뉴비 공략(옥석 > 책사 > 장수 순으로 중요, 절세 옥석 퍼깍 옵션 추천)과 신화 옥석 획득 인증이 호응을 얻었다. 디스코드에서는 과금 상품 가치 질문과 서버 3 오픈 요청이 반복됐고, 할버디어 회오리 스킬 방향이 이상하다는 불만과 '개발진이 자기 게임을 안 해 본 것 같다'는 냉소가 나와 전투 체감 쪽 부정 정서가 일부 있었다. 카페에는 연맹 탈퇴 버튼이 안 보인다는 UI 문의도 있었다.",
+        "dailySummary": "막다보니 천하통일은 국내 네이버 카페와 글로벌 디스코드 모두 출시 초반 신규 유저 흐름이 이어졌다. 카페에서는 6일차 쿠폰 코드 공지(조회 933)가 가장 많이 읽혔고 '쿠폰 더 달라'는 글이 여러 개 올라왔으며, 해외 거주 유저가 쓴 뉴비 공략(옥석 > 책사 > 장수 순으로 중요, 절세 옥석 퍼깍 옵션 추천)과 신화 옥석 획득 인증이 호응을 얻었다. 디스코드에서는 과금 상품 가치 질문과 서버 3 오픈 요청이 반복됐고, 할버디어 회오리 스킬 방향이 이상하다는 불만과 '개발진이 자기 게임을 안 해 본 것 같다'는 냉소가 나와 전투 체감 쪽 부정 정서가 일부 있었다. #builds-and-tips 에서는 레벨 31까지 장수·책사를 한 명도 못 뽑았다며 가챠가 가혹하다는 글에 '리세마라나 과금 없이는 월간 박스 외엔 확률이 거의 없다'는 동조가 붙었다. 카페에는 연맹 탈퇴 버튼이 안 보인다는 UI 문의도 있었다.",
         "topIssues": [
           {
             "title": "6일차 쿠폰 코드",
@@ -2621,19 +2785,21 @@
         "watchlist": [
           "할버디어 스킬 방향·유닛 AI 불만",
           "연맹 탈퇴 버튼 미노출 문의",
-          "신규 서버 오픈 기준 문의 반복"
+          "신규 서버 오픈 기준 문의 반복",
+          "장수·책사 가챠 확률 체감 불만(무과금 획득 경로 부족)"
         ],
         "keywords": [
           {
             "word": "쿠폰 코드 요청·사용",
-            "count": 6,
+            "count": 7,
             "ids": [
               "88",
               "85",
               "84",
               "83",
               "1574678346472755320",
-              "1574787831430258740"
+              "1574787831430258740",
+              "1574666348817162242"
             ]
           },
           {
@@ -2676,20 +2842,23 @@
           },
           {
             "word": "연맹 가입·탈퇴 문의",
-            "count": 3,
+            "count": 4,
             "ids": [
               "89",
               "82",
-              "1574653654466695281"
+              "1574653654466695281",
+              "1574691487072129095"
             ]
           },
           {
             "word": "영웅·책사 정보 질문",
-            "count": 3,
+            "count": 5,
             "ids": [
               "1574708309762768896",
               "1574720325999005737",
-              "1574691026843476010"
+              "1574691026843476010",
+              "1574467625659138169",
+              "1574616871573913662"
             ]
           },
           {
@@ -2717,13 +2886,13 @@
             ]
           }
         ],
-        "discordSummary": "#general 채널에서 대화가 거의 전부 이뤄졌고, 과금 상품 가치·리세마라·영웅 정보 등 신규 유저 질문이 중심이었다. 서버 3 오픈 요청이 여러 번 나왔고 운영진은 공지 채널을 보라고만 답했다. 할버디어 스킬·유닛 AI 불만과 쿠폰 코드 오류(재시도로 해결)가 있었으며 분위기는 중립에 약간 부정이었다. (11-25 재수집 시 디스코드 로그인이 만료돼 기존 수집분을 유지함)",
+        "discordSummary": "11-24(KST) 디스코드 전체 메시지는 56건(작성자 23명)으로 #general 45건, #builds-and-tips 10건, #events 1건(운영 쿠폰 코드 DYNASTY)이었고 한국어 자유-채팅·버그-제보는 글이 없었다. 대화의 30%가량(16건)이 과금 상품 가치·리세마라·책사 배치·서버 3 오픈 요청 같은 신규 유저 문의였고, 불만은 8건으로 할버디어 회오리 방향·유닛 AI(5), 장수·책사 가챠 확률이 너무 박하다(2), 쿠폰 코드 사용 불가(1, 재시도로 해결)였다. 분위기는 중립에 약간 부정.",
         "exec": {
           "headline": "쿠폰·공략 중심의 신규 유저 흐름이 이어졌고, 할버디어 스킬 불만이 일부 나왔습니다.",
           "reasons": [
             "카페 6일차 쿠폰 공지가 조회 933으로 가장 많이 읽히고 쿠폰 요청 글이 이어짐",
             "옥석 세팅 뉴비 공략·신화 옥석 인증 등 성장 정보 공유가 활발",
-            "디스코드에서 할버디어 회오리 방향 불만과 서버 3 오픈 요청이 반복"
+            "디스코드 56건 중 문의 16건·불만 8건 — 할버디어 회오리 방향·가챠 확률 불만, 서버 3 오픈 요청 반복"
           ],
           "watchShort": "할버디어 스킬 불만",
           "watch": "할버디어+바람 마법사 회오리가 엉뚱한 방향으로 나가 쓸모없다는 불만에 '개발진이 자기 게임을 안 해 본 것 같다'는 동조가 붙었습니다. 의도된 동작인지 확인해 안내하지 않으면 전투 품질에 대한 불신이 커질 수 있습니다.",
@@ -2805,7 +2974,8 @@
           "utcIso": "2026-11-23T15:23:21Z",
           "sentiment": "neutral",
           "tags": [
-            "guide"
+            "guide",
+            "inquiry"
           ],
           "body": "How do i clear the sword arts master quest...",
           "engagement": 20
@@ -2824,7 +2994,8 @@
           "sentiment": "neutral",
           "tags": [
             "gacha",
-            "newbie_returning"
+            "newbie_returning",
+            "inquiry"
           ],
           "body": "Are they good,i do not have enough summon for yellow hero so can i use purple hero",
           "engagement": 20
@@ -2842,7 +3013,8 @@
           "utcIso": "2026-11-24T00:07:47Z",
           "sentiment": "neutral",
           "tags": [
-            "event"
+            "event",
+            "inquiry"
           ],
           "body": "Any information about new server??",
           "engagement": 40
@@ -2914,7 +3086,8 @@
           "utcIso": "2026-11-24T07:02:57Z",
           "sentiment": "neutral",
           "tags": [
-            "newbie_returning"
+            "newbie_returning",
+            "inquiry"
           ],
           "body": "where should I spam stamina pals",
           "engagement": 20
@@ -2968,7 +3141,8 @@
           "utcIso": "2026-11-24T09:05:20Z",
           "sentiment": "neutral",
           "tags": [
-            "guide"
+            "guide",
+            "inquiry"
           ],
           "body": "btw any reliable tier list around buddy???",
           "engagement": 40
@@ -3121,7 +3295,40 @@
         "total_comments": 15,
         "total_likes": 5,
         "sentiment_score": 0.2,
-        "sentiment": "긍정"
+        "sentiment": "긍정",
+        "community": {
+          "volume": 42,
+          "participants": 11,
+          "complaints": 4,
+          "inquiries": 5,
+          "bySource": {
+            "lounge": {
+              "posts": 2,
+              "views": 131,
+              "participants": 1,
+              "complaints": 2,
+              "inquiries": 0,
+              "positive": 0,
+              "negative": 1
+            },
+            "discord": {
+              "messages": 40,
+              "participants": 10,
+              "sampled": 18,
+              "channels": {
+                "general": 39,
+                "bug-report": 1,
+                "한국어-채널": 0,
+                "customer-support": 0,
+                "feedback": 0
+              },
+              "complaints": 2,
+              "inquiries": 5,
+              "positive": 9,
+              "negative": 2
+            }
+          }
+        }
       },
       "topEngaging": [
         {
@@ -3414,7 +3621,7 @@
             ]
           }
         ],
-        "discordSummary": "11-25 재수집 때 디스코드를 직접 읽었다(general·한국어-채널·customer-support·bug-report·feedback). 당일 대화는 거의 #general(39건)에 몰렸고, 베테랑 유저가 SR 육성·독/공속 덱·재화 사용 팁을 알려 주는 뉴비 Q&A 위주로 분위기는 우호적이었으며 운영 계정이 Asia 5 새 서버 오픈(11-26 10:00)을 안내했다. #bug-report 에서는 신기루 끝 보스 위장 기믹 버그 스레드에 '아직 안 고쳐졌다'는 글이 1건 추가됐고, 한국어-채널·customer-support·feedback 은 당일 글이 없었다.",
+        "discordSummary": "11-24(KST) 디스코드 전체 메시지는 40건(작성자 10명)으로 #general 39건, #bug-report 1건이었고 한국어-채널·customer-support·feedback 은 글이 없었다. 베테랑 유저(No.999)가 SR 육성·독/공속 덱·재화 사용 팁을 길게 알려 주는 뉴비 Q&A가 중심이라 분위기는 우호적이었고(문의 5건), 운영 계정이 Asia 5 새 서버 오픈(11-26 10:00)을 안내했다. 불만은 2건으로 봉 장군 회복 과다와 신기루 끝 보스 위장 기믹 버그 미수정이었다.",
         "exec": {
           "headline": "라운지는 제갈록 5잠재 효과 논란, 디스코드는 우호적인 뉴비 Q&A 속에 보스 기믹 버그 미수정 지적이 이어졌습니다.",
           "reasons": [
@@ -3434,5 +3641,5 @@
     "action": "앵커패닉 PC 클라이언트 설치 불가 제보 사실 확인"
   },
   "searchTrends": null,
-  "generatedAt": "2026-11-25T14:58:12+09:00"
+  "generatedAt": "2026-11-25T15:57:58+09:00"
 }
