@@ -28,6 +28,8 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 .tab.active{color:var(--accent);border-bottom-color:var(--accent);}
 .game-anchorpanic{--accent:#1d4ed8;--accent-bg:#eef2ff;}
 .game-erpis{--accent:#7c3aed;--accent-bg:#f5f3ff;}
+.game-tkdefense{--accent:#b45309;--accent-bg:#fffbeb;}
+.game-dawnswake{--accent:#0f766e;--accent-bg:#f0fdfa;}
 /* Status band v2 — bigger, more visual */
 .status-band{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;padding:18px 22px;margin-bottom:14px;border-radius:12px;border:1px solid;letter-spacing:-0.01em;position:relative;overflow:hidden;}
 .status-band.status-green{background:linear-gradient(135deg,#ecfdf5 0%,#d1fae5 100%);color:#065f46;border-color:#86efac;}
@@ -122,6 +124,8 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 .post-table a:hover{color:var(--accent);text-decoration:underline;}
 .src-arca,.src-dc{font-size:10px;padding:2px 7px;border-radius:4px;font-weight:600;letter-spacing:0.02em;}
 .src-arca{background:#fef3c7;color:#92400e;}.src-dc{background:#dbeafe;color:#1e40af;}
+.src-cafe,.src-lounge,.src-discord{font-size:10px;padding:2px 7px;border-radius:4px;font-weight:600;letter-spacing:0.02em;}
+.src-cafe{background:#dcfce7;color:#166534;}.src-lounge{background:#d1fae5;color:#065f46;}.src-discord{background:#e0e7ff;color:#3730a3;}
 .tag-chip{display:inline-block;font-size:10px;padding:1px 6px;border-radius:3px;margin-right:3px;font-weight:600;letter-spacing:0;}
 .tag-bug{background:#fee2e2;color:#991b1b;}.tag-negative{background:#fed7aa;color:#9a3412;}.tag-positive{background:#d1fae5;color:#065f46;}.tag-competitor{background:#ede9fe;color:#5b21b6;}.tag-newbie{background:#cffafe;color:#155e75;}.tag-guild{background:#fce7f3;color:#9d174d;}.tag-gacha{background:#fef3c7;color:#92400e;}.tag-event{background:#dcfce7;color:#166534;}.tag-balance{background:#dbeafe;color:#1e40af;}.tag-guide{background:#e0e7ff;color:#3730a3;}.tag-chitchat{background:#f1f5f9;color:#475569;}
 .filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--border);}
@@ -679,7 +683,9 @@ async function loadDate(d){
   updateHash();
 }
 // v0.7: 게임 표시명 폴백 — 데이터에 name이 없어도 탭/문구가 비지 않도록
-const GAME_LABELS={anchorpanic:'앵커패닉',erpis:'에르피스'};
+const GAME_LABELS={anchorpanic:'앵커패닉',erpis:'에르피스',tkdefense:'막다보니 천하통일',dawnswake:'검신제로'};
+const GAME_COLORS={anchorpanic:'#1d4ed8',erpis:'#7c3aed',tkdefense:'#b45309',dawnswake:'#0f766e'};
+const SRC_LABELS={arca:'아카',dc:'DC',cafe:'카페',lounge:'라운지',discord:'디스코드'};
 function gname(key,g){
   return (g&&g.name)||GAME_LABELS[key]||key||'';
 }
@@ -899,7 +905,7 @@ function render(){
   const game=VD.games[actGame];
   const s=game.stats,a=game.analysis||{};
   const app=document.getElementById('app');
-  app.classList.remove('game-anchorpanic','game-erpis');
+  Array.from(app.classList).filter(c=>c.indexOf('game-')===0).forEach(c=>app.classList.remove(c));
   app.classList.add('game-'+actGame);
   const real=game.posts.filter(p=>!(p.tags||[]).includes('notice'));
   const RP=real.length||1;
@@ -962,7 +968,7 @@ function render(){
     '</div>';
   // v0.5 feature2: 정량 지표 배지 (줄글에서 분리)
   const neuCnt=Math.max(0,(s.real_posts||0)-(s.positive||0)-(s.negative||0));
-  const arcN=real.filter(p=>p.source==='arca').length, dcN=real.filter(p=>p.source==='dc').length;
+  const _srcCnt={};real.forEach(p=>{_srcCnt[p.source]=(_srcCnt[p.source]||0)+1;});const srcStr=Object.keys(_srcCnt).map(k=>(SRC_LABELS[k]||k)+' '+_srcCnt[k]).join(' / ')||'-';
   const scoreStr=((s.sentiment_score||0)>=0?'+':'')+(s.sentiment_score||0).toFixed(2);
   const metricBadges='<div class="metric-badges">'+
     '<span class="mbadge"><span class="ml">게시물</span><b>'+fmtNum(s.real_posts)+'</b></span>'+
@@ -971,7 +977,7 @@ function render(){
     '<span class="mbadge neu"><span class="ml">중립</span><b>'+neuCnt+'</b></span>'+
     '<span class="mbadge"><span class="ml">감정점수</span><b>'+scoreStr+'</b></span>'+
     '<span class="mbadge"><span class="ml">버그</span><b>'+(s.bugs||0)+'</b></span>'+
-    '<span class="mbadge"><span class="ml">소스</span><b>아카 '+arcN+' / DC '+dcN+'</b></span>'+
+    '<span class="mbadge"><span class="ml">소스</span><b>'+srcStr+'</b></span>'+
     '</div>';
   const _storedClean=(a.dailySummary||'').replace(/\s*sentiment 재분류[\s\S]*$/,'').replace(/\s*아카라이브[\s\S]*$/,'').trim();
   // Use hand-written narrative only if it's substantial (single-day, e.g. auto-build days); otherwise synthesize from data.
@@ -1091,8 +1097,8 @@ function renderTrendChart(st,activeGame){
     if(googleDataFull.length&&(!gCovStart||d>=gCovStart)&&(!gCovEnd||d<=gCovEnd))return 0;
     return null;
   });
-  const color=activeGame==='anchorpanic'?'#1d4ed8':'#7c3aed';
-  const fillBg=activeGame==='anchorpanic'?'rgba(29,78,216,0.08)':'rgba(124,58,237,0.08)';
+  const color=GAME_COLORS[activeGame]||'#7c3aed';
+  const fillBg=color+'14';
   const ptRadius=dates.map(d=>d===sliceCenter?6.5:(eventByDate[d]?5.5:2.2));
   const ptBg=dates.map(d=>eventByDate[d]?color:'#ffffff');
   const ptBorder=dates.map(d=>eventByDate[d]?'#ffffff':color);
