@@ -125,7 +125,8 @@ body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-u
 .src-arca,.src-dc{font-size:10px;padding:2px 7px;border-radius:4px;font-weight:600;letter-spacing:0.02em;}
 .src-arca{background:#fef3c7;color:#92400e;}.src-dc{background:#dbeafe;color:#1e40af;}
 .src-cafe,.src-lounge,.src-discord{font-size:10px;padding:2px 7px;border-radius:4px;font-weight:600;letter-spacing:0.02em;}
-.src-cafe{background:#dcfce7;color:#166534;}.src-lounge{background:#d1fae5;color:#065f46;}.src-discord{background:#e0e7ff;color:#3730a3;}
+.src-cafe{background:#dcfce7;color:#166534;}
+.src-summary .src-row{font-size:13px;padding:6px 0;border-bottom:1px solid #f1f5f9;font-variant-numeric:tabular-nums;}.src-summary .src-row:last-child{border-bottom:0;}.src-summary .src-row span[class^=src-]{margin-right:6px;}.src-lounge{background:#d1fae5;color:#065f46;}.src-discord{background:#e0e7ff;color:#3730a3;}
 .tag-chip{display:inline-block;font-size:10px;padding:1px 6px;border-radius:3px;margin-right:3px;font-weight:600;letter-spacing:0;}
 .tag-bug{background:#fee2e2;color:#991b1b;}.tag-negative{background:#fed7aa;color:#9a3412;}.tag-positive{background:#d1fae5;color:#065f46;}.tag-competitor{background:#ede9fe;color:#5b21b6;}.tag-newbie{background:#cffafe;color:#155e75;}.tag-guild{background:#fce7f3;color:#9d174d;}.tag-gacha{background:#fef3c7;color:#92400e;}.tag-event{background:#dcfce7;color:#166534;}.tag-balance{background:#dbeafe;color:#1e40af;}.tag-guide{background:#e0e7ff;color:#3730a3;}.tag-chitchat{background:#f1f5f9;color:#475569;}
 .filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--border);}
@@ -970,7 +971,7 @@ function render(){
     '</div>';
   // v0.5 feature2: 정량 지표 배지 (줄글에서 분리)
   const neuCnt=Math.max(0,(s.real_posts||0)-(s.positive||0)-(s.negative||0));
-  const _srcCnt={};real.forEach(p=>{_srcCnt[p.source]=(_srcCnt[p.source]||0)+1;});const srcStr=Object.keys(_srcCnt).map(k=>(SRC_LABELS[k]||k)+' '+_srcCnt[k]).join(' / ')||'-';
+  const _srcCnt={};real.forEach(p=>{_srcCnt[p.source]=(_srcCnt[p.source]||0)+1;});const srcStr=Object.keys(_srcCnt).map(k=>(SRC_LABELS[k]||k)+(k==='discord'?' 메시지 ':' 글 ')+_srcCnt[k]+'건').join(' · ')||'-';
   const scoreStr=((s.sentiment_score||0)>=0?'+':'')+(s.sentiment_score||0).toFixed(2);
   const metricBadges='<div class="metric-badges">'+
     '<span class="mbadge"><span class="ml">게시물</span><b>'+fmtNum(s.real_posts)+'</b></span>'+
@@ -996,7 +997,36 @@ function render(){
     if(rangeMode&&VD._range){const _rd=(allDates||[]).filter(d=>d>=VD._range.start&&d<=VD._range.end).sort();_ctx={mode:'range',start:VD._range.start,end:VD._range.end,nDays:VD._range.nDays,prevStart:VD._range.prevStart,prevEnd:VD._range.prevEnd,rangeDates:_rd};}
     else{_ctx={mode:'day',date:VD.date};}
     const _extraTop=buildWatchBox(game,_ctx)+buildCompareStrip(game,_ctx);
-    c.innerHTML=statusHtml+_extraTop+'<div class="cards"><div class="card"><div class="label">게시물</div><div class="value">'+fmtNum(s.real_posts)+d1+'</div><div class="sub">공지 '+(s.notices||0)+'개 제외 '+dvs+'</div></div><div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+d2+'</div><div class="sub">긍정 '+s.positive+' · 부정 '+s.negative+' '+dvs+'</div></div><div class="card"><div class="label">총 조회수</div><div class="value">'+fmtK(s.total_views)+d3+'</div><div class="sub">평균 '+Math.round(s.total_views/Math.max(s.real_posts,1))+' / 글 '+dvs+'</div></div><div class="card"><div class="label">버그 의심</div><div class="value '+(s.bugs>0?'s-neg':'')+'">'+s.bugs+d4+'</div><div class="sub">자동 키워드 검출 '+dvs+'</div></div></div>'+
+    const cm=s.community||null;
+    let cardsHtml;
+    if(cm){
+      const pcm=(ps&&ps.community)||null;
+      const e1=pcm?deltaHtml(cm.volume,pcm.volume,{pct:true}):'';
+      const e2=pcm?deltaHtml(cm.participants,pcm.participants,{pct:true}):'';
+      const e4=pcm?deltaHtml(cm.complaints,pcm.complaints,{upIsBad:true}):'';
+      const bs=cm.bySource||{};const bk=Object.keys(bs);
+      const unit=k=>k==='discord'?'메시지':'글';
+      const cnt=(k,b)=>k==='discord'?(b.messages||0):(b.posts||0);
+      const volSub=bk.map(k=>(SRC_LABELS[k]||k)+' '+unit(k)+' '+fmtNum(cnt(k,bs[k]))+'건').join(' + ');
+      const ptSub=bk.map(k=>(SRC_LABELS[k]||k)+' '+fmtNum(bs[k].participants||0)+'명').join(' + ');
+      const negSub=bk.map(k=>{const b=bs[k];const n=k==='discord'?(b.sampled||b.messages||0):(b.posts||0);return (SRC_LABELS[k]||k)+' '+n+'건 중 부정 '+(b.negative||0)+'건';}).join(', ');
+      cardsHtml='<div class="cards">'+
+        '<div class="card"><div class="label">전체 글·메시지</div><div class="value">'+fmtNum(cm.volume||0)+e1+'</div><div class="sub">'+esc(volSub)+'</div></div>'+
+        '<div class="card"><div class="label">쓴 사람</div><div class="value">'+fmtNum(cm.participants||0)+'<span class="muted small">명</span>'+e2+'</div><div class="sub">글·메시지를 쓴 사람 수: '+esc(ptSub)+'</div></div>'+
+        '<div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+d2+'</div><div class="sub">'+esc(negSub)+'</div></div>'+
+        '<div class="card"><div class="label">불만·버그</div><div class="value '+((cm.complaints||0)>0?'s-neg':'')+'">'+(cm.complaints||0)+e4+'</div><div class="sub">계정복구·쿠폰 요청 같은 문의는 제외 (문의 '+(cm.inquiries||0)+'건 따로)</div></div>'+
+        '</div>';
+      const srcRows=bk.map(k=>{const b=bs[k];const parts=[];
+        if(k==='discord'){parts.push('메시지 '+fmtNum(b.messages||0)+'건');parts.push('쓴 사람 '+fmtNum(b.participants||0)+'명');}
+        else{parts.push('글 '+fmtNum(b.posts||0)+'건');if(b.views!=null)parts.push('조회수 합계 '+fmtNum(b.views));parts.push('쓴 사람 '+fmtNum(b.participants||0)+'명');}
+        parts.push('불만·버그 '+(b.complaints||0)+'건');parts.push('문의·요청 '+(b.inquiries||0)+'건');
+        let tail='';if(k==='discord'&&b.sampled)tail=' <span class="muted small">(그중 눈에 띄는 '+b.sampled+'건은 아래 게시물 표에 표시)</span>';
+        return '<div class="src-row"><span class="src-'+k+'">'+esc(SRC_LABELS[k]||k)+'</span> '+esc(parts.join(' · '))+tail+'</div>';}).join('');
+      cardsHtml+='<div class="section src-summary"><h2>소스별 요약</h2>'+srcRows+'</div>';
+    }else{
+      cardsHtml='<div class="cards"><div class="card"><div class="label">게시물</div><div class="value">'+fmtNum(s.real_posts)+d1+'</div><div class="sub">공지 '+(s.notices||0)+'개 제외 '+dvs+'</div></div><div class="card"><div class="label">전반적 감정</div><div class="value '+sentCls(s.sentiment)+'">'+s.sentiment+d2+'</div><div class="sub">긍정 '+s.positive+' · 부정 '+s.negative+' '+dvs+'</div></div><div class="card"><div class="label">총 조회수</div><div class="value">'+fmtK(s.total_views)+d3+'</div><div class="sub">평균 '+Math.round(s.total_views/Math.max(s.real_posts,1))+' / 글 '+dvs+'</div></div><div class="card"><div class="label">버그 의심</div><div class="value '+(s.bugs>0?'s-neg':'')+'">'+s.bugs+d4+'</div><div class="sub">자동 키워드 검출 '+dvs+'</div></div></div>';
+    }
+    c.innerHTML=statusHtml+_extraTop+cardsHtml+
     '<div class="section"><h2>'+summaryTitle+'</h2>'+metricBadges+'<div class="summary-narr">'+narrHtml+'</div><div class="keywords">'+kw+'</div><div class="section-note">상단 지표는 정량 요약 · 해시태그(#) 클릭 시 하단 전체 게시물에서 해당 토픽 글만 필터됩니다</div></div>'+
     ((activeView().searchTrends||trendsData)?'<div class="row"><div class="section"><h2>검색 트렌드 <span class="count" id="trend-range">30일</span></h2><div style="position:relative;height:280px;"><canvas id="trendChart"></canvas></div><div class="section-note">출처: 구글 트렌드 (일별, max=100 정규화)</div></div><div class="section"><h2>검색량 스냅샷</h2><div class="trend-insight" id="trend-insight"></div></div></div>':'')+
     '<div class="row"><div class="section"><h2>핵심 이슈 <span class="count">'+(a.topIssues||[]).length+'</span></h2><ul class="issue-list">'+iss+'</ul><div class="section-note">순위는 조회 + 댓글 + 추천 가중 합산 기준</div></div><div class="section"><h2>주제별 분포</h2><div class="dist-bars">'+distBars+'</div><div class="section-note">중복 분류 가능 (한 글이 여러 카테고리 포함 가능)</div></div></div>'+
