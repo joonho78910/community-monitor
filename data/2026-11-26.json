@@ -3433,33 +3433,486 @@
             "negative"
           ],
           "engagement": 253
+        },
+        {
+          "id": "1575170484088082503",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575170484088082503",
+          "category": "general",
+          "title": "3k lần đc 1 con (0.003% 확률에 대한 반응: 3천 번에 1개)",
+          "author": "Freedomsky",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-25T15:25:08Z",
+          "sentiment": "negative",
+          "tags": [
+            "gacha",
+            "negative"
+          ],
+          "body": "3k lần đc 1 con (0.003% 확률에 대한 반응: 3천 번에 1개)",
+          "engagement": 0
+        },
+        {
+          "id": "1575174150119755839",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575174150119755839",
+          "category": "general",
+          "title": "Hi can other member take guild leader role after leader off?",
+          "author": "Freedomsky",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-25T15:39:42Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guild_recruit",
+            "inquiry"
+          ],
+          "body": "Hi can other member take guild leader role after leader off?",
+          "engagement": 20
+        },
+        {
+          "id": "1575217665646133309",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575217665646133309",
+          "category": "general",
+          "title": "Anyonw know whether ling tong or shamoke is better to unlock first? Feel like th",
+          "author": "∩oodle",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-25T18:32:37Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "inquiry"
+          ],
+          "body": "Anyonw know whether ling tong or shamoke is better to unlock first? Feel like the insta kill would be useful on mobs every 12s but not sure in reality how useful it is when there's a billion mobs XD",
+          "engagement": 0
+        },
+        {
+          "id": "1575251446910296117",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575251446910296117",
+          "category": "general",
+          "title": "MASTER — 10 Gold Keys / HAPPYDAY — 1,000 Yuanbao / GETREADY — 30 Silver Keys / C",
+          "author": "∩oodle",
+          "comments": 0,
+          "views": 0,
+          "likes": 3,
+          "utcIso": "2026-11-25T20:46:51Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "body": "MASTER — 10 Gold Keys / HAPPYDAY — 1,000 Yuanbao / GETREADY — 30 Silver Keys / CHEERUP — 2,000 Yuanbao / WEEKEND — 500 Yuanbao / ADVANCE — 2,000 Yuanbao (유저가 쿠폰 코드 목록 정리)",
+          "engagement": 90
+        },
+        {
+          "id": "1575294151182778388",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575294151182778388",
+          "category": "general",
+          "title": "Reroll got me Sun Shangxiang, Jia Xu, Guan Yu + a Mythic jade (phys dmg +32%). I",
+          "author": "Gelato",
+          "comments": 2,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-25T23:36:33Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha",
+            "newbie_returning",
+            "inquiry"
+          ],
+          "body": "Reroll got me Sun Shangxiang, Jia Xu, Guan Yu + a Mythic jade (phys dmg +32%). Is a single Lu Bu or Ma Chao worth more than all of this combined?",
+          "engagement": 40
+        },
+        {
+          "id": "1575296012321300491",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575296012321300491",
+          "category": "general",
+          "title": "if u can get zhurong + the fire general, its easily the best early game combo",
+          "author": "neko",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-25T23:43:56Z",
+          "sentiment": "positive",
+          "tags": [
+            "guide",
+            "positive"
+          ],
+          "body": "if u can get zhurong + the fire general, its easily the best early game combo",
+          "engagement": 0
+        },
+        {
+          "id": "1575297546278932553",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575297546278932553",
+          "category": "general",
+          "title": "lu meng is the strategist. it just depends on the stage, but fire only falls off",
+          "author": "neko",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-25T23:50:02Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide"
+          ],
+          "body": "lu meng is the strategist. it just depends on the stage, but fire only falls off like at stage 70+. so u need to supplement with halberd as well",
+          "engagement": 0
+        },
+        {
+          "id": "1575313330774483135",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575313330774483135",
+          "category": "general",
+          "title": "how's the f2p pulls looking like after day7? is this initial 7day code basically",
+          "author": "∩oodle",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T00:52:45Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha",
+            "inquiry"
+          ],
+          "body": "how's the f2p pulls looking like after day7? is this initial 7day code basically the only chance we'll have at mass pulling?",
+          "engagement": 0
+        },
+        {
+          "id": "1575325431505354846",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575325431505354846",
+          "category": "general",
+          "title": "u jus have to guess and keep checking. staff here doesnt exist for helping (신서버 ",
+          "author": "∩oodle",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T01:40:51Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat",
+            "negative"
+          ],
+          "body": "u jus have to guess and keep checking. staff here doesnt exist for helping (신서버 오픈 시기 질문에 대한 답)",
+          "engagement": 0
+        },
+        {
+          "id": "1575329254043025483",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575329254043025483",
+          "category": "general",
+          "title": "announcements has no news about any of the new servers that opened.",
+          "author": "∩oodle",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T01:56:02Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat",
+            "negative"
+          ],
+          "body": "announcements has no news about any of the new servers that opened.",
+          "engagement": 0
+        },
+        {
+          "id": "1575329539515482165",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575329539515482165",
+          "category": "general",
+          "title": "need to fix these ai support bots :\\",
+          "author": "∩oodle",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T01:57:10Z",
+          "sentiment": "negative",
+          "tags": [
+            "chitchat",
+            "negative"
+          ],
+          "body": "need to fix these ai support bots :\\",
+          "engagement": 0
+        },
+        {
+          "id": "1575352316297478236",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575352316297478236",
+          "category": "general",
+          "title": "Still got banned / Any admin/GM here? / I recharged 400+ $ and now got banned.",
+          "author": "Freedomsky",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T03:27:40Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "negative"
+          ],
+          "body": "Still got banned / Any admin/GM here? / I recharged 400+ $ and now got banned.",
+          "engagement": 20
+        },
+        {
+          "id": "1575384966445932545",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575384966445932545",
+          "category": "general",
+          "title": "server down? lol / ah yeah mainte / fixed now. It said maintenance for a bit tho",
+          "author": "Chechemaru",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T05:37:25Z",
+          "sentiment": "neutral",
+          "tags": [
+            "bugs"
+          ],
+          "body": "server down? lol / ah yeah mainte / fixed now. It said maintenance for a bit though.",
+          "engagement": 20
+        },
+        {
+          "id": "1575392867260702831",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575392867260702831",
+          "category": "general",
+          "title": "Most matches are halbert with 8% life regen and you win lol (89층 공략 대화)",
+          "author": "James",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T06:08:48Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance"
+          ],
+          "body": "Most matches are halbert with 8% life regen and you win lol (89층 공략 대화)",
+          "engagement": 0
+        },
+        {
+          "id": "1575406290535194837",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575406290535194837",
+          "category": "general",
+          "title": "90 has a bunch of flyers + the flyers are resistant to fire and ice mages / so m",
+          "author": "neko",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T07:02:09Z",
+          "sentiment": "neutral",
+          "tags": [
+            "balance",
+            "guide"
+          ],
+          "body": "90 has a bunch of flyers + the flyers are resistant to fire and ice mages / so my win condition is to get bolt mage super strong + halberd to clear the non flyers / my main issue is the boss, which is a flyer and bolt mage doesn't do enough dmg",
+          "engagement": 0
+        },
+        {
+          "id": "1575413912394924133",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575413912394924133",
+          "category": "general",
+          "title": "It's all luck at this point I made like 20 different character accounts all had ",
+          "author": "Area51",
+          "comments": 3,
+          "views": 0,
+          "likes": 1,
+          "utcIso": "2026-11-26T07:32:26Z",
+          "sentiment": "negative",
+          "tags": [
+            "gacha",
+            "negative"
+          ],
+          "body": "It's all luck at this point I made like 20 different character accounts all had like 250+ keys only one account got a red strategist the others were lucky to get a yellow",
+          "engagement": 90
+        },
+        {
+          "id": "1575414703155322963",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575414703155322963",
+          "category": "general",
+          "title": "Bruh since day 1 i always rerolling, cant even pull 1 red commander / Even my fi",
+          "author": "奇々丶Sky",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T07:35:35Z",
+          "sentiment": "negative",
+          "tags": [
+            "gacha",
+            "negative"
+          ],
+          "body": "Bruh since day 1 i always rerolling, cant even pull 1 red commander / Even my first account cant pull 1 red omg / Stuck on 50 floor",
+          "engagement": 0
+        },
+        {
+          "id": "1575415112955592786",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575415112955592786",
+          "category": "general",
+          "title": "Yeah they need to fix the rates / Ima just make 4 accounts and just keep playing",
+          "author": "Area51",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T07:37:12Z",
+          "sentiment": "negative",
+          "tags": [
+            "gacha",
+            "negative"
+          ],
+          "body": "Yeah they need to fix the rates / Ima just make 4 accounts and just keep playing them and see if they change the rates if they don't i wont spend a dollar on the game",
+          "engagement": 0
+        },
+        {
+          "id": "1575438528203071539",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575438528203071539",
+          "category": "general",
+          "title": "Hi my lord! The daily launch codes ran from Nov 19 to Nov 25, so there isn't a n",
+          "author": "Tiny War_Admin",
+          "comments": 0,
+          "views": 0,
+          "likes": 3,
+          "utcIso": "2026-11-26T09:10:15Z",
+          "sentiment": "neutral",
+          "tags": [
+            "event"
+          ],
+          "body": "Hi my lord! The daily launch codes ran from Nov 19 to Nov 25, so there isn't a new daily code today. If new codes come out, they'll be posted in the events channel",
+          "engagement": 90
+        },
+        {
+          "id": "1575460663999074315",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564210326348497009/1575460663999074315",
+          "category": "general",
+          "title": "What's the tier order for red generals? Lu Bu, Zhang Fei, Ma Chao, Zhang Jiao, Z",
+          "author": "Gelato",
+          "comments": 0,
+          "views": 0,
+          "likes": 1,
+          "utcIso": "2026-11-26T10:38:12Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha",
+            "newbie_returning",
+            "inquiry"
+          ],
+          "body": "What's the tier order for red generals? Lu Bu, Zhang Fei, Ma Chao, Zhang Jiao, Zuo Ci, Huang Zhong, Meng Huo. I'm rerolling and trying to decide which ones are worth stopping on",
+          "engagement": 30
+        },
+        {
+          "id": "1575202607302189198",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564211229365370901/1575202607302189198",
+          "category": "bug-reports",
+          "title": "Hi why i got banned? Recharge alot, don't using 3rd program. / User UID: 1764000",
+          "author": "Freedomsky",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-25T17:32:47Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "negative"
+          ],
+          "body": "Hi why i got banned? Recharge alot, don't using 3rd program. / User UID: 17640000 / Thang sv Asia 2",
+          "engagement": 20
+        },
+        {
+          "id": "1575414365807575152",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564211229365370901/1575414365807575152",
+          "category": "bug-reports",
+          "title": "I got a bug report on the pull rates made 20 different characters they had 250+ ",
+          "author": "Area51",
+          "comments": 2,
+          "views": 0,
+          "likes": 1,
+          "utcIso": "2026-11-26T07:34:14Z",
+          "sentiment": "negative",
+          "tags": [
+            "gacha",
+            "negative"
+          ],
+          "body": "I got a bug report on the pull rates made 20 different characters they had 250+ gold keys each only 1 got a red strategist which is kinda wild the odds",
+          "engagement": 70
+        },
+        {
+          "id": "1575422574245052497",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564211229365370901/1575422574245052497",
+          "category": "bug-reports",
+          "title": "Yup same for me. I don't think they understand the global market playerbase. May",
+          "author": "(익명)",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T08:06:51Z",
+          "sentiment": "negative",
+          "tags": [
+            "gacha",
+            "negative"
+          ],
+          "body": "Yup same for me. I don't think they understand the global market playerbase. Maybe in KR giga whales will endlessly spend for a 0.0003% chance at something good",
+          "engagement": 0
+        },
+        {
+          "id": "1575498887278633021",
+          "source": "discord",
+          "url": "https://discord.com/channels/1564210325413298287/1564211229365370901/1575498887278633021",
+          "category": "bug-reports",
+          "title": "I top 1 yesterday and after got banned, my data was clear. My points down to 0, ",
+          "author": "Freedomsky",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T13:10:06Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "negative"
+          ],
+          "body": "I top 1 yesterday and after got banned, my data was clear. My points down to 0, not 1000 by default. How to comeback? / It's dev mistake, i recharge alot and now don't even in top 10",
+          "engagement": 20
         }
       ],
       "stats": {
-        "notices": 0,
-        "bugs": 1,
-        "negative": 5,
-        "positive": 1,
+        "notices": 1,
+        "bugs": 5,
+        "negative": 17,
+        "positive": 2,
         "competitor_mentions": 0,
-        "newbie_returning": 3,
-        "guild_recruit": 0,
-        "gacha": 5,
-        "event": 4,
-        "balance": 2,
-        "guide": 1,
-        "chitchat": 1,
-        "total": 12,
-        "real_posts": 12,
+        "newbie_returning": 5,
+        "guild_recruit": 1,
+        "gacha": 14,
+        "event": 6,
+        "balance": 4,
+        "guide": 5,
+        "chitchat": 4,
+        "total": 36,
+        "real_posts": 35,
         "total_views": 1304,
-        "total_comments": 27,
-        "total_likes": 1,
-        "sentiment_score": -0.333,
+        "total_comments": 39,
+        "total_likes": 10,
+        "sentiment_score": -0.417,
         "sentiment": "부정",
         "community": {
-          "volume": 12,
-          "participants": 10,
-          "complaints": 5,
-          "inquiries": 3,
+          "volume": 103,
+          "participants": 29,
+          "complaints": 26,
+          "inquiries": 22,
           "bySource": {
             "cafe": {
               "posts": 12,
@@ -3471,16 +3924,20 @@
               "negative": 5
             },
             "discord": {
-              "messages": 0,
-              "participants": 0,
-              "sampled": 0,
-              "channels": {},
-              "complaints": 0,
-              "inquiries": 0,
-              "positive": 0,
-              "negative": 0,
-              "collected": false,
-              "note": "Chrome 미연결로 디스코드 미수집"
+              "messages": 91,
+              "participants": 19,
+              "sampled": 24,
+              "channels": {
+                "general": 80,
+                "bug-reports": 10,
+                "builds-and-tips": 1,
+                "events": 0,
+                "announcements": 0
+              },
+              "complaints": 21,
+              "inquiries": 19,
+              "positive": 3,
+              "negative": 21
             }
           }
         }
@@ -3608,7 +4065,7 @@
         }
       ],
       "analysis": {
-        "dailySummary": "막다보니 천하통일 국내 카페는 서비스 8일차를 맞아 장극병 관련 불만이 가장 눈에 띄었다. '장극병 공격 방향을 제대로 수정해 달라', '장극병 패치 건의' 글이 각각 댓글 3~7개를 모았고, 계정 첫 50뽑에서는 장수가 나오지 않는 것 같다는 확률 의심 글과 천장 없는 축제뽑기를 상시로 풀어 달라는 요청, '적극적인 운영이 필요해 보인다'는 글이 이어졌다. 한편 외국 서버 경험을 바탕으로 한 상세 뉴비 공략 2탄과 가후가 나올 때까지 리세마라 중이라는 글, 신섭 일정·스킨 구매 문의가 함께 올라와 정서는 부정 쪽이었다. 디스코드는 Chrome 미연결로 이날 수집하지 못했다.",
+        "dailySummary": "막다보니 천하통일 국내 카페는 서비스 8일차를 맞아 장극병 관련 불만이 가장 눈에 띄었다. '장극병 공격 방향을 제대로 수정해 달라', '장극병 패치 건의' 글이 각각 댓글 3~7개를 모았고, 계정 첫 50뽑에서는 장수가 나오지 않는 것 같다는 확률 의심 글과 천장 없는 축제뽑기를 상시로 풀어 달라는 요청, '적극적인 운영이 필요해 보인다'는 글이 이어졌다. 한편 외국 서버 경험을 바탕으로 한 상세 뉴비 공략 2탄과 가후가 나올 때까지 리세마라 중이라는 글, 신섭 일정·스킨 구매 문의가 함께 올라와 정서는 부정 쪽이었다. 글로벌 디스코드(메시지 91건, 19명)에서는 리세마라를 수십 번 해도 빨간 무장·책사가 안 나온다는 확률 불만이 가장 많았고(20개 계정에 금열쇠 250개씩 써서 1개 나왔다는 글 포함), 400달러 이상 결제한 유저가 계정 정지 후 랭킹 점수가 0으로 초기화됐다는 항의, 공지 채널에 신서버 소식이 없고 AI 응대 봇만 답한다는 운영 불만이 이어졌다.",
         "topIssues": [
           {
             "title": "장극병 공격방향 제대로 수정해주세요",
@@ -3671,19 +4128,31 @@
             "title": "장극병 공격 방향 오류 제보",
             "url": "https://cafe.naver.com/ntkdefense/106",
             "summary": "장극병 공격 방향을 제대로 수정해 달라는 카페 건의(댓글 7)"
+          },
+          {
+            "title": "결제 유저 계정 정지·랭킹 점수 초기화",
+            "url": "https://discord.com/channels/1564210325413298287/1564211229365370901/1575498887278633021",
+            "summary": "400달러+ 결제, 서드파티 미사용 주장. 정지 후 1위 점수가 0으로 초기화 — GM이 티켓 안내"
+          },
+          {
+            "title": "뽑기 확률 버그 의심 제보",
+            "url": "https://discord.com/channels/1564210325413298287/1564211229365370901/1575414365807575152",
+            "summary": "20개 계정·금열쇠 250개씩에 빨간 책사 1개 — bug-reports 채널 제보, 동조 의견"
           }
         ],
         "competitorMentions": [],
         "trends": [
           "장극병 공격 방향·패치 건의",
-          "장수 획득 확률·축제뽑기 천장 요청",
-          "뉴비 공략·리세마라",
-          "운영 소통 요청"
+          "무장·책사 확률 불만(카페·디스코드 공통)",
+          "결제 유저 계정 정지·랭킹 초기화 항의(디스코드)",
+          "운영 소통·AI 응대 불만",
+          "뉴비 공략·리세마라"
         ],
         "watchlist": [
           "장극병 공격 방향 이슈(카페 건의 2건, 전날 디스코드 흡혈 카드 불만과 연결)",
-          "초기 50뽑 장수 미출현 의심·축제뽑기 천장",
-          "운영 소통·쿠폰 공지 공백"
+          "무장·책사 확률 불만 — 국내 카페와 글로벌 디스코드 동시 확산",
+          "결제 유저(400달러+) 계정 정지·랭킹 0점 초기화 항의",
+          "신서버 공지 공백·AI 응대 봇 불만"
         ],
         "keywords": [
           {
@@ -3736,16 +4205,16 @@
             ]
           }
         ],
-        "discordSummary": "11-26(KST) 디스코드는 Chrome 확장이 연결되지 않아(90초 간격 15회 재시도 실패) 읽지 못했다. 전날(11-25)에는 무장·책사·전투 선택 카드 확률과 과금 가치에 대한 불만이 25건으로 크게 늘었던 만큼, 다음 수집에서 추이를 확인해야 한다.",
+        "discordSummary": "11-26(KST) 디스코드는 general 80건·bug-reports 10건·builds-and-tips 1건, 모두 91건(작성자 19명)이었다. 리세마라를 해도 빨간 무장·책사가 안 나온다는 확률 불만이 가장 많았고(20개 계정에 금열쇠 250개씩 써서 빨간 책사 1개, 확률을 고치지 않으면 과금하지 않겠다는 글), 400달러 이상 결제한 유저가 계정 정지 후 랭킹 점수가 0으로 초기화됐다며 여러 번 항의했다. 신서버 공지가 없고 AI 응대 봇만 답한다는 운영 불만도 나왔으며, 나머지는 축융·화염 무장 조합, 여몽 책사, 장극병·뇌전술사로 비행 유닛이 많은 89~90층을 넘는 공략 대화였다.",
         "exec": {
-          "headline": "카페에서 장극병 공격 방향·패치 건의와 장수 확률 의심 글이 이어졌습니다(디스코드 미수집).",
+          "headline": "카페의 장극병·장수 확률 불만에 더해, 디스코드에서도 확률 불만과 결제 유저 계정 정지 항의가 나왔습니다.",
           "reasons": [
             "카페: '장극병 공격 방향 수정', '장극병 패치 건의' 글이 댓글을 가장 많이 모음",
-            "계정 첫 50뽑 장수 미출현 의심, 천장 없는 축제뽑기 상시화 요청",
-            "적극적 운영 요청 속 상세 뉴비 공략·리세마라 글도 올라옴"
+            "카페·디스코드 공통: 무장·책사 확률 불만(디스코드 91건 중 확률 불만 10건)",
+            "디스코드: 400달러+ 결제 유저 계정 정지·랭킹 초기화 항의, 신서버 공지·AI 응대 불만"
           ],
           "watchShort": "장극병·확률 불만",
-          "watch": "전날 디스코드의 장극병 흡혈 카드·확률 불만에 이어 국내 카페에서도 장극병 공격 방향 수정과 패치 건의, 초기 장수 확률 의심이 나왔습니다. 장극병 동작 확인 결과와 확률 안내를 공지하면 불만 확산을 줄일 수 있습니다. 이날 디스코드는 Chrome 미연결로 확인하지 못했습니다.",
+          "watch": "국내 카페와 글로벌 디스코드 양쪽에서 무장·책사 확률 불만이 이어졌고, 디스코드에서는 '확률을 고치지 않으면 과금하지 않겠다'는 글까지 나왔습니다. 장극병 동작 확인 결과와 확률 안내 공지가 필요하고, 고액 결제 유저의 계정 정지·랭킹 초기화 건은 개별 확인 후 결과를 알려 주는 것이 좋겠습니다.",
           "watchUrl": "https://cafe.naver.com/ntkdefense/106"
         }
       }
@@ -3808,33 +4277,377 @@
             "guide"
           ],
           "engagement": 39
+        },
+        {
+          "id": "1575278777024643073",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1575278777024643073",
+          "category": "general",
+          "title": "Better pull lingxue or nan as beginner that start playing??",
+          "author": "Fuschia",
+          "comments": 2,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-25T22:35:27Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "gacha",
+            "inquiry"
+          ],
+          "body": "Better pull lingxue or nan as beginner that start playing??",
+          "engagement": 40
+        },
+        {
+          "id": "1575308702158823515",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1575308702158823515",
+          "category": "general",
+          "title": "Which external dps that worth to invest? Qu xin? Non limited unit",
+          "author": "Fuschia",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T00:34:22Z",
+          "sentiment": "neutral",
+          "tags": [
+            "guide",
+            "inquiry"
+          ],
+          "body": "Which external dps that worth to invest? Qu xin? Non limited unit",
+          "engagement": 20
+        },
+        {
+          "id": "1575314423080292449",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1575314423080292449",
+          "category": "general",
+          "title": "From whale's testing, Qu Xin is one of the best DPS as of now. Just get a P3 Qu ",
+          "author": "Seraziel - S0",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T00:57:06Z",
+          "sentiment": "positive",
+          "tags": [
+            "guide",
+            "balance",
+            "positive"
+          ],
+          "body": "From whale's testing, Qu Xin is one of the best DPS as of now. Just get a P3 Qu Xin if you're not a whale, then at least you have an external DPS with low investment",
+          "engagement": 0
+        },
+        {
+          "id": "1575345548490309635",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1575345548490309635",
+          "category": "general",
+          "title": "Is she worth to pull compared to zhuge lu my team has no internal dmg dealer yet",
+          "author": "YEE",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T03:00:47Z",
+          "sentiment": "neutral",
+          "tags": [
+            "gacha",
+            "inquiry"
+          ],
+          "body": "Is she worth to pull compared to zhuge lu my team has no internal dmg dealer yet. Focusing mainly on PvE content.",
+          "engagement": 20
+        },
+        {
+          "id": "1575411596107456585",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1575411596107456585",
+          "category": "general",
+          "title": "Guys... I am stuck. I do not know where to find the key for the mechanism box da",
+          "author": "Ishida",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T07:23:14Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "negative"
+          ],
+          "body": "Guys... I am stuck. I do not know where to find the key for the mechanism box daily quest. I cannot figure this out, and I am stuck on not being able to either cancel it or start a new one.",
+          "engagement": 20
+        },
+        {
+          "id": "1575490566404317245",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1575490566404317245",
+          "category": "general",
+          "title": "how to solve these. missing 1 item after leaf",
+          "author": "dithdot",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T12:37:02Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "negative"
+          ],
+          "body": "how to solve these. missing 1 item after leaf",
+          "engagement": 0
+        },
+        {
+          "id": "1575511440587227238",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1575511440587227238",
+          "category": "general",
+          "title": "faction weapon so expensive",
+          "author": "Blanca",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T13:59:59Z",
+          "sentiment": "negative",
+          "tags": [
+            "gacha",
+            "negative"
+          ],
+          "body": "faction weapon so expensive",
+          "engagement": 0
+        },
+        {
+          "id": "1575337183466750024",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575337183466750024",
+          "category": "中文討論區",
+          "title": "管理人员，游戏登入可以优化下吧，常常登不到，不然就是要等很久 (로그인이 자주 안 되거나 오래 걸림)",
+          "author": "MRQ",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T02:27:32Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "negative"
+          ],
+          "body": "管理人员，游戏登入可以优化下吧，常常登不到，不然就是要等很久 (로그인이 자주 안 되거나 오래 걸림)",
+          "engagement": 20
+        },
+        {
+          "id": "1575373551559639131",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575373551559639131",
+          "category": "中文討論區",
+          "title": "5g网络进不到啦，4g ,WiFi 都可以 (5G에서만 접속 불가)",
+          "author": "MRQ",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T04:52:03Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "negative"
+          ],
+          "body": "5g网络进不到啦，4g ,WiFi 都可以 (5G에서만 접속 불가)",
+          "engagement": 0
+        },
+        {
+          "id": "1575381952452624405",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575381952452624405",
+          "category": "中文討論區",
+          "title": "1个小时了还是不能进，有成功进到可是直接闪退 (1시간째 접속 불가, 들어가도 바로 튕김)",
+          "author": "MRQ",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T05:25:26Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "negative"
+          ],
+          "body": "1个小时了还是不能进，有成功进到可是直接闪退 (1시간째 접속 불가, 들어가도 바로 튕김)",
+          "engagement": 0
+        },
+        {
+          "id": "1575384945008840790",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575384945008840790",
+          "category": "中文討論區",
+          "title": "每天都在閃退+1 / 手機每天都在閃退 / 今天閃退特別多 (모바일 매일 튕김, 오늘 특히 많음 — 3명)",
+          "author": "Laplaces",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T05:37:20Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "negative"
+          ],
+          "body": "每天都在閃退+1 / 手機每天都在閃退 / 今天閃退特別多 (모바일 매일 튕김, 오늘 특히 많음 — 3명)",
+          "engagement": 0
+        },
+        {
+          "id": "1575391273202745375",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575391273202745375",
+          "category": "中文討論區",
+          "title": "麻烦你传达一下手机data不能进游戏，维修下可以吗 (모바일 데이터로 접속 불가, 수정 요청)",
+          "author": "MRQ",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T06:02:28Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "negative"
+          ],
+          "body": "麻烦你传达一下手机data不能进游戏，维修下可以吗 (모바일 데이터로 접속 불가, 수정 요청)",
+          "engagement": 0
+        },
+        {
+          "id": "1575325993948807190",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575325993948807190",
+          "category": "中文討論區",
+          "title": "應該是bug 之前茶坪山的支線也是這樣 (湘苗 주선 퀘스트 장소 사라짐 — 버그 포럼에도 제보)",
+          "author": "kookoo",
+          "comments": 1,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T01:43:05Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "negative"
+          ],
+          "body": "應該是bug 之前茶坪山的支線也是這樣 (湘苗 주선 퀘스트 장소 사라짐 — 버그 포럼에도 제보)",
+          "engagement": 20
+        },
+        {
+          "id": "1575473299088212079",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575473299088212079",
+          "category": "中文討論區",
+          "title": "有人发现更新后派遣刷新出高品质的机率下降了吗 / 还是我脸太黑 / 连甲都很难出了 (업데이트 후 파견 고품질 확률 하락 체감)",
+          "author": "Seraziel - S0",
+          "comments": 3,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T11:28:25Z",
+          "sentiment": "negative",
+          "tags": [
+            "gacha",
+            "negative"
+          ],
+          "body": "有人发现更新后派遣刷新出高品质的机率下降了吗 / 还是我脸太黑 / 连甲都很难出了 (업데이트 후 파견 고품질 확률 하락 체감)",
+          "engagement": 60
+        },
+        {
+          "id": "1575486065312272406",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575486065312272406",
+          "category": "中文討論區",
+          "title": "越來越摳門 / 還有200幣要刷…好累啊，一場要排3分鐘 (점점 인색해짐, 시련 랭킹제 변경 불만)",
+          "author": "-雲-",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T12:19:09Z",
+          "sentiment": "negative",
+          "tags": [
+            "event",
+            "negative"
+          ],
+          "body": "越來越摳門 / 還有200幣要刷…好累啊，一場要排3分鐘 (점점 인색해짐, 시련 랭킹제 변경 불만)",
+          "engagement": 0
+        },
+        {
+          "id": "1575500258308268063",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575500258308268063",
+          "category": "中文討論區",
+          "title": "这个是bug，已经检举了结果没人理 — 唯一办法就是在他开始召唤弓箭手前打死他 (보스 기믹 버그, 제보했지만 응답 없음)",
+          "author": "Seraziel - S0",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T13:15:32Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "negative"
+          ],
+          "body": "这个是bug，已经检举了结果没人理 — 唯一办法就是在他开始召唤弓箭手前打死他 (보스 기믹 버그, 제보했지만 응답 없음)",
+          "engagement": 0
+        },
+        {
+          "id": "1575353886628380692",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1575353886628380692",
+          "category": "bug-report",
+          "title": "桃花幽谷 퀘스트 꽃 선택 위치가 안 보임(AOS)",
+          "author": "S3- 小米思",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T03:33:55Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "negative"
+          ],
+          "body": "AOS / 任務：桃花幽谷 / 安卓系統 展示順序時正常 畫面要我點選花的時候 沒有顯示出來點選的圖案位置",
+          "engagement": 0
+        },
+        {
+          "id": "1575340056980496466",
+          "source": "discord",
+          "url": "https://discord.com/channels/1501498947435364452/1575340056980496466",
+          "category": "bug-report",
+          "title": "湘苗 주선 鬼影山 안개·羅家祠堂 사라짐(iOS)",
+          "author": "kookoo",
+          "comments": 0,
+          "views": 0,
+          "likes": 0,
+          "utcIso": "2026-11-26T02:38:57Z",
+          "sentiment": "negative",
+          "tags": [
+            "bugs",
+            "negative"
+          ],
+          "body": "iOS / 湘苗主線 瀟瀟水寒鬼影山道迷霧問題 / 羅家祠堂直接不見 然後幻道那裡一樣都是霧 羅三公只對話過一次無法觸發其他劇情",
+          "engagement": 0
         }
       ],
       "stats": {
         "notices": 0,
-        "bugs": 0,
-        "negative": 0,
-        "positive": 1,
+        "bugs": 11,
+        "negative": 14,
+        "positive": 2,
         "competitor_mentions": 0,
         "newbie_returning": 0,
         "guild_recruit": 0,
-        "gacha": 0,
-        "event": 0,
-        "balance": 0,
-        "guide": 2,
+        "gacha": 4,
+        "event": 1,
+        "balance": 1,
+        "guide": 5,
         "chitchat": 1,
-        "total": 3,
-        "real_posts": 3,
+        "total": 21,
+        "real_posts": 21,
         "total_views": 123,
-        "total_comments": 3,
+        "total_comments": 13,
         "total_likes": 1,
-        "sentiment_score": 0.333,
-        "sentiment": "긍정",
+        "sentiment_score": -0.571,
+        "sentiment": "부정",
         "community": {
-          "volume": 3,
-          "participants": 2,
-          "complaints": 0,
-          "inquiries": 0,
+          "volume": 492,
+          "participants": 26,
+          "complaints": 22,
+          "inquiries": 15,
           "bySource": {
             "lounge": {
               "posts": 3,
@@ -3846,16 +4659,20 @@
               "negative": 0
             },
             "discord": {
-              "messages": 0,
-              "participants": 0,
-              "sampled": 0,
-              "channels": {},
-              "complaints": 0,
-              "inquiries": 0,
-              "positive": 0,
-              "negative": 0,
-              "collected": false,
-              "note": "Chrome 미연결로 직접 읽기 실패 — 슬랙 dawnswake-monitor 봇 요약으로 discordSummary 만 작성"
+              "messages": 489,
+              "participants": 24,
+              "sampled": 18,
+              "channels": {
+                "中文討論區": 442,
+                "general": 45,
+                "bug-report": 2,
+                "한국어-채널": 0,
+                "customer-support": 0
+              },
+              "complaints": 22,
+              "inquiries": 15,
+              "positive": 5,
+              "negative": 22
             }
           }
         }
@@ -3886,6 +4703,30 @@
           "sentiment": "neutral"
         },
         {
+          "id": "1575473299088212079",
+          "title": "有人发现更新后派遣刷新出高品质的机率下降了吗 / 还是我脸太黑 / 连甲都很难出了 (업데이트 후 파견 고품질 확률 하락 체감)",
+          "url": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575473299088212079",
+          "source": "discord",
+          "views": 0,
+          "comments": 3,
+          "likes": 0,
+          "engagement": 60,
+          "category": "中文討論區",
+          "sentiment": "negative"
+        },
+        {
+          "id": "1575278777024643073",
+          "title": "Better pull lingxue or nan as beginner that start playing??",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1575278777024643073",
+          "source": "discord",
+          "views": 0,
+          "comments": 2,
+          "likes": 0,
+          "engagement": 40,
+          "category": "general",
+          "sentiment": "neutral"
+        },
+        {
           "id": "8510011",
           "title": "오군연책 클리어 조합 추천",
           "url": "https://game.naver.com/lounge/Dawns_Edge/board/detail/8510011",
@@ -3896,10 +4737,70 @@
           "engagement": 39,
           "category": "🗨️자유 객잔",
           "sentiment": "neutral"
+        },
+        {
+          "id": "1575308702158823515",
+          "title": "Which external dps that worth to invest? Qu xin? Non limited unit",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1575308702158823515",
+          "source": "discord",
+          "views": 0,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 20,
+          "category": "general",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "1575345548490309635",
+          "title": "Is she worth to pull compared to zhuge lu my team has no internal dmg dealer yet",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1575345548490309635",
+          "source": "discord",
+          "views": 0,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 20,
+          "category": "general",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "1575411596107456585",
+          "title": "Guys... I am stuck. I do not know where to find the key for the mechanism box da",
+          "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1575411596107456585",
+          "source": "discord",
+          "views": 0,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 20,
+          "category": "general",
+          "sentiment": "negative"
+        },
+        {
+          "id": "1575337183466750024",
+          "title": "管理人员，游戏登入可以优化下吧，常常登不到，不然就是要等很久 (로그인이 자주 안 되거나 오래 걸림)",
+          "url": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575337183466750024",
+          "source": "discord",
+          "views": 0,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 20,
+          "category": "中文討論區",
+          "sentiment": "negative"
+        },
+        {
+          "id": "1575325993948807190",
+          "title": "應該是bug 之前茶坪山的支線也是這樣 (湘苗 주선 퀘스트 장소 사라짐 — 버그 포럼에도 제보)",
+          "url": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575325993948807190",
+          "source": "discord",
+          "views": 0,
+          "comments": 1,
+          "likes": 0,
+          "engagement": 20,
+          "category": "中文討論區",
+          "sentiment": "negative"
         }
       ],
       "analysis": {
-        "dailySummary": "검신제로 네이버 라운지는 칠성진법 비보·보석 세팅법(탄월·파허 세트, 탐랑석 가치)과 오군연책 클리어 조합을 정리한 공략 글이 올라와 조용한 육성 분위기였고, 댓글창의 '며칠차' 인증 문화가 불편하다는 글에 공감 댓글이 달렸다. 글로벌 디스코드는 직접 읽지 못했지만 슬랙 관제 봇 기준으로 신기루 유적 끝 보스 기믹 버그(7명)가 계속됐고, 오후에는 중국어 채널에서 모바일 튕김·5G 접속 불가(4~5명)와 업데이트 후 파견 고품질 확률 하락 체감(2명)이 새로 제기돼 주의 단계가 이어졌다.",
+        "dailySummary": "검신제로 네이버 라운지는 칠성진법 비보·보석 세팅법(탄월·파허 세트, 탐랑석 가치)과 오군연책 클리어 조합을 정리한 공략 글이 올라와 조용한 육성 분위기였고, 댓글창의 '며칠차' 인증 문화가 불편하다는 글에 공감 댓글이 달렸다. 글로벌 디스코드(메시지 489건, 24명)는 중국어 채널이 442건으로 대부분이었는데, 모바일 데이터·5G에서 접속이 안 되거나 매일 튕긴다는 불만이 3~4명에게서 반복됐고, 湘苗·桃花幽谷·기관 상자 퀘스트 진행 막힘, 업데이트 후 파견 고품질 확률 하락·시련 보상 랭킹제 변경 불만이 이어졌다. 영어 general 채널은 Qu Xin·Lingxue·Nan 등 딜러 추천 같은 육성 문의가 중심이었다.",
         "topIssues": [
           {
             "title": "칠성진법 세팅하는 방법",
@@ -3937,27 +4838,38 @@
         ],
         "bugReports": [
           {
-            "title": "신기루 유적 끝 보스 기믹 버그",
-            "url": "https://discord.gg/V8grcAj7pm",
-            "summary": "슬랙 관제 봇 기준 7명 제기, 지속"
+            "title": "모바일 튕김·5G/데이터 접속 불가",
+            "url": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575381952452624405",
+            "summary": "중문 채널 3~4명, 4G·WiFi는 접속되고 5G/모바일 데이터만 불가, 1시간째 접속 불가·즉시 튕김"
           },
           {
-            "title": "모바일 튕김·5G 접속 불가",
-            "url": "https://discord.gg/V8grcAj7pm",
-            "summary": "디스코드 중문 채널 4~5명(11/26 14:25~15:02), 자동답변 차단"
+            "title": "湘苗 주선 퀘스트 장소 사라짐(iOS)",
+            "url": "https://discord.com/channels/1501498947435364452/1575340056980496466",
+            "summary": "羅家祠堂이 사라지고 안개만 남아 진행 불가 — 버그 포럼 제보"
           },
           {
-            "title": "퀘스트 진행 막힘",
-            "url": "https://discord.gg/V8grcAj7pm",
-            "summary": "湘苗 퀘스트 장소 사라짐, 기관 상자 열쇠 없음, 桃花幽谷 꽃 선택 위치 안 보임"
+            "title": "桃花幽谷 퀘스트 꽃 선택 위치 미표시(AOS)",
+            "url": "https://discord.com/channels/1501498947435364452/1575353886628380692",
+            "summary": "꽃을 고르는 단계에서 선택 위치가 안 보임 — 버그 포럼 제보"
+          },
+          {
+            "title": "기관 상자 일일 퀘스트 열쇠 없음",
+            "url": "https://discord.com/channels/1501498947435364452/1501500739820851240/1575411596107456585",
+            "summary": "열쇠 위치를 못 찾고 퀘스트 취소·재시작도 안 됨 — 공식 계정이 고객센터 안내"
+          },
+          {
+            "title": "보스 기믹 버그(궁수 소환)",
+            "url": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575500258308268063",
+            "summary": "제보했지만 응답 없다는 불만, 소환 전 처치가 유일한 방법"
           }
         ],
         "competitorMentions": [],
         "trends": [
           "칠성진법·오군연책 공략 공유",
-          "신기루 끝 보스 기믹 버그 지속(디스코드)",
-          "모바일 튕김·5G 접속 불가 신규(디스코드 중문)",
-          "파견 고품질 확률 하락 체감"
+          "모바일 튕김·5G/데이터 접속 불가(디스코드 중문)",
+          "퀘스트 진행 막힘 제보 3종",
+          "파견 확률 하락·시련 보상 축소 체감",
+          "딜러 육성 문의(디스코드 영어)"
         ],
         "watchlist": [
           "신기루 유적 끝 보스 기믹 버그(7명, 지속)",
@@ -3982,25 +4894,25 @@
             ]
           }
         ],
-        "discordSummary": "11-26(KST) 디스코드는 Chrome 미연결로 직접 읽지 못해 슬랙 dawnswake-monitor 봇 요약으로 대신했다. 신기루 유적 끝 보스 기믹 버그(7명)가 계속됐고, 오후 중국어 채널에서 모바일 튕김·5G 접속 불가(4~5명)와 업데이트 후 파견 고품질 확률 하락 체감(2명)이 새로 올라와 봇이 자동답변을 막고 담당자 확인으로 넘겼다. 그 밖에 湘苗·기관 상자·桃花幽谷 퀘스트 진행 막힘, 아레나 보상 미수령, 누적 충전 비보 목록 미표시 같은 단건 제보가 이어져 하루 내내 '주의' 단계였다.",
+        "discordSummary": "11-26(KST) 디스코드는 中文討論區 442건·general 45건·버그 포럼 새 글 2건, 모두 489건(작성자 24명)이었다. 중국어 채널은 대부분 PvP·육성 잡담이었지만, 모바일 데이터·5G에서만 접속이 안 되거나 매일 튕긴다는 불만이 3~4명에게서 반복됐고, 업데이트 후 파견 고품질 확률 하락과 시련 보상이 랭킹제로 바뀐 것에 '점점 인색해진다'는 반응이 나왔다. 湘苗·桃花幽谷 퀘스트 진행 막힘은 버그 포럼에도 올라왔으며, 영어 general은 Qu Xin·Lingxue·Nan 같은 딜러 추천 문의가 중심이었다.",
         "exec": {
-          "headline": "라운지는 공략 공유로 조용했지만, 디스코드에서 접속·버그 제보가 계속돼 관제 '주의'가 이어졌습니다.",
+          "headline": "라운지는 공략 공유로 조용했지만, 디스코드 중문 채널에서 모바일 접속 불가·튕김과 퀘스트 막힘 제보가 이어졌습니다.",
           "reasons": [
             "라운지: 칠성진법 세팅·오군연책 조합 공략 공유, '며칠차' 댓글 문화 불편 글",
-            "디스코드(슬랙 봇 기준): 신기루 끝 보스 기믹 버그 7명 지속, 모바일 튕김·5G 접속 불가 4~5명 신규",
-            "업데이트 후 파견 고품질 확률 하락 체감, 퀘스트 진행 막힘 단건 제보"
+            "디스코드(489건): 모바일 데이터·5G 접속 불가·매일 튕김 3~4명, 湘苗·桃花幽谷·기관 상자 퀘스트 막힘",
+            "업데이트 후 파견 고품질 확률 하락·시련 보상 랭킹제 변경에 '점점 인색해진다' 반응"
           ],
           "watchShort": "접속·보스 기믹 버그",
-          "watch": "신기루 유적 끝 보스 기믹 버그가 7명 규모로 계속되고, 중국어 채널에서 모바일 튕김·5G 접속 불가가 새로 4~5명 제기됐습니다. 접속 불가는 이탈로 바로 이어지므로 기기·네트워크 재현 확인과 공지가 필요하고, 파견 확률 체감 불만에도 설명이 있으면 좋겠습니다.",
-          "watchUrl": "https://discord.gg/V8grcAj7pm"
+          "watch": "중국어 채널에서 모바일 데이터·5G에서만 접속이 안 되거나 매일 튕긴다는 제보가 3~4명에게서 반복됐습니다. 4G·WiFi는 된다는 증언이 있어 네트워크별 재현 확인이 필요하고, 퀘스트 진행 막힘 3종과 파견 확률 체감 불만에도 안내가 있으면 좋겠습니다.",
+          "watchUrl": "https://discord.com/channels/1501498947435364452/1554734155923722292/1575381952452624405"
         }
       }
     }
   },
   "execSummary": {
-    "line": "에르피스는 플레어 호평 속 새 패스 5배 가격 오류로 반발 후 환불 공지로 진정됐고, 막다보니 천하통일은 카페에서 장극병·장수 확률 불만이 이어졌으며, 앵커패닉은 평온, 검신제로는 접속·보스 기믹 버그 제보가 계속됐습니다.",
-    "action": "에르피스 산맥의 밀약 환불·보상 이행 확인, 막다보니 천하통일 장극병 공격 방향 점검, 검신제로 모바일 튕김·5G 접속 불가 재현 확인"
+    "line": "에르피스는 플레어 호평 속 새 패스 5배 가격 오류로 반발 후 환불 공지로 진정됐고, 막다보니 천하통일은 카페·디스코드에서 장극병·확률 불만과 결제 유저 정지 항의가 나왔으며, 앵커패닉은 평온, 검신제로는 디스코드에서 모바일 접속 불가·퀘스트 막힘 제보가 이어졌습니다.",
+    "action": "에르피스 산맥의 밀약 환불·보상 이행 확인, 막다보니 천하통일 장극병 공격 방향 점검·확률 안내·결제 유저 정지 건 확인, 검신제로 모바일 데이터·5G 접속 불가 재현 확인"
   },
   "searchTrends": null,
-  "generatedAt": "2026-11-27T07:44:44+09:00"
+  "generatedAt": "2026-11-27T10:09:18+09:00"
 }
